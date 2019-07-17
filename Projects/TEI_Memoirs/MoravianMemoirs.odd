@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Moravian Lives TEI P5 ODD Customisation</title>
+        <author xml:id="JAKA1">Diane Jakacki</author>
+        <author xml:id="jschaumberger">Justin Schaumberger</author>
+      </titleStmt>
+      <publicationStmt>
+        <authority>
+          <name>Diane Jakacki</name>
+          <email>diane.jakack@bucknell.edu</email>
+        </authority>
+        <authority>
+          <name>Justin Schaumberger</name>
+          <email>jes083@bucknell.edu</email>
+        </authority>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This TEI P5 Customisation file is being developed for memoirs from the Moravian Archives in Bethlehem, Pennsylvania as part of the Moravian Lives project ("ML"). The intention is that it
+          should evolve over time.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Corrections are made to the transcribed memoirs based on transcribers' interpretations of deletions, overwrites, additions, and corrections.</p>
+        </correction>
+        <interpretation>
+          <p>In some cases - but not all - transcribers have corrected non-standard spelling and punctuation.</p>
+          <p>In order to take on more complex textual analysis, certain tags have been customized in this schema. These are marked in comments by "CUSTOMIZATION: " and then the element or attribute
+            that has been altered or expanded.</p>
+        </interpretation>
+        <punctuation>
+          <p>In some cases - but not all - transcriptions reflect 18th century forms of punctuation, including '=' rather than hyphens, glyphs rather than asterisks, etc.</p>
+        </punctuation>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2019-07-03" who="#jschaumberger">Added name @office</change>
+      <change when="2019-06-21" who="#JAKA1 #jschaumberger">Updated and added schematic specifities</change>
+      <change when="2018-12-07" who="#JAKA1">Removed note types</change>
+      <change when="2018-11-23" who="#JAKA1">Cleaned up ODD structure</change>
+      <change when="2018-11-15" who="#JAKA1">Extended English and German attributes</change>
+      <change when="2018-10-06" who="#JAKA1">Added English and German name attributes</change>
+      <change when="2018-09-30" who="#JAKA1">Added types for Faull's FA2018 HUMN100 course</change>
+      <change when="2017-12-30" who="#JAKA1">Creation of ODD to version 0.1</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Formal Declaration</head>
+        <schemaSpec ident="ML" start="TEI">
+          <!-- tei module sets up class structure, etc. -->
+          <moduleRef key="tei" />
+          <!-- analysis module, include only span -->
+          <moduleRef key="analysis" include="span" />
+          <!-- Include all of transcription -->
+          <moduleRef key="transcr" />
+          <!-- certainty module-->
+          <moduleRef key="certainty" include="certainty respons" />
+          <!-- core module, lots of things. -->
+          <moduleRef key="core" include="abbr add addrLine address author bibl biblScope cb choice cit citedRange corr date del desc editor email expan facs foreign gap gloss graphic head hi item
+            label l lb lg list listBibl measure milestone name note orig p pb ptr pubPlace publisher quote ref reg region relatedItem resp respStmt rs sic term textLang title unclear" />
+          <!-- Including only settingDesc and particDesc for the time being - may go back and add later -->
+          <moduleRef key="corpus" include="settingDesc particDesc" />
+          <!-- Include all of dictionaries for language processing, just in case -->
+          <moduleRef key="dictionaries" />
+          <!-- Include all of characters and glyphs for the time being - may go back and exclude some -->
+          <moduleRef key="gaiji" />
+          <!-- Include all of figures -->
+          <moduleRef key="figures" />
+          <!-- Include all header module -->
+          <moduleRef key="header" />
+          <!-- include all for linking module -->
+          <moduleRef key="linking" />
+          <!-- Include all of msdescription for now -->
+          <moduleRef key="msdescription" />
+          <!-- namesdates: include all for now -being explicit because the object tags are not yet introduced universally. -->
+          <moduleRef key="namesdates" include="addName affiliation age birth bloc climate country death district education event faith floruit forename genName geo geogFeat geogName langKnowledge
+            langKnown listEvent listNym listObject listOrg listPerson listPlace listRelation location nameLink nationality nym object objectIdentifier objectName occupation offset org orgName persName
+            person personGrp persona place placeName population region relation residence roleName settlement sex socecStatus state surname terrain trait" />
+          <!-- Include all of verse module -->
+          <moduleRef key="verse" />
+          <!-- tagsdoc module to include code -->
+          <moduleRef key="tagdocs" include="code" />
+          <!-- textstructure module -->
+          <moduleRef key="textstructure" include="TEI body byline closer dateline div docAuthor docDate floatingText group opener postscript salute signed text trailer" />
+          <!-- Do not include Graphs, networks, and trees (nets) unless we find we need it -->
+          <!-- Do not include Transcribed speech (spoken) unless we decide we want to customize distinction between ownhand and dictated -->
+          <!-- Do not include transcription module unless we decide we want to get more specific about describing the physical document-->
+          <!-- Do not include feature structures (iso-fs) unless we decide we need it -->
+          <!-- Do not include textcrit module unless we decide to compare versions of memoirs across archives -->
+          <!-- IMPORTANT: In order to accommodate complex semantic tagging regarding the Moravians with regard to emotion, events, health/illness, and occupation, 
+            we have customized the name element to include them as attributes in English and German.
+            the specifications are documented in English and German with @sameAs for the other language. If we find that additional languages are needed in the Moravian Lives tagging protocols, we will add them. 
+            ~Diane Jakacki, 11/06/2018 -->
+          <!-- div  - can't remember why I did this ....-->
+          <elementSpec ident="div" mode="change" module="textstructure"> </elementSpec>
+          <!-- CUSTOMIZATION: added emotion, event, health, occupation attributes / English. Wherever possible adding @sameAs to track parallels -->
+          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
+            <attList>
+              <attDef ident="ceremony" mode="change" sameAs="zeremonie" />
+              <attDef ident="emotion" mode="change" sameAs="gefühl" />
+              <attDef ident="event" mode="change" sameAs="ereignis" />
+              <attDef ident="health" mode="change" sameAs="beruf" />
+              <attDef ident="relation" mode="change" sameAs="verwandte" />
+              <attDef ident="occupation" mode="change" />
+              <attDef ident="office" mode="change"></attDef>
+            </attList>
+          </classSpec>
+          <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
+          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
+            <attList>
+              <attDef ident="beruf" mode="change" sameAs="health" />
+              <attDef ident="ereignis" mode="change" sameAs="event" />
+              <attDef ident="gefühl" mode="change" sameAs="emotion" />
+              <attDef ident="verwandte" mode="change" sameAs="relation" />
+              <attDef ident="zeremonie" mode="change" sameAs="ceremony" />
+            </attList>
+          </classSpec>
+          <!-- CUSTOMIZATION: added name:@event / English. Wherever possible adding @sameAs to track parallels -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="event" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="baptism" sameAs="taufe" />
+                  <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="conversion" sameAs="bekehrung" />
+                  <valItem ident="death" sameAs="tod" />
+                  <valItem ident="draw lot" sameAs="losen" />
+                  <valItem ident="marriage" sameAs="hochzeit" />
+                  <valItem ident="reception" sameAs="aufnahme" />
+                  <valItem ident="sacrament" />
+                  <valItem ident="interrment" />
+                  <valItem ident="communion" />
+                  <valItem ident="religious"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="ereignis" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="aufnahme" sameAs="reception" />
+                  <valItem ident="bekehrung" sameAs="conversion" />
+                  <valItem ident="geburt" sameAs="birth" />
+                  <valItem ident="hochzeit" sameAs="marriage" />
+                  <valItem ident="losen" sameAs="draw lot" />
+                  <valItem ident="taufe" sameAs="baptism" />
+                  <valItem ident="tod" sameAs="death" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@health / English. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="health" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="recovered" />
+                  <valItem ident="disease" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@occupation / English. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="occupation" mode="change">
+                <valList mode="add" type="semi">
+                    <valItem ident="clothier"/>
+                    <valItem ident="clothmaker"/>
+                    <valItem ident="husbandman"/>
+                    <valItem ident="farmer"/>
+                    <valItem ident="mason"/>
+                    <valItem ident="schoolmaster"/>
+                    <valItem ident="weaver"/>
+
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@office / English. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="office" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="acolyte" />
+                  <valItem ident="bishop" />
+                  <valItem ident="choir helper" />
+                  <valItem ident="choir labourer" />
+                  <valItem ident="deacon" />
+                  <valItem ident="deaconess" />
+                  <valItem ident="elder" />
+                  <valItem ident="eldress" />
+                  <valItem ident="general elder" />
+                  <valItem ident="general eldress" />
+                  <valItem ident="heathen worker" />
+                  <valItem ident="overseer" />
+                  <valItem ident="sick waiter" />
+                  <valItem ident="supervisor" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added event @death @cause -->
+          <elementSpec ident="death" mode="change">
+            <attList>
+              <attDef ident="cause" mode="change">
+                <valList mode="add" type="open" />
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@relation / English -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="relation" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="child" sameAs="kind" />
+                  <valItem ident="parent" sameAs="eltern" />
+                  <valItem ident="sibling" sameAs="geschwister" />
+                  <valItem ident="spouse" sameAs="ehepartner" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@verwandte / German -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="verwandte" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="ehepartner" sameAs="spouse" />
+                  <valItem ident="eltern" sameAs="parent" />
+                  <valItem ident="geschwister" sameAs="sibling" />
+                  <valItem ident="kind" sameAs="child" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@ceremony / English -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="ceremony" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="choir festival" sameAs="chorfest" />
+                  <valItem ident="foot washing" sameAs="fußwaschung" />
+                  <valItem ident="lovefeast" sameAs="liebesmahl" />
+                  <valItem ident="Mother Feast" />
+                  <valItem ident="religious gathering" sameAs="versammlung" />
+                  <valItem ident="singing hour" sameAs="singstunde" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@zeremonie /German -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="zeremonie" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="ältestenfest" />
+                  <valItem ident="chorfest" sameAs="choir festival" />
+                  <valItem ident="fußwaschung" sameAs="foot washing" />
+                  <valItem ident="liebesmahl" sameAs="lovefeast" />
+                  <valItem ident="singstunde" sameAs="singing hour" />
+                  <valItem ident="versammlung" sameAs="religious gathering" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added en, de to distinguish language for roleName, orgName, addName -->
+          <classSpec ident="att.naming" module="namesdates" type="atts" mode="change">
+            <attList>
+              <attDef ident="de" mode="change" />
+              <attDef ident="en" mode="change" />
+              <attDef ident="religion" mode="change"/>
+            </attList>
+          </classSpec>
+          <!-- CUSTOMIZATION: added objectName, object, and listObject to namesdates module - because TEI has not yet implemented objectName universally -->
+          <elementSpec module="namesdates" ident="att.typed" mode="add">
+            <attList>
+              <attDef ident="objectName" mode="change" />
+              <attDef ident="object" mode="change" />
+              <attDef ident="listObject" mode="change" />
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added addName:@en / English -->
+          <!-- NEED TO RETHINK THIS -->
+          <elementSpec ident="addName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="en" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="brother" sameAs="bruder" />
+                  <valItem ident="married couple" sameAs="geschwister" />
+                  <valItem ident="sister" sameAs="schwester" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added addName:@de / German -->
+          <elementSpec ident="addName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="de" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="bruder" sameAs="brother" />
+                  <valItem ident="geschwister" sameAs="married couple" />
+                  <valItem ident="schwester" sameAs="sister" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added orgName:@en / English -->
+          <elementSpec ident="orgName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="en" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="childrens choir" sameAs="kinderchor" />
+                  <valItem ident="congregation" sameAs="gemeine" />
+                  <valItem ident="disciple's house" sameAs="jüngerhaus" />
+                  <valItem ident="œconomy" sameAs="œconomie" />
+                  <valItem ident="greater boys choir" sameAs="große knaben" />
+                  <valItem ident="greater girls choir" sameAs="große maedchen" />
+                  <valItem ident="married choir" sameAs="ehechor" />
+                  <valItem ident="pilgrim congregation" sameAs="pilgergemeine" />
+                  <valItem ident="pilgrim's house" sameAs="pilgerhaus" />
+                  <valItem ident="sea congregation" sameAs="seegemeine" />
+                  <valItem ident="single brothers choir" sameAs="ledige brueder" />
+                  <valItem ident="single sisters choir" sameAs="ledige schwestern" />
+                  <valItem ident="synod" sameAs="synode" />
+                  <valItem ident="widows choir" sameAs="witwenchor" />
+                  <valItem ident="widowers choir" sameAs="witwerchor" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: added orgName:@religion / English -->
+          <elementSpec ident="orgName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="religion" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="Anglican"></valItem>
+                  <valItem ident="Quaker"></valItem>
+                  <valItem ident="Presbyterian"></valItem>
+                  <valItem ident="Lutheran"></valItem>
+                  <valItem ident="Roman Catholic"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          
+          <!-- CUSTOMIZATION: added orgName@de / German -->
+          <elementSpec ident="orgName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="de" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="œconomie" sameAs="œconomy" />
+                  <valItem ident="ehechor" sameAs="married choir" />
+                  <valItem ident="gemeine" sameAs="congregation" />
+                  <valItem ident="große knaben" sameAs="greater boys choir" />
+                  <valItem ident="große maedchen" sameAs="greater girls choir" />
+                  <valItem ident="jüngerhaus" sameAs="disciple's house" />
+                  <valItem ident="kinderchor" sameAs="childrens choir" />
+                  <valItem ident="ledige brueder" sameAs="single brothers choir" />
+                  <valItem ident="ledige schwestern" sameAs="single sisters choir" />
+                  <valItem ident="pilgergemeine" sameAs="pilgrim congregation" />
+                  <valItem ident="seegemeine" sameAs="sea congregation" />
+                  <valItem ident="synode" sameAs="synod" />
+                  <valItem ident="witwenchor" sameAs="widows choir" />
+                  <valItem ident="witwerchor" sameAs="widowers choir" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: added roleName@en / English - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
+          <elementSpec ident="roleName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="en" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="sister" />
+                  <valItem ident="brother" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added roleName@de / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
+          <elementSpec ident="roleName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="de" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="accoluth" />
+                  <valItem ident="almosenpfleger" />
+                  <valItem ident="ältester" />
+                  <valItem ident="ältestin" />
+                  <valItem ident="aufseher" />
+                  <valItem ident="bischof" />
+                  <valItem ident="chorarbeiter" />
+                  <valItem ident="chorhelfer/chorpfleger" />
+                  <valItem ident="diener/diaconus" />
+                  <valItem ident="dienerin/diaconisse" />
+                  <valItem ident="ermahner" />
+                  <valItem ident="generalältester" />
+                  <valItem ident="generalältestin" />
+                  <valItem ident="heidenarbeiter" />
+                  <valItem ident="krankenwärter" />
+                  <valItem ident="lehrer" />
+                  <valItem ident="saaldiener" />
+                  <valItem ident="vorsteher" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: Adding cause to date -->
+          <classSpec ident="att.datable.iso" module="core" type="atts" mode="change">
+            <attList>
+              <attDef ident="cause" mode="change" />
+            </attList>
+          </classSpec>
+          <!-- CUSTOMIZATION: added date:@cause / English (Also avaliable for others such as roleName. Could not figure out how to only have it for date) -->
+          <elementSpec ident="date" mode="change" module="core">
+            <attList>
+              <attDef ident="cause" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="unkown" />
+                  <valItem ident="disease" />
+                  <valItem ident="natural causes" />
+                  <valItem ident="injury" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added date:@calendar / English -->
+          <elementSpec ident="date" mode="change" module="core">
+            <attList>
+              <attDef ident="calendar" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="Julian" />
+                  <valItem ident="Gregorian"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added hi:@rend superscript, italic, underscore, strikethrough to hi @rend -->
+          <elementSpec ident="hi" mode="change" module="core">
+            <attList>
+              <attDef ident="rend" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="superscript" />
+                  <valItem ident="italic" />
+                  <valItem ident="underline" />
+                  <valItem ident="strikethrough"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+            <!--<elementSpec ident="office" mode="add">
+            <gloss>Office details</gloss>
+            <desc>Contains information on a person's held office within the Moravian Church</desc>
+            <classes>
+              <memberOf key="model.persStateLike"/>
+              <!-\-<memberOf key="att.global"/>
+              <memberOf key="att.global.rendition"/>
+              <memberOf key="att.global.linking"/>
+              <memberOf key="att.global.analytic"/>
+              <memberOf key="att.global.facs"/>
+              <memberOf key="att.global.change"/>
+              <memberOf key="att.global.responsibility"/>
+              <memberOf key="att.global.source"/>
+              <memberOf key="att.datable"/>
+              <memberOf key="att.datable.w3c"/>
+              <memberOf key="att.datable.iso"/>
+              <memberOf key="att.datable.custom"/>
+              <memberOf key="att.editLike"/>
+              <memberOf key="att.naming"/>
+              <memberOf key="att.canonical"/>
+              <memberOf key="att.typed"/>-\->
+              
+              <memberOf key="att.global.attributes"/>
+                <memberOf key="att.global.rendition.attributes"/>
+                  <memberOf key="att.global.linking.attributes"/>
+                    <memberOf key="att.global.analytic.attributes"/>
+                      <memberOf key="att.global.facs.attributes"/>
+                        <memberOf key="att.global.change.attributes"/>
+                          <memberOf key="att.global.responsibility.attributes"/>
+                            <memberOf key="att.global.source.attributes"/>
+                              <memberOf key="att.datable.attributes"/>
+                                <memberOf key="att.datable.w3c.attributes"/>
+                                  <memberOf  key="att.datable.iso.attributes"/>
+                                    <memberOf  key="att.datable.custom.attributes"/>
+              <memberOf key="att.editLike.attributes"/>
+              <memberOf key="att.naming.attributes"/>
+              <memberOf key="att.canonical.attributes"/>
+              <memberOf key="att.typed.attribute.subtype"/>
+              <memberOf key="teidata.enumerated"></memberOf>
+              <memberOf key="teidata.pointer"></memberOf>
+              <memberOf key="tei"></memberOf>
+             
+              <memberOf key="macro.specialPara"/>
+            </classes>
+              
+              
+            
+            
+            
+          </elementSpec>-->
+            
+          
+           
+          
+       
+          <!-- end of schema -->
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>

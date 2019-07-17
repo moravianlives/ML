@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Elizabeth Grundy: Memoir</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Social Sciences Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Courtney Paddick</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Arts &amp; Humanities Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Transcribers and encoders, HUMN100 Fall 2018</resp>
+               <persName>Allison Butler</persName>
+               <persName>Bhagawat Acharya</persName>
+               <persName>Brendan Matthys</persName>
+               <persName>Caleb Broughton</persName>
+               <persName>Carly Pavoni</persName>
+               <persName>Caroline Walsh</persName>
+               <persName>Clayton Wright</persName>
+               <persName>Ethan Conklin</persName>
+               <persName>George Tyler</persName>
+               <persName>Hailey Zimmerman</persName>
+               <persName>Jacob Hubbard</persName>
+               <persName>Jessica Hom</persName>
+               <persName>Julianna Kim</persName>
+               <persName>Mauricio Martinez</persName>
+               <persName>Mitch Gavars</persName>
+               <persName>Meg Koczur</persName>
+               <persName>Morgan Graning</persName>
+               <persName>Nathan Ware</persName>
+               <persName>Olivia Smith</persName>
+               <persName>Paige Whitney</persName>
+               <persName>Raleigh Singer</persName>
+               <persName>Rosemary Rong</persName>
+               <persName>Samantha Salazar</persName>
+               <persName>Zakee Willis</persName>
+               <orgName>Bucknell University</orgName>              
+            </respStmt>   
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Moravian Archives, London</repository>
+                  <msName type="memoir">Elizabeth Grundy</msName>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-01.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-02.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-03.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-04.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-05.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-06.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-07.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-08.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-09.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-10.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-11.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-12.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-13.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-14.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-15.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-16.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-17.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-18.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-19.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-20.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-21.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-22.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300023-23.jpg" />
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text type="memoir">
+      <body xml:lang="en">
+         <div type="memoir">
+            <head>Elizabeth Grundy</head>
+            <div type="page" n="1">
+               <head>Page 1 <seg ana="MemLon_300023-01" />
+               </head>
+               <p>
+                  Page 1:
+                  -Vo.10. G. Gd          Life           I. Holmes
+                  of the widow Sr. Elizabeth Grundy, late Alvd,
+                  who departed thei life at Nayldon in York-
+                  shire, May the 9th 1799.
+                  She has dictated the following account of her
+                  life to her son, our Br. James Grundy:
+                  I was born February 6. 1717. near Chowbent
+                  in the parish of Leigh in Lancashire, and
+                  brought up in the Presbyterian persuasion.
+                  My parents were very pious, and educated their
+                  children with great strictness. I was the youn-
+                  gest of their daughters. Whenever I did any
+                  thing amiss, my mother used to preach the Law
+                  to me, which made me look upon God as an an-
+                  gry Being. In my 8th year that I had the follow-
+                  ing dream: I dreamed it was the day of judg-
+                  ment, and I saw an innumerable multitude
+                  around me. I wished to see our Savior but was
+                  afraid of being seen by him; however, as I thought,
+                  I moved forward, and thrust myself between 
+                  two persons to have a right of him. This I had
+                  no sooner done than he turned to me, as he 
+                  was sitting at a table, and smiled. Hereby I was
+                  to much encouraged, that I went strait up to
+                  him, and now I saw two books lying before
+               </p>
+            </div>
+            
+            <div type="page" n="2">
+               <head>Page 2 <seg ana="MemLon_300023-02" />
+               </head>
+               <p>
+                  him. One of them he opened, which I took to be the
+                  book of life, as it appeared written with blood. Upon
+                  this I awoke, but the dream left an impression
+                  upon my mind, that our Savior was very loving
+                  however, I left it again by having the law prea-
+                  ched to me. Thus I spent my years of child-
+                  hood like most others. I wanted to be good,
+                  but could not. Still I depended much on be-
+                  ing born of religious parents, as being the seed 
+                  of the righteous, upon which the Presbyterians
+                  of that day laid great stress.
+                  My father dying in my 12th year, my mother
+                  was left to care for our education, and to provide
+                  for our maintenance. The latter she did by kee-
+                  ping a school, and the former she performed in
+                  the strictest manner, and she sometimes cor-
+                  rected us very sharply, as she took Solomon’s
+                  words for her rank: "He that shareth the rod,
+                  hateth his son '_' Train up a child in the way
+                  he should go, and when he is old he will not de-
+                  part from it."
+                  Before my fathers death I had a fever, which,
+                  with occasional intermissions, lasted 18 weeks,
+                  but I always thought I should recover. 
+                  When I was 14 years old I went to nurse a child
+                  of a relation; and going on to see my mother
+                  our Savior drew me in to my heart on the road:
+               </p>
+            </div>
+            
+            <div type="page" n="3">
+               <head>Page 3 <seg ana="MemLon_300023-03" />
+               </head>
+               <p>
+                  and in my prayer I addressed him as the God of
+                  Abraham, Isaac and Jacob. It came into my
+                  mind to make a covenant with him, and then
+                  being some stones in the place, I took them for
+                  a witness of it. But I soon broke this covenant,
+                  for getting into company I lived like others,
+                  yet my conscience always condemned me.
+                  Thus I formed good resolutions and as often brake
+                  them again; still the Lord pursued me with
+                  infinite patience.
+                  In my 22nd year I comenced  commenced school keeping
+                  under the inspection of the Revd. Mr. Valentine,
+                  a Presbyterian Minister. He being an Arian,
+                  tho not of the worst soul, I imbibed some of his
+                  principles. I argued with my mother about
+                  Predestination, and their great show of religion;
+                  and told her, among the rest, that thou who
+                  held that doctrine were hypocrites. This made
+                  her examine herself, as she told me of on her
+                  deathbed, thanking me for it and declaring
+                  that she had found my observation true with
+                  regard to herself. During her last illness she
+                  felt great condemnation, all her sins appea-
+                  ring to her view, which made her turn to our
+                  Savior and cry out: "Dear Savior, where is
+                  thy precious blood, that blood which thou did/
+               </p>
+            </div>
+            
+            <div type="page" n="4">
+               <head>Page 4 <seg ana="MemLon_300023-04" />
+               </head>
+               <p>
+                  shed to cleanse me from my sins?" Scarce
+                  had she uttered this ejaculation, when our Sa-
+                  vior appeared to the eye of her faith, in his 
+                  bleeding attitude, which the soldier opened his
+                  side with the spear, and she felt as it were
+                  his blood trickling upon her heart. Now she
+                  was enabled to rejoin in God our Savior. Short
+                  ly before her end she said: "Come, Lord Jesus,
+                  come quickly," and then fell asleep in Jesus
+                  with a lovely smile upon her countenance.
+                  Her happily departure made so deep an impres-
+                  sion upon me that I could never forget it,
+                  at the same time begetting a strong desire
+                  within me, to profess real religion; but to
+                  this the vanities of the world proved a great
+                  hindrance. Nevertheless, my mind was strong-
+                  ly convicted of my folly; one night in par-
+                  ticular, which at a dance, I was so terrified, 
+                  that I was obliged to withdraw, being struck
+                  with the reflection, what would become
+                  of me, if I should be cut off in that state.
+                  Another time I was so alarmed at my situation
+                  that I went to the above mentioned minister
+                  after midnight and called him up; but he told
+                  me that I had nothing to fear, as I had always
+                  been a good woman, and that God was merciful
+                  and would not mark iniquity so strictly.
+               </p>
+            </div>
+            
+            <div type="page" n="5">
+               <head>Page 5 <seg ana="MemLon_300023-05" />
+               </head>
+               <p>
+                  Thus I was rightly served for having applied
+                  to him instead of our Savior. I expected he would
+                  have put me in the way of doing something
+                  whereby to merit heaven; but instead of this,
+                  he addressed me to put it off by going into cheer-
+                  ful company, lest I should grow melancholy.
+                  I foolishly took his advice, endeavoring to shake
+                  off conviction as much as possible. In this
+                  way I proceeded till I was married, and even
+                  after that, for a while, followed the fashions of
+                  the world. But, my husband, being a religious 
+                  member of the church of England, protested against
+                  that mode of living. His Minister being an un-
+                  awakened man and performing divine service
+                  only in the morning, we went in the afternoon
+                  to a Baptist chapel. Under a sermon in that
+                  place on the words: "Almost thou persuadest
+                  me to be a Christian," we were both so affected
+                  that we wept, which the Minister showed, how far
+                  a person may go, and yet be only almost a
+                  christian. We continued to hear him till the
+                  birth of my first child, when he wanted to per-
+                  suade us not to have it baptized, to which my
+                  husband would by no means agree. My hus-
+                  band read frequently in the New Testament
+                  and when he loved the book, used to say : "I
+               </p>
+            </div>
+            
+            <div type="page" n="6">
+               <head>Page 6 <seg ana="MemLon_300023-06" />
+               </head>
+               <p>
+                  thank God for Paul's Epistles; best this of
+                  my taste at that to live, for I would rather 
+                  read of Goliath, Lampoon, Joseph, he's brethren
+                  on of battles; however he continued reading 
+                  Paul's Epistles, without minding one.
+                  My husband being an officer is the exercise
+                  his duty was frequently too hard for, so
+                  that he was often ailing. In January 1749.
+                  he ever taken seriously ill, and sent, that
+                  he should like to deposit, adding, thou am
+                  happy, who can soon leave the world in
+                  peace.  I complained that he had lost
+                  his regard for me, but he assured me,
+                  that his love for me was not decreased;
+                  but he saw nothing in this world worth existing
+                  to stay in it for. I then asked him,
+                  'whether he was first to leave?' He replied,
+                  "All my fitness is what Jesus Christ did for
+                  we on the cross." This I did not then under-
+                  stand. In that state of heart he departed,
+                  which was accompanied with such a happy
+                  feeling, as filled me with astonishment.
+                  His death took place Feb. 22, 1748. In the
+                  29th year of his age.
+                  After his Departure, their words: "I will be
+                  a husband to the widow, and a father to the fa-
+                  therly", were interpreted upon my mind; you
+               </p>
+            </div>
+            
+            <div type="page" n="7">
+               <head>Page 7 <seg ana="MemLon_300023-07" />
+               </head>
+               <p>
+                  I was full of disbelief and not say, "Thy
+                  will be done." Then I was left with out house
+                  or home, having one child, called William, and 
+                  far advanced in pregnancy with another. I 
+                  soon set off for my native plan, which was
+                  200 miles different, and travelled on foot nine 
+                  days, in frost and snow. On the arrival at
+                  the home of one of my sisters, my husband's
+                  father sent for me and took me into his 
+                  family.  Here I was in about three weeks
+                  brought to bed of my son, James, with whom
+                  I now live, and who is a member of the brother
+                  church and one of their preachers.
+                  After the birth of my son, confidently that 
+                  he had now no father to care for him, it was
+                  as tho' our savior stood at my bed side and com-
+                  forted me. I laid my hand on the childs'
+                  head and devoted him to the Loved and his ser-
+                  vice and to the entirety his. This ever accom-
+                  panied with the deepest sensation I had ever 
+                  had of the presence of Jesus, and yet it was
+                  as if he said to me, "Thou does not know me
+                  yet." Indeed I did not know him, even by the 
+                  name of Jesus, but only as the God of Abra-
+                  ham, Isaac and Jacob; and when I did a-
+                  gain and again, I found no comfort; but
+               </p>
+            </div>
+            
+            <div type="page" n="8">
+               <head>Page 8 <seg ana="MemLon_300023-08" />
+               </head>
+               <p>
+                  at last, it was impressed on end to call
+                  when Jesus, which I did, saying, "Lend Jesus
+                  have mercy upon me!" No sooner had I cal-
+                  led upon him by that name, them my condem-
+                  nation was all taken away, and I rejoiced
+                  wondering at there at the same time, that I had read
+                  my Bible so often, and had never called u-
+                  pon Jesus before. Now then words came
+                  into my mind, "He shall be called Jesus, for
+                  he shall save his people from their sins, and
+                  I rejoiced in God my Savior.  This impression 
+                  was so deeply fixed in my heart, that when  
+                  relieving to rest, I always looked to him in
+                  spirit on hanging of, on the cross.
+                  For sometime after, I had been concerned 
+                  for my salvation, and now I felt delirious 
+                  to be connected with a people of God. In
+                  this view I went to bear the Methodists, loo-
+                  king upon the, as a people of God.  I read
+                  Mr. Whitfield's Sermon and saved several
+                  of Mr. Wesley's preachers. I joined the Me-
+                  thodists, and with great Zeal frequented their
+                  meetings tho I had sometimes to walk
+                  four miles in the dark. But by and bye,
+                  observing how they differed among themselves
+                  about points of doctrine, I left them,
+                  thinking they were not a people of God.
+               </p>
+            </div>
+            
+            <div type="page" n="9">
+               <head>Page 9 <seg ana="MemLon_300023-09" />
+               </head>
+               <p>
+                  because they were not of one heart and mind.
+                  About this time I heard of the Brethren,
+                  getting my first impressions of them by 
+                  means of their hymn book of which I was ve-
+                  ry fond, especially of that hymn: 
+                  "O tell me no more of this world's veins story;
+                  The time for such trifles with me now is o'er.
+                  I wished much to know, where to find thou
+                  people, who had published their hymns. At
+                  lengths I learned that they had a chapel in
+                  Dierkenfield, and that they were expected
+                  soon to preach at a home in Thackerley, a
+                  with different from when I live. I waited
+                  with the greatest pleasure and satisfaction  
+                  and spent the whole day in his company.
+                  Indeed I received him in another Apostle
+                  Paul.  Immediately thought, "this people
+                  shall be my people, their God my God, with 
+                  them. I will live and die and be buried"; and 
+                  of this resolution I never repented. This
+                  was fulfilled what my dear late mother
+                  said to me, shortly before her departure
+                  for calling me alone to her bedside she said: 
+                  "I have waited with our savior, and was
+               </p>
+            </div>
+            
+            <div type="page" n="10">
+               <head>Page 10 <seg ana="MemLon_300023-10" />
+               </head>
+               <p>
+                  assured that thou shall be his and belong to the
+                  people of God, but what people and where and 
+                  when I cannot tell; but it will not be yet; 
+                  After this Mr. Valentine, the abovementioned
+                  Arian Minister, told me, I had changed for the
+                  women by joining the Brother. I sent him the 
+                  nine discourses on Christ's Divinity, by Count
+                  Zinzendorf; but they did not please him. Soon
+                  after he fell sick; I felt great concern for
+                  him and went often to converse with him.
+                  whenever I mentioned anything about the 
+                  discourses I sent him, he was out of patience
+                  and desired me to visit him no more; neverthe-
+                  less, I told him, that I was concerned for him
+                  and should call again to see him.  However
+                  stayed away for sometime, but hearing that
+                  he grew very weak, I resolved to visit him a-
+                  gain, as I felt very anxious about his happi-
+                  ness. Coming to his home I was informed by
+                  his daughter, that he endured her to suffer
+                  more to come to him, not even his own chil-
+                  dren.  I therefore sent my love to him, which
+                  was ongoing after his health.  This being deli-
+                  vered, he desired his daughter to send me to him,
+                  as he wished to see me.  When I came to his
+                  bed side, he put out his hands to me, and ap-
+                  peared like an affectionate, loving child, and 
+                  said "We have had many arguments, but
+               </p>
+            </div>
+
+            <div type="page" n="11">
+               <head>Page 11 <seg ana="MemLon_300023-11" />
+               </head>
+               <p>
+                  now I know that Jesus Christ is my Savior." I re-
+                  plied. " He is a Savior to them that believe." To
+                  this he replied: "I do believe, and I have no me-
+                  rit of my own; but trust alone in my Savi-
+                  or's death and merits. There is something to
+                  go through in death, but the prophet beyond it
+                  is bright; but I cannot say much, I was very
+                  weak. "We then took a tender leave of each other,
+                  and soon after he departed in peace.
+                  My oldest son, William, died the same year,
+                  after a long illness.  Shortly before his departure,
+                  being very sensible of his approaching dissolution, 
+                  he called on to his bed, expected his desire to
+                  go to Jesus, bade each other farewell, and looked his 
+                  eyes and fell happily asleep in the Lord, in 
+                  the 7th year of his age. 
+                  In 1755 a congregation of the Brother was settled at
+                  Dierkenfield, at which solemnity I was profound
+                  and my heart was offered like that of Lydia.
+                  From that time connection with the church of 
+                  the Brethren became very weighty to me and has re-
+                  mained so ever since, one which account I was
+                  the more greived at not being received a mem-
+                  ber of them; this favour was, however,
+                  granted me the year following.
+                  At Thackeray, I opened a little shop for my man
+                  and had a good prophet of doing well;
+                  but feeling my heart in danger of being drawn
+               </p>
+            </div>
+            
+            <div type="page" n="12">
+               <head>Page 12 <seg ana="MemLon_300023-12" />
+               </head>
+               <p>
+                  away by worldly prosperity, and being afraid of
+                  losing by any means that happiness, which
+                  was then and has been ever since of the last im-
+                  portance to me, I gave my shopkeeping in the
+                  midst of prosperity, and these words of our savior
+                  followed me continually, "What shall it profit
+                  a man, tho' he gains the whole world and loves
+                  his own soul." And I think it would because
+                  for many, even members of the Brethren church, 
+                  of this was barely considered. I can say with
+                  truth, that from that day to this, our savior,
+                  and fellowship with his people have been more
+                  important to me than anything else in
+                  the world.
+               </p>
+               <p>
+                  In August 1756. I moved to Dukenfield, as
+                  a member of that congregation. Here I found it very
+                  difficult to come through. I had not only to go
+                  twenty miles for the work, by which I earned a
+                  livelihood, but the necessities of life, parti-
+                  cularly bread ran to double the price, they had
+                  been sold for a fifth before. Yet I never re-
+                  pented of having moved hither, but was con-
+                  tent and happy with a small portion of
+                  very mean, fare; and my son, who was now
+                  nine years old, was the same. Our savior
+                  abundantly blessed us internally, and we
+                  spent our time, while at work, with singing
+                  of Him and his sufferings, being enabled to
+                  take our refuge to him in all our circumstances.
+               </p>
+            </div>
+            
+            <div type="page" n="13">
+               <head>Page 13 <seg ana="MemLon_300023-13" />
+               </head>
+               <p>
+                  When things were at the worst we would sing:
+                  "As small birds are - a hole to cheer
+                  In hollow trees for cover,
+                  When whirlwinds blow - when hail and snow
+                  O'er man and beast do hover:
+                  So I to then, - Lord Christ, do flee,
+                  Within thy wounds retired;
+                  When sin and death - did stop my breath,
+                  Here I again reposed."
+                  This time was indeed a blessed period.
+                  In January 1758. I had the favour to par-
+                  take of the H.C. for the first time in the
+                  Brethren church. I felt so unworthy of it, that
+                  I hardly durst venture;
+                  "Heav'nly joy and holy trembling
+                  I felt in me past dissembling."
+                  This divine repast proved a great blessing to me.
+                  Hitherto I had been in a certain rapturous
+                  way, which in some measure was there more
+                  looked for, them a sinners' believing reliance
+                  on the all sufficient merit and atonement
+                  of Christ. I had made a fine covenant with
+                  our savior to be his in all circumstances, both
+                  adverse and prosperous, not questioning but I
+                  could stand any trial, for I fear, that he had
+                  possession of my heart, and I had an assurance
+                  that he would safely lead me. Not withstand-
+               </p>
+            </div>
+            
+            <div type="page" n="14">
+               <head>Page 14 <seg ana="MemLon_300023-14" />
+               </head>
+               <p>
+                  ding this I had soon after a severe trial, which
+                  was augmented by my want of self knowledge.
+                  Falling sick and feeling myself very poor, and full
+                  of unbelief, I began to question the love of our
+                  Savior, thinking, if the Lord be with me, why
+                  am I thus? Hitherto I had imagined that belie-
+                  vers had a fund of support within themselves,
+                  so that I thought, it was inconsistent with a 
+                  child of God to have any doubts and fears. Thus
+                  I was so confounded as to be almost driven to
+                  despair, and because like a shipwrecked mariner,
+                  thrown at once from the pleasing prosperity
+                  the promised land upon a desolate rock, where
+                  nothing appeared but horror &amp; devastation.
+                  The gloom, which had thus overspread me, con-
+                  tinued a good while, and tho' I had frequent
+                  visits from our Savior, still I could not re-
+                  gain my cheerfulness, for I had not yet lear-
+                  ned to cleave daily by faith as a needy sinner
+                  to Jesus. Indeed this point was not then so
+                  well moderated by some of us, as it has been
+                  since; After it was expected that a child of God
+                  should be cheerful and happy without any in-
+                  terruption, and this idea afforded me suffici-
+                  ent cause for self condemnation. But since
+                  then I have learned to know more of the
+                  privilege, enjoyed by a believer, of turning
+                  with all his selfishness, to our Savior and finding
+               </p>
+            </div>
+            
+            <div type="page" n="15">
+               <head>Page 15 <seg ana="MemLon_300023-15" />
+               </head>
+               <p>
+                  in him a present help in time of need, which
+                  is an inexhaustible fund, where we may take
+                  grace for grace, and not look for it in any
+                  of our own attainments.
+                  Some time after I was appointed to begin
+                  a school for girls in Dukenfield, which
+                  gave me great confidence in our Savior,
+                  considering it as an answer to my prayer;
+                  for I was at times so full of unbelief, that
+                  I thought myself beneath his notice. I opened
+                  this school with eleven girls, children of some
+                  of the Brethren church, and continued it fifteen
+                  years. This was a happy period both for me
+                  and the children, several of the latter after-
+                  wards became members of the Congregation and
+                  likewise some of their parents.
+                  At length, not being able to procure a proper
+                  place for my school, and having to give up the
+                  hours I had hitherto occupied, I was, to my
+                  great grief, obliged to drop it. In conse-
+                  quence of various disagreeable occurrences,
+                  it appeared as if the time for my conti-
+                  nuing the school was over.
+                  About this time my son, whom from his
+                  birth I had entirely devoted to our Savior,
+                  moved into the Brethren house in Dukenfield,
+               </p>
+            </div>
+            
+            <div type="page" n="16">
+               <head>Page 16 <seg ana="MemLon_300023-16" />
+               </head>
+               <p>
+                  in the year 1760, and in 1766. He went to Ful-
+                  neck, This last removal went very near me,
+                  but I durst not stand in our Savior's way, be-
+                  lieving it would be for the best.
+                  Having lodged for sometime with a private
+                  family [at some distance] from Dukenfield, who behaved very
+                  well to me, I began to grow tired of having
+                  so far to go to the meeting. I therefore,
+                  sought leave to live in Fulneck, which I
+                  obtained. I went thither in 1778, and lodged
+                  as a visitor in the widow's house. Here I had
+                  to learn a new business, for the sake of earn-
+                  ing a livelihood, which made it heavy
+                  to me in the beginning, and I was at times
+                  unhappy in my mind. But the chief reason
+                  of all my distress was, that I did not in every
+                  circumstance turn as a poor sinner to our Sav-
+                  ior; He, However, at length, enabled me, con-
+                  confidently to come to him, as my unchangea-
+                  ble friend, who had always approved himself
+                  to me as my merciful Believer and Savior.
+                  I was much assisted at this time by the
+                  advice given me by a certain Brother, who
+                  with the tenderness of a father encoura-
+                  ged me, assuring me that I would gradu-
+                  ally regain my wounded cheerfulness; and
+                  this I found verified. But what gave me
+                  comfort above all other things, in my greatest
+               </p>
+            </div>
+            
+            <div type="page" n="17">
+               <head>Page 17 <seg ana="MemLon_300023-17" />
+               </head>
+               <p>
+                  trials, was the imperfection that my Savior had
+                  died for me, and this, I trust will remain so
+                  unto the end. I say indeed from my inmost soul:
+                  "His death and passion ever,
+                  Till soul and body sever,
+                  Shall in my heart engraved remain."
+                  This has been indelibly impressed upon my
+                  mind, ever since he first manifested himself
+                  to my soul as my Redeemer.
+                  In May 1780. my son received a call to begin
+                  a school and care for the Brethren Society in
+                  Bayldon. In consequence of this he married.
+                  My daughter in less growing consumption after
+                  her first delivery, moved for her health to her pa-
+                  rents in Huddersfield, where she departed this
+                  life, and the child soon followed her into eternity.
+                  I therefore went to live with my son in Octo-
+                  ber 1787. and began a school for girls; and in
+                  this situation I have remained till now, when
+                  I live in daily expectation to be dismissed
+                  from all labour and sorrow, eternally to rest
+                  and rejoice in the presence of my God &amp; Savior.
+                  In this place a new period in my life com-
+                  menced, and I learned to know, more than ever,
+                  that I must lean on my Savior, and him only.
+                  It was clear to me that I had a call to Bayl-
+                  don, and that I was in my proper place when
+                  teaching school; our Savior who often visited
+               </p>
+            </div>
+            
+            <div type="page" n="18">
+               <head>Page 18 <seg ana="MemLon_300023-18" />
+               </head>
+               <p>
+                  me and blessed my endeavors. I became more
+                  stripped of my self righteousness, and learned to 
+                  rely more fully on the merit and faithfulness
+                  of Jesus, in all circumstances for which I 
+                  can never thank him sufficiently. Neverthe-
+                  less I now and then got into a way of self  
+                  , which caused me no small anxiety:
+                  but my all merciful Savior has helped me
+                  and been very gracious to me, amid it all
+                  my infirmities of soul and body. I have often
+                  been troubled with needless perplexities when 
+                  reflecting on old age, and how I should get a 
+                  maintenance in that case; for I was always
+                  afraid of being burdensome; which I have never
+                  been to anyone, not even when I had two 
+                  children to support by my own hand-labour.
+                  But in this respect also the Lord has been
+                  better than my fears and put me to shame,
+                  by prospering my endeavors, so that I have
+                  more abundance now in my 83rd year, than 
+                  I have has at any time, since I became 
+                  a widow, which is 51 years: and I cannot
+                  but acknowledge it as a singular favor,
+                  that I am able, tho' in much weakness,
+                  to teach children as well as ever in any 
+                  part of my life; so that my old age has
+                  been signally favored with respect both 
+                  to external and internals; for which I 
+               </p>
+            </div>
+            
+            <div type="page" n="19">
+               <head>Page 19 <seg ana="MemLon_300023-19" />
+               </head>
+               <p>
+                  feel myself excited to the greatest grati-
+                  tude to my Savior.
+                  The above account of her life she dictated
+                  to her Son a short time before her end.
+                  She was mind beloved and respected by all who
+                  knew her both here and at Duckenfield, and
+                  had proved a blessing to many. Soon after her 
+                  arrival at Bayldon, she heard of an old lady,
+                  in one of whose tenements we had our former
+                  meeting place, one of our Brethren occupy-
+                  ing the house; but being unfriendly and pre
+                  judiced against us. she gave us warning to 
+                  quit the premises, which proved the occasions
+                  of our building the present small chapel
+                  and schoolhouse. Our late sister verified this
+                  lady and by means of her conversations gained
+                  her entire affection and confidence. The old
+                  lady became sensible of her lost condition, 
+                  sought for grace a the commission of sins
+                  thro' the atoning blood of Jesus, which she
+                  also found and departed this life in peace.
+                  She was greatly interested in the prosperity
+                  of the Society at Bayldon, and when her son 
+                  and the preacher, who occasionally attended
+                  there from. Fulneck, where ready to lou con-
+                  verge ​​​​​​​by the small number who came to the 
+               </p>
+            </div>
+            
+            <div type="page" n="20">
+               <head>Page 20 <seg ana="MemLon_300023-20" />
+               </head>
+               <p>
+                  chapel, and the apparent want of fruit to choir
+                  labours, as for some years there had been no in-
+                  crease to the Society, but rather a diminution
+                  in member, owing to the departure of several
+                  of the first member; she animated them to 
+                  do their part faithfully, saying the Lord would
+                  not be wanting on his side, adding: "You will
+                  see (better) brighter Days, after I am gone."*.
+                  <!-- Is this a footnote? -->
+                  *Their expectation was strikingly verified.
+                  At the funeral oration, previous to their-
+                  terment, which I was favoured to Deliver on
+                  May 15. 1799. I had the please to see
+                  all the seats in the chapel occupied, tho'
+                  it was at the early hour of 7 in the morn-
+                  ing, to gain time for conveying her re-
+                  mains to Fulneck, where she wished to be
+                  interred, and which is at the distance of
+                  8 miles. The numerous procession, which 
+                  followed her by high and low in Bayldon. And
+                  when on Lord's Day, June 9, I again offi-
+                  ciated there, and previous to the after-
+                  noon sermon, read the above narration
+                  of her life, the meeting place was crowded
+                  and many stood before the door. From
+                  that time the preachings continued 
+                  ​​​​​​​to be numerously attended, so that the
+               </p>
+            </div>
+                  
+                  <div type="page" n="21">
+                     <head>Page 21 <seg ana="MemLon_300023-21" />
+                     </head>
+                     <p>
+                        She had for many years been troubled with a 
+                        violent cough, which sometimes deprived her
+                        of natural rest; yet she never murmured,
+                        lest her complaint be ever so great; but al-
+                        ways prayed for resignation, and relied on
+                        Him, who had never forsaken or disappoin-
+                        ted her. 
+                        <lb/>
+                        Her son saying to her on the Day of her 
+                        Departure: "My Dear mother, I wish our Sa-
+                        vior would raise you up even more;" she
+                        replied: "Do not keep me back, let me go
+                        freely; it will be best for me now; I want
+                        to be gone and to see my Dear Savior."
+                        At noon, her son wishing her to take some
+                        <lb/>
+                        **
+                        <lb/>
+                        chapel was found too small, and the founda-
+                        tion stone for a new one was laid March.28.1806.
+                        The Society also increased. A few weeks after 
+                        her Departure 8 new members were added to 
+                        the same. At her Death their number was 17.
+                        exactly as many as she found in connexi-
+                        on with the Brethren, other find coming
+                        to Bayldon. And when I left Yorkshire
+                        in 1804, their  number was between 40&lt;50.
+                           and I learn by letters that they continued to
+                           increase in number and grace.
+                     </p>
+                  </div>
+                  
+                  <div type="page" n="22">
+                     <head>Page 22 <seg ana="MemLon_300023-22" />
+                     </head>
+                     <p>
+                        nourishment, she said:
+                        <lb/>
+                        "I've no mind for eating or for drinking,
+                        Food, which might corrupt again;
+                        If God's bread that's heavenly I am thinking
+                        Jesus' flesh I would obtain,
+                        Who was made man of the Lord of David,
+                        And his blood is drink, O how I crave it 
+                        From earth's life to be set free 
+                        In loves' immortality."
+                        <lb/>
+                        She added, "That is what I want." At 8
+                        in the evening she found breathing very diffi-
+                        cult. Her son looking at her with earnest con-
+                        cern, she turned her eyes to him, as it were, to 
+                        comfort him and said:
+                        <lb/>
+                        "Tho' waves and storming o'er my head,
+                        Tho health a strength a friend, be gone,
+                        Shortness of breath preventing her from fini-
+                        shing this her favourite verse, she said to her son, Go on; which he did as follows:
+                        <lb/>
+                        "Tho' joys be withered ill and fled,
+                        Tho' every comfort be with withdrawn;
+                        Stedfast on this my soul relies,
+                        Jesus, thy mercy never dies."
+                        <lb/>
+                        She joined in the last lines, and then said, 
+                        that is it. For sometimes after this she 
+                        continued labouring under great difficulty 
+                        of breathing, and at length was very desi-
+                        rous to have her bed made. Being placed on 
+                     </p>
+                  </div>
+                  
+                  <div type="page" n="23">
+                     <head>Page 23 <seg ana="MemLon_300023-23" />
+                     </head>
+                     <p>
+                        another, she appeared covered with a cold sweat.
+                        When put again into her own bed, she prayed
+                        intimately: "Dear Savior, come and fetch me
+                        thy poor sinner home; come, Dear Savior,
+                        and fetch me." Soon after this her son
+                        thought she had been asleep, but her breath
+                        grew shorter and shorter. Thus she expired 
+                        in the most gentle and peaceful in manner
+                        and went over to see him, whom here she
+                        loved, and whom she also served to the ut-
+                        most of her power, with great faithfulness
+                        Her pilgrimage here below lasted 82 years
+                        3 months and 3 days.
+                        <lb/>
+                        "She is now with the Son at home;
+                        Bow humble expectation
+                        Is, that he'll let us also come,
+                        To join that congregation."
+                     </p>
+                  </div>
+         </div>
+      </body>
+   </text>
+</TEI>

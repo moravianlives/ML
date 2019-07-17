@@ -1,0 +1,152 @@
+@import "normalize.css";
+@import "skeleton.css";
+@import "tabs.css";
+@import "leaflet.css";
+@import "MarkerCluster.Default.css";
+
+html {
+	background-color: #fbfbfb;
+}
+
+.table-marker {
+	display: inline-block;
+
+	position: relative;
+
+	top: 5px;
+
+	width: 20px;
+	height: 20px;
+
+	border-radius: 3px;
+
+	&.location {
+		background-color: #8BE6A2;
+	}
+
+	td a & {
+		top: 2px;
+
+		width: 10px;
+		height: 10px;
+
+		margin-right: 10px;
+		margin-left: -20px;
+	}
+}
+
+.main-header {
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	right: 0;
+
+	padding: 30px 0 20px 0;
+
+	border-bottom: 1px solid #ccc;
+
+	background-color: #fff;
+
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+
+	z-index: 2000;
+}
+
+.main-content {
+	margin-top: 120px;
+	margin-bottom: 150px;
+}
+
+.footer-toolbar {
+	position: fixed;
+
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 30px 0 20px 0;
+
+	border-top: 1px solid #ccc;
+
+	background-color: #fff;
+
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+
+	z-index: 1000;
+
+	.page-info {
+		display: inline-block;
+
+		margin-left: 20px;
+
+		color: #999;
+	}
+}
+
+.view-container {
+	.map-container {
+		height: 400px;
+
+		&.full {
+			position: fixed !important;
+
+			top: 98px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			height: auto;
+		}
+
+		&.small {
+			height: 200px;
+		}
+
+		&.large {
+			height: 700px;
+		}
+	}
+}
+
+.leaflet-popup-content-wrapper {
+	border-radius: 4px;
+
+	h2 {
+		font-size: 1.8rem;
+	}
+}
+
+.check-all {
+	width: 14px;
+	height: 14px;
+
+	background: #ccc;
+
+	border: 1px solid #989898;
+	border-radius: 2px;
+}
+
+.overlay-container {
+	.message {
+		position: fixed;
+
+		top: 50%;
+		left: 50%;
+
+		padding: 15px;
+
+		background-color: #E1F3BC;
+
+		border: 1px solid #ccc;
+		border-radius: 5px;
+
+		color: #434C2F;
+		font-weight: bold;
+		font-size: 1.7rem;
+
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+
+		transform: translate(-50%, -50%);
+	}
+}

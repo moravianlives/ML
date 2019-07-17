@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Samuel Tippet: Memoir</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Social Sciences Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Courtney Paddick</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Arts &amp; Humanities Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Transcribers and encoders, HUMN100 Fall 2018</resp>
+               <persName>Allison Butler</persName>
+               <persName>Bhagawat Acharya</persName>
+               <persName>Brendan Matthys</persName>
+               <persName>Caleb Broughton</persName>
+               <persName>Carly Pavoni</persName>
+               <persName>Caroline Walsh</persName>
+               <persName>Clayton Wright</persName>
+               <persName>Ethan Conklin</persName>
+               <persName>George Tyler</persName>
+               <persName>Hailey Zimmerman</persName>
+               <persName>Jacob Hubbard</persName>
+               <persName>Jessica Hom</persName>
+               <persName>Julianna Kim</persName>
+               <persName>Mauricio Martinez</persName>
+               <persName>Mitch Gavars</persName>
+               <persName>Meg Koczur</persName>
+               <persName>Morgan Graning</persName>
+               <persName>Nathan Ware</persName>
+               <persName>Olivia Smith</persName>
+               <persName>Paige Whitney</persName>
+               <persName>Raleigh Singer</persName>
+               <persName>Rosemary Rong</persName>
+               <persName>Samantha Salazar</persName>
+               <persName>Zakee Willis</persName>
+               <orgName>Bucknell University</orgName>              
+            </respStmt>   
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Moravian Archives, London</repository>
+                  <msName type="memoir">Samuel Tippet</msName>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-02.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-03.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-04.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-05.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-06.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-07.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-08.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-09.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-10.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-11.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-12.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-13.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-14.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-15.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-16.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-17.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300045-18.jpg"/>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   <text type="memoir">
+      <body xml:lang="en">
+         <div type="memoir">
+            <head>Samuel Tippet</head>
+            <div type="page" n="2">
+               <head>Page 2 <seg ana="MemLon_300045-02" />
+               </head>
+               <p>
+                  I Sam.l Tippett have thought it might not
+                  be amiss to leave the following lines behind me
+                  I was Born in the year of our Lord in 1711
+                  In the Parrish of Bitton, in the Hamlet of Oland
+                  My Father died when I was young, my mother
+                  kept me to school tho with some difficulty, For
+                  I was of a light turn of mind and giving very
+                  much to play with other Boys which made
+                  my mother pretty sharp with me, Tho at some
+                  times I should have sarious thoughts and think what
+                  will become of me when I die and should wish
+                  I had never been born or died when I had been
+                  at my mothers breast, Then I thought I should
+                  went to Heaven, But who knows what will
+                  become of me now, I have been such a bad
+                  Boy, and told so many lies, and said nasty words,
+                  and many of the like thoughts would come into
+                  my mind, Then I should think to be better
+                  and not do so nomore, and often wish I had
+                  one or two little Boys of my mind to go to
+                  Church and to be good and to live a Religious
+                  life, and did often times wish I had liv'd
+                  in the days of our Saviour, and think how
+                  I wou'd have lov'd Him and follow'd him
+                  had it been even to death, so that when
+                  I did Read of His death and sufferings. I should
+                  melt into tears, so that I was fors't to give
+                  over Reading, although it was the only
+                  place that I did love to Read in; But once above
+                  all the rest as I was rocking the cradle looking in                  
+               </p>
+            </div>
+            
+            <div type="page" n="3">
+               <head>Page 3 <seg ana="MemLon_300045-03" />
+               </head>
+               <p>
+                  a little Book as I met with by chance I felt
+                  something in my Heart that I never felt before,
+                  and had it been possible I cou'd then even sunk
+                  into nothing in tears of love before the Lord Jesus
+                  and the Covenant that I made with Him that
+                  evening I though then to have kept to all the days
+                  of my Life, But this soon wear'd of, and for want
+                  of care taken as I grew biger my corruped
+                  nature grew stronger and stronger and led me more
+                  and more captive, at Ten years of age or these
+                  about I went to work in the Coal Pitt
+                  amongs't other other bad Boys, though my Mother
+                  porswade my to go a Prentis but I cou'd
+                  not bear the though of loosing my
+                  companion, and be confind, But as I grew
+                  in years older and older at last I thought
+                  to make my self happy in what the
+                  world called merry company, But twas
+                  all in vain, for I was disapointed in
+                  every thing that I did take in hand,
+                  So that often times in the midts of
+                  mirth I should have such heaviness
+                  of spirit come upon me that I did
+                  not know what to do, some times I did
+                  endeavour to pass it away by singing
+                  or Dancing or such like, and some times
+                  leave my company, and think if I was with
+               </p>
+            </div>
+            
+            <div type="page" n="4">
+               <head>Page 4 <seg ana="MemLon_300045-04" />
+               </head>
+               <p>
+                  with other company then perhaps i should
+                  be better satisfied, but this would not do
+                  for twas all in vain, for when i was coming
+                  home my heart would begin to smite me.
+                  thinking where have i been and what will
+                  become of me if i go on at this rate,
+                  then i should make many resolutions not
+                  to do no more of beg of lord to forgive 
+                  me, but in a few days all my resolutions
+                  would be broken and i should think it is
+                  fine enough if for me to turn may
+                  live a great while, i am but young if
+                  as my father died in of consumption
+                  to may i an then it will be time
+                  enough to represent if turn to the lord
+                  but this would not satisfy my poor 
+                  mind long together, for when my thoughts
+                  of dying suddenly or being killed in 
+                  if did come in mind i did not know
+                  what to do, but should beg of lord to spare
+                  me a little longer, for i could not bear 
+                  thoughts of leaving world in of 
+                  condition i was then in, this i went on
+                  for many years together sinning if responding
+                  striving to get happiness in my pleasures
+                  of this life is positive but i was all in 
+                  vain, for i was disappointed in all my
+               </p>
+            </div>
+            
+            <div type="page" n="5">
+               <head>Page 5 <seg ana="MemLon_300045-05" />
+               </head>
+               <p>
+                  ways that I did think to get happiness in,
+                  abought this time I goot aguainted
+                  with my dear wife and was maried into the
+                  year 1736 by whome I have had Eleven
+                  Children, For the first two years and more
+                  I went on in my old cource of life
+                  with my merry Company thinking by &amp;
+                  by it will be better, but I new not how
+                  for I was disapointed in every thing and
+                  all that I took in hand seem'd to make
+                  against me; that I knew not which
+                  way I shou'd come through in the world
+                  about this time Mr. Whitfield came
+                  in these parts and I went to hear him
+                  at a place cal'd Hannam Mount, He spoke
+                  of the Prodigal son returning to his Father
+                  and of our fall by nature and how willing
+                  Jesus Christ was to receive every returning
+                  sinner, He painted my case and condition as
+                  tho he new me from the very bottom, and
+                  envited all such poor sinners to Jesus Christ
+                  in a loving manner, I thought this was
+                  to good news to be believ'd that ever he
+                  cou'd receive or look upon such a poor reck
+                  as I was who had been fighting against him
+               </p>
+            </div>
+            
+            <div type="page" n="6">
+               <head>Page 6 <seg ana="MemLon_300045-06" />
+               </head>
+               <p>
+                  all the days of my life, But this seem'd as
+                  a Hook in my Heart for some days, Tho
+                  I was asham'd to let any one know anything
+                  about it, But I thought if this be true there
+                  is nothing in all the world shall hinder me
+                  till I know he have receiv'd me, if he will
+                  except of the such a poor sinner as I am, soon
+                  after this hear'd Mr Sennick under the secumore
+                  Tree near Mr Wesleys scool it being the first or
+                  second time of his preaching, But I had not
+                  been there many minutes but my heart was
+                  all most ready to break, He spoke from the
+                  first chapter of Saint John and something of
+                  his own experience which came near my
+                  heart thinking to my self what shall I do
+                  to be sav'd, my sins as if weare steard me in
+                  the face, my companians and all I thought wou'd
+                  be witness against me at the Last Day, and
+                  as I had not been the ruination of my own
+                  poor soul but theirs also, and now I was a
+                  mark for every one to laugh at, and many
+                  more of the like expression was the languige
+                  of my poor heart for the whole sermon
+                  I stood in amaze asham'd to look anyone in
+                  the face thinking no ones condition like mine
+                  in the whole world, but yet thought how glad I shou'd
+                  be if I cou'd but get aquainted with that man
+                  and look'd after him till he was gone out of my
+                  sight, But in less then a fortnight I and two more
+               </p>
+            </div>
+            
+            <div type="page" n="7">
+               <head>Page 7 <seg ana="MemLon_300045-07" />
+               </head>
+               <p>  
+                  went to Bristol and I inquired where he lied and
+                  got him over to Kingswood with us that night,
+                  He slept at my House and I never thought my
+                  self so happy in all my former compoany as I did
+                  when I was along with him, if often
+                  did on bosom my mind into him as my only
+                  friend, but about this time I heard Mr Wesloy
+                  preach up a self denial life, how we should live
+                  and walk which put me to work I caused me
+                  many akin heart after word, so that I did
+                  often times with I could never eat drink nor
+                  sleep no more until I did know the Lord Jesus did
+                  love me I had forgiven me my sins, then
+                  I was confirmed went to the sacrament
+                  thinking to find ease there, but I found it
+                  quite to the contrary, for this added to my
+                  trouble that I was more condonned than ever
+                  thinking no ones condition like mine
+                  in the whole world,tossed  to and forget
+                  rest for my poor heart but could find
+                  none, and was often times making of
+                  resolutions to get into the woods, or to some
+                  retired place where I might spend the
+                  rest of my days and never eat nor drink
+                  no more till I did know that Jesus Christ did love
+                  me, but in this I was also disappointed for go
+                  where I would if uneasiness of my heart and the
+                  thoughts of leaving this world that know
+                  I should be saved would make me in such a
+               </p>
+            </div>
+            
+            <div type="page" n="8">
+               <head>Page 8 <seg ana="MemLon_300045-08" />
+               </head>
+               <p>
+                  condition that I did not know what to do with myself.
+                  The some times in midst of all although
+                  would dash into my mind, who knows but I shall
+                  be said at last, perhaps if Lord do love me
+                  he have promised to save such ones as in my
+                  condition therefore I will never rest free
+                  I know that he have said me, about this time
+                  I and four more was taken into a band by Mr Connick at Mr Wesloy, scool where we
+                  met constant together every week for some
+                  time I not without a lifeliving, about this time
+                  I was very near like to be killed two or three times
+                  in the pitt and by some other accident, if one of the
+                  times my hurt was pretty bad not I thought
+                  has spard my life if not called me away in the condition
+                  I was then in though of if same time I did
+                  not know that any one had any thing to
+                  righteous life, I fasted two or three times
+                  every week, I prayed perhaps ten or twenty times
+                  every day as after as I had opportunity, I went
+                  to my sacrament every month, Every hour
+                  that I did steps I did think twas time lost,
+                  and did often times wish I could never sleep
+                  no more, my countenance did betray my poor
+                  miserable heart, some times with heats a sigh
+                  would bust from my heart O that I did but
+                  know if Lord Jesus, or was afraid of his love
+               </p>
+            </div>
+            
+            <div type="page" n="9">
+               <head>Page 9 <seg ana="MemLon_300045-09" />
+               </head>
+               <p>
+                  to my poor heart, though sometimes
+                  between while a thought would dart into
+                  my mind who knows but I shall be saved at
+                  last perhaps jesus do love me. if one promise
+                  after another would come into my mind
+                  that my very heart would leap for day
+                  but soon after i should give all over and
+                  think it was something of my own
+                  making and getting into my old course of duties
+                  as before, till at last i was a weary
+                  of my left righteous life, for if more i
+                  did strive of faster i was so that i did not
+                  love to hear so much of simple doings
+                  for i found it was all nothing but stuff
+                  and with a full determination thought 
+                  if i porrith i will porrith at of feel of 
+                  jesus as a poor sinner, for i was a sensible
+                  that nothing could satisfy my poor heart
+                  but Him, and about this time as I was in
+                  a coal pitt making my complaint to if
+                  Lord Jesus as I use to do had i but a minute
+                  time, but all of a sudden it was as though
+                  he spoke to me i am could if do love thee
+                  but what if i felt in my heart that moment words
+                  who felt in my hear that moment words all my uneasiness of
+                  heart was gone in a moment, and Him
+                  whom i looked upon before as being angry with me i found was my best friend
+                  in the whole world that it been possible i could then.
+               </p>
+            </div>
+            
+            <div type="page" n="10">
+               <head>Page 10 <seg ana="MemLon_300045-10" />
+               </head>
+               <p>
+                  even sunk into nothing or went home
+                  to him that very moment, this lasted upon
+                  and down with me for some time until the wickedness
+                  of my Heart began to appear, which made me think
+                  I had decieved myself, though at times I did feel
+                  to the contract I could not give it up, about this
+                  as perfection reprobation and and if like which put
+                  me to reasoning often times made me uneasy
+                  in my mind whom I did enter upon them, we
+                  had several meetings to try to reconcile it
+                  but to no purpose, for in a little time Brother
+                  Connick and twenty four more of us was put out
+                  along with him out of the society, we went to
+                  look a little room where we did meet together
+                  every evening and had a pretty feeling amongst
+                  us, until at last our number increased so fast
+                  that the place we had taken was to little to hold
+                  us so that when we had a love feast for
+                  want the room we was forced to keep it in
+                  the open fields and the spirit of love was felt
+                  amongst us, so that many of those that
+                  did stand of at distance at the outside
+                  of hedges that did not belong to us did
+                  not go away without a blessing, but as
+                  winter was coming on Brother Connick was 
+                  resould to build a school house, bought a piece
+                  of ground and had it covered before winter
+                  though there was many operations made
+               </p>
+            </div>
+            
+            <div type="page" n="11">
+               <head>Page 11 <seg ana="MemLon_300045-11" />
+               </head>
+               <p>            
+                  against it, there is together in love
+                  and our saviour was other times feeling in my mind
+                  we was soon form'd into classes or bands by 
+                  who we look'd upon as our chief
+                  labourer that went in and out before you, my
+                  heart felt well at that time so that i could
+                  keep band with our saviour as though there 
+                  was but he and i in of whole world, but some
+                  time after this brethren cennik plan began
+                  to get wider in Willtshear of many other 
+                  places, so that he could not be so much at 
+                  kingswood as before so that many others was in place
+                  when he was absent, the enemy seeing that 
+                  we was like to come to something soon found
+                  out away to put a stop to our happiness
+                  by something up dochins of many other truths
+                  an of place of Jesus Christ this offer 
+                  times make me heavy if conserved when 
+                  i began to see what confusion was 
+                  creeping in amongst us, but in ye
+                  year i went to london with br connick
+                  there i heard brother gomball, rogers,
+                  hutton, it was in some of brother company
+                  several times while i stayed there which
+                  often times made me wish to see your spirit
+                  of love and hearing of kingswood as i say 
+                  was amongst them, but after i came home
+                  instead of seeing it better it grew worse
+               </p>
+            </div>
+            
+            <div type="page" n="12">
+               <head>Page 12 <seg ana="MemLon_300045-12" />
+               </head>
+               <p>  
+                  if worse, so that our number which was in the
+                  society of about 80 or so was soon reduced
+                  to 50 or so, this caused me pain, and made
+                  me make my complain to our savior
+                  as though there was but he and I in the
+                  whole world, out reaching was all dropped
+                  and I knew not what if end of it would
+                  be, then I with the consent of 2 or 3 more
+                  wrote to Brother and begged that they would
+                  come and labour among'st us, and their
+                  answer was get they did not see their
+                  call quite clear from our savior
+                  but so soon as they did they would gladly
+                  run to our assistance, four or five brother
+                  of us met together every sunday morning
+                  making our complaint- one to another
+                  and our dear saviour was often times near our
+                  hearts, and sunday afternoon our little
+                  society of about 20 or 30 did meet together and thus we
+                  went on together for sometime, being
+                  look'd upon as a stubborn people that
+                  a mark for every one to laugh at
+                  as for my own part i meet with many
+                  trials on every ride, my nearest kindred
+                  was set against me and those that before
+                  was my bosom friends forsook me and look'd 
+                  upon me with disdain, this and many more
+                  to mention made me often times make my
+               </p>
+            </div>
+
+            <div type="page" n="13">
+               <head>Page 13 <seg ana="MemLon_300045-13" />
+               </head>
+               <p> 
+                  Complaint to the Lord Jesus, Looking
+                  upon my self as having no friend in the
+                  whole world but Him to make my
+                  complaint to and had not his dear nearness
+                  often times comforted my Poor Heart I could not have
+                  come through in these troublesome times, 
+                  I continu'd writing to the Brethren as often as
+                  Opportunity arriv'd because it was so in
+                  my Heart could I but be under their
+                  came I should be then in my right place,
+                  In the years 46 Mr Steele one of the Brethren came
+                  to Kingswood &amp; Preach'd in Cennicks Scool
+                  House, &amp; in my Evening I {ac}cept a Harty
+                  Band with him conserning the many things
+                  that had happen'd amongs't us, But just
+                  after I parted from him not far from
+                  the place where our Chapple stands
+                  I had such a feeling of our Saviours
+                  Love that I stood still in amaze{ment}
+                  &amp; said Dear Savior how is this that I 
+                  feel in my Heart so much Love to these
+                  People power'd out my whole Heart to 
+                  Him in a child like manner &amp; pray'd 
+                  that He would keep me in the storm
+               </p>
+            </div>
+            
+            <div type="page" n="14">
+               <head>Page 14 <seg ana="MemLon_300045-14" />
+               </head>
+               <p> 
+                  That I say was comin upon me, Soon
+                  after this Mr Horn which was the labourer at
+                  Wilshearcame &amp; Preach'd twice in Cennick
+                  school, and I felt my Heart united to Him
+                  &amp; tould him the many disputes that had been a-
+                  mongst us, And our Saviour blessed our conversation
+                  that it was as though a Burden had been
+                  taken from me, or as a prisoner set
+                  free Especially when he told me as I
+                  might look upon my self as under their
+                  care &amp; that our saviour had made it out
+                  that they should come once a month &amp; 
+                  labour amongs't us, this was agreeable
+                  news to me, &amp; to many of those that did
+                  meet along with me, But in a few weeks 
+                  Them that had left us disputed about 
+                  Cennciks right to the school because 
+                  He was gone to the Brethren &amp; took it away
+                  by violence without Brother Cennicks knowing
+                  any thing about i , Then after that was
+                  taken away from us we remov'd to Brother
+                  Cennicks own house where his sister then 
+                  lived, &amp; though our company was but small
+                  yet we had many pretty opportunities to the
+                  satisfaction of many Heart, But the Enemy 
+                  not willing to leave no stone onturn'd soon
+               </p>
+            </div>
+            
+            <div type="page" n="15">
+               <head>Page 15 <seg ana="MemLon_300045-15" />
+               </head>
+               <p> 
+                  found out away to drive us from there also,
+                  then by of advice of Mr Horn, if to that
+                  did alright us from wilshear we removed
+                  meetings to my own house where we 
+                  continued for some time with many 
+                  blessings, and in a year we
+                  was visited by many of our Joannas
+                  Nichman, Bealer, Marshall, Colast, Horn
+                  Connicks of many others by whom 
+                  my heart was refreshed if  comforted
+                  many a time about this time my
+                  mother went home she was one of our society and she expressed her
+                  happiness to one of our sister of 
+                  right before, which was last that
+                  she spoke with, soon after this by
+                  of consent of the Brother we removed our
+                  meeting into her House, where we
+                  continued for some years, and though
+                  it was but a little house and our company
+                  small yet our saviour's sweet nearness
+                  was felt amongst us which did often
+                  make my poor heart blush for shame,
+                  and allow hardily do I with this happy
+               </p>
+            </div>
+            
+            <div type="page" n="16">
+               <head>Page 16 <seg ana="MemLon_300045-16" />
+               </head>
+               <p>        
+                  Feeling to all those that are taken 
+                  up with so many things besides Jesus
+                  Christ, and as yet do not see Him the one 
+                  thing need full, In the year 1754 the Disciple
+                  came to Bristoll wherein I had an
+                  opportunity to tell Him how I felt my
+                  Heart towards the Brethren for many years 
+                  past, and that I was willing to cast 
+                  my lot with them above all people
+                  in the whole world, He tould me I should &amp; 
+                  accordingly gave me leave to write to him
+                  when he return'd to London, There in
+                  I expres't my mind more fuller, some-
+                  time after then I had leave to go to 
+                  London &amp; to be at the Synod at Chelsy House
+                  which proved a blessing to my heart &amp;
+                  at times I shall never forget what I say
+                  heard &amp; felt, Heare I must stop with
+                  a blushing face before our saviour
+                  &amp; thank him with a thousand Tears
+                  that ever twas my lot to be brought 
+                  to those people who preach the Torments
+                  of Jesus, whose lives is not dear to them
+                  so they can but bring souls to him &amp; be
+                  Happy, January the 26th 1755 the Congregation
+               </p>
+            </div>
+            
+            <div type="page" n="17">
+               <head>Page 17 <seg ana="MemLon_300045-17" />
+               </head>
+               <p>   
+                  was setl'd at Bristoll a Day that I
+                  long'd with to see for many years,
+                  and had my lot to be one amongs't the rest
+                  This was a Day that had it been possible
+                  I cou'd have sunk into nothing for shame
+                  and unworthiness before my Dear
+                  Savior who have done so much for
+                  me &amp; brought me to His people at last
+                  with home I am determined to spend the 
+                  rest of my days was it at the loss of
+                  all things or let the consequence be what 
+                  it will, so I have good but his sweet
+                  nearness to support me thats enough for
+                  me, In the following year August the 22
+                  {17}56 it was agreed upon to have a 
+                  Chappell &amp; Burring Ground at Kingwood
+                  which I had often times wish to see
+                  before I went home, and accordinly
+                  he have granted my request in that
+                  and many things more for which I thank
+                  Him Hartilly and now what my poor
+                  Heart have felt in that place I wish
+                  to all those that shall hear my dear brethren
+               </p>
+            </div>
+            
+            <div type="page" n="18">
+               <head>Page 18 <seg ana="MemLon_300045-18" />
+               </head>
+               <p>   
+                  After my decease, For I wish well to
+                  His cause poor &amp; needy as I am, and do
+                  Daily pray that I may have him near my
+                  poor heart while I am hear, For I have
+                  no friend in this world that I can unburden
+                  my mind to as I can write him, for the older 
+                  i get the more trouble I meet with, so that
+                  I have more need of him now then ever and
+                  do often times wish that I could lose myself
+                  in his company &amp; never dispart from him
+                  no more, For when i feel his sweet nearness
+                  I want nothing else but to be lost in Him
+                  and the outward circumstances &amp; family affairs
+                  have taken up to much of my time &amp; caused 
+                  me pain, yet my best friend is faithfull 
+                  unto me, &amp; in his due time will put all these 
+                  things to right, In the meantime while I am
+                  hear below may that be my chief concern
+                  to have him near my poor Heart in my 
+                  old years &amp; then it will all end well
+               </p>
+            </div>
+         </div>
+            
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Esther Latrobe: Memoir</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Social Sciences Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Courtney Paddick</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Arts &amp; Humanities Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Transcribers and encoders, HUMN100 Fall 2018</resp>
+               <persName>Allison Butler</persName>
+               <persName>Bhagawat Acharya</persName>
+               <persName>Brendan Matthys</persName>
+               <persName>Caleb Broughton</persName>
+               <persName>Carly Pavoni</persName>
+               <persName>Caroline Walsh</persName>
+               <persName>Clayton Wright</persName>
+               <persName>Ethan Conklin</persName>
+               <persName>George Tyler</persName>
+               <persName>Hailey Zimmerman</persName>
+               <persName>Jacob Hubbard</persName>
+               <persName>Jessica Hom</persName>
+               <persName>Julianna Kim</persName>
+               <persName>Mauricio Martinez</persName>
+               <persName>Mitch Gavars</persName>
+               <persName>Meg Koczur</persName>
+               <persName>Morgan Graning</persName>
+               <persName>Nathan Ware</persName>
+               <persName>Olivia Smith</persName>
+               <persName>Paige Whitney</persName>
+               <persName>Raleigh Singer</persName>
+               <persName>Rosemary Rong</persName>
+               <persName>Samantha Salazar</persName>
+               <persName>Zakee Willis</persName>
+               <orgName>Bucknell University</orgName>              
+            </respStmt>   
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Moravian Archives, London</repository>
+                  <msName type="memoir">Esther Latrobe</msName>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-01.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-02.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-03.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-04.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-05.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-06.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-07.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-08.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-09.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-10.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-11.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-12.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-13.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-14.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-15.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-16.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-17.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-18.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-19.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-20.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-21.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-22.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-23.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-24.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-25.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-26.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-27.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-28.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-29.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-30.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-31.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-32.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-33.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-34.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-35.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-36.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-37.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-38.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-39.jpg" />
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300031-40.jpg" />
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text type="memoir">
+      <body xml:lang="en">
+         <div type="memoir">
+            <head>Esther Latrobe</head>
+            <div type="page" n="1">
+               <head>Page 1 <seg ana="MemLon_300031-01" />
+               </head>
+               <p>
+                  Brief - Memoir of our late happily
+                  departed Sister Esther Latrobe drawn
+                  up by her Husband and Brother </p>
+                  
+                  <p>Our late dear Relative was born at Bristol
+                  June the 7th 1802, and being the only daughter
+                  among a family of six children, was peculiar
+                  ly precious to her parents and brothers, and tenderly
+                  beloved by them.</p> 
+                  
+                  <p>This tender affection and endearment
+                  was always returned by her with a warmth
+                  of feeling, which evinced to her family, her
+                  deep attachment towards them, and the gra-
+                  titude heart to them for their love.</p> 
+                  
+                  <p>She was very early subject of sickness
+                  and pain. In her childhood by occasion of the
+                  measles, which struck into her chest, she was
+                  brought to the brink of the grave and her fami
+                  ly and medical attendants at that time had
+                  lost all hope of her life. It pleased the
+                  Lord, however to manifest in her case, His
+                  Power as the Preserver of man, and her life
+               </p>
+            </div>
+            
+            <div type="page" n="2">
+               <head>Page 2 <seg ana="MemLon_300031-02" />
+               </head>
+               <p>
+                  was redeemed from destruction. At this period
+                  already, the grace of the Lord Jesus was producing
+                  in her conduct the buddings of that patient
+                  endurance of suffering, which was afterward
+                  exhibited in blossom and in fruit. Her meek
+                  submission under pain was a wonder to many,
+                  and her physician frequently expressed his 
+                  astonishment, that a child of her tender
+                  frame and years, would exhibit such lamb-
+                  like patience, under the pain he knew
+                  she was enduring. When she was just 
+                  eleven years old, she experienced another 
+                  severe trial from the hand of the Lord, by
+                  the death of her dear Mother. In common
+                  with the other member's of her father's
+                  house, she felt this bereavement keenly, and
+                  often wept in after-life at the remem-
+                  brance of her loss. Indeed the loss was in 
+                  some respect peculiar to her, as a daughter,
+                  and the only one; -- yet the Lord graciously made
+                  it up to her, as she felt and feelingly 
+                  acknowledged, by the fond cares of those whom
+                  he still left her, and by the kindness of many
+                  kindness dear friends, not immediately
+               </p>
+            </div>
+            
+            <div type="page" n="3">
+               <head>Page 3 <seg ana="MemLon_300031-03" />
+               </head>
+               <p>    
+                  belonging to her own family. 
+               </p>
+                  
+                  <p>She spent the years of her schooling
+                  partly in Bristol under the care of Sister Bird
+                  and subsequently at Tytherton. The latter
+                  place was very dear to her; where she lived
+                  a great and interesting part of her pilgrim--
+                  age, and there she found rest to her soul in the 
+                  atoning merit of her Saviour. </p>
+                  
+                  <p>Brother and Sister West were as parents 
+                  to her, and she became the intimate friend of 
+                  their eldest daughter. This was an attach-
+                  ment formed and maintained in the Lord, and
+                  we have reason to believe that our dear
+                  Relative often and frequently felt is to be for 
+                  her good, a strengthening of her hands in
+                  God. During these years, she was brought
+                  again to the verge of eternity, by means of 
+                  a rheumatic fever, and a violent affection or 
+                  palpitation of the heart. Again did her medi-
+                  cal attendants give her up and her sorrowing 
+                  friends despaired of her life, but yet once more
+                  was the Lord's hand stretched forth to save 
+                  her, and she was restored to her family.</p> 
+            </div>
+            
+            <div type="page" n="4">
+               <head>Page 4 <seg ana="MemLon_300031-04" />
+               </head>
+               <p>                
+                  They received her again as one raised from the
+                  dead, and she consequently became still more
+                  dear and precious to them all. These alarming 
+                  sicknesses were evidently blessed to her soul,
+                  they were means and times of grace to her.</p>
+                  
+                  <p>She was led to search and try her ways, and to 
+                  seek the Lord with full purpose of heart 
+                  and he was graciously found of her. Knowing
+                  now the end of our dear relative, we can trace
+                  clearly the good hand of our Lord in all these
+                  dispensations; we can see how he purified
+                  her, and made her fit for his service, and meet
+                  for an early possession of the inheritance
+                  incorruptible and undefiled, and that fadeth
+                  not away. We are enabled to read and to des --
+                  cribe exactly the state of her heart; for she 
+                  has felt behind her, in writing, a few of those
+                  meditations and prayers, in which doubtless
+                  she often engaged, under the eye alone of
+                  her unseen Friend. She writes under 
+                  date of Tytherton - May 12th, 1824: --
+                  "_May this year be remembered by me, 
+                  as long as my gracious Creator permits 
+                  me to remain on this earth. I have </p>
+            </div>
+            
+            <div type="page" n="5">
+               <head>Page 5 <seg ana="MemLon_300031-05" />
+               </head>
+               <p> 
+                  "indeed lived almost for 22 years. But what
+                  "have I been doing? Alas! I have done 
+                  "these things I ought not to have done.
+                  I have been an unprofitable servant.
+                  yet I feel my Saviour is both able and
+                  willing to love to the uttermost all
+                  who ask his forgiveness, and put their
+                  trust in Him. Oh! gracious permission, 
+                  the Lord that's in heaven, permit his poor crea -
+                  tures Him Father to call! I have today par -
+                  taken with this congregation of the body and 
+                  blood of my ever blessed Saviour- What a favour
+                  bestowed on us so unworthy of such a feast, and 
+                  so inattentive to the voice of the Holy Spirit. 
+                  Help me ever merciful Savior to be more
+                  attentive in future to all thy invitations and 
+                  ordinances, more forgiving to my neighbours, 
+                  not easily offended. Teach me to bear and forbear
+                  and above all, to be more and more thankful
+                  for thy atonement, thy long suffering and tender 
+                  mercies. Teach me to know myself. Let me
+                  feel more humble. Yea, Lord, teach me now
+                  what to pray for. I can do nothing without thee,
+                  "Now, then, the sequel is well weighed to"
+               </p>
+            </div>
+            
+            <div type="page" n="6">
+               <head>Page 6 <seg ana="MemLon_300031-06" />
+               </head>
+               <p> 
+                  August 17th.-- She says-- Lord I must
+                  blushing stand when considering what an ungrate
+                  -ful creature I am. How often the means thou
+                  hast appointed for worshipping Thee, have been
+                  neglected by me. I do indeed attend at thy house
+                  of prayer, but with such a wavering heart, and
+                  indeed sometimes cold indifference, that I
+                  return without receiving much benefit to my
+                  soul. Do thou, Oh! Heavenly Father, look
+                  on me in mercy, forgive all past neglect,
+                  make me in every respect more like what
+                  a Christian ought to be, more humble, rely-
+                  ing only on Thee for everything I need.  Subdue
+                  all earthly inclinations. Dear Saviour
+                  let me take my soul at the foot of thy cross,
+                  for ever having my eyes fixed on thy sacred
+                  body, bearing my sins' heavy load. Yes!
+                  then let me the chief of sinners, weep and
+                  love my life away! Indeed, O God, I must
+                  confess that I have rested too much on my
+                  own strength; Oh! forgive this presumption,
+                  and hear my prayer for the sake of thy dear
+                  Son, without whose atonement I dare not
+                  approach thy throne. Give me then that
+                  true faith, which puts all dependence on 
+                  the Creator and not on the creatures. Unto
+               </p>
+            </div>
+            
+            <div type="page" n="7">
+               <head>Page 7 <seg ana="MemLon_300031-07" />
+               </head>
+               <p>   
+                  thee. let me look for every thing, for thy guid-
+                  ance and direction under all circumstances,
+                  in the situation in which thy good provid-
+                  ence has placed me. Here I must confess,
+                  how short I fall of what I ought to be.
+                  How little of my time is engaged with the
+                  children under my care, in conversing of 
+                  thee and directing their young minds heav-
+                  enward. Dear Lord forgive and teach me
+                  how to point thee out; let it be my delight 
+                  to talk of Thee; and oh! grant, that not one 
+                  may leave this house without some im-
+                  pression of thy dying love. Oh! that 
+                  my heart were more devoted to thy service
+                  I often think too much of the future. 
+                  On thee dear Saviour, I must defend
+                  Do with me what seemeth right to thee, and
+                  let my whole course be ordered by thy never 
+                  failing power. Thine I am, yes! thine
+                  eternally. Let me not by any misconduct,
+                  word, or action, ever bring a reproach upon
+                  thy followers. When thou seest I am going
+                  astray for thy mercy's sake, by any means;
+                  which Thou choosest, head me into the right 
+                  path, oh!
+               </p>
+            </div>
+            
+            <div type="page" n="8">
+               <head>Page 8 <seg ana="MemLon_300031-08" />
+               </head>
+               <p>
+                  Ah! suffer me not to be a stumbling-
+                  block to any person, but may it in my walk be
+                  seen, that I with thee have been. These peti-
+                  tions an unworthy sinner ventures to ask
+                  only through our Mediator and Advocate, Jesus
+                  Christ, who died for our transgressions and was
+                  bruised for our iniquities; and of this I feel
+                  assured: He loveth us unspeakably,
+                  Nor lets us pray in vain,
+                  But gives the fearful heart that hope
+                  Thy suit thou shalt obtain.
+                  The next extract which is dated September 6th
+                  lets us know, how soon and how kindly the
+                  Lord answered her petitions, giving her holy
+                  joy in believing. She writes: Jesus is my
+                  joy, therefore blest am I. Thy ever gracious
+                  Shepherd, how gently hast thou led me into
+                  thy fold. Thou hast drawn me with chords
+                  of love to Thee, and now thou knowest that my
+                  soul delighteth in Thee. I have had kind
+                  visits oft from Thee in the night season.
+                  Thou hast condescended to assist me in
+                  my duties in the day time. Yes! I have
+                  often felt thee. Oh dearest Saviour, continue
+                  to be near unto me, as the air which constant-
+                  ly I breath. Satan does sometimes try to draw
+                  me from thee by suggesting, that after all,
+               </p>
+            </div>
+            
+            <div type="page" n="9">
+               <head>Page 9 <seg ana="MemLon_300031-09" />
+               </head>
+               <p>       
+                  perhaps there is no God. But thy long suffer-
+                  ing and tender mercies are past expression.
+                  How often after such moments, hast Thou
+                  drawn me to thyself, so that the language
+                  of my heart has been - "I will a little pilgrim
+                  be - Resolved alone to follow Thee. Thou Lamb
+                  of God who now art gone- Up to thy everlasting
+                  throne"- etc. The following expressions of 
+                  thankfulness and humble confession, occur under 
+                  the same date: Oh! God! Thy goodness to me is
+                  past all expression; thy merciful hand has 
+                  been over me these many years. How often hast 
+                  thou raised me from a bed of sickness, yet how 
+                  have I returned thy kindness? I have after a time
+                  forgotten- and yet not quite. No thou hast often
+                  showed thy great compassions by leading me to 
+                  reflect on thy past mercies. Oh! how shall
+                  I, the most sinful, due thanksgiving raises-
+                  And sound my great deliverers praise! =
+                  November 28th, we have the following expressions of
+                  heart, clearly showing, that the bright hope of
+                  immortality, which shed such a glory round her 
+                  last few hours, was then already enkindled in 
+                  her soul. She writes: "The beloved of the Lord
+                  shall dwell in safety by him, and the Lord shall
+                  cover him all the day long"- Deut. 33.12. 
+               </p>
+            </div>
+            
+            <div type="page" n="10">
+               <head>Page 10 <seg ana="MemLon_300031-10" />
+               </head>
+               <p>
+                  Yes, dear Lord, thou dost indeed had me on
+                  in safety and mercy, and what have I deserved
+                  Nothing! - I am an unprofitable servant
+                  My transgressions are too numerous to count;
+                  but I know in whom I have believed, and
+                  he is able and willing to keep that which I
+                  have committed to him till that great day,
+                  when I shall gain permission to leave this
+                  mortal tent. Oh! my soul, thou hast had of
+                  late sweet converse with thy heavenly Friend;
+                  what and if he should call thee to live with Him.
+                  "Since He did from death arise,
+                  And then ascend victorious,
+                  I likewise in the hope rejoice,
+                  To raise again more glorious,
+                  Thus free from fear I can in peace
+                  Depart to see him as he is,
+                  And live with him forever!"
+                  She then adds: "This is sunday morning,
+                  "And I am detained at home through a cold,
+                  "however, however I shall attend the last
+                  "meeting; and ever blessed Saviour, do thou
+                  "grant me thy blessing. If a life is read, Oh!
+                  "that some past may have a reference to my
+                  "case. Send thy Holy Spirit upon all; so that
+                  "he who reads and those who hear, may go home
+               </p>
+            </div>
+            
+            <div type="page" n="11">
+               <head>Page 11 <seg ana="MemLon_300031-11" />
+               </head>
+               <p>
+                  thankful that they were able to attend thy house."-
+                  In the early part of the year 1825, she appear,
+                  to have been filled with a more entire spirit of
+                  devotedness to the Lord, a more ardent desire for his
+                  service and for being instrumental towards the
+                  spread of His Kingdom. She had before this
+                  period engaged in the service of the Ladies School
+                  at Tytherlon, as a teacher, but the following
+                  extracts appear to aim at a more direct and
+                  spiritual employment in the house of the
+                  Lord. March 2nd, 1825- She writes:
+                  "The world passeth away and the lust thereof;
+                  but he that doeth the will of God abideth forever"
+                  "Oh! my soul, think often of this text.
+                  "Help me Dear Saviour, to devote soul and body
+                  "unto thee. 'Tis all I have to offer thee,
+                  "Oh! Take me as thy property. Yes! I am more
+                  "and more convinced, the nearer I live to my
+                  "dear Saviour, the greater is my portion of happiness.
+                  "Oh! that all could be persuaded to turn from their
+                  "evil ways and live. And Oh! that everything I did,
+                  "had a reference to the furtherance of the Kingdom of
+                  "God. How much of my time is spent in needless
+                  "perplexity about the things of this world! Oh! that
+                  "every breath were devoted to my great Deliverer's praise
+                  April 17th My Soul wait thou only upon God, for my expectation.
+               </p>
+            </div>
+            
+            <div type="page" n="12">
+               <head>Page 12 <seg ana="MemLon_300031-12" />
+               </head>
+               <p>            
+                  "expectation is from him"- "Oh! dearest Saviour
+                  "send down thy Holy Spirit upon me, and lead me on in
+                  "the path of righteousness. Condescend to direct my
+                  "thoughts, words, and actions. To thee let all my wishes
+                  "send. Oh! God, what can I render unto thee for all
+                  "thy mercies? I am not worthy to pick up the crumbs
+                  "that fall from my Masters table, but thou feedest me
+                  "bountifully with choice things. I desire to resign every
+                  "inclination to thy will. Help me to do so; I can do
+                  "nothing of myself. This day if thou will accept
+                  "Oh! God, of such, I devote hand and heart to Thee, do
+                  "with me as Thou pleasesth,- I may do some
+                  "service, poor dust though I am!" The latter part
+                  of the same year appears to have been a time of trial.
+                  She writes, Sep 20th "I am a sinful creature O
+                  "Lord, have mercy upon me! Be thou my friend,
+                  "my counsellor and guide, yes, my All in All.
+                  "If I have thee, I have however, what me eternally
+                  "can cheer. Thou seest all that passes among the
+                  "children of men. Oh! Dear Saviour let thy will
+                  "be done on earth as it is in heaven! Let me help
+                  "thy rod, and say with a sincere submission the Lord
+                  "does all things well: yes, much better than
+                  "I deserved. Let me not give way to an unthank-
+                  "ful and repining disposition. Forbid, O Lord,
+                  "that I should boast in ought, but in my ransom price
+               </p>
+            </div>
+            
+            <div type="page" n="13">
+               <head>Page 13 <seg ana="MemLon_300031-13" />
+               </head>
+               <p>      
+                  "all the vain things which charmed me most,
+                  "For Christ I freely sacrifice. Farewell world thy
+                  "gold is dross. Now I see the blood stained cross!"
+                  October 22nd. "Thy soul, now with assurance-
+                  Hope still be not dismayed, He will from each
+                  encumbrance;- Again lift up thy head.
+                  "Beyond thy wish extended his goodness will appear
+                  "When he hath fully ended- that causes thee
+                  "such fears; and how ought I to blush, when I am
+                  "left to reflect on my past life? Blessed be God! and
+                  "oh! that all within me, now and at all times,
+                  "could bless His Holy name." November 27th
+                  "I feel indeed that the Holy Spirit is deepening
+                  his work in my worthless heart. What conde
+                  scension that he should notice me, so utterly unworthy
+                  "my heart longs for more faith and more love.
+                  "Jesus is mine and I am his." How great are
+                  "his signs, and how mighty are his wonders!
+                  "His kingdom is an everlasting kingdom, and
+                  his dominion is from generation to generation.
+                  "His power is endless and his praise-
+                  "He speaks, the universe obeys,-
+                  In such a Lord we are happy. " Better is
+                  "the enjoyment of thy love, than all the honours
+                  or wealth which man can bestow. Yes, thou art my
+               </p>
+            </div>
+            
+            <div type="page" n="14">
+               <head>Page 14 <seg ana="MemLon_300031-14" />
+               </head>
+               <p> 
+                  "art my chief delight, and I devote most heart-
+                  "ily soul and body unto thee. Thou knowest my
+                  "hearts wish of late O God; do with me as
+                  "thou choosest. Without thy blessing I dare not
+                  "move a foot. Bless and sanctify every thought,
+                  “wish and action. The mercy of the Lord is
+                  "from everlasting to everlasting upon them
+                  "that fear him, and His Righteousness unto
+                  "childrens, to such as keep his commandment
+                  "to do them." Thus beautifully end her
+                  notes of the year 1825, - In the Spring
+                  of the year 1826, it was proposed to her to
+                  remove to Gracehill to be employed as a teach-
+                  er in the Ladies Boarding School there.
+                  In a letter to her brother then Director of the
+                  Schools in that congregation- She thus
+                  signified her acceptance of the situation: With
+                  diversity of feelings. I this time address you, not
+                  that I am undetermined what step to take, on the
+                  contrary I am pleased you thought of me. I trust
+                  I shall be aided and supported by my unseen Friend,
+                  to discharge every duty committed to me, with
+                  credit and satisfaction; that I may not become
+                  an offence or stumbling stone to any person
+                  is my sincere prayer, but may my conduct be
+                  such as becomes a follower of Him, who was
+                  meek and lowly." She evidently sought
+                  the direction of the Lord in this step.  
+               </p>
+            </div>
+            
+            <div type="page" n="15">
+               <head>Page 15 <seg ana="MemLon_300031-15" />
+               </head>
+               <p> 
+                  and by her manuscript it appears the word of the Lord
+                  to Jacob was applied to her own case: "Behold I
+                  "will be with thee, and will keep thee in all places
+                  "whither thou goest, and will bring thee again into
+                  "this land; for I will not leave thee, untill I
+                  "have done that which I have spoken to thee
+                  "of." ----
+                  Her feelings at leaving Tytherton, where she
+                  had enjoyed so much grace, she thus expresses in
+                  the letter above quoted: "I have now lived in Tyther
+                  "-ton 6 years. In this place I have attained my
+                  "church priviledges, and received much kindness
+                  "from several of its inhabitants, therefore you
+                  "will not wonder, that my feelings are some-
+                  "what various. I shall always retain sentiment 
+                  "of gratitude and respect for many individuals."
+                  She arrived in Gracehill about the middle 
+                  of June; and spent 3 years and a half, faithfully
+                  and usefully employed in the sphere that
+                  was allotted her there. It was a season of
+                  sweet and gratefully remembered intercourse
+                  with her brother and sister, with whom she 
+                  spent, not unprofitably, great part of her 
+                  spare time, feeling their house to be her
+                  home, and giving and receiving that mutual
+                  encouragement, which we all feel necessa-
+                  ry in our various avocations. A few of
+                  the recorded feelings of her heart, will again
+               </p>
+            </div>
+            
+            <div type="page" n="16">
+               <head>Page 16 <seg ana="MemLon_300031-16" />
+               </head>
+               <p>
+                  show the progress of grace in her soul, and the
+                  state of her mind during this period.
+                  Sep. 14th, 1826.  She writes --- "When thou
+                  "passest through the waters, I will be with thee, and
+                  "through the floods, they shall not overflow thee,
+                  "When thou walkest through the fire thou shall
+                  "not be burned, neither shall the flames kindle
+                  "upon thee." "This does oftimes renew my cour-
+                  "age, when it otherwise would sink. And to
+                  "build upon this gracious promise, as a rock
+                  "which ne'er can shrink, is what my poor
+                  "heart doth pant for. Thus to trust unto my
+                  "faithful Saviour for whate'er I yet don't know
+                  "in my pilgrimage below. What can a sinful
+                  "worm, O God, render unto thee for thy unnum-
+                  "bered benefits!" --- Feb. 6th, 1828. --- My soul
+                  "doth magnify the Lord and my spirit hath
+                  "rejoiced in God my Saviour." Give me O my hea-
+                  "venly Father a more thankful heart; let me
+                  "with more gratitude receive blessings from thy
+                  "unerring hand, and when thou seest fit to send
+                  "affliction, or visit me in trying dispensations
+                  "give me grace to bow with humble resigna-
+                  "tion, and moreover rejoice, that thou dost so far
+                  "notice me, as to treat me as a child. During
+                  "the last year I have indeed been tried in vari-
+                  "ous ways, so that in a measure I may say
+                  "my foot had well nigh slipped; but thou art
+                  "the searcher of hearts, and nothing is hidden
+               </p>
+            </div>
+
+            <div type="page" n="17">
+               <head>Page 17 <seg ana="MemLon_300031-17" />
+               </head>
+               <p>
+                  "from thee. Thy mercy, too, a comforter sends,
+                  and mercy directeth my way, may mercy me
+                  "ever attend. "Through years that may yet be
+                  "to come; in every danger me befriend and peace-
+                  "fully guide me safe home. But if I have
+                  "felt trials, I have been comforted, yea rich
+                  "blessings have crowned my head, and with
+                  "them my cup does e'erflow. When I look 
+                  "around me, how ought I to blush for allow
+                  "ing a murmuring thought to find entrance
+                  "in my breast. But I am a sinful worm
+                  "O Lord, and can do nothing as I ought, 
+                  "without thy enabling grace. Oh! my
+                  "heavenly Father, send thy Holy Spirit
+                  "unto me, make me more humble, let me
+                  "have a constant feeling of thy presence, and
+                  "let me take my seat at the foot of my Saviour's
+                  "cross, and bear his example ever before me. 
+                  "Perhaps this may be my last year, and if it 
+                  "should not, still may I spend it as though
+                  "it were. "If any man serve me, him will
+                  my Father honour. I devote most heartily
+                  "soul and body unto thee. And Oh! that
+                  "my thoughts were more constantly fixed
+                  "on thee. What infatuation! that the perish
+                  "able things of this earth should so much 
+                  employ the generality of men, whose intrest 
+               </p>
+            </div>
+            
+            <div type="page" n="18">
+               <head>Page 18 <seg ana="MemLon_300031-18" />
+               </head>
+               <p>
+                  "is to prepare for a better city. What if things
+                  "do not always answer our expectations, are we 
+                  "on that account to despond? certainly not! For
+                  "God in mercy sends afflictions to teach us this
+                  "is not our home. If he were not to do so, we
+                  "might grow hardened and secure in our sins,
+                  "until they plunged us into endless woe! --
+                  "Oh! that I could walk as though each day
+                  "were to be my last. The crosses and vexations
+                  "which occur here, are but for a short time,
+                  "the joys and happiness of heaven are for a never
+                  "ending eternity: why then should do I allow
+                  "such things to affect me so much? This is 
+                  "indeed sinful, but human nature is in
+                  "itself unable to overcome the assails of its
+                  "mighty opponents; the spirit may indeed be
+                  "willing to do what is right, but the flesh
+                  "is weak. But Oh! dearest Saviour, I would
+                  "be wholly thine; take thou possession of my 
+                  "heart, and whatever would obstruct any of thy
+                  "blessed views with me, root it out, although it
+                  "cause me pain." -- How consoling is it to see
+                  "our dear departed relative, though in the full
+                  "enjoyment of health and youth, thus manefes-
+                  "ting one great characterestic of God's dear child
+                  "ren, who consider their latter end, and who re-
+                  "member in the prime of life and in the bright-
+                  "est of their mortal days, their latter and that
+               </p>
+            </div>
+            
+            <div type="page" n="19">
+               <head>Page 19 <seg ana="MemLon_300031-19" />
+               </head>
+               <p>            
+                  that they are but sojourners and pilgrims on the earth, 
+                  that they are to be looking continually and preparing
+                  continually for the city that hath foundation, whose
+                  maker and builder is God.-- She continues:
+                  "Till my life shall end, do thou oh Lord, condescend
+                  "to be my councellor and friend: On my heart let thy
+                  "precepts be inscribed, and let thy great example be
+                  "my constant endeavour to imitate; so that I may
+                  "not, in any way, be a hindrance to any of the Lambs
+                  "of thy flock, by inconsistant conduct. Give me
+                  "grace and wisdom, so to act and to speak with the children
+                  "and young people with whom I live, that they may
+                  "be constrained so indeed to think, the paths of religion
+                  "are ways of pleasantness and peace. Keep them from 
+                  "the many temptations they will meet with in the
+                  "world, and may some good seed be sown while they are
+                  "here in each heart, though it may not produce
+                  "fruit at once. Yea let us all live in the enjoy-
+                  "ment of that peace, which a stranger entermedleth
+                  "not with; and which thou alone canst impart. Let us
+                  "live unto thy praise and glory, and hereafter meet in
+                  "that place, Where saints enraptured view their
+                  "Saviour's face, -- and share the glories of his bound-
+                  "less grace; --That happy land, where seraphs tune
+                  "the lyre-- and Adams sons unite and swell the choir
+                  These beautiful petitions in behalf of the little ones
+               </p>
+            </div>
+            
+            <div type="page" n="20">
+               <head>Page 20 <seg ana="MemLon_300031-20" />
+               </head>
+               <p>  
+                  intrusted to her care, lead us to remark, that her treat
+                  ment of them was quite conformable to the sentim-
+                  ents thus expressed. Not unfrequently did she employ
+                  their spare time, especially on the Sabbath in sing-
+                  ing with them such Hymns, or Sacred musical pieces
+                  as they themselves selected. this was done in an 
+                  easy, free, and agreeable manner; so that it pleased and 
+                  edified at the same time; and she had the happiness
+                  to know from one of the letters of her pupils, that 
+                  her endeavours thus profitably to impress the tender 
+                  mind with the duties and truths of religion, were not
+                  in vain.</p>
+               <p>
+                  June 3rd She writes probably in reference to her
+                  approaching birthday: "Surely goodness and mercy will
+                  "follow me all the days of my life. O that I may but
+                  "prove faithful to my high and heavenly calling. But oh!
+                  "how slow in performing what I know to be right, and
+                  "how prone to do that which is evil. 'Well might the
+                  Prophet exclaim, "the heart is deceitful above all
+                  "things and desperately wicked." Search me O God, and 
+                  "know my heart, try me and know each thought.
+                  "But in thy judgement, remember mercy, and let the
+                  "atoning blood of Jesus Christ plead and prevail in
+                  "my behalf. I indeed long to be more closely
+                  "united unto thee. O for more faith, love, hope and
+                  "charity to take possession of my sinful, but I feel 
+                  "devoted heart. I am weak, but my heavenly Father
+                  "is wise and all powerful." -- Feb. 1, 1829
+                  "By his strength he had power with God; yea he had
+               </p>
+            </div>
+            
+            <div type="page" n="21">
+               <head>Page 21 <seg ana="MemLon_300031-21" />
+               </head>
+               <p>
+                  " power over the Angell and prevailed; he wept and made
+                  "supplication unto him." God desires that we should
+                  "look up to him for enabling grace under every diffi-
+                  "culty and temptation. Through his grace alone can 
+                  "we poor sinners overcome the snares of our great
+                  "adversary. The Christian has many assurances,
+                  "that whatever is permitted is intended for his good;
+                  "according to his day so shall his strength be, if he 
+                  "but bow with holy resignation to the dispensation,
+                  "of his Almighty Father. "Be glad in the Lord
+                  "and rejoice then, the righteous and shout for joy all
+                  "th that are upright in heart." What can be a
+                  "more suitable employment for the Christian, than
+                  "to rejoice in the Lord? who has cause ^ to rejoice if he have 
+                  "not? -- Oh! that all could be persuaded to turn
+                  "from their evil ways and live a life of faith. O Heaven-
+                  "ly Father, I beseech thee, increase my faith; for
+                  "Jesus sake pardon all my past transgressions; --
+                  "enable me to live more in the element of thy love;
+                  "put far from me every unholy inclination and desire.
+                  "Calm O Lord every storm that would arise in 
+                  "my breast, -- bring down every high imaginati-
+                  "on, and let me be determined to follow thee and thee
+                  "only, cost what it may. Thou art indeed my
+                  "hearts delight. Send now thy Holy Spirit upon
+                  "me, and enable me through this year, to walk 
+               </p>
+            </div>
+
+            <div type="page" n="22">
+               <head>Page 22 <seg ana="MemLon_300031-22" />
+               </head>
+               <p>
+                  "as thy anointed in the path thou hast for me 
+                  "appointed. Save us O God of our Salvation, and
+                  "gather us together, that we may give thanks unto
+                  "thy holy name , and glory in thy praise!"--
+                  From the last clause of this prayer, and the
+                  peculiar expression, "gather us together," it would
+                  appear that her affectionate mind was thus
+                  embracing in its desires before God, all the mem
+                  bers of her family. May her fervent petitions be
+                  most graciously answered.  The last meditation
+                  she has left is dated June 16th 1829, and it
+                  clearly shows how the Lord was preparing 
+                  her mind for that important change in life,
+                  which took place with her before the end of the 
+                  year. She writes, -- "To thee O heavenly 
+                  "Father, I desire to submit all my desires, and
+                  "to thee would I commit all my concerns, cast all
+                  "my cares upon thee, conscious that thou carest
+                  "for me. And who so fit to choose my lot, or
+                  regulate my ways, as a being, who loved me 
+                  "so as not to spare his own Son, who knows
+                  "what is best for me, andis able to make all things 
+                  "work together for my good? I have often been 
+                  "brought low, but thou hast helped me, and 
+                  "when I have been looking for nothing but
+                  "darkness, at evening time it has been light.
+                  "But oh! after all thy patience, goodness, and 
+                  "care, how often do I betray my depravity by
+                  "seeming to mistrust Thee. Yet I could cry
+               </p>
+            </div>
+            
+            <div type="page" n="23">
+               <head>Page 23 <seg ana="MemLon_300031-23" />
+               </head>
+               <p>    
+                  "cry out with tears, "Lord I believe, help thou my
+                  "unbelief" -- "When my foot slippeth, let thy
+                  mercy, O lord, hold me up. If my course con-
+                  "ducts me through rough and trying scenes, say
+                  " to me thy shoes shall be iron and brass, and as
+                  "thy day is so shall thy strength be. Keep
+                  one in all places and circumstances. However
+                  "ignorant of the future, enable me to trust in 
+                  "Thee and not be afraid. I should? begin, even in 
+                  this vale of tears. the song I hope forever to sing. 
+                  "Marvelous are thy works, just and true are all
+                  thy ways, O thou King of Saints! Enable me
+                  "to confide in thy promises, and rely on thy
+                  "constant protection and care. Let thy law be
+                  "dear unto me. May I be devoted to thy service 
+                  "and find it perfect freedom. Thou dost not indeed
+                  "stand in need of any, but since thou art pleas-
+                  "ed in infinite wisdom and condescension, to safe
+                  "means, I would say Lord what would thou 
+                  "have me to do? here is my hand, me, Lord
+                  "assist, to serve thee midst reproach and 
+                  "shame. Be it my one undivided aim to glo-
+                  "rify Him who has done so much to render 
+                  "me, happy and acceptable to God!' She then 
+                  "proceeds to dilate on the love of God to man
+                  as exhibited, not only in redemption, but
+               </p>
+            </div>
+            
+            <div type="page" n="24">
+               <head>Page 24 <seg ana="MemLon_300031-24" />
+               </head>
+               <p>      
+                  but also in the works of nature, which
+                  eloquently declare God's glory and speak 
+                  His praise. This was a favourite consi-
+                  deration with her. She admired the beau-
+                  ties and sublimities of creation with that 
+                  calm satisfaction, yet holy delight which
+                  only those do feel, who can exclaim as 
+                  they behold these are all the production
+                  of Him I call my who is my dear Heav-
+                  enly Father, with whom I am at peace, 
+                  through the blood of the Lamb!' --
+                  She concludes thus: And should man
+                  "be mute, after receiving so many benefits?
+                  "Undoubtedly not. He should lead the chorus.
+                  "Each breath should sound forth the praises
+                  "of so blessed and adorable a friend. May thy
+                  "continued goodness make a lasting impression
+                  "on my _ and heart. Thou fountain of all 
+                  goodness, draw me to thy self, and enable me to do
+                  "my duty, be it what it may." -- Soon after this 
+                  in the month of November, she reserved a pro-
+                  posal of marriage from Brother James 
+                  Latrobe, who had been called to the service of the 
+                  Congregation at Ayr. This proposal she 
+                  accepted, after requesting the consent of 
+                  her Father, they were married the 28th of 
+                  December
+               </p>
+            </div>
+            
+            <div type="page" n="25">
+               <head>Page 25 <seg ana="MemLon_300031-25" />
+               </head>
+               <p>              
+                  December, and arrived at their post the last day
+                  of the year . From the moment of her arri-
+                  val at Ayr, she entered upon her work 
+                  with zeal and earnestness, and yet under a deep 
+                  sense of her unworthiness to be employed 
+                  as a handmaid of the Lord. By her chris-
+                  tian cheerfulness and lively confidence in
+                  God, and implicit trust in his kind lead- 
+                  ings, she was a help to husband in
+                  his official duties, especially when those 
+                  duties led over thorny paths: her love of
+                  spiritual converse and family devotion too,
+                  and her interest in the welfare of the Congre-
+                  gation, were calculated to increase that love
+                  to the Saviour and his people which not only 
+                  sweetens the cup of life, but is essential to 
+                  the usefulness of the Lords servants. She
+                  loved to see and welcome those Brethren and Sisters
+                  and friends, who called from time to time, to 
+                  be refreshed and animated in their christian 
+                  course. All were received with affability. 
+                  And to some. especially of the aged sisters
+                  Her
+               </p>
+            </div>
+            
+            <div type="page" n="26">
+               <head>Page 26 <seg ana="MemLon_300031-26" />
+               </head>
+               <p>     
+                  her conversation proved to be a blessing and a comfort.
+                  Although no longer engaged in the education
+                  of children, yet that love to the lambs of the
+                  flock, which characterises many of her pri-
+                  vate meditations, was undiminished. 
+                  Remembering the blessings she had experienc-
+                  ed when taken in early life, by her parents
+                  to the children's meetings at Bristol, and
+                  also the impression, which the remarks and 
+                  advice of her beloved father had made upon
+                  her youthful mind, she felt a strong int-
+                  trest in behalf of the children of this
+                  congregation, and impelled by that interest, 
+                  she accompanied her husband to the house-
+                  es of all the parents, previous to the children's 
+                  Festival, although by no means well at the 
+                  time. The weighty and affectionate words and 
+                  expostulations she employed on that occasion 
+                  as a consequence of that visit, was, the 
+                  recommencement of meetings for the child-
+                  ren of the Congregation which had been for
+                  some time discontinued. She was peculiar
+                  ly interested in the son of our Brethren and Sister
+                  Borland, who departed happily to the Lord in 
+                  August this year, after a severe mental struggle
+               </p>
+            </div>
+            
+            <div type="page" n="27">
+               <head>Page 27 <seg ana="MemLon_300031-27" />
+               </head>
+               <p>    
+                  struggle, and she often mingled her tears with those 
+                  of her husband, while he was engaged in visit-
+                  ing the boy on his sickbed. Sabbaths were
+                  days of special delight to her; she loved the 
+                  assembly of the Lords people, whither public 
+                  or private, often prolonging the subjects that 
+                  had been treated of in private conversation,
+                  and expressing her gratitude for the abundant 
+                  provision of Gods house. Even when indispo-
+                  sed in body, and gently urged to stay at home, 
+                  she often said, in allusion to her approach-
+                  ing confinement. No I will go to the Lord's house 
+                  while I can you know I shall soon be deprived
+                  of that privilege for a considerable time."
+                  The event, which she thus alluded to, natural-
+                  ly led her to frequent meditation and converse,
+                  on the possibility of its terminating in her 
+                  dissolution, and some months ago, she expres-
+                  sed her conviction, that if the Lord should
+                  see fit to make it the occasion of her change
+                  coming, all would be well; she could meet 
+                  her Saviour with joy as a pardoned sinner,
+                  who had nothing to boast, but whose trust was
+                  in his atonement and righteousness. Such an 
+                  Expression
+               </p>
+            </div>
+            
+            <div type="page" n="28">
+               <head>Page 28 <seg ana="MemLon_300031-28" />
+               </head>
+               <p>            
+                  expression of her sentiment was especially elicited
+                  by the sudden departure and burial of sister Morton
+                  when walking with her husband in the peace-
+                  ful spot, where her own dear remains were in-
+                  terred but 3 weeks after, in hope of a joyful
+                  resurrection. The kindness and cordiality mani-
+                  fested towards her and her husband, both by our 
+                  own Brethren and Sisters and by many excellent friends,
+                  was gratefully felt by her. On this subject and 
+                  on the general state of her mind, she thus 
+                  wrote to her sister in Gracehill, in the latter
+                  part of June: "I might charge myself with 
+                  'ingratitude, were I not to acknowledge that I
+                  "have many kind and attentive friends, and though
+                  "all have it not in their power to administer to
+                  "our outward comfort, yet by their kind advice,
+                  "affectionate interest, and willingness to assist me, 
+                  "they add much to my happiness, and call forth
+                  "feelings of gratitude and praise to Him, who
+                  "careth for his children, and will not suffer the
+                  "confidence of those who put their trust in
+                  "Him to be put to shame. I Indeed desire to com-
+                  "mit all my concerns to my Heavenly Father,
+                  conscious that He careth for me. May I know 
+                  how to be abased and how to abound; and in every 
+                  varying
+               </p>
+            </div>
+            
+            <div type="page" n="29">
+               <head>Page 29 <seg ana="MemLon_300031-29" />
+               </head>
+               <p>          
+                  varying condition, display the principles and disposition
+                  of one, who is seeking for glory and honour and immor-
+                  tality. I would not wish to be at any our? disposal,
+                  but rejoice to think I am under the care of one,
+                  who is too wise to err, and too kind to injure"
+                  As the time of her confinement approached,
+                  she stayed her mind calmly on the Lord, neither
+                  giving way to needless fears, nor yet elated? with 
+                  too sanguine hopes. She found the letter and 
+                  advice of her dear father a great help to her,
+                  truly valuing the privilege of having relatives,
+                  who were bound to her by the double ties of 
+                  nature and of grace. Thus prepared in her 
+                  mind, the time of her trial came, and after a 
+                  long, difficult, and painful labour of 4 days,
+                  she was enabled to become the mother of a fine, 
+                  healthy boy, early on the morning of Friday
+                  15th Oct. During this severe trivial
+                  She manifested that patience which had so long
+                  characterized her, and was really an edification
+                  to those who were around her. She constantly
+                  noticed the text of the day, drawing much com-
+                  fort and support from them. This was especially 
+               </p>
+            </div>
+            
+            <div type="page" n="30">
+               <head>Page 30 <seg ana="MemLon_300031-30" />
+               </head>
+               <p>             
+                  especially the case on wednesday, when she
+                  took occasion from the daily word: "The Lord
+                  hath called me from the womb ? "to speak to
+                  Sr Borland, to whom she was deservedly attach
+                  ed, of the Lord's kindness to her from her ear-
+                  first infancy, in caring for her, hedging up her
+                  way, keeping her from temptation, and guiding her
+                  gently by the streams of salvation, and in the 
+                  green pastures of his love. She spoke also 
+                  of the happiness and profit she had derived,
+                  from her connection with the Bretherands Church,
+                  Indeed she sincerely loved this part of the 
+                  Lord's vineyard, as is plain from her manuscript
+                  which contains meditations on some memorial
+                  days of our church, and petitions on behalf of 
+                  some of its members. She passed the friday 
+                  very favourably, and though she did not sleep much
+                  during the night, her medical attendant expres
+                  sed this satisfaction at her state on saturday
+                  morning, and declared he did not expect to find her
+                  so well. About the middle of the day, however,
+                  unfavorable symptoms appeared, which did
+                  not yield to the remedies applied, and when her
+                  physician came again in the morning eve
+                  ning, he recognized the marks of rapid and decided
+                  inflammation. Powerful means were used to 
+               </p>
+            </div>
+            
+            <div type="page" n="31">
+               <head>Page 31 <seg ana="MemLon_300031-31" />
+               </head>
+               <p>            
+                  impede its progress and anxiously was the effect awaited; 
+                  yet still the symptoms increased. She often reproved the
+                  anxiety of those around her, and scarcely repressed her
+                  tears, bidding them not to cast away their confi-
+                  dence. After a lapse of two hours, still stronger
+                  means were resorted to, as a final hope, and her
+                  husband proposing that they should unite in
+                  beseeching the blessing of the Lord for her
+                  restoration, she expressed her desire that this
+                  should be alone; begging him at the same time
+                  not to weep, for she was in the Lord's hands,
+                  He had often raised her up for when brought low,
+                  and could do it again if He pleased. All were
+                  now composed after prayer, and the dear sufferer
+                  being asked if she were resigned to the Lord's will,
+                  whatever it might be, replied cheerfully, "Yes I am."
+                  Shortly after, she added with great emphasis:
+                  "Oh! what pround hearts we have; this is
+                  sent to humble one, and if I am brought through;
+                  I shall walk more humbly with my God." 
+                  Observing the tears of those about her, she
+                  endeavoured to comfort them, told them not to
+                  weep for her sake for it disturbed her composure
+               </p>
+            </div>
+            
+            <div type="page" n="32">
+               <head>Page 32 <seg ana="MemLon_300031-32" />
+               </head>
+               <p>              
+                  and proceeded to say: "I had once to seek my Saviour,
+                  "when in this state, but not now. I know he 
+                  "will do all things well!" During the night
+                  some of the symptoms abated, though the most
+                  alarming continued. She became very heavy,
+                  slept, and wandered occasionally in her mind, yes
+                  always in an edifying way. Early in the morn
+                  ing her medical attendant came, felt her
+                  pulse, shook her head, and upon having her 
+                  loom, informed her husband, that all hope of
+                  her life was now gone, mortification had
+                  commenced, and that day would be her last. 
+                  With a bleeding and agonised heart, yet with 
+                  prayer for the Divine support, he immediate
+                  ly returned to the bedside of his dying wife,
+                  to hear, what I may have to tell you?' Though 
+                  she had appeared almost insensible before, she
+                  seemed to understand him in a moment, looked 
+                  astonished, and then with the utmost composure
+                  and firmness said: "Yes my dear I am! Having fun
+                  informed of the Doctor's opinions respecting her,
+                  she exclaimed with peace in her countenance;
+                  Well - the Lord's will be done - the Lord's will is
+                  always best. I had hoped to have been spared a little
+               </p>
+            </div>
+            
+            <div type="page" n="33">
+               <head>Page 33 <seg ana="MemLon_300031-33" />
+               </head>
+               <p>      
+                  little longer, but I am resigned to my Saviour's will."
+                  a pause insued, a period of sobs and tears, "Don't cry for
+                  me" she said, "I am happy going to our Saviour",
+                  Turning to her husband, she said: "The Lord will sup-
+                  port you and bless you, and be far more to you than I have
+                  been. We have been very happy together, but now you
+                  "must give me up to the Lord. Don't weep." and then
+                  she looked up with glory in her countenance, and 
+                  exclaimed; "O the delights, the heavenly joys, --
+                  "The glories of the place - Where Jesus sheds the
+                  brightest beams -- Of his o'erflowing grace." --
+                  and who would not go there" Every thing like
+                  wandering or insensibility had now completely felt 
+                  her. She seemed to realize, in the body, the joys
+                  that were before her, and her bedside became the very
+                  gate of heaven. It was as though the place were
+                  surrounded by happy spirits and holy angels, waiting
+                  to receive her redeemed soul, when it should be uncloth-
+                  ed. Her husband being called out for a moment, she
+                  took that opportunity to say to Sister Borland;" Ask Brother
+                  Kleinsmith to write to Brother Ramftler and like my
+                  dear Father, that I am departing in hope of a 
+                  "joyful resurrection, and am going to be committed to my
+                  "dear Mother." -- and then she added, with her eyes
+               </p>
+            </div>
+            
+            <div type="page" n="34">
+               <head>Page 34 <seg ana="MemLon_300031-34" />
+               </head>
+               <p>  
+                  uplifted to heaven, and oh! for angels to waft me to
+                  that happy place!" -- feeling then for her dear husband, she
+                  said to Sister Borland, who was weeping - "Don't cry before
+                  "him, it grieves him." Being asked upon her hus
+                  bands return, if she would see a young friend, who
+                  was waiting to speak to her, she replied: "Oh! yes
+                  send for her, let her come while I can speak." As soon
+                  as she had come to the bedside, the dying patient grasp
+                  ed her hand and said: "O my dear, you must come out
+                  of the world and leave its vanities and attend to the salva
+                  tion of your soul. I know it is hard to leave the
+                  world, but you must do it, if you would have hope in
+                  your death, when you are like me." She said more
+                  to the same purpose, and directed her to the Lord Jesus,
+                  and when the young lady promised to be kind to her
+                  baby. - she said - Oh! I have given up my ??
+                  it will be well cared for, but, (and she put dying em-
+                  phases into the words) oh! do care for your own
+                  salvation." - Another lady of decided Christian 
+                  harmeter approaching, she helped her, and said: "The
+                  steadfast, unmoveable, always abounding in the
+                  "work of the Lord" Frequently did she say to sister 
+                  Borland, who had been day and night at her bedside:
+                  "Oh! you have been very, very kind to me - the Lord will 
+                  "reward you - persevere, persevere - and the Lord bless
+               </p>
+            </div>
+            
+            <div type="page" n="35">
+               <head>Page 35 <seg ana="MemLon_300031-35" />
+               </head>
+               <p>    
+                  you and your family."---- knowing herself once from medi-
+                  tation, she asked what day it was, &amp; being bold it was 
+                  the sabbath day, she explained with amimation: "Oh!
+                  it is a blessed thing to die on the sabbath, and no enter
+                  into an eternal sabbath."----   Shortly after it was 
+                  proposed to sing with her; she said: oh! you! do"----
+                  and being asked to choose a verse, she gave out:
+                  "O then the sole defence and aid and but owing to the
+                  indistinctness of her voice only a few words were gath-
+                  ered and being it could not be found at the hine. The foll-
+                  owing was then selected: Jesus at my dispolution and     "
+                  when she said, "yes that will do." It was then hardly
+                  sang and partly sang out, but she maintained a hea--
+                  venly composure, and often begged those around her 
+                  not to weep for her, for she was happy. Once or twice 
+                  she said, "perhaps the Doctor is mistaken. I am 
+                  too strong to die, I do not feel as if I were dying."
+                  But about two hours and a half before her departure 
+                  she said placidly: "Now I feel a change, it will not
+                  be long now."      and then she betook herself again to
+                  comfort those around her, &amp; especially her sorrowing
+                  partner. To him she said, with tender affection:
+                  "the lord will support you &amp; supply all your wants,
+                  I know he will, for I have prayed for you"---  He replies
+                  "yes my dear I know he will, but it is hard to part
+                  with you so soon."----"O! yes,"she answered, it is hard 
+               </p>
+            </div>
+            
+            <div type="page" n="36">
+               <head>Page 36 <seg ana="MemLon_300031-36" />
+               </head>
+               <p>                
+                  "but it will not be long-- soon we shall be united 
+                  "again, never, never, to be parted.  you must finish 
+                  "your work; &amp; then you will come after me, &amp; we shall 
+                  " be united forever. I know you will care for our dear
+                  "child, I am quite easy about it."__ At this time the 
+                  Doctor who was greatly interested about her, entered
+                  the room, when she eagerly addressed him: "How 
+                  "long shall I live Doctor? He seemed much affected,
+                  &amp; replied: "My dear Mrs. Lattrobe, I am sorry to say 
+                  "you cannot be long."   "Sorry! she said, sorry--- do not 
+                  say sorry. I am glad. Will it be two hours?" He 
+                  answered that it could not be much longer, &amp; that 
+                  he was happy to see her so resigned: when she
+                  explained: "Let me die the death of the righ-
+                  teous, &amp; let my last end be like his! " here mom-
+                  ents were now spent in sacred prayer, &amp; in com-
+                  forting the survivors, but in a short time the 
+                  struggle of death became hard, though they
+                  were not severe, &amp; she said "it is a hard work to
+                  die"---&amp; several times, asked, "will it be long?"
+                  she was told it probably would not, but that the 
+                  Lord would give her strength equal to her day.
+                  This seemed to satisfy her, foron being asked, 
+                  whether a prayer should be made for her release 
+                  she said: "No! no! the Lords time is best, I can 
+                  wait patiently for that"--- 'Yes' said she- though
+                  I walk through the valley of the shadow of death, I fear 
+               </p>
+            </div>
+            
+            <div type="page" n="37">
+               <head>Page 37 <seg ana="MemLon_300031-37" />
+               </head>
+               <p>           
+                  I fear no evil, his rod &amp; his staff comfort me:"-- and 
+                  then with great earnestness, &amp; peace in her looks, she
+                  repeated the verse: "Now I have found the ground 
+                  "where in-- Sure my souls anchor may remain;--
+                  Even Christ, who to atone for sin,---Was as a
+                  spotless victim slain, Whose mercy shall un-
+                  shaken stay--- When Heaven &amp; earth are fled away."
+                  She now signified, that she wished to take leave of
+                  the friends saying,, "Goodbye--- Farewell to you all,"---
+                  waving her hands, &amp; repeating the words, when
+                  some seemed to linger. Being then left alone, with
+                  her husband &amp; sister Borland, she held their 
+                  hand most affectionately, &amp; comforted their hearts 
+                  saying to sister Borland," you will be you to him: I
+                  "know you will"------Brother Kelin smith having enter- 
+                  ed the room the, &amp; approached her couch, she took his 
+                  hand, &amp; said "you see, Sis, I am going before you."
+                  He was deeply affected, and with much emotion, pro-
+                  nounced over her the blessing of the Lord for her 
+                  disfortune. at the dove of it she said: amen! amen
+                  When a few sisters had assembled at her hedside,
+                  she looked around, and said : "I know you all," and 
+                  seeing an aged sister pilgrim. Sister Borlands mother,
+                  with whom she often had sweet spiritual convense 
+                  (a word that is cut off)
+               </p>
+            </div>
+               
+            <div type="page" n="38">
+               <head>Page 38 <seg ana="MemLon_300031-38" />
+               </head>
+               <p> 
+                  she beckoned to her, &amp; taking her hand, said: "Don't 
+                  "weep for me. ,Ah! their is a stingliss death-
+                  "yes! a stingliss death." words, which the emphat-
+                  ically repeated several times. She now appeared 
+                  once more to gather a little strength, again expres-
+                  sed her gratitude to Sister  Borland, adding "you
+                  "will be good to my child"---- &amp; again attempted to
+                  comfort her weeping partner. Every moment her
+                  eyes grew brighter, &amp; her counter once more 
+                  heavenly, &amp; she often said, " I think it will soon 
+                  "be over, the conflict will soon be over ended-- Amen,
+                  "Amen!" and as often did she turn to her weeping 
+                  husband, &amp; drew him towards her, to take leave of 
+                  her. Presently however, she requested tea to be 
+                  made &amp; turning to her partner, she said: "My dear 
+                  " we will have a cup of tea together once  more."___  
+                  and while it was preparing, she addressed him
+                  with great affection in her countenance: "We 
+                  " meet again-- joyful words, we meet again." 
+                  when the tea was brought, in she raised it eager-
+                  ly to her lips , &amp; having tasted, passed the soucer 
+                  to her husband, &amp; earnestly watched him drink,
+                  &amp; then gently drew it to Sister Borland, signifying 
+                  her desire that she likewise, should join in their
+                  parting
+               </p>
+            </div>
+
+            <div type="page" n="39">
+               <head>Page 39 <seg ana="MemLon_300031-39" />
+               </head>
+               <p> 
+                  parting feast of love. Under the impression
+                  that she was near her end, she then said: "the 
+                  conflict is nearly over--- bring the baby!" ---- bring 
+                  the baby!"---   The dear little infant was brought in
+                  and all un  conscious of the coming loss, presented 
+                  to her dying mother. She kissed it eagerly, and 
+                  gently ribbles its little arm with hand, as
+                  it lay across its breast, doubtlely imploring for 
+                  it, in silent fervour, the everlasting mercies
+                  of her Saviour. After the baby was removed,
+                  she had some sharp struggles: but about a
+                  quarter  of an hour before the end , she looked up again 
+                  with great animation in her contenance, &amp; exclaimed
+                  Praise! Praise! &amp; she gave out the lines:
+                  O may over imperfect song &amp; praises -
+                  "Be well pleasing unto thee, Lord Jesus;---
+                  "Say my peace I leave with you,---
+                  "Amen, amen, be it so!"--- A short struggle 
+                  ensured, after  which looking around with great 
+                  solemnity she addressed the company in these 
+                  impressive words: Their is an hour that must
+                  "come to you all!"----   She did not speak very
+               </p>
+            </div>
+            
+            <div type="page" n="40">
+               <head>Page 40 <seg ana="MemLon_300031-40" />
+               </head>
+               <p> 
+                  distinctly after this, but her lips were seen 
+                  to move, &amp; sometimes such whispers were
+                  heard: "Dear Saviour-- Amen--Amen!--"
+                  - About 3 O'clock  in the afternoon,a pang
+                  seemed to seize her for a moment, &amp; her counten 
+                  ance betokened pair, but when it ceased a beau
+                  tiful smile spread over her face, &amp; her eye be 
+                  came fixed. She leaned her head on sister 
+                  Borlands shoulder, &amp; still retained the hand 
+                  of her husband in affectionate recognition.
+                  Thees in solemn stillness, her parting breath 
+                  was watched , &amp; gently and insensibly did
+                  she die away, &amp; her happy redeemed spirit 
+                  went over into the arms of her saviour &amp; her 
+                  God! Her pilgrimage had lasted 28 years &amp; 
+                  4 months-- Her memory is sacred &amp; blessed 
+                  whom earth, her record is on high!</p>
+                  
+                  <p>She's now at next- In endless bliss-
+                  Beholding Christ our Saviour:--
+                  Our humble expectations in 
+                  To  join her there forever 
+               </p>
+            </div>
+                  
+         </div>
+      </body>
+   </text>
+</TEI>

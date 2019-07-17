@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Lebenslauf API</title>
+		<meta name="description" content="">
+		<meta name="author" content="Trausti Dagsson">
+		<link rel="stylesheet" href="../css/reset.css"/>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<style type="text/css">
+			
+			body {
+				margin: 30px;
+				font-family: 'Helvetiva', Arial, sans-serif;
+				font-size: 100%;
+			}
+			
+			#menu {
+				position: fixed;
+				top: 10px;
+				left: 10px;
+				width: 350px;
+				border: 1px solid #C3D5F3;
+				background: #E4E9F3;
+				border-radius: 3px;
+				box-sizing: border-box;
+				padding: 0 10px 10px 10px;
+			}
+			
+				#menu h2 {
+					color: #DA3D00;
+					margin-top: 10px;
+				}
+				
+				#menu a {
+					display: block;
+					color: #161616;
+					margin-bottom: 2px;
+					text-decoration: none;
+					font-family: courier;
+					font-size: 0.9rem;
+				}
+								
+			#content-area {
+				position: absolute;
+				top: 0;
+				left: 360px;
+				right: 0;
+				padding: 20px;
+			}
+			
+			#content-area h1 {
+				font-size: 1.8rem;
+				margin: 5px 0 15px 0;
+			}
+			
+			#content-area h2 {
+				font-size: 1.2rem;
+				margin: 5px 0 10px 0;
+			}
+			
+			p {
+				font-size: 0.9rem;
+				margin: 5px 0;
+			}
+
+			.item {
+				margin-bottom: 35px;
+			}
+			
+			.box {
+				font-family: courier;
+				font-size: 0.9rem;
+				border-radius: 3px;
+				border: 1px solid #EEE;
+				margin: 5px 0;
+				padding: 4px;
+				background: #FDFCFC;
+				overflow: hidden;
+			}
+			
+				.box .url {
+					border: 1px solid #F2F5F8;
+					border-radius: 3px;
+					padding: 3px;
+					border-left: 10px solid #C3D5F3;
+					background: #FFF;
+				}
+				
+				.box b {
+					font-weight: bold;
+					color: #DA3D00;
+				}
+			
+			.results-demo {
+				height: 300px;
+				overflow-y: auto;
+			}
+
+			.results-demo-link {
+				cursor: pointer;
+				font-size: 0.9rem;
+				display: inline-block;
+				background: #E4E4E4;
+				color: #888;
+				border: 1px #B1B1B1 solid;
+				border-radius: 3px;
+				padding: 4px;
+			}
+
+			.results-container {
+				margin-top: 10px;
+			}
+
+				.results-container .loading {
+					font-weight: bold;
+					color: #9B9B9B;
+				}
+			
+		</style>
+		<script type="text/javascript" src="../js/lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/lib/underscore-min.js"></script>
+        <script type="text/javascript" src="../js/lib/backbone-min.js"></script>		
+		<script type="text/javascript" src="api.js"></script>
+	</head>
+
+	<body>
+		<div id="menu"></div>
+		
+		<div id="content-area">
+		<h1>Lebenslauf API</h1>
+
+			<div id="apiContainer"></div>
+
+		</div>
+
+		<script type="text/template" id="methodViewTemplate">
+			<div class="item">
+				<a name="a<%= model.cid %>"/>
+				<h2><%= model.get('url') %></h2>
+				<p><%= model.get('description') %></p>
+				<a class="results-demo-link">Results demo.</a>
+				<div class="box results-demo">
+					<div class="url">lebenslauf/api<%= model.get('demoquery') %></div>
+					<pre class="results-container"><div class="loading">Loading data...</div></pre>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/template" id="methodsMenuTemplate">
+			<h2>Lebenslauf API</h2>
+			<% _.each(models, function(item, index) { %>
+				<a href="#a<%= item.cid %>"><%= item.get('url') %></a>
+			<% }); %>
+		</script>
+
+	</body>
+</html>

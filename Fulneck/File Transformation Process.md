@@ -9,7 +9,7 @@ Follow these steps.
 3) "State 3" is the version in which we do semantic encoding. We remove the line breaks so that we can tag people, places, dates, and semantic stuff (line breaks won't allow us to do that). We use this version for data extraction, but not for web-view unless Katie wants that.
 
 Transkribus exported TEI files are in this directory:
-../TranskribusExports/Transkribus_XML (State 1)
+../Fulneck/Raw_XML (State 1)
 
 State 2 TEI files are in this directory:
 ../Fulneck/StandardXML 

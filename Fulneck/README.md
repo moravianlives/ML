@@ -9,3 +9,5 @@ File states in this collection:
 5) SemanticXML - version used for semantic encoding; line breaks are removed so that we can tag people, places, dates, and semantic stuff. We use this version for data extraction, but not for web-view unless Katie wants that.
 
 Please see the Documentation folder for image link lists, complete list of Fulneck memoirs for which we have images, and Yorkshire families documents. 
+
+Please see the File Transformation Process document for step-by-step instructions in that process.

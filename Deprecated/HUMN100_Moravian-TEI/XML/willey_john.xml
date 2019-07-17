@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>John Willey: Memoir</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Social Sciences Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Courtney Paddick</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Arts &amp; Humanities Librarian</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Transcribers and encoders, HUMN100 Fall 2018</resp>
+               <persName>Allison Butler</persName>
+               <persName>Bhagawat Acharya</persName>
+               <persName>Brendan Matthys</persName>
+               <persName>Caleb Broughton</persName>
+               <persName>Carly Pavoni</persName>
+               <persName>Caroline Walsh</persName>
+               <persName>Clayton Wright</persName>
+               <persName>Ethan Conklin</persName>
+               <persName>George Tyler</persName>
+               <persName>Hailey Zimmerman</persName>
+               <persName>Jacob Hubbard</persName>
+               <persName>Jessica Hom</persName>
+               <persName>Julianna Kim</persName>
+               <persName>Mauricio Martinez</persName>
+               <persName>Mitch Gavars</persName>
+               <persName>Meg Koczur</persName>
+               <persName>Morgan Graning</persName>
+               <persName>Nathan Ware</persName>
+               <persName>Olivia Smith</persName>
+               <persName>Paige Whitney</persName>
+               <persName>Raleigh Singer</persName>
+               <persName>Rosemary Rong</persName>
+               <persName>Samantha Salazar</persName>
+               <persName>Zakee Willis</persName>
+               <orgName>Bucknell University</orgName>              
+            </respStmt>   
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Moravian Archives, London</repository>
+                  <msName type="memoir">John Willey</msName>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-01.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-02.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-03.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-04.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-05.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-06.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-07.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-08.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-10.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-11.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-12.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-13.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-14.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-15.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-16.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-17.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-18.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-19.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-20.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-21.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-22.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MCH/MemLon_300050-23.jpg"/>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text type="memoir">
+      <body xml:lang="en">
+         <div type="memoir">
+            <head>John Willey</head>
+            <div type="page" n="1">
+               <head>Page 1 <seg ana="MemLon_300050-01" />
+               </head>
+               <p>
+                  102.
+                  London
+                  Memoir
+                  Of Br John Willey, a Servant of the Lord
+                  in the Brn's Church, who departed this
+                  life in Gracehill, October 6th 1847.
+                  Aged 66 years.
+                  Written by his children
+                  
+                  Not having been able to find any
+                  account of our dear father's life, written
+                  by himself, we can merely record some of
+                  the principal outward outward changes which he 
+                  met with here, adding, the few remarks on 
+                  himself and his experience, which have 
+                  recurred to us in the private diaries of his
+                  congregation and in his cor(r)espondence.
+                  He was born Dec. 13th 1781 in Ful-
+                  nec; his father, Michael Willey (born 1729
+                  died aged 86, having served the the Congregation
+                  66 years" was at that time laborer of the
+                  Congregation at Pudsey.  He had one sister be-
+                  ing and one brother, Joseph, both older
+                  ​​​​​​​than
+               </p>
+            </div>
+            
+            <div type="page" n="2">
+               <head>Page 2 <seg ana="MemLon_300050-02" />
+               </head>
+               <p>
+                  than himself; of whom his brother
+                  was many years an active mins-
+                  ter of several congregations, and
+                  was called home before him to his 
+                  eternal rest, Aug. 11th 1841.  A strong
+                  affection existed between the bro-
+                  thers, and some of our dear father's
+                  happiest seasons were the visits
+                  which he was occasionally though
+                  rarely able to pay to his brother and
+                  family.  His early life, though chequer-
+                  ed by the death of an affectionate
+                  mother, when he was only 6 years
+                  of age, appears to have passed very 
+                  pleasantly among the youth in Ful-
+                  nec.  His old teacher B.  Bradley, kept
+                  an unfailing place in his memory, 
+                  and he spoke much and with great
+                  kindness of his well-remembered
+                  care and love.  As a sign of the com-
+                  parative innocences of those early 
+                  years, he would mention the fact 
+                  that he had never heard an oath
+                  ​​​​​​​until he had attained the age of 12 years
+               </p>
+            </div>
+            
+            <div type="page" n="3">
+               <head>Page 3 <seg ana="MemLon_300050-03" />
+               </head>
+               <p>     
+                  years. From some narratives of
+                  that time which he would occasion-
+                  ally call to mind, it seems as tho'
+                  his habitual good temper had early
+                  displayed itself, and rendered him 
+                  a favorite amongst his teachers and
+                  companions.  At the age of 14, he went,
+                  as was there customary, to learn a 
+                  trade in Bedford, where he experi-
+                  enced great kindness from Br. Livius,
+                  of whom he long retained a grateful
+                  recollection.  Here of course, he was
+                  somewhat more of the world and of
+                  its ways of sinful pleasure, and ap-
+                  pears to have lamented the want of
+                  Godliness amongst many of the young
+                  people with whom he was associated.
+                  It was particularly whilst on a visit
+                  in London, on his way to Kingswood
+                  that he was struck with the deep de-
+                  pravity of human nature, and
+                  found gratitude to that Lord, to whom
+                  he had been early led, and who had
+                  so mercifully held his preserving hand
+               </p>
+            </div>
+            
+            <div type="page" n="4">
+               <head>Page 4 <seg ana="MemLon_300050-04" />
+               </head>
+               <p>   
+                  hand over him. At the same time,
+                  we doubt not, he obtained deeper
+                  views of his own sinfulness, and
+                  of his need of the salvation wrought
+                  for sinners, though the meritorious
+                  life and death of our Lord and Sa-
+                  vior Jesus Christ.
+                  In 1802, when 21 years of age,
+                  he went to Bristol; and on his fa-
+                  ther's being appointed laborer of
+                  Kingwood congregation about that time,
+                  he was frequently with him there
+                  assisting in the school in that place.
+                  It was here he was viewed with the
+                  Congregation, and shortly after, in 1804,
+                  very permitted to partake for the
+                  first time of the Holy Communion
+                  There events seem to have made a
+                  way deep impression upon his
+                  mind, if we may judge from a
+                  remarkable experience which
+                  he has recorded as having happened
+                  in him on the morning of Palm sunday
+                  1804.  If it came upon me sleeping, he
+               </p>
+            </div>
+            
+            <div type="page" n="5">
+               <head>Page 5 <seg ana="MemLon_300050-05" />
+               </head>
+               <p>   
+                  he writes, it made the same impression
+                  as though I had been awake.  There
+                  came over me a great fear and trem-
+                  bling violent sweat, and a dread of
+                  being destroyed instantly.  I lifted up
+                  my hand and raised my eyes, but
+                  could not rise, for the clothes were as
+                  a rock around me.  There stood one
+                  whose eyes were fixed on me, with a
+                  shining light; before him an upright
+                  pillar, with which I expected to be slain,
+                  for the sense of my guilt increased my
+                  fear.  I never can forget his look.  He
+                  spoke - O how long have I delayed my
+                  coming; how long have I observed thy
+                  ways; I have had patience with thee;
+                  thou hast had advantages but thou hast
+                  neglected them; thy crimes are very great,
+                  thou hast been preserved through mer-
+                  cy hither to, but now ______ Here I pray-
+                  ed earnestly for mercy, that I might not 
+                  Be destroyed in my sins; yet my heart
+                  was hard as the rock.  I was powerfully
+                  convinced that it was Jesus who
+                  ​​​​​​​stood before me, and continued praying till
+               </p>
+            </div>
+            
+            <div type="page" n="6">
+               <head>Page 6 <seg ana="MemLon_300050-06" />
+               </head>
+               <p>               
+                  Till at last he mercifully Caused floods
+                  of tears to flow from mine eyes.  Where
+                  I still in treated him to have mercy 
+                  on me a wretched and guilty sinner,
+                  his countenance changed, he seemed
+                  filled with compassion, looked on me
+                  with pity, and spoke to me kindly, so
+                  that I was convinced I was heard.
+                  His last words were very impressive.
+                  "Be in earnest for your soul's salvation
+                  lest I come quickly with a woe."  Where
+                  he vanished, the pillar that that seemed rea-
+                  dy to destroy me, appeared changed into
+                  a hom(e) of salvation.  I awoke to my
+                  utter astonishment, and continued 
+                  long in prayer for the assistance I have
+                  daily and hourly need from a cruci-
+                  fied Savior.
+                  Our dear father appears about this time
+                  to have been tried with a delicate
+                  state of health, sometimes suffering
+                  from new and affections, which had
+                  their bad effects upon his spirits.
+                  In May 1806 he went to Fulnec, and
+                  after midsummer the same year, he
+               </p>
+            </div>
+            
+            <div type="page" n="7">
+               <head>Page 7 <seg ana="MemLon_300050-07" />
+               </head>
+               <p>
+                  he entered as a teacher with Misfield
+                  school.  The next year he went to Fulnec,
+                  to take charge of the Day school there,
+                  but was soon again (Sept 1808) recalled
+                  to Mirfield.  The 5 years spent in the
+                  school there, he remembered with
+                  much pleasure; he remembered great
+                  affection for his pupils, and not a few
+                  of his old schools have shown that they
+                  recall his memory with pleasure.  He
+                  spoke after of his agreeable and brotherly
+                  intercourse with Br. Pohlman, there
+                  Minister and Director of the school
+                  at Misfield.  His spare time was spent
+                  in visiting the sick in the neighbor-
+                  hood, and in cultivating that science
+                  which always retained such attractions
+                  for him, and in which he certainly dis-
+                  played mean talent.  The corespond-
+                  ence afterwards maintained with his
+                  relative, Sir W. Hamilton on astronomical
+                  subjects, was a source of great delight
+                  to him; and the laborious and neatly
+                  expected tables and calculations
+                  which he has left behind him, show his
+               </p>
+            </div>
+            
+            <div type="page" n="8">
+               <head>Page 8 <seg ana="MemLon_300050-08" />
+               </head>
+               <p>
+                  His ingenuity and talent. It was in
+                  Mirfield in March 1809, that he first
+                  publicly proclaimed the Gospel,to be-
+                  come a faithful minister of which, we
+                  sincerely believe, was his highest aim.
+                  In Sept. 1812 he was called to be Sgle.
+                  Brn’s Laborer in Fulnec ;a part which
+                  he found more difficult than the one
+                  he had occupied in Mirfield. He lament
+                  ed the wait(weight) of the spiritual life in ma-
+                  ny members of the choir for the good
+                  of which he was appointed to labor; and
+                  cases might occur here, as elsewhere,
+                  where his meek and yielding temper
+                  would make the exercise of proper disci-
+                  pline, and faithfulness in reproving, a
+                  difficult task for him.
+                  In June 1814 he was called to Dublin,
+                  As Sgle Brn’s Laborer, and remained in that  
+                  past for 3 years, during which time we
+                  know of little worth recording concerning
+                  him. In 1817 he was ordained in Grace-
+                  Hill by Br. Benade, and called to serve
+                  the Congn. at Ballinderry. August 21 he
+                  was married to the Sgle .Sr.Susan Hutton,
+               </p>
+            </div>
+            
+            <div type="page" n="10">
+               <head>Page 10 <seg ana="MemLon_300050-10" />
+               </head>
+               <p>           
+                  that teacher in the ladies school at 
+                  Gracehill. In Ballinderry they spent
+                  10 useful and happy years; but also
+                  their four oldest surviving children
+                  were born; one little daughter being
+                  taken from them by the Lord in early 
+                  infancy.   In 1826 they removed to
+                  Cootehill, a congregation which had been
+                  for some years without a Laborer, and 
+                  was in a very low condition, seeming
+                  to require all the energy which health
+                  and activity could supply. Here, as long
+                  as his health permitted him, our dear
+                  father labored cheerfully and in blessing.
+                  An account which he draw up for him-
+                  self of the various preaching places
+                  he attended in the neighborhood, and
+                  the success he met with in proclaim-
+                  ing the joyful news of saluation, tes-
+                  tifies to his activity. In the year 1833,
+                  1 year after his arrival in Cootehill,
+                  he visited 12 out-preaching places,
+                  mostly once a fortnight, at an average
+                  distance of 4 or 5 miles, and some
+                  12 and even 17 miles from Cootehill.
+               </p>
+            </div>
+            
+            <div type="page" n="11">
+               <head>Page 11 <seg ana="MemLon_300050-11" />
+               </head>
+               <p>         
+                  The following memorandum at the
+                  close of 1832,will share the spirit in
+                  which he labored:”When at the close
+                  of this year, I take a view of my poor,
+                  imperfect services in the vineyard of 
+                  our Lord, I see much cause for the 
+                  deepest humiliation, on account of my
+                  innurmerable transgressions,failings,
+                  and short-comings, and fervently pray
+                  my merciful Saviour and gracious
+                  Lord and Master, to forgive me in all
+                  things  where in I have been to blame;
+                  whether it be in the omission of my
+                  duty, or in the performance of it in a
+                  wrong spirit, by hearkening at times
+                  to the secret whisper of approbation in 
+                  my unhallowed breast, and forgetting
+                  to give all the honor and glory to the Lord.
+                  It is by his gracious assistance, I 
+                  have been enabled to testify to my 
+                  fellow-sinners, the richness of his
+                  Grace; whereas, if he had left me
+                  to myself, I should have sunk into
+                  shame and confusion .O that self
+               </p>
+            </div>
+            
+            <div type="page" n="12">
+               <head>Page 12 <seg ana="MemLon_300050-12" />
+               </head>
+               <p>            
+                  and pride might be so mortified in
+                  me, that I might even remember, that
+                  I am naught but a poor, worthless,
+                  unprofitable servant, and Christ
+                  my All!
+                  Lord keep me contrite, low and poor,
+                  Thus shall I praise thee memorie(his memory);
+                  Myself thrice blessed I can call,
+                  When I am nought, and thou my all!”
+                  In Cootehill,our dear Father’s
+                  health quickly declined, and symp-
+                  tons of those complicated diseases
+                  began to show themselves, which
+                  gradually affected almost every vi-
+                  tal part, and mostly disabled him
+                  from duty during the last six years
+                  of his life. Soon after his first serious
+                  attack, we find his experience recorded
+                  thus:”In the beginning of May 1841,
+                  I had a violent attack of influenza
+                  which lasted a long while, and caused
+                  me to notice to rest early in the after-
+                  noon. In the month of July I left
+                  Cootehill for Ballinderry in hopes
+                  that the change of air might be of
+               </p>
+            </div>
+            
+            <div type="page" n="13">
+               <head>Page 13 <seg ana="MemLon_300050-13" />
+               </head>
+               <p>             
+                  service to me ; but this not being the
+                  case, I begged my dismissal from ac-
+                  tive Service in Cootehill, for I saw my- 
+                  self necessitated to notice from the work
+                  and labor of love in which my soul
+                  delighted, by the severe Affliction by
+                  with which a merciful and long-suf-
+                  ferring Saviour visited me. I humbly,
+                  bow down with submission to his bles-
+                  sed will, and can say in this trial.
+                  As I was enabled to do when lately
+                  receiving the account of my dear Bro-
+                  ther's departure: “It is the lord, let him
+                  Do what seemeth him good.” I feel too
+                  weak to participate deeply of the cup
+                  of affiliation, and my dear Saviour
+                  favors me, by permitting me to leave
+                  all my griefs with him, and he con-
+                  fonts me in such a manner that I can
+                  not say I have had an hours real dis-
+                  tress. After nearly 15 years labor amongst
+                  the little flock at Cootehill,  having long
+                  shared both joy and grief with them,
+                  It is no wonder that I feel much at
+                  the thoughts of being obliged to resign
+               </p>
+            </div>
+            
+            <div type="page" n="14">
+               <head>Page 14 <seg ana="MemLon_300050-14" />
+               </head>
+               <p>              
+                  my change of them. My prayers at least
+                  on their behalf, shall be continued at
+                  the throne of grace. In looking at the fu-
+                  ture, it is still my desire, that if our
+                  Dear Lord and Master should be pleased
+                  to bless the means used for my recovery,
+                  I may yet be employed in some part or
+                  other of his vineyard, to bear still further
+                  testimony of his great love to sinners. O
+                  might I be more devoted to Him and
+                  serve Him more faithfully till the end
+                  of my days.”
+                  In the course of some months, our father
+                  thought himself sufficiently recovered
+                  to asume his labors in Cootehill, and
+                  accordingly removed thither from Bal-
+                  linderry in March 1843. The Brn. &amp; Srs.
+                  rejoiced exceedingly on his return, wel-
+                  coming him with the sincerest to-
+                  kens of affection; and the ensuing pas-
+                  sion season proved a time of great en-
+                  joyment to this little flock and to their
+                  pastor. But in the autumn of the same
+                  year he felt his strength again failing,
+                  and in the winter he was frequently 
+               </p>
+            </div>
+            
+            <div type="page" n="15">
+               <head>Page 15 <seg ana="MemLon_300050-15" />
+               </head>
+               <p>    
+                  unable to preach.
+                  In the summer of 1844, he felt in(it) ne-
+                  cessary again to leave Cootehill, to which
+                  he never returned, but took up his resi-
+                  dence with his children at Glenary,
+                  till the following year 1845. In April
+                  he returned to Gracehill, with the expecta-
+                  tion of ending his days in the midst
+                  of that Congregation.  In the summer of
+                  1846, according to the Doctor’s advice, he
+                  sought change of air, and spent upwards
+                  of 4 months and lodgings near Bally-
+                  Castle, close to the sea-shore, which he
+                  believed through the Lord’s blessing,
+                  helped to prolong his life.
+                  In the beginning of October he re-
+                  turned to Gracehill, and in the follow-
+                  ing winter endured much pain and
+                  severe suffering, with patience and
+                  resignation. To his Saviour’s will,
+                  which his faith and love taught
+                  him to regard as always conducive
+                  to his own real good. The vacations
+                  at midsummer and Christmas,
+                  when he could collect his children
+               </p>
+            </div>
+            
+            <div type="page" n="16">
+               <head>Page 16 <seg ana="MemLon_300050-16" />
+               </head>
+               <p>        
+                  around him were during these three
+                  years of trial, seasons of great plea-
+                  sure to him, and we have at such
+                  times been frequently struck with his
+                  cheerfulness and time enjoyment of
+                  life amidst all its drawbacks, and
+                  edified with the example of resigna-
+                  tion and Christian patience which he
+                  presented to us. He did not converse
+                  much on subjects of spiritual experi-
+                  ence, but his own interest in the
+                  truths of revelation, and particularly
+                  his love for and delight in our hymns
+                  was always apparent.
+                  When the spring of 1847 returned with-
+                  out any lasting improvement in his
+                  state, he could express himself as per-
+                  fectly resigned to the Lord’s will with
+                  him, though he naturally longed for
+                  ease and outward comfort, and faith-
+                  fully used every means recommend-
+                  ed. His faith meanwhile seemed
+                  purified in the fire of these afflic-
+                  tions, and his love and gratitude
+                  to the Saviour, were more ardent
+               </p>
+            </div>
+            
+            <div type="page" n="17">
+               <head>Page 17 <seg ana="MemLon_300050-17" />
+               </head>
+               <p>    
+                  than Perhaps at every former period of
+                  his life.
+                  we find the following reflections written
+                  in the summer of this year:
+                  It had been my lot to be afflicted for
+                  the last five years of my life, but I had
+                  abundant cause to bless the Lord for
+                  his meeting me in the way he has done,
+                  since nothing else would have brot
+                  me so closely to his feet.  I have learnt
+                  more of the love of Jesus in the school
+                  of affliction, than I ever knew before,
+                  and I can rejoice in Christ Jesus as
+                  my faithful helper in time of need,
+                  my good physician and nurse, and
+                  my merciful savior who for forgiveth
+                  all my iniquities. I have no confi-
+                  dence in any other; in him alone I
+                  place my trust, and find him al-
+                  ways willing to help me. I delight
+                  to look to him by faith, and to think
+                  that though he is in the brightness
+                  of his glory, he permits me a poor
+                  sinful creature to behold him in
+                  His
+               </p>
+            </div>
+            
+            <div type="page" n="18">
+               <head>Page 18 <seg ana="MemLon_300050-18" />
+               </head>
+               <p> 
+                  his suffering, in his deep humiliation
+                  in the garden, died on the cross. He
+                  knows that nothing else can comfort
+                  me in the midst of my pain, and
+                  thus he structures my cup and makes
+                  me resigned and cheerful. I have
+                  passed through years of trial and
+                  suffering, I have come through great
+                  tribulation, yet I do not wish it
+                  had been less; I am sure my Savior
+                  has proportioned this chastisement
+                  to the necessities I neglected to bring
+                  me wholly to himself, that I might
+                  see the exceeding sinfulness of sin,
+                  be completely weaned from this present
+                  evil world, and live solely to his praise
+                  and glory. Blessed be his name, he
+                  has in a great measure affected his
+                  gracious purpose, and my joy no man 
+                  can take from me." In another place 
+                  he says: "The blessings I have enjoyed,
+                  especially during the latter part of my
+                  sufferings, have been so rich and great,
+                  that I have most sincerely thanked our
+                  precious Savior Jesus, for visiting
+                  Me
+               </p>
+            </div>
+            
+            <div type="page" n="19">
+               <head>Page 19 <seg ana="MemLon_300050-19" />
+               </head>
+               <p>            
+                  me with this very affliction, since it
+                  has opened to me more clearly the 
+                  pathway to glory." After making
+                  an affecting comparison between his
+                  own distress, and the far greater
+                  and meritorious sufferings of his
+                  Saviour, he adds: "I know he loves
+                  me and I love him sincerely, but 
+                  not as I ought. I can never love
+                  him here as I ought for what he has
+                  done for me." The change of residence
+                  to the shore of the lake which was
+                  made at his request in May, seemed
+                  at first to revive him, but it became
+                  gradually more and more evident,
+                  that it was not the Lord's will to 
+                  lengthen his life here, but to take him
+                  soon from tribulation here below, to 
+                  the pleasures for even more at his right 
+                  hand. About the middle of Sept. he
+                  returned to his resting place in Grace-
+                  hill, there in patience to await the
+                  Lord's good time to call him 
+                  In the visits which the laborers
+                  of the Congregation paid him in these last weeks,
+                  He
+               </p>
+            </div>
+            
+            <div type="page" n="20">
+               <head>Page 20 <seg ana="MemLon_300050-20" />
+               </head>
+               <p> 
+                  he appeared to continue in the sacred
+                  resigned and happy frame.  His humil-
+                  iation deepened till the last, his views
+                  of faith were cleaner, his love grew
+                  stronger. He mentioned the ways which
+                  he used to sing _ And there may I as
+                  vile as he, Wash all my sins away,
+                  but which he now called joyfully re-
+                  peat _ And there have I as vile as he,
+                  washed all my sins away. He said
+                  he believed if he had seen this Gospel
+                  doctrine so clearly at the time of his early
+                  ministry as he did now, his preaching
+                  would, with the Lord's blessing, have
+                  been more effectual. His extreme weak-
+                  ness had after led himself and others
+                  to think the time of his departure mean
+                  at hand, and as often he had again, re-
+                  gained his strength, battling the skill 
+                  of the physicians.
+                  On the night of Oct. 5 he was home 
+                  to rest as usual, and though exceed-
+                  ingly weak, he was in a peaceful,
+                  happy state of mind, full of heavenly
+                  contemplation, his thought evidently
+                  resting.
+               </p>
+            </div>
+            
+            <div type="page" n="21">
+               <head>Page 21 <seg ana="MemLon_300050-21" />
+               </head>
+               <p>             
+                  resting on some object which filled 
+                  him with a calm and holy joy. Whilst
+                  being settled for the night, he repeatedly
+                  said: "How much! how much to sleep
+                  in Jesus!" One of his children asking
+                  him, whether he meant the sheep of the
+                  body, he only answered with a placid
+                  smile. He'd had, no doubt, a presentiment
+                  that he was about to fall in to that sleep
+                  in Jesus, which with his believing peo-
+                  ple only the spiritual awakening to
+                  endless happiness in his presence _
+                  His last words were: "How much
+                  to be a sheep of Jesus." After this, he
+                  slumbered quietly til towards morn-
+                  ing, where a change apparently coming
+                  over him, his wife and the three of his
+                  children there with him, assembled
+                  around his bed to witness his gentle
+                  and happy departure from this world
+                  of suffering, to that happier one of end-
+                  less felicity and glory. They sung a 
+                  verse with breaking voices, of which
+                  he appeared just conscious and
+                  soon after he gently slept away, re-
+                  signing
+               </p>
+            </div>
+            
+            <div type="page" n="22">
+               <head>Page 22 <seg ana="MemLon_300050-22" />
+               </head>
+               <p>    
+                  signing his spirit without a struggle
+                  with the faithful hands of Jesus, of that
+                  Lord whom he believed in and loved,
+                  and in whose presence, we doubt not,
+                  he now enjoys the happiness and rest re-
+                  served for those whose sins are washed
+                  away in his blood, and whose spirits
+                  are clothed in the garment of his mighte-
+                  aness
+                  We only add as his bereaved family,
+                  that whilst we sorrow at the loss of
+                  one beloved by all who knew him, and
+                  doubly endeared to us, we sorrow not
+                  as those that have no hope; may rather,
+                  so confident are we of his present hap-
+                  pier state, so glad to think of his release
+                  from so much suffering, that we rejoice,
+                  and join him in praising the Lord for 
+                  his past mercies to his servant, and for
+                  the communication of that happiness
+                  which he is now enjoying.
+                  May the example of our father's faith,
+                  together with the solemn experience of
+                  the days that we his secure children
+                  have spent together on this last mournful
+               </p>
+            </div>
+            
+            <div type="page" n="23">
+               <head>Page 23 <seg ana="MemLon_300050-23" />
+               </head>
+               <p>   
+                  mournful occasion, be impressed deeply
+                  upon our hearts, and through our Lord's
+                  grace be for a blessing on each of us; and
+                  may all  heavenly consolation, and the
+                  hope of once rejoining our beloved father
+                  before the throne of God and of the Lamb,
+                  support his widow and our dear mo-
+                  ther, through the remaining years of
+                  her earthly pilgrimage, that we may 
+                  all join as the Lord's redeemed, with
+                  the great family of God above. Amen!
+                  
+                  
+                  Gracehill
+               </p>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Lebenslauf</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="appView"></div>
+
+<script type="text/template" id="appTemplate">
+	<div class="main-header">
+		<div class="container">
+
+			<div class="row">
+					
+				<div class="twelve columns">
+					<h4 class="u-pull-left" style="margin-right: 20px; margin-bottom: 0;">Lebenslauf Data Management</h4>
+
+					<div class="u-pull-right">
+						<a class="button button-primary" href="#places">Places</a>
+						<a class="button button-primary" href="#places/duplicates">Places: Duplicates</a>
+						<a class="button button-primary" href="#persons">Persons</a>
+						<a class="button button-primary" href="#persons/duplicates">Persons: Duplicates</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container main-content">
+
+		<div id="viewContainer" class="view-container"></div>
+
+	</div>
+
+	<div class="overlay-container"></div>
+
+</script>
+
+<script type="text/template" id="placeListTemplate">
+
+	<% _.each(models, function(model) { %>
+		<tr data-id="<%= model.get('id') %>">
+			<td><input data-id="<%= model.get('id') %>" class="item-check" type="checkbox"/></td>
+			<td><a class="row-name" href="#place/<%= model.get('id') %>"><%= model.get('name') %></a></td>
+			<td><a class="row-name" href="#place/<%= model.get('id') %>"><%= model.get('area') %></a></td>
+			<td><%= model.get('google_id') %></td>
+			<td><%= model.get('lat') != undefined && model.get('lng') != undefined ? '<div class="table-marker location"></div>' : '' %></td>
+		</tr>
+	<% }); %>
+
+</script>
+
+<script type="text/template" id="placeListViewTemplate">
+	<div class="row">
+
+		<div class="twelve columns">
+
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th width="5%"><div class="check-all"></div></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="name">Name</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="area">Area</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="google_id">Google ID</a></th>
+						<th width="10%"><a class="column-sort" href="#" data-sort="lat">Location</a></th>
+					</tr>
+				</thead>
+
+				<tbody class="list-container">
+
+				</tbody>
+
+			</table>
+
+		</div>
+
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">
+				<div class="four columns">
+					<a class="button prev">Prev</a>
+					<a class="button next">Next</a>
+					<span class="page-info"></span>
+				</div>
+				<div class="eight columns">
+					<div style="display: none" class="combine-controls">
+						<a class="u-pull-left button button-primary combine-button" style="margin-right: 10px">Combine <span class="checked-number"></span> places</a>
+						<select class="u-pull-left combine-places-select u-full-width" style="max-width: 30%"></select>
+					</div>
+					<input type="text" class="search-input u-pull-right" placeholder="Search">
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="duplicatePlaceListItemTemplate">
+
+	<div class="row">
+		<div class="twelve columns">
+			<h5><strong><%= model.get('google_name') %></strong>: <%= model.get('google_id') %></h5>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="eight columns">
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th width="5%"><div class="check-all"></div></th>
+						<th width="50%">Name</th>
+						<th width="50%">Area</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<% _.each(model.get('places'), function(place) { %>
+						<tr>
+							<td><input data-id="<%= place.id %>" class="item-check" type="checkbox" checked="checked"/></td>
+							<td><a href="#place/<%= place.id %>"><%= place.name %></a></td>
+							<td><a href="#place/<%= place.id %>"><%= place.area %></a></td>
+						</tr>
+					<% }) %>
+				</tbody>
+
+			</table>
+		</div>
+		<div class="four columns">
+			<div class="combine-controls">
+				<select class="combine-places-select" /><br/>
+				<a class="button button-primary combine-button">Combine <span class="checked-number"></span> places</a>
+			</div>
+
+			<div class="map-container"></div>
+		</div>
+	</div>
+
+	<hr/>
+
+</script>
+
+<script type="text/template" id="duplicatePlaceListViewTemplate">
+
+	<div class="list-container">
+
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<a class="button prev">Prev</a>
+					<a class="button next">Next</a>
+					<span class="page-info"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</script>
+
+<script type="text/template" id="duplicatePersonListItemTemplate">
+
+	<div class="row">
+		<div class="twelve columns">
+			<h5><strong><%= model.get('surname_literal') %>, <%= model.get('firstname') %></strong> (<%= model.get('birth_year') %>-<%= model.get('death_year') %>)</h5>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="nine columns">
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th width="4%"><div class="check-all"></div></th>
+						<th width="12%">LL id</th>
+						<th width="12%">Surname</th>
+						<th width="12%">Surname (literal)</th>
+						<th width="12%">Firstname</th>
+						<th width="12%">Birthdate</th>
+						<th width="12%">Deathdate</th>
+						<th width="12%">Birthplace</th>
+						<th width="12%">Deathplace</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<% _.each(model.get('persons'), function(person) { %>
+						<tr>
+							<td><input data-id="<%= person.id %>" class="item-check" type="checkbox" checked="checked"/></td>
+							<td><a class="row-name" href="#person/<%= person.id %>"><%= person.ll_id %></a></td>
+							<td><a class="row-name" href="#person/<%= person.id %>"><%= person.surname %></a></td>
+							<td><a class="row-name" href="#person/<%= person.id %>"><%= person.surname_literal %></a></td>
+							<td><a class="row-name" href="#person/<%= person.id %>"><%= person.firstname %></a></td>
+							<td><%= person.birth.year+(person.birth.month ? '-'+person.birth.month : '')+(person.birth.day ? '-'+person.birth.day : '') %></td>
+							<td><%= person.death.year+(person.death.month ? '-'+person.death.month : '')+(person.death.day ? '-'+person.death.day : '') %></td>
+							<td><a href="#place/<%= person.birth.place.id %>"><%= person.birth.place.lat != undefined ? '<div class="table-marker location"></div>' : '' %><%= person.birth.place.name %></a></td>
+							<td><a href="#place/<%= person.death.place.id %>"><%= person.death.place.lat != undefined ? '<div class="table-marker location"></div>' : '' %><%= person.death.place.name %></a></td>
+						</tr>
+					<% }) %>
+				</tbody>
+
+			</table>
+		</div>
+		<div class="three columns">
+			<div class="combine-controls">
+				<select class="combine-persons-select" /><br/>
+				<a class="button button-primary combine-button">Combine <span class="checked-number"></span> persons</a>
+			</div>
+
+			<div class="map-container"></div>
+		</div>
+	</div>
+
+	<hr/>
+
+</script>
+
+<script type="text/template" id="duplicatePersonListViewTemplate">
+
+	<div class="list-container">
+
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<a class="button prev">Prev</a>
+					<a class="button next">Next</a>
+					<span class="page-info"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</script>
+
+<script type="text/template" id="personListTemplate">
+
+	<% _.each(models, function(model) { %>
+		<tr data-id="<%= model.get('id') %>">
+			<% if (showCheckBoxes) { %>
+				<td><input data-id="<%= model.get('id') %>" class="item-check" type="checkbox"/></td>
+			<% } %>
+			<td><a class="row-name" href="#person/<%= model.get('id') %>"><%= model.get('surname') %></a></td>
+			<td><a class="row-name" href="#person/<%= model.get('id') %>"><%= model.get('surname_literal') %></a></td>
+			<td><a class="row-name" href="#person/<%= model.get('id') %>"><%= model.get('firstname') %></a></td>
+			<td><%= model.get('birth').year %></td>
+			<td><%= model.get('death').year %></td>
+			<td><a href="#place/<%= model.get('birth').place.id %>"><%= model.get('birth').place.lat != undefined ? '<div class="table-marker location"></div>' : '' %><%= model.get('birth').place.name %></a></td>
+			<td><a href="#place/<%= model.get('death').place.id %>"><%= model.get('death').place.lat != undefined ? '<div class="table-marker location"></div>' : '' %><%= model.get('death').place.name %></a></td>
+		</tr>
+	<% }); %>
+
+</script>
+
+<script type="text/template" id="personListViewTemplate">
+	<div class="row">
+
+		<div class="twelve columns">
+
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th width="5%"><div class="check-all"></div></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="surname">Surname</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="surname_literal">Surname (literal)</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="firstname">Firstname</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="birth_year">Birthyear</a></th>
+						<th width="40%"><a class="column-sort" href="#" data-sort="death_year">Deathyear</a></th>
+						<th width="40%">Birthplace</th>
+						<th width="40%">Deathplace</th>
+					</tr>
+				</thead>
+
+				<tbody class="list-container">
+
+				</tbody>
+
+			</table>
+
+		</div>
+
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">				
+				<div class="four columns">
+					<a class="button prev">Prev</a>
+					<a class="button next">Next</a>
+					<span class="page-info"></span>
+				</div>
+				<div class="eight columns">
+					<div style="display: none" class="u-pull-left combine-controls">
+						<a class="button button-primary combine-button">Combine <span class="checked-number"></span> persons</a>
+						<select class="combine-persons-select u-full-width" style="max-width: 50%"></select>
+					</div>
+					<input type="text" class="search-input u-pull-right" placeholder="Search">
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="placeViewTemplate">
+
+	<div class="row">
+		<div class="twelve columns">
+			<h2 style="margin-bottom: 10px"><%= model.get('name') %></h2>
+			<h5>(<%= model.get('name_en') %>)</h5>
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="six columns">
+			<label for="nameInput">Name:</label>
+			<input class="u-full-width" type="text" data-bind="name" value="<%= model.get('name') %>" id="nameInput">
+		</div>
+		<div class="six columns">
+			<label for="nameEnInput">Name (en):</label>
+			<input class="u-full-width" type="text" data-bind="name_en" value="<%= model.get('name_en') %>" id="nameEnInput">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="six columns">
+			<label for="areaInput">Area:</label>
+			<input class="u-full-width" type="text" data-bind="area" value="<%= model.get('area') %>" id="areaInput">
+		</div>
+		<div class="six columns">
+			<label for="areaEnInput">Area (en):</label>
+			<input class="u-full-width" type="text" data-bind="area_en" value="<%= model.get('area_en') %>" id="areaEnInput">
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="six columns">
+			<label>Original name:</label>
+			<input class="u-full-width" type="text" readonly value="<%= model.get('name_ll') %>">
+		</div>
+		<div class="six columns">
+			<label>Original area:</label>
+			<input class="u-full-width" type="text" readonly value="<%= model.get('area_ll') %>">
+		</div>
+	</div>
+
+	<hr/>
+
+	<% if (model.get('google_id') != undefined) { %>
+		<div class="row">
+			<div class="four columns">
+				<label for="googleIdInput">Google ID:</label>
+				<input class="u-full-width" type="text" readonly value="<%= model.get('google_id') %>" id="googleIdInput">
+			</div>
+			<div class="four columns">
+				<label for="googleNameInput">Google Name:</label>
+				<input class="u-full-width" type="text" readonly value="<%= model.get('google_name') %>" id="googleNameInput">
+			</div>
+			<div class="four columns">
+				<label for="googleLocationTypeInput">Google Location Type:</label>
+				<input class="u-full-width" type="text" readonly value="<%= model.get('google_location_type') %>" id="googleLocationTypeInput">
+			</div>
+		</div>
+
+		<hr/>
+	<% } %>
+
+	<div class="row">
+		<% if (model.get('lat') != undefined) { %>
+			<div class="eight columns">
+				<label>Location:</label>
+				<div class="map-container"></div>
+				<div class="row" style="margin-top:20px">
+					<div class="six columns">
+						<label for="latInput">Latitude:</label>
+						<input class="u-full-width latlng-input" data-bind="lat" type="text" value="<%= model.get('lat') %>" id="latInput">
+					</div>
+					<div class="six columns">
+						<label for="lngInput">Longitude:</label>
+						<input class="u-full-width latlng-input" data-bind="lng" type="text" value="<%= model.get('lng') %>" id="lngInput">
+					</div>
+				</div>
+				<div class="row">
+					<input placeholder="Address lookup" class="geo-lookup-input" type="text" id="geoLookupInput"/>
+					<a class="button button-primary geo-lookup-button">Lookup</a>
+					<a class="button geo-lookup-clear-button">Clear results</a>
+				</div>
+			</div>
+			<div class="four columns">
+				<label>Google Address:</label>
+				<div class="u-cf"></div>
+				<ul>
+					<% _.each(model.get('google_address'), function(addressString) { %>
+						<li><%= addressString.long_name %> [<%= addressString.types.join('; ') %>]</li>
+					<% }) %>
+				</ul>
+			</div>
+		<% } else { %>
+			<div class="twelve columns">
+				<a class="button button-primary add-location-button">Add Location</a>
+			</div>
+		<% } %>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="twelve columns">
+			<label for="commentaryInput">Commentary:</label>
+			<textarea class="u-full-width" data-bind="commentary" id="commentaryInput"><%= model.get('commentary') %></textarea>
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row person-list-container">
+		<div class="twelve columns">
+			<h4>Persons</h4>
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th width="40%">Surname</th>
+						<th width="40%">Surname (literal)</th>
+						<th width="40%">Firstname</th>
+						<th width="40%">Birthyear</th>
+						<th width="40%">Deathyear</th>
+						<th width="40%">Birthplace</th>
+						<th width="40%">Deathplace</th>
+					</tr>
+				</thead>
+
+				<tbody class="list-container">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<a class="button" onclick="javascript:history.go(-1)">Go back</a>
+					<a class="button button-primary u-pull-right save-button">Save</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</script>
+
+<script type="text/template" id="personViewTemplate">
+
+	<div class="row">
+		<div class="twelve columns">
+			<h2><%= model.get('surname') %>, <%= model.get('firstname') %></h2>
+			<!--<p><b>Source ID:</b> <%= model.get('ll_id') %></p>-->
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="three columns">
+			<label for="surnameInput">Surname:</label>
+			<input class="u-full-width" data-bind="surname" type="text" value="<%= model.get('surname') %>" id="surnameInput">
+		</div>
+		<div class="three columns">
+			<label for="surnameLiteralInput">Surname (literal):</label>
+			<input class="u-full-width" data-bind="surname_literal" type="text" value="<%= model.get('surname_literal') %>" id="surnameLiteralInput">
+		</div>
+		<div class="three columns">
+			<label for="firstnameInput">Firstname:</label>
+			<input class="u-full-width" data-bind="firstname" type="text" value="<%= model.get('firstname') %>" id="firstnameInput">
+		</div>
+		<div class="three columns">
+			<label for="genderInput">Gender:</label>
+			<select class="u-full-width" data-bind="gender") id="genderInput">
+				<option></option>
+				<option value="female"<%= model.get('gender') == 'female' ? ' selected="selected"' : '' %>>Female</option>
+				<option value="male"<%= model.get('gender') == 'male' ? ' selected="selected"' : '' %>>Male</option>
+			</select>
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="four columns">
+			<label for="birthDayInput">Birth day:</label>
+			<input class="u-full-width" data-bind="birth" data-bind-key="day" type="text" value="<%= model.get('birth').day %>" id="birthDayInput">
+		</div>
+		<div class="four columns">
+			<label for="birthMonthInput">Birth month:</label>
+			<input class="u-full-width" data-bind="birth" data-bind-key="month" type="text" value="<%= model.get('birth').month %>" id="birthMonthInput">
+		</div>
+		<div class="four columns">
+			<label for="birthYearInput">Birth year:</label>
+			<input class="u-full-width" data-bind="birth" data-bind-key="year" type="text" value="<%= model.get('birth').year %>" id="birthYearInput">
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="four columns">
+			<label for="deathDayInput">Death day:</label>
+			<input class="u-full-width" type="text" value="<%= model.get('death').day %>" id="deathDayInput">
+		</div>
+		<div class="four columns">
+			<label for="deathMonthInput">Death month:</label>
+			<input class="u-full-width" type="text" value="<%= model.get('death').month %>" id="deathMonthInput">
+		</div>
+		<div class="four columns">
+			<label for="deathYearInput">Death year:</label>
+			<input class="u-full-width" type="text" value="<%= model.get('death').year %>" id="deathYearInput">
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="six columns">
+			<label for="birthPlaceInput">Birthplace:</label>
+			<input class="u-full-width" readonly type="text" value="<%= model.get('birth').place.name %>" id="birthPlaceInput">
+			<% if (model.get('birth').place.lat != undefined) { %>
+				<div class="map-container birthplace"></div>
+			<% } %>
+			<br/><a class="button" href="#place/<%= model.get('birth').place.id %>">View place</a>
+		</div>
+		<div class="six columns">
+			<label for="deathPlaceInput">Deathplace:</label>
+			<input class="u-full-width" readonly type="text" value="<%= model.get('death').place.name %>" id="deathPlaceInput">
+			<% if (model.get('death').place.lat != undefined) { %>
+				<div class="map-container deathplace"></div>
+			<% } %>
+			<br/><a class="button" href="#place/<%= model.get('death').place.id %>">View place</a>
+		</div>
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		<div class="twelve columns">
+			<h4>Documents</h4>
+			<table class="u-full-width">
+
+				<thead>
+					<tr>
+						<th>Surname</th>
+						<th>Surname (literal)</th>
+						<th>Firstname</th>
+						<th>Birthdate</th>
+						<th>Deathdate</th>
+						<th>Birthplace</th>
+						<th>Deathplace</th>
+					</tr>
+				</thead>
+
+				<tbody class="list-container">
+					
+					<% _.each(model.get('documents'), function(document) { %>
+						<tr>
+							<td><%= document.surname %></td>
+							<td><%= document.surname_literal %></td>
+							<td><%= document.firstname %></td>
+							<td><%= document.birth.year+(document.birth.month ? '-'+document.birth.month : '')+(document.birth.day ? '-'+document.birth.day : '') %></td>
+							<td><%= document.birth.year+(document.birth.month ? '-'+document.birth.month : '')+(document.birth.day ? '-'+document.birth.day : '') %></td>
+							<td><a href="#place/<%= document.birth.place.id %>"><%= document.birth.place.name %></a></td>
+							<td><a href="#place/<%= document.death.place.id %>"><%= document.death.place.name %></a></td>
+						</tr>
+
+						<tr>
+							<td colspan="1" style="border-bottom-width: 2px; background-color: #F3F3F3; padding-left: 10px;"><strong>Source:</strong> <%= document.ll_id %></td>
+							<td colspan="6" style="border-bottom-width: 2px; background-color: #F3F3F3; padding-left: 10px;"><%= document.reference ? '<strong>Reference:</strong> '+document.reference : '' %></td>
+						</tr>
+					<% }) %>
+
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="footer-toolbar">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<a class="button" onclick="javascript:history.go(-1)">Go back</a>
+					<a class="button button-primary u-pull-right save-button">Save</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</script>
+
+<script type="text/textmplate" id="mapViewTemplate">
+	<div class="map-container full"></div>
+</script>
+
+<script src="js/lib/require.js" data-main="js/init.js?3"></script>
+</body>
+</html>

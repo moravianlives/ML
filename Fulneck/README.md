@@ -1,4 +1,4 @@
-# README - Fulneck file transformation process
+# README - File Transformation Process
 
 Follow these steps.
 

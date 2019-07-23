@@ -38,8 +38,8 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-04.jpg<br />
 
 Barker, Joshua<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_BarkerJoshua-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_BarkerJoshua-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-02.jpg<br />
 
 Bell, Christian<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_31_BellChristian-01.jpg<br />

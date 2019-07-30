@@ -41,6 +41,8 @@
       </editorialDecl>
     </encodingDesc>
     <revisionDesc>
+      <change when="2019-07-30" who="#jschaumberger #JAKA1">Added some German translations</change>
+      <change when="2019-07-30" who="#jschaumberger">Added roleName @type diety as a suggested input</change>
       <change when="2019-07-03" who="#jschaumberger">Added name @office</change>
       <change when="2019-06-21" who="#JAKA1 #jschaumberger">Updated and added schematic specifities</change>
       <change when="2018-12-07" who="#JAKA1">Removed note types</change>
@@ -108,16 +110,17 @@
               <attDef ident="ceremony" mode="change" sameAs="zeremonie" />
               <attDef ident="emotion" mode="change" sameAs="gefühl" />
               <attDef ident="event" mode="change" sameAs="ereignis" />
-              <attDef ident="health" mode="change" sameAs="beruf" />
+              <attDef ident="health" mode="change" sameAs="gesundheitszustand" />
               <attDef ident="relation" mode="change" sameAs="verwandte" />
               <attDef ident="occupation" mode="change" />
-              <attDef ident="office" mode="change"></attDef>
+              <attDef ident="office" mode="change" sameAs="amt"></attDef>
             </attList>
           </classSpec>
           <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
           <classSpec ident="att.naming" module="tei" type="atts" mode="change">
             <attList>
-              <attDef ident="beruf" mode="change" sameAs="health" />
+              <attDef ident="amt" mode="change" sameAs="office"></attDef>
+              <attDef ident="gesundheitszustand" mode="change" sameAs="health" />
               <attDef ident="ereignis" mode="change" sameAs="event" />
               <attDef ident="gefühl" mode="change" sameAs="emotion" />
               <attDef ident="verwandte" mode="change" sameAs="relation" />
@@ -138,7 +141,7 @@
                   <valItem ident="reception" sameAs="aufnahme" />
                   <valItem ident="sacrament" />
                   <valItem ident="interrment" />
-                  <valItem ident="communion" />
+                  <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
                 </valList>
               </attDef>
@@ -149,6 +152,7 @@
             <attList>
               <attDef ident="ereignis" mode="change">
                 <valList mode="add" type="semi">
+                  <valItem ident="abendmahl" sameAs="communion"></valItem>
                   <valItem ident="aufnahme" sameAs="reception" />
                   <valItem ident="bekehrung" sameAs="conversion" />
                   <valItem ident="geburt" sameAs="birth" />
@@ -165,8 +169,8 @@
             <attList>
               <attDef ident="health" mode="change">
                 <valList mode="add" type="closed">
-                  <valItem ident="recovered" sameAs="geheilt"/>
-                  <valItem ident="disease" sameAs="krankheiht"/>
+                  <valItem ident="recovered" sameAs="genesend"/>
+                  <valItem ident="disease" sameAs="krankheit"/>
                 </valList>
               </attDef>
             </attList>
@@ -174,10 +178,10 @@
           <!-- CUSTOMIZATION: added name:@Gesundheit / German -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
-              <attDef ident="gesundheit" mode="change">
+              <attDef ident="gesundheitszustand" mode="change">
               <valList mode="add" type="closed">
-                <valItem ident="krankheiht" sameAs="disease"/>
-                <valItem ident="geheilt" sameAs="recovered"/>
+                <valItem ident="krankheit" sameAs="disease"/>
+                <valItem ident="genesend" sameAs="recovered"/>
               </valList>
               </attDef>
             </attList>
@@ -219,63 +223,49 @@
             <attList>
               <attDef ident="office" mode="change">
                 <valList mode="add" type="semi">
-                  <valItem ident="acolyte" />
-                  <valItem ident="bishop" />
-                  <valItem ident="choir helper" />
-                  <valItem ident="choir labourer" />
-                  <valItem ident="deacon" />
-                  <valItem ident="deaconess" />
-                  <valItem ident="elder" />
-                  <valItem ident="eldress" />
-                  <valItem ident="general elder" />
-                  <valItem ident="general eldress" />
-                  <valItem ident="heathen worker" />
-                  <valItem ident="overseer" />
-                  <valItem ident="sick waiter" />
-                  <valItem ident="supervisor" />
+                  <valItem ident="acolyte" sameAs="accoluth"/>
+                  <valItem ident="bishop" sameAs="bischof"/>
+                  <valItem ident="choir helper" sameAs="chorhelfer/chorpfleger"/>
+                  <valItem ident="choir labourer" sameAs="chorarbeiter"/>
+                  <valItem ident="deacon" sameAs="diaconus"/>
+                  <valItem ident="deaconess" sameAs="diaconisse"/>
+                  <valItem ident="elder" sameAs="ältester"/>
+                  <valItem ident="eldress" sameAs="ältestin"/>
+                  <valItem ident="general elder" sameAs="generalältester"/>
+                  <valItem ident="general eldress" sameAs="generalältestin"/>
+                  <valItem ident="heathen worker" sameAs="heidenarbeiter"/>
+                  <valItem ident="overseer" sameAs="aufseher"/>
+                  <valItem ident="sick waiter" sameAs="krankenwärter/in"/>
+                  <valItem ident="supervisor" sameAs="vorsteher"/>
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@ / Germa. -->
-          <elementSpec ident="name" mode="change" module="core">
+          <!-- CUSTOMIZATION: added name@amt / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
+          <elementSpec ident="name" mode="change" module="namesdates">
             <attList>
-              <attDef ident="officeGerman" mode="change">
+              <attDef ident="amt" mode="change">
                 <valList mode="add" type="semi">
-                  <valItem ident="" sameAs="acolyte" />
-                  <valItem ident="" sameAs="bishop" />
-                  <valItem ident="" sameAs="choir helper" />
-                  <valItem ident="" sameAs="choir labourer" />
-                  <valItem ident="" sameAs="deacon" />
-                  <valItem ident="" sameAs="deaconess" />
-                  <valItem ident="" sameAs="elder" />
-                  <valItem ident="" sameAs="eldress" />
-                  <valItem ident="" sameAs="general elder" />
-                  <valItem ident="" sameAs="general eldress" />
-                  <valItem ident="" sameAs="heathen worker" />
-                  <valItem ident="" sameAs="overseer" />
-                  <valItem ident="" sameAs="sick waiter" />
-                  <valItem ident="" sameAs="supervisor" />
+                  <valItem ident="accoluth" sameAs="acolyte"/>
+                  <valItem ident="almosenpfleger" sameAs=""/>
+                  <valItem ident="ältester" sameAs="elder"/>
+                  <valItem ident="ältestin" sameAs="eldress"/>
+                  <valItem ident="aufseher" sameAs="overseer"/>
+                  <valItem ident="bischof" sameAs="bishop"/>
+                  <valItem ident="chorarbeiter" sameAs="choir labourer"/>
+                  <valItem ident="chorhelfer/chorpfleger" sameAs="choir helper"/>
+                  <valItem ident="diaconus" sameAs="deacon"/>
+                  <valItem ident="diaconisse" sameAs="deaconess"/>
+                  <valItem ident="generalältester" sameAs="general elder"/>
+                  <valItem ident="generalältestin" sameAs="general eldress"/>
+                  <valItem ident="heidenarbeiter" sameAs="heathen worker"/>
+                  <valItem ident="krankenwärter" sameAs="sick waiter"/>
+                  <valItem ident="vorsteher" sameAs="supervisor"/>
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
-          <!--<!-\- CUSTOMIZATION: added event @death @cause /English -\->
-          <elementSpec ident="death" mode="change">
-            <attList>
-              <attDef ident="cause" mode="change">
-                <valList mode="add" type="open" />
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!-\- CUSTOMIZATION: added event @death @cause /German-\->
-          <elementSpec ident="death" mode="change">
-            <attList>
-              <attDef ident="cause" mode="change">
-                <valList mode="add" type="open" />
-              </attDef>
-            </attList>
-          </elementSpec>-->
+          
           <!-- CUSTOMIZATION: added name:@relation / English -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -399,6 +389,7 @@
           </elementSpec>
           
           <!-- CUSTOMIZATION: added orgName:@religion / English -->
+          <!-- For now we are not going to translate the religious groups to German -->
           <elementSpec ident="orgName" mode="change" module="namesdates">
             <attList>
               <attDef ident="religion" mode="change">
@@ -449,33 +440,19 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added roleName@de / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
-          <elementSpec ident="roleName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="de" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="accoluth" />
-                  <valItem ident="almosenpfleger" />
-                  <valItem ident="ältester" />
-                  <valItem ident="ältestin" />
-                  <valItem ident="aufseher" />
-                  <valItem ident="bischof" />
-                  <valItem ident="chorarbeiter" />
-                  <valItem ident="chorhelfer/chorpfleger" />
-                  <valItem ident="diener/diaconus" />
-                  <valItem ident="dienerin/diaconisse" />
-                  <valItem ident="ermahner" />
-                  <valItem ident="generalältester" />
-                  <valItem ident="generalältestin" />
-                  <valItem ident="heidenarbeiter" />
-                  <valItem ident="krankenwärter" />
-                  <valItem ident="lehrer" />
-                  <valItem ident="saaldiener" />
-                  <valItem ident="vorsteher" />
-                </valList>
-              </attDef>
-            </attList>
+          
+          <elementSpec ident="office" mode="add">
+            <classes>
+              <memberOf key="model.persStateLike"></memberOf>
+              <memberOf key="att.datable"/>
+            </classes>
+            
+            <content>
+              <macroRef key="macro.specialPara"/>
+            </content>
           </elementSpec>
+          
+          <!-- From here to the bottom we are currently not translating to German -->
           <!-- CUSTOMIZATION: Adding cause to date -->
           <classSpec ident="att.datable.iso" module="core" type="atts" mode="change">
             <attList>
@@ -526,73 +503,26 @@
             <attList>
               <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
-                  <valItem ident="honorific"></valItem>
+                  <valItem ident="honorific" sameAs="ehrend"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <elementSpec ident="roleName" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="ehrend" sameAs="honorific"></valItem>
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
           
           
-            <!--<elementSpec ident="office" mode="add">
-            <gloss>Office details</gloss>
-            <desc>Contains information on a person's held office within the Moravian Church</desc>
-            <classes>
-              <memberOf key="model.persStateLike"/>
-              <!-\-<memberOf key="att.global"/>
-              <memberOf key="att.global.rendition"/>
-              <memberOf key="att.global.linking"/>
-              <memberOf key="att.global.analytic"/>
-              <memberOf key="att.global.facs"/>
-              <memberOf key="att.global.change"/>
-              <memberOf key="att.global.responsibility"/>
-              <memberOf key="att.global.source"/>
-              <memberOf key="att.datable"/>
-              <memberOf key="att.datable.w3c"/>
-              <memberOf key="att.datable.iso"/>
-              <memberOf key="att.datable.custom"/>
-              <memberOf key="att.editLike"/>
-              <memberOf key="att.naming"/>
-              <memberOf key="att.canonical"/>
-              <memberOf key="att.typed"/>-\->
-              
-              <memberOf key="att.global.attributes"/>
-                <memberOf key="att.global.rendition.attributes"/>
-                  <memberOf key="att.global.linking.attributes"/>
-                    <memberOf key="att.global.analytic.attributes"/>
-                      <memberOf key="att.global.facs.attributes"/>
-                        <memberOf key="att.global.change.attributes"/>
-                          <memberOf key="att.global.responsibility.attributes"/>
-                            <memberOf key="att.global.source.attributes"/>
-                              <memberOf key="att.datable.attributes"/>
-                                <memberOf key="att.datable.w3c.attributes"/>
-                                  <memberOf  key="att.datable.iso.attributes"/>
-                                    <memberOf  key="att.datable.custom.attributes"/>
-              <memberOf key="att.editLike.attributes"/>
-              <memberOf key="att.naming.attributes"/>
-              <memberOf key="att.canonical.attributes"/>
-              <memberOf key="att.typed.attribute.subtype"/>
-              <memberOf key="teidata.enumerated"></memberOf>
-              <memberOf key="teidata.pointer"></memberOf>
-              <memberOf key="tei"></memberOf>
-             
-              <memberOf key="macro.specialPara"/>
-            </classes>
-              
-              
-            
-            
-            
-          </elementSpec>-->
-          <elementSpec ident="office" mode="add">
-            <classes>
-              <memberOf key="model.persStateLike"></memberOf>
-              <memberOf key="att.datable"/>
-            </classes>
-            
-            <content>
-              <macroRef key="macro.specialPara"/>
-            </content>
-          </elementSpec>
+          
+          
+           
+          
             
           
            

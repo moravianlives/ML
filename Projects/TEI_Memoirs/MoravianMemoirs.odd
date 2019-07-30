@@ -165,9 +165,20 @@
             <attList>
               <attDef ident="health" mode="change">
                 <valList mode="add" type="closed">
-                  <valItem ident="recovered" />
-                  <valItem ident="disease" />
+                  <valItem ident="recovered" sameAs="geheilt"/>
+                  <valItem ident="disease" sameAs="krankheiht"/>
                 </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@Gesundheit / German -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="gesundheit" mode="change">
+              <valList mode="add" type="closed">
+                <valItem ident="krankheiht" sameAs="disease"/>
+                <valItem ident="geheilt" sameAs="recovered"/>
+              </valList>
               </attDef>
             </attList>
           </elementSpec>
@@ -183,7 +194,22 @@
                     <valItem ident="mason"/>
                     <valItem ident="schoolmaster"/>
                     <valItem ident="weaver"/>
-
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-- CUSTOMIZATION: added name:@Beruf / German. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="beruf" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="" sameAs="clothier"/>
+                  <valItem ident="" sameAs="clothmaker"/>
+                  <valItem ident="" sameAs="husbandman"/>
+                  <valItem ident="" sameAs="farmer"/>
+                  <valItem ident="" sameAs="mason"/>
+                  <valItem ident="" sameAs="schoolmaster"/>
+                  <valItem ident="" sameAs="weaver"/>
                 </valList>
               </attDef>
             </attList>
@@ -211,7 +237,30 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added event @death @cause -->
+          <!-- CUSTOMIZATION: added name:@ / Germa. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="officeGerman" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="" sameAs="acolyte" />
+                  <valItem ident="" sameAs="bishop" />
+                  <valItem ident="" sameAs="choir helper" />
+                  <valItem ident="" sameAs="choir labourer" />
+                  <valItem ident="" sameAs="deacon" />
+                  <valItem ident="" sameAs="deaconess" />
+                  <valItem ident="" sameAs="elder" />
+                  <valItem ident="" sameAs="eldress" />
+                  <valItem ident="" sameAs="general elder" />
+                  <valItem ident="" sameAs="general eldress" />
+                  <valItem ident="" sameAs="heathen worker" />
+                  <valItem ident="" sameAs="overseer" />
+                  <valItem ident="" sameAs="sick waiter" />
+                  <valItem ident="" sameAs="supervisor" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!--<!-\- CUSTOMIZATION: added event @death @cause /English -\->
           <elementSpec ident="death" mode="change">
             <attList>
               <attDef ident="cause" mode="change">
@@ -219,6 +268,14 @@
               </attDef>
             </attList>
           </elementSpec>
+          <!-\- CUSTOMIZATION: added event @death @cause /German-\->
+          <elementSpec ident="death" mode="change">
+            <attList>
+              <attDef ident="cause" mode="change">
+                <valList mode="add" type="open" />
+              </attDef>
+            </attList>
+          </elementSpec>-->
           <!-- CUSTOMIZATION: added name:@relation / English -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -463,6 +520,19 @@
             </attList>
           </elementSpec>
           
+          <!-- CUSTOMIZATION: added honorific as a suggestion for roleName:@type  -->
+          
+          <elementSpec ident="roleName" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="honorific"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          
             <!--<elementSpec ident="office" mode="add">
             <gloss>Office details</gloss>
             <desc>Contains information on a person's held office within the Moravian Church</desc>
@@ -513,6 +583,16 @@
             
             
           </elementSpec>-->
+          <elementSpec ident="office" mode="add">
+            <classes>
+              <memberOf key="model.persStateLike"></memberOf>
+              <memberOf key="att.datable"/>
+            </classes>
+            
+            <content>
+              <macroRef key="macro.specialPara"/>
+            </content>
+          </elementSpec>
             
           
            

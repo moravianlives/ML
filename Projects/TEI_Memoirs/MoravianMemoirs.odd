@@ -520,6 +520,18 @@
             </attList>
           </elementSpec>
           
+          <!-- CUSTOMIZATION: added honorific as a suggestion for roleName:@type  -->
+          
+          <elementSpec ident="roleName" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="honorific"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
           
             <!--<elementSpec ident="office" mode="add">
             <gloss>Office details</gloss>

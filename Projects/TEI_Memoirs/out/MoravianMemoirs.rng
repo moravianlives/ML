@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-07-30T13:06:09Z. .
+Schema generated from ODD source 2019-08-01T13:58:19Z. .
 TEI Edition: Version 3.3.0. Last updated on
 	31st January 2018, revision f4d8439
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
@@ -1128,7 +1128,8 @@ Suggested values include: 1] m (metre) ; 2] kg (kilogram) ; 3] s (second) ; 4] H
       <ref name="att.naming.attribute.relation"/>
       <ref name="att.naming.attribute.occupation"/>
       <ref name="att.naming.attribute.office"/>
-      <ref name="att.naming.attribute.beruf"/>
+      <ref name="att.naming.attribute.amt"/>
+      <ref name="att.naming.attribute.gesundheitszustand"/>
       <ref name="att.naming.attribute.ereignis"/>
       <ref name="att.naming.attribute.gefühl"/>
       <ref name="att.naming.attribute.verwandte"/>
@@ -1195,9 +1196,17 @@ Suggested values include: 1] m (metre) ; 2] kg (kilogram) ; 3] s (second) ; 4] H
          </attribute>
       </optional>
    </define>
-   <define name="att.naming.attribute.beruf">
+   <define name="att.naming.attribute.amt">
       <optional>
-         <attribute name="beruf">
+         <attribute name="amt">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.naming.attribute.gesundheitszustand">
+      <optional>
+         <attribute name="gesundheitszustand">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <text/>
          </attribute>
@@ -4259,6 +4268,8 @@ Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>disease</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>injury</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </attribute>
          </optional>
@@ -4340,33 +4351,62 @@ Suggested values include: 1] acolyte; 2] bishop; 3] choir helper; 4] choir labou
             </attribute>
          </optional>
          <optional>
-            <attribute name="beruf">
+            <attribute name="amt">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] ; 2] ; 3] ; 4] ; 5] ; 6] ; 7] </a:documentation>
+Suggested values include: 1] accoluth; 2] almosenpfleger; 3] ältester; 4] ältestin; 5] aufseher; 6] bischof; 7] chorarbeiter; 8] chorhelfer/chorpfleger; 9] diaconus; 10] diaconisse; 11] generalältester; 12] generalältestin; 13] heidenarbeiter; 14] krankenwärter; 15] vorsteher</a:documentation>
                <choice>
-                  <value/>
+                  <value>accoluth</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>almosenpfleger</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>ältester</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>ältestin</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>aufseher</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>bischof</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value/>
+                  <value>chorarbeiter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>chorhelfer/chorpfleger</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>diaconus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>diaconisse</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>generalältester</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>generalältestin</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>heidenarbeiter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>krankenwärter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>vorsteher</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <data type="Name"/>
                </choice>
             </attribute>
          </optional>
          <optional>
+            <attribute name="gesundheitszustand">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>krankheit</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>genesend</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
             <attribute name="ereignis">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] aufnahme; 2] bekehrung; 3] geburt; 4] hochzeit; 5] losen; 6] taufe; 7] tod</a:documentation>
+Suggested values include: 1] abendmahl; 2] aufnahme; 3] bekehrung; 4] geburt; 5] hochzeit; 6] losen; 7] taufe; 8] tod</a:documentation>
                <choice>
+                  <value>abendmahl</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>aufnahme</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>bekehrung</value>
@@ -11025,7 +11065,8 @@ Suggested values include: 1] paper; 2] parch (parchment) ; 3] mixed</a:documenta
          <ref name="att.naming.attribute.relation"/>
          <ref name="att.naming.attribute.occupation"/>
          <ref name="att.naming.attribute.office"/>
-         <ref name="att.naming.attribute.beruf"/>
+         <ref name="att.naming.attribute.amt"/>
+         <ref name="att.naming.attribute.gesundheitszustand"/>
          <ref name="att.naming.attribute.ereignis"/>
          <ref name="att.naming.attribute.gefühl"/>
          <ref name="att.naming.attribute.verwandte"/>
@@ -11198,7 +11239,8 @@ Suggested values include: 1] Anglican; 2] Quaker; 3] Presbyterian; 4] Lutheran; 
          <ref name="att.naming.attribute.relation"/>
          <ref name="att.naming.attribute.occupation"/>
          <ref name="att.naming.attribute.office"/>
-         <ref name="att.naming.attribute.beruf"/>
+         <ref name="att.naming.attribute.amt"/>
+         <ref name="att.naming.attribute.gesundheitszustand"/>
          <ref name="att.naming.attribute.ereignis"/>
          <ref name="att.naming.attribute.gefühl"/>
          <ref name="att.naming.attribute.verwandte"/>
@@ -11256,62 +11298,19 @@ Suggested values include: 1] brother; 2] married couple; 3] sister</a:documentat
          <ref name="att.naming.attribute.relation"/>
          <ref name="att.naming.attribute.occupation"/>
          <ref name="att.naming.attribute.office"/>
-         <ref name="att.naming.attribute.beruf"/>
+         <ref name="att.naming.attribute.amt"/>
+         <ref name="att.naming.attribute.gesundheitszustand"/>
          <ref name="att.naming.attribute.ereignis"/>
          <ref name="att.naming.attribute.gefühl"/>
          <ref name="att.naming.attribute.verwandte"/>
          <ref name="att.naming.attribute.zeremonie"/>
+         <ref name="att.naming.attribute.de"/>
          <ref name="att.naming.attribute.religion"/>
          <ref name="att.naming.attribute.role"/>
          <ref name="att.naming.attribute.nymRef"/>
          <ref name="att.canonical.attribute.key"/>
          <ref name="att.canonical.attribute.ref"/>
          <ref name="att.typed.attribute.subtype"/>
-         <optional>
-            <attribute name="de">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] accoluth; 2] almosenpfleger; 3] ältester; 4] ältestin; 5] aufseher; 6] bischof; 7] chorarbeiter; 8] chorhelfer/chorpfleger; 9] diener/diaconus; 10] dienerin/diaconisse; 11] ermahner; 12] generalältester; 13] generalältestin; 14] heidenarbeiter; 15] krankenwärter; 16] lehrer; 17] saaldiener; 18] vorsteher</a:documentation>
-               <choice>
-                  <value>accoluth</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>almosenpfleger</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>ältester</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>ältestin</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>aufseher</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>bischof</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>chorarbeiter</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>chorhelfer/chorpfleger</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>diener/diaconus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>dienerin/diaconisse</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>ermahner</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>generalältester</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>generalältestin</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>heidenarbeiter</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>krankenwärter</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>lehrer</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>saaldiener</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>vorsteher</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <data type="Name"/>
-               </choice>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="en">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">

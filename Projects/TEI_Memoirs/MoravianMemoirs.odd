@@ -41,6 +41,7 @@
       </editorialDecl>
     </encodingDesc>
     <revisionDesc>
+      <change when="2019-08-01" who="#jschaumberger">Added injury as an option for name:@health</change>
       <change when="2019-07-30" who="#jschaumberger #JAKA1">Added some German translations</change>
       <change when="2019-07-30" who="#jschaumberger">Added roleName @type diety as a suggested input</change>
       <change when="2019-07-03" who="#jschaumberger">Added name @office</change>
@@ -171,6 +172,7 @@
                 <valList mode="add" type="closed">
                   <valItem ident="recovered" sameAs="genesend"/>
                   <valItem ident="disease" sameAs="krankheit"/>
+                  <valItem ident="injury"></valItem>
                 </valList>
               </attDef>
             </attList>
@@ -508,9 +510,10 @@
               </attDef>
             </attList>
           </elementSpec>
+          <!-- We cannot use type for the German as well as the English because it creates an error for duplicate type when the odd file is transformed to an rng -->
           <elementSpec ident="roleName" mode="change" module="core">
             <attList>
-              <attDef ident="type" mode="change">
+              <attDef ident="typeGerman" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="ehrend" sameAs="honorific"></valItem>
                 </valList>

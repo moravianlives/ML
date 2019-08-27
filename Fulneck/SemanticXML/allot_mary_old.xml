@@ -1,0 +1,340 @@
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Christian Bell: Memoir</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal
+               Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018
+                  <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName xml:id="JAKA1">Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="mmcguire">Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="mcohen">Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-2019</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="jhom">Jess Hom</persName>
+               <orgName>Bucknell University, 2018-Present</orgName>
+               <resp>Research Assistant and encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="mgruner">Marita Gruner</persName>
+               <orgName>University of Greifswald</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="skanneman">Sarah Kannemann</persName>
+               <orgName>University of Mainz</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="jschaumberger">Justin Schaumberger</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="cpirmann">Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Transkribus, Text Encoding Specialist</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="bacharya">Bhagawat Acharya</persName>
+               <orgName>Bucknell Univesrity</orgName>
+               <resp>Research Assistant</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                  International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="#mlpla000003">Moravian Archives, Fulneck</repository>
+                  <msName type="memoir" ana="MAF/Ful_SS_12AllotMary">Mary Allot</msName>
+                  <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-02.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-03.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-04.jpg"/>
+                  <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-05.jpg"/>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <person role="subject">
+               <persName ref="#mlper000217">Mary Allot</persName>
+            </person>
+         </particDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+      <profileDesc>
+         <particDesc>
+            <person role="subject">
+               <persName ref="mlper000217">Mary Allot</persName>
+            </person>
+         </particDesc>
+         <settingDesc>
+            <place>
+               <placeName ref="mlpla000003">Fulneck</placeName>
+            </place>
+         </settingDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2019-07-16" who="#JAKA1">Checked semantic markup</change>
+         <change when="2019-06-17" who="#jschaumberger">Finished markup of the memoir</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="memoir">
+      <body xml:lang="en">
+         <div type="memoir">
+            <head>
+               <persName ref="#mlper000217">Mary Allot</persName>
+            </head>
+            <div type="page" n="1">
+               <head type="page">1</head>
+               <pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
+               <p><persName ref="#mlper000217">Mary Alott</persName> Was born at
+                     <placeName>Barksland in the Parish of Elland</placeName>. On the <date
+                     when-iso="1734-12-12">12th of Dec<hi rend="superscript">r </hi>1734</date> N S.
+                  When she was about <date when-iso="1737" cert="medium">three years old</date> her
+                  Father dyed &amp; she liv'd with her mother &amp; her <persName
+                     ana="Betty Midgley">Aunt</persName> (Namely Betty Midgley) who jointly Nurs'd
+                  &amp; maintain'd her <hi rend="superscript">till</hi>
+                  <date when-iso="1741" cert="medium">she was about seven</date>, then her mother
+                  being again married her <persName ana="Betty Midley">aunt</persName> left them
+                  took a Room &amp; design'd to live by herself, But <hi rend="superscript"
+                     >Mary</hi> not being at all willing to be left behind often begg'd her
+                     <persName ana="Betty Midgley">Aunt</persName> to take her with her, which
+                     according<add place="above">ly</add> in a few weeks after she willlingly did,
+                  &amp; cared for her as her own.</p>
+               <p><date when-iso="1743">When she was about Nine years old</date> she by the drawing
+                  of the <roleName type="honorific">Holy ghost</roleName> was inclin'd to hear the
+                  gospel which she of her own free accord begun &amp; Continued constantly to do.
+                  Some time after her <persName ana="Betty Midgley">Aunt</persName> had a mind for
+                  the more Convenince of hearing the B<hi rend="superscript">rn</hi> to live nearer
+                     <placeName>Smith House</placeName> &amp; she made it come &amp; remain with her
+                  which she was very glad off.</p>
+               <p>In <date when-iso="1748-07">July 1748</date> they both of them together got leave
+                  to live with the <orgName>Single Sisters</orgName> in <placeName>Cack
+                     Heaton</placeName> &amp; she remain'd there &amp; in the same Oconomy at
+                     <placeName ana="Tyersal">Tyresell Hall</placeName> till we came in the Choir
+                  House (Which I shall take Notice of afterwards)</p>
+               <p>In the year <date when-iso="1751-04-05">1751 on the 5<hi rend="superscript"
+                        >th</hi> of April</date> she was <name event="reception">receiv&#39;d in the
+                     Congregation</name> which <name type="empotion">pleas'd</name></p>
+            </div>
+            <div type="page" n="2">
+               <head type="page">2</head>
+               <pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-02.jpg"/>
+               <p>her very much. In <date when-iso="1753-02-25">1753 on the 25 of February</date>
+                  she after many a Hearty with &amp; Earnest longing for it was <name
+                     event="sacrament">addmitted to the Lords Supper</name>- In the same year was
+                  Receiv'd from the <orgName en="greater girls choir">Great Girls</orgName> to teh
+                     <orgName en="single sisters choir">Single Sisters Choir</orgName>.</p>
+               <p>She has since about <date when-iso="1744" cert="medium">10, or 11, years
+                     old</date>, carried about a very sickly &amp; weakly <name health="disease"
+                     >Tabernacle</name> which she bore without Complaint, &amp; being of an
+                  exceeding still quick, but also very solid &amp; sensible <del>diposion</del>
+                  <name health="disease">Dispossition</name> she was seldom heard to speak about any
+                  thing except when spoken to: But however as we now have found she took good Notice
+                  of ever thing &amp; Ponder<add place="above">d </add>them in her Heart.</p>
+               <p><date when-iso="1754-02">In February this present year</date> she had the <name
+                     health="disease">Small-Pox</name> which not only went very hardly with her But
+                  also left that remaining on her which Render'd her much more Weak &amp; Sickly
+                  than before a <name health="disease">Consumption</name> appearing thro' her whole
+                  Constitution: It was manifest to all about her she could not hold it out long, tho
+                  she herself would commonly say when ask'd about it &quot;that she was pretty well.
+                  Nevertheless what she inwardly felt brought her <add place="above">lso</add> upon
+                  the thoughts &amp; consideration of going to <roleName type="honorific">Our
+                     Saviour</roleName> (as she afterward, declar'd with joy.)</p>
+               <p>In <date when-iso="1754-07">July</date> she was a little Better but the <name
+                     health="disease">disor der</name> presently return'd more strong than ever: Yet
+                  she continued to walk about till the <date when-iso="1754-11-22">22<hi
+                        rend="superscript">d</hi> of November</date>, then she entirely took her to
+                  her Room &amp; soon after to her Bed.</p>
+               <p>Now she freely acknowledgeing that she had all this summer last, been in a
+                  Continual meditation &amp; Consultation with her <roleName type="honorific">Dear
+                     Saviour</roleName>
+                  <note type="catchword">about</note></p>
+               <cb/>
+               <p>her going to him, having <add place="above">all</add> along been Sensible of it
+                  for herself that she should not stay here but the Reason why she would not confess
+                  it openly was because she was <name type="emotion">affraid</name> she should not
+                  go as soon as she wish'd for.</p>
+               <p>She was now <name health="disease">exceeding Bad</name>, but quite <name
+                     type="emotion">Brisk in <add place="above">her</add> spirits</name> &amp; <name
+                     type="emotion">chearful in Heart &amp; Soul</name>, &amp; as before even Ever
+                  since we have known her she has been us'd to speak very little, so now to the
+                  Contrary, <add place="above">she</add>spoke a great deal especialy to these with
+                  whom she had had an intimiate acquaintance &amp; Perticularly with Our dear
+                     <persName>Sister Mary </persName> who very faithfully visited her all the
+                  time</p>
+               <p><date when-iso="1754-12-12">On the 12<hi rend="superscript">th</hi> instant she
+                     had her Birth-Day (being 20 years old,)</date> when many <roleName
+                     type="honorific">Sister</roleName> who visited her Express'd their Hearty
+                  wishes for her which receiv'd, &amp; answer'd with much satisfaction: In the
+                  afternoon her class made her a Very Pretty Love-Feast which rejoiceed her
+                  Exceedingly &amp; in which she spoke of her Departure with such <name
+                     type="emotion">Pleasure &amp; Delight </name> as she never had done before; she
+                  spoke with <persName><roleName type="honorific">sister</roleName> Mary</persName>
+                  &amp; made out Ev'ry thing that was in her Mind about her Burial, as well as all
+                  the Hearty wishes &amp; desires of her heart for her Class &amp;c. In short she
+                  said that this had been to her the <name type="emotion">Happiest day she ever had
+                     had in all her Life.</name> This day &amp; forward she unbosom'd &amp; declar'd
+                  what she had (Perhaps) kept Treasur'd up in her Heart to this Oppertunity for some
+                  years Past, She spoke of her various Troubles &amp; Anxieties in Particular Circum
+                     <note type="catchword">-stances</note>
+               </p>
+            </div>
+            <div type="page" n="3">
+               <head type="page">3</head>
+               <pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-03.jpg"/>
+               <p>Circumstances, such as no body had perciev'd on her with <del>with</del> a <name
+                     type="emotion">chearful &amp; Thankful Heart</name>, being bowed with Shame
+                  before him with whom she had spent many happy moments, days years</p>
+               <p><date when-iso="1754" cert="low">About the 15th</date> it being two years since we
+                  came in <add place="above">our</add>
+                  <placeName>Choir House</placeName> she told <persName><roleName type="honorific"
+                        >Sister</roleName> Mary</persName> Ev'rything how she had been &amp; was in
+                     <placeName>Tyre-sell Hall</placeName> at that time, What <name type="emotion"
+                     >Anxiety &amp; Concern she felt</name> about coming in the <placeName>Choir
+                     House</placeName>
+                  <name type="emotion">fearing</name> Least she should not have leave to come &amp;
+                  how she had in Shillness Pray'd &amp; wept before her dear Lamb, that he would
+                  give her leave to come &amp; that if she should have that favour that he would
+                  grant her the feeling &amp; nearness of his Wounds that she might be faithful to
+                  him therein &amp;c. Nay 'tis almost incredible, how quick &amp; active her memory
+                  was over this matter she not only gave Sis<hi rend="superscript">r</hi>
+                  <persName>Mary</persName> an account of herself but of all the
+                     <orgName>Sisters</orgName> in <placeName>Tyre-sell-Hall</placeName> at that
+                  time, she (unperceiv'd) had taken notice of ev'ry Ones conduct words &amp;
+                  behaviour, But to return she also Express'd herself in a very lively manner with
+                  grace &amp; understanding <hi rend="underline">how</hi> Exceedingly she was
+                  Rejoiced when she was assured she should come here. She at the same time viz the
+                     15<hi rend="superscript">th</hi> or 16<hi rend="superscript">th</hi> Instant
+                  spoke w<hi rend="superscript">th</hi> with an <name type="emotion">inly tender
+                     feeling</name> about the <placeName>Choir</placeName> &amp; what her dear
+                  Bridegroom has done from time to time on her therein, &amp; Particularly in this
+                  Present year, together with the Esteem <note type="catchword">&amp;</note></p>
+               <cb/>
+               <p> &amp; Satisfaction she has had for, &amp; in the <placeName>Choir
+                     House</placeName> this she did from time to time Repear and also she would
+                  allways take notice of many sisters whom she saw &amp; Reflected on their
+                  Situation at Present and time Pass &amp; when <persName>Sister Mary</persName>
+                  came to her then she would sell her all her mind about them &amp; Especialy the
+                  concern she had had, about her Class under some heavy Circumstances some months
+                  agoe &amp; being ask&#39;d why she did not speak as such time what she had in her
+                  mind? She answer&#39;d &quot;that she always thought herself too mean &amp; too
+                  insignificant to Speak Her mind about any thing, But she had instead of that gone
+                  somewhere in a Corner &amp; Wept for them be- fore her dear <roleName
+                     type="honorific">Saviour</roleName> &amp; Pray&#39;d hum that he would Bless
+                  Preserve &amp; keep <hi rend="underline">them</hi> &amp; <hi rend="underline"
+                     >Her</hi> &amp; that they might <hi rend="underline">all</hi> become a joy to
+                     <persName type="deity">Him</persName> Once in <persName>sister Mary</persName>
+                  Presence after having fully spoken &amp; Open&#39;d all her mind to her a- bout
+                  many things, she took motice that her <persName ana="Betty Midgley"
+                     >Aunt</persName> (who faithfuly tended &amp; nurs&#39;d her all the time of
+                  sickness) was a Cry- ing: So she demanded the Reason of her why she wept, telling
+                  her she had no ocassion to weep for her since &quot;says she&quot; I am fully
+                  satisfied &amp; Reconciled both with my Lamb &amp; &amp; with all my
+                     <orgName>Sisters</orgName> &amp; have spoke my mind about Everything &amp; now
+                  am Ready to go whenever he Pleases Thus she continued under a Deep Sense &amp;
+                  speaking of herself &amp; her Choir &amp; often Expressing her Desire to go. But
+                  yet she </p>
+            </div>
+            <div type="page" n="4">
+               <head type="page">4</head>
+               <pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-04.jpg"/>
+               <p>would secretly sometimes say to her <persName ana="Betty Midgley">Aunt</persName>
+                  that she believ&#39;d she should live till <name type="holiday">Christmas</name>,
+                  but of our <roleName type="honorific">Saviour</roleName> Pleasd to take her
+                  before, she would be glad Sunday Lan about 11 or 12 in the Evening she was
+                  siez&#39;d with the monst <name type="emotion">Violent pain</name> so that
+                     <persName>Sister Mary</persName> who at the same time watchd with her
+                  Perceiv&#39;d such a sensible alteration not only by her Excessive Pains but also
+                  by the method &amp; alteration of all her Faculties that she thought she Really
+                  would go, &amp; thereupon ask&#39;d her if she was now quite Ready. She with <name
+                     type="emotion">pleasure &amp; serenity</name> answerd &quot;yes! I am quite
+                  Ready now &amp; shall be glad to go to my Lamb as soon as he Pleases&quot; However
+                  she reviv&#39;d a little &amp; then desired 2 verses which she named to be sung
+                  for her viz<hi rend="superscript">+ </hi>appear as her protector who turns to joy
+                  all fears &amp; When she shall get Per mission to leave this mortal tent, from
+                  Pains &amp; griefs Dissmission thy sell just then present And then says she
+                  &quot;Sing Hush stif not up the friend of Christ, Wake not the lovely Bride &amp;
+                  She was very Bad all night &amp; day like one Expireing till toward night on
+                  Monday Get the Bore her Pains with much more Paternity than any one could Expect
+                  who did but <hi rend="underline">see</hi> how she was- Minday- night she was some
+                  waht Easier &amp; appear&#39;d to ys as if she might Possibly continue a few days,
+                  But if she heard any one take notice of the near approach </p>
+            </div>
+            <div type="page" n="5">
+               <head type="page">5</head>
+               <pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-05.jpg"/>
+               <p>so she sweetly went to sleep in the arms of her lover about 5 o'clock in the
+                  Evening <date when-iso="1754-12-25">on Christmas Day.</date> It is to be Oberv'd
+                  that this dear Heart was the Only One great girl in all the Oconomies was One of
+                  the first that was Receiv'd in the Congregation The Only One that came in the
+                     <placeName>Choir House</placeName> at first she was the first that was admitted
+                  to the sacrament. And now the first that is gone to Our <roleName type="honorific"
+                     >saviour</roleName>. Where she Rests from all her Pain: And has left behind her
+                  the Char acter of an Honest Unright Unaffected &amp; Enamour'd Virgin Heart she
+                  has hear Known by those who have liv'd with her from her first Commg <hi
+                     rend="superscript">among us</hi> to this Her Dissalution to be an Example of
+                  Patience of steadfastness &amp; Constanes in her Love to him who first gave her
+                  confidence to believe in his Wounds she never once having been perceiv'd to draw
+                  back or to slight her calling in joy or in Smart, and now at last her mourn has
+                  made <del>a</del> a Brief Confession of <persName type="deity">Him</persName> Whom
+                  her Heart has Loved felt &amp; Believ'd on. </p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

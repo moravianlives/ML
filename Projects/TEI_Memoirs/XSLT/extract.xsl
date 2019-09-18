@@ -21,7 +21,7 @@
     
     <xsl:template match="/">
         <xsl:text>"elementName", "elementContent", "typeAttributeIfPresent"</xsl:text>
-        <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectType | //text//date | //text//trait | //text//time | //text//state | text//name">
+        <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectName | //text//date | text//name">
             <xsl:sort select="name()"/>
             <xsl:sort select="."/>
             <xsl:sort select="@type"/>

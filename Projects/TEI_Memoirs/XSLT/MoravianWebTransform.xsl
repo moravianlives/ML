@@ -37,7 +37,7 @@
 
     
 <!-- This hides the sic spelling, leaving only the correct spelling -->
-    <xsl:template match="tei:sic"/>        
+    <xsl:template match="tei:orig"/>        
     
 <!-- This renders the superscript letters in HTML <sup> tag -->
     <xsl:template match="tei:hi[@rend='superscript'] | tei:sup">
@@ -46,6 +46,9 @@
         </sup>        
     </xsl:template>
 
+<!-- This renders underlined letters in HTML <u> tag -->
+    
+    
 <!-- This renders strikethrough in HTML -->
     <xsl:template match="tei:del">
         <del xmlns="http://www.w3.org/1999/xhtml">

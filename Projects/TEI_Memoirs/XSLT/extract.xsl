@@ -20,11 +20,18 @@
      <!--Match Root Node -->
     
     <xsl:template match="/">
+<<<<<<< HEAD
         <xsl:text>"elementName", "elementContent", "typeAttributeIfPresent"</xsl:text>
         <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectName | //text//date | //text//name[@occupation]">
+=======
+        <xsl:text>"elementName", "elementContent", "typeAttributeIfPresent", "occupation"</xsl:text>
+        <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectName | //text//date | //text//name">
+>>>>>>> 6f2e7cc65219148c25679f0e012f3d1e331ab55d
             <xsl:sort select="name()"/>
             <xsl:sort select="."/>
             <xsl:sort select="@type"/>
+            <xsl:sort select="@occupation"/>
+            <xsl:sort select="@event"/>
             <xsl:value-of select="jc:createCSV(.)"/>
         </xsl:for-each> 
     </xsl:template> 
@@ -54,9 +61,10 @@
         <xsl:variable name="elementName"><xsl:value-of select="$node/name()"/></xsl:variable>
         <xsl:variable name="elementContent"><xsl:value-of select="$node/jc:csvEscapeDoubleQuotes(.)" /></xsl:variable>
         <xsl:variable name="typeAttributeIfPresent"><xsl:value-of select="$node/@type/jc:csvEscapeDoubleQuotes(.)" /></xsl:variable>
+        <xsl:variable name="occupation"><xsl:value-of select="$node/@occupation/jc:csvEscapeDoubleQuotes(.)"/></xsl:variable>
         
         <!-- Assemble the output $terminal, all our variables separated with value of $sep, followed by the $terminal -->   
-        <xsl:variable name="output"><xsl:value-of select="$terminal"/><xsl:value-of select="$elementName, $elementContent, $typeAttributeIfPresent" separator="{$sep}"/><xsl:value-of select="$terminal"/></xsl:variable>    
+        <xsl:variable name="output"><xsl:value-of select="$terminal"/><xsl:value-of select="$elementName, $elementContent, $typeAttributeIfPresent, $occupation" separator="{$sep}"/><xsl:value-of select="$terminal"/></xsl:variable>    
         <!-- Concatenated the normalize-spaced version of this with a newline at the beginning -->
         <xsl:value-of select="concat('&#xA;',normalize-space($output))"/>
     </xsl:function>

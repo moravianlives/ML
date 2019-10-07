@@ -115,6 +115,7 @@
               <attDef ident="relation" mode="change" sameAs="verwandte" />
               <attDef ident="occupation" mode="change" />
               <attDef ident="office" mode="change" sameAs="amt"></attDef>
+              <attDef ident="memoirSubject" mode ="change"></attDef>
             </attList>
           </classSpec>
           <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
@@ -128,6 +129,18 @@
               <attDef ident="zeremonie" mode="change" sameAs="ceremony" />
             </attList>
           </classSpec>
+          
+          <!-- CUSTOMIZATION: added name:@ / English. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="memoirSubject" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="no"><desc>Use this only to indicate a person other than the memoir's subjcect</desc></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
           <!-- CUSTOMIZATION: added name:@event / English. Wherever possible adding @sameAs to track parallels -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>

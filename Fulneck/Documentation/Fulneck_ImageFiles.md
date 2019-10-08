@@ -393,7 +393,10 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_4GledhillMary-04.jpg<br />
 
 Gray, Timothy<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-02.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-03.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-04.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-05.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-03.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-04.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_11_GrayTimothy-05.jpg<br />
 
 Green, Hannah Maria<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_40_GreenHannahMaria-01.jpg<br />
@@ -490,7 +493,7 @@ von Larisch, Charles<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-02.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-03.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-04.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-05.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-06.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-07.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-08.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-09.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-10.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-11.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-12.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-13.jpg<br />http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-14.jpg<br />
 
-LaTrobe, Justina Elizabeth
+LaTrobe, Justina Elizabeth<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_24_LaTrobeJustinaElizabeth-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_24_LaTrobeJustinaElizabeth-02.jpg<br />
 
@@ -617,6 +620,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_53_OatesJames-03.jpg<br />
 
 Peel, Elizabeth<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_10_PeelElizabeth-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_10_PeelElizabeth-02.jpg<br />
 
 Peel, Mary <br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_79Peel-01.jpg<br />
@@ -681,7 +685,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_78Robinson-07.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_78Robinson-08.jpg<br />
 
 Roebuck, Rachel<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_5RoebuckRachel-01jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_SS_5RoebuckRachel-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_5RoebuckRachel-02.jpg<br />
 
 Rogers, Anna <br />
@@ -805,7 +809,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-04.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-05.jpg<br />
 
-Thornton, Deborah (on server they are ThorntonElizabeth<br />
+Thornton, Deborah (on server they are ThorntonElizabeth)<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_22_ThorntonElizabeth-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_22_ThorntonElizabeth-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_22_ThorntonElizabeth-03.jpg<br />
@@ -918,17 +922,17 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_33Wilson-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_33Wilson-04.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_33Wilson-05.jpg<br />
 
+Wood, George <br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-03.jpg<br />
+
 Wood, Mary <br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_60Wood-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_60Wood-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_60Wood-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_60Wood-04.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_60Wood-05.jpg<br />
-
-Wood, George <br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_52_WoodGeorge-03.jpg<br />
 
 Woodhead, Mary <br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_50_WoodheadMary-01.jpg<br />
@@ -955,7 +959,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-16.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-17.jpg<br />
 
 
-[Unknown]<br />
+[Unknown from Single Sisters Collection]<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-03.jpg<br />

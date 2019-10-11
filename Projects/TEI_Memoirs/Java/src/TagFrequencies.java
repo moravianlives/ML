@@ -53,9 +53,11 @@ public class TagFrequencies {
     private String path;
 
 
-
-
-
+    /**
+     *
+     * @param fileName
+     * @throws IOException
+     */
     public TagFrequencies(String fileName) throws IOException {
 
         this.attributeNames = new ArrayList<>();

@@ -52,13 +52,21 @@ public class TagFrequencies {
 
     private String path;
 
+    /**
+     * Holds what sex the memoir is
+     */
+    private String sex;
+
 
     /**
      *
+     *
+     * @param sex
      * @param fileName
      * @throws IOException
      */
-    public TagFrequencies(String fileName) throws IOException {
+    public TagFrequencies(String fileName,String sex) throws IOException {
+        this.sex=sex;
 
         this.attributeNames = new ArrayList<>();
         this.elementName = new ArrayList<>();
@@ -80,11 +88,12 @@ public class TagFrequencies {
 
 
 
+
     /**
      * @return the location where to output the CSV files
      */
     public String getOutputLocation() {
-        return ".././../../Fulneck/Tag_Frequencies/"+path.substring(path.lastIndexOf("/")+1)+".csv";
+        return (".././../../Fulneck/Tag_Frequencies/CSV_frequencies/Individual"+sex.substring(0,1).toUpperCase()+sex.substring(1)+"/"+path.substring(path.lastIndexOf("/")+1)+".csv");
     }
 
 
@@ -191,22 +200,30 @@ public class TagFrequencies {
 
 
     public static void main(String[] args) throws IOException {
+        ArrayList<File> folders = new ArrayList<>();
 
-        File folder = new File(".././../../Fulneck/SemanticXML");
+        File folder = new File(".././../../Fulneck/Tag_Frequencies/Memoirs/Men");
+        File folder2 = new File(".././../../Fulneck/Tag_Frequencies/Memoirs/Women");
+        folders.add(folder);
+        folders.add(folder2);
 
-        File[] listOfFiles = folder.listFiles();
+        for (File f:folders) {
+            File[] listOfFiles = f.listFiles();
+            for (File file : listOfFiles) {
+                if (file.isFile()) {
 
+                    if (file.toString().substring(file.toString().lastIndexOf(".")).equals(".xml")) {
+                        TagFrequencies test = new TagFrequencies(file.toString(),f.toString().substring(f.toString().lastIndexOf("/")));
+                        test.scanForTag();
+                    }
 
-        for (File file : listOfFiles) {
-            if (file.isFile()) {
-
-                if (file.toString().substring(file.toString().lastIndexOf(".")).equals(".xml")) {
-                    TagFrequencies test = new TagFrequencies(file.toString());
-                    test.scanForTag();
                 }
-
             }
         }
+
+
+
+
 
     }
 

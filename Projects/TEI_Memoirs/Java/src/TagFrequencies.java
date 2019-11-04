@@ -52,8 +52,10 @@ public abstract class TagFrequencies {
      * Initializes the class variables and constants necessary for the code
      */
     public void init() {
-        this.pOccupation = Pattern.compile("name[^>]+occupation=\"([^\"]*)\"[^>]*>([^<]*)</name>");
-        this.pOffice = Pattern.compile("name[^>]+office=\"([^\"]*)\"[^>]*>([^<]*)</name>");
+        //this.pOccupation = Pattern.compile("name[^>]+occupation=\"([^\"]*)\"[^>]*>([^<]*)</name>");
+        //this.pOffice = Pattern.compile("name[^>]+office=\"([^\"]*)\"[^>]*>([^<]*)</name>");
+        this.pOccupation = Pattern.compile("<name[^>]+occupation=(\"[^\"]*\")+(.*?)");
+        this.pOffice = Pattern.compile("<name[^>]+office=(\"[^\"]*\")+(.*?)");
         this.attributeNames = new ArrayList<>();
         this.elementName = new ArrayList<>();
         this.attributeValues = new ArrayList<>();
@@ -77,10 +79,17 @@ public abstract class TagFrequencies {
         while ((sMatch = in.findWithinHorizon(pOffice, 0)) != null) {
             sMatch = cleanUpString(sMatch);
 
+            //NEED TO FIX TO REMOVE THINGS AFTER THE ATTRIBUTE VALUE
 
-            String eName = sMatch.substring(0,ELEMENT_NAME.length());
-            String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OFFICE.length() + 1);
-            String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OFFICE.length(), sMatch.indexOf(">") - 1);
+            String eName = sMatch.substring(1,ELEMENT_NAME.length()+1);
+            sMatch = sMatch.substring(ELEMENT_NAME.length()+1);
+            String aName = sMatch.substring(0, OFFICE.length()+1);
+            sMatch = sMatch.substring(OFFICE.length()+3);
+            String aValue = sMatch.substring(0,sMatch.length()-1);
+            //String aName = sMatch.substring();
+            //String eName = sMatch.substring(0,ELEMENT_NAME.length());
+            //String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OFFICE.length() + 1);
+            //String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OFFICE.length(), sMatch.indexOf(">") - 1);
 
             addTag(eName, aName, aValue);
 
@@ -117,15 +126,19 @@ public abstract class TagFrequencies {
         FileReader reader = new FileReader(file);
         Scanner in = new Scanner(reader);
         //Scanner in2 = new Scanner(cleanWhiteSpaces(in));
-
         String sMatch;
         while ((sMatch = in.findWithinHorizon(pOccupation, 0)) != null) {
             sMatch = cleanUpString(sMatch);
 
 
-            String eName = sMatch.substring(0, ELEMENT_NAME.length());
+            String eName = sMatch.substring(1,ELEMENT_NAME.length()+1);
+            sMatch = sMatch.substring(ELEMENT_NAME.length()+1);
+            String aName = sMatch.substring(0, OCCUPATION.length()+1);
+            sMatch = sMatch.substring(OCCUPATION.length()+3);
+            String aValue = sMatch.substring(0,sMatch.length()-1);
+            /*String eName = sMatch.substring(0, ELEMENT_NAME.length());
             String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OCCUPATION.length() + 1);
-            String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OCCUPATION.length(), sMatch.indexOf(">") - 1);
+            String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OCCUPATION.length(), sMatch.indexOf(">") - 1);*/
 
             addTag(eName, aName, aValue);
 
@@ -139,8 +152,6 @@ public abstract class TagFrequencies {
      * @throws FileNotFoundException
      */
     public void displayOutput() throws FileNotFoundException {
-
-
         PrintWriter writer = new PrintWriter(new File(getOutputLocation()));
 
         StringBuffer csvHeader = new StringBuffer();
@@ -161,6 +172,67 @@ public abstract class TagFrequencies {
             csvData.append(frequencies.get(i));
             csvData.append('\n');
         }
+
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append("Total");
+        csvData.append(',');
+        csvData.append(getSum(frequencies));
+        writer.write(csvData.toString());
+        writer.close();
+    }
+
+    private int getSum(ArrayList<Integer> frequencies) {
+        int sum=0;
+        for (Integer num:frequencies) {
+            sum+=num;
+        }
+        return sum;
+    }
+
+    /**
+     * displays the output to a csv file at the specified location
+     * @throws FileNotFoundException
+     */
+    public void displayOutput(String filePath) throws FileNotFoundException {
+
+
+        PrintWriter writer = new PrintWriter(new File(filePath));
+
+        StringBuffer csvHeader = new StringBuffer();
+        StringBuffer csvData = new StringBuffer();
+        csvHeader.append("Element name,Attribute name,Attribute value, Frequency\n");
+
+        // write header
+        writer.write(csvHeader.toString());
+
+        // write data
+        for (int i = 0; i < elementName.size(); i++) {
+            csvData.append(elementName.get(i));
+            csvData.append(',');
+            csvData.append(attributeNames.get(i));
+            csvData.append(',');
+            csvData.append(attributeValues.get(i));
+            csvData.append(',');
+            csvData.append(frequencies.get(i));
+            csvData.append('\n');
+        }
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append("Total");
+        csvData.append(',');
+        csvData.append(getSum(frequencies));
+
         writer.write(csvData.toString());
         writer.close();
     }

@@ -13,6 +13,10 @@ public class CumulativeTagFrequencies extends TagFrequencies {
         init();
     }
 
+    public CumulativeTagFrequencies() {
+        init();
+    }
+
 
 
     @Override

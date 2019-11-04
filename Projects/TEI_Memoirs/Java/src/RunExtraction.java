@@ -11,10 +11,11 @@ public class RunExtraction {
         File folder2 = new File(".././../../Fulneck/Tag_Frequencies/Memoirs/Women");
         folders.add(folder);
         folders.add(folder2);
-
+        CumulativeTagFrequencies everyone = new CumulativeTagFrequencies();
         for (File f : folders) {
             File[] listOfFiles = f.listFiles();
             CumulativeTagFrequencies cumulative = new CumulativeTagFrequencies(f.toString().substring(f.toString().lastIndexOf("/") + 1));
+
             for (File file : listOfFiles) {
                 if (file.isFile()) {
 
@@ -26,11 +27,15 @@ public class RunExtraction {
                         cumulative.scanForOccupations(file.toString());
                         cumulative.scanForOffice(file.toString());
                         cumulative.displayOutput();
+                        everyone.scanForOccupations(file.toString());
+                        everyone.scanForOffice(file.toString());
+
                     }
 
                 }
             }
         }
+        everyone.displayOutput(".././../../Fulneck/Tag_Frequencies/CSV_frequencies/Collective/Cumulative/Everyone.csv");
     }
 }
 

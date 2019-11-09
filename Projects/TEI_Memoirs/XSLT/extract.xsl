@@ -23,7 +23,7 @@
         
         
         <xsl:text>"elementName", "elementContent", "typeAttributeIfPresent", "occupation", "office", "health", "event", "ceremony", "calendar", "when"</xsl:text>
-        <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectName | //text//date | //text//name">
+        <xsl:for-each select="//text//persName | //text//placeName | //text//roleName | //text//orgName | //text//objectName | //text//date | //text//name |//text//occupation |//text//office">
             
             <xsl:sort select="name()"/>
             <xsl:sort select="."/>

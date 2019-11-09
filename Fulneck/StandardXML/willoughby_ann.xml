@@ -1,0 +1,321 @@
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>NAME: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_23WilloughbyAnn">Ann Willoughby</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-03.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Willoughby</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when-iso="2019-11-09" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Ann Willoughby</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-01.jpg" />
+			<p>
+				<lg>
+					<l>Ann Willoughby, Was born at Robert Town,</l>
+					<l>In the Parish of Birstal Jan<hi rend="superscript">ry</hi> ye 21<hi rend="superscript">st</hi> 1722</l>
+					<l>about the year 1739 She was Stir&apos;d up by reading</l>
+					<l>a Penny Pamphlet, and from that time Grew so</l>
+					<l>Uneasy, Concerning her Salvation, that it greatly</l>
+					<l>Affected her Body, Which her Mother, &amp; others</l>
+					<l>of her Relations Observing; insisted upon her</l>
+					<l>taking the Advice of a Physician: This she</l>
+					<l>out of Obedience Comply&apos;d with being notwith-</l>
+					<l>standing convinc&apos;d that as her Disease was of a</l>
+					<l>Spiritual nature; it could not be Remov&apos;d by</l>
+					<l>human means, She attended on M<hi rend="superscript">r</hi> Ingham&apos;s</l>
+					<l>Preaching, from his first begining and after-</l>
+					<l>wards adher&apos;d for the B<hi rend="superscript">rn</hi> as Soon as They Came</l>
+					<l>to Yorkshire; and Visited &amp; Convers&apos;d With those</l>
+					<l>of them who Resided at New house, about ye year</l>
+					<l>1742. B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Ockershousen being then settled</l>
+					<l>at Mirfield. She having now receiv&apos;d Grace</l>
+					<l>and Chearfulness from our Saviour, and being in </l>
+					<l>Consequence thereof restor&apos;d to her Bodily Health;</l>
+					<l>She was also of a Remarkable good Understanding </l>
+					<l>and Ready of Apprehension Whereby She was </l>
+					<l>Employ&apos;d in Visiting the Single Women in that</l>
+					<l>Plan, on ye 5<hi rend="superscript">th</hi> Jan<hi rend="superscript">ry</hi> 1744 She Was Receiv&apos;d</l>
+					<l>into the Congregation &amp; Was admitted to the </l>
+					<l>Sacrament ye 31<hi rend="superscript">st</hi> of July in ye same Year, about</l>
+					<l>this time it was intended that She Should Change</l>
+					<l>Her State But When it was Propos&apos;d to her, she</l>
+					<l>made some Objection; So the matter was Intirely</l>
+					<l>dropt by the Labourers, &amp; they were also Satisfied</l>
+					<l>With her; X But she however could not give it</l>
+					<l>up herself, and When the thing was now over, She</l>
+					<l>Declar&apos;d herself in a different manner than she</l>
+					<l>had done before, after this she went on heavily for</l>
+					<l>a Considerable time, But at length she gave it up, and </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-02.jpg" />
+			<p>
+				<lg>
+					<l>and was better Satisfied + she had an extraordinary</l>
+					<l>gift for Oconomical affairs, and Was very diligent</l>
+					<l>and exact in ye like Undertakings, of which many</l>
+					<l>were Commited to her Care, her Labours were not</l>
+					<l>without Blessing X But yet (from what cause we</l>
+					<l>Will not Possibly determine) they were frequently</l>
+					<l>Intermingled with Disappointments and disagreeable</l>
+					<l>circumstances to the disatisfaction of others, but</l>
+					<l>particularly to the grief of her own heart and to </l>
+					<l>the detriment of her Bodily health X Yet She was</l>
+					<l>By many heartily Beloved and generally acknow-</l>
+					<l>ledged as an Honest Heart, In ye begining of June</l>
+					<l>1746 she came to live at the Single S<hi rend="superscript">rs</hi></l>
+					<l>Oconomie at Pudsey; she was one of the Hourly </l>
+					<l>Intercessers and also visiter in the Plans, in this </l>
+					<l>year was also for a short time at Oxheys and </l>
+					<l>Holm, and had the Care of Each of those Oconomies</l>
+					<l>And May 1747 She made also the begining of that </l>
+					<l>at Clegheaton, as well as the first School of the </l>
+					<l>girls, Which she kept at the Same Place</l>
+					<l>From thence She went to Tyrsal in Aug<hi rend="superscript">t</hi> 1750 and </l>
+					<l>Began an Oconomie there where she continued </l>
+					<l>till December 1752 when She with the Said</l>
+					<l>Oconomie Came to Live In the Choir House of </l>
+					<l>the Single Sisters, Where she Perform&apos;d the </l>
+					<l>Office which she had there of Accountant and</l>
+					<l>Inspecter of outward affairs as also of vorgasety</l>
+					<l>of a Room with that Punctuality and exactness</l>
+					<l>So Peculiar to her and to the Satisfaction of the </l>
+					<l>Whole House, and this She carried on even in </l>
+					<l>her Sickness, Which Begun In the month of Nov<hi rend="superscript">br</hi></l>
+					<l>1754 When She first complain&apos;d Whereby We</l>
+					<l>Plainly Perceiv&apos;d that She fell away, and was</l>
+					<l>troubled with a Certain Cough, Which We thought </l>
+					<l>Would turn out to be a Consumption; and the </l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>12<hi rend="superscript">th</hi> of February She Retir&apos;d to the Sick Room</l>
+					<l>Where by many Persuasions We got her to Use Some</l>
+					<l>thing from the Doctor in hopes that She might</l>
+					<l>soon be better, all things possible was done for her</l>
+					<l>In Regard to her health But she often Believ&apos;d that </l>
+					<l>The Physicians did not Rightly understand her</l>
+					<l>Disorder &amp; therefore Resolv&apos;d to Leave of taking</l>
+					<l>Medcines &amp; to Give herself over into the Hands of</l>
+					<l>our Saviour, But as her Sickness Seem&apos;d to be of </l>
+					<l>a lingering disorder she had some small hopes of</l>
+					<l>Recovering again, During her Sickness the Congre<hi rend="superscript">n</hi></l>
+					<l>Partook 4 times of the Holy Sacrament, and the</l>
+					<l>third time which was the 20<hi rend="superscript">th</hi> of April Our Dear </l>
+					<l>Johannes brought it to her; Which Was attended</l>
+					<l>With a very Particular Sweet feeling, He sung</l>
+					<l>her that verse, the Soul of Christ her Sanity &amp;c</l>
+					<l>After Which she laid herself happily Down to rest</l>
+					<l>The 23<hi rend="superscript">d</hi> She Long&apos;d very much to speak With Sister</l>
+					<l>Mary; Where she told she Plainly Perceiv&apos;d She </l>
+					<l>grew Weaker and Beliv&apos;d She Should go to our</l>
+					<l>Saviour, and Because She felt herself not capable</l>
+					<l>of Performing her Office of Writing &amp; Reckoning </l>
+					<l>as She Us&apos;d to do, Therefore her desire was to</l>
+					<l>Give it over, That she Might Spend those Days</l>
+					<l>Which she had yet to Live, In Pleasure &amp; Satis-</l>
+					<l>faction; and in the Closest Nearness of her Bride-</l>
+					<l>groom &amp; Lover, Without the care of outward</l>
+					<l>Matters, Which was approv&apos;d on, then she said,</l>
+					<l>This Was a Point Which I have long&apos;d for to be </l>
+					<l>Settled While I had Strength to Speak, Now the </l>
+					<l>Second is, Concerning My own Heart, Which will</l>
+					<l>take Up a Considerable Time, But I Would</l>
+					<l>desire you to hear me Patiently &amp; not be grievd</l>
+					<l>after I have told you all, and then I only beg you</l>
+					<l>To forgive <hi rend="strikethrough">you</hi> <add place="above">me</add> &amp; Love me Still, Some of them</l>
+					<l>are oft matters, Which I know our Saviour has forgiven</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-03.jpg" />
+			<p>
+				<lg>
+					<l>me for, But I thought I could be more fully, satisfied </l>
+					<l>If I accquainted you With them; and how those matters</l>
+					<l>stood, So I have Wish&apos;d very much to have a hearty</l>
+					<l>Conversation With you, Which accordinly Was done</l>
+					<l>Between them With many Tears, Then She declar&apos;d</l>
+					<l>Her Heart was quite Satisfied, and now she had but</l>
+					<l>one thing more to mention, Which Was concerning </l>
+					<l>Her Burial, What thoughts She had about it, and</l>
+					<l>made some Proposals, Which was Agree&apos;d to </l>
+					<l>May ye 14<hi rend="superscript">th</hi> She Spoke With Concern, that to Day it</l>
+					<l>was 15 Weeks since she came in the Sick Room</l>
+					<l>and She thought the time very long before our Sav<hi rend="superscript">r</hi></l>
+					<l>fetch&apos;d her to himself, the 18<hi rend="superscript">th</hi> She had that</l>
+					<l>Favour to Partake once more of our Dear Sav<hi rend="superscript">rs</hi></l>
+					<l>Body &amp; Blood in the Holy Communion of Which </l>
+					<l>Her Poor Hungry &amp; Thirsty Soul was very glad</l>
+					<l>She also continued quite happy &amp; Chearful, &amp; the</l>
+					<l>21<hi rend="superscript">st</hi> We Observ&apos;d a Particular Alteration In her </l>
+					<l>Which We Perceiv&apos;d to be Convulsions, so that we</l>
+					<l>Believ&apos;d she would soon go home, But She grow-</l>
+					<l>ing a little Better continued ye 22<hi rend="superscript">d</hi> all Day in a</l>
+					<l>Cold Death Sweat Tho&apos; Exceeding Ill, yet She spoke</l>
+					<l>often about her own Heart &amp; others, to our great</l>
+					<l>Surprise, &amp; upon being Ask&apos;d if She would kiss</l>
+					<l>our Saviours Feet for us, She answer&apos;d; not only</l>
+					<l>That, but I will tell Him Ev&apos;ry thing let me but</l>
+					<l>first come to him, ye 23<hi rend="superscript">d</hi> Stronger convulsions</l>
+					<l>and that with more continuance Which Seiz&apos;d on</l>
+					<l>her Memory very much, so that We thought Ev&apos;ry</l>
+					<l>Breath She Drew would be the last, But yet</l>
+					<l>We could Perceive that she often spoke in Stillness</l>
+					<l>Whereupon we ask&apos;d her Who she spoke with, she</l>
+					<l>Immediately Replied With our Saviour, that He </l>
+					<l>May manifest himself to me till the last moment</l>
+					<l>as he always has hitherto Done ever Since I Was first</l>
+					<l>acquainted with him &amp; his Wounds at 1 o Clock</l>
+					<l>In the afternoon, She desird to have a couple of hours</l>
+					<l>To herself alone, with our Saviour, and at 3 <hi rend="strikethrough">for</hi></l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>With a Smiling Countenance, her Soul flew into the </l>
+					<l>Pleura of her Everlasting Bridegroom &amp; Lover</l>
+					<l>Under those words, His Body Torn With many a </l>
+					<l>Wound, That makes thy Soul &amp; Body Sound;</l>
+					<l>and, so go then go Dear Heart &amp; hide &amp;c.</l>
+				</lg>
+			</p>
+			<p>
+				<lg>
+					<l>After having liv&apos;d 33 years 4 months </l>
+					<l>And two Days</l>
+				</lg>
+			</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

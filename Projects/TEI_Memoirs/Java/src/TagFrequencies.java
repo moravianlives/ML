@@ -54,8 +54,13 @@ public abstract class TagFrequencies {
     public void init() {
         //this.pOccupation = Pattern.compile("name[^>]+occupation=\"([^\"]*)\"[^>]*>([^<]*)</name>");
         //this.pOffice = Pattern.compile("name[^>]+office=\"([^\"]*)\"[^>]*>([^<]*)</name>");
-        this.pOccupation = Pattern.compile("<name[^>]+occupation=(\"[^\"]*\")+(.*?)");
-        this.pOffice = Pattern.compile("<name[^>]+office=(\"[^\"]*\")+(.*?)");
+        //this.pOccupation = Pattern.compile("<name[^>]+occupation=(\"[^\"]*\")+(.*?)");
+        //this.pOffice = Pattern.compile("<name[^>]+office=(\"[^\"]*\")+(.*?)");
+
+        this.pOccupation=Pattern.compile("<occupation>+([^\"]*)+</occupation>");
+        this.pOffice=Pattern.compile("<office>+([^\"]*)+</office>");
+
+
         this.attributeNames = new ArrayList<>();
         this.elementName = new ArrayList<>();
         this.attributeValues = new ArrayList<>();

@@ -1,15 +1,23 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class TagFrequencies {
+public abstract class TagFrequencies {
+
 
     /**
-     * These are used for substringing later on (the lengths)
+     * The element name that we are capturing
      */
-    private final String ELEMENT_NAME="name";
-    private final String ATTRIBUTE_NAME="occupation";
+    private final String ELEMENT_NAME = "name";
+    /**
+     * The two attribute names that we are capturing
+     */
+    private final String OCCUPATION = "occupation";
+    private final String OFFICE = "office";
 
     /**
      * List to hold the elementNames
@@ -24,104 +32,214 @@ public class TagFrequencies {
     /**
      * List to hold the attributeValues
      */
-    private ArrayList<String> attributeValues;
+    protected ArrayList<String> attributeValues;
 
     /**
      * List to hold the frequencies
      */
-    private ArrayList<Integer> frequencies;
+    protected ArrayList<Integer> frequencies;
 
     /**
-     * Stores the number of tags found
+     * Stores the pattern we are working with for occupation tags
      */
-    private int count;
+    protected Pattern pOccupation;
     /**
-     * Stores the pattern we are working with
+     * Stores the pattern we are working with for office tags
      */
-    private Pattern p;
-
-    /**
-     *
-     */
-    private FileReader reader;
+    protected Pattern pOffice;
 
     /**
-     *
-     * Holds the path of the file
+     * Initializes the class variables and constants necessary for the code
      */
+    public void init() {
+        //this.pOccupation = Pattern.compile("name[^>]+occupation=\"([^\"]*)\"[^>]*>([^<]*)</name>");
+        //this.pOffice = Pattern.compile("name[^>]+office=\"([^\"]*)\"[^>]*>([^<]*)</name>");
+        //this.pOccupation = Pattern.compile("<name[^>]+occupation=(\"[^\"]*\")+(.*?)");
+        //this.pOffice = Pattern.compile("<name[^>]+office=(\"[^\"]*\")+(.*?)");
 
-    private String path;
+        this.pOccupation=Pattern.compile("<occupation>+([^\"]*)+</occupation>");
+        this.pOffice=Pattern.compile("<office>+([^\"]*)+</office>");
 
-
-    /**
-     *
-     * @param fileName
-     * @throws IOException
-     */
-    public TagFrequencies(String fileName) throws IOException {
 
         this.attributeNames = new ArrayList<>();
         this.elementName = new ArrayList<>();
         this.attributeValues = new ArrayList<>();
         this.frequencies = new ArrayList<>();
-        // look for <name occupation=" and then take up until the next
-        this.p = Pattern.compile("name[^>]+occupation=\"([^\"]*)\"[^>]*>([^<]*)</name>");
-
-
-        // creates a fileReader object with the file
-        this.reader = new FileReader(fileName);
-        this.path=fileName;
-
 
     }
 
 
 
-
-
-
     /**
-     * @return the location where to output the CSV files
+     * Scans through the file for <name office=... ></name> and a adds them to the frequency arrays
+     * @param file the file that we want to scan through
+     * @throws FileNotFoundException
      */
-    public String getOutputLocation() {
-        return ".././../../Fulneck/Tag_Frequencies/"+path.substring(path.lastIndexOf("/")+1)+".csv";
-    }
-
-
-    /**
-     * @throws IOException Scans the code for tags matching the specified tag and prints the results to the console or a specified file
-     */
-    public void scanForTag() throws IOException {
-
-        String sMatch;
+    public void scanForOffice(String file) throws FileNotFoundException {
+        FileReader reader = new FileReader(file);
         Scanner in = new Scanner(reader);
         //Scanner in2 = new Scanner(cleanWhiteSpaces(in));
 
-
-        while ((sMatch = in.findWithinHorizon(p, 0)) != null) {
+        String sMatch;
+        while ((sMatch = in.findWithinHorizon(pOffice, 0)) != null) {
             sMatch = cleanUpString(sMatch);
 
+            //NEED TO FIX TO REMOVE THINGS AFTER THE ATTRIBUTE VALUE
 
-            String eName = sMatch.substring(0,ELEMENT_NAME.length());
-            String aName = sMatch.substring(ELEMENT_NAME.length()+1,ELEMENT_NAME.length()+ATTRIBUTE_NAME.length()+1);
-            String aValue = sMatch.substring(3+ELEMENT_NAME.length()+ATTRIBUTE_NAME.length(),sMatch.indexOf(">")-1);
+            String eName = sMatch.substring(1,ELEMENT_NAME.length()+1);
+            sMatch = sMatch.substring(ELEMENT_NAME.length()+1);
+            String aName = sMatch.substring(0, OFFICE.length()+1);
+            sMatch = sMatch.substring(OFFICE.length()+3);
+            String aValue = sMatch.substring(0,sMatch.length()-1);
+            //String aName = sMatch.substring();
+            //String eName = sMatch.substring(0,ELEMENT_NAME.length());
+            //String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OFFICE.length() + 1);
+            //String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OFFICE.length(), sMatch.indexOf(">") - 1);
 
-            // if the attribute already exists in the list
-            if (attributeValues.contains(aValue)) {
-                frequencies.set(attributeValues.indexOf(aValue), frequencies.get(attributeValues.indexOf(aValue)) + 1);
-
-            } else {
-                attributeValues.add(aValue);
-                attributeNames.add(aName);
-                elementName.add(eName);
-                frequencies.add(1);
-            }
+            addTag(eName, aName, aValue);
 
 
         }
-        displayOutput();
+
+    }
+
+    /**
+     * Add frequencies to the arrayLists if it does not already exist and otherwise adds the to the count in the arrayList
+     *
+     * @param eName  the element name of the tag
+     * @param aName  the attribute name of the tag
+     * @param aValue the attribute value of the tag
+     */
+    private void addTag(String eName, String aName, String aValue) {
+        if (attributeValues.contains(aValue)) {
+            frequencies.set(attributeValues.indexOf(aValue), frequencies.get(attributeValues.indexOf(aValue)) + 1);
+
+        } else {
+            attributeValues.add(aValue);
+            attributeNames.add(aName);
+            elementName.add(eName);
+            frequencies.add(1);
+        }
+    }
+
+    /**
+     * Scans through the file for <name occupation=... ></name> and a adds them to the frequency arrays
+     * @param file the file that we want to scan through
+     * @throws FileNotFoundException
+     */
+    public void scanForOccupations(String file) throws FileNotFoundException {
+        FileReader reader = new FileReader(file);
+        Scanner in = new Scanner(reader);
+        //Scanner in2 = new Scanner(cleanWhiteSpaces(in));
+        String sMatch;
+        while ((sMatch = in.findWithinHorizon(pOccupation, 0)) != null) {
+            sMatch = cleanUpString(sMatch);
 
 
+            String eName = sMatch.substring(1,ELEMENT_NAME.length()+1);
+            sMatch = sMatch.substring(ELEMENT_NAME.length()+1);
+            String aName = sMatch.substring(0, OCCUPATION.length()+1);
+            sMatch = sMatch.substring(OCCUPATION.length()+3);
+            String aValue = sMatch.substring(0,sMatch.length()-1);
+            /*String eName = sMatch.substring(0, ELEMENT_NAME.length());
+            String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OCCUPATION.length() + 1);
+            String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OCCUPATION.length(), sMatch.indexOf(">") - 1);*/
+
+            addTag(eName, aName, aValue);
+
+
+        }
+
+    }
+
+    /**
+     * displays the output to a csv file at the specified location
+     * @throws FileNotFoundException
+     */
+    public void displayOutput() throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter(new File(getOutputLocation()));
+
+        StringBuffer csvHeader = new StringBuffer();
+        StringBuffer csvData = new StringBuffer();
+        csvHeader.append("Element name,Attribute name,Attribute value, Frequency\n");
+
+        // write header
+        writer.write(csvHeader.toString());
+
+        // write data
+        for (int i = 0; i < elementName.size(); i++) {
+            csvData.append(elementName.get(i));
+            csvData.append(',');
+            csvData.append(attributeNames.get(i));
+            csvData.append(',');
+            csvData.append(attributeValues.get(i));
+            csvData.append(',');
+            csvData.append(frequencies.get(i));
+            csvData.append('\n');
+        }
+
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append("Total");
+        csvData.append(',');
+        csvData.append(getSum(frequencies));
+        writer.write(csvData.toString());
+        writer.close();
+    }
+
+    private int getSum(ArrayList<Integer> frequencies) {
+        int sum=0;
+        for (Integer num:frequencies) {
+            sum+=num;
+        }
+        return sum;
+    }
+
+    /**
+     * displays the output to a csv file at the specified location
+     * @throws FileNotFoundException
+     */
+    public void displayOutput(String filePath) throws FileNotFoundException {
+
+
+        PrintWriter writer = new PrintWriter(new File(filePath));
+
+        StringBuffer csvHeader = new StringBuffer();
+        StringBuffer csvData = new StringBuffer();
+        csvHeader.append("Element name,Attribute name,Attribute value, Frequency\n");
+
+        // write header
+        writer.write(csvHeader.toString());
+
+        // write data
+        for (int i = 0; i < elementName.size(); i++) {
+            csvData.append(elementName.get(i));
+            csvData.append(',');
+            csvData.append(attributeNames.get(i));
+            csvData.append(',');
+            csvData.append(attributeValues.get(i));
+            csvData.append(',');
+            csvData.append(frequencies.get(i));
+            csvData.append('\n');
+        }
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append('\n');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append(',');
+        csvData.append("Total");
+        csvData.append(',');
+        csvData.append(getSum(frequencies));
+
+        writer.write(csvData.toString());
+        writer.close();
     }
 
     /**
@@ -135,85 +253,10 @@ public class TagFrequencies {
         return sMatch;
     }
 
-
     /**
-     * Prints the tags to the appropriate place and prints the tag frequencies if we are searching for all tags
-     * @throws IOException
+     * Gets the output path where the user wants to output the csv files
      *
+     * @return a String containing the path
      */
-    //MAKE TO CSV OUTPUT
-    //Make sure any string values are in quotes
-    //Make sure dates are in standard ISO format
-    public void displayOutput() throws IOException {
-        String fileLocation = getOutputLocation();
-
-        PrintWriter writer = new PrintWriter(new File(fileLocation));
-
-        StringBuffer csvHeader = new StringBuffer("");
-        StringBuffer csvData = new StringBuffer("");
-        csvHeader.append("Element name,Attribute name,Attribute value, Frequency\n");
-
-        // write header
-        writer.write(csvHeader.toString());
-
-        // write data
-        for (int i = 0; i <elementName.size(); i++) {
-            csvData.append(elementName.get(i));
-            csvData.append(',');
-            csvData.append(attributeNames.get(i));
-            csvData.append(',');
-            csvData.append(attributeValues.get(i));
-            csvData.append(',');
-            csvData.append(frequencies.get(i));
-            csvData.append('\n');
-        }
-        writer.write(csvData.toString());
-        writer.close();
-    }
-
-
-
-
-    /**
-     * This code can loop through all the folders in the location (We would need this to be the general location if we put this on GitHub)
-     */
-    public void loopThroughFolders() {
-        //Make sure its only xml files when running
-        File folder = new File("/Users/justinschaumberger/Documents/GitHub/ML/Fulneck/SemanticXML");
-        File[] listOfFiles = folder.listFiles();
-
-        for (File file : listOfFiles) {
-            if (file.isFile()) {
-                System.out.println(file.getName());
-            }
-        }
-    }
-
-
-    public static void main(String[] args) throws IOException {
-
-        File folder = new File(".././../../Fulneck/SemanticXML");
-
-        File[] listOfFiles = folder.listFiles();
-
-
-        for (File file : listOfFiles) {
-            if (file.isFile()) {
-
-                if (file.toString().substring(file.toString().lastIndexOf(".")).equals(".xml")) {
-                    TagFrequencies test = new TagFrequencies(file.toString());
-                    test.scanForTag();
-                }
-
-            }
-        }
-
-    }
-
-
-
-
-
-
+    public abstract String getOutputLocation();
 }
-

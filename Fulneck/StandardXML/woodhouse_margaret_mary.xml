@@ -1,0 +1,745 @@
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mary Margaret Woodhouse: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="#MAF/Ful_SS_66Woodhouse">Margaret (Mary) Woodhouse</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-08.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-10.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-11.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-12.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-13.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-14.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-15.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-16.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-17.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Margaret (Mary) Woodhouse</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when-iso="2019-11-09" who="#JAKA1">Converted for semantic markup</change>
+			<change when-iso="2019-11-08" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Margaret Mary Woodhouse</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-01.jpg" />
+			<p>
+				<lg>
+					<l>Woodhouse</l>
+					<l>I was born Sep<hi rend="superscript">r</hi> 4<hi rend="superscript">th</hi> 1713 in the City of York and baptiz&apos;d in the Ch</l>
+					<l>of England, was also carefully educated by my Parents, suitable for a</l>
+					<l>Trademans Child, they were particularly attentive that I shoud not be se-</l>
+					<l>duc&apos;d by the world. From my youngest Years I had a  secret desire to</l>
+					<l>please God, and to avoid every thing that was bad, this made me very atten</l>
+					<l>tive to the course of religious people, but my Fathers circumstances</l>
+					<l>being upon the decline, I was (in order to avoid poverty) necessitated to go to</l>
+					<l>Service, Thus I undertook a House-keepers place in a reputable family</l>
+					<l>in the Country, where my Mistress faithfully instructed me in every</l>
+					<l>thing she saw me deficient in, and among the rest, endeavour&apos;d also to</l>
+					<l>teach me true holiness, but my heart constantly convicted me that I was</l>
+					<l>not right. Being now better qualify&apos;d for a larger undertaking, I left</l>
+					<l>this place in hopes of bettering my circumstances, and resolv&apos;d for London,</l>
+					<l>where I had two B<hi rend="superscript">rs</hi> in reputable business, I went thither by Sea</l>
+					<l>with some acquaintances, but we had not been out a day before a violent</l>
+					<l>storm arose, to that &apos;twas expected we shou&apos;d suffer Shipwreck, but that</l>
+					<l>we might have our lives, it was resolv&apos;d to take to the long boat, but</l>
+					<l>I was determin&apos;d rather to perish with the Ship, than venture in the</l>
+					<l>boat, and leave my cloaths behind me, and thus suffer&apos;d myself to be</l>
+					<l>lock&apos;d down in the Cabbin, laid myself on a Bed, never to behold this</l>
+					<l>world any more, recomending my Soul to God, and for sometime put</l>
+					<l>my hands over the bed side to feel if the water was approaching, then</l>
+					<l>drop&apos;d asleep. The Ship weather&apos;d the storm, and the Captain return&apos;d but</l>
+					<l>how greatly was I supriz&apos;d when with dificulty I was awoke, and found</l>
+					<l>myself still in the Body, and all the vissisitudes of Life yet to go through.</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-02.jpg" />
+			<p>
+				<lg>
+					<l>which I thought wou&apos;d be buried forever when I laid me down. When I</l>
+					<l>came to London, my B<hi rend="superscript">rs</hi> took good care of me, but I durst not undertake</l>
+					<l>a House keepers place in this City, till I had first inform&apos;d myself of</l>
+					<l>what belong&apos;d to such an undertaking, therefore took a House maids</l>
+					<l>place in an eminent Physicians family, but this proved too hard for me</l>
+					<l>and in about a months time, was unable to stand on my Legs, the</l>
+					<l>Doctor hearing of this order&apos;d me into his room, and on examining into</l>
+					<l>my constitution, came <hi rend="strikethrough">upon</hi> <add place="above">to speak about</add> my family and education, and on my telling <add place="above">him</add></l>
+					<l>who I was, my good <hi rend="strikethrough">Lady</hi> <add place="above">mistress</add> answer&apos;d him in French, that my Mother was</l>
+					<l>her near Relation, I was imediately order&apos;d into better care and <add place="above">an</add> easier</l>
+					<l>Situation, which together with some Medicines soon restor&apos;d me to <add place="above">the use of</add> my</l>
+					<l>Limbs, I then undertook <add place="above">the</add> House Keepers place in the same family, but</l>
+					<l>cou&apos;d not continue long therein, the other Servants plagueing me incessantly</l>
+					<l><add place="above">because</add> <hi rend="strikethrough">as</hi> I cou&apos;d not join in their extravagant schemes and unfaithfulness to</l>
+					<l>the prejudice of my good Master and Misstress, therefore without any</l>
+					<l>explanation desir&apos;d to be set at Liberty; this was a real disappointment</l>
+					<l>to them, for they thought they had a faithfull person in their <hi rend="strikethrough">circumstan</hi> <add place="above">Family</add></l>
+					<l><hi rend="strikethrough">ces</hi> <add place="above">who also took</add> care of their Child<hi rend="superscript">n</hi>. A pious Lady who liv&apos;d there, and had</l>
+					<l>renounc&apos;d the errours of the Church of Rome, <hi rend="strikethrough">had also entertain&apos;d hopes</hi> <add place="above">wished me</add></l>
+					<l><hi rend="strikethrough">of preserving me</hi> <add place="above">to remain</add> in <add place="above">the</add> <hi rend="strikethrough">a</hi> single state <add place="above">and</add> to live to the Lord Jesus, and would</l>
+					<l>have condition&apos;d with me on any terms I pleas&apos;d, if I wou&apos;d remain</l>
+					<l>with her or this family, but nothing cou&apos;d prevail upon me to live among</l>
+					<l>such a set of Servants as was there; I soon enter&apos;d into a large <add place="above">grand</add> <hi rend="strikethrough">magnifi</hi></l>
+					<l><hi rend="strikethrough">cent</hi> family in Bloomsbury Square, here I only staid 11 months, I then</l>
+					<l>got a House keepers place in a worthy family in Berkshire; in about 3</l>
+					<l>Years the Lady of the Family died, and the whole care fell upon me, to</l>
+					<l>the great oppression of my mind, for the continual want of the knowledge</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-03.jpg" />
+			<p>
+				<lg>
+					<l>of my God imbitter&apos;d every thing to me, and tho&apos; we had family devotion</l>
+					<l>morning and evening by the Chaplain, all was nothing to me, because the</l>
+					<l>practice answer&apos;d not to the precepts, and I became very miserable; on asking</l>
+					<l>advice of the Chaplain, he told me to read Dean Swift, and such like lively</l>
+					<l>Authors, and visit more in the Country, but I resolv&apos;d for London to get</l>
+					<l>better advice, left my good place to the great distress of my worthy Master.</l>
+					<l>In London I took to the Methodists contrary to the advice of my friends, who</l>
+					<l>said I shoud lose my Character thereby, <hi rend="strikethrough">and</hi> <add place="above">as</add> they were nothing but a</l>
+					<l>loose <add place="above">rabble</add> <hi rend="strikethrough">rabbling People</hi>. I learnt several branches of business, in order to go no</l>
+					<l>more to service, but to maintain myself in a single state, but this was of no long</l>
+					<l>duration, being much importun&apos;d to go to my late place in Berkshire, I ven-</l>
+					<l>turd there again, and continu&apos;d several Years, and met with a company of</l>
+					<l>Single Gentlewomen at Windsor, who like me, were seaking after the King-</l>
+					<l>dom of God, but cou&apos;d meet with no other consolation than the practice of good</l>
+					<l>morals, and leaving ourselves to the mercy of God. In the Year 1750 my</l>
+					<l>Mother was taken very sick, and desired much to see me before her depar-</l>
+					<l>ture, I got leave of my Master to make this visit to York, promising</l>
+					<l>that I wou&apos;d return again, but in 10 days after my arrival there, my</l>
+					<l>dear Mother departed this Life, and my younger B<hi rend="superscript">r</hi> being in good busi</l>
+					<l>ness, wou&apos;d not let me leave York any more, but try&apos;d to settle me in the</l>
+					<l>Confectioners business, and procur&apos;d me an original Shop of this kind,</l>
+					<l>which thro&apos; his interest prov&apos;d amazing<add place="above">ly</add> successfull, yet on every relaxation</l>
+					<l>from business, I was oppress&apos;d with an uneasy mind about being sav&apos;d</l>
+					<l>and attaining to the Kingdom of that God whom I thought I lov&apos;d, I re</l>
+					<l>solv&apos;d to go to the Methodists meetings, especially in the evenings, when no</l>
+					<l>body that knew me cou&apos;d see me, but was soon discover&apos;d by a Lady, who</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-04.jpg" />
+			<p>
+				<lg>
+					<l>had visited much in the family I liv&apos;d with in Berkshire she made</l>
+					<l>herself known to me, and never let me rest unless I went continually</l>
+					<l>to the means of grace, as she call&apos;d the meeting, but I cou&apos;d not bear</l>
+					<l>their manner of singing and praying so openly, and she liked, I</l>
+					<l>also thought they wou&apos;d ruin my outward circumstances, as my</l>
+					<l>House was never free from Methodists and yet I found no rest for</l>
+					<l>my Soul, but <hi rend="strikethrough">got a bitterness</hi> <add place="above">felt an Enmity</add> to God for calling me to an account for</l>
+					<l>my sinfull nature, which I neither made, nor wanted to live unto</l>
+					<l>soon after this 2 persons came into my Shop, my Servant whisperd</l>
+					<l>in my ear that they were Moravians M<hi rend="superscript">r</hi> and M<hi rend="superscript">rs</hi> Brook by name</l>
+					<l>I soon found freedom with M<hi rend="superscript">rs</hi> Brook to tell her my situation of heart.</l>
+					<l>She desir&apos;d me to be comforted, for the Lord Jesus wou&apos;d never have convinc&apos;d</l>
+					<l>me of <add place="above">my</add> sinfulness, but He wou&apos;d also convince me where a true righ</l>
+					<l>teousness abounded, he had paid the ransom for all my sins thro&apos; his</l>
+					<l>Death and sufferings, and wou&apos;d forgive me all if I cou&apos;d but believe</l>
+					<l>he suffer&apos;d for my sake, and He woud make me happy thro&apos; his merits</l>
+					<l>without any works of mine, or any thing that any creature cou&apos;d help</l>
+					<l>me to, those were such words as I never heard before, that all my</l>
+					<l>happiness consisted in believing in the Lord Jesus, all was to me as if</l>
+					<l>an angel from Heaven had been conversing with me, I never know before</l>
+					<l>that my Redeemer was the Lord Jesus Christ, she moreover told me</l>
+					<l>that his grace wou&apos;d regenerate my sinfull nature, both Soul &amp; Body</l>
+					<l>from this time I got other Ideas of my Salvation then I ever had before</l>
+					<l>and no more thought of being sav&apos;d by my good deeds, yet great distress</l>
+					<l>follow&apos;d me daily. I went one afternoon to M<hi rend="superscript">rs</hi> Brook, who desir&apos;d me to</l>
+					<l><unclear>stay</unclear> tea, other company also came in, and among the rest a B<hi rend="superscript">r</hi>. from</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-05.jpg" />
+			<p>
+				<lg>
+					<l>Pudsey, whom I knew nothing of. M<hi rend="superscript">rs</hi> Brook and the said B<hi rend="superscript">r</hi> began</l>
+					<l>such spiritual conversation as I never heard in all my life, and thought</l>
+					<l>I had neither part nor let in such happiness as was to be enjoy&apos;d by</l>
+					<l>believing in the Lord Jesus, and I knew not where to hide my face</l>
+					<l>for shame and perplexity, when the B<hi rend="superscript">r</hi> spoke of our Sav<hi rend="superscript">r</hi> forgiveing</l>
+					<l>him his sins when the most wretched of men, I burst out with involuntary</l>
+					<l><hi rend="strikethrough">crys</hi> Crys for the same Saviour to bless me, and in a moment, I was</l>
+					<l>(as it were) seperated from all bodily sight of the Company, and saw</l>
+					<l>nothing but my dear Saviour who stood ready to forgive me all my sins,</l>
+					<l>shame and abasement seiz&apos;d me so that I knew nothing what I said</l>
+					<l>or did, my former unbelief and denial of all possibility of having my</l>
+					<l>sins forgiven while in this Life brought me down into the dust, and</l>
+					<l>I was inconsolable, and knew not how to accept such great grace, after</l>
+					<l>such bold asertions of unbelief as I had made, my senses became more</l>
+					<l>and more open&apos;d to the great blessing our dear Saviour had bestowed</l>
+					<l>upon me, but my friends durst not leave me above till I came more to</l>
+					<l>myself, and I was so enfeebled <hi rend="strikethrough">thro&apos;</hi> <add place="below">in</add> Body and mind, that for sometime</l>
+					<l>I cou&apos;d hardly stand upon my Legs, and when I was conducted home,</l>
+					<l>some friends met me there, who, seeing my tears, and hearing my spiritual</l>
+					<l>conversation, thought the Lord had appear&apos;d to me as He did to Paul</l>
+					<l>and told me that I was now a right Paulist, but my B<hi rend="superscript">r</hi> comprehended</l>
+					<l>it as what our Sav<hi rend="superscript">r</hi> said to Nicodamus that to he truely born again was</l>
+					<l>a baptizm of the Spirit, I told them, I cou&apos;d say with Job, I have heard of Him,</l>
+					<l>but now my eyes have seen him, the spirit of prayer was also powerfully</l>
+					<l>with me, I fell on my knees, and all the company with me, but what I said</l>
+					<l>I do not remember, but was full of astonishment at the great change I had</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-06.jpg" />
+			<p>
+				<lg>
+					<l>met with, and shed many tears on account of my former unbelief, this</l>
+					<l>impression abode with me more than a week, which I spent in wonder</l>
+					<l>at having such a great grace bestow&apos;d on me, thro&apos; the merits of our</l>
+					<l>Sav<hi rend="superscript">rs</hi> shedding his blood for the poor human sinfull race of men, and</l>
+					<l>I asuredly restor&apos;d to the fellowship of my God, to whom I had eternally</l>
+					<l>belonged, yea, for several weaks if a child had but named the Name</l>
+					<l>of Jesus, my heart wou&apos;d cry mine, mine forever, and I was render&apos;d</l>
+					<l>incapable of any other conversation, then about his infinite love to poor</l>
+					<l>sinners, I beg&apos;d every one who wanted to see me, that they wou&apos;d but</l>
+					<l>love the Lord Jesus, then all their sins wou&apos;d be forgiven, and the very</l>
+					<l>hankering to sin wou&apos;d thro&apos; that love be mortify&apos;d, and its pow&apos;r to</l>
+					<l><hi rend="strikethrough">please</hi> <add place="above">distress</add> me be taken away, and they <add place="above">would be</add> enabled to do the works of righteous</l>
+					<l>ness, and not before, this was a great offence to the Methodists and</l>
+					<l>many whose heart this suited went no more amongst them, but fre</l>
+					<l>quented M<hi rend="superscript">r</hi> Inghams meetings, being now asur&apos;d in my heart that</l>
+					<l>the Lord Jesus had reveal&apos;d <add place="above">himself thro&apos;</add> his Holy Spirit within me, and as</l>
+					<l>the Holy Sacrament was to be the following Sunday at my</l>
+					<l>Parish Church, I consulted with my good friend M<hi rend="superscript">rs</hi> Galantine,</l>
+					<l>if I shou&apos;d now go to the Holy Com<hi rend="superscript">n</hi>, which she had no objection to,</l>
+					<l>as I cou&apos;d now make a true and sinnerlike confession <hi rend="strikethrough">before the</hi></l>
+					<l>before the Lord, but when I came to the Altar, the awefulness</l>
+					<l>of the transaction, to think that the Body and Blood of God my</l>
+					<l>Saviour wou&apos;d now mix with a poor sinfull human creature so</l>
+					<l>abas&apos;d me, that I shed numberless tears, I was moreover seiz&apos;d</l>
+					<l>with such a trembling that I had to support myself by the Altar</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-07.jpg" />
+			<p>
+				<lg>
+					<l>Rails, and thought no other but the person who stood next me and</l>
+					<l>hear the rattling of my bones; during the Ministers prayer</l>
+					<l>I recover&apos;d, and crept softly to my pew, but cou&apos;d not hide how</l>
+					<l>much I was affected, on coming home, my B<hi rend="superscript">r</hi> who liv&apos;d near the</l>
+					<l>Church, prest me to go to his House, which I had no mind for,</l>
+					<l>but to avoid contention in the Street I went with him, but when</l>
+					<l>he insisted on my staying dinner, such words past betwixt us</l>
+					<l>as distress&apos;d me very much, but my remonstrances abaild no-</l>
+					<l>thing; when dinner was over, I return&apos;d to my own house, shut</l>
+					<l>myself up, and fell into such distress of mind, as I had never</l>
+					<l>felt in all my Life, I <hi rend="strikethrough">found</hi> <add place="above">felt as tho&apos;</add> that good Spirit the Holy Ghost</l>
+					<l>had now departed from me, after so many days enjoyment, I look</l>
+					<l>on my whole Salvation as inrecoverable, and that my sins and</l>
+					<l>transgressions were of a more condemning kind than ever before</l>
+					<l>as I had been in such a spirit at my B<hi rend="superscript">rs</hi> House, just when I</l>
+					<l>had been at the Holy Com<hi rend="superscript">n</hi> I wrestled and pray&apos;d till I was</l>
+					<l>quite spent, wou&apos;d have given the whole world for one good though,</l>
+					<l>that wou&apos;d have pleased God to have restor&apos;d that good Spirit</l>
+					<l>again into my heart, for I now felt like one strip&apos;d of all hope,</l>
+					<l>I neither heard nor saw any creature, and resolv&apos;d to abide till</l>
+					<l>Death <add place="above">without conversing</add> with any one, wearied and fatigued with</l>
+					<l>a distracted mind, I went to Bed, earnestly praying God once</l>
+					<l>more to have mercy upon me, and I would be more mindfull</l>
+					<l>how I griev&apos;d his spirit for the future, I slept well, and wak&apos;d</l>
+					<l>in the morning as happy and compos&apos;d as ever. Ah! my Soul</l>
+					<l>how timerous wer&apos;t thou then, then thou wast affraid of</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="8">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-08.jpg" />
+			<p>
+				<lg>
+					<l>disturbing thy Beloved, thy feet, thy hands, thy ears, thy eyes,</l>
+					<l>were all attention how thou coud&apos;st be soft and humble to thy</l>
+					<l>Spouse, but now alass, what can&apos;st thou say at this time thou&apos;st</l>
+					<l>writing this, ah! shame and reproach <hi rend="strikethrough">doss</hi> does now convict thee,</l>
+					<l>how much inattention has been paid to that Heavenly <hi rend="strikethrough">preceptor</hi> <add place="above">Teacher</add>, but</l>
+					<l>my God, my hearts best object thou hast never since forsook me, no,</l>
+					<l>thy poor sinneress has unworthily found favour to clasp with eager</l>
+					<l>ness thy thro&apos; pierc&apos;d feet and will eternally <add place="above">cleave</add> to those</l>
+					<l>Wounds so precious, that have been my sheltering place while here, my</l>
+					<l>vast depravity had not kinder&apos;d thee from looking upon me in love &amp;</l>
+					<l>mercy but to return; Here I was desir&apos;d to speak in a Class what the</l>
+					<l>Lord had done for my Soul, but I felt great timerousness, lest in speak</l>
+					<l>ing much about it, the Lord wou&apos;d take it from me again, but I suffer&apos;d</l>
+					<l>myself to be prevail&apos;d upon, the Company was M<hi rend="superscript">rs</hi> Galantine and her</l>
+					<l>acquaintance, to whom I declar&apos;d that the being a miserable wretched</l>
+					<l>sinner wou&apos;d necessitate them to seek acceptance with the Lord Jesus</l>
+					<l>and whoever cou&apos;d believe that the Lamb of God was crucified for</l>
+					<l>their sins, wou&apos;d he forgiven, and have everlasting life, and the</l>
+					<l>Holy Spirit wou&apos;d convince them of a righteousness much better than</l>
+					<l>all they cou&apos;d attain to by their legal prayers and striving for per</l>
+					<l>fection, this report give great offence, and many said I was a right</l>
+					<l>Moravian, thus I with many others left the Methodists, and took</l>
+					<l>to M<hi rend="superscript">r</hi> Ingham, who was a faithfull Father to all sincere followers</l>
+					<l>of the Lord Jesus, thus I went on for sometime adoring my crucify&apos;d</l>
+					<l>Saviour, and the wonderfull works of his Redemption, nothing but</l>
+					<l>the grace of God now weighty to me, and when I for the first time</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="9">
+					<head type="page">9</head>
+					<pb n="9" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-09.jpg" />
+			<p>
+				<lg>
+					<l>heard of the Cong<hi rend="superscript">n</hi> of B<hi rend="superscript">rn</hi> it seem&apos;d to me so divine, as if it cou&apos;d</l>
+					<l>only he understood by those who had been longer in the School of the</l>
+					<l>Holy Ghost than I had been, yet my heart hanker&apos;d to be in closer</l>
+					<l>union with them; but not knowing that there were also Sisters</l>
+					<l>in the same conexion I thought it impractiable for me to come any</l>
+					<l>nearer, but one day very accidentally I heard of Sis<hi rend="superscript">rs</hi> my heart from</l>
+					<l>that moment resolv&apos;d to see them, let the consequences be what it wou&apos;d</l>
+					<l>this resolution stirr&apos;d up many of my friends to the prejudice of</l>
+					<l>the B<hi rend="superscript">rn</hi>, but all was nothing to me, whether they were good or bad</l>
+					<l>I cou&apos;d neither prove nor contradict, but something had struck into</l>
+					<l>my heart that I cou&apos;d tell to no body, only that the God whom they</l>
+					<l>worship&apos;d was the God of my Salvation, with this persuasion I set out</l>
+					<l>accompanied by M<hi rend="superscript">r</hi> Bealby, and we just arriv&apos;d at at Fulneck as</l>
+					<l>B<hi rend="superscript">r</hi> Horn was reading the text concerning the prodigal Son, all</l>
+					<l>I heard and saw much affected me, the next morning before I awoke</l>
+					<l>several had been to enquire for me, especially B<hi rend="superscript">r</hi> Planta, to whose house</l>
+					<l>I was invited to breakfast, He also got permission to conduct me to</l>
+					<l>the choirhouse of the S<hi rend="superscript">le</hi> S<hi rend="superscript">rs</hi>, where I was heartily reciev&apos;d by S<hi rend="superscript">rs</hi></l>
+					<l>Mary Vogelsangs and Ann Birkley, who conducted me thro&apos; the house</l>
+					<l>which I perciev&apos;d was to the S<hi rend="superscript">rs</hi> as the Kings Chamber, but to me it</l>
+					<l>seem&apos;d quite otherwise, or there was nothing but spinning and pover</l>
+					<l>ty to be seen, and I cou&apos;d not help pitying them who had so laborious</l>
+					<l>ly to earn their own bread, but was insensible of the blessings they en</l>
+					<l>joy&apos;d in living thus devotedly for their Souls Bridegroom, I had</l>
+					<l>some hearts conversation with Sis<hi rend="superscript">r</hi> Mary, but knew little of myself</l>
+					<l>arriv&apos;d at home late at night, thankfull in my heart that I</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="10">
+					<head type="page">10</head>
+					<pb n="10" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-10.jpg" />
+			<p>
+				<lg>
+					<l>had such a habitation to retire to, but presently it began to work</l>
+					<l>in me <add place="above">reflecting upon</add> the emptiness of what I <hi rend="underlined">here</hi> enjoy&apos;d <add place="above">at home</add> to what I might enjoy</l>
+					<l>was I but once again at Fulneck, the varieties there had so engag&apos;d</l>
+					<l>my mind that I knew not what I had enjoy&apos;d, but now the heav&apos;n</l>
+					<l>y sensations I had imperceptibly tasted of began to operate <add place="above">yea it became of great weight to</add> <hi rend="strikethrough">in</hi> me</l>
+					<l>so that I had no peace nor rest, no other meeting or book but theirs</l>
+					<l>cou&apos;d I relish, and their circurmstances became so much my own, that</l>
+					<l>I confess&apos;d once for all, nothing shou&apos;d ever part me from that People</l>
+					<l>this caus&apos;d many <add place="above">disagreable</add> controversys, till I was oblig&apos;d to seperate myself</l>
+					<l>from all religious People, and the B<hi rend="superscript">rn</hi> and S<hi rend="superscript">rs</hi> correspondeded with</l>
+					<l>me to my great joy and edification, I also made several other visits</l>
+					<l>to Fulneck to the great blessing of my heart, tho&apos; I could not express</l>
+					<l>myself in their way, which gave me some uneasiness. My heart</l>
+					<l>was now hankering more and more to be with the Cong<hi rend="superscript">n</hi>; tho&apos; the</l>
+					<l>Choirhouse did not at all suit me, and it cost me many tears, that</l>
+					<l>my Sav<hi rend="superscript">r</hi> wou&apos;d not excuse me that situation, as I thought I wanted</l>
+					<l>nothing but Him, I wish&apos;d to enjoy him in my own dear House at</l>
+					<l>York, but the doctrine of the blessed atonement was so acceptable to</l>
+					<l>my heart, that I was fully convinc&apos;d it was no where so genuine as</l>
+					<l>amongst the B<hi rend="superscript">rn</hi> but I came into a fearfulness, less I shoud drop</l>
+					<l>again into my former darkness, therefore was distress&apos;d for an</l>
+					<l>asurance from my Saviour that he wou&apos;d ever keep me in his</l>
+					<l>hands, and that by no means I might ever forfeit my salvation,</l>
+					<l>in his precious blood, this earnest desire encreas&apos;d daily, till it</l>
+					<l>pleas&apos;d my gracious Lord to vouchsafe to give me the following asur</l>
+					<l>ance, being awaked suddenly <add place="above">as tho&apos;</add> <hi rend="strikethrough">by</hi> a voice <add place="above">had called:</add> Bone of my Bone </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="11">
+					<head type="page">11</head>
+					<pb n="11" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-11.jpg" />
+			<p>
+				<lg>
+					<l>and Flesh of my Flesh, with such a feeling of love to my Sav<hi rend="superscript">r</hi></l>
+					<l>that I was quite melted, and all other things became as nothing,</l>
+					<l>my Brother, and all my outward circumstances, I cou&apos;d leave if re</l>
+					<l>quir&apos;d, surprize and adoration seiz&apos;d me, and I was fully asur&apos;d</l>
+					<l>of my election of grace, which in all vicisitudes since has not been</l>
+					<l>shaken, tho&apos; many dark and perplexing moments have come over</l>
+					<l>me, it has always ended in a humble shame to my abasement and</l>
+					<l>humiliation, I was always to be the <add place="above">humble</add> Sinner, that <add place="above">has</add> been my most</l>
+					<l>happy place, and has hitherto broke my stubborn heart; His grace</l>
+					<l>alone has done it, and I remain yet his needy one. I comunica</l>
+					<l>ted this to my intimate friend M<hi rend="superscript">rs</hi> Brook with a thousand tears</l>
+					<l>and cou&apos;d say nothing, but, Lord have mercy upon me, that such</l>
+					<l>unabounded grace shou&apos;d be laid often to such a worthless creature</l>
+					<l>all my anxiety and fear of being seperated from my Souls lover</l>
+					<l>was gone. M<hi rend="superscript">r</hi> Brook and M<hi rend="superscript">r</hi> Ingham adviz&apos;d me not to speak</l>
+					<l>much of it to other people, as many who had not the same experi</l>
+					<l>ence wou&apos;d perhaps doubt of their Salvation; from this time I </l>
+					<l>became more settled in my determination to live to the Lord Jesus</l>
+					<l>and towards the close of the Year 1755 I had a clear conviction</l>
+					<l>of my Call to the Cong<hi rend="superscript">n</hi>, and cou&apos;d plainly percieve that</l>
+					<l>both I, and all I had, belong&apos;d to our Saviour and his People,</l>
+					<l>so that I did not chuse any longer to act in my business</l>
+					<l>without their approbation, and was to conscientiously bound</l>
+					<l>to this that I comunicated my affairs to Sis<hi rend="superscript">r</hi> Mary in the</l>
+					<l>simplest manner I was able, but by her answers, I found</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="12">
+					<head type="page">12</head>
+					<pb n="12" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-12.jpg" />
+			<p>
+				<lg>
+					<l>that she and the B<hi rend="superscript">rn</hi> were affraid of my doing what I shou&apos;d</l>
+					<l>afterwards repent <add place="above">of</add>, and therefore wanted to satisfy me about</l>
+					<l>staying where I was, this stumbled me, as I believ&apos;d it to be a</l>
+					<l>work of God, but I crept to my dear Saviour for his guidance</l>
+					<l>and protection, and in my heart remain&apos;d one with the B<hi rend="superscript">rn</hi> and </l>
+					<l>their matters, tho&apos; I was often repuls&apos;d, yet my dear Saviour</l>
+					<l>has sufficiently let me see, what kind intentions he had towards</l>
+					<l>me in bringing in to Fulneck, tho&apos; I have often been unthankfull</l>
+					<l>and wound gladly have been <add place="above">by myself again</add> <hi rend="strikethrough">set at Liberty</hi>, cou&apos;d I have enjoy&apos;d</l>
+					<l>his Countenance, which I cou&apos;d not subsist without, but to re</l>
+					<l>turn, I reciev&apos;d a most cordial letter from B<hi rend="superscript">r</hi> Charlesworth, this</l>
+					<l>encourag&apos;d me to ask for Reception into the Cong<hi rend="superscript">n</hi> but was told</l>
+					<l>it wou&apos;d avail me nothing at such a distance, after another visit</l>
+					<l>to Fulneck I was better satisfy&apos;d, was also refresh&apos;d with Cong<hi rend="superscript">n</hi></l>
+					<l>accounts being sent me, and always felt well when there was</l>
+					<l>nothing between the Cong<hi rend="superscript">n</hi> and me, so that I found our Sav<hi rend="superscript">r</hi></l>
+					<l>and his People were inseparable, which I often wonder&apos;d at, for</l>
+					<l>I was His, but shou&apos;d have been glad to have been excus&apos;d change</l>
+					<l>ing my situation. At last my B<hi rend="superscript">r</hi> resolv&apos;d to marry if I wou&apos;d</l>
+					<l>not live with him, which I positively refus&apos;d, being constantly</l>
+					<l>con<hi rend="strikethrough">victed</hi> <add place="above">vinced</add> that I was no more my own, and amidst all conflicts</l>
+					<l>I felt <add place="above">that I was</add> bound to give myself up to the Holy Spirits leading, and in</l>
+					<l>is few days my B<hi rend="superscript">r</hi> died, at which time he was dispos&apos;d to leave me</l>
+					<l>all he had, now many of my so call&apos;d friends wou&apos;d gladly have</l>
+					<l>prevail&apos;d upon <add place="above">me</add> to renounce my Call to the B<hi rend="superscript">rn</hi>, but after <hi rend="strikethrough">many</hi> <add place="above">much</add></l>
+					<l><hi rend="strikethrough">wrestlings</hi> <add place="above">striving</add> I covenanted with our Sav<hi rend="superscript">r</hi> to sell all and come to</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="13">
+					<head type="page">13</head>
+					<pb n="13" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-13.jpg" />
+			<p>
+				<lg>
+					<l>the Cong<hi rend="superscript">n</hi> and accordingly soon settled my affairs. May 10<hi rend="superscript">th</hi> 1756</l>
+					<l>I left York with my dear Father, and arriv&apos;d at Pudsey late in</l>
+					<l>the evening with a heavy <add place="above">and</add> perplexed heart, having given up</l>
+					<l>what I knew, for what I knew not, <add place="above">and I</add> was also frightend less my</l>
+					<l>Father wou&apos;d not settle <add place="above">with</add> me, which, if he did <add place="above">it</add>, wou&apos;d <add place="above">excuse</add> <hi rend="strikethrough">keep</hi> me from</l>
+					<l>moving into the Choirhouse, for which I had no desire in any wise.</l>
+					<l>But he having a mind to stay, we settled at Lane end, where I</l>
+					<l>had many trials, and found I still had not attain&apos;d to what my</l>
+					<l>Sav<hi rend="superscript">r</hi> had call&apos;d me, which was the Choirhouse, I, my Saviour, his</l>
+					<l>Salvation, Choirhouse and Congregation seem&apos;d esentially inseparable</l>
+					<l>to me, the foundation of which seem&apos;d to be wrote in my heart</l>
+					<l>with an eternal pen, for, surely, such realities are no where to be</l>
+					<l>found but in the heart of Jesus, I had however much to learn, and</l>
+					<l>for want of knowing myself rightly, saw many faults in others.</l>
+					<l><add place="above">and together</add> with my situation, and every thing about me, my Father also</l>
+					<l>lay heavy on me, as he was the visible means of keeping me out</l>
+					<l>of the Choirhouse, but in time he was dispos&apos;d to be boarded</l>
+					<l>at Richard Mortimers that I might be at Liberty, and I accom</l>
+					<l>modated him there to his satisfaction. Nov<hi rend="superscript">r</hi> 13<hi rend="superscript">th</hi> 1756 I was</l>
+					<l>reciev&apos;d into the Cong<hi rend="superscript">n</hi>. Ah! this was an inexpresible grace,</l>
+					<l>this was the greatest solemnity I ever enjoy&apos;d in all my Life.</l>
+					<l>Sep<hi rend="superscript">r</hi> 7<hi rend="superscript">th</hi> 1757, I remov&apos;d into the Choirhouse, this was a new</l>
+					<l>School to me, as I met with many things contrary to my way of</l>
+					<l>thinking, which went so far that I wish&apos;d to go away again, but</l>
+					<l>I afterwards found that it all work&apos;d for my good, and that I did</l>
+					<l>not know myself sufficiently. March 25<hi rend="superscript">th</hi> 1758 I had the grace</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="14">
+					<head type="page">14</head>
+					<pb n="14" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-14.jpg" />
+			<p>
+				<lg>
+					<l>be a participant of my dear Lords Body and Blood <add place="above">in the Holy Sacrament</add> with the</l>
+					<l>Congregation, but was much perplex&apos;d by depending so much on my</l>
+					<l>own feelings, not knowing truely that the feeling void of good was</l>
+					<l>well for me but on speaking with my Labouress, she directed me to</l>
+					<l>our Saviour as a sinner, not as a holy person, hereupon my depra</l>
+					<l>vity was so open&apos;d to me, that I despair&apos;d of ever being otherwise</l>
+					<l>than a miserable creature, but when I cou&apos;d fall as a sinner at the</l>
+					<l>feet of our Saviour, his gracious absolution melted me, and enabled</l>
+					<l>me to bear the reproach for my humiliation, and no more for my</l>
+					<l>condemnation, this great change was much more bless&apos;d to me than</l>
+					<l>the first forgivness of my sins, the <add place="above">grace &amp; blessing of a virgin of Jesus,</add> I</l>
+					<l>now cou&apos;d claim, and my <add place="above">blushing at the feeling of my sinfulness was not Trouble to me, &amp;</add> with my</l> 
+					<l>best and worst <add place="above">I</add> cou&apos;d turn to my beloved, and yet amidst all</l>
+					<l>these great priviledges, I was always falling short and had daily</l>
+					<l><add place="above">something new</add> to experience, outwardly I had also many trials</l>
+					<l>from not having been us&apos;d to such accommodations as I met with</l>
+					<l>here, but nothing brought me to the real sinner point before my</l>
+					<l>Saviour, till all other means of friendship fail&apos;d; thus I had for</l>
+					<l>almost 7 years a continual course of trials, till once for all He</l>
+					<l>became the sole object of my heart, and I as nothing but a worm</l>
+					<l>before him, then, and then only my course became truely and so-</l>
+					<l>lidly a Heaven upon earth, my Saviour was at my right hand</l>
+					<l>and at my left but lowliness and sinnerlikeness I was still short</l>
+					<l>of, in which I believe I shall remain defective as long as my dear</l>
+					<l>Saviour continues me in this mortal frame. So far <add place="above">her</add> <hi rend="strikethrough">our Late Sister</hi></l>
+					<l>own account.</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="15">
+					<head type="page">15</head>
+					<pb n="15" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-15.jpg" />
+			<p>
+				<lg>
+					<l>It is evident that our late Sis<hi rend="superscript">r</hi> had a particular Call to the Cong<hi rend="superscript">n</hi></l>
+					<l>which together <add place="above">with</add> what her heart enjoy&apos;d from our Sav<hi rend="superscript">r</hi> she knew how</l>
+					<l>to value above every thing in this world, oftentimes declaring, and that</l>
+					<l>with a heart deeply affected, what great things he had done for her,</l>
+					<l>and how, even the trials she had met with had work&apos;d together for her</l>
+					<l>real good. She was a person truly devoted to Him, and thought it</l>
+					<l>not too much to spend her time and <add place="above">little</add> substance in his cause, to the</l>
+					<l>great relief of <add place="above">many of</add> the inhabitants of the Choirhouse, who in the first Y<hi rend="superscript">rs</hi></l>
+					<l>of its existence felt many straits, <add place="above">Having also a warm heart for our Sav<hi rend="superscript">r</hi> and being</add> self endow&apos;d with many</l>
+					<l>extradinary Gifts, she knew how to give good advice in most circumstances</l>
+					<l>and in this respect gain&apos;d much love and confidence from the S<hi rend="superscript">rs</hi></l>
+					<l>in short, we cou&apos;d say much of her faithfull service in our House</l>
+					<l>and Choir ever since the Year 1757, but as she frequently declar&apos;d</l>
+					<l>that neither her coming to the Cong<hi rend="superscript">n</hi>, nor her staying therein, was</l>
+					<l>her own doings, but our Sav<hi rend="superscript">rs</hi> own free electing grace, <add place="above">and</add> that she cou&apos;d</l>
+					<l>not possibly be happy in any other situation, so she likewise entreated</l>
+					<l>that nothing she had done might in the least be attributed to her</l>
+					<l>self, but solely and alone to His praise, who in his infinite mercy</l>
+					<l>had brought her to such a blessed school for her own heart, and</l>
+					<l>therefore it was her highest pleasure, cou&apos;d she any way be serviceable</l>
+					<l>to her Choir or the Cong<hi rend="superscript">n</hi>. For several Years last past her strength</l>
+					<l>declin&apos;d <hi rend="strikethrough">very much</hi> <add place="above">fast</add>, so that she cou&apos;d but seldom attend the meetings</l>
+					<l>but she took great delight in reading the lives of departed B<hi rend="superscript">rn</hi></l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="16">
+					<head type="page">16</head>
+					<pb n="16" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-16.jpg" />
+			<p>
+				<lg>
+					<l>and Srs, and of the work of God in many parts of the world,</l>
+					<l>She also priz&apos;d the visits of her Sisters, encouraging every one to</l>
+					<l>faithfulness in their respective calling, and was particularly re</l>
+					<l>fresh&apos;d when she enter&apos;d into a hearty <hi rend="strikethrough">band</hi> <add place="above">conversation</add> with any of them</l>
+					<l>which was generally accompanied with floods of tears, on account of</l>
+					<l>all the mercy which our Sav<hi rend="superscript">r</hi> had shewn unto her, which now</l>
+					<l>she beheld clearer than ever, the effect of which was, her heart</l>
+					<l>became more and more sinnerlike, of which the following lines</l>
+					<l>which were found among her papers are a short specimin.</l>
+				</lg></p>
+					<p>
+					<lg type="stanza" n="1">
+					<l>1</l>
+					<l>Now my Years on Earths declining</l>
+					<l>Prooffs of grace in truth defining</l>
+					<l>At my Sav<hi rend="superscript">rs</hi> Feet I prostrate</l>
+					<l>And nevere his Death and torment</l>
+					</lg>
+					<lg type="stanza" n="2">
+					<l>2</l>
+					<l>For th&apos; abundance of his graces</l>
+					<l>Since call&apos;d to his blest embraces</l>
+					<l>Ne&apos;er can worthily express it</l>
+					<l>What his love on me effected</l>
+					</lg>
+					<lg type="stanza" n="3">
+					<l>3</l>
+					<l>For his grace, care, and nutrition</l>
+					<l>How exceeded my petition</l>
+					<l>In his School I howe been learning</l>
+					<l>Wholesome lessons, Truth discerning</l>
+					</lg>
+					<lg type="stanza" n="4">
+					<l>4</l>
+					<l>Those art worthy to be loved</l>
+					<l>Who&apos; thyfelf hast thus approved</l>
+					<l>Thou art worthy of all praises</l>
+					<l>Who thy work to highly raises</l>
+					</lg>
+					<lg type="stanza" n="5">	
+					<l>5</l>
+					<l>Praised be without ceasation</l>
+					<l>Above all in the creation</l>
+					<l>For thy pardoning grace and merit</l>
+					<l>Which I freely do inherit</l>
+					</lg>
+					<lg type="stanza" n="6">		
+					<l>6</l>
+					<l>None can give me consolation</l>
+					<l>But thou, who art my Salvation</l>
+					<l>Who hast me as thine elected</l>
+					<l>And to this day hast protected</l>
+					</lg>
+					<lg type="stanza" n="7">	
+					<l>7</l>
+					<l>Let my Spirit Soul and Body</l>
+					<l>Thine remain with love most steady</l>
+					<l>Till I have the grace and favor</l>
+					<l>To behold thee, God my Sav<hi rend="superscript">r</hi></l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="17">
+					<head type="page">17</head>
+					<pb n="17" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_66Woodhouse-17.jpg" />
+			<p>
+				<lg>
+					<l>Being of a very active turn of mind, she continued attentive</l>
+					<l>to every circumstance in the House till near her departure,</l>
+					<l>as also to the poor Sis<hi rend="superscript">rs</hi> who were always special objects of</l>
+					<l>her concern, she gave prooffs of her Motherly concern, as long as</l>
+					<l>she was able, but her chief and most ardent desire for several</l>
+					<l>Years was, to be at rest with her Souls lover, tho&apos; she wou&apos;d</l>
+					<l>sometimes say, she cou&apos;d not form any right Idea of that</l>
+					<l>blessed time, yet she knew for certain, that she shou&apos;d enjoy</l>
+					<l>great felicity, such as, Eye had not Seen, our Ever heard, neither</l>
+					<l>had it enter&apos;d into the heart of Man, the things which God</l>
+					<l>had prepared for those that love him. In this persuasion, she</l>
+					<l>met her dissolution with Joy. Her long and great weakness</l>
+					<l>at last terminated in an <add place="above">internal</add> inflamation, which in a few days</l>
+					<l>prov&apos;d the accomplishment of all her wishes, and she as a</l>
+					<l>reconciled sinner fell happily asleep in the Lord with the</l>
+					<l>blessing of her Choir and the Cong<hi rend="superscript">n</hi> in the 75<hi rend="superscript">th</hi> Y<hi rend="superscript">r</hi> of her</l>
+					<l>Age</l>
+				</lg>
+			</p>
+		</div>
+		</div>
+		</body>
+	</text>
+</TEI>

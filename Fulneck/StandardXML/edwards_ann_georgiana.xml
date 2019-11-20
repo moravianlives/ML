@@ -1,0 +1,737 @@
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>NAME: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_56Edwards">Ann Georgiana Edwards</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-08.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-10.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-11.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-12.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Georgiana Edwards</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when-iso="2019-11-10" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Ann Georgiana Edwards</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-01.jpg" />
+			<p>
+				<lg>
+					<l>When all thy mercies O my God</l>
+					<l>My rising soul surverys,</l>
+					<l>Transported with the view I&apos;m <add place="above">lost</add></l>
+					<l>In wonder, love, and praise.</l>
+					<l>Looking back upon days which</l>
+					<l>are gone, a long life which</l>
+					<l>has passed away as a tale</l>
+					<l>which is told. -- What cause</l>
+					<l>do I find for deep humilia</l>
+					<l>tion and daring gratitude</l>
+					<l>to my gracious God and</l>
+					<l>Saviours who thro&apos; all the </l>
+					<l>changes, and chances of this</l>
+					<l>mortal life, has helped me</l>
+					<l>to this hour, and given</l>
+					<l>me a good hope through</l>
+					<l>grace; I would fain leave</l>
+					<l>a poor but grateful testimony</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-02.jpg" />
+			<p>
+				<lg>
+					<l>of his love, mercy, &amp; forbearing</l>
+					<l>goodness to me, His poor</l>
+					<l>erring child In London I</l>
+					<l>first saw the light, 1783.</l>
+					<l>One of four, two only survived</l>
+					<l>My Father one of a numerous</l>
+					<l>family was early cast upon</l>
+					<l>the world to obtain his</l>
+					<l>own bread married early</l>
+					<l>My dear old Grandfather</l>
+					<l>I well remember, he had</l>
+					<l>at that time some situation</l>
+					<l>in the India House having</l>
+					<l>lost all his property hu-</l>
+					<l>manly speaking through</l>
+					<l>the carelessness of a female</l>
+					<l>servant. Being then in</l>
+					<l>good trade in Kent she</l>
+					<l>instead of cutting off a</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>candle she wanted, burns</l>
+					<l>it off and not taking</l>
+					<l>time to observe whether the</l>
+					<l>wick of the separated part</l>
+					<l>was extinguished, left it, it</l>
+					<l>is supposed still burning.</l>
+					<l>In the night a fire broke</l>
+					<l>out, &amp; everything was consu</l>
+					<l>med, nothing being ensur</l>
+					<l>ed, all was lost  As soon as</l>
+					<l>they could came to London,</l>
+					<l>through whom he obtained</l>
+					<l>this situation I know</l>
+					<l>not, but that he appeared</l>
+					<l>to me a very dear old man</l>
+					<l>My Father was at this time</l>
+					<l>in the employ of the Right</l>
+					<l>able </l>
+					<l>Hon<hi rend="superscript">able</hi> I Sheridan a noted</l>
+					<l>political character, who</l>
+					<l>for his second wife married </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-03.jpg" />
+			<p>
+				<lg>
+					<l>a Lady related to the late</l>
+					<l>Lady Elizabeth Whitbread</l>
+					<l>Mother of my beloved </l>
+					<l>M<hi rend="superscript">rs</hi> Waldegrave Part of this</l>
+					<l>lady&apos;s fortune was expended</l>
+					<l>to purchase an estate in</l>
+					<l>Surry to be settled upon</l>
+					<l>herself and children</l>
+					<l>While we were yet young my</l>
+					<l>Father undertook to be</l>
+					<l>land stewart on to be Bailiff</l>
+					<l>of this estate -- we all removed</l>
+					<l>to the country &amp; dwelt in a </l>
+					<l>pretty cottage on the borders</l>
+					<l>of a romantic common</l>
+					<l>Even now the remembrance</l>
+					<l>is sweet and I seem to sink at</l>
+					<l>the fragrance of the beautio</l>
+					<l>Moss roses in the little garden</l>
+					<l>before the house.</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>Yet there my precious time</l>
+					<l>was wasted there my false</l>
+					<l>views of life were nursed up</l>
+					<l>Our dear parents were strictly</l>
+					<l>moral we went to church</l>
+					<l>and learned catechisms</l>
+					<l>but of the depravity of human</l>
+					<l>nature I had no knowledge</l>
+					<l>of vital religion we might be</l>
+					<l>said to be almost as <hi rend="underline">ignorant</hi></l>
+					<l>as the heathen. I had</l>
+					<l>exalted ideas of what human</l>
+					<l>nature might be and aimed</l>
+					<l>with all my might to be what</l>
+					<l>I called good I read with</l>
+					<l>eagerness works of <hi rend="underline">fiction</hi> loved</l>
+					<l>to dwell upon those characters</l>
+					<l>who were represented as</l>
+					<l>overcoming all difficulties</l>
+					<l>by their own generosity of </l>
+					<l>heart and nobleness of mind </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-04.jpg" />
+			<p>
+				<lg>
+					<l>I might spend much time in</l>
+					<l>enumerating the trouble this</l>
+					<l>caused me not finding man</l>
+					<l>whose ideas presumed as mine</l>
+					<l>and constantly failing to execut</l>
+					<l>all I intended to do I sighed</l>
+					<l>mourning turned back upon</l>
+					<l>myself-indulging a morbid</l>
+					<l>sensibility, finding no rest</l>
+					<l>for the sole of my foot. </l>
+					<l>My gracious God and Saviour</l>
+					<l>in His love and mercy intend</l>
+					<l>that I should yet become</l>
+					<l>acquainted with His love</l>
+					<l>and mercy manifested</l>
+					<l>in the redemption of a</l>
+					<l>lost world. About this time</l>
+					<l>the lady of the mansion</l>
+					<l>haveing a dear little boy</l>
+					<l>now old enough to comment</l>
+					<l>at least learn A,b,c took a</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>fancy to me, requested to </l>
+					<l>have me to care for this little</l>
+					<l>boy, promising to care for</l>
+					<l>me as her own. To the utmost</l>
+					<l>of her power she performed</l>
+					<l>this, but it would surprise</l>
+					<l>many, to hear of the straits to</l>
+					<l>which she was too often reduced,</l>
+					<l>by the thoughtless extravagance</l>
+					<l>of her husband having some</l>
+					<l>qualities she admired, my</l>
+					<l>selfrighteous delusions were</l>
+					<l>strengthened After a few</l>
+					<l>years upon the marriage</l>
+					<l>of <hi rend="strikethrough">our</hi> <add place="above">my</add> dear departed sister to</l>
+					<l>Mr Whitb<hi rend="strikethrough">read</hi><add place="above">urn</add> son of a substan</l>
+					<l>tial farmer of Ripley, a</l>
+					<l>neighbouring village, I retur</l>
+					<l>ned home. This match was</l>
+					<l>thought so good that there was </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-05.jpg" />
+			<p>
+				<lg>
+					<l>much rejoicing but in a</l>
+					<l>few years came a sad reverse</l>
+					<l>my brother in law&apos;s affairs</l>
+					<l>became embarrassed and</l>
+					<l>alas! he concealed the em</l>
+					<l>barrassment from my sister</l>
+					<l>till the last moment, from</l>
+					<l>mistaken feelings of shame</l>
+					<l>and tenderness and thus</l>
+					<l>put it out of her power to help</l>
+					<l>to avert the impending ruin</l>
+					<l>His friends helped him but</l>
+					<l>a dealer in cattle he failed</l>
+					<l>to a large amount in the end</l>
+					<l>my sister and her two dear</l>
+					<l>boys returned to the parental</l>
+					<l>roof and M<hi rend="superscript">r</hi>. Whitburn went</l>
+					<l>out to the Cape of Good Hope with</l>
+					<l>letters of recomendation from</l>
+					<l>the late lamented M<hi rend="superscript">r</hi> Whit</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>bread the faithful friend </l>
+					<l>of all whose cause he un</l>
+					<l>dertook, and I again left</l>
+					<l>home going to the sister </l>
+					<l>in law of the lady whose little</l>
+					<l>boy I had cared for. This</l>
+					<l>lady travelled a great deal</l>
+					<l>and had some time before</l>
+					<l>offered to pay a person to</l>
+					<l>stay with my mother if</l>
+					<l>my Mother would spare me</l>
+					<l>which <hi rend="underline">then</hi> she did not, but</l>
+					<l>now we think it providential,</l>
+					<l>we did. We saw a great deal</l>
+					<l>of the countty but grieving</l>
+					<l>over the troubles of my</l>
+					<l>family I enjoyed much</l>
+					<l>less than I might have</l>
+					<l>done; and at the end of </l>
+					<l>two years thought myself </l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-06.jpg" />
+			<p>
+				<lg>
+					<l>highly favoured, when I </l>
+					<l>heard that the eldest daugh</l>
+					<l>ter of M<hi rend="superscript">r</hi> &amp; the Lady Elizabeth</l>
+					<l>Whitbread was going to be mar</l>
+					<l>ried to the Hon<hi rend="superscript">be</hi> Cap<hi rend="superscript">n</hi> now</l>
+					<l>Earl of Waldegrave and</l>
+					<l>that the Lady Elizabeth wished</l>
+					<l>to present me to her daughter</l>
+					<l>the character of the lady I</l>
+					<l>greatly admired, what I</l>
+					<l>heard of the gentleman</l>
+					<l>prepared me to honour him</l>
+					<l>For the Lady Elizabeth and</l>
+					<l>M<hi rend="superscript">r.</hi> Whitbread I felt an idol</l>
+					<l>sort of admiration they</l>
+					<l>had tried to aid my</l>
+					<l>brother in law and my</l>
+					<l>father, I felt grateful</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>and devoted myself en</l>
+					<l>thusiastically to their</l>
+					<l>daughter. In 1812 came</l>
+					<l>into Bedfordshire, after my</l>
+					<l>brother in law left England</l>
+					<l>we heard of his safe arrival</l>
+					<l>at the Cape-- of (letters) having</l>
+					<l>obtained a situation but</l>
+					<l>he had had two fits of</l>
+					<l>sickness was then going</l>
+					<l>some hundred miles up</l>
+					<l>the country, promising to send</l>
+					<l>remittances, but we heard</l>
+					<l>unsure and the constant</l>
+					<l>state of anxiety under</l>
+					<l>mined the health of my</l>
+					<l>beloved sister had some</l>
+					<l>wholesome regulations</l>
+					<l>being made at Somerset</l>
+					<l>House so that no person</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-07.jpg" />
+			<p>
+				<lg>
+					<l>could any longer hold a situa</l>
+					<l>tion in that office who did</l>
+					<l>not fulfuill the duties of it</l>
+					<l>in person obliged my father</l>
+					<l>who had longheld one</l>
+					<l>employing a deputy unless</l>
+					<l>he gave it up to remove his</l>
+					<l>family to London which</l>
+					<l>was a great pleasure to me</l>
+					<l>as we sometimes came to</l>
+					<l>London but at Cardington</l>
+					<l>I was treated with the great</l>
+					<l>est kindness and confidence</l>
+					<l>I went among the villagers</l>
+					<l>searching for and relieving </l>
+					<l>their wants doing all I</l>
+					<l>could for them with the </l>
+					<l>approbation of Cap &amp; my</l>
+					<l>beloved M<hi rend="superscript">rs</hi> Waldegrave</l>
+					<l>whose Aunt the lady St. John</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>being a member of the </l>
+					<l>B<hi rend="superscript">rn</hi> Church invited me</l>
+					<l>and my friend M<hi rend="superscript">rs</hi> Weir</l>
+					<l>to go to the chapel at Bedford</l>
+					<l>in the evening of Easter day 1813</l>
+					<l>we were pleased but no particu</l>
+					<l>lar impresion was made upon</l>
+					<l>either on the Easter Sunday</l>
+					<l>following Lady St John invited</l>
+					<l>me to the love feast I was</l>
+					<l>pleased and in the meantime</l>
+					<l>becoming more intimately</l>
+					<l>acquainted with S<hi rend="superscript">r</hi>. Thomas</l>
+					<l>Smith late S<hi rend="superscript">r</hi> Hannah Brown</l>
+					<l>resident at Cardington &amp;</l>
+					<l>whose family had joined</l>
+					<l>the B<hi rend="superscript">rn</hi> my Knowledge</l>
+					<l>of the Brethren and attach</l>
+					<l>ment to them increased</l>
+					<l>often has she refreshed</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="8">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-08.jpg" />
+			<p>
+				<lg>
+					<l>my soul by accounts she</l>
+					<l>has brought of sermons &amp;</l>
+					<l>meetings: and now my</l>
+					<l>Father being much embar</l>
+					<l>rassed by the derangement</l>
+					<l>of the affairs of the charaters</l>
+					<l>before alluded to, it was</l>
+					<l>but the prelude to a train</l>
+					<l>of sorrow more keenly</l>
+					<l>felt <hi rend="underline">because</hi> in <add place="above">thy</add> persons of</l>
+					<l>those near and dear to me.</l>
+					<l>In 1815 we lost our mother</l>
+					<l>and I driven by the departure</l>
+					<l>of from Cardington an</l>
+					<l>enlightened curate, often</l>
+					<l>accompanied the dear</l>
+					<l>family of our worthy</l>
+					<l>B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Brown to the </l>
+					<l>Moravian Chapel finding</l>
+					<l>comfort and one Sabbath</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>morning B<hi rend="superscript">r</hi> Harke preached</l>
+					<l>when he gave out the Hymn</l>
+					<l>(in the old HB.) the true good</l>
+					<l>Shepherd God&apos;s own son when</l>
+					<l>he came to the 2nd verse For <hi rend="underline">thee</hi></l>
+					<l>He shed His precious blood </l>
+					<l><hi rend="underline">and how His own doth claim</hi></l>
+					<l>I was as it were transfixed</l>
+					<l>to my seat what I felt I </l>
+					<l>can not describe then surely</l>
+					<l>the Lord gave me the first</l>
+					<l>intimation of His will in </l>
+					<l>this matter yet tho deeply</l>
+					<l>impressed I heeded not</l>
+					<l>this intimation as I ought</l>
+					<l>to have done. Yet I was during</l>
+					<l>this time fervently praying</l>
+					<l>Lord thou hast blessed me</l>
+					<l>by these people bless me with</l>
+					<l>them I began to consider</l>
+				</lg>
+			</p>
+				</div>
+				<div type="page" n="9">
+					<head type="page">9</head>
+					<pb n="9" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-09.jpg" />
+					<p>
+						<lg>
+							<l>how strong the claims which</l>
+							<l>my dear M<hi rend="superscript">rs</hi>. Waldegrave</l>
+							<l>had upon me not only for</l>
+							<l>her kindness to <hi rend="underline">me</hi> but</l>
+							<l>from the nurturing consider</l>
+							<l>ation with which she and</l>
+							<l>her honoured parents had</l>
+							<l>in every way endeavoured to</l>
+							<l>aid us in the troubles of</l>
+							<l>our family. I found too</l>
+							<l>that to attend to the Cha<hi rend="strikethrough">p</hi>pel</l>
+							<l>as I wished I could not fulfill</l>
+							<l>my duties to her and then</l>
+							<l>meeting with Newton&apos;s <hi rend="underline">four</hi></l>
+							<l><hi rend="underline">letters</hi> an apology for the </l>
+							<l>Church of England. gave </l>
+							<l>up going to Chapel - satisfied</l>
+							<l>myself with what I heard</l>
+							<l>at Church certainly believing</l>
+							<l>myself right as far as I then</l>
+							<l>??? in principle.</l>
+						</lg>
+					</p>
+					<cb/>
+					<p>
+						<lg>
+							<l>My beloved mother de</l>
+							<l>parted in May. The lamen</l>
+							<l>ted M<hi rend="superscript">r</hi>. Whitbread in July</l>
+							<l>the same year - woe upon woe</l>
+							<l>for I took a near interest. My sister</l>
+							<l>my Mary came to see me - attended</l>
+							<l>business in Biggleswade - nothing</l>
+							<l>seemed to prosper her mind </l>
+							<l>ultimately gave way under</l>
+							<l>accumulated trouble my</l>
+							<l>own received a shock which</l>
+							<l>only the Rock of Ages held from</l>
+							<l>shattering me. her youngest</l>
+							<l>boy obtained a presentation</l>
+							<l>to Christ Hospital his elder</l>
+							<l>brother went to sea under the</l>
+							<l>guidance of Captain Waldegrave</l>
+							<l>who after the death of M<hi rend="superscript">r</hi> Whit</l>
+							<l>bread during the minority</l>
+							<l>of his son held the his seat</l>
+							<l>in parliment. On his coming </l>
+							<l>of age and taking his seat</l>
+						</lg>
+					</p>
+				</div>
+				<div type="page" n="10">
+					<head type="page">10</head>
+					<pb n="10" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-10.jpg" />
+			<p>
+				<lg>
+					<l>Cap<hi rend="superscript">n</hi> Waldegrave took his family</l>
+					<l>on the continent we went</l>
+					<l>thro&apos; France into Italy we</l>
+					<l>had scarcely been fifteen</l>
+					<l>days in France when we loss</l>
+					<l>their dear eldest daughter</l>
+					<l>of dysentry which was then</l>
+					<l>prevalent at St Quinten</l>
+					<l>the eldest boy was nearly</l>
+					<l>gone but Sir Charles Brown</l>
+					<l>an english physician</l>
+					<l>who proved to be a friend</l>
+					<l>of the late Earl of Waldegrave</l>
+					<l><hi rend="strikethrough">came to</hi> was providentially led</l>
+					<l>thro&apos; the town and met by</l>
+					<l>Cap<hi rend="superscript">n</hi> Waldegrave came to</l>
+					<l>the inn prescribed for</l>
+					<l>him and he was spared</l>
+					<l>The dear little girl was ten</l>
+					<l>derly attached to me. I think</l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l>I could not have loved any</l>
+					<l>one more. The moment she was</l>
+					<l>dressed she left her home &amp;</l>
+					<l>we generally passed our</l>
+					<l>time together sad was the</l>
+					<l>journey to me, after she left.</l>
+					<l>My mind constantly drawn</l>
+					<l>to Bedford, hoping to retreat</l>
+					<l>to the S<hi rend="superscript">rs</hi> house there, but detain</l>
+					<l>ed from mentioning my</l>
+					<l>desire, by a sense of obligation</l>
+					<l>to beloved M<hi rend="superscript">rs</hi>. Waldegrave,</l>
+					<l>and the grief I knew it</l>
+					<l>would cause her, if we parted.</l>
+					<l>so there was the desire,</l>
+					<l>pent up in my own</l>
+					<l>bosom, and shaking.</l>
+					<l>On our return in 1820, </l>
+					<l>really in 1819 the house</l>
+				</lg>
+			</p>
+				</div>
+					<div type="page" n="11">
+						<head type="page">11</head>
+						<pb n="11" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-11.jpg" />
+			<p>
+				<lg>
+					<l>was found too small</l>
+					<l>for the falmily and they </l>
+					<l>removed first to stocks</l>
+					<l>Hartfordshire and ultimate</l>
+					<l>ly to a family seat in</l>
+					<l>Somersetshire. I saw them</l>
+					<l>through all this and</l>
+					<l>after many trials and</l>
+					<l>conflicts which I need</l>
+					<l>not detail on the 26<hi rend="superscript">th</hi></l>
+					<l>of October 1821 was received</l>
+					<l>in the S<hi rend="superscript">rs</hi> House at Bedford</l>
+					<l>with true sisterly kind</l>
+					<l>ness by S<hi rend="superscript">r</hi> Brogden</l>
+					<l>S<hi rend="superscript">r</hi> Harke and the </l>
+					<l>sisters dwelling in</l>
+					<l>the house. </l>
+				</lg>
+			</p>
+						<cb/>
+			<p>
+				<lg>
+					<l>I went a learner and</l>
+					<l>am a learner still</l>
+					<l>Many changes have I seen</l>
+					<l>and passed through among</l>
+					<l>the Brethren and have</l>
+					<l>had much to learn and </l>
+					<l><hi rend="strikethrough">an</hi> in a way I little an</l>
+					<l>ticipated. Holding an </l>
+					<l>office in our schools is par</l>
+					<l>ticularly trying to those</l>
+					<l>who join the church</l>
+					<l>in mature years who</l>
+					<l>have not being brought</l>
+					<l>up among them</l>
+					<l>But I bless the Lord for</l>
+					<l>my call of grace and </l>
+				</lg>
+			</p>
+					</div>
+				<div type="page" n="12">
+					<head type="page">12</head>
+					<pb n="12" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_56Edwards-12.jpg" />
+			<p>
+				<lg>
+					<l>rejoice with humiliation</l>
+					<l>to be numbered with his</l>
+					<l>people and among the</l>
+					<l>flock of his fold As in</l>
+					<l>dividuals &amp; especially</l>
+					<l>myself we do I fear come</l>
+					<l>far short of what we ought</l>
+					<l>to be. O may He graciously </l>
+					<l>pour out His Holy Spirit</l>
+					<l>upon us so that quickened</l>
+					<l>to new life we may love</l>
+					<l>Him more and serve</l>
+					<l>Him better. Soon I may</l>
+					<l>through <hi rend="underline">abouding won</hi></l>
+				</lg>
+			</p>
+					<cb/>
+			<p>
+				<lg>
+					<l><hi rend="underline">drous mercy</hi> see His</l>
+					<l>gracious face -- and</l>
+					<l>would acknowledge the</l>
+					<l>tender sympathy and</l>
+					<l>kindness which during </l>
+					<l>this season of weakness</l>
+					<l>I have received from </l>
+					<l>my beloved Brethren</l>
+					<l>and Sisters in the </l>
+					<l>Lord. May He bless</l>
+					<l>keep and guide them</l>
+					<l>into eternal life.</l>
+				</lg>
+			</p>
+			<p>
+				<lg>
+					<l><hi rend="underline">Saturday</hi>. February 14 1852</l>
+					<l>Ann. Georgeana Edwards. </l>
+				</lg>
+			</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

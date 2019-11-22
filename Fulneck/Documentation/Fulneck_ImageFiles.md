@@ -22,11 +22,6 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-06.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-07.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-08.jpg<br />
 
-Ashly, Hannah<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-03.jpg<br />
-
 Armisted, Ellen<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_122_Armisted_Ellen-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_122_Armisted_Ellen-03.jpg<br />
@@ -41,6 +36,11 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_123_Armstrong_Mary-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_123_Armstrong_Mary-04.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_123_Armstrong_Mary-05.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_123_Armstrong_Mary-06.jpg<br />
+
+Ashly, Hannah<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-03.jpg<br />
 
 Astley, John<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_47_AstleyJohn-01.jpg<br />
@@ -57,11 +57,6 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-04.jpg<br />
-
-Ashly, Hannah <br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-03.jpg<br />
 
 Balmforth_Lydia <br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_98_Balmforth_Lydia-01.jpg<br />
@@ -1858,6 +1853,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_28_WhitikarMary-02.jpg<br />
 Whitly, Hannah<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_38_WhitlyHannah-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_38_WhitlyHannah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_38_WhitlyHannah-03.jpg<br />
 
 Wilkinson, Hannah<br />
 http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-01.jpg<br />

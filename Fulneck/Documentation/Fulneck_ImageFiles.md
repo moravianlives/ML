@@ -1223,14 +1223,14 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-04.jpg<br />
 
 Mueller, Phoebe<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-01.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-02.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-03.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-04.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-05.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-06.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-07.jpg
-http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-08.jpg
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-03.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-04.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-05.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-06.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-07.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_129_Mueller_Phoebe-08.jpg<br />
 
 Myers, Mary (1)<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_80Myers-01.jpg<br />
@@ -1936,7 +1936,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-04.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_15unknown-05.jpg<br />
 
-[Unknown Individual, Fulneck/3/85]<br />
+[Unknown Married Brother, Fulneck/3/85]<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_85_unknown-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_85_unknown-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_85_unknown-04.jpg<br />

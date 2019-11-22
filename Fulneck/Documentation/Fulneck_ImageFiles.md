@@ -58,10 +58,10 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-04.jpg<br />
 
-Ashly <br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_Ashly-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_Ashly-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_55_Ashly-03.jpg<br />
+Ashly, Hannah <br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_55_AshlyHannah-03.jpg<br />
 
 Balmforth_Lydia <br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_98_Balmforth_Lydia-01.jpg<br />
@@ -74,6 +74,13 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_58_Joshua_Barke_0r-02.jpg<br />
 Barker, Joshua<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-02.jpg<br />
+
+Beck, John Thompson<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-12.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-13.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-14.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-15.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-16.jpg<br />
 
 Bell, Christian<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_31_BellChristian-01.jpg<br />
@@ -162,7 +169,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_58Bentley-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_58Bentley-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_58Bentley-04.jpg<br />
 
-Bentley, Watson, Beck (three obituary notices in one document)<br />
+Bentley, Joseph<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-03.jpg<br />
@@ -171,14 +178,6 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-05.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-06.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-07.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-08.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-09.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-10.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-11.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-12.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-13.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-14.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-15.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-16.jpg<br />
 
 Bird, Mary <br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_50Bird-01.jpg<br />
@@ -222,6 +221,12 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-07.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-08.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-09.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-10.jpg<br />
+
+Briggs, Eleanor<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_107_Briggs_Eleanor-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_107_Briggs_Eleanor-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_107_Briggs_Eleanor-03.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_107_Briggs_Eleanor-04.jpg<br />
 
 Broadbent, William <br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_0x_Broadbent_William-01.jpg<br />
@@ -392,12 +397,6 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_57Clagget-11.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_57Clagget-12.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_57Clagget-13.jpg<br />
 
-Clayton, Joseph<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_107_Clayton_Joseph-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_107_Clayton_Joseph-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_107_Clayton_Joseph-03.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_3_107_Clayton_Joseph-04.jpg<br />
-
 Clayton, Martha<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_64_Clayton_Martha-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_64_Clayton_Martha-02.jpg<br />
@@ -530,12 +529,18 @@ http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-04.jpg<br />
 
-Craven, Sarah <br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_41Craven-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_41Craven-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_41Craven-03.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_41Craven-04.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_41Craven-05.jpg<br />
+Craven, Sarah<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-04.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-06.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-08.jpg<br />
+
+Craven, Sarah (Single Sisters Collection)<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_41_Craven_Sarah-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_41_Craven_Sarah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_41_Craven_Sarah-03.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_41_Craven_Sarah-04.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_41_Craven_Sarah-05.jpg<br />
 
 Cresswell, Elizabeth <br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_92_Cresswell_Elizabeth-01.jpg<br />
@@ -1777,6 +1782,12 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_111_Ward_Sister-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_111_Ward_Sister-03.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_111_Ward_Sister-04.jpg<br />
 
+Watson, Anne<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-09.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-10.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-11.jpg<br />
+http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-12.jpg<br />
+
 Watson, Martha<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_3WatsonMartha-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_3WatsonMartha-02.jpg<br />
@@ -1847,6 +1858,15 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_28_WhitikarMary-02.jpg<br />
 Whitly, Hannah<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_38_WhitlyHannah-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_38_WhitlyHannah-02.jpg<br />
+
+Wilkinson, Hannah<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-01.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-02.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-03.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-04.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-05.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-06.jpg<br />
+http://moravianlives.bucknell.edu/MAF/FUL_SS_01_Wilkinson_Hannah-07.jpg<br />
 
 Willoughby, Ann<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_23WilloughbyAnn-01.jpg<br />

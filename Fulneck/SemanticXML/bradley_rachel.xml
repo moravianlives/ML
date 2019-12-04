@@ -1,6 +1,4 @@
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,16 +98,91 @@
 					<msIdentifier>
 						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_SS_44Bradley">Rachel Bradley</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-02.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-03.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-05.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-10.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-01.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-02.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-03.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-05.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-10.jpg"></msName>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/bradley_rachel.xml?date_annotation_20191204143740",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-04T19:37:40.062Z",
+	"dcterms:issued": "2019-12-04T19:38:13.426Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/bradley_rachel.xml?date_annotation_20191204143740#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/bradley_rachel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/bradley_rachel.xml?date_annotation_20191204143740#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "undefined/undefined"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Rachel Bradley</persName>
@@ -131,13 +204,13 @@
 				<head>Rachel Bradley</head>
 				<div type="page" n="1">
 					<head type="page">1</head>
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-01.jpg"></pb>
 					<p>
 						
-							The single S<hi rend="superscript">r</hi> Rachel Bradley who happily departed this life Aug. 30<hi rend="superscript">th</hi> 1809.
+							The single S<hi rend="superscript">r</hi> Rachel Bradley who happily departed this life <hi rend="superscript">th</hi>.
 							has left the following short account:
 							I was born in Goweer in the parish
-							of Huddersfield Oct 15<hi rend="superscript">th</hi> 1742. Shortly
+							of <placeName>Huddersfield</placeName> <date when-iso="1742-10-15">Oct 15<hi rend="superscript">th</hi> 1742</date>. Shortly
 							before I was born, my Mother began
 							to attend the meetings of the B<hi rend="superscript">rn</hi>;
 							and as soon as she possibly could
@@ -159,13 +232,13 @@
 				</div>
 				<div type="page" n="2">
 					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-02.jpg"></pb>
 					<p>
 						
 							to my heart. Going to Bed at night I
 							thought I saw our Saviour, he showed
 							me his hands &amp; his feet, and I felt
-							such a love to him, that I beg&apos;d
+							such a love to him, that I beg'd
 							of him to take me to himself.
 							In my 8<hi rend="superscript">th</hi> year my Parents being in
 							very low circumstances, my Oncle and
@@ -188,7 +261,7 @@
 							with the S. S<hi rend="superscript">rs</hi>, but could not see
 						
 					</p>
-					<cb />
+					<cb></cb>
 					<p>
 						
 							how it was possible to be brought about.
@@ -217,7 +290,7 @@
 				</div>
 				<div type="page" n="3">
 					<head type="page">3</head>
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-03.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-03.jpg"></pb>
 					<p>
 						
 							do it, saying my Father would be much
@@ -246,7 +319,7 @@
 							melted before our Saviour, seeing with
 						
 					</p>
-					<cb />
+					<cb></cb>
 					<p>
 						
 							what unwearied Kindness &amp; patience <hi rend="strikethrough">our</hi>
@@ -256,7 +329,7 @@
 							during my pilgrimage here below;
 							&amp; I must own to his praise that he has
 							never left nor forsaken me, I feel my
-							self a very great sinner, but hope thro&apos;
+							self a very great sinner, but hope thro'
 							his enabling grace I shall give joy to
 							our Saviour &amp; his Cong<hi rend="superscript">n</hi>. I my 15<hi rend="superscript">th</hi>
 							year I had the favour to be rec<hi rend="superscript">d</hi>
@@ -278,7 +351,7 @@
 				</div>
 				<div type="page" n="4">
 					<head type="page">4</head>
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-05.jpg" />
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-05.jpg"></pb>
 					<p>
 						
 							nation not to return till our Saviour
@@ -296,17 +369,17 @@
 							a great desire to enjoy the Holy
 							Com<hi rend="superscript">n</hi> and this great favour was gran
 							to me in my 22<hi rend="superscript">d</hi> year. And now
-							I wish for nothing else, but to remain sitting at his thro&apos; piersed feet
+							I wish for nothing else, but to remain sitting at his thro' piersed feet
 							&amp; greeting them for my election of grace.
 							I own and feel myself as the poorest
 							of sinners, and have nothing to plead
 							but his mercy. With patience immense
 							With love most intense - Hath he led
-							me on, - I&apos;m lost in amezement 
+							me on, - I'm lost in amezement 
 							When thinking thereon.
 						
 					</p>
-					<cb />
+					<cb></cb>
 					<p>
 						
 							Thus far her own Account, which she dictated
@@ -315,8 +388,8 @@
 							given of her early life had been the
 							most remarkable to her, and the period
 							in which she sought &amp; found real
-							happiness, &amp; tho&apos; more then 40 years
-							had elaps&apos;d since, during which time
+							happiness, &amp; tho' more then 40 years
+							had elaps'd since, during which time
 							<hi rend="underline">much</hi> had occurred yet she could say
 							nothing more, but thank and praise our
 							our Saviour for all his love &amp; care. &amp;
@@ -326,7 +399,7 @@
 							to the Lord, his suffering beauty had captivated her heart, to read &amp; speak about that
 							subject was her greatest dilight, she was also
 							useful in several ways, &amp; served with a willing
-							&amp; chearful heart. Tho&apos; she had a very sickly
+							&amp; chearful heart. Tho' she had a very sickly
 							tabernacle, and was several times so ill that
 							no hopes was left for her recovery, yet she
 							was resigned to our Saviours will, and could 
@@ -338,7 +411,7 @@
 				</div>
 				<div type="page" n="5">
 					<head type="page">5</head>
-					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-10.jpg" />
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_44Bradley-10.jpg"></pb>
 					<p>
 						
 							asmatick complaint, but she bore it with
@@ -350,19 +423,19 @@
 							3 weeks before her departure she was obliged to
 							confine herself to the sickroom. She expressed
 							herself on that occation, to the following effect:
-							&quot;I have now done with all things in this world
+							"I have now done with all things in this world
 							and am waiting for our Saviour to take me
 							to my eternal home, I am lost in wonder when
 							I think on his love &amp; faithfulness, to me the
 							poorest among the needy, O what a blessed thing <add place="above">it is,</add>
-							that he has given me that asurence | tho I deserv&apos;d
+							that he has given me that asurence | tho I deserv'd
 							hell | that he will receive me in the blessed
 							man<hi rend="strikethrough">t</hi><add place="above">s</add>ions above, I will then greet his feet with
 							sinner tears &amp; say to him; This Lord Jesus is
 							my only plea, Here is a sinner who would
 							fain - Thro the Lambs ransom entrance gain.
 							With these happy meditations she spent her time,
-							| tho&apos; she suffered much of shortness of breath | till
+							| tho' she suffered much of shortness of breath | till
 							Aug 30<hi rend="superscript">th</hi> when it pleased our Saviour in a
 							happy &amp; gentle manner to take her home to him
 							self. <add place="above">Aged</add> 66 years 10 Months 15 days.

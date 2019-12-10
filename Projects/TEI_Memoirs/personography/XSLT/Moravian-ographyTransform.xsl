@@ -33,6 +33,7 @@
 <!-- This adds paragraph after person in list -->
     <xsl:template match="tei:person">
         <xsl:variable name="uri" select="concat('http://moravianlives.bucknell.edu/data/personography.html#', @xml:id)"/>
+        <hr/>
         <p>
             <a>
                 <xsl:attribute name="href">
@@ -43,13 +44,14 @@
         </p>       
             <xsl:apply-templates/>        
     </xsl:template>
-
-<xsl:template match="tei:persName">
     
-    <xsl:text>Name: </xsl:text>
-    <xsl:apply-templates/>
-<br />    
-</xsl:template>
+    <xsl:template match="tei:persName">
+<xsl:text>Name: </xsl:text>
+                <xsl:apply-templates select="tei:forename"/>
+        <xsl:text> </xsl:text>
+                <xsl:apply-templates select="tei:surname"/>
+        <br />
+    </xsl:template>
     
 <xsl:template match="tei:birth/tei:date">
     <xsl:text> Date of birth: </xsl:text>
@@ -78,14 +80,55 @@
     <xsl:template match="tei:affiliation">
         <xsl:text>Archive: </xsl:text>
         <xsl:value-of select="."/>
+        <br/>
     </xsl:template>
     
     <xsl:template match="tei:bibl">
         <xsl:text>, </xsl:text>
         <xsl:value-of select="."/>
     </xsl:template>
-    
 
+
+<xsl:template match="tei:education">    
+    <xsl:text>Education: </xsl:text>
+    <xsl:value-of select="."/>
+    <xsl:text>; </xsl:text>
+    <br />
+        <xsl:apply-templates/>    
+</xsl:template>
+    
+    <xsl:template match="tei:event">    
+        <xsl:text>Event type </xsl:text>
+        <xsl:value-of select="@type"/>
+        <xsl:text>: </xsl:text>
+        <xsl:value-of select="."/>
+        <br />        
+        <xsl:apply-templates/>    
+    </xsl:template>
+    
+    <xsl:template match="tei:note">
+        <xsl:text>Notes: </xsl:text>
+        <xsl:value-of select="."/>
+        <br />
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+<!-- Add Image 
+    <xsl:template match="tei:div[@type='front']">
+        <img width="100%" src="../IMG/sans-titre1.png"/>
+        <xsl:apply-templates/>
+    </xsl:template>-->
+
+    <!-- Styles chapter headers 
+    <xsl:template match="tei:head[@type='chapter_title']">
+        <hr/>
+        <h2>
+            <xsl:text>Chapter </xsl:text>
+            <xsl:value-of select="@n"/>
+            <xsl:text>: </xsl:text>
+            <xsl:apply-templates/>
+        </h2>
+    </xsl:template>-->
 
 
 </xsl:stylesheet>

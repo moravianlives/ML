@@ -30,9 +30,10 @@
 <!-- This hides "title" of the memoir -->
     <xsl:template match="tei:head" />
 
-<!-- This adds paragraph after person in list -->
+<!-- This adds ML unique identifier link and paragraph after person in list -->
     <xsl:template match="tei:person">
         <xsl:variable name="uri" select="concat('http://moravianlives.bucknell.edu/data/personography.html#', @xml:id)"/>
+        <hr/>
         <p>
             <a>
                 <xsl:attribute name="href">
@@ -44,48 +45,92 @@
             <xsl:apply-templates/>        
     </xsl:template>
 
-<xsl:template match="tei:persName">
-    
-    <xsl:text>Name: </xsl:text>
-    <xsl:apply-templates/>
-<br />    
-</xsl:template>
-    
+<!-- This shows person's first name and last name (need to work more on multiple first and last names) -->
+    <xsl:template match="tei:persName">
+        <b>
+<xsl:text>Name: </xsl:text>
+        </b>
+                <xsl:apply-templates select="tei:forename"/>
+        <xsl:text> </xsl:text>
+                <xsl:apply-templates select="tei:surname"/>
+        <br />
+    </xsl:template>
+
+<!-- This shows birth and death dates and places (need to work on old/new dating styles) -->
 <xsl:template match="tei:birth/tei:date">
-    <xsl:text> Date of birth: </xsl:text>
+    <b>
+        <xsl:text> Date of birth: </xsl:text>
+    </b>
         <xsl:value-of select="."/> 
     <br />   
 </xsl:template>
     
     <xsl:template match="tei:birth/tei:placeName">
+        <b>
         <xsl:text> Place of birth: </xsl:text>
+        </b>
         <xsl:value-of select="."/>
         <br/>
     </xsl:template>
     
     <xsl:template match="tei:death/tei:date">
-        <xsl:text> Date of Death: </xsl:text>
+       <b> 
+           <xsl:text> Date of Death: </xsl:text>
+       </b>
         <xsl:value-of select="."/>        
         <br/>
     </xsl:template>
     
     <xsl:template match="tei:death/tei:placeName">
-        <xsl:text> Place of Death: </xsl:text>
+        <b>
+            <xsl:text> Place of Death: </xsl:text>
+        </b>
         <xsl:value-of select="."/>
         <br/>
     </xsl:template>
-    
-    <xsl:template match="tei:affiliation">
-        <xsl:text>Archive: </xsl:text>
+
+<!-- This lists events included in the peronsography, and includes the type of event where provided -->
+    <xsl:template match="tei:event">    
+        <br />
+        <b>
+        <xsl:text>Event (</xsl:text>
+        <xsl:value-of select="@type"/>
+        <xsl:text>): </xsl:text>
+        </b>
+        <xsl:apply-templates/>    
+    </xsl:template>
+
+<!-- This shows the occupation(s) of the person; this pattern could also be used for other defining information (affiliation, residence, etc.) -->
+<xsl:template match="tei:occupation">
+    <b>
+        <xsl:text>Occupation: </xsl:text>
+    </b>
+    <xsl:value-of select="."/>
+    <br />
+</xsl:template>
+
+    <xsl:template match="tei:office">
+        <b>
+            <xsl:text>Office: </xsl:text>
+        </b>
         <xsl:value-of select="."/>
+        <br />
     </xsl:template>
     
+<!-- This shows the memoir reference - for now just includes the ID from Fulneck -->
     <xsl:template match="tei:bibl">
-        <xsl:text>, </xsl:text>
+        <br />
+        <b>
+            <xsl:text>Memoir Reference: </xsl:text>
+        </b>
         <xsl:value-of select="."/>
+        <br/>
     </xsl:template>
-    
 
+<!-- This hides information about person's relations -->
+<xsl:template match="tei:listRelation / tei:relation"/>
 
+<!-- This hides unstructured notes -->
+    <xsl:template match="tei:note"/>
 
 </xsl:stylesheet>

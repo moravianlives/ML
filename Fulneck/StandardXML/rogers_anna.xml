@@ -1,129 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Anna Rogers: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_SS_59Rogers">Anna Rogers</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-01.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-03.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-04.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Anna Rogers</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Anna Rogers: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_59Rogers">Anna Rogers</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-04.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Anna Rogers</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-01.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-01.jpg" n="1" />
 			<p>
 				<lg>
-					<l>The Course of Life of Anna Rogers</l></lg></p>
-<p><lg>
+					<l>The Course of Life of Anna Rogers</l>
+				</lg></p>
+			<p><lg>
 					<l>I was born at Bedford on the 15 of August 1743 an lived</l>
 					<l>with my Parrents till I was 7 years old, at that time I had</l>
 					<l>not the least concern about our Saviour, but still I remember</l>
@@ -157,7 +162,7 @@
 					<l>enjoy the Meeting, which the dear disciple kept when the Girls Oeconomy</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-02.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-02.jpg" n="2" />
 			<p>
 				<lg>
 					<l>removed to fulneck I also went with them and woul lived very chearfully</l>
@@ -170,12 +175,13 @@
 					<l>the cause of my unhappyness and why I did not prosper but I did not</l>
 					<l>not know my own heart neither our Saviours intention I was obligd to</l>
 					<l>wait long before I was recived into the Congregation and therefore I was</l>
-					<l>apt to think that I was forgoten by my B<hi rend="fontSize:0.0; kerning:0; superscript:true;">rn</hi> and S<hi rend="fontSize:0.0; kerning:0; superscript:true;">rs</hi> but I found</l>
+					<l>apt to think that I was forgoten by my B<hi rend="fontSize:0.0; kerning:0; superscript:true;">rn</hi> and S<hi rend="fontSize:0.0; kerning:0; superscript:true;">rs</hi> but I
+						found</l>
 					<l>afterwards that my heart at that time was not prepared for it and</l>
 					<l>begun to discover so much of my own sinfulness I lost all hopes of</l>
 					<l>being recived how ever our Saviour granted me this grace on the 21</l>
 					<l>of August which proved a real blessing to me at that time I prayd</l>
-					<l>our Sariour to grant me on abideing <hi rend="strikethrough:true;">ing</hi> feeling of his nearness &amp;</l>
+					<l>our Sariour to grant me on abideing <del>ing</del> feeling of his nearness &amp;</l>
 					<l>let me once expernce the forgiveness of all my Sins but I soon lost</l>
 					<l>that desire again grew cold in my heart and gave up all hopes that I </l>
 					<l>Shoud ever be other ways some time I usd to think in a reasoning way</l>
@@ -197,7 +203,7 @@
 					<l>in the Congregation as I this brought me in a certain concern again</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-03.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-03.jpg" n="3" />
 			<p>
 				<lg>
 					<l>about my self I had not been long in the Choir house before I got</l>
@@ -222,7 +228,7 @@
 					<l>much to my Labours about it but more earnist beg'd our Saviour</l>
 					<l>first to prepare my heart for it my Body illness grow worse so</l>
 					<l>that I was obligd intirely to take to the Sick room in 63 being</l>
-					<l>Maunday <add place="above">Thursday</add> I was made a Candidate <hi rend="strikethrough:true;">I was made</hi> for the holy</l>
+					<l>Maunday <add place="above">Thursday</add> I was made a Candidate <del>I was made</del> for the holy</l>
 					<l>Comunion which unexpected grace bow'd me down in the dust</l>
 					<l>at my Bridegrooms feet and he was pleased to step before my</l>
 					<l>heart in that Figure wherein he did sweat blood in the</l>
@@ -237,7 +243,7 @@
 					<l>at the injoyment of this my highest I good I am not able to express</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-04.jpg" n="4"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-04.jpg" n="4" />
 			<p>
 				<lg>
 					<l>in words my heart was melted like wax before my dearest lover whos</l>
@@ -248,8 +254,9 @@
 					<l>all things ease to me ever in gard to my outward circumstances</l>
 					<l>so that I have nothing to disturbe my mind with and I am glad</l>
 					<l>to go to him as a poor Sinner, and will kiss his thro' bord feet with</l>
-					<l>my thankfull tears, so far her own words.</l></lg></p>
-<p><lg>
+					<l>my thankfull tears, so far her own words.</l>
+				</lg></p>
+			<p><lg>
 					<l>Our Happyly departed Sisters frettefull and sinners disposion</l>
 					<l>causd her felt much uneasyness of heart and mind but for all that</l>
 					<l>she had somthing very agreeable which greatly gain her Sisters</l>
@@ -278,7 +285,7 @@
 					<l>that he would now fetch her to himself, a short Litty was</l>
 					<l>kept her by her bed when this ration of the healing bonds went</l>
 					<l>over into healths happy bounds with the blessing of her Choir</l>
-<note>This last line is written vertically in the left-hand margin.</note>
+					<note>This last line is written vertically in the left-hand margin.</note>
 					<l>during a sweet feeling of her bridegroom nearness in the 22 year of her age on Oct<hi rend="superscript:true;">r</hi> the 24 1763</l>
 				</lg>
 			</p>

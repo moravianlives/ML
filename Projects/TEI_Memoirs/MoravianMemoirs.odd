@@ -41,6 +41,7 @@
       </editorialDecl>
     </encodingDesc>
     <revisionDesc>
+      <change when="2019-11-21" who="#jschaumberger">Added the customization of the work tag</change>
       <change when="2019-08-01" who="#jschaumberger">Added injury as an option for name:@health</change>
       <change when="2019-07-30" who="#jschaumberger #JAKA1">Added some German translations</change>
       <change when="2019-07-30" who="#jschaumberger">Added roleName @type diety as a suggested input</change>
@@ -474,7 +475,109 @@
             <content>
               <macroRef key="macro.specialPara"/>
             </content>
+            
           </elementSpec>
+          
+          <elementSpec ident="work"
+            module="namesdates" mode="add">
+            <attList>
+              <attDef mode="add" ident="occupation">
+                <datatype>
+                  <dataRef key="teidata.enumerated"/>
+                </datatype>
+                <valList type="closed">
+                  <valItem ident="child">
+                    <desc>less than 18 years of age</desc>
+                  </valItem>
+                  <valItem ident="adult">
+                    <desc>18 to 65 years of age</desc>
+                  </valItem>
+                  <valItem ident="retired">
+                    <desc>over 65 years of age</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef mode="add" ident="office">
+                <datatype>
+                  <dataRef key="teidata.enumerated"/>
+                </datatype>
+                <valList type="closed">
+                  <valItem ident="child">
+                    <desc>less than 18 years of age</desc>
+                  </valItem>
+                  <valItem ident="adult">
+                    <desc>18 to 65 years of age</desc>
+                  </valItem>
+                  <valItem ident="retired">
+                    <desc>over 65 years of age</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          
+         <!-- <elementSpec ident="work" mode="add">
+            <classes>
+              <memberOf key="model.persStateLike"></memberOf>
+              <memberOf key="att.datable"/>
+            </classes>
+            
+            <content>
+              <macroRef key="macro.paraContent"/>
+            </content>
+          </elementSpec>
+          
+          <!-\- Creates the work tag that can be used inside of <p> tags -\->
+          <elementSpec ident="work" mode="add">
+            <classes>
+              <!-\-<memberOf key="model.persNamePart"></memberOf>
+              <memberOf key="att.global"/>
+              <memberOf key="att.typed"/>-\->
+              
+              
+            </classes>
+            <content>
+              <macroRef key="macro.paraContent"/>
+            </content>
+          </elementSpec>-->
+          
+          <!--<classSpec ident="att.naming" module="tei" type="atts" mode="change">
+            <attList>
+              <attDef ident="ceremony" mode="change" sameAs="zeremonie" />
+              <attDef ident="emotion" mode="change" sameAs="gefühl" />
+              <attDef ident="event" mode="change" sameAs="ereignis" />
+              <attDef ident="health" mode="change" sameAs="gesundheitszustand" />
+              <attDef ident="relation" mode="change" sameAs="verwandte" />
+              <attDef ident="occupation" mode="change" />
+              <attDef ident="office" mode="change" sameAs="amt"></attDef>
+              <attDef ident="memoirSubject" mode ="change"></attDef>
+            </attList>
+          </classSpec>-->
+          
+          <!--<!-\- CUSTOMIZATION: added name:@occupation / English. -\->
+          <elementSpec ident="work" mode="add" module="core">
+            <attList>
+              <attDef ident="occupation" mode="change">
+              </attDef>
+            </attList>
+          </elementSpec>
+          <!-\- CUSTOMIZATION: added name:@office / English. -\->
+          <elementSpec ident="work" mode="add" module="core">
+            <attList>
+              <attDef ident="office" mode="change">
+              </attDef>
+            </attList>
+          </elementSpec>-->
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
           <!-- From here to the bottom we are currently not translating to German -->
           <!-- CUSTOMIZATION: Adding cause to date -->

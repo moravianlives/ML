@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mary Taylor: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_61Taylor">Mary Taylor</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-05.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Mary Taylor</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-01.jpg" n="1" />
+			<p>
+				
+					The Course of with of the S. Sister Mary Taylor who Departed
+					to our Savior <add place="above">at</add> Fulnec Feb<hi rend="superscript:true;">r</hi> 21 1790
+				</p>
+			<p>
+					I was Born at Moberly in the County of Cheshire July 11<hi rend="superscript:true;">th</hi> 1745
+					and Baptized in the Church of England. In my Childrens
+					Years I felt some dawnings of Grace in my heart, but did know
+					how to value it rightly. In my 10<hi rend="superscript:true;">th</hi> Year my Father took me
+					with Him to hear the B<hi rend="superscript:true;">rn</hi>, and I not a deep impression of our
+					Saviors love in my heart, which remained with me for some
+					Time. But in my 14<hi rend="superscript:true;">th</hi> Year I began to see my lost Condition
+					which soon brought me into dispair, and Satan got such
+					power over me, that I believed there was no God, or if there
+					was I had no right to Him &amp; I thought Hell its self could
+					not contain more misery, than I found dwelt in me, so I
+					wished I had never been Born, and that I had no immortale
+					Soul to live forever; but Since I had, wish'd that it might
+					be distroyed, and not remain inthe number of those Souls
+					that was immortal. This led me to think wether or no there
+					was a God who had made me &amp; who cou'd distroy my Soul: And
+					I conclnded that there was a God, &amp; that he could save some that
+					believed on Him. But I had no faith, and thought I must be
+					lost. In this Situation I went to hear a Brother preach, the Text
+					was at the Time of Ignorance God winketh at, but now
+					Commandeth all Men every where to repent. I thought
+					if I had but been Ignorant, then I might have hopes.
+					but I have been told so often of our dear Savior, and what he
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-02.jpg" n="2" />
+			<p>
+				
+					had done &amp; fuffered for poor Sinners, how often has my Father
+					entreated me to go alone and to pray to my Maker &amp; Redeemer
+					that He wood have mercy upon my Soul, but I had refulod it.
+					All this was set before my heart &amp; Eyes in a clear light. But
+					my distress I could tell to no one, and kept my misery to myself
+					for I thought no one was as bad as I felt myself to be.
+					In my 17<hi rend="superscript:true;">th</hi> Year I went again to hear the B<hi rend="superscript:true;">rn</hi> preach
+					and the Text was a great Comfort to my distressed Soul,
+					It was the following He which hath begun a Good Work in
+					you, will perform it untill the Day of Jesus Chriest, It
+					was as if my dear Savior said to me, this is my work. Give
+					thine Heart to me &amp; I will give the rest from thy Labour
+					Oh how did my Soul rejoice that she Lord could have mercy
+					upon me. In the Year 1762 I moved with my Father
+					&amp; Mother to be near the Cong<hi rend="superscript:true;">n</hi> in Duckenfield, where I
+					soon got a desire to live inthe Choirhouse, and Obtained
+					leave in the Year following to my great Joy. But I must
+					confess that I spent my Time there very indifferently &amp;
+					did not seek in ernest to know my dear Saviors aim with me
+					but was satisfied with some dawnings of his Grace.
+					Oct<hi rend="superscript:true;">r</hi> 23<hi rend="superscript:true;">d</hi> 1763 I had the favor to be rec'<hi rend="superscript:true;">d</hi> into the Cong<hi
+							rend="superscript:true;">n</hi>
+					from this Time I fell into a legal self working way
+					striving in my own Spirit &amp; strength to become good, but
+					in vain. Thus I spent 4 Years in this miserable self
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-03.jpg" n="3" />
+			<p>
+				
+					<add place="above">righteous</add>
+						<del>working</del> way of my own, Sometimes I was weary and
+					tired out almost, but still could not leave it off. Till in
+					the Year 1767, when I had the grace to become a Condidate
+					for the Holy Comuinion. this gave me acdearer imight into
+					myself than I had ever had before. I now found that all my
+					self working was like a Cob web, &amp; all my self nighteousness
+					was as felthy, &amp; that Verse was applicable to my condition.
+				</p>
+			<p>
+					A Garment I myself had gained.
+					A Staff I had whereon I lean'd
+					Which fell when tryed from out my hand
+					My Robe I buent it to a brand.
+				</p>
+			<p>
+					I had alonging desire to be<add place="above">come</add> a Partaker of the highest Good
+					but was very timoaroay about it. However my dr Savior
+					shewed me the way that as a poor Sinner I must go and
+					venture upon his mercy. March the 21<hi rend="superscript:true;">st</hi> 1760 on Maunday
+					Thursday I partook for the first Time of the Highest Good
+					in the Holy Sacrament, during which I got a deep impress.
+					ion of our Saviours sufferings &amp; Death, &amp; it was a time
+					of real Blessing to me which I hope never to forget; I went
+					on in a still and happy Course for near a Year, when my Father
+					&amp; Mother &amp; Brothers agreed to <del>force</del>
+						<add place="above">get</add> me away from the B<hi rend="superscript:true;">rn</hi>
+					by telling me that they were a deceitful People and that I
+					was already deceived, but I could not believe them; but
+					as their designs where frustrated, thay contrived a scheme
+					to get meto my Father House by a message that if I would
+					see my <del>Father</del> Mother alive I must come immeadsately
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-04.jpg" n="4" />
+			<p>
+				
+					but it was <del>all</del> entirely a Falshood &amp; deceit. "I however went
+					to see her I found her rather poorly but no ways danger-
+					ously Ill, now sheirintentions was to keep me, and
+					when I attempted to go back again, they would not suffer
+					me to go &amp; when I set off they fetched me bact, and 
+					forced me to stay against my will &amp; at night locked
+					me in my chamber, &amp; desired the neighbours to watch
+					me least I should leave the House, this continued a whole
+					week before I could make my escape. At last I found
+					an Oppertunity to get off. on a Dark night, I went
+					around about way for Duckenfield, that they might
+					not ovortakeme if they pursued me. But my two
+					Brothers &amp; two other Men, got to Duckenfield before
+					me and placed them selves in the roads that led to the
+					S S<hi rend="superscript:true;">rs</hi> House, so that I could not get home without meet
+					ing some of them. my Brother happined to be in the
+					road where I had to pass. He therefore stoped me and
+					called the others to assist Him, they intended to take
+					me back by force, but being near the S<hi rend="superscript:true;">rs</hi> House, I cried 
+					as loud as I could, that they might hear me and come
+					to my assistance, which they did, and came to see
+					the reason of my cries, and one ofthem asked me if I
+					would go back with the Men or not, I answered that
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_61Taylor-05.jpg" n="5" />
+			<p>
+				
+					I would not return with them they then endeavoured to get
+					me at liberty, but one of the Sisters was knocked down by
+					one of them, which made them fight in good ernest,
+					and the S<hi rend="superscript:true;">rs</hi> being almost come out, at length prevailed
+					&amp; I escap'd their hands, tho' I was much bruis'd <del>&amp;</del>
+					by the hard usage I had undergone. I was thankful
+					to my dear Savior, that I could be at rest again in my
+					Choir House, but my Stay in Duckinfield was not long
+					for I wrote to my Brother in Fulneck of what had
+					happened to me, and He spoke to the B<hi rend="superscript:true;">rn</hi> there about
+					me, <del>wishing</del> thinking that it would be better if I re-
+					moved to some other Congregation, this was taken into
+					consideration, and I Obtained leave to live in Fulnec,
+					accordingly on March the 21<hi rend="superscript:true;">st</hi> 1769 I <del>went</del>
+						<add place="above">came</add> to live in the
+					Choir House here, where I was thankful to be, altho
+					onulwardly I had it harder to procure a Maintenance
+					than in Duckenfield, but I believe that the Lord will
+					make it answer a good and at last. thus far her own
+					Account.
+				
+			</p>
+		</body>
+	</text>
+</TEI>

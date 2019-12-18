@@ -1,131 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Mary Whitehead: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_SS_25WhiteheadMary">Mary Whitehead</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Mary Whitehead</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mary Whitehead: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_25WhiteheadMary">Mary Whitehead</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Mary Whitehead</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg" n="1" />
 			<p>
 				<lg>
-					<l>The course of Life of the SS Mary Whithead</l></lg></p>
-<p><lg>
+					<l>The course of Life of the SS Mary Whithead</l>
+				</lg></p>
+			<p><lg>
 					<l>I was born in streedside in the parish of Tong, May</l>
 					<l>10<hi rend="superscript:true;">th</hi> 1737. My parents being presb<hi rend="superscript:true;">ns</hi> I was Baptz</l>
 					<l>&amp; Educated the same religion, my father</l>
@@ -135,8 +140,9 @@
 					<l>Circumstances then she'd ever been us'd to</l>
 					<l>The Lord blesst Her chereful endeavours</l>
 					<l>for our suport, till such Times as we cou'd</l>
-					<l>Earn a little for ourselves.</l></lg></p>
-<p><lg>
+					<l>Earn a little for ourselves.</l>
+				</lg></p>
+			<p><lg>
 					<l>about my 8 year I came into concern after</l>
 					<l>my salvation, &amp; was much affected by reading</l>
 					<l>in the Scriptures which spoke of our Sav<hi rend="superscript:true;">rs</hi></l>
@@ -157,7 +163,7 @@
 					<l>&amp; suffering as I had read, &amp; said no one can be saved</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg" n="2" />
 			<p>
 				<lg>
 					<l>without they become acquainted with the man Christ</l>
@@ -194,7 +200,7 @@
 					<l>with himself before be took me Hence, of this</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>Sickness I recoverd &amp; retaind a true desire in my Heart</l>
@@ -202,8 +208,9 @@
 					<l>I was not without intervals of turning into the world</l>
 					<l>as I cou'd come to no realise in My Heart but since</l>
 					<l>have seen how thro grace &amp; mercy I have been</l>
-					<l>preserved,</l></lg></p>
-<p><lg>
+					<l>preserved,</l>
+				</lg></p>
+			<p><lg>
 					<l>in the year 1757 I made known my desire to my</l>
 					<l>Labourer to be receivd into the congregation &amp;</l>
 					<l>resolved to give my self up to our dearest Sav<hi rend="superscript:true;">r</hi></l>
@@ -223,8 +230,9 @@
 					<l>who gave me this Happy meeting, which has been</l>
 					<l>So momentious to me as never to be forgotten tho'</l>
 					<l>all my future course, for this End He had followed</l>
-					<l>&amp; preservd me to Seal me as His own.</l></lg></p>
-<p><lg>
+					<l>&amp; preservd me to Seal me as His own.</l>
+				</lg></p>
+			<p><lg>
 					<l>I returnd home, the rest &amp; peace My soul injoyd</l>
 					<l>sufficed for that night without any other Slumber</l>
 					<l>to My Eyes &amp; I was quite another Creature then before</l>
@@ -233,7 +241,7 @@
 					<l>a fresh concern upon me How I might use this</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg" n="3" />
 			<p>
 				<lg>
 					<l>Grace according to the mind of my beloved, &amp; tho' I</l>
@@ -241,8 +249,9 @@
 					<l>in the depth of my wretchedness &amp; misery, yet</l>
 					<l>I wanted to please Him with myself Holiness &amp;</l>
 					<l>prittyness of Heart rather then move as a</l>
-					<l>Sinful poor creature, in His presance</l></lg></p>
-<p><lg>
+					<l>Sinful poor creature, in His presance</l>
+				</lg></p>
+			<p><lg>
 					<l>in the year 1758 I was received into the S<hi rend="superscript:true;">rs</hi> Choir</l>
 					<l>in which I found I had many things to learn</l>
 					<l>I felt a real desire to come unto the Choirhouse</l>
@@ -253,8 +262,9 @@
 					<l>calls &amp; convictions of my Heart, I came to such</l>
 					<l>a resolution that come Life or death I must venture</l>
 					<l>&amp; was comforted by those words, seek the kingdom of</l>
-					<l>Heaven &amp; all other things will be added,</l></lg></p>
-<p><lg>
+					<l>Heaven &amp; all other things will be added,</l>
+				</lg></p>
+			<p><lg>
 					<l>augst. 18 1760 I injoyd the Great Grace to remove</l>
 					<l>into the Choir house, little Expecting the unhappy<add place="above">ness</add></l>
 					<l>that did befall me, in this dear place I only</l>
@@ -272,7 +282,7 @@
 					<l>compleat full of sly &amp; craft I ventured of</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>when I had got about half way home I was all</l>
@@ -308,7 +318,7 @@
 					<l>fire to the Guilty persue'd me were ever I went</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg" n="4"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg" n="4" />
 			<p>
 				<lg>
 					<l>in this deplorable situation I spent one whole week</l>
@@ -343,7 +353,7 @@
 					<l>know,</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>what a poor weak Human Creature was daily yet to</l>
@@ -378,7 +388,7 @@
 					<l>the Sisters, which my foregeget [Vorsteherin] told me then I</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg" n="5"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg" n="5" />
 			<p>
 				<lg>
 					<l>merited or deserved, this reprove brought me</l>
@@ -393,15 +403,16 @@
 					<l>&amp; blood which put much to shame &amp; also the</l>
 					<l>gracious promise of the w w, of the day. I will</l>
 					<l>make an End of all thy Morning &amp; days of Joy</l>
-					<l>shall begin.</l></lg></p>
-<p><lg>
+					<l>shall begin.</l>
+				</lg></p>
+			<p><lg>
 					<l>May the following I was direct'd to keep the</l>
 					<l>Child<hi rend="superscript:true;">rns</hi> School in the Country first Mirfield &amp;</l>
 					<l><add place="above">then wyke</add> which did not comprise very long; by this appearently</l>
 					<l>I had many things to learn &amp; got a daily insight </l>
 					<l>of short falling, but was thankful to injoy rest</l>
 					<l>&amp; peace again in My d<hi rend="superscript:true;">r</hi> Choirhouse were Id not</l>
-					<l>been Long before <hi rend="strikethrough:true;">before</hi> I was took with an intemit</l>
+					<l>been Long before <del>before</del> I was took with an intemit</l>
 					<l>ing fever to gather with my Scurbile disorder that</l>
 					<l>came on me Spring &amp; fall, which occasion me</l>
 					<l>13 week Sickness in the Sickroom which was no</l>
@@ -414,7 +425,7 @@
 					<l>burdensome to My dear Choir.</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>the repeated sickness of our Happyly departed Sister caused</l>
@@ -449,7 +460,7 @@
 					<l>other desires then to wait with patience those redeemers will</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg" n="6"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg" n="6" />
 			<p>
 				<lg>
 					<l>&amp; to retain a true &amp; lively sense of all the Grace bestowd</l>

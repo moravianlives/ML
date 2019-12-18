@@ -1,132 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Mercy Carter: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_3_48_CarterMercy">Mercy Carter</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-01.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-03.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Mercy Carter</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mercy Carter: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_48_CarterMercy">Mercy Carter</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-03.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Mercy Carter</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-01.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-01.jpg" n="1" />
 			<p><lg>
-				
 					<l><hi rend="underlined:true;">Occurrences in Wike Cong</hi><hi rend="underlined:true; superscript:true;">n</hi><hi rend="underlined:true;"> for the Month of Jan. 1771</hi></l>
-					
-					
-					<l><del>The 4th</del> <add place="above">Out of Wyk Plan</add> our dear S<hi rend="superscript:true;">r</hi> Mercy Carter went to our Saviour <add place="above">On the 4<hi rend="superscript:true;">th</hi> Jan.</add> Of her</l>
-					<l>Course thro' this World the following is to be observed:</l></lg></p>
-<p><lg>
+					<l><del>The 4th</del>
+						<add place="above">Out of Wyk Plan</add> our dear S<hi rend="superscript:true;">r</hi> Mercy Carter went to our Saviour <add place="above">On the 4<hi rend="superscript:true;"
+								>th</hi> Jan.</add> Of her</l>
+					<l>Course thro' this World the following is to be observed:</l>
+				</lg></p>
+			<p><lg>
 					<l>She was born at Greatland in Hallifax Parish: March 29<hi rend="superscript:true;">th</hi></l>
 					<l>1716, and brught up in the establishd Church. Her Parents depar</l>
 					<l>ting this Life when she was very young, and they being at the same</l>
@@ -146,9 +150,10 @@
 					<l>our dear B<hi rend="superscript:true;">r</hi> Beohler, during which our dear Sav<hi rend="superscript:true;">r</hi> manifested,</l>
 					<l>himself to her, so as he sweated Bloody in the Garden of</l>
 					<l>Gethsemane on her account: This not only gave her love and</l>
-					<l>Peace, but life and love. </l></lg></p>
-<p><lg>
-<l>In 1746 a Society of the B<hi rend="superscript:true;">rn</hi></l>
+					<l>Peace, but life and love. </l>
+				</lg></p>
+			<p><lg>
+					<l>In 1746 a Society of the B<hi rend="superscript:true;">rn</hi></l>
 					<l>was settled at Greetland, to which she belong'd from the Begining.</l>
 					<l>In 1746 she <add place="above">was</add> married to the present Widower. When the B<hi rend="superscript:true;">rn</hi></l>
 					<l>removed from Newhouse, she and her Husband moved with</l>
@@ -159,10 +164,10 @@
 					<l>Marriage has been bless'd with 4 Child<hi rend="superscript:true;">rn</hi>, 1 is already with the</l>
 					<l>Lord, and 1Son and 1 Daughter are in the respective Choir</l>
 					<l>Houses at Fulneck, for which she was inexpressibly thankful</l>
-					<l>to our dear Lord.</l></lg>
-				
+					<l>to our dear Lord.</l>
+				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-02.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-02.jpg" n="2" />
 			<p>
 				<lg>
 					<l>she being an applied of solid Sister, and as such respected by</l>
@@ -180,15 +185,17 @@
 					<l>when in the Evening she related to him of what had occurred,</l>
 					<l>they both rejoiced together that our dear Lord had heard the</l>
 					<l>Sighs of the one and blessed the weak Endeavours of the</l>
-					<l>other.</l></lg></p>
-<p><lg>
+					<l>other.</l>
+				</lg></p>
+			<p><lg>
 					<l>Whenever one of our Sisters was in external need,</l>
 					<l>she used to go about among the heartiest Sisters, and pro</l>
 					<l>pose to make a Collection for the Relief of such a one;</l>
 					<l>in which she always succeeded, and as for her own Part</l>
 					<l>in such a Case, her left hand did not know what her right</l>
-					<l>Hand did.</l></lg></p>
-<p><lg>
+					<l>Hand did.</l>
+				</lg></p>
+			<p><lg>
 					<l>Thro' her very maternal and loving Way, peculiar to</l>
 					<l>herself, she gain'd the affection of such Child<hi rend="superscript:true;">rn</hi> who were not</l>
 					<l>her own, but about her in such a manner, that they would</l>
@@ -201,7 +208,7 @@
 					<l>at Fulneck</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>the heaviest Circumstances, which she experienced during</l>
@@ -238,7 +245,7 @@
 					<l>told her, that she would soon be with her Redeemer, she</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-03.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_48_CarterMercy-03.jpg" n="3" />
 			<p>
 				<lg>
 					<l>answered: that's well, I have nothing to plead but his</l>

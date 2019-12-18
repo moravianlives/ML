@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Hannah Dyson: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_75Dyson">Hannah Dyson</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-05.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Hannah Dyson</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-01.jpg" n="1" />
+			<p>
+				
+					Hanna Dyson
+					<l />
+					I was born at Kerkstill in the parish of Kerkhetten in the Year 1728 My Father was a
+					Clothmaker In my young Years my parents sent me to School Till I was so
+					old that I could do some service at home I was of a very brisk &amp; Lively turn of mind
+					And I perceived often that if God did not preserve me I should run into uter ruing as I felt
+					My basness &amp; inclination there to stir very much in me my Father &amp; Mother was always
+					for there Children going to <del>school</del> Church very Constant &amp; I got a great Liking thereto
+					As I alwas lik'd to here what I could there &amp; when ever I went to Church I uste to pray
+					the Lord to bless me very earnestly &amp; to bestow great blessing on me I uste to be very
+					Much Consernd but did not then understand ye meaning thereof One time being in
+					Very great Distress I went out in the Barn to pray &amp; as I pray'd I wisht to God
+					that he would answer me my prayer and preserve &amp; keep me to the end of my days
+					and make me his faithfull Servent but in a perticular Manner I pray'd that he would
+					Give me his grace at that time, which might endure throought all the Days of
+					My Life One Night I Drempt that we had Company &amp; I going to attend
+					on them on a Low flower I ment to men the One <del>was</del> was Drest in dark Collor
+					and the Other in a Long read Robe <add place="above">he that was in black</add>
+						<del>One</del> ask'd me wether <del>of them I should chose</del>
+					I was agoing I told him about my busyness he then ask'd me wich of them
+					too I shoud chose, I then arnesty Looked on them both but did not directly give
+					it Answer he said wether did I chose Heaven &amp; Hell I said one always chose
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-02.jpg" n="2" />
+			<p>
+				
+					Heaven you know he ask'd me again which of us then do you chuse I answerd
+					him hastily not you, but this and standing nearest him in the Red Robe
+					I got hold on him he then smiled at me &amp; bowed his Head I also moved to
+					him and got hold of the robe and wanted to look what was under it he then
+					smiled again and bow'd his Head &amp; said not yet I then was very much ashamed
+					that I made so free with him, but he held out his hand &amp; Smiled I then Looking
+					down to the Ground lost sight of them both and so I awaked with a deep Soncern
+					On my mind just then about there was a great talk about some prechers
+					that sung hymns &amp; pray'd &amp; precht in Barns and particularly Mis<hi rend="superscript:true;">r</hi> Ingam who was
+					just then come out of Jorde they called him a new found pretcher and so my Sis<hi rend="superscript:true;">r</hi>
+					And me whent one Night to here <add place="above">him</add> But he mist that Night coming where he
+					should have precht &amp; so we must here him On my rode I went with some Body
+					who lent me a little hymn Book I Learnt some verses there by which I uste
+					frequently to sing soon after this my Mother fell sick &amp; whent in to a Consomtion
+					And dyd I then thought I had Lost one of my best friends I could have but being
+					then left with my Father &amp; Grandmother she was very good to me &amp; kept me
+					very close to my Book especialy asundays so that I might get amoungst
+					no saught of lose Company, soon after my Mother Departer my Father also
+					who was really a good &amp; tender father over his Children
+					Dyd I then whent to service being in my 13<hi rend="superscript:true;">th</hi> Year I then begun to get more into
+					things belong to the would which sated my inclination but as I had been brought up in another
+					way I was not always satisfied there with becaus I did not <add place="above">know</add> there ways rightly <del>My</del>
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-03.jpg" n="3" />
+			<p>
+				
+					At one place where I was I fell sick &amp; got the ague where I was obliged to live
+					My place I had about a duzen or 14 Mile to go back to my native place
+					And over Larg Commons to some where my master brought me alone back to the
+					Last Common to so biding Farewell to him I sat me down &amp; began to weep heartily
+					Being exceeding Burdend with my Cloths &amp; so weak that I scarsely say any means of
+					getting to my Unkle where I was agowing &amp; have no right home to go to made
+					it very heard to me But I prayd to God that he would help &amp; direct me how
+					to go on I wept in a perticular manner thinking that with not praying sickness
+					had come upon me Now I was not Long destant for ahome as my Ant
+					in a few Days sent for me &amp; said I should stay as Long as my sickness
+					Lasted which was a great while but she behaved as a tender mother over me
+					I then being quit recoverd <del>I</del> went to Harchet to see my Sis<hi rend="superscript:true;">r</hi> And soon after
+					then I wen to here Mis<hi rend="superscript:true;">r</hi> Ingam at Fox rode at Mirfeild he preached on 63<hi rend="superscript:true;">d</hi> Chap<hi rend="superscript:true;"
+							>r</hi>
+					O Ezah who is this that cometh from edom with dyd Garmants for Bozrah this that
+					is Glorous in his aperel Traveling in the Greatness of his strength
+					I was very much tuched at <add place="above">this</add> and though I never heard such preaching in my Life
+					Soon after I begin to here the Bretheren &amp; I was exceeding miserable thinking that all
+					Preching &amp; praying prevailed nothing on me but that I should be Lost &amp; mend
+					forever One Night I was exceedngly overcome with terror &amp; fright thinking
+					that I should go to hell &amp; so should never be saved But in a little while I begun to grow
+					eager &amp; so being by my self at my busyness all at once I was exceeding seazed upon for
+					Our dear Sav<hi rend="superscript:true;">r</hi> at that time manifested him self before my Heart and I say as
+					Clearly as if I had seen him Crucifyed before my eyes that Left such an imprestion
+					upon me that I was obliged to set down and I was quiet surprised what was
+					come to me <del>but</del>
+						<add place="above">and</add> as miserable as I was before so happy was that after for <del>I believed</del>
+					was, so that they perceived my chearfullness was well so my pease was
+					I <del>had</del> was often spoken with &amp; told that both going to hear ther prechers I was
+					growne quite molencolly and <del>again</del> after a little while I begun to grow miserable
+					again, but I gladly would have overcome it with like mindedness and things belonging
+					to this world thinking there by to have Satisfaction &amp; strove against it as much
+					as lade in my power. one Sunday as I whent to Church (and always going to ran ahead)
+					I though I would miss &amp; so going home I got to my Companons as soon as possible
+					and while we where to gether the Master of the house cameing &amp; we whent but but he
+					said as long as we was so altogether (and me amongst them) there would never be no
+					good done which struck me so when I heard him that I left my Companions
+					I made a resolution to mis the pritching no more and so but of &amp; when <del>but to</del> rawhead
+					but the preaching was half over then after a little while I begun to think that I
+					could like to belong to the society accordingly I whent to Bro<hi rend="superscript:true;">r</hi> &amp; Sis<hi rend="superscript:true;">r</hi> Ockerhousen
+					and told them my mind &amp; Intention they askued me if I had quite Lost my
+					inclination for the things of this world &amp; how a soul should be that was a
+					County member how was they gave me Leave to go to the county she next
+					time so as soon as my Sis<hi rend="superscript:true;">r</hi> perceived that I would belong to the Bretheren
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-04.jpg" n="4" />
+			<p>
+				
+					She begun to think that I was better then her which caused a great dissagrement
+					betwen us Brother &amp; Sis<hi rend="superscript:true;">r</hi> Ockerhousen got ordered me to go to Kane Wartons
+					where I sayed near too year &amp; from thence I removed to Cleckheaton to Live
+					with Sarah rite &amp; her Mother being engaged some where else &amp; <del>there I stayed</del>
+					from thence I removed in the Oeconomy when it begun at Clekheaton
+					the same year the 22<hi rend="superscript:true;">d</hi> of May <del>the same Y</del> I was received into the Congregation
+					soon after I began to think very much about the Lordsupper &amp; the Year
+					following I became a Candidate in May when Broth Johanas &amp; Benigna
+					was here &amp; on the 10<hi rend="superscript:true;">th</hi> of July I had the Grace to be a pertaker for the first time
+					Which in deed was every particular Grace &amp; Bless for my poor heart &amp; found
+					it was a real food for my soul here I found my dear Saviour Begun a
+					new school with me the Next Year after I removed from Cleckheaton
+					to the home Oeconomy where I stayed about a Year &amp; then I removed
+					to the Low house to that Oeconomy &amp; from thence to the Toop of the Hill
+					Hear it was quite a new beganing to me &amp; found it often very
+					needfull to beg our Sav<hi rend="superscript:true;">r</hi> for Grace to help me thro' with soon after I removed
+					To the hall to weight on the Bretheren &amp; Sister where I served about 2 Years
+					??? true I look on this as a great favour I found it was great
+					Blessing to me to be amongst the Brethren &amp; Sis<hi rend="superscript:true;">rs</hi> &amp; to serve
+					them next I removed in to the Choir House but here I found it difficulter
+					then ever I often pray'd to my Sav<hi rend="superscript:true;">r</hi> to help me thro' with every thing
+					after awhile I midst the Lords supper on the account of which I did find
+					it still hard to be a sinner But I pray'd Our Sav<hi rend="superscript:true;">r</hi> that he would for give
+					Me and take me again as his poor Sinner which he really did in
+					Our dear Sav<hi rend="superscript:true;">r</hi> gave me Leave to enjoy that highest good the next time
+					The tim after I mist again but I had leave to go the time following
+					Now soon after this <add place="above">the</add> a place Congregation was settled which was put very
+					Close to us and was told us what would be required of every
+					Broth &amp; Sis<hi rend="superscript:true;">r</hi>
+						<add place="above">belonging in</add>
+						<del>must do</del> a place Congregation this was a perticular matter to me
+					and especialy as times was very Critical with me I could not just resolve what
+					to do firs we had it told by Bro<hi rend="superscript:true;">r</hi> Johanas in the Great Hall when
+					was realy a Strikeing matter to me after wards in our owne meeting
+					Hall at firs it put me a little to it but soon I saw there was no way but
+					to give my self intirely to our Saviour to be his &amp; what he pleas'd to do
+					with me &amp; that day I never forgot <del>it</del> soon after this I mist the Lordssupper
+					again then I begun to reason very much &amp; wounderd what was the matter
+					that things whent so heard I when by myself into the Burying Ground 
+					and prayd our Saviour that he would make it Clear to me if it was my
+					right place to be here or no for I realy was quite far &amp; I did not
+					know what to think &amp; if he had some other view with me he would
+					make me satisfyd that have ever I might have some Satisfaction. 
+					my Life some times I prayed our Sav<hi rend="superscript:true;">r</hi> that if he had some other
+					view with me that he would bless my heart &amp; give me a Grace which
+					I felt he very often did
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_75Dyson-05.jpg" n="5" />
+			<p>
+				Now I begun to think wether I had done right or not with asking our Sav
+				so far but soon after I became quite Satisfyed &amp; I was clear in my Heart
+				our Sav<hi rend="superscript:true;">r</hi> was Satisfyed tho' things whent on but poorly soon after it was
+				told me Conserning going to the Sis<hi rend="superscript:true;">rs</hi> hous at Beedforde I had not the
+				Least objections to make on this account but I found it so in my
+				Heart that if our Sav<hi rend="superscript:true;">r</hi> &amp; his Cong<hi rend="superscript:true;">n</hi> ordered it so with me I was
+				quite Satisfyd tho' I cant say but it caused me a deal of pain
+				to leave this dear place Cong<hi rend="superscript:true;">n</hi> where I had so sensible felt my
+				dear Sav<hi rend="superscript:true;">rs</hi> nearness. We set out on ye 18<hi rend="superscript:true;">th</hi> of June in the year 60 with
+				the Blessing of the Cong<hi rend="superscript:true;">n</hi> &amp; on the 24<hi rend="superscript:true;">th</hi> we arrived in Bedford in the
+				Sisrs House here Our Savr begun <del>quite a new school with our Sav<hi rend="superscript:true;">r</hi></del>
+					<add place="above">began quite a new school with me</add> &amp; I felt
+				I stood in need of his nearness in a prticular manner &amp; I often keep band
+				with my dear Sav<hi rend="superscript:true;">r</hi> to Comfort me for I felt the want of this dear place
+				Congregation so much that sometimes I could not be satisfy'd but after
+				awhile I begun to be better Satisfyed for I believed it was the place for me
+				[Illegible]<lb/>
+				[Illegible]<lb/>
+				[Illegible]<lb/>
+				[Illegible]<lb/>
+				[Illegible]<lb/>
+				After awhile here [Illegible]<lb/>
+				[Illegible]<lb/>
+				Then I begun to think that if I could live the Bretheren I should have
+				nothing against if But as our dear Sav<hi rend="superscript:true;">r</hi> who always steeped before my
+				Heart Comforted me at that time also not long after it was told me
+				I should come again to fullneck which I received with a glad heart
+				and when I got to my dear Choir hous again I beged our Sav<hi rend="superscript:true;">r</hi> to
+				grant me bouth the Old &amp; new feeling which I can truly say he has now
+				But I haveing a very sickly Tabernickel since the time of my comeing
+				it has often caused me perplexity on account of my Comeing thro'
+				???? at my turn the General Synod being &amp; here what our Sav<hi rend="superscript:true;">r</hi> had to say
+				to the Cong<hi rend="superscript:true;">n</hi> it affected me very much I thought I must take a great
+				part there in I often uste to go out &amp; beg our Sav<hi rend="superscript:true;">r</hi> to make a new begin with me
+				And he did frequently steep before my Heart &amp; Comfort me. In Ocktob<hi rend="superscript:true;">r</hi>
+				I feel sick so that I thought <del>that</del> our Sav<hi rend="superscript:true;">r</hi> would take me to himself but how
+				ever it did not happen at that time Our Savr has had a perticular schooling with
+				<del>Savr</del> me which in the end has proved perticularly blesst to me this year has been
+				a very sickly one with me so that I often felt my self very weakly which has
+				made me think often Our Sav<hi rend="superscript:true;">r</hi> perhaps intended to take me to himself &amp; I do
+				Injoy his nearness in a perticular manner
+			</p>
+		</body>
+	</text>
+</TEI>

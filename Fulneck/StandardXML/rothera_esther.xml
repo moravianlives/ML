@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Esther Rothera: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_45_RotheraEsther">Esther Rothera</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-10.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Esther Rothera</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-01.jpg" n="1" />
+			<p>
+				<lg>
+					<l>Departed June 2<hi rend="superscript:true;">d</hi> 1761</l>
+					<l>Personalia of our dear Sister Esther Rothera in</l>
+					<l>Hallifax.</l>
+				</lg></p>
+			<p><lg>
+					<l>Our happily deceased Sister, was Daughter to M<hi rend="superscript:true;">r</hi> James</l>
+					<l>Farrer in Soyland, in the Parish of Hallifax where she</l>
+					<l>was born Febr 2<hi rend="superscript:true;">d</hi> 1706 O.S. and brought up in the</l>
+					<l>principles of the Church of England in a carefull and</l>
+					<l>religious manner.</l>
+				</lg></p>
+			<p><lg>
+					<l>The following <add place="above">is her own</add> account (of her was noted down by her</l>
+					<l>B<hi rend="superscript:true;">r</hi> Joshua Metcalf from her own mouth:)</l>
+				</lg></p>
+			<p><lg>
+					<l>"When I was 8 Years old, I can remember, that I was</l>
+					<l>weary about the Salvation of my Soul. I felt the</l>
+					<l>drawings of my Saviour in my heart (and thought</l>
+					<l>the Lord meant to shew me something more than</l>
+					<l>the rest of my B<hi rend="superscript:true;">rn</hi> &amp; S<hi rend="superscript:true;">rs</hi> or even any of my kindred).</l>
+					<l>About the Age of 13<hi rend="superscript:true;">th</hi> I was made more sensible of</l>
+					<l>the Corruption of my nature and convinced that I</l>
+					<l>was not right, but how to find Rest for my heart</l>
+					<l>I knew not. My guilty conscience made me evry</l>
+					<l>where afraid. I often thought the grand Enemy of</l>
+					<l>Souls was in the room with me, and was so frighted</l>
+					<l>that I would not sleep alone in a room so that</l>
+					<l>they were obliged to take me into that of my Father</l>
+					<l>and Mother. My Father departed this LIfe soon</l>
+					<l>after, and When I was 15 Years old I was turnd</l>
+					<l>into the World to earn my own Bread. My Mo</l>
+					<l>ther would not let me live in a publik Town,</l>
+					<l>she had a concern for my Soul, and thought it</l>
+					<l>was too dangerous for young people. I went</l>
+					<l>therefore to live with a Widow Woman in the Country</l>
+					<l>and stayd with her near 2 Years. One of my</l>
+					<l>Sisters sent afterwards for me and desired me</l>
+					<l>to come and live with her, which I did. Ha-</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-02.jpg" n="2" />
+			<p>
+				<lg>
+					<l>Having been with her some Years I returned and soon</l>
+					<l>after went to live at Hallifax. <del>Being now</del>
+						<add place="above">When I was</add> 25</l>
+					<l>Years old I got a fresh Call from my dear Lord, I</l>
+					<l>saw my sad wretched and dismal State, which I</l>
+					<l>was in by nature, with more conviction and distress.</l>
+					<l>I had no rest in my Soul by reason of my Sins. They</l>
+					<l>increased and the depravity of nature grew</l>
+					<l>stronger &amp; stronger. I made one promise after the</l>
+					<l>other, took one resolution after the other to leave off doing</l>
+					<l>Evil and to mend my manner of Life, but all to no</l>
+					<l>purpose. My good will came to nought. Alas! I had no</l>
+					<l>power in myself, Nature ruled, Sin was my Master,</l>
+					<l>and I was a perfect Slave.</l>
+				</lg></p>
+			<p><lg>
+					<l>In my 27<hi rend="superscript:true;">th</hi> Year I changed my condition &amp; was married</l>
+					<l>to my husband Crispin Rothera. I hoped thereby to be</l>
+					<l>delivered out of dangers, and <del>that</del> to become more religious</l>
+					<l>But this availed nothing neither, I was conscious that I</l>
+					<l>was not in a State of heart that could please God. My</l>
+					<l>poor Soul had no rest. I often knew not what to do for</l>
+					<l>trouble of mind and Anxiety of heart. Certainly, thought</l>
+					<l>I, there is no rest and Comfort to be found in any state</l>
+					<l>whatsoever, that I can see into, as yet. O thought I,</l>
+					<l>what a dismal condemned Situation am I in, having</l>
+					<l>no rest in my heart by day <del>n</del>or night. I went con-</l>
+					<l>stantly to Church, and Prayers, read religious books &amp;</l>
+					<l>did all I could, but remained the same, as I was.</l>
+					<l>At Length I got to hear, that a new Preacher, One</l>
+					<l>M<hi rend="superscript:true;">r</hi> Ingham, was to come to Hallifax &amp; <del>to</del> preach in</l>
+					<l>the Church. Him I went to hear, his preaching confir</l>
+					<l>med me in my thoughts, that I was in a lost and un</l>
+					<l>done Condition, which he set forth as I found it in</l>
+					<l>my own heart. I went home full of uneasiness of mind </l>
+					<l>and condemned in heart, retired into a place by myself </l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-03.jpg" n="3" />
+			<p>
+				<lg>
+					<l>fell down upon my knees in order to pray, but</l>
+					<l>could do nothing but Sigh. My heart was quite broken,</l>
+					<l>and I wept abundance of tears. How I felt then I</l>
+					<l>cannot express in Words. I got some comfort and</l>
+					<l>hoped it would go better. But I found however no</l>
+					<l>abiding rest and Satisfaction for my heart.</l>
+					<l>A little time after I got to hear that some Germans or as</l>
+					<l>others called them Moravian Brethren came to preach in</l>
+					<l>Hallifax. They brought us the sweet &amp; comfortable Tidings</l>
+					<l>of the Salvation of Sinners thro' the Sufferings &amp; Death</l>
+					<l>of Jesus, inviting the poor and miserable to come just</l>
+					<l>as they were to their wounded Sav<hi rend="superscript:true;">r</hi> and seek for</l>
+					<l>Grace at his feet, <add place="above">declaring that</add> he had redeemed us and would freely</l>
+					<l>save us from Sin, &amp; give rest to our Souls.</l>
+					<l>Their Words came with power to my heart, I rejoiced</l>
+					<l>at this good News, and got hopes that he would have</l>
+					<l>Mercy on me poor miserable Sinner. I frequented</l>
+					<l>their Meetings as often as my poor State of health</l>
+					<l>would permit. When I went the very first time</l>
+					<l>to Smithhouse to a Meeting there (and came on the</l>
+					<l>Bank Top,) I was thrown <add place="above">from</add>
+						<del>by</del> the horse. I thought</l>
+					<l>within myself, this is the Enemys Doing, to keep me</l>
+					<l>back and to hinder me from going. I went however</l>
+					<l>forward, (and desired those that were with me, not</l>
+					<l>to tell my husband or others of it, lest he should</l>
+					<l>hinder me to go again.) I was a quarter of a Year</l>
+					<l>sick afterwards. The more I heard the B<hi rend="superscript:true;">rn</hi> the more</l>
+					<l>I saw the deep Corruption of my heart, being of a</l>
+					<l>proud, passionate temper, and inclined to be selfrigh</l>
+					<l>tious. I resolved to be our Saviours with Soul &amp;</l>
+					<l>body, and parted with whatsoever I thought would</l>
+					<l>prove a hindrance to my happiness, and step in</l>
+					<l>betwixt me and our Sav<hi rend="superscript:true;">r</hi>. I used to spin worsted</l>
+					<l>and had saved the bits of Ends now &amp; then to</l>
+					<l>make in time a pair of Stockings out of them</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-04.jpg" n="4" />
+			<p>
+				<lg>
+					<l>This I looked upon as an Injustice by w<hi rend="superscript:true;">ch</hi> I had wronged</l>
+					<l>the Master. It caused me much Uneasiness. I could not</l>
+					<l>be satisfied, till I had confessed it to the Owner and made</l>
+					<l>Satisfaction. He looked upon it as an instance of great</l>
+					<l>honesty and had ever after a great respect for me.</l>
+					<l>I thought, whosoever will be reconciled unto God, must also re</l>
+					<l>ctify all unjust things between Man &amp; Man.</l>
+				</lg></p>
+			<p><lg>
+					<l>B<hi rend="superscript:true;">r</hi> Ockerhousen came afterwards to keep Meetings at</l>
+					<l>Hallifax, which I attended with blessing for my heart, beg</l>
+					<l>ged to be under the B<hi rend="superscript:true;">rn</hi> Care and in their Society, w<hi rend="superscript:true;">ch</hi></l>
+					<l>also was granted to my great Joy and was thankfull for it.</l>
+					<l>I continued also to go to Church but seldom heard what my</l>
+					<l>Soul longed for; and often sighed: <hi rend="underlined:true;">Thou o dear Jesu! Shalt be</hi></l>
+					<l><hi rend="underlined:true;">my all, my Sacrifice and Priest. Thou art too strong for all</hi></l>
+					<l><hi rend="underlined:true;">my bitterest Foes. None can thy Blood successfully oppose."</hi></l>
+				</lg></p>
+			<p><lg>
+					<l>Upon her earnest request she was received into the Congregation</l>
+					<l>and got her right and Title amidst the Flock &amp; house of God </l>
+					<l>and she</l>
+					<l>was admitted to the holy Sacrament</l>
+				</lg></p>
+			<p><lg>
+					<l>her Spirit was lively, but her tabernacle subject to many In</l>
+					<l>firmities. An Asthmatic disorder hindered her these many</l>
+					<l>Years from going much abroad. But as long as she could</l>
+					<l>creep, she seldom missed any Meetings. To read the holy</l>
+					<l>Scripture was her private comfort, and she had got very</l>
+					<l>much aquainted with it, and thought much abt under</l>
+					<l>standing the same and feeling in her own heart what</l>
+					<l>she read. These latter 12 months past her Infirmity grew</l>
+					<l>stronger and her short breath <del>has</del> prevented her from go</l>
+					<l>ing as far even as to the Stanary. But during the Meeting</l>
+					<l>she usually had her private Devotion to the head so</l>
+					<l>full of bruises (and was very glad when any of her friends</l>
+					<l>would tell her the Subject of hte Discourse.) She loved</l>
+					<l>the Congr<hi rend="superscript:true;">n</hi> with all her heart, (All the scandalous reports</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-05.jpg" n="5" />
+			<p>
+				<lg>
+					<l>defamatory Libels or reasoning ag<hi rend="superscript:true;">st</hi> the B<hi rend="superscript:true;">rn</hi> did not shake</l>
+					<l>her. She believed solidly the B<hi rend="superscript:true;">rn</hi> Church to be our Sav<hi rend="superscript:true;">rs</hi></l>
+					<l>peculiar people and rejoiced that she had the Grace</l>
+					<l>to be a member of the same. She often said to those</l>
+					<l>that reasoned ag<hi rend="superscript:true;">st</hi> them or bro<hi rend="superscript:true;">t</hi> all sorts of Tales to her:</l>
+					<l>"The B<hi rend="superscript:true;">rn</hi> will stand and all those that are against them will</l>
+					<l>be confounded and found Lyars, for the Lord is with them</l>
+					<l>She and her husband had some years ago got Leave to</l>
+					<l>come and live among the B<hi rend="superscript:true;">rn</hi> at Lambshill, But her</l>
+					<l>husband from a Scrupulosity ab<hi rend="superscript:true;">t</hi> his coming thro &amp;</l>
+					<l>getting his Livelyhood, declined it. She was often</l>
+					<l>grieved abt it and said: "Tho she loved her husband very</l>
+					<l>much, yet that thing she could hardly forgive him.)</l>
+					<l>Their house was open for the Brn at all times, and she</l>
+					<l><del>their</del> thought it a great Blessing if they would put</l>
+					<l>up with the Entertainment and reception she could</l>
+					<l>give them. She was these many months in great</l>
+					<l>pain all over, but could forget it easily when she</l>
+					<l>had an opporutnity of conversing with any one abt </l>
+					<l>our d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">r</hi> and his Wounds. Many of her Neighbours</l>
+					<l>and acquaintances came sometimes to talk with her.</l>
+					<l>They had a peculiar confidence to her and told her</l>
+					<l>freely their troubles (whether outward or inward) She</l>
+					<l>used to comfort them with the meritorious troubles</l>
+					<l>and Sufferings of our blessed Sav<hi rend="superscript:true;">r</hi> for us (When</l>
+					<l>she met with any that had fallen out, or had an</l>
+					<l>Enmity ag<hi rend="superscript:true;">st</hi> each other, She would tell <del>every</del>
+						<add place="above">each</add> one</l>
+					<l>that it came from their bad heart, which <del>they</del></l>
+					<l>at such opportunites shewd itself, that they might</l>
+					<l>know it, and seek to our Sav<hi rend="superscript:true;">r</hi> to be cured) She was</l>
+					<l>one of them that endeavoured to make Peace between</l>
+					<l>persons and her Counsel was often blessed &amp;</l>
+					<l>successful. (A few days before her Dissolution she</l>
+					<l>desired that some persons might be called to her, be</l>
+					<l>cause she knnew that they thro Reasoning had</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-06.jpg" n="6" />
+			<p>
+				<lg>
+					<l>brought themselves into Darkness and were suffering harm,</l>
+					<l>Those abt her said: It would be of no Effect, she would do no</l>
+					<l>good to them, she should let it alone, because she was so weak</l>
+					<l>and would only make herself uneasy, She answ: Pray,</l>
+					<l>let me do it, one does not know, what the last words of a dying</l>
+					<l>person may effect upon them. Her S<hi rend="superscript:true;">r</hi> Alice Metcalf was</l>
+					<l>these several months mostly ab<hi rend="superscript:true;">t</hi> her in the day time, and can</l>
+					<l>not express, what a Blessing she has been to her in the troubles</l>
+					<l>of mind in which She was of late.</l>
+				</lg></p>
+			<p><lg>
+					<l>One has those many years expected that she would not hold</l>
+					<l>long, but her peculiar Chearfullness, patience &amp; Sinnerlikeness</l>
+					<l>made them all think, that our Savr would take her home</l>
+					<l>unto himself, and that she would not recover this time)</l>
+					<l>Last good fryday after the publick Meeting, she</l>
+					<l>had her Share in the holy Sacramt brought unto her by B<hi rend="superscript:true;">r</hi></l>
+					<l>Pyrlaus; she received it with great Bowedness &amp; Eagerness &amp;</l>
+					<l>the Transaction was attended with an awfull and sensible</l>
+					<l>feeling of the nearness of our tormented husband, and </l>
+					<l>this proved to be the last time. (When B<hi rend="superscript:true;">r</hi> &amp; S<hi rend="superscript:true;">r</hi> Pyrlaus was</l>
+					<l>to visit her June 2<hi rend="superscript:true;">d</hi> and spoke the Communicants, the latter</l>
+					<l>spoke also with our d<hi rend="superscript:true;">r</hi> S<hi rend="superscript:true;">r</hi>: &amp; asked her, whether she thought</l>
+					<l>she would continue<del>d</del> till she had got the Corpse &amp; blood of her</l>
+					<l>d<hi rend="superscript:true;">r</hi> Spouse in the Sacram<hi rend="superscript:true;">t</hi> She answ<hi rend="superscript:true;">d</hi> no, I shall no more be</l>
+					<l>here, but no matter, I shall keep it with him above, &amp; so</l>
+					<l>it proved, for she went home the same <del>night</del> &amp; day</l>
+					<l>before midnight.)</l>
+				</lg></p>
+			<p><lg>
+					<l>Some months ago, when she thought that this her present Illness</l>
+					<l>would be her last, she expressed constantly her Concern about </l>
+					<l>her husband. O said she, nothing troubles my mind, but when</l>
+					<l>I relfect upon my husband I am anxious. I know him</l>
+					<l>best, I am in pain for him. She often with Tears begd</l>
+					<l>him to cleave close to our d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">r</hi> with his whole heart and</l>
+					<l>to take the B<hi rend="superscript:true;">rns</hi> advise and never to leave them. <del>Br Pyr</del></l>
+					<l>(She was advised to resign him up to our Sav<hi rend="superscript:true;">r</hi>, and to</l>
+					<l>not to make herself uneasy. Our Sav<hi rend="superscript:true;">r</hi> &amp; the Congr<hi rend="superscript:true;">n</hi> would</l>
+					<l>certainly <del>for</del> do all what they could to help &amp; ad</l>
+					<l>vise him, in case he sh<hi rend="superscript:true;">d</hi> be left alone). Towards</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-07.jpg" n="7" />
+			<p>
+				<lg>
+					<l>the last she dropt this her concern, resigning him up into</l>
+					<l>our Sav<hi rend="superscript:true;">rs</hi> hands &amp; the faithfull Care of ye B<hi rend="superscript:true;">rn</hi>. He</l>
+					<l>told us, that the close Connexion she had with our Sav<hi rend="superscript:true;">r</hi></l>
+					<l>in the day time, continued also in the night, he often</l>
+					<l>was waked by hearing her sing in Sleep, she sometimes</l>
+					<l><del>would</del> spoke tenderly with our Sav<hi rend="superscript:true;">r</hi> and often had re</l>
+					<l>freshing Dreams of him. (Four days before her dissoluti</l>
+					<l>on she dreamed: That a man came to her Bedside</l>
+					<l>and took her Drinking Pot, drunk all up, that <del>she</del></l>
+					<l><del>had</del> was put there for her refreshment. She thinking it </l>
+					<l>was her husband, reasoned within herself &amp; thought It is</l>
+					<l>however quite wrong in him, to <add place="above">sip of</add>
+						<del>take</del> my Drink, all ye</l>
+					<l>little refreshm<hi rend="superscript:true;">t</hi> I can take, <del>and to</del> But at Looking at </l>
+					<l>him It struck into her mind That it was the Saviour. O</l>
+					<l>thought she: It is my dearest Sav<hi rend="superscript:true;">r</hi> he is wellcome to it,</l>
+					<l>he shall have me and all what I have. She catchd hold</l>
+					<l>of him at the same time &amp; cried: Dont leave, dont</l>
+					<l>Leave me, take me with Thee. He thereupon took her by</l>
+					<l>one arm, threw her over his Shoulders. She clasp her</l>
+					<l>arm round his neck &amp; Thought Well! new he has me</l>
+					<l>I will hold him fast. And while he carried her away,</l>
+					<l>She lookd back on her Bed to see, whether her body</l>
+					<l>was gone too but she saw it behind, and thought Its</l>
+					<l>no matter, I shall get it once ag<hi rend="superscript:true;">n</hi>. When she awoke</l>
+					<l>they saw she was extraordinary chearfull &amp; happy and</l>
+					<l>the meditation on this dream made herforget the Pain</l>
+					<l>and strengthned he wonderfully. and several other</l>
+					<l>pretty dreams she had, at times, that are to long to insert</l>
+					<l>here).</l>
+				</lg></p>
+			<p><lg>
+					<l>All her neighbours, relations &amp; acquaintance came to see her</l>
+					<l>in her Sickness, and were suprized at her Chearfullness and</l>
+					<l>Confidence in our Sav<hi rend="superscript:true;">r</hi> &amp; went away much affected, testi</l>
+					<l>fying that she certainly was a happy woman. Her</l>
+					<l>Land Lord having been to See her, said: She is a Sheep,</l>
+					<l>if there is any. An other: If then is One in heaven</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-08.jpg" n="8" />
+			<p>
+				<lg>
+					<l>is One. Some wept bitterly saying: O that my departure</l>
+					<l>might be like unto hers</l>
+				</lg></p>
+			<p><lg>
+					<l>May the 26 when B<hi rend="superscript:true;">r</hi> Pyrlaus visited her, <del>she</del> her Tongue be</l>
+					<l>gun to faulter, however she assured him, that she felt our</l>
+					<l>Sav<hi rend="superscript:true;">rs</hi> Nearness sweet &amp; precious in all her pain, &amp; that she was</l>
+					<l>as a poor needy Sinner reconciled &amp; her heart wished for his</l>
+					<l>last Visit. O I long to be soon with him &amp; to see (my Be</l>
+					<l>loved Man) the Sav<hi rend="superscript:true;">r</hi> of my Soul, &amp; to kiss his Wounds for my</l>
+					<l>Election. Pray give him a good word that he may take me</l>
+					<l>soon. Among many sweet Verses her minnd fed upon, she</l>
+					<l>was a this time peculiarly charmed with this:</l>
+				</lg></p>
+			<p><lg type="stanza" n="1">
+					<l>I've yet One Suit, what is it?</l>
+					<l>dost thou the houses visit</l>
+					<l>then make a Stop at mine</l>
+					<l>and do not pass it over</l>
+					<l>approve thyself our Lover</l>
+					<l>and leave evn here thy Peaces Shine</l>
+				</lg></p>
+			<p><lg>
+					<l>Three days after, fryday the 29. She had a great desire once</l>
+					<l>more to see <del>her Labourer</del> B<hi rend="superscript:true;">r</hi> Pyrlaus (for she thought she sh<hi rend="superscript:true;">d</hi> not</l>
+					<l>continue till Tuesday. <add place="above">&amp; desired</add> B<hi rend="superscript:true;">r</hi> Metcalf <add place="above">to go to Wike to</add>
+						<del>came accordingly take at 7 o</del></l>
+					<l><del>Clock in ye Evning</del> to call him) He went that Evning &amp; had his</l>
+					<l>last Conversation with her. She said: D<hi rend="superscript:true;">r</hi> B<hi rend="superscript:true;">r</hi> (I have allways lo</l>
+					<l>ved you and respected You as a Serv<hi rend="superscript:true;">t</hi> of our Sav<hi rend="superscript:true;">r</hi> and had a great</l>
+					<l>desire to see You once more, you have been allways blessed to my</l>
+					<l>heart.) I am quite ready to go, there in nothing, nothing at all that</l>
+					<l>makes my heart heavy, nothg in betweeen me &amp; my d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">r</hi> he is</l>
+					<l>mine &amp; I am his. I go as his poor Sinner to him, I have nothg</l>
+					<l>to bring But his Blood and Righteousness, w<hi rend="superscript:true;">ch</hi> he has given to me</l>
+					<l>I am in peace with all Men, I love all my B<hi rend="superscript:true;">rn</hi> &amp; S<hi rend="superscript:true;">rs</hi>: neighbours, Re</l>
+					<l>lations &amp; friends (my outward matters are also in order, I have</l>
+					<l>given Charge, how I will have it at my Funeral, I wit have nei</l>
+					<l>ther my husband nor any body else to mourn for me I shall be hap</l>
+					<l>py and there in no Cause for Mourning. I will lie with my B<hi rend="superscript:true;">rn</hi></l>
+					<l>&amp; S<hi rend="superscript:true;">rs</hi> in Lambshill &amp; I have <del>that</del> the promise for it.) My husband I </l>
+					<l>have resigned up to our Sav<hi rend="superscript:true;">r</hi> &amp; to ye B<hi rend="superscript:true;">rns</hi> (To my Sickworker Hanah</l>
+					<l>I owe much Thankfullness:) Now I pray You Salute the d<hi rend="superscript:true;">r</hi> B<hi rend="superscript:true;">rs</hi></l>
+					<l>&amp; S<hi rend="superscript:true;">rs</hi> in Lambshill for me tenderly, I have loved them, tho' <del>but</del> could</l>
+					<l>not see them often. I shall see then with our Sav<hi rend="superscript:true;">r</hi> &amp;c Thereupon we</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-09.jpg" n="9" />
+			<p>
+				<lg>
+					<l>met at her Bed, as many as could conveniently be called</l>
+					<l>and kept a Singing hour with suitable Verses, fell upon</l>
+					<l>our knees and <del>pr</del> thankd our Savr for the Grace he had</l>
+					<l>bestowd on her, recommended her to his <del>thro</del> pierced </l>
+					<l>heart &amp; begd that he might grant her her longing Desire</l>
+					<l>to be soon at home with him and rest in his d<hi rend="superscript:true;">r</hi> Wounds</l>
+					<l>A very Sweet Feeling of our Sav<hi rend="superscript:true;">rs</hi> presence was attending this</l>
+					<l>last Liturgy, (of which every one is a witness that was pre</l>
+					<l>sent.) From that time her Dissolution hasted on and</l>
+					<l>June 2<hi rend="superscript:true;">d</hi> (4 days after when I and my wife came to see her</l>
+					<l>she was not able to speak much, but lay still, not much</l>
+					<l>mindull of any body, not inclined to converse, S<hi rend="superscript:true;">r</hi> Pyrlaus</l>
+					<l>stayd with her some hours &amp; put her in mind of the ap</l>
+					<l>proaching Sacramt had her last Conversation with her.</l>
+					<l>S<hi rend="superscript:true;">r</hi> Hendrinte also calld &amp; saw her and that same Evning)</l>
+					<l>before Midnight her d<hi rend="superscript:true;">r</hi> beloved Bridegroom gave her</l>
+					<l>the last unction &amp; Kissd her Soul home to himself while</l>
+					<l>several of her Relations sung her some Verses. The</l>
+					<l>Text on that Day was:</l>
+				</lg></p>
+			<p><lg type="stanza" n="1">
+					<l>On that day you will ask me Nothing</l>
+					<l>Tears from the Eyes will flow</l>
+					<l>the Senses will be closed</l>
+					<l>and think Lamb, Thou but Thou!</l>
+				</lg></p>
+			<p><lg>
+					<l>her Corpse had a smiling &amp; agreeable Aspect &amp; bespoke</l>
+					<l>the peace in w<hi rend="superscript:true;">ch</hi> she went.</l>
+				</lg></p>
+			<p><lg>
+					<l>(The 5<hi rend="superscript:true;">th</hi> of June was the Day appointed for her Funeral, She</l>
+					<l>was carried by 8 of our B<hi rend="superscript:true;">rn</hi> from her Dwelling house, after</l>
+					<l>the Verse. The Sav<hi rend="superscript:true;">rs</hi> Blood &amp; Righteousness-- her finry was</l>
+					<l>her Wedding Dress-- to ye Stanary thro the midle of the</l>
+					<l>Town all the Spectators behaved with Respect &amp; looked</l>
+					<l>at with Awe. A great many followd us to the Mee</l>
+					<l>ting place attended in great Stillness the Discourse B<hi rend="superscript:true;">r</hi></l>
+					<l>Pyrlaus kept to them from 2 Cor 5, 8. We are confi</l>
+					<l>dent &amp; willing rather to be absent from ye Body &amp; to be</l>
+					<l>present with the Lord and after the Meetg she was</l>
+					<l>put into the House Litter, which had come from Lambhill</l>
+					<l>for that End, and brot up the New Read to Lambshill</l>
+					<l>where B<hi rend="superscript:true;">r</hi> Latrobe after the funeral Discourse kept the Liturgy</l>
+					<l>for her &amp; Jam<hi rend="superscript:true;">s</hi> Oates a youth in the Single B<hi rend="superscript:true;">rn</hi> house also</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_45_RotheraEsther-10.jpg" n="10" />
+			<p>
+				<lg>
+					<l>from this Plan, &amp; these 2 corpses were bro<hi rend="superscript:true;">t</hi> with full musik</l>
+					<l>and a solomn procession to the Burying Ground there &amp;</l>
+					<l>laid to rest with the Blessg of the whole Congr<hi rend="superscript:true;">n</hi></l>
+				</lg>
+			</p>
+		</body>
+	</text>
+</TEI>

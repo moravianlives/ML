@@ -1,132 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Ann Kellet: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_3_17_KelletAnn">Ann Kellet</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg"></msName>
-<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Ann Kellet</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ann Kellet: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_17_KelletAnn">Ann Kellet</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Kellet</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg" n="1" />
 			<p>
 				<lg>
 					<l>The life of the S<hi rend="superscript:true;">le</hi> Sis<hi rend="superscript:true;">r</hi> Ann Kellet who departed</l>
 					<l>to our Sav<hi rend="superscript:true;">r</hi> in the Choirhouse at Fulneck Jan<hi rend="superscript:true;">y</hi> 5<hi rend="superscript:true;">th</hi></l>
-					<l>1788. She has left the following account of herself.</l></lg></p>
-<p><lg>
+					<l>1788. She has left the following account of herself.</l>
+				</lg></p>
+			<p><lg>
 					<l>I was born at Whibsey in the Parish of Bradford</l>
 					<l>Yorkshire, March 21<hi rend="superscript:true;">st</hi> 1745, as soon as I was able</l>
 					<l>my Parents sent me to School which was then kept</l>
@@ -152,7 +157,7 @@
 					<l>When I was reciev'd amongst the Great Girls</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg" n="2" />
 			<p>
 				<lg>
 					<l>my whole wish was to prosper for our Saviour and I </l>
@@ -168,7 +173,7 @@
 					<l>my best to stifle all convictions, I went on this wicked</l>
 					<l>way for near a Year, till I cou'd hold it out no longer, I </l>
 					<l>then made a full resolution to leave all, let the consequence</l>
-					<l>be as they wou'd.  My Parents were exceedingly pleas</l>
+					<l>be as they wou'd. My Parents were exceedingly pleas</l>
 					<l>with this, and did to the utmost of their power to get</l>
 					<l>my things in readiness against my removal, which </l>
 					<l>took place Oct<hi rend="superscript:true;">r</hi> 23<hi rend="superscript:true;">d</hi> 1761, when I mov'd into the Choir</l>
@@ -184,7 +189,7 @@
 					<l>I wou'd neither eat nor sleep, till I had attain'd it, as at</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>time I thought it was all fancy, I went on in this way</l>
@@ -217,7 +222,7 @@
 					<l>question but my faith failed not. In the year 1760 I had</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg" n="3" />
 			<p>
 				<lg>
 					<l>the grace and favour of being receiv'd into the S<hi rend="superscript:true;">le</hi>. Sis<hi rend="superscript:true;">rs</hi>.</l>
@@ -250,7 +255,7 @@
 					<l>Birth and Sufferings He had purchas'd all things for</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>me, and wou'd not deny me any thing, now I cou'd speak</l>
@@ -282,14 +287,14 @@
 					<l>was here, I serv'd in the kitchen during their stay</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg" n="4"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg" n="4" />
 			<p>
 				<lg>
 					<l>and after they were gone, I was desir'd Serve in the </l>
 					<l>Child<hi rend="superscript:true;">rns</hi> work which at first for several reasons was</l>
 					<l>not agreable to me, but it prov'd a School for my heart</l>
 					<l>and made me keep close to our Sav<hi rend="superscript:true;">r</hi> so that I can truly </l>
-					<l>say 5  Years I liv'd there form'd a real blessing for</l>
+					<l>say 5 Years I liv'd there form'd a real blessing for</l>
 					<l>my heart, especially the Child<hi rend="superscript:true;">rns</hi> Cong<hi rend="superscript:true;">n</hi> days, which remind</l>
 					<l>my Childrens Years to me. After that I return'd into</l>
 					<l>the Choir house, where I was employed in the Wash for</l>
@@ -314,7 +319,7 @@
 					<l>are often crooked and yet Straight - In which thy</l>
 				</lg>
 			</p>
-<cb></cb>
+			<cb />
 			<p>
 				<lg>
 					<l>Children are ordain'd to walk-- Tho' all to ruin</l>
@@ -322,10 +327,12 @@
 					<l>wise and great. And now I hope our Sav<hi rend="superscript:true;">r</hi> will grant</l>
 					<l>me patience to wait his time, untill He shall please to</l>
 					<l>call me home to Himself, then I shall be able to praise</l>
-					<l>him better for all that He has done for me.</l></lg></p>
-<p><lg>
-					<l>So for our late Sis<hi rend="superscript:true;">rs</hi> on account.</l></lg></p>
-<p><lg>
+					<l>him better for all that He has done for me.</l>
+				</lg></p>
+			<p><lg>
+					<l>So for our late Sis<hi rend="superscript:true;">rs</hi> on account.</l>
+				</lg></p>
+			<p><lg>
 					<l>What she writes concerning those last Years is in</l>
 					<l>reference to her receving a Call in the year 1784 to</l>
 					<l>serve our Saviour in Barbados, which she ????</l>
@@ -347,7 +354,7 @@
 					<l>look my whole course ever, I see abundance of greatness </l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg" n="5"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg" n="5" />
 			<p>
 				<lg>
 					<l>and mercy which our Sav<hi rend="superscript:true;">r</hi>. has always shown towards</l>
@@ -355,8 +362,9 @@
 					<l>to all eternity. the Joy she felt at of the prospect of</l>
 					<l>soon seeing him on whom she had believ'd while here,</l>
 					<l>was visible <add place="above">evident</add> in every conversation with her, and her</l>
-					<l>confidece in our Sav<hi rend="superscript:true;">r</hi>. remain'd unshaken.</l></lg></p>
-<p><lg>
+					<l>confidece in our Sav<hi rend="superscript:true;">r</hi>. remain'd unshaken.</l>
+				</lg></p>
+			<p><lg>
 					<l>January 5<hi rend="superscript:true;">th</hi>, early in the morning, it was evident</l>
 					<l>that her time here wou'd not be long, upon which</l>
 					<l>the last blessing of the Cong<hi rend="superscript:true;">n</hi>. and her Choir was im</l>

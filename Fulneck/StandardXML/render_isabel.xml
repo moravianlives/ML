@@ -1,132 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Isabel Render: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_SS_67Render">Isabel Render</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-01.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-03.jpg"></msName>
- <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-04.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Isabel Render</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Isabel Render: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_67Render">Isabel Render</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-04.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Isabel Render</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-01.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-01.jpg" n="1" />
 			<p>
 				<lg>
 					<l>The <del>Course of</del> life of the Single Sister Isable Render who departed</l>
 					<l>to our Sav<hi rend="superscript:true;">r</hi> July 25<hi rend="superscript:true;">th</hi> 1777 in the Oeconomy at Littlemore, and has left</l>
-					<l>the following account of herself:</l></lg></p>
-<p><lg>
-					<l>I was born at Leeds Sep<hi rend="superscript:true;">r</hi> 9<hi rend="superscript:true;">th</hi> 1756, and bapltiz'd by the B<hi rend="superscript:true;">rn</hi> my Parents took</l>
+					<l>the following account of herself:</l>
+				</lg></p>
+			<p><lg>
+					<l>I was born at Leeds Sep<hi rend="superscript:true;">r</hi> 9<hi rend="superscript:true;">th</hi> 1756, and bapltiz'd by the B<hi rend="superscript:true;">rn</hi> my Parents
+						took</l>
 					<l>me frequently with them to the meetings kept by the B<hi rend="superscript:true;">rn</hi> where I had the opportunity of</l>
 					<l>hearing of our Sav<hi rend="superscript:true;">r</hi> and his love to poor Sinners, which I lik'd very much at first: but as I</l>
 					<l>grew older, I grew ashamed of belonging to the B<hi rend="superscript:true;">rn</hi>, and wou'd rather have gone to other</l>
@@ -156,12 +162,13 @@
 					<l>but I lost in a great measure the blessing of being openhearted, which together with</l>
 					<l>which I felt of my own misery, made me very uneasy; I wanted very much to feel my</l>
 					<l>Sins forgiven by our Sav<hi rend="superscript:true;">r</hi> but as I constantly strove in my own way for it, I was</l>
-					<l>kept dark  good while, and did not know what to do once  thought, it made no</l>
-					<l>matter me staying any longer with the S<hi rend="superscript:true;">rs</hi> I might as will go from <del>which</del> <add place="below">whence</add> I came</l>
+					<l>kept dark good while, and did not know what to do once thought, it made no</l>
+					<l>matter me staying any longer with the S<hi rend="superscript:true;">rs</hi> I might as will go from <del>which</del>
+						<add place="below">whence</add> I came</l>
 					<l>for our Sav<hi rend="superscript:true;">r</hi> was no more to me as he had been, I went on thus</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-02.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-02.jpg" n="2" />
 			<p>
 				<lg>
 					<l>heavy for some time; but on New Years Night-watch following, our Sav<hi rend="superscript:true;">r</hi> drew near</l>
@@ -173,7 +180,7 @@
 					<l>People, and what added to my happiness was, that many of my Choir companions enjoy'd</l>
 					<l>the same blessings with me, with whome occasionally I kept many hearty bands about</l>
 					<l>my own h<hi rend="superscript:true;">rt</hi> and our Sav<hi rend="superscript:true;">rs</hi> kind dealings with me, such opportunitys were a real strength-</l>
-					<l>ning and support to me, and that time  shall never forget; when many of my companions</l>
+					<l>ning and support to me, and that time shall never forget; when many of my companions</l>
 					<l>enter'd into the S. S<hi rend="superscript:true;">rs</hi> Choir I was very much pain'd, as I thereby lost the nearest</l>
 					<l>fellowship with them, which had been of so great importance to me, but our Sav<hi rend="superscript:true;">r</hi> let</l>
 					<l>me feel that my greatest interest was in him, and that he wou'd never fail me.</l>
@@ -192,16 +199,18 @@
 					<l>he might fit and prepare me according to his own heart and mind, and pray'd him</l>
 					<l>to give me his blessing in this Choir also, that he might have some pleasure in me</l>
 					<l>for all what he had undergone on my account, and it has always been my prayer to</l>
-					<l>him that he wou'd rather take me to himself; than suffer me to be unfaithfull to him.</l></lg></p>
-<p><lg>
-<l>So far her own Words</l></lg></p>
-<p><lg>
+					<l>him that he wou'd rather take me to himself; than suffer me to be unfaithfull to him.</l>
+				</lg></p>
+			<p><lg>
+					<l>So far her own Words</l>
+				</lg></p>
+			<p><lg>
 					<l>Since her reception into the S. S<hi rend="superscript:true;">rs</hi> Choir our Sav<hi rend="superscript:true;">r</hi> has been very busy in</l>
 					<l>discovering to her, her inate corruption, which for want of confidence in him made</l>
 					<l>her at times very heavy, and as she pondered over it in herself a good while</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-03.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-03.jpg" n="3" />
 			<p>
 				<lg>
 					<l>before she disclos'd the state of her h<hi rend="superscript:true;">rt</hi> to her Labouris, she was thereby greatly</l>
@@ -243,7 +252,7 @@
 					<l>my last moments comes, I shall like some of you to be present, and help to keep the</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-04.jpg" n="4"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_67Render-04.jpg" n="4" />
 			<p>
 				<lg>
 					<l>Liturgy at my departure, what a moment well that be, You will then feel how near</l>
@@ -261,7 +270,7 @@
 					<l>she wanted to be blest for her departure, which was done by her Choir helper during</l>
 					<l>a feeling Liturgy according as she desir'd. when that verse was sung. Now thou</l>
 					<l>Sister hold dear and tender 'fore her h<hi rend="superscript:true;">rt</hi> display thy splendor, she herself join'd</l>
-					<l>in the last lines. Draw it in that <hi rend="strikethrough:true;">cave</hi> cave made for it  Soul and Body there</l>
+					<l>in the last lines. Draw it in that <hi rend="strikethrough:true;">cave</hi> cave made for it Soul and Body there</l>
 					<l>be buried. being ask'd if the singing shou'd be continue'd, she answer'd, O yes, and soon</l>
 					<l>after she said, how is it that I am here yet, but was soon pacify'd when she was told, that</l>
 					<l>in a few moments all wou'd be well: and soon after 8 she expir'd softly and happily</l>

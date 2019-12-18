@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Eleanor Luty: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_70Luty">Eleanor Luty</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-08.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Eleanor Luty</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change who="#JAKA1" when-iso="2019-12-02">Converted for semanti markup</change>
+			<change when-iso="2019-11-10" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Eleanor Luty</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-01.jpg" />
+					<p> The life of the Single Sister Elenor Luty. </p>
+					<p> I was born Sep<hi rend="superscript">r</hi> 20<hi rend="superscript">th</hi> 1718 at Killing Hall near near Harrowgate, in the Parish of Ripley, and was brought up in the
+						Church of England. My Mother kept a strict eye upon me <add place="above">wishing</add> to preserve me from the temptations of the world. When I was about 6 years old, I used
+						to read in the New Testament, and was always very inquisitive with my School M<hi rend="superscript">rs</hi> what could be the meaning of many things <add place="above">at that
+							time</add> beyond my capacity. In my 16<hi rend="superscript">th</hi> year I was <del>catichised</del>
+						<add place="above">examined</add> by the Minister of our Church <add place="above">in the doctrines of Christianity</add> as a preparation for the holy Communion, preveius to
+						the enjoyment of it, and was confirmed by the Bishop durring his visit in these parts. The above mentioned Minister told me and several young people that our own hearts were
+						our greatest enemies; this I could not comprehend <del>th</del>at that time, tho&apos; under concern for my Salvation. My Confirmation had a very blessed effect, encreasing my
+						anxiety, and making me more in earnest to seek the Lord. I now resolved not to rest satisfied till I had found him, and made my Calling and Election sure. </p>
+					<p> A few hours before my Fathers departure, he sent for all his Children 10 in number, to give each his farewell <note type="catchword">Benediction</note>
+					</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-02.jpg" />
+					<p> Benediction, but I being from home was sent for, and told that my Father could not depart till I came to receive his last blessing, which be imparted to me with his hand upon
+						my head, the fervency of his prayer made a deep impression on me. In my 17<hi rend="superscript">th</hi> year I went to live with a Milliner as a Servant at Rippon, here I was
+						in great danger of being drawn into things contrary to the mind of my Saviour, had not his protecting hand been over me. The minister who baptized me, wished me not to stay any
+						longer in that place, and procured another in a reputable family, here I lived 2 years, and they having no child<hi rend="superscript">rn</hi> treated me exceeding kind, and
+						beloved in all respects as a Father and Mother to me, during their time I had a dangerous Illness, to that the Physican disposed of my recovery and I was in great distress of
+						soul, without any clearness of my happiness, not knowing how to obtain it, for my Master and M<hi rend="superscript">rs</hi> frequently told me it was time enough to be uneasy
+						about my soul, but I found their advice was wrong, being much alarmed of my stake of heart, how- ever it pleased the lord at that time to restore me to proper health. I went
+						for sometime to my Sister of Killing Hall, here I began to think of settling in the world, and engaged so far, that I promised marriage to a young man with whom I thought I
+						could live happy, but whilst preparations were making for our marriage <note type="catchword">a</note>
+					</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-03.jpg" />
+					<p> a clergyman, who had heard of me, by one of my former Mistresses, wished me to go in service to the marquis of Thockingham near Sheffield to which I consorted, here I felt very
+						uncomfortable, there being a great number of Servants, who were persecutors of our Savior and his People, and I was very uneasy among them, being much afraid I should suffer
+						harm in my Soul, and never be saved. I frequently went to hear David Taylor preach, his Sermons were very applicable to my case, more especially when he treated of our Saviors
+						sufferings for poor sinners. At this time I was very much hurt with all the Servants, partic- ularly the Steward, who said that all tho went to hear those preach should have a
+						small house that stood near the Fishpond to receive grace in, and the Pond to wash their sins away, but not long after, this same man was drowned in that very pond. I now
+						resolved to leave this place, as I could not be happy here, so I left them, and not knowing <add place="above">any</add> body but the Farmer where I first heard David Taylor
+						preach, I beged him to conduct me to my Mother, which he did as far as Leeds, from there I walked home to my Parents, being quite tired of Service, among unconverted People, my
+						relations being at that time also in an unconverted state of mind, I was resolved <add place="above">to leave</add> them and seek a people of God with whom I could be in
+						fellowship <note type="catchword">the</note>
+					</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-04.jpg" />
+					<p> The Methodists preached in our neighborhood, but I found no clearness to join their concession, I accidently met with a person who informed me that there was a sort of people
+						in Pudsey, who would suite me. Upon this information I left my Fathers house on foot, and did not know one step of the way, but thought if I could meet with a carrier that went
+						that road, I would go with him, accordingly I soon met with one and we walked together to the place I was seeking. I arrived Sep<hi rend="superscript">t</hi> 6<hi
+							rend="superscript">th</hi> 1742, and stayed 15 weeks in Pudsey working for my living till at last Sis<hi rend="superscript">r</hi> Gussinbaus who then lived with B<hi
+							rend="superscript">r</hi> and S<hi rend="superscript">r</hi> Hillas took me to her self, on that very day the young man came to the house, whom I had promised marriage, and
+						wanted to fetch me, but I told him that I would marry no man at present for I belonged intirely to our Savior, he told me that my mother wanted it to take place, but I
+						persisted in my resolution, and was soon after taken by B<hi rend="superscript">r</hi> and S<hi rend="superscript">r</hi> Heckenwalder to Low house, where there was an oconomy
+						of S. S<hi rend="superscript">rs</hi> near Fulneck, I no sooner arrived there than I melted into tears of gratitude at the feet of my dear Savior, for his unwearied patience,
+						love and faithful care in bringing me safely to his people. I remained so happy for sometime in this place that I thought it a Heaven upon earth, but after more <note
+							type="catchword">insight</note>
+					</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-05.jpg" />
+					<p> insight into the nature of a Congregation my feel- ings altered, I entered into a close examination of myself, how for this change of circumstance would suit with my turn of
+						mind. At last thro&apos; the grace of our Savior I came to this resolution to take up my cross and follow Him, and to submit to his Will in every tryal, he thought best for me
+						and which I soon experienced as I sow one after the other, received into the Congregation to which I thought I had a might preferable to Him, Our Savior suffered this tryal to
+						be a means of my becoming better acquainted with myself and pointed out to me what was my hindrance in not attaining to the priviledges of the Congregation / namely/ my self
+						righteousness and unbroken spirit I became sensible of it, and owned it to eaternal thro&apos; his enabling grace resigned to his Will He granted me that favor June 8<hi
+							rend="superscript">th</hi> 1746 to be rec&apos;d into the Congregation, and what was still much gined to partake of his Body and Blood in the holy Sacram. March 25<hi
+							rend="superscript">th</hi> 1747 which excited me anew to surrender myself entirely to His Guidance, and I entreated our Savior to give me now grace, that I might be obedint
+						to his holy Spirit, and do what would be pleasing to Him. Soon after this I want to London to assist <note type="catchword">in</note>
+					</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-06.jpg" />
+					<p> in washing for the Children <add place="above">School</add> at Milend. In 1753 returned to Fulneck into the S<hi rend="superscript">rs</hi> house here. Sometime after went
+						again into service in Fulneck, and again returned into my favorit house among the S. S<hi rend="superscript">rs</hi> Since my coming to the Congregation I have experienced many
+						tryals informally and externally, and am sensible I have nothing to boast of with respect to my natural disposition, which <add place="above">has</add> caused others and myself
+						much trouble, but my <del>Savior</del> good Savior whom I love above all things in Heaven or earth bears with me, and has kept my confidence unshaken in Him to this moment; and
+						will no doubt do it to the end. I cannot omit a circumstance, which is a proof of my Lords parental love and care over me. My dispotion was not only unbroken and selfrighteous,
+						but besides this, I had a too anxious care for the things of this life, which carried me so far, that I found myself in a dangerous way of loosing the enjoyment of my Saviors
+						sweet nearness thereby. I was very fond of work, which is undoubtedly right in its place, but even this I carried too far, my mind being so much taken up with it, but our
+						Savior who knew this to be the case permitted me to have a dangerous fall from a chair, <note type="catchword">bu</note>
+					</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-07.jpg" />
+					<p> by means of which my right arm was so disabled that I never after could work as I had done before, this was a painful circumstance, and I could not look on it in any other
+						lights, than as a chastisement from the Lord, for acting contrary to conviction, but I am now richly comforted, with that promise: All things shall work together for good to
+						them that love God. I am his sheep and nothing shall pluck me out of his Hand. </p>
+					<p> Thus far her own Account. </p>
+					<p> Our late Sister has given to genuine and upright account, both of her internal and external course that we find no occasion to add any thing particular thereto. She has been
+						for sometime thro&apos; her advanced age, and bodily infirmities, confined to her room, and her mental faculties perceptibly decreasing, made it in several respects heavy to
+						herself and very troublesome to those who had to do with her, and great patience was requisit to wait on her; but we must acknowledge as she herself expresses it that she was
+						certainly </p>
+				</div>
+				<div type="page" n="8">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_70Luty-08.jpg" />
+					<p> one of our Saviors Sheep / and even amidst her incoherent conversation she was sometime before her departure, pleasing to all who visited her, for when her mind was composed
+						she would repeatedly say: that nobody should be uneasy about her, for whenever we should hear that she was departed, either by night or day, we mnight be sure that she was
+						happy by with our dear Savior. </p>
+					<p> On the 31<hi rend="superscript">st</hi> of March in the afternoon she particularly desired to be blessed for her departures which was accordingly <add place="above">done</add>
+						because she believed she should go to our Savior that night, which came to pass in her 81<hi rend="superscript">st</hi> year. </p>
+					<p> On March 31<hi rend="superscript">st</hi> she fell softly &amp; happily asleep in the 81<hi rend="superscript">st</hi> y<hi rend="superscript">r</hi> of her age. </p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

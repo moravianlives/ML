@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Sarah Whitehead: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_40Whitehead">Sarah Whitehead</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-04.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Sarah Whitehead</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-01.jpg" n="1" />
+			<p>
+				<lg>
+					<l>Sarah Whitehead born at Streal in the parish</l>
+					<l>of Tong March 20 1732 her parents being presb<hi rend="superscript:true;">tr</hi></l>
+					<l>she was Educated in that way, till in the 17 year of</l>
+					<l>her age, she went to live with her uncle at</l>
+					<l>Halifax, and as she was one day standing at the door</l>
+					<l>Broth<hi rend="superscript:true;">r</hi>. Helt road by, she look'd Steadfastly at him</l>
+					<l>and was Supriseingly struck with his Heavenly Mien</l>
+					<l>and thought surely that is a Man of God, beleiveing He</l>
+					<l>was one of the so calld Breth<hi rend="superscript:true;">n</hi> belonging to the people at</l>
+					<l>fulenneck, this made such an Impression on her Heart</l>
+					<l>and from that Hour she felt a real Compunction &amp; desire</l>
+					<l>that she might Once belong to that people, for she</l>
+					<l>certainly beleive<hi rend="superscript:true;">d</hi> them to be the Children of God</l>
+					<l>She then resolved to leave that place &amp; return unto</l>
+					<l>her Mother at Holm in Order to be nearer the Br<hi rend="superscript:true;">n</hi></l>
+					<l>that she Might injoy the Oppertunities of hearing</l>
+					<l>The Gosple preach<hi rend="superscript:true;">d</hi></l>
+				</lg></p>
+			<p><lg>
+					<l>from That time she was sensibly</l>
+					<l>convince<hi rend="superscript:true;">d</hi> that it was our dear Sav<hi rend="superscript:true;">r</hi> who had so powerfully</l>
+					<l>opperated upon her Heart, &amp; Meeting with no Objections</l>
+					<l>she hasten<hi rend="superscript:true;">d</hi> as much as possable to accomplish her</l>
+					<l>desire &amp; call.</l>
+				</lg></p>
+			<p><lg>
+					<l>The dear Mother thee Holy Ghost work<hi rend="superscript:true;">d</hi></l>
+					<l>powerfully on her Heart, &amp; soon let her feel the need</l>
+					<l>she had of a Redeemer, which made her Cry what</l>
+					<l>shall I do to be Save<hi rend="superscript:true;">d.</hi></l>
+				</lg></p>
+			<p><lg>
+					<l>In this distress of mind she resolve<hi rend="superscript:true;">d</hi> within herself</l>
+					<l>to go &amp; speak with and the Single Sist<hi rend="superscript:true;">r</hi>, accordingly</l>
+					<l>she did, in a very childlike &amp; Open hearted Manner</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-02.jpg" n="2" />
+			<p>
+				<lg>
+					<l>Her Sistr spoak words of comfort to her &amp; in a little</l>
+					<l>time after she was receivd into the Society.</l>
+				</lg></p>
+			<p><lg>
+					<l>The desire of her heart daily increase to be in a nearer</l>
+					<l>&amp; closer Connection with the S Sist<hi rend="superscript:true;">rs</hi> &amp; she wish<hi rend="superscript:true;">d</hi> much to be</l>
+					<l>taken into the Oeconomie but as there was no room her</l>
+					<l>request cou<hi rend="superscript:true;">d</hi> not be Granted at that Time, but on March 20<hi rend="superscript:true;">th</hi>
+					</l>
+					<l>1762 she went to live with some young women belonging the</l>
+					<l>Society, were she still kept faithfull to her first call &amp;</l>
+					<l>constant attentiveness to the teachings of the dear Mother</l>
+					<l>under whose bless<hi rend="superscript:true;">d</hi>
+						<unclear>Man eduction</unclear> she was soon brought to</l>
+					<l>be acquainted with her dear Mayrt<hi rend="superscript:true;">d</hi> Spouse</l>
+				</lg></p>
+			<p><lg>
+					<l>Her longing desire much increased after that wish<hi rend="superscript:true;">d</hi> for Grace</l>
+					<l>of becoming Once a Member of the dear congregation &amp;</l>
+					<l>wou<hi rend="superscript:true;">d</hi> often Sigh &amp; say I can hardly beleive such a favour will</l>
+					<l>be granted me I'm such an unworthy Creature, but however in</l>
+					<l>real Confidence of My dear Lamb I will still beg for it &amp;</l>
+					<l>On the 13 of Nov the same year her Earnest longing desire</l>
+					<l>was Granted, to her Supriseing joy &amp; abasement, for this</l>
+					<l>Great Grace, the thro' pirced feet of her faithfull</l>
+					<l>lover got many a Magdelen Salute.</l>
+				</lg></p>
+			<p><lg>
+					<l>Dec<hi rend="superscript:true;">br</hi> 18 the same year the Sis<hi rend="superscript:true;">rs</hi> Moveing into their new choir</l>
+					<l>house at Gracehill it Cause<hi rend="superscript:true;">d</hi> her much Smart she not haveing</l>
+					<l>leave at that some to go with them, but went with some other</l>
+					<l>Sis<hi rend="superscript:true;">rs</hi> to to live in the Oeconomie at Pudsey, were she began</l>
+					<l>to grow some what unfaithfull to her kind teacher, by</l>
+					<l>which Means she brought herself into a reasoning way</l>
+					<l>which Cause<hi rend="superscript:true;">d</hi> her some unhappy hours.</l>
+				</lg></p>
+			<p><lg>
+					<l>But our dear Saviour out of love &amp; Mercy drew near</l>
+					<l>to her poor heart again &amp; in a consumeing Manner gave</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>her to feel that she was care<hi rend="superscript:true;">d</hi> of from that blessd point</l>
+					<l>which wou<hi rend="superscript:true;">d</hi>
+						<unclear>??? ????</unclear> in all <unclear>?????</unclear> of heart &amp; mind</l>
+					<l>&amp; felt that she <unclear>???</unclear> now as a poor sinner afresh on his</l>
+					<l>Grace &amp; Mercy which she did, and said I know that he loves me</l>
+					<l>&amp; is my best &amp; kindest friend &amp; I am Much ashamed that I have</l>
+					<l>kept so long at a distance from him Oh he his my poor</l>
+					<l>souls lover &amp; I must have a nearer connection with his</l>
+					<l>dear bleeding Heart or I cannot subsist. She now began</l>
+					<l>to be very serious &amp; thoughtfull about the Lord Supper</l>
+					<l>Her heart longd &amp; panted Much after the precious Corpse &amp;</l>
+					<l>blood of her dearest Jesus, on account which she Earnestly</l>
+					<l>desired to be remember<hi rend="superscript:true;">d</hi> by Sis<hi rend="superscript:true;">tr</hi> Mary who faithfully thought</l>
+					<l> on her before her dear &amp; wound<hi rend="superscript:true;">d</hi> friend. she Graciously</l>
+					<l>premitted <add place="above">her</add> to be a particapant of his more Corpse &amp; blood in the</l>
+					<l>bless<hi rend="superscript:true;">d</hi> saccrement on July 13 54. this prove<hi rend="superscript:true;">d</hi> a weighty and</l>
+					<l>abideing blessing for her heart.</l>
+				</lg></p>
+			<p><lg>
+					<l>But yet when she look<hi rend="superscript:true;">d</hi> on the</l>
+					<l>choirhouse it causd her some pain &amp; she wou<hi rend="superscript:true;">d</hi> often say I know</l>
+					<l>it is My right habittation. I know My Lamb has call<hi rend="superscript:true;">d</hi> me to </l>
+					<l>belong thereto. &amp; on Nov the same year she had the</l>
+					<l>Grace &amp; favour to become an inhabitant of the same</l>
+					<l>to her great joy &amp; consolation.</l>
+				</lg></p>
+			<p><lg>
+					<l>in the Spring of the year 55 she got a cough &amp; a swelling</l>
+					<l>in her neck, attend<hi rend="superscript:true;">d</hi> with much pain, she did not think this</l>
+					<l>woud prove the Ocasion of bringing her to her Eternal rest</l>
+					<l>at that time, she use<hi rend="superscript:true;">d</hi> Some Means and soon grew better</l>
+					<l>again, till the fall of the year, on whch her disorder</l>
+					<l>return<hi rend="superscript:true;">d</hi>, worse then before, then it was very preceptable</l>
+					<l>it woud prove a lingering consumption but yet she</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-03.jpg" n="3" />
+			<p>
+				<lg>
+					<l>coud not beleive it &amp; said it is Only a little Cold that </l>
+					<l> I have got. being of a carefull dissposition &amp; afraid</l>
+					<l>of being troublesome to any Cause<hi rend="superscript:true;">d</hi> her some needless</l>
+					<l>perplexity which she was sencible of. But for all</l>
+					<l>that she Carryd her sickly tabernacle with great</l>
+					<l>patience seldom complaining, but went on in a</l>
+					<l>pritty Still Manner.</l>
+				</lg></p>
+			<p><lg>
+					<l>Nov 9 57 she was obligd to take</l>
+					<l>to the sickroom and on the never to be forgoten 13 of the</l>
+					<l><add place="above">same</add> month she prosterated herself before her head Elder</l>
+					<l>&amp; what she felt at that time from the nearness of</l>
+					<l>her Absolveing Bridegroom she never coud Express</l>
+					<l>the Efficacy of his presence so penetrated thro' soul &amp; body</l>
+					<l>to her great comfort &amp; consolation, after this Gracious</l>
+					<l>Visit she grew better &amp; went into her workroom for some</l>
+					<l>time were she spent her days in stillness, she being</l>
+					<l>Generaly and of few words, but when she did speak it</l>
+					<l>was very perceptable to all, that she live in the </l>
+					<l>nearness &amp; confidence of her dearest friend whose</l>
+					<l>faithfullness she cou<hi rend="superscript:true;">d</hi> rely on, on all Occassions, this</l>
+					<l>gave the Sister great Satisfaction &amp; increasd their love</l>
+					<l>much towards her.</l>
+				</lg></p>
+			<p><lg>
+					<l>In the Spring of the year 58 her dissorder returnd</l>
+					<l>again &amp; on March the 1 she took to the sickroom the</l>
+					<l>second Time there she enter<hi rend="superscript:true;">d</hi> into serious consideration</l>
+					<l>about her going home, &amp; thought prehaps the Happy</l>
+					<l>time will now come soon, but yet was afraid to beleive</l>
+					<l>it or speak much about it, for feard of being dissapoint</l>
+					<l>in her Expectation of that wish<hi rend="superscript:true;">d</hi> for hour not coming so</l>
+					<l>speedy as she wanted it. March 20 being her birthday</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>Her Class Sist<hi rend="superscript:true;">rs</hi> made her a love feast, at which she </l>
+					<l>was very much ashame<hi rend="superscript:true;">d</hi> &amp; Express<hi rend="superscript:true;">d</hi> her thankfullness</l>
+					<l>to them for all the love they had shew<hi rend="superscript:true;">d</hi> her.</l>
+				</lg></p>
+			<p><lg>
+					<l>Sist<hi rend="superscript:true;">r</hi> Mary conversed with her about going home, she told</l>
+					<l>her she beleived that woud be the last birthday she shoud</l>
+					<l>keep here, &amp; said I realy want &amp; pant Much to be with My</l>
+					<l>lover who has so faithfully preserve<hi rend="superscript:true;">d</hi> &amp; kept My poor</l>
+					<l>soul in a continual connection with his dear person.</l>
+					<l>in her sickness her Mother &amp; sister, who also belong</l>
+					<l>to the Cong<hi rend="superscript:true;">n</hi> frequently Visit<hi rend="superscript:true;">d</hi> her, and as her illness still</l>
+					<l>seam<hi rend="superscript:true;">d</hi> to be lingernig her Mother ask<hi rend="superscript:true;">d</hi> if she wou<hi rend="superscript:true;">d</hi> go &amp;</l>
+					<l>live with her little wile to try if change of air wou<hi rend="superscript:true;">d</hi></l>
+					<l>make any Alteration to her dissorder, she Answer<hi rend="superscript:true;">d</hi></l>
+					<l>Ah dear Mother how Can you Ask me to leave My</l>
+					<l>dear choirhouse in which I have injoy<hi rend="superscript:true;">d</hi> so Much</l>
+					<l>Grace &amp; blessing in fellowship with My dear Sist<hi rend="superscript:true;">rs</hi></l>
+					<l>from the presance of My bleeding Bridegroom</l>
+					<l>who call<hi rend="superscript:true;">d</hi> &amp; destin<hi rend="superscript:true;">d</hi> Me for it from all Eternity &amp;</l>
+					<l>here I <add place="above">will</add> continue till he calls me into his arms &amp;</l>
+					<l>bosom, oh My dear Mother the love &amp; tenderness</l>
+					<l>that has been shewn to Me hear I can never be</l>
+					<l>thankfull Enough for, cou<hi rend="superscript:true;">d</hi> I fare Ever so thankfully</l>
+					<l>in any other place I<hi rend="superscript:true;">d</hi> rather live on bread &amp; water</l>
+					<l>then prove dissobedient to My call.</l>
+				</lg></p>
+			<p><lg>
+					<l>Then she bound herself anew</l>
+					<l>to her faithfull Redeemer &amp; choir, Never to leave</l>
+					<l>them in Time or <add place="above">in</add> Eternity.</l>
+				</lg></p>
+			<p><lg>
+					<l>Her Mother was Satisfyd with her answer but concern<hi rend="superscript:true;">d</hi></l>
+					<l>at her self for puting such a Question to her, in July</l>
+					<l>she grew a little better &amp; return<hi rend="superscript:true;">d</hi> again into her</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_40Whitehead-04.jpg" n="4" />
+			<p>
+				<lg>
+					<l>workroom which cause<hi rend="superscript:true;">d</hi> her such pain &amp; tears</l>
+					<l>that her belove<hi rend="superscript:true;">d</hi> fetch<hi rend="superscript:true;">d</hi> her not to himself were she</l>
+					<l>desire<hi rend="superscript:true;">d</hi> so much to be.</l>
+				</lg></p>
+			<p><lg>
+					<l>decb<hi rend="superscript:true;">r</hi>. 28 she was spoaken with for the Lord Supper</l>
+					<l>were she Simply Express<hi rend="superscript:true;">d</hi> her ardent desire to be once</l>
+					<l>more refresh<hi rend="superscript:true;">d</hi> by her dear bridegroom in the holy sacrament</l>
+					<l>in fellowship with the congregation, beleiveing this</l>
+					<l>wou<hi rend="superscript:true;">d</hi> be the last time she shou<hi rend="superscript:true;">d</hi> injoy it here below</l>
+					<l>made for the more anxious to receive it fellowshiply</l>
+					<l>in the Great hall so that she coud hardly be preswaded</l>
+					<l>from, tho' the great weakness of over wou<hi rend="superscript:true;">d</hi> admit of so</l>
+					<l>such thing. she at last was resign<hi rend="superscript:true;">d</hi> &amp; on her yearsday </l>
+					<l>she partook of it for the Last time in her room.</l>
+					<l>Jany 13 she took to the sick room firmly beleiveing</l>
+					<l>that her dearest Jesus wou<hi rend="superscript:true;">d</hi> soon prepare &amp; fetch</l>
+					<l>her to His Eternal Embraces, this Comfortd her</l>
+					<l>poor heart &amp; she clave<hi rend="superscript:true;">d</hi> closely <add place="above">to him</add> as a poor worm</l>
+					<l>and said to a Sister with her. Oh I can never tell what</l>
+					<l>my friend has been to me in the deepest distresses of body</l>
+					<l>&amp; Mind, Oh yet if I look but unto him he was Ever ready</l>
+					<l>to assist me in all my needs &amp; necessities, he has never</l>
+					<l>yet fail to help such a poor worthless worm as I am</l>
+					<l>on His fidelity will I trust till I shall get permission</l>
+					<l>to leave this Mortal tent. Thus she continue<hi rend="superscript:true;">d</hi> in a very</l>
+					<l>sweet &amp; tender dissposition panting for the last kiss</l>
+					<l>on 18 she sent again for Sistr Mary, &amp; said she shoud</l>
+					<l>now soon go home, but had first one favour to beg</l>
+					<l>which was to have her Class drest in white &amp; in the</l>
+					<l>Night carry her Corpse in to the great hall, which </l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>was Ganted her, saying I love them Much &amp; when</l>
+					<l>I come in the presence of My dear Saviour I will then</l>
+					<l>kiss those dear hands &amp; feet which has been pericd</l>
+					<l>thro' for them &amp; me, ah then I will remember you &amp;</l>
+					<l>them. Each particularly &amp; all the rest of My dear sisters</l>
+					<l>On the 19 she sent for her Mother on seeing her she</l>
+					<l>said I am very Glad to see you Once more before I go</l>
+					<l>home, for I wanted to know if you are Satisfy<hi rend="superscript:true;">d</hi></l>
+					<l>about me &amp; Every thing pertaining My burial, to</l>
+					<l>which her Mother answer<hi rend="superscript:true;">d </hi>yes I am.</l>
+					<l>after some conversation her Mother &amp; Sister took a</l>
+					<l>very tender leave of her.</l>
+				</lg></p>
+			<p><lg>
+					<l>On the 20 after the sacrement S<hi rend="superscript:true;">r</hi> Mary went to her</l>
+					<l>again &amp; intimate<hi rend="superscript:true;">d</hi> to her what the congregation had</l>
+					<l>been injoying Asking if she cou<hi rend="superscript:true;">d</hi> be satisfy<hi rend="superscript:true;">d</hi> to go before</l>
+					<l>she had once more partook of that dear Corpse &amp; blood</l>
+					<l>into her dieing tabernacle. She answer<hi rend="superscript:true;">d</hi> oh yes I woud not</l>
+					<l>stay one Moment for that but will fly quite Speedy into</l>
+					<l>the Arms of My dear bleeding bridegroom were I will keep</l>
+					<l>Sacre<hi rend="superscript:true;">mts</hi> with him for Ever.</l>
+				</lg></p>
+			<p><lg>
+					<l>Then was sung she soon shall get premission <unclear>???</unclear></l>
+				</lg></p>
+			<p><lg>
+					<l>appear as her <unclear>pertition??</unclear></l>
+					<l>whom shed in want of strength</l>
+					<l>and when in his arms lastly</l>
+					<l>her mouth shall pallid grow</l>
+				</lg></p>
+			<p><lg>
+					<l>Then she with a fluttering Tongue said sing sing some more so the</l>
+					<l>singing continued till she fell softly asleep on the breast of her</l>
+					<l>beloved between the hours of a 11 &amp; 12 under the singing of those</l>
+					<l>words, so go there go dear heart &amp; hide &amp;c.</l>
+					<l>The feeling in the room <unclear>??? ??? ???</unclear> in such a</l>
+					<l><unclear>????</unclear> manner as will never be forgot by all present</l>
+				</lg>
+			</p>
+		</body>
+	</text>
+</TEI>

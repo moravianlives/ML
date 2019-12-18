@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Sarah Craven: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_08_CravenSarah">Sarah Craven</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-08.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Sarah Craven</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-02.jpg" n="1" />
+			<p>
+				<lg>
+					<l>The Life of the Single Sister Sar<hi rend="superscript:true;">h</hi> Craven who departed</l>
+					<l>in Fulneck Nov<hi rend="superscript:true;">r</hi> 10<hi rend="superscript:true;">th</hi> 1790.</l>
+				</lg></p>
+			<p><lg>
+					<l>I was born at Rothwel near Leeds in Yorkshire Nov<hi rend="superscript:true;">r:</hi> 11<hi rend="superscript:true;">th</hi> 1719 and</l>
+					<l>Liv'd with my Parents till my Father died who belong'd to the </l>
+					<l>Church of England. When I was a Child I often wish'd to die, for</l>
+					<l>I thought at that age I shou'd be saved; but if I liv'd to grow</l>
+					<l>up to be a Woman I should come into things which would hinder</l>
+					<l>me from attaining eternal happiness. When I came into riper</l>
+					<l>years I follow'd the World with eagerness, tho not with satisfaction</l>
+					<l>for I often felt uneasy in my mind, but put it off, resolving to</l>
+					<l>grow better, but still went on in my old way. After my Father's</l>
+					<l>death I went to live with my Uncle, and was with him when M<hi rend="superscript:true;">r</hi></l>
+					<l>Ingham came into those parts, but soon after went to live with my</l>
+					<l>Mother: she ask'd me to go with her to hear him Preach, but I</l>
+					<l>declin'd it for this reason, I believ'd if I was one of his followers</l>
+					<l>I must renounce the World; which was my cheif Object at that time</l>
+					<l>Soon after he came again to preach nearer to our habittution; my</l>
+					<l>Mother urged me to go with her which I could not help complying with</l>
+					<l>tho, spiritually dead, and the discourse had no effect, and I wonder'd</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-04.jpg" n="2" />
+			<p>
+				<lg>
+					<l>what induc'd People to run after him, my Mother invited him to</l>
+					<l>Preach at our House but he did not chuse to do it except we</l>
+					<l>would have a Society settled, to which she consented. In the mean</l>
+					<l>time my Mother spoke very closely to me about the state of my</l>
+					<l>Soul; thus prepar'd I went to hear him again, During his Sermon</l>
+					<l>I was made sensible of my last condition, I wish'd I could alter,</l>
+					<l>and thought I had better be depreved, of this Worlds pleasure then</l>
+					<l>love my mortal Soul, I thought I could part with every thing</l>
+					<l>I had in the World to be assur'd of my Salvation; but fear'd it</l>
+					<l>was impossible. In this miserable state I continued a long time</l>
+					<l>and came into self working. by degrees my misery worse off and</l>
+					<l>I concluded this was the right way to do all the good that was in my</l>
+					<l>power, so my conscience was to be appeased, but being of a hasty</l>
+					<l>temper and sometimes overcome with passion, my good oppinion</l>
+					<l>of my self vanish'd and I became miserable again. In the Year</l>
+					<l>1740. M<hi rend="superscript:true;">r.</hi> Ingham and B<hi rend="superscript:true;">r</hi> Teltshig came to our house, the latter</l>
+					<l>could not speak English, but his look made a particular impression</l>
+					<l>on me and I believed him to be indeed a Child of God. In a short time</l>
+					<l>after this Visit out Society was dispers'd which troubled me very</l>
+					<l>much. One of them and myself desir'd to be admitted into another Society</l>
+					<l>wich was soon after the case with a small company at Holbeck near</l>
+					<l>Leeds; But not having the pleasure to see B<hi rend="superscript:true;">rn</hi> &amp; S<hi rend="superscript:true;">rs</hi> often, I grew dry</l>
+					<l>in my heart, Upon being ask'd to be Servant in a Family, I at first</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>refused but being earnestly intreated I at last accepted and went to</l>
+					<l>the place. I was very uneasy in it for I found. I had no freedom</l>
+					<l>to mix in worldly company, but was Oblidged to stay my time</l>
+					<l>out. The night before I left my place, I drew that Verse, When</l>
+					<l>I was lost and far had stray'd. Into a Desart wild &amp; the day</l>
+					<l>after when I was with my Mother some Sisters came to see me, I</l>
+					<l>told them what had pass'd, they advised me to make a new begining</l>
+					<l>and then our Saviour and the B<hi rend="superscript:true;">rn</hi> would forgive me these words</l>
+					<l>comforted me for I did not expect to hear such from them. The first</l>
+					<l>meeting I went to after their Visit, B<hi rend="superscript:true;">r</hi> Telstig kept on the following</l>
+					<l>words" ye cannot serve two Masters "it seem'd as if he directed</l>
+					<l>his discourse to me alone and I determin'd to have our Saviour</l>
+					<l>alone for my Master. a short time after I was advised to live with</l>
+					<l>two Sisters in Holbeck, I did so, but my sittuation was not at first</l>
+					<l>agreable to me, I did not remain long with them being desir'd by</l>
+					<l>B<hi rend="superscript:true;">r</hi> Tiltsheg to go to Leeds to wait on a Sick Sister, but soon became</l>
+					<l>sick myself, as I had then no money left to help me I <add place="above">was</add> persuaded to </l>
+					<l>live with my Mother with whom I remain'd till she died. The day</l>
+					<l>before she departed a Sister visited her <add place="above">&amp; asked her </add>where she would like to have</l>
+					<l>me sittuated; she reply'd, among the Sisters, But after her death I</l>
+					<l>felt such a strong attachment to my Relations that I thought I could</l>
+					<l>not part with them, which brought me again into trouble and quite</l>
+					<l>at a loss what to do, When I was by my self my faithful Monitor</l>
+					<l>convinc'd me once more that I was not in my right place; to stay then</l>
+					<l>would be dangerous for my Soul. I immediately set off to acquaint</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-06.jpg" n="3" />
+			<p>
+				<lg>
+					<l>my former Laboress and disclos'd my whole case, She recomended</l>
+					<l>me to another Family in Holbeck, this was in the Year 1750</l>
+					<l>I attended the Preaching in Fulneck every Sunday. B<hi rend="superscript:true;">r</hi> LaTrobe</l>
+					<l>Sermons were a real blessing<hi rend="strikethrough:true;">s</hi> to me and I frequently imagin'd</l>
+					<l>that he knew my inmost thoughts, I had no rest day nor night</l>
+					<l>on account of the burden of my sins, One day as I was by myself</l>
+					<l>earnestly entreating our Saviour to manifest himself unto me,</l>
+					<l>he granted, my request and gave me a full assurance of the for</l>
+					<l>giveness of my sins, which came with such power that it melted</l>
+					<l>me into tears. from this time and particularly during my stay</l>
+					<l>in that Family, I received many blessings from our Savior, This</l>
+					<l>was a particular period with the Brethrens Congregation, their</l>
+					<l>enemies in these parts where not affraid to prognasticate their</l>
+					<l>ruin notwithstanding this I wish'd for a still closer union with</l>
+					<l>them and importun'd to be a member of the Cong<hi rend="superscript:true;">n</hi> The two S<hi rend="superscript:true;">rs</hi></l>
+					<l>with whom I Liv'd having departed this Life it was thought proper</l>
+					<l>for me to leave Holbeck and I was placed at last to my great joy</l>
+					<l>in the Single S<hi rend="superscript:true;">rs</hi> Oeconomy at Gomersal May 20<hi rend="superscript:true;">th</hi> 1755, and was</l>
+					<l>soon at home with them, tho, it prov'd a new school for my heart.</l>
+					<l>The 3<hi rend="superscript:true;">d</hi> of March 1756 I was inform'd would be a general Congregation </l>
+					<l>Day. I got an impression on that day I should have the favor to</l>
+					<l>be added thereto, I therfore kept a band with our Savior sensible of</l>
+					<l>my poverty and helplessness yet comforted with his nearness.</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>In this Sittuation of mind according to my impression I was</l>
+					<l>received into the Cong<hi rend="superscript:true;">n</hi> on the above mentioned day which</l>
+					<l>prov'd a great blessing to me Thus far her own account</l>
+				</lg></p>
+			<p><lg>
+					<l>April 20<hi rend="superscript:true;">th</hi> 1756 our late Sister remov'd from Gommersal to live</l>
+					<l>in the Choir House here. March 21<hi rend="superscript:true;">st</hi> 1757 she partook of the </l>
+					<l>holy Communion with the Congregation for the first time, It</l>
+					<l>was evident notwithstanding all human imperfection that she</l>
+					<l>had found her peace with our Savior. She knew in whom <add place="above">she</add> beleivd</l>
+					<l>and was perswaded that he was able to keep that which she</l>
+					<l>had comitted unto him this help'd her through every trying</l>
+					<l>circumstance she met with; her call to the Cong<hi rend="superscript:true;">n</hi> of Jesus she</l>
+					<l>value'd highly and often spoke of it with the greatest gratitude</l>
+					<l>It was a particular <add place="above">pleasure</add> to her to serve her Sisters in any little</l>
+					<l>matters she was able to do which she did with great faithfulness</l>
+					<l>as long as her strength would admitt of it. The begin<hi rend="strikethrough:true;">g</hi>ning of</l>
+					<l>this Year an Asmatick complaint which she had labor'd</l>
+					<l>under many years grew very troublesome to her, so that</l>
+					<l>She was oblidg'd in Jan<hi rend="superscript:true;">y</hi> to move into the sick room, when</l>
+					<l>her longing to be at home with our Savior increased daily. It</l>
+					<l>gave her much pain when two of her companions in the Sick</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_08_CravenSarah-08.jpg" n="4" />
+			<p>
+				<lg>
+					<l>room were called home before her, she suffer'd much in her sick,</l>
+					<l>ness which made her sometimes rather impatient and think </l>
+					<l>the time long, but she would soon recollect herself again and in</l>
+					<l>treated our Savior to give her a Childlike resignation to his will</l>
+					<l>that she might not greive him by her impatience. The night</l>
+					<l>before her departure, she said I am waiting for our Saviour</l>
+					<l>to come and fetch <del>her</del> me, he will not be long now before he comes</l>
+					<l>I shall then see him for my self; sickness and sorow will have</l>
+					<l>an end, He will wipe all tears from my Eyes. that night she</l>
+					<l>spent in great Weakness but in <add place="above">converse</add> with her best Freind</l>
+					<l>Nov<hi rend="superscript:true;">r</hi> 10<hi rend="superscript:true;">th</hi> the happy moment came when she departed in a soft</l>
+					<l>and easy manner to her dear Redeemer with the blessing of</l>
+					<l>her Choir half past 10 oclock in the forenoon during a sensible</l>
+					<l>feeling of our dear Lords presence, in the 72<hi rend="superscript:true;">nd</hi> Year of her Age.</l>
+				</lg>
+			</p>
+		</body>
+	</text>
+</TEI>

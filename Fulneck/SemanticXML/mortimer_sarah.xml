@@ -1,6 +1,8 @@
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" 
+	type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -108,6 +110,236 @@
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?person_annotation_20191213110120",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-13T16:01:20.925Z",
+	"dcterms:issued": "2019-12-13T16:06:01.653Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?person_annotation_20191213110120#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?person_annotation_20191213110120#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:PersonalName",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000258",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?date_annotation_20191213110527",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-13T16:05:27.367Z",
+	"dcterms:issued": "2019-12-13T16:06:01.654Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?date_annotation_20191213110527#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?date_annotation_20191213110527#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"dc:format": "text/plain",
+		"rdf:value": "1810-01-02"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?place_annotation_20191213110554",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-13T16:05:54.396Z",
+	"dcterms:issued": "2019-12-13T16:06:01.654Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?place_annotation_20191213110554#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/mortimer_sarah.xml?place_annotation_20191213110554#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://www.wikidata.org/entity/Q5508369",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData>
 		<profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -132,6 +364,17 @@
 				<div type="page" n="1">
 					<head type="page">1</head>
 					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-01.jpg" />
+					<p> Our late S<hi rend="superscript">r</hi>
+						<rs ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000258" key="Sarah Mortimer" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#PersonalName">Sarah
+							Mortimer</rs> who departed happily <date when="1810-01-02" cert="high">Jan<hi rend="superscript">y</hi>. 2<hi rend="superscript">d</hi> 1810</date> at <rs
+							ref="http://www.wikidata.org/entity/Q5508369" key="Fulneck Moravian Settlement" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">Fulneck</rs>
+						<del>Our happily departed Sr Sarah Mortimer</del>, was born June 3<hi rend="superscript">d</hi> 1780 at Scoles in the parish of Birstal, and baptized in the Church of England.
+						Her Mother dy'd before she was a year old, and she being a very weakly Child &amp; not likely to live, was put out to be nursed to a married B<hi rend="superscript">r</hi>
+						&amp; S<hi rend="superscript">r</hi> in Wyke, who had no Children, &amp; who took so much care of her in every respect, as if she had been their own Child. She was sent to the
+							B<hi rend="superscript">rns</hi> School in Wyke as soon as her health would <del>perpi</del> admit of it, It was then conducted by the S<hi rend="superscript">rs</hi> Mary
+						Watson / now in Gracehill/ and Benigna Planta / now in Okbrook./ who both with this good advice to the Children, often rem<del>a</del>inded them, how needful is was, not only
+						to come to School to work &amp;c. But also to get an impression of our Saviour's love, that they might be happy, and grow up for him, who had suffered so much for us. They used
+						every week to learn Verses out of the Hymn Book. This was a favourite imployment of hers, and with the rehearsal of them, she </p>
 					<p>
 						
 						Our late <roleName type="honorific">S<hi rend="superscript">r</hi></roleName> <persName ref="#mlper000258">Sarah Mortimer</persName> who departed happily <date type="death" when-iso="1810-01-02">Jan<hi rend="superscript">y</hi>. 2<hi rend="superscript">d</hi> 1810</date> at <placeName ref="#mlpla000003">Fulneck</placeName> 
@@ -166,6 +409,26 @@
 				<div type="page" n="2">
 					<head type="page">2</head>
 					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-02.jpg" />
+					<p> often edified those people she lived with; <add place="above">and</add> it was by these means she felt the first imprission of our Saviour's love towards her. Living near the
+							S<hi rend="superscript">rs</hi> House she was often visited by them, and had the favour to go in and out amongst them, whereby she got a desire to belong to the B<hi
+							rend="superscript">rns</hi> Cong<hi rend="superscript">n</hi>. Her Father being agreable to it, both she and her S<hi rend="superscript">r</hi> obtained leave to live in
+						the S<hi rend="superscript">rs</hi>
+						<add place="above">Oeconomy</add> at Little More and moved thither March 14<hi rend="superscript">th</hi> 1792, where she enjoyed manyy blessings, especially in attending the
+						meetings at Fulnek. When that Oeconomy broke up, in 1794, she with some more S<hi rend="superscript">rs</hi> moved to Wyke. She would rather have gone to Fulneck; but in <add
+							place="above">a</add> short time <del>grew</del>
+						<add place="above">became</add> reconciled <del>about</del> to it, and indeed she never found reason to repent. That small family lived at that time very happily together, and
+						in a blessed course; particularly amongst the great Girls, each was zealous, to get be <add place="above">fore the</add> other in prospserity. From this Period </p>
+					<cb />
+					<p> she dated <del>her</del>
+						<add place="above">the</add> foundation of <add place="above">her</add> happiness <add place="above">which</add> was laid <del>more</del>
+						<add place="above">deep and</add> sure in the all atoning sacrifice of a Crucified Saviour and Redeemer. Nov. 30<hi rend="superscript">th</hi> the same year she was rec'<hi
+							rend="superscript">d</hi> into the Cong<hi rend="superscript">n</hi>, &amp; Jan. 10<hi rend="superscript">th</hi> 1796 had the favour to partake for the first time of the
+						H. Com<hi rend="superscript">n</hi>, and the year following 4<hi rend="superscript">th</hi> of May she was rec'<hi rend="superscript">d</hi> into the S<hi rend="superscript"
+							>gle</hi> S<hi rend="superscript">rs</hi> choir. Soon after this it happened to be a very trying time, as the S<hi rend="superscript">rs</hi> could get no work for several
+						months, on which account many returned to their homes; but she not being willing <add place="above">to return home,</add> chose to stay, <add place="above">tho' her living
+							should be</add> ever so poor. But our merciful heavenly Father who knows the wants of all his Children; raised up some particular friends, who assisted them with every
+						thing most nessecary; so that those, whose faith was only as a Grain of Mustard seed, and stayed <add place="above">nevertheless</add> was quite put to shame. She often spoke
+						of that period with gratitude, and it inabled her to place her whole dependance on our Saviour </p>
 					<p>
 						
 							often edified those people she lived
@@ -230,6 +493,12 @@
 				<div type="page" n="3">
 					<head type="page">3</head>
 					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-03.jpg" />
+					<p> both with regard to her internal and external course. In 1801 she rec'<hi rend="superscript">d</hi> a appointment to have the care of the great Girls in Gumersal. Tho she felt
+						herself unfit for such a situation yet she submitted to it out of Obediance; and calling to mind, how much the Lord had done for her, she thought it was but little what she
+						could do in return. We can give her that testimony, that she was faithful in the charge committed to her not only in teaching them their work, but <add place="above">in
+							making</add> their internal prosperity, <del>was</del> a subject of her progress. She had of late years several heavy trails, which affected her much; but our Saviour in
+						whom she put her trust and confidence, supported her, so that she with resignation submitted to his will In the beginning of last year /1810/ she got a heavy co<del>u</del>ld
+						which settled on her Lungs, and made her feel very weak and poorly; in Sept. she came here </p>
 					<p>
 						
 							both with regard to her internal and 
@@ -256,64 +525,23 @@
 						
 					</p>
 					<cb />
-					<p>
-						
-							to Fulnek to partake of the H. Com<hi rend="superscript">n</hi>
-							in fellowship with her Choir; being
-							over taken in a heavy storm of thunder, and lightening, she was much agitated and grew worse from that time,
-							Now and then she had a faint hope
-							of her recovery; but feeling <add place="above">nevertheless</add>
-								<del>miser</del>
-							<del>able</del> her health and strength declining, she was soon resigned to our
-							Saviours will. It was her earnest
-							wish and prayer that he would show
-							her every guilt, &amp; chance &amp; purify her
-							from every stain in his precious Blood, 
-							that she might appear before him as a 
-							pardoned reconciled sinner; When an 
-							anxious thought at times would arise;
-							she was inabled with confidence to 
-							look to him, whose strength was
-							made perfect in her weakness. 
-							She would often express herself to 
-							the following purpose:
-						
-					</p>
-					<p>
-						
-							&quot;Ah! when I look back on past years, 
-							"I cannot help weeping for grief,
-							"But Christ wipes away all my tears,
-						
-					</p>
+					<p> to Fulnek to partake of the H. Com<hi rend="superscript">n</hi> in fellowship with her Choir; being over taken in a heavy storm of thunder, and lightening, she was much
+						agitated and grew worse from that time, Now and then she had a faint hope of her recovery; but feeling <add place="above">nevertheless</add>
+						<del>miser</del>
+						<del>able</del> her health and strength declining, she was soon resigned to our Saviours will. It was her earnest wish and prayer that he would show her every guilt, &amp;
+						chance &amp; purify her from every stain in his precious Blood, that she might appear before him as a pardoned reconciled sinner; When an anxious thought at times would arise;
+						she was inabled with confidence to look to him, whose strength was made perfect in her weakness. She would often express herself to the following purpose: </p>
+					<p> "Ah! when I look back on past years, "I cannot help weeping for grief, "But Christ wipes away all my tears, </p>
 				</div>
 				<div type="page" n="4">
 					<head type="page">4</head>
 					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_2Mortimer-04.jpg" />
-					<p>
-						
-							"And readily grants me relief: 
-							"By faith I behold in his wounds
-							"A cure for my sins and self-will;
-							"His goodness towards me abounds,
-							"And his hand is held over me still.&quot;
-							During her confinement she injoyed
-							twice the H. Com<hi rend="superscript">n</hi> which was a great
-							refreshment and strengthning to her. 
-							She loved &amp; was beloved, &amp; was truly
-							thankful for every kindness shown
-							towards her. She bore her pains
-							with great <del>petions</del>
-								<add place="above">patience</add>, and often said:
-							&quot;Dear Saviour! help me,&quot; and also 
-							asked her friends to pray for her.
-							Jan<hi rend="superscript">y</hi> 2<hi rend="superscript">d</hi>
-								<add place="above">1811</add> the happy moment came
-							when she was permitted to leave
-							this world, and see him face to face
-							in whom she here believed.
-							Aged 30 years and 6 Months. 
-						
+					<p> "And readily grants me relief: "By faith I behold in his wounds "A cure for my sins and self-will; "His goodness towards me abounds, "And his hand is held over me still."
+						During her confinement she injoyed twice the H. Com<hi rend="superscript">n</hi> which was a great refreshment and strengthning to her. She loved &amp; was beloved, &amp; was
+						truly thankful for every kindness shown towards her. She bore her pains with great <del>petions</del>
+						<add place="above">patience</add>, and often said: "Dear Saviour! help me," and also asked her friends to pray for her. Jan<hi rend="superscript">y</hi> 2<hi rend="superscript"
+							>d</hi>
+						<add place="above">1811</add> the happy moment came when she was permitted to leave this world, and see him face to face in whom she here believed. Aged 30 years and 6 Months.
 					</p>
 				</div>
 			</div>

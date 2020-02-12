@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Anna Rosina Anderson: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University, 2018-Present</orgName>
+					<resp>Research Assistant and encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell Univesrity</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="#mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_8AndersonAnnaRosina">Anna Rosina Anderson</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-08.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#mlper000215">Anna Rosina Anderson</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="mlper000215">Anna Rosina Anderson</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Anna Rosina Anderson</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-01.jpg" />
+					<p> Our dear happily departed <roleName type="honorific">Sister</roleName>
+						<persName ref="#mlper000215">Anna Rosina Anderson</persName>, has left <hi rend="underline">the following account of herself:</hi> I was born the <date when-iso="1727-08-09"
+								>9<hi rend="superscript">th</hi> of Aug 1727</date> at <placeName ref="#mlpla000026">Berthelsdorf</placeName>. My Parents belonging to the Cong<hi rend="superscript"
+							>n</hi> endeavour&apos;d to bring me up in the same connection with the Cong<hi rend="superscript">n</hi> &amp; sent me from my earliest years every Sunday to <placeName
+							ref="#mlpla000001"> Herrnhut</placeName> to the Childrens meeting, which the late <persName ref="#mlper000538">Count Zinzendorf</persName> kept. He asked me many questions,
+						and tho&apos; I did not always understand him, yet it made an impression on my heart and I felt a <name type="emotion">desire to be happy</name>. When I was in my <date
+							when-iso="1734" cert="medium">7<hi rend="superscript">th</hi> year</date> my Father de parted happily to <persName type="deity">our Savior</persName>, after which the late
+							<persName ref="#mlper000538">Count</persName> took care of my Mother &amp; her children; she came to live in the <placeName>widows house</placeName> at <placeName
+							ref="#mlpla000001">Herrnhut</placeName>
+						<note type="catchword">&amp;</note>
+					</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-02.jpg" />
+					<p> and her children in the <placeName>Orphan house</placeName>, but I for my part had no inclination for it, but chose to stay with my Grandfather in <placeName ref="#mlpla000026"
+							>Berthelsdorf</placeName>. After a few years my Uncle in <placeName ref="#mlpla000053">Lobenstein</placeName> desired me to come and live with him, which I was very glad
+						of. I was there above a year, but did not find it so agreeable as I thought, and I prayed may times with tears to <persName type="deity">the Lord</persName>, to help me away
+						again, which he graciously did. For it happened at this time that the late <persName ref="#mlper000538">Count</persName> came to <placeName ref="#mlpla000036"
+							>Ebbersdorf</placeName> and my Uncle had an oppertunity to see him; and told him that I was very unhappy here; on hearing this he took me under his care, &amp; sent me to
+							<placeName ref="#mlpla000057">Marienborn</placeName> to the <placeName>Orphan house</placeName>; I prayed to <persName type="deity">the Lord</persName> to preserve me here
+						&amp; <name type="emotion">make me happy</name>, &amp; that I never might come to <note type="catchword">any</note>
+					</p>
+					<cb />
+					<p> any other place except among the <orgName>Brethren</orgName>, because I was sometimes enticed by my Uncle to go back with him to his home. At that time during a <name
+							health="disease">severe sickness</name> which I got, I learned to pray earnestly for my happiness. I found many friends here who wish&apos;d me well and to see me prosper
+						for our <persName type="deity">Savior</persName>; particularly one <roleName type="honorific">Sister</roleName> will always be remember&apos;d by me, who, when I had recovered,
+						took me with her into the garden, and kneeling down with me, put up a fervent prayer in my behalf to <persName type="deity">our Savior</persName>, which I shall never forget.
+						But it was not sufficient to make me happy; because I must feel <persName type="deity">my Saviors</persName> comfort &amp; forgiveness for my own heart, &amp; this happened in
+						a very particular manner. Being once quite alone in a place I fell down at his feet &amp; implored his mercy &amp; forgiveness for all my sins thro&apos; his precious blood. At
+						that time I felt something, which I cannot express, his comfort to my troubled soul and his mercy shown to me, </p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-03.jpg" />
+					<p> melted my heart in thousand tears. In <date when-iso="1740">1740</date> I was after the then usual manner <add place="above">received</add> into the Childrens Cong<hi
+							rend="superscript">n</hi> which proved a great blessing to me, I devoted my heart to our Savior to live to him &amp; serve him; however afterwards, I must own, I had many
+						things to experience by which I learnt better to know myself but our Savior was faithful and helped me thro&apos;, I always felt freedom to speak my mind openhartedly to my
+						Labouress which was a great help to me. In the year <date when-iso="1741">1741</date> I was received into the <orgName en="single sisters choir">great girls Choir</orgName> and
+						in the same year I enjoyed the <name event="communion">holy Com<hi rend="superscript">n</hi></name> for the first time, which was an unspeakable blessing to my heart. At that
+						time there was a company of great girls which the late <persName>Count</persName> took particular care of, he kept us Choir meetings and instructed us how to become useful in
+						our Saviors service. I was appointed to keep the Childrens &amp; great girls bands, and enjoyed many blessings from <persName type="deity">our Savior</persName>, when we spoke
+						together of his great love &amp; mercy. Soon after I had the office of an assistant among <note type="catchword">the</note>
+					</p>
+					<cb />
+					<p> the Children conferred upon me and moved in the same year with this Oeconomy to <placeName ref="#mlpla000014">Herrnhag</placeName>. All these appoint ments taught me to come
+						into closer connection with our <persName type="deity">Savior</persName> and showed me that I could do nothing of myself. His mercy and love shown to me bowed me in the dust
+						before him. I had the confidence to cleave to him as a poor sinner, &amp; believed he would help me thro&apos;. <date when-iso="1743">1743</date> I was accepted an <roleName
+							de="accoluth">Acoluth</roleName> with a large company, which encourag&apos;d me anew to live to him and serve him as a poor Child that has nothing to plead but his mercy
+						from day to day. <date when-iso="1744">1744</date> I was receiv&apos;d into the <orgName en="single sisters choir">S. S<hi rend="superscript">rs</hi> Choir</orgName> and <date
+							when-iso="1747">1747</date> blessed for a <roleName en="deaconess">Deaconess</roleName>. <date when-iso="1748">1748</date> I received a Call to be S. S<hi
+							rend="superscript">rs</hi> Labores at <placeName ref="#mlpla000002">Bethlehem</placeName> in <placeName ref="#mlpla000070">America</placeName>. In
+							<placeName>London</placeName>
+						<date when-iso="1748-02-10">Feb<hi rend="superscript">r</hi>. the 10<hi rend="superscript">th</hi></date> I was bless for my office &amp; set out in <date when-iso="1748-06"
+							>June</date>. <date when-iso="1748-09-20">Sept the 20<hi rend="superscript">th</hi></date> I arrived in <placeName ref="#mlpla000002">Bethlehem</placeName> after a trouble
+						some voyage. I cannot but take notice, that this year the <date when-iso="1748-11-13">13<hi rend="superscript">th</hi> of Nov.</date> was celebrated the first time in </p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-04.jpg" />
+					<p>
+						<placeName ref="#mlpla000070">America</placeName>, which brought the first impression of that in <placeName ref="#mlpla000014">Herrnhaag</placeName>
+						<date when-iso="1741">1741</date> very fresh to my mind, but I was sorry, I could not enjoy it in such a <del>moment</del> manner as I wish&apos;d to do. I had to struggle,
+						particularly in the beginning with many difficulties, being young and unexperienced, and had no body to whom I could open my heart and consult with, so as I wish&apos;d; which
+						made it sometimes very heavy to me. But my dear <persName type="deity">Savior</persName> helped me thro&apos; whenever I turn&apos;d to him in my distress. I visited frequently
+						in the most of the country Cong<hi rend="superscript">ns</hi> which lay very distant from each other. In the year <date when-iso="1755">1755</date> a
+						<!-- The French and Indian War is important, but i don't think it should necessarily be marked as an event in her life --> a war broke out between the French &amp; English, and
+						as the Indians generally took share and joined one of the other party, we had very difficult times at <placeName ref="#mlpla000002">Bethlehem</placeName> and <placeName
+							ref="#mlpla000020">Nazareth</placeName>. First <placeName ref="#mlpla000079">the settlement of the Brethren at the Mahony</placeName> about </p>
+					<cb />
+					<p> 27 miles from <placeName ref="#mlpla000002">Bethlehem</placeName> was destroyed by the Indians, where 11 B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi>
+						lost their lives, after which many murders were committed much nearer, till at last within 6 miles of <placeName ref="#mlpla000002">Bethlehem</placeName>. We knew that we were
+						closely watched by the Indians, who would gladly have destroyed the Place, which at that time was the only one capable of making any resistance to their Incursion. The reports
+						of their cruelties at other places kept us in con tinual <name type="emotion">allarm and apprehension</name>, particularly as Indians were some times observed to lurk about and
+						in the place at nights.</p>
+					<p> However the strict watch kept by the <orgName>B<hi rend="superscript">rn</hi></orgName> in many parts &amp; particularly about our house, but above all the protection of our
+						good <persName type="deity">our good Lord</persName>, always frustrated their designs. During all these heavy times, <persName type="deity">our dear Lord</persName> was our
+						only comfort and his peace </p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-05.jpg" />
+					<p> was very sensibly felt amongst us. In the year <date when-iso="1762">1762</date>
+						<persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Nathanael Seidel</persName> arrived here from <placeName ref="#mlpla000075">Europe</placeName>,
+						who had lately been married to S<hi rend="superscript">r</hi>
+						<persName>Anne Joh. Piesch</persName> an old acquaintance of mine; from whose conversation and support I received much comfort. In the year <date when-iso="1764">1764</date> I
+						received a call to return to <placeName ref="#mlpla000075">Europe</placeName>, <persName>S<hi rend="superscript">r</hi> Susanna de Gersdorf</persName> arrived early in that
+						year to supply my place, and I left <placeName ref="#mlpla000002">Bethlehem</placeName> in company with <persName ana="Brother Bohler"><roleName type="honorific">B<hi
+									rend="superscript">r</hi></roleName></persName> &amp; <persName>S<hi rend="superscript">r</hi> Bochler</persName> and some other<orgName> B<hi rend="superscript"
+								>rn</hi></orgName> &amp; <orgName>S<hi rend="superscript">rs</hi></orgName> in the <date when-iso="1746-05">beginning of May</date>. We had a very quick passage,
+						arrived in <placeName ref="#mlpla000054">London</placeName> the <date when-iso="1746-06-24">24<hi rend="superscript">th</hi> of June</date>, &amp; at <placeName
+							ref="#mlpla000057">Marienborn</placeName> where the <orgName>Synod</orgName> was assembled on the <date when-iso="1746-07-04">4<hi rend="superscript">th</hi> of
+						July</date>. After the <orgName>Synod</orgName> was closed I went to <placeName ref="#mlpla000001">Herrnhut</placeName> and in the year <date when-iso="1765">1765</date>
+						received a Call to serve the S. S<hi rend="superscript">rs</hi> Choirs in <placeName ref="#mlpla000072">England</placeName>. I first went to <placeName ref="#mlpla000003"
+							>Fulneck</placeName>, where I staid about a year, &amp; then got a Call to <placeName ref="#mlpla000025">Bedford</placeName>, where I served the single S<hi
+							rend="superscript">rs</hi> untill the year <date when-iso="1772">1772</date> when </p>
+					<cb />
+					<p> I return&apos;d again to <placeName ref="#mlpla000003">Fulneck</placeName>. To go any farther in relating my course I don&apos;t think needful. Our Saviors passion and death
+						and that he has redemed me poor Sinner with his own precious blood, is to me above everything in time and in eternity. He has helped me thro&apos; this vale of tears and given
+						me grace to place my confidence in him in which I never have been put to shame. When I have the favour to see him face to face I shall kiss his feet with Sinner-tears for all
+						his mercy bestowed upon me.</p>
+					<p> Thus far has this faithful handmaid of <persName type="deity">Jesus</persName> left us an account of herself and of <del>that</del> what the Lord has done for her Soul. There
+						would be much to say of all the proofs of grace; wherewith he has crowned her endeavours and blessed her services to so many souls, in advising, comforting and shewing them the
+						way to true hap </p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-06.jpg" />
+					<p>piness; but we shall content ourselves with rendering unto him, who is the giver of all good gifts, our humble thanks and praises for all the mercys bestowed upon her, during
+						her pilgrimage here below. Her character and the blessing which attented her Labour is known and acknowledged with thankfulness and we heartily wish and pray that we may follow
+						her footsteps. In the year <date when-iso="1772">1772</date> when she the second time arrived in <placeName ref="mlpla000003">Fulneck</placeName>, the S. S<hi
+							rend="superscript">rs</hi> Choir and Oeconomies in <placeName ref="mlpla000084">Yorkshire</placeName> were in a very hopeful state and she was recieved by them with much
+						love and affection. In this vineyard of the Lord she laboured with the utmost alacrity both of body &amp; mind, deeming it her highest priviledge to win Souls for Christ. The
+						weakest of the flock were always objects of her peculiar care and concern, and she spared no pains what ever in tending and bearing them in love; and in such instances when all
+						means </p>
+					<cb />
+					<p> proved ineffectual, it was evident to all around her, how she always bemoaned their loss. On the other hand <persName type="deity">our Savior</persName> gave her the
+						satisfaction to see many faithful hand maids, whom she had trained up for <persName type="deity">the Lord</persName>, enter into the different services of his house, which she
+						always looked upon as the greatest favour conferred on herself. As <orgName>the Choir</orgName> here in <placeName ref="mlpla000003">Fulneck</placeName> considerably increased,
+						it was in the year <date when-iso="1780">1780</date> taken into consideration to build a S. S<hi rend="superscript">rs</hi> house in <placeName>Wyke</placeName>, and the
+						proposal having been approved of, our late <roleName type="honorific">Sister</roleName> had the pleasure to assist in laying the foundation stone, which was a <name
+							type="emotion">blessed solemnity</name>. When it was finished and inhabited by <orgName>Sisters</orgName> from <placeName ref="#mlpla000003">Fulneck</placeName> she used to
+						visit them frequent ly with great faithfulnes, and took particular share in their weal &amp; woe; as also in the wellfare of the <orgName en="œconomy">Sisters
+							Oeconomies</orgName> at <placeName ref="#mlpla000041">Gummersall</placeName>, <placeName ref="#mlpla000059">Mirfield</placeName> and <placeName ref="#mlpla000052"
+							>Littlemore</placeName>; when several years ago the latter was given up, it was a great concern to her mind. </p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-07.jpg" />
+					<p> Of late years she grew weak and could not be so active in her office as she wished, nevertheless her mind was continually employed for the wellfare of her Choir. Great as her
+						delight had been in the beginning, to see her Choir in such an increasing and florishing way, so great was her concern of late years to see it gradually declining in number and
+						but few new ones coming in. So much the more she wished and prayed that the few remaining might truly value their lot of grace and enjoy the blessings &amp; privileges, which
+						were so precious to herself. For as to her own person she regretted exceedingly, that in her latter days old age &amp; weakness prevented her attending every opportunity for
+						edification &amp; encouragement as much as she wished to do. <date when-iso="1802-05-01">May the 1st 1802</date> she was <name type="health">seized with a paralytic
+							stroke</name>, but recovered so far again that she on the <date when-iso="1802-05-04">4th of May</date> could attend the meetings </p>
+					<cb />
+					<p> house. During this winter, <name type="health">her weakness increased</name>, &amp; she was much confined room. <date when-iso="1803-02-15">Febr. 15<hi rend="superscript"
+								>th</hi> 1803</date>, she <name type="health">had ther stroke</name>, which quite took away use of her right side, &amp; the next day <name type="health">she had strong
+							convulsions</name> so that we expected her dissolution. She had often expressed a wish for <persName>B. Benade</persName> to pray with her at her departure which was now
+						done, and after the prayer the blessing of <persName type="deity">the Lord</persName> was pronoun ced over her. <name type="emotion">The feeling of the peace of God</name> on
+						this occasion will leave a deep impression on the minds of all <del>them</del> who were present. After the <name type="health">first paroxysm</name> she fell asleep and
+						slumbered for the the most part; but when she between times awoke she seemed to be sensible, tho&apos; her speech was so far gone, that she could only say yes or no to the
+						questions asked. The <date when-iso="1803-02-18">18<hi rend="superscript">th</hi></date> some <roleName type="honorific">Sisters</roleName> assembled in her room to sing some
+						verses expressing our fore taste of that happy lot to be at home </p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_8AndersonAnnaRosina-08.jpg" />
+					<p> with the Lord; she seemed quite de lighted with it and kept awake the whole time. The <date when-iso="1803-02-19">19<hi rend="superscript">th</hi></date> in the afternoon she
+						appeared more recollected than before and could speak several words, and when the girls came to see her, she gave them all the hand &amp; said: The Lord bless you! Afterwards
+						she slumber&apos;d again till about evening, had a very restless night, and the <date when-iso="1803-02-20">20<hi rend="superscript">th</hi></date> in the morning about 7
+						a&apos; clock her redeemed and thro&apos; the blood of Jesus sanctified soul went gently and happy over into the arms of her beloved bridegroom, during the singing of that
+						verse: When in the arms of Jesus, thy lips shall pallid grow.</p>
+					<p> Her age was 75 years 6 months. </p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

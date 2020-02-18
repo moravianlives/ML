@@ -146,10 +146,10 @@
 		"schema": "http://schema.org/",
 		"xsd": "http://www.w3.org/2001/XMLSchema#"
 	},
-	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111133",
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200218111322",
 	"@type": "oa:Annotation",
-	"dcterms:created": "2020-02-18T16:11:33.636Z",
-	"dcterms:issued": "2020-02-18T16:12:48.085Z",
+	"dcterms:created": "2020-02-18T16:13:22.363Z",
+	"dcterms:issued": "2020-02-18T16:22:00.031Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/clm043",
 		"@type": [
@@ -161,7 +161,7 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111133#Target",
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200218111322#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
 			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
@@ -175,9 +175,85 @@
 			"schema:softwareVersion": "1.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111133#Selector",
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200218111322#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "http://sparql.cwrc.ca/ontologies/cwrc#PersonalName",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000565",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111738",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-02-18T16:17:38.970Z",
+	"dcterms:issued": "2020-02-18T16:22:00.032Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111738#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?person_annotation_20200218111738#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p/rs[2]"
 		}
 	},
 	"oa:hasBody": {
@@ -193,6 +269,81 @@
 		"schema:softwareVersion": "1.0"
 	},
 	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200218111923",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-02-18T16:19:23.984Z",
+	"dcterms:issued": "2020-02-18T16:22:00.032Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200218111923#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200218111923#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"dc:format": "text/plain",
+		"rdf:value": "1804-09-24"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
 }
 ]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
@@ -216,19 +367,19 @@
 					memory of her past life, there are various
 					short diaries written even in a very early
 					period of her life containing statements
-					of deep religious feeling, and ever spiritual experience, but she seems to have
+					of <name>deep religious feeling</name>, and even spiritual experience, but she seems to have
 					shrunk from the last of compiling
 					any thing like a regular memoir.
 					What she declined to do for herself from
-					a feeling a rising probably from her extreme humility her brother and her
+					a feeling a rising probably from her <name>extreme humility</name> her brother and her
 					friends have endeavoured in some degree to supply. Her life was not crowded with exciting events, yet it was
 					one of unusual usefulness, and her
 					energies became more active as her
 					bodily strength declined; her light shone
 					more &amp; more until she reached the
-					perfect day. Ann Elizabeth Marychurch
-					was born Sep<hi rend="superscript:true;">tr</hi> 24<hi rend="superscript:true;">th</hi> 1804 &amp; was baptized
-					in the Brethrens Church in Bristol
+					perfect day. <rs ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000565" key="Ann Elizabeth Marychurch" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#PersonalName">Ann Elizabeth Marychurch</rs>
+					was <name event="birth">born</name> <date when="1804-09-24" cert="high">Sep<hi rend="superscript:true;">tr</hi> 24<hi rend="superscript:true;">th</hi> 1804</date> &amp; was <name event="baptism">baptized</name>
+					in the <rs cert="high">Brethrens Church</rs> in <rs cert="high">Bristol</rs>
 					Thus her earthly course began in that
 				
 			</p>

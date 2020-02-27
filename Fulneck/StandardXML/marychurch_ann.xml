@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ann Marychurch: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_82_Ann_Marychurch">Ann Marychurch</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-08.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-10.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-11.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-12.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-13.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-14.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-15.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-16.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-17.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-18.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Marychurch</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-01.jpg" n="1" />
+			<p>
+				<lg>
+					<l>A. E. Marychurch</l>
+					<l>After a careful search through my dear</l>
+					<l>Sisters papers I regret to say, that we</l>
+					<l>have been unable to find any distinct</l>
+					<l>memory of her past life, there are various</l>
+					<l>short diaries written even in a very early</l>
+					<l>period of her life containing statements</l>
+					<l>of deep religious feeling, and ever spirit-</l>
+					<l>ual experience, but she seems to have</l>
+					<l>shrunk from the last of compiling</l>
+					<l>any thing like a regular memoir.</l>
+					<l>What she declined to do for herself from</l>
+					<l>a feeling a rising probably from her ex-</l>
+					<l>treme humility her brother and her</l>
+					<l>friends have endeavoured in some de-</l>
+					<l>gree to supply. Her life was not crowd-</l>
+					<l>ed with exciting events, yet it was</l>
+					<l>one of unusual usefulness, and her</l>
+					<l>energies became more active as her</l>
+					<l>bodily strength declined; her light shone</l>
+					<l>more &amp; more until she reached the</l>
+					<l>perfect day. Ann Elizabeth Marychurch</l>
+					<l>was born Sep<hi rend="superscript:true;">tr</hi> 24<hi rend="superscript:true;">th</hi> 1804 &amp; was baptized</l>
+					<l>in the Brethrens Church in Bristol</l>
+					<l>Thus her earthly course began in that</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-02.jpg" n="2" />
+			<p>
+				<lg>
+					<l>Church which she loved through</l>
+					<l>life more than any other portion</l>
+					<l>of Gods heritage, she enbibid its spirit</l>
+					<l>in early childhood and cherished it</l>
+					<l>to the last. Her parents were esteemed</l>
+					<l>members of the Congregation &amp; her</l>
+					<l>Father was for many years, most</l>
+					<l>faithfully zealous and active in pro-</l>
+					<l>moting its interests. On the mater-</l>
+					<l>nal side, her Grandmother was one</l>
+					<l>of the first members when the Congre-</l>
+					<l>gation was settled in 1755. She was</l>
+					<l>brought up by a very affectionate and</l>
+					<l>tender mother who trained her early</l>
+					<l>in the ways of Gods people. In due</l>
+					<l>time she was sent to school, but her</l>
+					<l>School days were not happy, she </l>
+					<l>suffered much from those peculiar</l>
+					<l>school troubles which are often very</l>
+					<l>keenly felt by young sensitive child-</l>
+					<l>ren, - speaking of her school days</l>
+					<l>she once said I was a poor little timid</l>
+					<l>thing and the unkind ridicule</l>
+					<l>of some of the older girls made me</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-03.jpg" n="3" />
+			<p>
+				<lg>
+					<l>very unhappy, and pressed down my</l>
+					<l>spirits, so that my childhood was not</l>
+					<l>so happy as it might have been.</l>
+					<l>Her mother being an invalid, she became</l>
+					<l>very early useful in the family and</l>
+					<l>the active habits which were thus</l>
+					<l>formed continued through life.</l>
+					<l>In 1821 she was confirmed by the Rev<hi rend="superscript:true;">d</hi></l>
+					<l>D<hi rend="superscript:true;">r.</hi> Okely the minister of the Congrega-</l>
+					<l>tion and in 1822 she became a received</l>
+					<l>member. A dangerous illness had excit-</l>
+					<l>ed Solemn thought &amp; made her feel it</l>
+					<l>right to take these important steps</l>
+					<l>but had not at that time received any</l>
+					<l>deep religious impressions, she had not</l>
+					<l>as yet felt the burden of sin, nor the</l>
+					<l>inescpressible love of <hi rend="underline">Jesus.</hi> She was in-</l>
+					<l>deed faithful in prayer and had ear-</l>
+					<l>nest desires that every thought should</l>
+					<l>be brought into captivity to Christ. She </l>
+					<l>often retired for prayer, and she wrote</l>
+					<l>out a solemn dedication of herself to</l>
+					<l>her Saviour, but her heart was not yet </l>
+					<l>decided and she could not yet say</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-04.jpg" n="4" />
+			<p>
+				<lg>
+					<l>Lord I will follow thee whither so ever</l>
+					<l>thou goeth. But the Holy Spirit led her</l>
+					<l>into clearer views of her own ruined state</l>
+					<l>by nature, her sinfulness &amp; depravity in </l>
+					<l>the sight of God, and often it later years</l>
+					<l>did she bemoan herself almost in the</l>
+					<l>language of St. Paul, "O wretched man</l>
+					<l>that I am who shall deliver me from</l>
+					<l>the body of this death." This deep convic-</l>
+					<l>tion of the corruption of her heart com-</l>
+					<l>bined at times with what she deplored</l>
+					<l>as a natural tendency to sceptism</l>
+					<l>frequently robbed her soul of the peace</l>
+					<l>to be found in simply looking to the</l>
+					<l>blood &amp; righteousness of Christ as the</l>
+					<l>sinners only hope. It was once of her</l>
+					<l>greatest sources of disquietude amount-</l>
+					<l>ing at times to distracting torment</l>
+					<l>that Satan was permitted to infuse</l>
+					<l>doubts into her mind of those great</l>
+					<l>and sacred truths which she cherished</l>
+					<l>most dearly.</l>
+				</lg></p>
+			<p><lg>
+					<l>Possibly her active intellect aided the</l>
+					<l>temptation. But he who permitted</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-05.jpg" n="5" />
+			<p>
+				<lg>
+					<l>made a way to escape. Her harrased</l>
+					<l>mind sought comfort in the word</l>
+					<l>of God &amp; in prayer; and through the</l>
+					<l>Holy Spirits help she became established</l>
+					<l>strengthened &amp; settled in the faith. Still</l>
+					<l>through life she at times complained</l>
+					<l>of her hardness of heart &amp; slowness to</l>
+					<l>believe was "her thorn in the flesh" often</l>
+					<l>producing poignant distress, but like</l>
+					<l>St Paul she heard the voice of comfort</l>
+					<l>saying, "My Grace is sufficient for thee"</l>
+					<l>There were however times especially at</l>
+					<l>the Holy Comnmunion when she realized</l>
+					<l>the saving love of her Lord, &amp; when her</l>
+					<l>heart was filled with rapture &amp; joy</l>
+					<l>Thus as life progressed she obtained</l>
+					<l>deeper spiritual experience -- her faith</l>
+					<l>was not a dead faith, but brought </l>
+					<l>forth good fruit. It led her to work</l>
+					<l>to work heartity in the Lords service. </l>
+					<l>Her natural energy of character would</l>
+					<l>not allow her to rest in inactivity</l>
+					<l>She felt religion to be a vital matter</l>
+					<l>and she became anscious to communicate</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-06.jpg" n="6" />
+			<p>
+				<lg>
+					<l>it. In her early with she was a zealous</l>
+					<l>Sunday School teacher, &amp; even in later</l>
+					<l>years, when her infermities would have</l>
+					<l>proved a sufficient excuse for refusing</l>
+					<l>she undertook the Bible Class, when a</l>
+					<l>difficulty of supply was experienced. She</l>
+					<l>became also a faithful and valued dis-</l>
+					<l>trict visitor, first in the Parish of S<hi rend="superscript:true;">t</hi> James</l>
+					<l>under the guidance of the Rev<hi rend="superscript:true;">d</hi> T T Beddulph</l>
+					<l>and afterward in the Parish of S<hi rend="superscript:true;">t</hi> Michael</l>
+					<l>Failing health alone compelled her to </l>
+					<l>relinquish these duties, which she had</l>
+					<l>performed during many years with</l>
+					<l>conscientious regularlity. She took deep</l>
+					<l>interest also in the work of the Bible Society</l>
+					<l>and faithfully filled the office of Association</l>
+					<l>Secretary to the end of her life. In conjunc-</l>
+					<l>tion with the general work of the Bible</l>
+					<l>Society, she watched with especial interest</l>
+					<l>the origin and growth of the branch</l>
+					<l>connected with the Brethrens Congrega-</l>
+					<l>tion in Bristol of which her revered</l>
+					<l>Father had been treasurer. These were</l>
+					<l>labours of love invigorating her spiritual</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-07.jpg" n="7" />
+			<p>
+				<lg>
+					<l>life, and with drawing her mind from</l>
+					<l>dwelling too much upon her peculiar</l>
+					<l>tendency to despondency to which her</l>
+					<l>nervous constitution made her constantly</l>
+					<l>liable. But it was especially to the</l>
+					<l>advancement of the Brethrens Mission</l>
+					<l>in connection with this Congregation</l>
+					<l>that she devoted her strength both of body</l>
+					<l>&amp; mind. Her persevering self denying</l>
+					<l>labours in behalf of this great work</l>
+					<l>will not easily be forgotten. For upwards</l>
+					<l>of 30 years dating from the early part</l>
+					<l>of B<hi rend="superscript:true;">r</hi> Ramftler's ministry in this</l>
+					<l>place, she held the office of Secretary</l>
+					<l>of the Ladies Association, an office which</l>
+					<l>she filled with increasing delight</l>
+					<l>&amp; increasing efficiency. In the last</l>
+					<l>year of her life she would gladly have</l>
+					<l>resigned it into younger &amp; stronger</l>
+					<l>hands, but her services were too valuable</l>
+					<l>to be lost and she was though with</l>
+					<l>difficulty, persuaded to continue them</l>
+					<l>And never did her energies flag</l>
+					<l>never with drooping health did she</l>
+					<l>omit any effort to increase the efficiency</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-08.jpg" n="8" />
+			<p>
+				<lg>
+					<l>of the branch under her charge to add</l>
+					<l>to the comforts of the Missionaries or to</l>
+					<l>extend the sphere of their labours.</l>
+					<l>Her knowledge of the special circum-</l>
+					<l>stances of various Mission Stations</l>
+					<l>especially those of the West Indies</l>
+					<l>and the peculiar difficulties which</l>
+					<l>Missionaries have to encounter, was</l>
+					<l>enlarged by an extensive correspondence</l>
+					<l>which she held with those devoted</l>
+					<l>servants of God; and this intimate</l>
+					<l>knowledge of their state she turned</l>
+					<l>to good account by enlisting for them</l>
+					<l>the sympathise of children of God in</l>
+					<l>the various Christian denominations</l>
+					<l>around her. She has ceased from her</l>
+					<l>blessed labours but her works follow</l>
+					<l>her and in many a distant land</l>
+					<l>the announcement of her death will</l>
+					<l>be received with heartfelt sorrow.</l>
+					<l>May the Lord of the Vineyard raise</l>
+					<l>up from this Congregation, a suitable</l>
+					<l>and devoted successor. These were evi-</l>
+					<l>dences external to herself that she was</l>
+					<l>in possession of true saving Faith</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-09.jpg" n="9" />
+			<p>
+				<lg>
+					<l>which in seasons of temptation she</l>
+					<l>aometimes doubted. She loved the Lords </l>
+					<l>people of every name and she had a</l>
+					<l>heart ever ready to sympathise in their</l>
+					<l>joys &amp; sorrows </l>
+				</lg></p>
+			<p><lg>
+					<l>To her own Church, she was warmly at-</l>
+					<l>tached. Few have possessed the true</l>
+					<l>Brethrens spirit in a larger degree</l>
+					<l>She loved the pious practices &amp; habits of</l>
+					<l>her Forefathers, she opposed innovation,</l>
+					<l>she sorrowed much over what seemed</l>
+					<l>to her a declension from the good old ways</l>
+					<l>which so beautifully distinguish her Church</l>
+					<l>from other less favoured Christian bodies</l>
+					<l>Several papers were found in her desk</l>
+					<l>in which she had expressed her feelings</l>
+					<l>on these subjects</l>
+				</lg></p>
+			<p><lg>
+					<l>Nevertheless she fervently loved the people</l>
+					<l>of God amongst whom her lot was cast,</l>
+					<l>They were the people of her choice &amp;</l>
+					<l>her Church was to her as her earthly</l>
+					<l>home. It was the strength of her love</l>
+					<l>&amp; attachment to the Brethrens Church,</l>
+					<l>which made her peculiarly sensitive</l>
+					<l>as to any change in its rites &amp; customs</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-10.jpg" n="10" />
+			<p>
+				<lg>
+					<l>In 1852 her venerable &amp; beloved Father was</l>
+					<l>removed from her by sudden death.</l>
+					<l>The shock which her nervous system re-</l>
+					<l>ceived by this event, she never fully re-</l>
+					<l>covered, the great enemy of Souls took</l>
+					<l>advantage of her weak state to strengthen</l>
+					<l>old doubts and fears and to infuse new</l>
+					<l>ones, so that she was at times led to</l>
+					<l>question whether she had ever escperienced</l>
+					<l>real saving grace. Her condition for a</l>
+					<l>time was most unhappy it was evi-</l>
+					<l>dently in a great degree the result</l>
+					<l>of a morbid state of the nervous system</l>
+					<l>&amp; excessive bodily weakness. But as her</l>
+					<l>heath gradually improved, she was en-</l>
+					<l>abled to overcome these temptatous to </l>
+					<l>despondency and to prove more than </l>
+					<l>conqueror through Him that loved her.</l>
+					<l>In 1860 her health received another shock</l>
+					<l>by the fracture of a leg, whilst on a visit</l>
+					<l>at Calne. Under this severe affection, she</l>
+					<l>manifested the true spirit of the child</l>
+					<l>of God by her extreme patience &amp; resignation</l>
+					<l>Indeed all these toubles seemed to ripen</l>
+					<l>her for her heavenly home. She even spoke</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-11.jpg" n="11" />
+			<p>
+				<lg>
+					<l>of the state of her soul with humility</l>
+					<l>and fear, but her faith and love were </l>
+					<l>growing stronger &amp; stronger.</l>
+				</lg></p>
+			<p><lg>
+					<l>In reference to her illness at Calne she wrote</l>
+					<l>thus, I feel that I must be satisfied to be</l>
+					<l>an invalid, but it is all right, I feel more</l>
+					<l>about it for my dear sympathising friends</l>
+					<l>than for myself. I only want the work &amp;</l>
+					<l>grace of Christ to be more manifested</l>
+					<l>within me &amp; by me and my coldness</l>
+					<l>&amp; deadness to be absorbed in the warmth</l>
+					<l>and life of Christ. Again she wrote in</l>
+					<l>prospect of a change for her healths sake:</l>
+					<l>"It may do me good if the Lord please,</l>
+					<l>but I wish to leave it without any ansciety</l>
+					<l>&amp; without a choice, I expect to go halting</l>
+					<l>to the end of my days, but I trust a</l>
+					<l>cheerful mind &amp; patience will be given</l>
+					<l>me." Though so long a sufferer, her death</l>
+					<l>seemed to come suddenly. In the summer</l>
+					<l>of 1862 she had spent four happy weeks</l>
+					<l>with her Brother &amp; Sister in the North</l>
+					<l>of England who accompanied her to</l>
+					<l>Fulnec</l>
+				</lg></p>
+			<p><lg>
+					<l>She was always cheerful, delighted</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-12.jpg" n="12" />
+			<p>
+				<lg>
+					<l>to meet old friends, but withat indica-</l>
+					<l>ting great bodily weakness, &amp; great difficult-</l>
+					<l>ly breathing.</l>
+				</lg></p>
+			<p><lg>
+					<l>On the way homewards she paid a week</l>
+					<l>visit to a dear &amp; valued friend in Stafford-</l>
+					<l>shire.</l>
+				</lg></p>
+			<p><lg>
+					<l>On her arrival at home, she seemed ra-</l>
+					<l>ther improved in health than otherwise</l>
+					<l>by her long journey. But as the winter</l>
+					<l>advanced increased symptoms of weak-</l>
+					<l>less appeared especially in the re-</l>
+					<l>gion of the heart &amp; the lung.</l>
+				</lg></p>
+			<p><lg>
+					<l>Kind friends were around her one</l>
+					<l>especially watched over tenderly &amp; an-</l>
+					<l>sciously until the close of life. She received</l>
+					<l>also the incessant attention of an attach-</l>
+					<l>ed servant who had lived in her family</l>
+					<l>more than 20 years </l>
+				</lg></p>
+			<p><lg>
+					<l>But God had thoughts of peace con-</l>
+					<l>cerning her. She had at times ex-</l>
+					<l>pressed fears of death, but she never</l>
+					<l>knew what death was, she departed</l>
+					<l>in sleep.</l>
+				</lg></p>
+			<p><lg>
+					<l>The above is a sketch of a very unevent-</l>
+					<l>ful life, but yet one of unususal christi-</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-13.jpg" n="13" />
+			<p>
+				<lg>
+					<l>an activity. She possessed a strong</l>
+					<l>mind in a very weak body. Her love</l>
+					<l>for Christ and for Christ's people was</l>
+					<l>great, and her labours in His cause</l>
+					<l>were unremitting. She now rests in</l>
+					<l>peace, she has realized what she wrote</l>
+					<l>in 1860 concerning a happily depart-</l>
+					<l>ed and beloved Sister in Christ. "The</l>
+					<l>beloved Saint is with Christ, no longer</l>
+					<l>clad in weakness, and faint with suf-</l>
+					<l>fering, but clothed in the bright robes</l>
+					<l>&amp; our Saviour's righteousness, and</l>
+					<l>rejoicing in the presence of God for</l>
+					<l>ever" We may truly say this of</l>
+					<l>herself, she is with that Saviour, for</l>
+					<l>whom she felt it an honour to labour/</l>
+					<l>Friends will indeed mourn &amp; her</l>
+					<l>place on earth may not easily be</l>
+					<l>filled up, but we cannot wish to</l>
+					<l>bring her back, we would withdraw</l>
+					<l>her an instant from the presence of</l>
+					<l>Him, with whom there is fulness</l>
+					<l>of joy &amp; life for ever more.</l>
+					<l>H. W. M.</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-14.jpg" n="14" />
+			<p>
+				<lg>
+					<l>A few loving words of remembrance are</l>
+					<l>added to the above by one whose intimate</l>
+					<l>association with the beloved Subject of</l>
+					<l>this little sketch, renders it a most</l>
+					<l>touching but filial duty to add her testimony</l>
+					<l>of deep appreciation of and respect for the</l>
+					<l>character of one, so justly endeared to all</l>
+					<l>who had the privilege of her intimate</l>
+					<l>friendship, and perhaps none of those </l>
+					<l>who now tenderly mourn her loss can</l>
+					<l>speak of the departed, with so much real</l>
+					<l>knowledge of her both as an individual</l>
+					<l>&amp; a Christian having shared the same</l>
+					<l>home for 13 or 14 years. Her mental</l>
+					<l>powers were of no common order. She</l>
+					<l>possessed naturally an unusual</l>
+					<l>amount of sound judgment fortitude</l>
+					<l>&amp; self sacrificing generosity as well as</l>
+					<l>consistancy of action, together with a</l>
+					<l>true ardour &amp; depth of affection, which</l>
+					<l>when once bestowed, was rarely if ever</l>
+					<l>withdrawn. As a Christian her light</l>
+					<l>shone with unwavering steadfastness,</l>
+					<l>though a feeble body and of late shattered</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-15.jpg" n="15" />
+			<p>
+				<lg>
+					<l>nerves, often beclouding her otherwise</l>
+					<l>strong mind, giving a morbid tone</l>
+					<l>to her own expressions concerning her </l>
+					<l>spiritual experience, but to those who</l>
+					<l>had before them such an undeviating</l>
+					<l>pattern of consistancy there remained</l>
+					<l>nothing, but the precept / speaking</l>
+					<l>by escample / "Go ye and do likewise"</l>
+					<l>Her humility before God was a marked</l>
+					<l>feature of her high attainments in</l>
+					<l>the Christian life. In her last letter</l>
+					<l>to the writer of those few lines she says</l>
+					<l>I feel a mass of sin &amp; weakness: but</l>
+					<l>follows on to say, that the all wise, bur-</l>
+					<l>den bearer will enable her to cast it</l>
+					<l>all on Him. <hi rend="underlined:true;">Nearness to her Saviour</hi></l>
+					<l>was the one thing her soul most</l>
+					<l>ardently craved. About two months</l>
+					<l>ago she wrote. "Do pray dear that the</l>
+					<l>Lord may be more near than ever</l>
+					<l>He is very gracious, but I want to see</l>
+					<l>Him face to face, to touch Him as</l>
+					<l>it were." To these remarks little need</l>
+					<l>be added to prove that though her</l>
+					<l>spiritual life was a warfire, Yet</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-16.jpg" n="16" />
+			<p>
+				<lg>
+					<l>that in the apostle's words her weapons</l>
+					<l>were not carnal but mighty through</l>
+					<l>God to the pulling down of strongholds.</l>
+					<l>Of a truth she was clad in the armour</l>
+					<l>of God and her spirit was found</l>
+					<l>ready waiting When she for the</l>
+					<l>last time unconsciously closed her</l>
+					<l>eyes in sleep to wake in that glorious</l>
+					<l>world, where conflict &amp; strife &amp; suffering</l>
+					<l>are known no more.</l>
+				</lg></p>
+			<p><lg>
+					<l>The Church of which our beloved</l>
+					<l>one was so devoted a member, had</l>
+					<l>paid its tribute to the worthiness of one</l>
+					<l>of its brightest ornaments. Yea her</l>
+					<l>works do follow her. And we must</l>
+					<l>add from our own knowledge that</l>
+					<l>its glorious Missionary Society has lost</l>
+					<l>in this place its most energetic and</l>
+					<l>painstaking supporter. Neither were</l>
+					<l>her efforts confined alone to the Moravian</l>
+					<l>Church, but her well grounded and</l>
+					<l>large hearted Christianity taught</l>
+					<l>her that wherever good was to be</l>
+					<l>done &amp; she felt called upon to give her</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-17.jpg" n="17" />
+			<p>
+				<lg>
+					<l>aid. Hither she went and with all</l>
+					<l>her power &amp; even beyond her power work-</l>
+					<l>ed with loving zeal in her Masters</l>
+					<l>cause. Mongst the rest the Ladies</l>
+					<l>Association of the British &amp; Foreign </l>
+					<l>Bible Society would warmyly respond</l>
+					<l>to the acknowledgment of her most</l>
+					<l>valuable and long continued</l>
+					<l>help. The Lord ordereth all things </l>
+					<l>well for His children, &amp; it is a comfort-</l>
+					<l>ing thought that this dear Servant</l>
+					<l>of God who so often ministered to the</l>
+					<l>bids of others, was also herself abundant-</l>
+					<l>ly comforted both by her intimate</l>
+					<l>relatives and friends as well as</l>
+					<l>by her Brethren &amp; Sisters in Christ</l>
+					<l>and it is especieelly sweet to think,</l>
+					<l>that for the last fortnight one was</l>
+					<l>constantly beside her administering</l>
+					<l>with tender solicitude to her every</l>
+					<l>want. These services were continu-</l>
+					<l>ally acknowledged, as were those</l>
+					<l>of her faithful servant who has serv-</l>
+					<l>ed her with an affectionate interest</l>
+					<l>for a period of 20 years. May she</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-18.jpg" n="18" />
+			<p>
+				<lg>
+					<l>Lord reward them, &amp; give to them</l>
+					<l>&amp; us the answer to those prayers</l>
+					<l>which the dear departed so earnest-</l>
+					<l>ly and believingly offered on their</l>
+					<l>and our behalf, until we all meet</l>
+					<l>in the mansions prepared in our</l>
+					<l>Father's home in heaven</l>
+				</lg></p>
+			<p><lg>
+					<l>Bristol</l>
+					<l>Jan<hi rend="superscript:true;">ry</hi> 18<hi rend="superscript:true;">th</hi> /63</l>
+				</lg>
+			</p>
+		</body>
+	</text>
+</TEI>

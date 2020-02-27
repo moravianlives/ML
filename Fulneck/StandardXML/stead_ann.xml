@@ -1,131 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-	<teiHeader><fileDesc>
-<titleStmt>
-<title>Ann Stead: Memoir</title>
-<funder>The Moravian Lives Project</funder>
-<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
-        <address>
-<addrLine>Lewisburg, Pennsylvania</addrLine>
-        </address>
-        <email>faull@bucknell.edu</email>
-        </principal>
-<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
-            <address>
-                <addrLine>Gothenburg, Sweden</addrLine>
-            </address>
-            <email>christer.ahlberger@history.gu.se</email>
-        </principal>
-<respStmt>
-<persName xml:id="JAKA1">Diane Jakacki</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Project Manager</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcguire">Michael McGuire</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Developer</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mcohen">Marleina Cohen</persName>
-        <resp>Research Assistant and encoder, 2018-2019</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jhom">Jess Hom</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2018-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mmcmullen">Morgan McMullen</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant and encoder, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="mgruner">Marita Gruner</persName>
-        <orgName>University of Greifswald</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="skanneman">Sarah Kannemann</persName>
-        <orgName>University of Mainz</orgName>
-        <resp>Encoder</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="jschaumberger">Justin Schaumberger</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="cpirmann">Carrie Pirmann</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Transkribus, Text Encoding Specialist</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bking">Brian King</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Consultant, Machine Learning</resp>
-    </respStmt>
-    <respStmt>
-        <persName xml:id="bacharya">Bhagawat Acharya</persName>
-        <orgName>Bucknell University</orgName>
-        <resp>Research Assistant</resp>
-    </respStmt>
-</titleStmt>
-<editionStmt>
-    <edition>
-        <orgName>The Moravian Archives</orgName>
-        <address>
-            <addrLine>41 West Locust Street</addrLine>
-            <addrLine>Bethlehem, PA 18018-2757</addrLine>
-            <addrLine>info@moravianchurcharchives.org</addrLine>
-        </address>
-    </edition>
-</editionStmt>
-<publicationStmt>
-    <distributor>The Moravian Lives Project</distributor>
-    <availability>
-        <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
-    </availability>
-</publicationStmt>
-<sourceDesc>
-    <msDesc>
-        <msIdentifier>
-            <repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
-            <msName type="memoir" ana="MAF/Ful_3_33_SteadAnn">Ann Stead</msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-01.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-02.jpg"></msName>
-            <msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-03.jpg"></msName>
-        </msIdentifier>
-    </msDesc>
-</sourceDesc>
-</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
-    <particDesc>
-        <person role="subject">
-        <persName ref="#">Ann Stead</persName>
-                </person>
-    </particDesc>
-    <langUsage>
-        <language ident="en">English</language>
-    </langUsage>
-</profileDesc></teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ann Stead: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_33_SteadAnn">Ann Stead</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-03.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Stead</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
 	<text>
 		<body>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-01.jpg" n="1"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-01.jpg" n="1" />
 			<p>
 				<lg>
 					<l>The Life of the mar<hi rend="superscript:true;">d</hi>. Sr Ann stead who departed</l>
-					<l>to her Redeemer June 13<hi rend="superscript:true;">th</hi> 1772</l></lg></p>
-<p><lg>
-					<l>She herself dictated the following to her Husband.</l></lg></p>
-<p><lg>
+					<l>to her Redeemer June 13<hi rend="superscript:true;">th</hi> 1772</l>
+				</lg></p>
+			<p><lg>
+					<l>She herself dictated the following to her Husband.</l>
+				</lg></p>
+			<p><lg>
 					<l>I was born at Bradford March 28<hi rend="superscript:true;">th</hi> 1730 &amp; educated in the</l>
 					<l>Church of England. I grew up in a very careless manner</l>
 					<l>having no particular thoughts or Concern about my Salva</l>
@@ -157,12 +163,12 @@
 					<l>me as by Child. This was an Hour of grace that has never</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-02.jpg" n="2"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-02.jpg" n="2" />
 			<p>
 				<lg>
 					<l>since been erased out of my Mind. Now I was full of joy</l>
 					<l>&amp; Thankfulnes for the mercy He had shown to my Soul. &amp;</l>
-					<l>ever since He has given me that grace that  all Times</l>
+					<l>ever since He has given me that grace that all Times</l>
 					<l>&amp; amidst the farther knowlege I had of my own Depravity</l>
 					<l>I could always go confidently to Him with all my Concerns</l>
 					<l>&amp; cast myself with them upon his merciful Heart &amp; He</l>
@@ -175,26 +181,29 @@
 					<l>caused me to examine more strictly into</l>
 					<l>my own Heart, &amp; which also proved the Occasion of my</l>
 					<l>diving still deeper into for Heart of Love &amp; experiencing</l>
-					<l>more of the grace which He had in Store for me.</l></lg></p>
-<p><lg>
-					<l>So far her own Account.</l></lg></p>
-<p><lg>
+					<l>more of the grace which He had in Store for me.</l>
+				</lg></p>
+			<p><lg>
+					<l>So far her own Account.</l>
+				</lg></p>
+			<p><lg>
 					<l>She had a tender Heart to our Sav<hi rend="superscript:true;">r</hi> &amp; spent her</l>
 					<l>Time in Communion with Him. Her marriage was</l>
 					<l>blest with 10 Children 5 of whom went Home before</l>
-					<l>her.  She was in a poor state of Health before the</l>
+					<l>her. She was in a poor state of Health before the</l>
 					<l>Birth of her last child in January &amp; has never been</l>
 					<l>well since then. In her Sickness her Children lay,</l>
 					<l>upon her Mind with much Concern, &amp; she was <add place="above">exceedingly</add></l>
 					<l>pained at thinking how it might go with them, but</l>
 					<l>was obliged to commit them to the Mercy of God</l>
-					<l>She was tenderly occupied with our Sav<hi rend="superscript:true;">r</hi> <add place="above">and what He had done for her</add> &amp; had no Incli</l>
+					<l>She was tenderly occupied with our Sav<hi rend="superscript:true;">r</hi>
+						<add place="above">and what He had done for her</add> &amp; had no Incli</l>
 					<l>nation for Conversation about any other Subject, but</l>
 					<l>was all alive whenever He was spoken or sung of. The</l>
 					<l>time of her Sickness was a Season of real grace &amp; Blessing</l>
 				</lg>
 			</p>
-			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-03.jpg" n="3"></pb>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_33_SteadAnn-03.jpg" n="3" />
 			<p>
 				<lg>
 					<l>to her Heart, &amp; on extraordinary presence of our</l>
@@ -210,8 +219,9 @@
 					<l>apprehensions, but can resign my Soul to my</l>
 					<l>Sav<hi rend="superscript:true;">r</hi> with joy &amp; with the same <add place="above">composure</add> &amp; serenity as when</l>
 					<l>I go to sleep at Nights because He has granted me</l>
-					<l>the Happiness to know Him as my Friend &amp; Redeemer."</l></lg></p>
-<p><lg>
+					<l>the Happiness to know Him as my Friend &amp; Redeemer."</l>
+				</lg></p>
+			<p><lg>
 					<l>She had the holy Communion administred to her</l>
 					<l>twice in her House, attended with an extraordinary</l>
 					<l>Feeling of grace. Thus she remained, an Edifica</l>

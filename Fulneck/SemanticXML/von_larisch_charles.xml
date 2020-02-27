@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Charles Henry Conrad Von Larisch: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_05_LarischCharles">Charles Henry Conrad Von Larisch</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-08.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-12.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-13.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Charles Henry Conrad Von Larisch</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when-iso="2019-11-11" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Charles Henry Conrad Von Larisch</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-02.jpg" />
+					<p>
+						<lg>
+							<l>Lindsey House Nov<hi rend="superscript">r</hi> 1<hi rend="superscript">st</hi> 1754.</l>
+						</lg>
+					</p>
+					<p>
+						
+							After the remains of our dear B<hi rend="superscript">r</hi> Larish were intred, the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi>
+							(among whom where many from London) met in the Family Hall in
+							Lindsey House and then was Sung that Hymn: O Head so full of
+							Bruises &amp; After which the Disciple spoke in English as follows.
+						
+					</p>
+					<p>
+						
+							I have but a few words to say on this Occasion, the Liturgy of to
+							Day belongs to the Evening when our Saviour went from us, the present Day has besides that, the particular character of all Saints, &amp; that
+							gives me a handle to speak something of the Saints, &amp; of the nature of a Saint.
+							&apos;Tis a name quite common in the Bible, and if we hear of a good Man
+							who left the World 2, or 300 Years ago, then we have not much against
+							his appearing in that Character, and are not shock&apos;d by it,
+							but the Ideas we have form&apos;d to ourselves of a Saint are such, that
+							in the Romish Church itself no body can be called so, till 1000
+							Years after his Departure. The reason is because one fears,
+							if any one should remain who had seen that Man or
+							Woman he would Controul his Sanctity, he would
+							say something that would lesson his Opinion of his Worthiness. I am sure one is greatly mistaken in this Respect,
+							but as we are calld to promote the Sinnership we
+							are not so Curious to receive that Name, Saint, we
+							care not if that Charactor should be heard of no more
+							but for all that I would not have it, that we shou&apos;d
+							loose the meaning of the Thing together with the name
+							Title &amp; Charactor, &amp; should ee prove careless in that point
+							I Fear we should be deprived of a great Charactor in the Gos-
+							pel Train. A Saint in my Opinion is a Christian,
+							who thinks very little, who perhaps may be oblig&apos;d to
+						
+					</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-03.jpg" />
+					<p>
+						
+							think of many things on Account of his Business &amp; of his
+							Office, but when I say he thinks not much, I mean that he
+							does not care to think much, according to the Inclination
+							of his Heart. You will scarcely find a Saint among the great
+							Men, the Rich &amp; learn&apos;d Men, perhaps not among the Gentry, or what one calls an easy Person in this World, the reason is, because all such charge themselves with too many Superfluities, while the necessary condition of becoming
+							a Saint, is not to have a great Store of Idle &amp; unnecessary things about him. Simplicity &amp; plainness is the Distinguishing, mark of a Saint. I confess that if a Person
+							of that Character, happens to want Education &amp; of
+							Course what one calls all manner of required Qualities
+							hath absoludely not so much notion of the World, as
+							to deal in an ordinary Way, in a regular Way, then the
+							Sanctity of such a Man, may not comand that Honour
+							that Awe, that Reverence which is due to it as long as he
+							lives, &amp; it Seems therefore, that I should be afraid to tell
+							you now by way of Discourse, what I have already Sung
+							of my B<hi rend="superscript">r</hi> Larish, whom I always thought a Saint &amp;
+							I beleive there are 100 in the Cattalouge on Dypticks of old,
+							who were by far not his paramounts, not like him, nor so
+							much of a Saint as He. He was a Person void of all
+							manner of Education, he had been neglected in all the
+							Necessary things of this Life, &amp; after having found the 
+							Secret, to make himself to be forgotten in this World, after
+						
+					</p>
+					<cb />
+					<p>
+						
+							having placed himself behind the Congregation at Hhuth, in
+							order to lead a Simple Civil Life, &amp; absolutely not regarded by any one, which he contriv&apos;d so out of a true Humility,
+							for He was a Lord, &amp; had then many Subjects, &amp; a great
+							Territory of his own. When he was in that Situation
+							he came hither, and met with one of the most Difficult
+							Tasks which can be imagin&apos;d, nevertheless he atcheiv&apos;d &amp; performd it with such surprising Simplicity &amp; wisdom, that
+							I cant help owning once more, that I should have been
+							embarrass&apos;d in the highest degree to do the like: And I must add
+							that if after my Decease one would compare me to that great
+							Man, &amp; my Conduct to his many Personal Circumstances, as
+							well as real Intricacies, which would be too long to relate
+							here (the Saviour knows them, &amp; part of us are not Igorant
+							thereof,) it would be mere Courtesey. B<hi rend="superscript">r</hi>. Larish fullfill&apos;d
+							his Task with Honour, &amp; has not left one leaf of his Book
+							unfinish&apos;d. His end was like to that of all truly great Men, a
+							little while before he had not the least thought of going home
+							he was Sick, &amp; a very long time knew his sase almost incurable
+							but drew no Consequence from it for in approaching Dissolution.
+							When he was acquainted of the Turn his Sickness had taken
+							&amp; of the approaching Dissolution, &apos;twas very well, &apos;twas
+							all the same to him. Those Days passed away in the same
+							Strain as the foregoing. He treated that awful matter as simple
+							Natural &amp; unconcerndly fill the last gasp as usual, that
+							none of the Heroes of this world, nore of the great Geniuses
+							needed to be asham&apos;d of the same Exit, Considering the thing in 
+						
+					</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-05.jpg" />
+					<p>
+						
+							itself &amp; without that difference, which makes his case so
+							much happier than theirs, as for that, He will never
+							change his Exit for that of any Hero of this World, of
+							any great man or Philosopher whatsoever that is quite
+							out of Question, all I have to say on that part is,
+							that he departed this Life like a Hero.
+						
+					</p>
+					<p>
+						
+							Every one enabled from above to see the hidden Side
+							of things, their real Charactor to extricate the real
+							point out of appearances, will never Contradict my opinion, about his abode here, having been like his Departure
+							I wish with all my Heart, that so many brave B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi>
+							so many wise ones so many well Educated, so many truly
+							learned ones. And which is the best of all so many of our
+							Sinnerlike good People may obtain.
+						
+					</p>
+					<p>
+						
+							His Natural &amp; Simple Charactor that they who
+							had not the good fortune to have known him personally
+							may be encouragde thereto by his pretty End.
+						
+					</p>
+					<p>
+						
+							What I have said is only Introductory to that little
+							Hymn which I have Compos&apos;d on his Account &amp; which
+							perhaps will be Translated.
+						
+					</p>
+					<p>
+						
+							<hi rend="underline">Next follows some Account of his Life &amp; Departure</hi>
+							Our dear B<hi rend="superscript">r</hi> Charles Henry Conrad von Parish, was born
+							Sept 22<hi rend="superscript">nd</hi> 1711 in Gradenwiz near Cosel in upper Silesia. He
+							was descended from the Ancient Famous Family of the Courts
+							&amp; Lords of Larish, also of the Lineage of great Nimsdorff
+							<add place="above">one</add> of whom, in the Service of our Sav<hi rend="superscript">r</hi> is already a grain of
+						
+					</p>
+					<cb />
+					<p>
+						
+							Wheat in Surinam. He inherited from his parents the Lordships of Shossloehiz Lomniz Zonade &amp; Rodewiz. In his
+							tender Youth he became acquainted with Abbot Steinmez &amp; other Servants of God, by means of the well known great Justness awakening, &amp; he was concern&apos;d about his Salvation very
+							much, this continued for some time, &amp; on this account he staid awhile in <del>Neustad</del>
+								<add place="above">Mandel</add> with Abbot Steinmetz, was at Werningrode
+							Halle &amp; other Places, where he thought perhaps he might get a
+							Blessing for his Heart. Since 1731 he has been acquainted
+							with the B<hi rend="superscript">rn</hi> as well in Jena as in other Places &amp; came
+							from time to time to Visit the Cong<hi rend="superscript">n</hi> in Hhuth, where the
+							Sav<hi rend="superscript">r</hi> came ever nearer to his Heart. He found no true rest
+							from all his good Performance, nor was delivered from his Anxiety till he resolv&apos;d in the Year 1739 to become the intire
+							Reward of the Smart of Jesus, at the same time he got
+							a Conviction to let every thing be as it was, &amp; to betake himself to the Cong<hi rend="superscript">n</hi> to stay there; accordingly he did so, with
+							a true Blessing for his Heart, &amp; he had at that time truely blessed times for his Heart with the Single Br<hi rend="superscript">n</hi> assisted also quite faithfully in Building their Choir House
+							there. He was also soon received into the Cong<hi rend="superscript">n</hi> &amp; partook
+							of the Corps &amp; Blood of Jesus in the Sacrament with
+							the Cong<hi rend="superscript">n</hi>.
+						
+					</p>
+					<p>
+						
+							In May 1742, He came over to Engl. were he staid for some
+							time especially in Yorks<add place="above">hire</add> &amp; was edifying to the Cong<hi rend="superscript">n</hi> in his
+							Servants office in the Hall which he perform&apos;d very faithfully
+						
+					</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-08.jpg" />
+					<p>
+						
+							faithfully &amp; with his whole Heart from thence he returned in company with the Dr Disciple &amp; Mother to Holland &amp; so on to
+							M-born &amp; was there May 15<hi rend="superscript">th</hi> 1743. Married to our S<hi rend="superscript">r</hi>. Diana
+							Raymond after his marriage her his Wife were 1<hi rend="superscript">st</hi> Deacons
+							in Engl &amp; conducted it with true Simplicity &amp; many Blesssings afterwards he made Several Journeys to Hhuth &amp;
+							Hhaag, in this Year also he visited his Lordships &amp; found himself not only not in a Capacity to execute what he had intended, but found also such an Entanglement in his worldly
+							Affairs, that he thought it best to sell his Estates, to pay
+							he Debts, &amp; to give the rest to the Diaconate of the Enity
+							which at that time was much streighten&apos;d, for wch in the
+							Year 1740 the New House calld Lichtenburg was made over to 
+							him &amp; fitted up, but because his comfort did not like to tarry
+							at Hhaag, he went with her first to Zyest &amp; in the last
+							Year again to Engl; &amp; enjoyed by his abode in each Place of
+							those Cong<hi rend="superscript">ns</hi> much Grace &amp; Blessings for his Heart, &amp; all
+							the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> lov&apos;d him, he had a longer attachment &amp; faithful
+							Heart full of love to our Sav<hi rend="superscript">r</hi> &amp; his Cong<hi rend="superscript">n</hi> &amp; amidst the various Circumstances w<hi rend="superscript">ch</hi> his weak constitution mostly occasi-
+							ond. He was never put off from his point, but his Heart always long&apos;d after him, whom he can now see bodily &amp; kiss his
+							Wounds.
+						
+					</p>
+					<p>
+						
+							The latter Years of his mortal Life he was very Sickly &amp; had
+							many disorders in his Body, but especially since the Winter
+							53 yet as long as it was possible he came to the Opportunities
+							in the Disciples House very diligently &amp; with great Chearfullness
+						
+					</p>
+					<cb />
+					<p>
+						
+							cheerfulness. According to the Nature of His Disease and frequent casaulties of all sorts He thought nothing at first of going home, till just
+							after his Birthday this year when the Watchword was untill the
+							glance extend throughout &amp; then he came upon it very happily
+							himself, and he was heard to say when by <del>by</del> himself, to our
+							Saviour: My Dear Saviour be thou my all in all &amp; round about me, I am indeed weak, but thou knowest well how to make,
+							it better, and he said: I am indeed spent or very weak, but I
+							shall soon go into the Regions of health. Another time, when
+							he was in great pain he comforted himself with the sufferings
+							of our Saviour, &amp; rejorced at the sweet hour of his release, &amp;
+							only wish&apos;d that our Saviour wo&apos;d take him to himself in
+							sleep. As he pressd very much to have all his Temporal affairs
+							concerning him and his regulated while he was here, therefore
+							the Synodal Conclusion of 1753, was thro&apos; the interposition
+							of the Disciples House but a few days before his end in
+							the name of our God brought into the form customary
+							here, and tho&apos; all the necessary forms are yet wanting from both
+							the Married parties, yet the Deed is delivered to the satisfaction of all sides. Oct 26 He got a new disorder &amp; said: that now
+							he was ready to waite for the last kiss, when the Brn at his
+							desire sung him some verses he rejoyced and said O that
+							has strengthned me, &amp; so continued in continual thought
+							of going home till the 28 of Octo<hi rend="superscript">r</hi> when he said: to this Servant Bro<hi rend="superscript">r</hi> Summerskill, this Ev&apos;ning or Tomorrow
+							morning the expected hour will <add place="above">come</add> &amp; often asked, is it not yet
+							time he sent also 2 or 3 times in the night for B<hi rend="superscript">r</hi> Johan
+						
+					</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-09.jpg" />
+					<p>
+						
+							to come and bless him, and when Joh came to him, and sung: pale
+							Lips kiss him upon the Heart, he said; o yes, and to that Verse and
+							when thy Mouth expiring &amp;c. He said even to Day.
+						
+					</p>
+					<p>
+						
+							Oct 29<hi rend="superscript">th</hi> Towards Morning he took leave of his Wife and said:
+							My dear I kiss thee on thy Heart, here I have been thy Husband and thy Heart, we was both one Body but now no
+							more, I an going to our dear Saviour and shall expect
+							thee with my Bridegroom with Joy: Afterwards he
+							said to B<hi rend="superscript">r</hi> Summerskill and his Wife, my dear Children forgive me every thing and I thank you for all the Love and
+							faithfulness that you shew&apos;d me here and the B<hi rend="superscript">rn</hi> will think
+							on you for it, thereupon he said to his Maid (who is no
+							Sister) adue I thank you also for all you have done for me, I
+							wish you well in the World, about Six o&apos;Clock in the 
+							Morning he desired Brother John<hi rend="superscript">s</hi> to be called
+							again, because he was very weak but recover&apos;d himself as soon as he saw him w<hi rend="superscript">ch</hi>
+							he did several times before; The rest of the
+							Time he was mostly as if he was asleep, &amp; had thereby sometimes such an
+							extraordinary lovely &amp; smiling look
+							that the eyes of the Brethren &amp; Sisters
+							round about him overflowed. Hutton
+							said once, such a look is worth more
+						
+					</p>
+					<cb />
+					<p>
+						
+							than 100 Guineas, at last he awoke, rais&apos;d
+							himself and said to Brother Johannes
+							now Bless me, &amp; then he took his hand &amp;
+							laid it himself upon his forehead, &amp;
+							so Johannes Blessed him with that
+							Verse: &amp; let his Mouth expiring on
+							thy dear Breast recline &amp;c. to
+							which our dear happy heart said yes
+							powerfully: Ater the Blessing
+							he look&apos;d about once more, when
+							he saw Bro<hi rend="superscript">r</hi>. Johannes, Wallerville
+							Hutton &amp; others standing round
+							him, he threw them a kiss, &amp; said:
+							<add place="above">Fare you well</add> Adue sweetly the holy Ghost has
+							impress&apos;d upon all upon my heart
+							thy committed to him many Salutations <add place="above">&amp; kisses</add> to the Saviour and
+						
+					</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-12.jpg" />
+					<p>
+						
+							the Church above made perfect
+							&amp; perticularly our dear Blessed
+							Christle, and he promissd it 
+							with a plain Yes. His last
+							Words were: We all live unto
+							him &amp; then he shut his eyes
+							again and slept &amp; so according to his wish his Spirit was
+							kiss&apos;d away in Sleep &amp; the Brn
+							&amp; Sisters round him <add place="above">sung him</add> quite into
+							his rest. His Tabernacle displayed
+							a very happy look with which
+							the Brethren &amp; Sisters present
+							in Sarons hall delighted them-
+							selves
+						
+					</p>
+					<cb />
+					<p>
+							<hi rend="underline">Made by the dear Disciple on Br L. Departure</hi>						
+					</p>
+					<p>
+						<lg type="stanza" n="1">
+							<l>1st Thou venerable Child of Grace </l>
+							<l>Go in thy white and Blood wash&apos;d Dress</l>
+							<l>To live there henceforth without Sin</l>
+							<l>where many a Soul &apos;fore thee hath been :/:</l>
+						</lg>
+						<lg type="stanza" n="2">
+							<l>2nd on all Saints Day thy Corpse is laid</l>
+							<l>In God&apos;s green pretty Sharon&apos;s Bed</l>
+							<l>Where it shall sweetly rest, till He</l>
+							<l>Thinks fit to Change it Gloriously :/:</l>
+						</lg>
+						<lg type="stanza" n="3">
+							<l>3rd from the Disciples House there are</l>
+							<l>Already Sevral Grains Sown there, </l>
+							<l>Marigens and her little ones</l>
+							<l>* Kleists, Millers, &amp; Golds Little Sons</l>
+							<l>and Christels Bones</l>
+						</lg>
+						<lg type="stanza" n="4">
+							<l>4th That Corpse is now laid in the Grave to </l>
+							<l>On whose account no doubt we have,</l>
+							<l>But he who did inhabit it</l>
+							<l>Will fetch it Back when quite made fit :/:</l>
+						</lg>
+						<lg type="stanza" n="5">
+							<l>5th Now thou that Body&apos;s noble Guest</l>
+							<l>Who us so edified hast</l>
+							<l>Because thy Farewell was like that</l>
+							<l>which we of Fredrick Whilhelm Great</l>
+							<l>Commemorate</l>
+						</lg>
+					</p>
+					<p>
+						<lg>
+							<l>Or *Kleists, Millers, Gold&apos;s Child&apos;s mortal Bones</l>
+							<l>and my own Son&apos;s</l>
+						</lg>
+					</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_05_LarischCharles-13.jpg" />
+					<p>
+						<lg type="stanza" n="1">
+							<l>6th Thou wert presentis Animi</l>
+							<l>Ev&apos;n in thy Farewell Agony</l>
+							<l>Some Days thou&apos;st ready for Adieu</l>
+							<l>So that thy our Friend &amp; Mother too</l>
+							<l>their Pleasure view</l>
+						</lg>
+						<lg type="stanza" n="2">
+							<l>7th I saw it when that Angel dear</l>
+							<l>Who waited on our Larish here</l>
+							<l>Went to his B<hi rend="superscript">rn</hi>. He did say</l>
+							<l>Beloved only think I pray :/:</l>
+						</lg>
+						<lg type="stanza" n="3">
+							<l>8th I thought I waited on a Sheep</l>
+							<l>Which happen&apos;d on his Path to keep</l>
+							<l>But in its Exit turn&apos;d at length</l>
+							<l>To Heroism that little Strength :/:</l>
+						</lg>
+						<lg type="stanza" n="4">
+							<l>9th This last Act finds so much Applause</l>
+							<l>That Ev&apos;n a Christle hath no cause</l>
+							<l>To blush at it, when Ludwig shall</l>
+							<l>So clear and chearful leave his Call</l>
+							<l>O very well.</l>
+						</lg>
+						<lg type="stanza" n="5">
+							<l>10th Should one ask seriously: How so? </l>
+							<l>What is it that makes Larish go</l>
+							<l>So nobly, &amp; afford a Sight</l>
+							<l>of which God&apos;s House hold w<hi rend="superscript">th</hi> Delight</l>
+							<l>Saith. That is right?</l>
+						</lg>
+						<lg type="stanza" n="6">
+							<l>11th I answer Larish may be stil&apos;d</l>
+							<l>In all Respects a simple Child</l>
+							<l>A Child, as Scripture teaches us</l>
+							<l>Is otherwise Synonimous</l>
+							<l>with Genius.</l>
+						</lg>
+					</p>
+					<cb />
+					<p>
+						<lg type="stanza" n="1">
+							<l>12th Swift&apos;s Wit did end in Lunacy</l>
+							<l>A Clark doth loose his Forced Esprit</l>
+							<l>Ev&apos;n Newton turns a Simpleton</l>
+							<l>But Larish, when ripe to be gone</l>
+							<l>a Solomon.</l>
+						</lg>
+						<lg type="stanza" n="2">
+							<l>13th Thou Partner of this Man, attend</l>
+							<l>And ponder well his happy End</l>
+							<l>Let thyself in Child&apos;s Mould be cast</l>
+							<l>To shall you be right nobly grac&apos;d</l>
+							<l>and shine at last</l>
+						</lg>
+						<lg type="stanza" n="3">
+							<l>14th All ye who&apos;re Saints because the Lamb</l>
+							<l>Did take upon him your Sins Shame</l>
+							<l>Salute him ye who&apos;re gone to Christ</l>
+							<l>You here; turn Children be advis&apos;d</l>
+							<l>and so Baptiz&apos;d</l>
+						</lg>
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

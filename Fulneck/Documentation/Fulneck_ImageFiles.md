@@ -489,14 +489,7 @@ http://moravianlives.bucknell.edu/MAF/Ful_3_79_Clemens_Sophia-58.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_79_Clemens_Sophia-59.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_3_79_Clemens_Sophia-60.jpg<br />
 
-Clerk, Esther (1)<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_14_1ClarkEsther-01.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_14_1ClarkEsther-02.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_14_1ClarkEsther-03.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_14_1ClarkEsther-04.jpg<br />
-http://moravianlives.bucknell.edu/MAF/Ful_SS_14_1ClarkEsther-05.jpg<br />
-
-Clerk, Esther (2)<br />
+Clerk, Esther <br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-01.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-02.jpg<br />
 http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-03.jpg<br />

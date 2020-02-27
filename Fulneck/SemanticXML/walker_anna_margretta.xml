@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Anna Margretta Walker: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_16_WalkerAnnaMargretta">Anna Margretta Walker</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-05.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Anna Margretta Walker</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-01.jpg" n="1" />
+			<p>
+				
+					Anna Margretta Walker was Born in fulneck <add place="above">went home</add> Apl 23<hi rend="superscript:true;">d</hi> 1770
+					Sept<hi rend="superscript:true;">r</hi> 20: 1763, and was soon after Baptised by Br<hi rend="superscript:true;">o</hi>
+					Latrobe, the was a lively and healthy Child till she
+					was nine Months old, when she got the hooping Cough
+					which left something upon her Stumoc of a Consumptive nature
+					which remained with her to the very last, soon after she
+					begun to speak she took great, delight in Learnong verses
+					the first of which was I am a little Child you see etc.
+					and what verse soever she learnt She always Learnt
+					the right Tune along therewith, for which she had a
+					special gift, her most faverit verses were, heartily
+					Love I she Lamb etc. The Lord I love with Tender awe etc
+					look on me Lord till I do weep etc Grace how good how
+					cheap how free etc The Saviours Blood and Righteousness
+					and many more which would be too tedeous to Mention
+					a year and half ago when a School was begun in the Sis<hi rend="superscript:true;">r</hi> house
+					for the girls in the place, She Rejoised greatly there at
+					and has so much as her health wou'd admit of always gone
+					and it has been observd it has been special Blessing
+					to her, last Novembr She got a Fever which brought
+					her very weak but after wards Recovered prety well
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-02.jpg" n="2" />
+			<p>
+				
+					Derectly after which she took the small pox, but came
+					very well thro, and was for a short time more healthy
+					than she used to be, and went in the School again, and
+					when any of the girls or Sisters went home and She
+					saw their Corps, it maid a great impresion upon her,
+					and she could not speak enough of their buty, and
+					often spoke how much She Longed to be like them
+					and tould some of her Companions that they should
+					come and see her when she was a Corps, and spoke
+					often with her father and Mother how they Should dress
+					her when she was a corps, and what she would
+					have in the coffin with her, but her greatest care
+					was about the watch word which was on her Birthday
+					for this year the Sisters in the School having writ of
+					her on apice of printed paper, when she Brought
+					it to her. Father, she said. I will have this put in 
+					my hands in the coffin with me,* She has complained
+					for these three Months last frequently of head ace, and
+					in pasion week She went one night to the meeting in 
+					the hall and Spoke with a peculiar delight of being
+					at great Sabbath and took care to have at her clothes
+					Clean for that day, but on Tusday in the night She
+					was shakon with a vilant pucking and headach
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-03.jpg" n="3" />
+			<p>
+				
+					which Continualy increased, and altho' she took
+					medcin, yet neither that nor any thing els would
+					rest upon her Stomoc. So that it was plain that our dear
+					Saviour intended to take her into his Eternal Security
+					when She was askd at any time what she wanted she
+					always answred, I want our Saviour to come, when askd
+					if She would grow Better, She always said I will go to
+					our Saviour and would hear of nothing als
+					on Ester Sunday night she begun to have Convelsions
+					So that we though She would Soon go home, but on the Monday
+					the doctor aplied something which gave her a little ease
+					till Friday night, when her convulitions Returnd again
+					So that one Expected her going home every houre, but She
+					still continued all that day and night, and Sunday having
+					Convultions continually, during the whole week
+					She was frecquantly visited by the Sisters both day and
+					night, which is hereby acknowledged with thankfulness
+					on Sunday in the night the convulsions left her and she 
+					Lay quite Still till half an hour past 5 on Monday morning
+					when her happy soul took flight into the wounds of her beloved
+					Saviour with the Blessing of the Cong and her choir aged 6 years
+					7 Months and 3 days
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_16_WalkerAnnaMargretta-05.jpg" n="4" />
+			<note>The text of this insertion is denoted to be part of the text of page 2 of this document.</note>
+			<p>
+				
+					*The text on her Birth Day was on the 20<hi rend="superscript:true;">th</hi> of Sept
+					my flesh and my heart faileth, but god is the 
+					Strength of my heart, and my position for ever.
+					There's nought, that me can part from Jesus in
+					life or death vicissitude; I lay my hand in his side
+					precious and say, thou'st my Lord and my God."
+					The S<hi rend="superscript:true;">rs</hi> observe as to her disposicon she was of a lively &amp; acttive
+					turn though sometimes when her own will
+					showed it self it gave her and her Sisters some
+					trouble but when she was reminded of it she
+					soon was a sinner and beged us to forgive her
+					which we readyly did for she was tenderly beloved
+					by her Sisters and School companions
+				
+			</p>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,2510 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Samuel Benade: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University, 2018-Present</orgName>
+					<resp>Research Assistant and encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell Univesrity</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository>Fulneck, UK</repository>
+						<msName type="memoir" ana="MAF/Ful_3_78_BenadeSamuel">Samuel Benade</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-07.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-08.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-10.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-11.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-12.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-13.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-14.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-15.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-16.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-17.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-18.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-19.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-20.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-21.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-22.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-23.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-24.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-25.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-26.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-27.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-28.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-29.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-30.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-31.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-32.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-33.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-34.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-35.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-36.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-37.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-38.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-39.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-40.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-41.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-42.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-43.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-44.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-45.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-46.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-47.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-48.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-49.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-50.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-51.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-52.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-53.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-54.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-55.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-56.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-57.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-58.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-59.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-60.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-61.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-62.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-63.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-64.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-65.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-66.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-67.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<revisionDesc>
+			<change when-iso="2019-11-30" who="#cpirmann">Completed structural markup</change>
+			<change when-iso="2019-07-23" who="#JAKA1">Created file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Samuel Benade</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-01.jpg" />
+					<p>
+						
+							Narrative of my pilgrimage
+							thro' the vale of tears.
+						</p>
+					<p>
+							They that sow in tears, shall reap in
+							joy. He that goeth forth and reap weepeth
+							bearing precious seed, shall doubtless
+							come again with rejoicing, bringing
+							his sheaves with him.
+						</p>
+					<p>
+							All they, who weeping now go forth
+							And bear the precious seed,
+							May in our Savior's walk on earth:
+							Pattern and comfort read.
+						</p>
+					<p>
+							Samuel Traugott Benade
+						</p>
+					<p>
+							Having, while I lived on earth, among
+							other favors and privileges conferred upon
+							me, thro' the unmerited &amp; undessed grace
+							of my Lord and Savior been honored with
+							the appointment of a Minister of the Gospel
+							I deem it my bounden duty, once more
+							thro' this narrative of my earthly pilgrimage, to bear testimony to the power and
+							efficacy of a living faith in a crucified
+							Redeemer, as experienced by me to the
+							saving of my Soul and the rejoicing of
+						
+					</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-02.jpg" />
+					<p>
+						
+							of my heart. And Oh! the may this feeble testimony prove an encouragement to my fellow
+							pilgrims who as yet have not reached their
+							heavenly home, but are still laboring to enter
+							into that eternal rest, which God, the faithful covenant keeping God, has prepared for
+							his people. To All, that shall hear or read this
+							narrative, I solemnly declare, that my salvation has been from beginning to end, the work
+							of God, and a succession of miracles, wrought
+							by the grace of God, for my deliverance as well
+							as for the promoting of my happiness, &amp; for
+							the completion of my heavenly calling &amp; election.
+							Ever since I came to the knowledge of my natu-
+							ral depravity and sinfulness &amp; knew experimentally the truth of that declaration, "that
+							there is neither health nor help in ourselves",
+							scarcely a day has passed, but I had occasion
+							to weep and to mourn, yea to abhor myself.
+							and scarcely a day, but I experienced some manifestation of my Savior's redeeming grace &amp;
+							power, for my comfort &amp; encouragement 
+							On revising my own works, it is no compliment to say, that I find no ground for glorying;
+							but calling to mind the Lord's mercies, I find
+							abundant cause for everlast'g thanks &amp; prayer.
+						
+					</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-03.jpg" />
+					<p>
+						
+							Hear then, what the Lord has done for my
+							Soul!
+						</p>
+					<p>
+							I was born the 28<hi rend="superscript">th</hi> of October 1746 at
+							Milkel in Upper Lusatia about to 10 E. miles
+							from Bautzen the Capital. My Father was
+							the Minister of the place, and my Mother
+							Christiana, whose maiden name was Faber
+							a Minister's daughter. These my dear Parents were earnestly concerned, to bring
+							up their Children, of whom they had 6 living,
+							in the fear and nurture of the Lord, and
+							to prerserve them from this present evil world
+							&amp; from the spirit of seduction. Wherefore,
+							getting acquainted with the Brethren,
+							who frequently passed thro' the village
+							in going from Kleinwelke to Uhyst, they
+							soon embraced that opportunity, to place
+							us, one after another, in the Seminaries
+							of the B<hi rend="superscript">rn</hi>, and thus in my eigth year
+							I came to live in the Oeconomy at Uhyst.
+						</p>
+					<p>
+							It was high time for me to be then brought
+							to a place of safety; for young &amp; little as I
+							was, the evil propensities of the heart began
+							already to unfold themselves and would have
+							even without the aid of seduction, rushed
+							into activity, if they had not been restrained.
+						
+					</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-04.jpg" />
+					<p>
+						
+							Numberless times in the sequel I have
+							thanked our Savior with tears, that he in
+							good time plucked me as a brand from the burning, and planted me as a tender plant in the
+							B<hi rend="superscript">rns</hi> Church, &amp; thereby preserved me from
+							running headlong into Sin.
+						</p>
+					<p>
+							Being then under the B<hi rend="superscript">rns</hi> care, I spent
+							the remainder of my childhood in a happy
+							manner receiving early and deep impressions
+							of Jesus' dying love, which excited me to love
+							him again; tho' my innate self love &amp; self
+							complacency did not fail to show itself from
+							time to time.
+						</p>
+					<p>
+							In 1756 the Boys Oeconomy moved from
+							Uhyst to Niesky, where my love to our Savior and fellowship with him was much
+							further'd by the faithful care of the late B<hi rend="superscript">r</hi>
+							Bryant, and by his edifying manner of
+							treating his Pupils, making it his chief business, to lead them into acquaintance with
+							our Savior. 
+						</p>
+					<p>
+							While here, one of the most signal visitations of grace was experienced by me on the
+							13<hi rend="superscript">th</hi> of November at the meetg for prostration;
+							my Soul was overcome and melted by an inexpressible Sense of our Savior's love wch constrained me, to devote myself with soul
+							<note type="catchword">and</note>
+						
+					</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-05.jpg" />
+					<p>
+						
+							and body to Him as his eternal property
+							This blessed event I have always remember'd
+							with particular gratitude; and to this very
+							day the remembrance of it is as fresh and lively
+							to my mind, as if it had occured but yesterday.
+						</p>
+					<p>
+							In my 13<hi rend="superscript">th</hi> year I was placed in the Paedagogium at Hennersdorf, with a view to
+							prosecute my studies. At that time the visits and discourses of the late Count Zinzendorf were much blessed to my heart; &amp; I was
+							deeply affected, when that Servant of God
+							was called to enter into the joy of his Lord.
+							After his departure the Paedagogium was transferred from Hennersdorf to Niesky.
+						</p>
+					<p>
+							As I advanced in years, my natural depravily and siful propensities appeared more
+							and more, and I should have been carried
+							away by the torrent of corruption, if through
+							grace a good foundation had not been laid in
+							my soul, and if I had not been under the care
+							of faithful Tutors.
+						</p>
+					<p>
+							Our Savior continued the good work he had
+							begun; and when I on the one hand wept &amp;
+							mourned over myself, he on the other comforted and supported me by repeated manifestations of his love and kindness. I was enabled,
+							to look by faith to a crucified Redeemer, and
+						
+					</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-06.jpg" />
+					<p>
+						
+							perceived virtue going out of him whenever
+							I touched him by faith.
+						</p>
+					<p>
+							In 1759 I was received into the Cong<hi rend="superscript">n</hi>. &amp;
+							in 1761 admitted to the H. Com<hi rend="superscript">n</hi>. This divine
+							repast has been of blessed reality &amp; help to me
+							in my younger years, as indeed at all times
+							It always proved a new encouragement to 
+							me, and revived my faith, love and confidence
+							in such a manner, that I could run with patience the race set before me; wch however
+							would not have been the case, if I had not
+							been in the habit of looking unto Jesus in
+							my daily wants and necessities.
+						</p>
+					<p>
+							In 1764 I came with 6 others to Barby
+							to finish our Studies in the Seminary.
+						</p>
+					<p>
+							The celebration of the 13<hi rend="superscript">th</hi> November, w<hi rend="superscript">ch</hi>
+							happened the next day after our arrival.
+							proved a blessed welcome and introduction
+							to us. My three years stay there was attended
+							with much benefit and blessing. I proceeded
+							gradually both in the knowledge of myself
+							and of my Lord and Savior Jesus Christ,
+							and learned to apply his precious merit to
+							the healing of my sin sick nature. It was
+							there likewise that I received a divine conviction and assurance, that my blesed Creator
+							&amp; Redeemer, had made me, a poor worm, an
+						
+					</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-07.jpg" />
+					<p>
+						
+							object of his divine, infinite and unbounded
+							love, and that it was the gracious purpose of
+							his love, to grant me a full portion of that salvation, which he has purchased for all and
+							this impression has never left me since, proving
+							a powerful support to me under various trial
+							and tribulations. 
+						</p>
+					<p>
+							In my 22<hi rend="superscript">d</hi>. year I was appointed Teacher
+							in the Paedagogium at Niesky, where I spent
+							4 years very pleasantly; my labor among
+							the youths, whom I dearly loved, being easy
+							and agreeable to me, and my fellowshep with
+							our Savior childlike and familiar. During
+							that time I had a very painful fit of the gout,
+							occasioned by an obstinate cold, wch I had
+							neglected in the beginning.
+						</p>
+					<p>
+							Upon this truly delightful period followed
+							a time of trial and distiess, w<hi rend="superscript">ch</hi>. I brought
+							upon myself by indulging a mistaken notion
+							that I should to more useful in our Savior's
+							cause, if I went out of the common track,
+							and that my faith would carry me through
+							all difficulties. When I afterwards discovered
+							the fallacy of my conceptions, &amp; the true source
+							from w<hi rend="superscript">ch</hi> they had spiring, the pride of my
+							heart, and a desire to render myself eminent &amp;
+							conspicuous; I was exceedingly distresed,
+						
+					</p>
+				</div>
+				<div type="page" n="8">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-08.jpg" />
+					<p>
+						
+							and at time so cast down that it required
+							strong and repeated consolations, to lift me up
+							again. Under these circumstance the Holy
+							Ghost created me with maternal tenderness
+							and attention, discovering to me on the one
+							hand more than ever the deep depravity of
+							my heart as the source of all Evil, and on the
+							other the unchangeable love &amp; friendships
+							of my Savior; administering at the same
+							time the balm of divine consolation to my
+							broken and contrite heart. It was then that
+							I made a blessed experience of that precious
+							truth, that all things must work together
+							for good to them that love God. For this
+							trial not only served to confirm my faith,
+							but also to prepare me for my future calling
+							to preach the Gospel and to labor in the
+							Lord's vineyard.
+						</p>
+					<p>
+							In the year 1772, having been accepted an
+							Acoluth in the UEC, I was appointed to the
+							service of the Boys Oeconomy at Fulneck
+							in Yorkshire. As I had to travel alone, and
+							part of the way thro' England, unable to 
+							speak the language, I experienced new proofs
+							of a gracious providence watching over me
+							for good, and answering the prayers of a lonely traveller.
+						
+					</p>
+				</div>
+				<div type="page" n="9">
+					<head type="page">9</head>
+					<pb n="9" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-09.jpg" />
+					<p>
+						
+							The first year of my service at Fulneck
+							was extremely heavy to me, as I found the
+							circumstances of the Oeconomy so difficult
+							and embarrassed, that I could see no remedy
+							either one way of another. Nevertheless, I put
+							my trust in the Lord, and firmly believed,
+							that he in his own good time would bring
+							things into a better course, w<hi rend="superscript">ch</hi> also came to
+							pass, when B<hi rend="superscript">r</hi>. Traneker came as Cong<hi rend="superscript">n</hi>
+							Helper to Fulneck and undertook the management of the Oeconomy.
+						</p>
+					<p>
+							In the second year after my arrival in
+							England, I was appointed to preach occasionally in country places about Fulneck, which
+							indeed was a difficult task to me, both on
+							account of my insufficient knowledge of
+							the language, and on account of my natural
+							timidity and bashfulness. But He, whose
+							strength is made perfect in weakness, and
+							who regards the poor and needy, supported
+							me in every time of need, and if I felt poverty of spirit it was for the blesing of my
+							own heart.
+						</p>
+					<p>
+							Amidst all outward difficulties I had a
+							blessed time at Fulneck. I counted it grace,
+							to advance in the knowledge of my deep depravity, as it was a powerful inducement
+						
+					</p>
+				</div>
+				<div type="page" n="10">
+					<head type="page">10</head>
+					<pb n="10" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-10.jpg" />
+					<p>
+						
+							to me, to come with prayer &amp; supplication
+							to the Savior of Sinners, and to claim the
+							healing virtue of his precious blood, w<hi rend="superscript">ch</hi> I 
+							also experienced according to my faith:
+							At times indeed I felt the power of sin &amp; 
+							the strength of unbelief to such a degree,
+							that I was prompted to despair of a com-
+							pleat deliverance; but even then "he delivered
+							my soul from death, mine eyes from tears,
+							and my feet from falling", and granted me 
+							again a time of refreshing from his presence
+							Once on such an occasion I was most blessedly relieved by a divine assurance, that not
+							withstanding all my sinfulness I should
+							yet attain to that supreme happiness, to
+							love my Savior with all my heart, with all
+							my strength and with all my undesrstand<hi rend="superscript">g</hi>
+							and to be perfectly renewed into his image.
+							The labor among the Children appeared to
+							me highly important, &amp; I found much
+							occasion, to ask for grace and wisdom to
+							do justice to the several duties incumbent
+							upon me. I trust my labor has been of benefit to some of them; but at any rate it has
+							been made a blessing to my own heart.
+							As I have found, in the course of my ministry, that some people form to themselves
+						
+					</p>
+				</div>
+				<div type="page" n="11">
+					<head type="page">11</head>
+					<pb n="11" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-11.jpg" />
+					<p>
+						
+							erroneous ideas of the way and manner, in
+							which our Savior manifests himself to the
+							soul, and are apt to look for some extraordinary &amp; striking event. I will here mention
+							some instances, among many, of his gracious
+							manifestations experienced by me in the commoon course of things.
+						</p>
+					<p>
+							Once being in violent pain, w<hi rend="superscript">ch</hi> for 3 days
+							&amp; nights had continued without any intermission; I began with a murmuring spirit, to
+							reflect on the goodness of God, that he would
+							leave his creatures in pain, tho' he could so
+							easily relieve them. But I was soon ashamed
+							of this ungrateful thought, and led to consider
+							the way of divine, w<hi rend="superscript">ch</hi> are so conpicuous
+							even in our afflictions, but most of all that
+							manifestation of his unspeakable love, that
+							He himself became a man of sorrows and
+							acquainted with griefs, bearing our griefs and
+							carrying our sorrows, w<hi rend="superscript">ch</hi> consideration so
+							over came and melted my heart, that I for the
+							present forgot my pains, and afterwards could
+							endure them patiently.
+						</p>
+					<p>
+							Another time being at Scarboro' on a high
+							rock close to the sea, on w<hi rend="superscript">ch</hi> the castle stands,
+							from whence there is an extensive view of
+							the sea, the town below and the adjacent country
+						
+					</p>
+					<div type="page" n="12">
+						<head type="page">12</head>
+						<pb n="12" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-12.jpg" />
+						<p>
+							
+								the ships below appearing as small as
+								cockle shells and the men like crawling
+								insects my mind was uncommonly struck,
+								with the sublime and awful scene, and impressed with an overpowering Sense of the
+								immensity of that universe, of w<hi rend="superscript">ch</hi> the earth
+								with all its water wide and deep, and with
+								all its stupendous mountains, is but a speck,
+								a mere atom. How great then, thought I,
+								how immensely great must He be, who
+								has called the whole creation into existence,
+								and who upholds all things by the word of
+								his power. And do you really believe, said I
+								to myself, that this great Builder of the Universe: "who dwelleth on high, &amp; humbleth
+								himself, to behold the things, that are in
+								heaven and in <add place="above">the</add> earth", should have appeared
+								in the world in the form of a Servant, &amp; died
+								on the cross, that he might redeem fallen man,
+								and raise him to glory!? Reason answered
+								no it is far too much to be believed: it is impossible; but my heart, with a clear witness of the Spirit within, and melting under
+								a sense of the love of God, said, yes, I must
+								believe it from what I have experienced,
+								lost and undone should I be, if it were not so
+								but in my great Creator I have found my
+							
+						</p>
+					</div>
+					<div type="page" n="13">
+						<head type="page">13</head>
+						<pb n="13" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-13.jpg" />
+						<p>
+							
+								Savior and Redeemer, who has delivered my
+								Soul from the pit of corruption, and is become
+								to me a never failing source of comfort, peace
+								and joy. Thus a grand view of nature proved
+								the occasion of an animating manifestation of
+								of divine love.
+							</p>
+						<p>
+								Another instance is this. For a considerable time my heart had been as cold as ice, and
+								dead as a stone, altho' I was not particularly
+								<add place="above">harrassed</add> by tempitations, or the workings of my corrupt
+								nature, and tho' I was well convinced, that this
+								was a lamentable state, I had neither power
+								nor inclination to pray for a change, &amp; for
+								a return of my former blessed &amp; tender feeling.
+								In this state I took a solitary walk into a
+								wood, and laid myself, dead &amp; cold as I was
+								at the feet of my Savior and cried: "Lord,
+								have mercy upon me." It was not long before
+								such a transition took place, as if I had been
+								translated from darkness into light, &amp; from
+								death into life, God revealed himself to me
+								in his unspeakable love. And O! how often
+								has he by an unexpected touch, without any
+								particular occasion, melted my heart, how
+								often has he drawn me with chords of love.
+								when I was least aware of it, yea, how often
+								has he laid his hand upon me, when I was
+							
+						</p>
+					</div>
+					<div type="page" n="14">
+						<head type="page">14</head>
+						<pb n="14" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-14.jpg" />
+						<p>
+							
+								on the point of deviating from the right
+								path and going astray, and if at any time.
+								my frail nature had swerved beyond the
+								proper bounds, he soon created in me a god-
+								ly sorrow on account of it, and then again
+								filled my heart with peace and comfort.
+								During my stay at Fulneck I experienced
+								a particular prresenation of my life. Being
+								one Sunday sent to Baildon to preach, I
+								took a short road, where I had to cross a small
+								river, w<hi rend="superscript">ch</hi>, in dry weather is fordable on stepping stones, but was now <add place="above">so</add> swelled by the rain
+								that it could only be crossed over in a boat.
+								The ferryman having gone to Church, a
+								stout looking boy offered to ferry me over &amp;
+								we set off, but when we had got into the
+								middle of the stream, he found it so rapid
+								that he lost the command of the boat, &amp; was
+								obliged to let it go down with the current,
+								which carried us into a mill race, &amp; brought
+								us to the very edge of the mill dam, from
+								which the superfluous water was precipitat<hi rend="superscript">g</hi>
+								itself into a bed of stones. We now expected
+								to go down the fall and to be dashed among
+								the stones wch had happened to others in this
+								place, who lost their lives, and indeed the
+								people came running from the mill &amp; the
+								<note type="catchword">adjacent</note>
+							
+						</p>
+					</div>
+					<div type="page" n="15">
+						<head type="page">15</head>
+						<pb n="15" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-15.jpg" />
+						<p>
+							
+								adjacent houses, to see what would be come
+								of us. But when we came to the edge of the
+								fall, the boat instead of going down with
+								the torrent, gliding gently along close to the
+								edge, safely passed the waterfall, two young
+								men from the mill then got into the boat,
+								and ferried me safe over the river. Having
+								thus received, as it were, my life anew out
+								of the hand of God, I dedicated it anew to
+								him, to spend it in his service &amp; to his glory.
+								In the year 1770 I was called to Dublin,
+								these to have the care of the single B<hi rend="superscript">rn</hi> and
+								Boys, including the Children, as also to
+								assist in preaching. Previous to my setting
+								out I was ordained a Deacon of the B<hi rend="superscript">rns</hi>
+								Church by B<hi rend="superscript">r</hi>. Johannes de Watteville then
+								on a visit at Fulneck.
+							</p>
+						<p>
+								During my 5 years service in that Cong<hi rend="superscript">n</hi>,
+								I experienced much patience, long-suffering
+								&amp; forbearance, but also much grace &amp; favor
+								from my bountiful Lord. Many temptations
+								indeed from the side of an evil world presented
+								themselves to my view &amp; I had no power
+								in myself to resist, but rather found my
+								treacherous heart but too ready and prone
+								to engage in unprofitable things; but I cried
+								to the Lord in my distress, &amp; he heard my cry
+							
+						</p>
+					</div>
+					<div type="page" n="16">
+						<head type="page">16</head>
+						<pb n="16" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-16.jpg" />
+						<p>
+							
+								and delivered me in every time of need,
+								As the Cong<hi rend="superscript">n</hi>. at that time was desirous, that
+								a Boys day school should be instituted under
+								the B<hi rend="superscript">rns</hi> direction and management, I was
+								glad of being servicable in establishing and
+								promoting said institution, w<hi rend="superscript">ch</hi> indeed in
+								the beginning afforded but an unpromising aspect, but in process of time began to prosper
+								beyond our expectation and was attended with
+								the Lord's blessing.
+							</p>
+						<p>
+								In August 1783, that is, 11 years after my
+								arrival in England, I received Call, to be
+								one of the Writers to the U.E.C., w<hi rend="superscript">ch</hi> I accepted
+								from the conviction, that it came from the
+								Lord. But it lasted till February following,
+								before I could set out on my passage to Germany. Several occurrences render'd this journey very remarkable. First I lost all my
+								goods, when the Ship, in which I was sending them from Dublin to London, was wrecked
+								on the Welsh Coast, w<hi rend="superscript">ch</hi> loss however did not
+								affect me much as my immediate wants
+								were relieved by the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs </hi>in Dublin
+								according to their wonted liberality. The
+								next difficulty arose from the hard winter
+								then prevailing. The landing in Holland
+								had been render'd very difficult &amp; expensive
+							
+						</p>
+					</div>
+					<div type="page" n="17">
+						<head type="page">17</head>
+						<pb n="17" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-17.jpg" />
+						<p>
+							
+								by the ice living the coast, and requiring
+								ice boats to land the passengers, it was but
+								just cleared of the ice when I had to go over.
+								The ice having been stopped both in the
+								Rhine and in the Elbe, dreadful inunda-
+								tions had ensued, w<hi rend="superscript">ch</hi> rendered the roads impassable, and when I left Zeist it was with
+								the first post waggon that could travel, &amp;
+								still in several places the road was intersected
+								by the water. Thus I saw a hand of providence in it, that my setting out from Dublin
+								had been so long delayed. But when I had
+								reached the bo<del>a</del>rders of Germany, the winter
+								set in again, it snowed day and night and
+								the roads were rendered nearly impracticable.
+								One night we actually stuck fast in the snow
+								and we could not have been extricated, if there
+								had not been another carriage in company,
+								whose horses joined to ours rescued us from our
+								disagreable situation. In short, I had so
+								much to suffer from cold, sickness and fatigue
+								that when at last I reached Barby in the
+								beginning of April, my heart was full of
+								thanks and praises for my presentation, and
+								I found my faith and confidence in divine,
+								providence much strengthened, and indeed
+								it was a wonder to me, that I had been kept 
+								safe and sound.
+							
+						</p>
+					</div>
+					<div type="page" n="18">
+						<head type="page">18</head>
+						<pb n="18" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-18.jpg" />
+						<p>
+							
+								In August 1784 I was married to my late
+								wife Johanna Eleanora Gaertinor, &amp; in Sept<hi rend="superscript">r</hi>
+								moved with the U.E.C. to Herrnhut. Here in
+								consequence of the hardships I had suffered on
+								my journey from Holland, as before described
+								I had to indure a severe illness, and was brought
+								nigh unto death, but it proved a salutary effort
+								of nature, under the divine blesing, to bring
+								about a better and more durable state of health
+								than I had enjoyed before. I shall never
+								forget, what comfort and encouragement
+								I received during this illness when once in
+								a sleepless night, my mind laboring under
+								great distress, the watchman passing under
+								my window, began to sing with a charming
+								voice: Herr Jesu, unser Flehen etc.
+							</p>
+						<p>
+								<lg type="hymn">
+									<l>Hear our prayer, gracious Savior Jesus,</l>
+								<l>Friend of Soul so dearly bought!</l>
+								<l>Let thy grace prevail and bless us,</l>
+								<l>Far beyond our feeble thought!</l>
+								<l>Lead us ever with thy favor</l>
+								<l>That we may in times succeeding</l>
+								<l>See from grace to grace proceeding.</l>
+								</lg>
+							</p>
+						<p>
+								My appointment as Writer to the U.E.C.
+								was exceedingly pleasant to me, tho' very
+								laborious, and I was sorry to be soon called
+								to another station. For in the year following
+							
+						</p>
+					</div>
+					<div type="page" n="19">
+						<head type="page">19</head>
+						<pb n="19" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-19.jpg" />
+						<p>
+							
+								I was appointed Minister of the Cong<hi rend="superscript">n</hi>
+								at Neusalz, and having been ordained a
+								Presbyter by B<hi rend="superscript">r</hi> Spangenberg, I arrived there
+								with my wife, who was then pregnant, the
+								23<hi rend="superscript">d</hi> of March, after a difficult and hazardous
+								journey, the snow being uncommonly deep.
+								The state of the Cong<hi rend="superscript">n</hi> whom we came to
+								serve, was such, that we might have been
+								discouraged from undertaking the office
+								if our Lord had not supported us with the
+								believing hope, that he would be with us,
+								&amp; bless our service which hope was in the
+								sequel realised beyond our expectation.
+							</p>
+						<p>
+								In 1785 the Lord blessed us with the birth
+								of a Son, whom we dedicated unto Him
+								as his blood bought property.
+							</p>
+						<p>
+								But now began a scene of domestic distress,
+								w<hi rend="superscript">ch</hi> under <del>a</del> various changes &amp; vicissitudes,
+								lasted till the happy departure of my beloved wife, who during a period of 6 years
+								had to endure one sickness after another,
+								&amp; even in the intervals did not enjoy any
+								comfortable state of health. The early departure of our little Son who for half a
+								year labored under a gradual decline, contributed much to the injury of her frame,
+								as she took it much to heart.
+							
+						</p>
+					</div>
+					<div type="page" n="20">
+						<head type="page">20</head>
+						<pb n="20" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-20.jpg" />
+						<p>
+							
+								During this period I was often harrassed
+								by such a variety and multiplicity of distresses
+								and perplexiting circumstances, that I should
+								have been quite unfit for the duties of my office
+								and the service of the Cong<hi rend="superscript">n</hi>, if our Savior
+								had not supported me in an extraordinary
+								manner, next to wch the love and kindness
+								we experienced from our B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> was also
+								a great help and benefit to us.
+							</p>
+						<p>
+								In the beginning of 1789 we were called
+								upon to officiate during the Synod at Gna
+								denfrey, while both the Cong<hi rend="superscript">n</hi> Helper &amp; the
+								Minister of that Cong<hi rend="superscript">n</hi> were attending the
+								Synod. My dear wife was but just recovering
+								from a severe illness, and still so weak, that
+								she could not cross the room without help
+								nevertheless we accepted the call in reliance
+								upon our Savior's support, who graciously
+								answered our prayers on that occasion.
+								Our short residence at Gnadenfrey was indeed attended with much labor and fatigue,
+								but we also experienced much of our Savior's
+								help in time of need, &amp; were strengthened by
+								the mutual support of our fellow labourers
+								and the general love of the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi>, so that
+								our hearts overflowed with thanks and praises 
+								when in the spring 1790 we set out for England,
+							
+						</p>
+					</div>
+					<div type="page" n="21">
+						<head type="page">21</head>
+						<pb n="21" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-21.jpg" />
+						<p>
+							
+								having been appointed by the Synod La
+								borers of the London Cong<hi rend="superscript">n</hi>.
+							</p>
+						<p>
+								We arrived in London in June following
+								Here we had again to pass thro' a variety of
+								new &amp; heavy trials; the increasing sickliness
+								of my wife soon disabled her from attending
+								her office, and terminated at last in a confirmed
+								decline. This and other distresses had such
+								an effect upon my whole frame, that I
+								felt sick and was again brought nigh unto
+								death. The Lord however blessed the means
+								used for my recovery, and strengthened me
+								anew, to administer my last help to my dear
+								wife now hastening to her dissolution, and
+								to wait upon her, till she was permitted to
+								enter into her eternal rest.
+							</p>
+						<p>
+								At the close of this period taking a retrospecting view of the various afflicting dispensations
+								I had passed thro', and which at times seemed
+								to bear to hard upon me, I could thank our
+								Savior with heartfelt gratitude for all the demonstrations of his love and goodness, and for
+								causing all things to work together for my good
+								I am fully convinced from my own experience
+								that He doth all things well, that all his chastenings on love, and that our short affliction
+								w<hi rend="superscript">ch</hi> is but for a moment, worketh a far more
+							
+						</p>
+					</div>
+					<div type="page" n="22">
+						<head type="page">22</head>
+						<pb n="22" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-22.jpg" />
+						<p>
+							
+								exceeding and eternal weight of glory, while
+								we look not at the things w<hi rend="superscript">ch</hi> are seen, but at
+								the things w<hi rend="superscript">ch</hi> are not seen.
+							</p>
+						<p>
+								After the happy departure of my late Wife
+								in January 1792 I spent one year as a Widower, and our Savior granted me a time of
+								refreshing rest. In September the same year
+								I received an appointment, to serve the Cong<hi rend="superscript">n</hi>
+								at Bedford, but circumstances delayed my
+								going thither till the year following.
+							</p>
+						<p>
+								On the 2<hi rend="superscript">d</hi>. April 1793 I was married to the
+								S. S<hi rend="superscript">r</hi> Jane Dodgson, and soon after we went
+								to Bedford.
+							</p>
+						<p>
+								Our stay there was upon the whole very
+								agreeable, and we richly enjoyed the blessing
+								of God, and the love and confidence of our B<hi rend="superscript">rn</hi>
+								&amp; S<hi rend="superscript">rs</hi>. We had indeed also our share of diffi-
+								culties, but the Lord helped us thro' them all.
+							</p>
+						<p>
+								When we found ourselves quite comfortably
+								settled, we received a Call to Dublin, and arrived there in December 1794.
+							</p>
+						<p>
+								As we both had served this Cong<hi rend="superscript">n</hi> before,
+								tho' in different capacities, &amp; pretty well
+								knew beforehand, what difficulties awaited
+								us to encounter, we felt rather heavy on that
+								account, but nevertheless, trusted in the
+								Lord, that he would continue to support us,
+							
+						</p>
+					</div>
+					<div type="page" n="23">
+						<head type="page">23</head>
+						<pb n="23" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-23.jpg" />
+						<p>
+							
+								as he had done hitherto. Nor was our confidence put to shame, and amidst our own
+								infirmities, and various trials we had to pass
+								thro' we enjoyed much grace and blessing
+								from our Savior, and his gracious support
+								in every time of need.
+							</p>
+						<p>
+								One of the heaviest trials, which occurred
+								during this period, was that dreadful rebellion, w<hi rend="superscript">ch</hi> while it lasted, raged with savage fury, and more than once threatened
+								destruction to the City of Dublin. It was well
+								for us, not to know the full extent of the
+								dangers we were surrounded with tho' we
+								were also frequently alarmed by false reports
+								and needless apprehensions. Frequently the
+								state of things was such, that our lives seem'd
+								to hang by a slender thread, and on several
+								occasions it was a serious question, we had
+								to put to ourselves, whether we were duly
+								prepared to meet the impending fate, tho'
+								we should be carried off by a sudden stroke.
+								Our hope was in the Lord, who heard our
+								humble prayers and supplications for the
+								good of the country, and granted a happy
+								issue to that awful contest w<hi rend="superscript">ch</hi>, if it had
+								terminated in the intended revolution &amp; subversion of the existing Government, would
+							
+						</p>
+					</div>
+					<div type="page" n="24">
+						<head type="page">24</head>
+						<pb n="24" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-24.jpg" />
+						<p>
+							
+								would have occasioned scenes of unparalled
+								cruelty, massacre and devastation. 
+							</p>
+						<p>
+								We were thankful to the Lord, that we not
+								only <add place="above">could</add> possess our own Souls in patience, but also
+								administer comfort and encouragement to others.
+								During that time I also experienced a remarkable preservation from bodily harm, having
+								my legs nearly crushed by a brewer's dray driveing against a jaunting car, in w<hi rend="superscript">ch</hi> I was sitting
+								sideways. The injury I received was however
+								such, that for a considerable time I was prevented officiating in the Church. But far
+								more important was the preservation of my
+								Soul in the midst of so many temptations
+								abounding in such a large City, w<hi rend="superscript">ch</hi> I could
+								by no means overcome by my own strength,
+								but solely by looking unto Jesus the Author
+								&amp; Finisher of my faith.
+							</p>
+						<p>
+								And let me here observe again, that for
+								the most part of my life scarcely a day has
+								passed, when I had not some humbling
+								sense &amp; symptom of the vileness &amp; depravity
+								of my nature, which caused me to mourn &amp;
+								to seek help and comfort in our Savior, the
+								blessed consequence of w<hi rend="superscript">ch</hi> was, that I also experienced the comforts of his pardoning &amp; reviving
+							
+						</p>
+					</div>
+					<div type="page" n="25">
+						<head type="page">25</head>
+						<pb n="25" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-25.jpg" />
+						<p>
+							
+								grace. This constant need of a Savior, and
+								the never failing help and refuge I found
+								in Him, proved to me the reality of the
+								Gospel, and my sure interest in Christ's redemption. And as my experience tallied with
+								the written word of God, it confirmed my high
+								regard and veneration for the sacred oracles:
+								or else that stupendous &amp; all conception far
+								surpassing fact: God was manifest in the
+								flesh, and suffer'd blood and died for Sinners,
+								would have utterly confounded my reason
+								&amp; understanding and staggered all belief.
+							</p>
+						<p>
+								When the Synod of 1801 had come to a close,
+								and I had received no intimation of an intended
+								change, I concluded, that I should continue
+								in the service of the Dublin Cong<hi rend="superscript">n</hi> &amp; therefore
+								devoted myself anew to the Lord for that purpose. But while I was sitting in my room
+								in this happy fame of mind, the postman
+								brought a letter, contain<hi rend="superscript">g</hi> our appointment
+								to the service of Fulneck Cong<hi rend="superscript">n</hi>. This indeed
+								came very unexpected, and was not altogether
+								agreeable to our wishes, as we were much
+								attached to the Dublin Cong<hi rend="superscript">n</hi>, with whom we
+								had shared a great deal of joy, as well as of
+								distress and trouble, particularly during the
+							
+						</p>
+					</div>
+					<div type="page" n="26">
+						<head type="page">26</head>
+						<pb n="26" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-26.jpg" />
+						<p>
+							
+								late rebellion. But having devoted ourselves
+								unreservedly to the Lord's service, &amp; promised
+								obedience to his will and guidance, we could
+								do no other than accept of that new appointment.
+								We arrived at Fulneck Nov. 10. 1801, and on
+								the 13<hi rend="superscript">th</hi> following, on w<hi rend="superscript">ch</hi> day 65 years ago
+								I had experienced the first real and abiding
+								manifestation of Jesus love and grace, I was
+								according to a Synodal resolution, confirmed
+								by the Lord, consecrated a Bishop of the B<hi rend="superscript">rns</hi>
+								Church by the B<hi rend="superscript">rn</hi> Traneker and Moore, on
+								w<hi rend="superscript">ch</hi> occasion I was so overpowerd by the grace
+								of God, that wi<del>ll</del><add place="above">th</add> purpose of heart, and without
+								any reserve whatever, I surrender'd myself anew
+								to my Lord &amp; Savior and from a pure motive
+								of love and gratitude for his lovingkindness
+								and goodness towards me, dedicated my fu-
+								ture services to Him in that house &amp; family
+								of his own to which He had graciously led
+								me in my early youth.
+							</p>
+						<p>
+								On this occasion it will not be improper
+								for me, to state my views respectg the B<hi rend="superscript">rn</hi>
+							</p>
+						<p>
+								Cong<hi rend="superscript">n</hi>, to w<hi rend="superscript">ch</hi> I have the favor to belong.
+								The Church of Christ here on earth appears
+								to me like a large and fruitful gardens, consisting of a number of compartments or divisions
+							
+						</p>
+					</div>
+					<div type="page" n="27">
+						<head type="page">27</head>
+						<pb n="27" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-27.jpg" />
+						<p>
+							
+								differing indeed both in arrangement &amp; culture, but all under the care and managment
+								of one &amp; the same Gardener; who appoints
+								Laborers for each division of his garden &amp;
+								vineyard, instructing them in the proper mode
+								of cultivating that part which is exclusively
+								committed to them. Now it is well known,
+								that different plants require both a different
+								treatment and a different soil, &amp; would not equally prosper in a soil less congenial to their
+								texture and nature. So it is with the different
+								denominations in the Christian Church. All
+								of them, that confess Jesus Christ to be their
+								Lord and Master, and walk in the way of his
+								precepts and commandments deriving from
+								him wisdom, righteousness, sanctification and
+								redemption, and keeping the word of his patience, belong to the Lord's vineyard, &amp; occupy
+								different compartments where they receive a
+								different treatment under their peculiar
+								form and constitution; there they find themselves at home and thrive best. Thus there
+								are many excellent Children of God, whom our
+								constitution, discipline and outward form
+								would not suit, and who would not like to
+								be confined within our fold. And thus on the
+							
+						</p>
+					</div>
+					<div type="page" n="28">
+						<head type="page">28</head>
+						<pb n="28" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-28.jpg" />
+						<p>
+							
+								other hand those whom our Savior has
+								called to the B<hi rend="superscript">rns</hi> Church, &amp; who are genuine
+								members of the same, could not foot themselves
+								at home in any other denomination, nor be
+								so much further'd in their course any where else.
+							</p>
+						<p>
+								This at least is my case, conviction and ex-
+								perience, and the B<hi rend="superscript">rns</hi> Church has proved
+								to me the most congenial soil for growing in
+								the grace and knowledge of our Lord Jesus Christ.
+								It is in this fold, that I have been screened and
+								secured from the deleterious influence of seduction, so common among young people when
+								left to themselves; it is there that I received
+								a careful education, combining the knowledge of spiritual things with useful learning
+								of things pertaining to this life: it is there that
+								by serving in a variety of situations &amp; passing
+								thro' various trials, peculiar to our connection
+								with one another, I was qualified both to feed
+								the sheep of Christ, and from my own experience to lead them deeper into a proper application of the word of life &amp; the merits of our
+								Lord Jesus Christ; it is there, that the gifts &amp;
+								talents allotted to me, can be more usefully employed than any where else, and finally it is
+								there, that my heavenly race meets with the
+								least obstruction &amp; with the best encouragement.
+							
+						</p>
+					</div>
+					<div type="page" n="29">
+						<head type="page">29</head>
+						<pb n="29" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-29.jpg" />
+						<p>
+							
+								If therefore others have the same special Call,
+								let them obey it, and they will find themselves
+								in the right place, they will thrive &amp; prosper
+								and they will clearly see from their blessed
+								experience, that He, who has called them, is
+								faithful to perform the purposes of their call<hi rend="superscript">g</hi>
+								and election. And Oh! that our young people,
+								who are born and bred in our Cong<hi rend="superscript">n</hi>, and thus
+								have a clear Call to it, might duly reflect on
+								our Savior's views with them in regard to
+								their course thro' life and be duly concerned
+								to inherit the blessing of their Parents &amp; Ancestors. And Oh! may the B<hi rend="superscript">rns</hi> people never
+								forget, that the Lord has formed them for himself, to be his witnesses, to confess him among
+								men as the only Savior of perishing Sinners,
+								to be living monuments of his redeemg grace
+								and power, and persevere in their endeavors
+								for the conversion of heathen nations; and
+								Oh! may they, walking in the fear of the Lord,
+								and in the comfort of the Holy Ghost be mul-
+								tiplied! Amen.
+							</p>
+						<p>
+								But to resume my Narrative. When I entered upon the service of Fulneck Cong<hi rend="superscript">n</hi>, I was
+								well aware of the multiplicity of labor, cares
+								and difficulties belonging to it, nor could I think
+								myself sufficient for that station, but nevertheless
+							
+						</p>
+					</div>
+					<div type="page" n="30">
+						<head type="page">30</head>
+						<pb n="30" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-30.jpg" />
+						<p>
+							
+								I submitted to every part of my calling in
+								reliance upon our Saviors gracious support
+								wch. I also richly experienced under a variety of 
+								heavy circumstances. In the beginning it was
+								a great help to me, that our late dear Brother
+								Traneker still continued for some time to act
+								as Cong<hi rend="superscript">n</hi>. Helper and to take some share in
+								the labor, but after his departure I had to enter fully upon the exercise of all my functions
+								as Cong<hi rend="superscript">n</hi>. Helper Minister &amp; Inspector of the
+								Schools.
+							</p>
+						<p>
+								Every period of the B<hi rend="superscript">rns</hi>. Church has been
+								attended with its own peculiar difficulties
+								but what renders the office of a Laborer in
+								such a situation now a days more particularly embarrassing, is the want of proper
+								persons for managing the Concerns of a Place
+								Cong<hi rend="superscript">n</hi>., and for serving our Boarding Schools
+								as Teachers or Assistants, or in any other capacity. If therefore a vacancy happens, it is
+								no easy matter to fill it up again with a
+								proper qualified person. At one time in particular this circumstance caused me much distress of mind, and I cried day and night to the
+								to the Lord for help, till it came from quarter, from when I had least expected it. On the
+								other hand I found abundant cause to rejoice,
+							
+						</p>
+					</div>
+					<div type="page" n="31">
+						<head type="page">31</head>
+						<pb n="31" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-31.jpg" />
+						<p>
+							
+								over the blessing, which the Lord had laid
+								upon the Schools. For when I first came to
+								Fulneck in the year 1772, as first Teacher of
+								the Boys Oeconomy, consisting at that time
+								of about I Boys, I found it in such needy
+								circumstances, and so low in the estimation
+								of others, that it required much patience to
+								endure it, and much faith to hope for better
+								times. And on my return in the year 1801
+								I found a School of about 70 Boys settled
+								in a new house built for the purpose, and
+								another of upwards of 50 Girls occuping the
+								lower apartments under the Chapel, placed
+								under our care in easy circumstances This
+								was to me a most striking proof, that the
+								Lord sees our tears, hears our prayers, &amp; in
+								due time grants our petitions, yet doth ex-
+								ceeding abundantly above all that we can ask
+								or think, for his own name's sake. My only
+								wish and prayer was, that we might be able,
+								to do justice to our important calling. And
+								in this respect, as all others, I was heartily
+								thankful to our Saviors and admired his
+								gracious leading, that in my dear wife he 
+								had given me a partner, well qualified for
+								our station and respective employments
+							</p>
+						<p>
+								In the year 1810 I was brought very low and
+							
+						</p>
+					</div>
+					<div type="page" n="32">
+						<head type="page">32</head>
+						<pb n="32" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-32.jpg" />
+						<p>
+							
+								and much reduced by a slow nervous fever
+								w<hi rend="superscript">ch</hi> almost incapacitated me for any time
+								but still I was not entirely laid up, &amp; could
+								transact the most urgent matters.
+							</p>
+						<p>
+								Our service in Fulneck, arduous &amp; laborious
+								at best, on account of the multiplicity of our
+								incumbencies, was in the 2 last years rendered
+								still more<hi rend="superscript"> </hi>so by the misfortunes, occasioned by
+								the spirit of speculation in trade, w<hi rend="superscript">ch</hi> was
+								then prevailing throughout the mercantile
+								community and was the cause of innumetable ruinous failures. The reproach, which
+								then, tho' undeservedly; fall upon the Cong<hi rend="superscript">n</hi>
+								and its Servants, and other highly distressing
+								circumstances bore heavy upon our minds
+								but at the same time we were so strengthen'd
+								by the Lord, and supported by his powerful
+								aid, that we were able to bear up under
+								all trials and difficulties
+							</p>
+						<p>
+								Upon the whole, when we survey our 11
+								years residence and labor in Fulneck, our
+								hearts are filled with gratitude for the innumerable proofs of the unchangeable love.
+								grace and mercy of our Lord and Master, experienced both in our private course, &amp; in
+								our official labors. Nor is it the least of his
+								favors, that he counted us worthy, to serve
+							
+						</p>
+					</div>
+					<div type="page" n="33">
+						<head type="page">33</head>
+						<pb n="33" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-33.jpg" />
+						<p>
+							
+								not only the Fulneck Cong<hi rend="superscript">n</hi>, but also its
+								dependencies, the rest of our Cong<hi rend="superscript">ns</hi> in Yorkshire, and their numerous Schools.
+							</p>
+						<p>
+								In the year 1<del>7</del><add place="above">8</add>11 we received our Call to Ireland, where, besides our, joint offices, I was
+								to succeed our late B<hi rend="superscript">r.</hi> Hartley in that of
+								Prov.<hi rend="superscript">e</hi> Helper of Ireland, &amp; Minister of Gracehill; but it lasted till October 1812, before
+								we could set out for our new post where we
+								arrived on the 14<hi rend="superscript">th</hi> of that month.
+							</p>
+						<p>
+								In this new situation I feel again every day
+								anew the absolute necessity, to look to Jesus
+								the Author and Finisher of my faith, that I may
+								not only be preserved from sin and the evils of
+								a corrupt nature, but also grow up in his likeness in all things. along with an humbling
+								sense of the entire depravity of soul &amp; body,
+								and the constant need of a Physician, &amp; under
+								a deep conviction, that I am not worthy of
+								the least of all his mercies, I am favored with
+								a high conception of my heavenly calling
+								and election of grace, and of the infinite worth
+								of that crown of life, which the Lord, the
+								righteous Judge, shall give unto all them
+								that love his appearing. But oh!, how often
+								do I feel an unaccountable listlessness, and
+								must blame myself for culpable tardiness
+							
+						</p>
+					</div>
+					<div type="page" n="34">
+						<head type="page">34</head>
+						<pb n="34" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-34.jpg" />
+						<p>
+							
+								in pursueing that holiness without which
+								no man shall see the Lord. How often do I
+								feel irksome, when he applies the refiner's
+								fire and the fuller's soap to the purifying of
+								my sinful nature. tho' I ought to be thank
+								ful, that he is so unremittingly engaged with
+								my poor Soul, and so constantly intent upon
+								carrying on the good work he has begun
+								Oh that I could now spend the remainder of
+								my pilgrimage to the joy and honor of Him
+								who has redeemed me from all iniquity and
+								given me power to become a Child of God
+								and an heir of eternal bliss and glory.
+							</p>
+						<p>
+								What inmumerable escapes &amp; preservations
+								of my soul have I experienced in the course
+								of my pilgrimage, little known to them
+								who were conversant with me &amp; could not
+								observe the various temptations, besetting
+								me from within and from without, and
+								the trials arising as much from my natural
+								disposition, as from unpleasant occurences.
+								Tho' I am truly thankful for that share
+								&amp; confidence, which I have enjoyed in every
+								Congn whom I had the favor to serve, and
+								that I could live in peace &amp; harmony with
+								my fellow laborors. tho' I was perfectly satisfied with my situation in life and temporal
+							
+						</p>
+					</div>
+					<div type="page" n="35">
+						<head type="page">35</head>
+						<pb n="35" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-35.jpg" />
+						<p>
+							
+								temporal circumstances, yea could truly say, even
+								in this respect: "my lot has fallen to me in a
+								pleasant place, and I have got a goodly heritage,"
+								tho' in general I have enjoyed a good state of
+								health, and was possessed of a variety of temporal blessings, suited to my taste and natural
+								disposition, taking particular delight in works
+								of art, and the beauties of nature: yet, with
+								all these advantages, the world <del>would</del> have
+								been to me a true vale of tears, and much
+								mourning and weeping has attended me on
+								my pilgrimage. But I have also derived
+								constant consolation from the suffering life
+								of my dear Redeemer; And O! how blessed
+								was it for me, that by the afflictions of this
+								life I was continually excited, to look forward
+								to the end of my earthly warfare &amp; pilgrimage,
+								and to the blessed moment, when I shall
+								be permitted, to enter into the joy of my Lord,
+								and to rest from all my labors.
+							</p>
+						<p>
+								It behoves me to mention in this place,
+								that besides the reading of the holy Scriptures
+								which afforded a rich and delightful pasture
+								to my mind, I was also much benefited by
+								many hymns in our Collection, especially such
+								as tallied with the experience &amp; feelings of my
+								own heart; and many sleepless hours in the
+							
+						</p>
+					</div>
+					<div type="page" n="36">
+						<head type="page">36</head>
+						<pb n="36" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-36.jpg" />
+						<p>
+							
+								night have I spent agreeably in repeating
+								or rehearsing such as were familiar to in
+								recollection and suitable to my circumstances.
+							</p>
+						<p>
+								And how shall I now O Lord thou God
+								of my salvation, express unto Thee my infinite obligations whose mercy towards me
+								has been new every morning. Thou didid separate me from my mother's womb, and set thy
+								love upon me, before ever I had heard thy name
+								and before I could make the least returns
+								Thro' thy kind providence I had both in me
+								respected Parents and in my<hi rend="superscript"> 6</hi> Teachers faithful
+								guides of my youth, and in my early days
+								was favored to hear the joyful sound of the
+								gospel, and to have a crucified Savior set before the eyes of my poor and contrite spirit
+								Altho' thro' thy tender care and divine power
+								I was preserved from the snares of an evil world,
+								from the wiles of Satan, and from the destructive power of Sin; yet thro' the teaching
+								of thy holySpirit I was thoroughly convinced
+								both of the total corruption of my nature and
+								its helpless state, and of the necessity to flee
+								for refuge and to lay hold of the hope that is
+								set before us. How can I thank Thee sufficiently
+								for all the clear evidences &amp; blessed manifestations
+								of thy love and goodness towards me, &amp; of the
+							
+						</p>
+					</div>
+					<div type="page" n="37">
+						<head type="page">37</head>
+						<pb n="37" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-37.jpg" />
+						<p>
+							
+								healing, sanctifying and quickening virtue
+								of thy precious blood, without w<hi rend="superscript">ch</hi> I must
+								have perished in the leprosy of sin. What
+								a poor unhappy mortal should I have been
+								continually harrassed and tormented with
+								pride, ambition, envy and jealousy, and
+								destroying myself in the service of Sin, if
+								I had not found in Thee deliverance, peace
+								of mind and rest of soul. Thro' thy grace
+								it was my happy lot, to live content under
+								all the various dispensations of thy kind
+								providence, and in every place of my
+								earthly residence. Thou hast taken great
+								pains to train <del>my</del> me for thy service, and
+								to qualify me for every situation in thy
+								house, to w<hi rend="superscript">ch</hi> I was appointed, but ah!
+								how short did I fall of that Zeal &amp; activity,
+								w<hi rend="superscript">ch</hi> I ought to have shown in the performance of my duties! To glorify Thee with all
+								the faculties and abilities of spirit, soul and
+								body, because they were bought with a price,
+								and preserved from the destructive power of
+								sin, should have been my constant study
+								by day and night. Thy rich forgeveness
+								must cover all my short comings, neglects
+								&amp; omissions. And O how readily hast Thou
+								pardoned thy unprofitable Servant on all
+							
+						</p>
+					</div>
+					<div type="page" n="38">
+						<head type="page">38</head>
+						<pb n="38" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-38.jpg" />
+						<p>
+							
+								occasions, meeting me half way falling about
+								my neck and kissing me, even before I could
+								make my humble confession with tears of repentance and contrtion. However undeserving I may be, still I can rest upon that
+								gracious promise of thine:" where I am there
+								shall also my Servant be!" And O! how do I
+								rejoice with joy unspeakable and full of glory
+								at the enchanting prospect before me, to
+								enter once into thy blissful presence, to be 
+								for ever at home with thee, to behold this glorious countenance, to come unto mount Sion
+								and to the City of the living God, the heavenly
+								Jerusalem, to an inumerable company of
+								Angels, to the general Assembly &amp; Church of
+								the firsborn w<hi rend="superscript">ch</hi> are written in heaven &amp; to 
+								God the Judge of all
+							</p>
+						<p>
+								Till then I will lean on Thee, my Beloved
+								while walking thro' the wildemess, and live
+								by the faith of the Son of God, who has loved
+								me and given himself for me. Amen.
+							</p>
+						<p>
+								Thus far written in the year 1814
+							</p>
+						<p>
+								S.T. Benade
+							</p>
+						<p>
+								<hi rend="underline">Note</hi>. The following occurrence has been
+								omitted in the foregoing Narrative, w<hi rend="superscript">ch</hi> however belongs to the remarkable incidents of my
+							
+						</p>
+					</div>
+					<div type="page" n="39">
+						<head type="page">39</head>
+						<pb n="39" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-39.jpg" />
+						<p>
+							
+								Life.-- In the year 1803 two Tahitian youths,
+								Meydow and Olai, had been by the London
+								Miss.g Society committed to the care of B<hi rend="superscript">r</hi> W<hi rend="superscript">m</hi>
+								Okely then Minister of our Cong<hi rend="superscript">n</hi> at Mirfield,
+								for their instruction both in the English language &amp; in the Christian doctrine. Their
+								moral conduct had been from the beginning
+								correct and exemplary, and latterly they gave
+								clear evidences of religious impressions &amp; of a
+								work of grace in their hearts. Having expressed a desire after baptism, and being
+								instructed in the spiritual character of this
+								holy ordinance, it was administered to them
+								by our Lords approbation, in a solemn assembly
+								in the Chapel, Meydow receiving the name
+								of Joseph and Olai that of Christian; after
+								w<hi rend="superscript">ch</hi> within a short period they both fell asleep
+								in Jesus, Joseph first, and his brother Christian
+								not many days after.
+							</p>
+						<p>
+								To myself it was not only a pleasant duty,
+								but also a great favor, to be thus made instrumental in administering holy baptisin to
+								those two Tahitian Youths and to perform
+								the office of a Heathen Messenger in Christian
+								country.
+							
+						</p>
+					</div>
+					<div type="page" n="40">
+						<head type="page">40</head>
+						<pb n="40" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-40.jpg" />
+						<p>
+							
+								<hi rend="underline">October 28<hi rend="superscript">th</hi> 1817</hi>
+								 Seventy one years have now passed away since
+								I was born, and fifty years, since I entered into
+								the service of the B rethren's Unity for which
+								had been destined and educated from my
+								early youth. How precious are thy thoughts
+								unto me, O God! how great is the Sum of them'
+								If I could count them, they are more in num
+								ber than the sand. Bless the Lord, O my Soul
+								and all that is within, bless his holy Name!
+								From all eternity with love-- unchangeable
+								Thou hast me view'd--Ere knew this beating
+								heart to move -- Thy tender mercres me pursued!. Ever may they with me abide -- And
+								close me in on every side!'
+							</p>
+						<p>
+								Deeply bowed in the dust, yea prostrate at
+								thy feet, I adore Thee O Lord, and with a
+								flood of tears, I render unto Thee my unfeigned thanks and praises for inumerable
+								mercies of all kinds, so undesenvedly bestowed upon me during so long a period,
+								while passing thro' this vale of tears, under
+								so many changes and vicissitudes, trials and
+								tribulations. I can bear abundant testimony
+								from my own experience, that Thou art
+								the Lord merciful and gracious long suffering
+							
+						</p>
+					</div>
+					<div type="page" n="41">
+						<head type="page">41</head>
+						<pb n="41" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-41.jpg" />
+						<p>
+							
+								suffering, and abundant in goodness and truth.
+								forgiving iniquity, transgression and sin.
+								and that thy mercy is new every morning.
+							</p>
+						<p>
+								In my forlorn condition. Those Lord, didst
+								me receive--Thou savedst from perdition --
+								My soul, and badst me live. -- With inward
+								Spirits ardor -- I thank Thee for thy grace,
+								Thyself this heavenly fervor -- Of love to
+								Thee increase. Oh! that now the few remaining days of my pilgrimage may be
+								consecrated to thy service and to thy glory.
+							</p>
+						<p>
+								But oh, how do I blush with shame --
+								and confusion of face, when I reflect, how
+								often I still grieve Thee by unbelief, coldness of heart, want of love, carnal propen-
+								sities, indolence in thy service, and various
+								other things, when I reflect, how short
+								I fall of those virtues and excellencies, w<hi rend="superscript">ch</hi>
+								adorn the Christian character, and w<hi rend="superscript">ch</hi> are
+								exhibited to us in thy walk and conversation, in thy whole life here on earth. How
+								little do I yet discover of that meekness &amp;
+								lowliness of heart, w<hi rend="superscript">ch</hi> we are to learn of
+								Thee, and of that purrity and holiness, with
+								out w<hi rend="superscript">ch</hi> no man shall see the Lord. There
+								are indeed hours of grace, when I am particularly
+							
+						</p>
+					</div>
+					<div type="page" n="42">
+						<head type="page">42</head>
+						<pb n="42" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-42.jpg" />
+						<p>
+							
+								particularly led to meditate, both upon that
+								wonderful act of thy bleeding &amp; dying love
+								when Thou gavest thyself for my salvation
+								and redemption, and upon that tender unwearied care Thou hast taken of me from
+								my tender infancy until now, bearing, for
+								giving, comforting, upholding, and supplying my wants in every time of need, and
+								when the flame of love kindled in my heart
+								burns bright and strong; but ah! how soon
+								is it again like smoking flax, &amp; my faith
+								and confidence like a bruised reed. How
+								soon might the smoking flax be quenched
+								and the bruised reed be broken, if thy mercy
+								did not sustain me from day to day.
+							</p>
+						<p>
+								And what shall I say respecting my poor
+								services? They are not performed with that
+								Goal and fervency of spirit, w<hi rend="superscript">ch</hi> ought to
+								activate me, whether I declare the counsel
+								of God for our salvation in public, of address
+								either the Cong<hi rend="superscript">n</hi>. collectively of any Choir
+								separately, or when I administer the holy
+								Sacraments, or am engaged in any other
+								official duties. How often do I act more
+								from a sense of duty than from an impulse
+								of love. I claim no reward, but I humbly
+							
+						</p>
+					</div>
+					<div type="page" n="43">
+						<head type="page">43</head>
+						<pb n="43" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-43.jpg" />
+						<p>
+							
+								implore thy forbearance, patience &amp; pardon
+							</p>
+						<p>
+								But O my Savior, what an arduous station hast thou called me to occupy in this
+								country. The destitute of the necessary
+								means, I am required to afford help &amp; relief
+								in different quarters and on various occasions, where it is called for. Is it a wonder
+								that my faith at any time should seem
+								to fail, and my courage to sink! But
+								no. I will not cast away my confidence,
+								and why should I, after so many striking
+								proofs and instances of thy gracious help
+								&amp; support in difficult &amp; trying circumstances,
+								where human help was in vain, doubt of
+								thy further help? I am thy Servant., it is
+								thy cause I wish to serve: it is thy will
+								I should have my station here, &amp; it was
+								in obedience to thy call, that I came, not
+								knowing what awaited me.
+							</p>
+						<p>
+								Me thy all - seeing eye
+								Hath kept with watchful care,
+								Thy great compassion never fail'd,
+								Those heardst my needy pray'r -
+								This makes me firmly trust,
+								Thou'lt lead me farther still -
+								And safely guide throughout the way,
+								That leads to Sion's hill
+							
+						</p>
+					</div>
+					<div type="page" n="44">
+						<head type="page">44</head>
+						<pb n="44" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-44.jpg" />
+						<p>
+							
+								<hi rend="underline">October 28<hi rend="superscript">th</hi> 1818</hi>
+								
+								What shall I say of the year that is now
+								gone by. it was indeed a period of many severe trials of various kinds, but the greatest
+								of all was, that on the 6<hi rend="superscript">th</hi> of August it pleased
+								the Lord, to take home to himself my beloved
+								partner and faithful helpmate, with whom
+								I had lived in the married state 25 years, &amp;
+								who not only was a pleasant companion
+								to me but also an experienced Assistant in
+								the labor, having already previous to our
+								marriage served a number of years as a faith
+								full handmaid of the Lord among the Girls
+								and single Sister. Thus I was now the 2<hi rend="superscript">d</hi>
+								time placed in the state of a Widower at
+								a time of life, when such an agreeable companion and faithful helpmnate is doubly
+								valuable. My desire was now more than
+								ever fixed upon things above, &amp; upon being
+								at home with the Lord.
+							</p>
+						<p>
+								I had also some expectation at the close
+								of the Syned held this year at Herrnhut,
+								that I should be permitted to lay down my
+								offices and enjoy some rest, but was disappointed and rather found, that by the new
+							
+						</p>
+					</div>
+					<div type="page" n="45">
+						<head type="page">45</head>
+						<pb n="45" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-45.jpg" />
+						<p>
+							
+								regulations agreed upon I should have some 
+								additional duties to perform. Nothing therefore remains to me but to commit myself
+								anew to the hands of my faithful Lord and
+								Savior, relying on his gracious promise
+								And even to Your old age I am He, and even
+								to fear faits will I carry you; I have made
+								and I will bear; even I will carry &amp; deliver
+								you. Isa. 46.4. Amen be it so.
+							</p>
+						<p>
+								<hi rend="underline">The year 1823</hi> was <del>on account of the</del>
+								<del>party spirit prevailing in the Cangn and</del>
+								<del>anxious circumstances connected with it</del>
+								a trying period to me, and finding, that
+								by gouty and rheumatic affections my bodily
+								strength was much impaired, and that both
+								body and mind were no longer equal to the
+								performance of my official duties, I followed
+								my conviction, that after a service of 56
+								years I might retire from my former activity to a more easy situation, and therefore
+								resigned all my offices except that of Minister.
+							</p>
+						<p>
+								Thus I could begin the year <hi rend="underline">1824</hi> with
+								a chearing prospect of rest and peace from
+								within and without, nor was I disappointed
+								in my expectation. I really anticipated the
+								fulfillment of the prophecy: my people
+							
+						</p>
+					</div>
+					<div type="page" n="46">
+						<head type="page">46</head>
+						<pb n="46" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-46.jpg" />
+						<p>
+							
+								shall dwell in a peaceable habitation, in
+								sure dwellings, and in quiet resting placed
+								All my mourning was turned into joy, and
+								I could thank the Lord even for the afflictions
+								I had to pass thro', as they afforded in the
+								end new evidences of his unchangeable love
+								and faithfulness. My great concem and my
+								earnest prayer and supplication now is, that
+								the Spirit of God may prepare me for meeting
+								of Savior with joy, and make me meet
+								for an inheritance among the. Saints in light,
+							</p>
+						<p>
+								As to my present situation I can truly
+								testify with the Psalmist; my lines are
+								fallen unto me in pleasant places, yea'
+								I have a goodly heritage." Ps 16. 6
+								<del>July 8th 1827 I ordained Br. Cent Henry</del>
+								<del>Rudolph, then Minister of Dublin Congn.</del>
+								<del>a Presbyter of the Brns Church, and this</del>
+								<del>was the last transaction of my ministe-</del>
+								<del>rial office.</del>
+								<del>At the close of this Narrative I feel my</del>
+								<del>self both in dury and in gratitude bound</del>
+								<del>to express my thanks &amp; praise to God, that</del>
+								<del>by his kind providence and thro' the gr</del>
+								<del>acious liberality of our good friend &amp; her</del>
+								<del>Factours Mrs. Bates so many improvements</del>
+							
+						</p>
+					</div>
+					<div type="page" n="47">
+						<head type="page">47</head>
+						<pb n="47" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-47.jpg" />
+						<p>
+							
+								<del>have here and in Gracehill, both by ???</del>
+								<del>??? substantial buildings, and by ??? idol</del>
+								<del>able again on premise both public &amp; private</del>
+								<del>as also by providing means to liquidate the</del>
+								<del>debt of the Widows and Sisters houses; and </del>
+								<del>???? to place the settlement upon a more</del>
+								<del>substantial fasting for reducing its debts,</del>
+								<del>and promoting its ??? ???? not</del>
+								<del>to mention other benefactors of permanent</del>
+								<del>??? so that on comparing the present</del>
+								<del>state of Gracehill with that in 1812, the con</del>
+								<del>trast is very striking.</del>
+								<del>The Lord has done great things for this</del>
+								<del>Cong<hi rend="superscript">n</hi> even in Externals, for w<hi rend="superscript">ch</hi> we tender</del>
+								<del>our unfeigned thanks and praise to the boun</del>
+								<del>tiful Giver!</del>
+							
+						</p>
+					</div>
+					<div type="page" n="48">
+						<head type="page">48</head>
+						<pb n="48" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-48.jpg" />
+						<p>
+							
+								<hi rend="underline">Subtance of my Prayers in behalf</hi>
+								<hi rend="underline">of the World at large</hi>
+							</p>
+						<p>
+								O Thou God of Love! Thou Father of
+								mercies and God of all compassion whose
+								Love is "immense in height, in depth unfathomed"; O Lord God, merciful &amp; gracious
+								long suffering and abundant in goodness
+								and truth; forgiving iniquity, transgression
+								and sin, and keeping mercy for thousands.
+							</p>
+						<p>
+								Look down, I besecch thee, from heaven,
+								the habitation of thy holiness, upon this
+								poor sinful wretched world, abounding
+								in miseries and evils inumerable, &amp; of
+								every description.
+							</p>
+						<p>
+								Millions of human beings born unto
+								trouble as the sparks fly upward, dwelling
+								in frail mortal bodies, liable to all manner
+								of pains &amp; diseases and finally consigned
+								to the dust of the grave; possessing im
+								mortal souls that never die, but must
+								continue for ever and ever in a state, either
+								of unspeakable bliss and glory, or in a state
+								of unutterable woe &amp; never ending torments.
+							
+						</p>
+					</div>
+					<div type="page" n="49">
+						<head type="page">49</head>
+						<pb n="49" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-49.jpg" />
+						<p>
+							
+								Millions of human beings are successively,
+								one generation after another, born into this
+								evil world, and after a longer or shorter
+								period of their earthly pilgrimage, called
+								into another state; from which no one
+								returns, to bring tidings of their new
+								scene of existence. Being conceived in
+								sin and shapen in iniquity, they bring
+								the seeds of every evil with them, w<hi rend="superscript">ch</hi>
+								as they grow up, develop themselves, and
+								bring forth the bitter fruits of sin and un
+								righteousness. The world, in w<hi rend="superscript">ch</hi> they live,
+								abounds in tempitations of every kind,
+								and affords constant food &amp; excitements
+								to the lust of the eye, and the lust of the
+								flesh and the pride of life; &amp; evil com
+								munications corrupt the minds &amp; man
+								ners of men still more. The God of this
+								world, whose power, O Lord, Thou well
+								knowest, rules in the very hearts of men,
+								and by a thousand delusions leads them
+								captive at his will, deceiving them by
+								phantoms of happiness to pursue after
+								shadows instead of grasping the substance,
+							
+						</p>
+					</div>
+					<div type="page" n="50">
+						<head type="page">50</head>
+						<pb n="50" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-50.jpg" />
+						<p>
+							
+								Tho' tenants at will, none of them knowing
+								<del>n</del>either the day <del>n</del>or the hour, when they shall
+								be called away from all they possess, they make
+								this world their home, grasping as much of
+								earthly goods as they can, and never looking out
+								for a better world &amp; for an over enduring in
+								heritance, for a building of God, a house
+								not made with hands, eternal in the heavens.
+								Some destroy themselves by drunkeness or
+								the indulgence of fleshly lusts; others bury
+								themselves in the cares of this life; others are
+								wholly intent upon accumulating riches;
+								some again, fired by ambition, exert all
+								their strength in pursing the phantom
+								of worldly glory; others labor for literary
+								fame, and deem themselves wise, because
+								arts and sciences are their pursuit; even
+								the semblance of religion deceives a multitude of nominal professors. Millions are
+								idolaters, worshiping stock and stone and
+								the work of man's hands.
+							</p>
+						<p>
+								Well may the Prophet say: "all we like
+								sheep have gone astray; every one has turned
+								to his own way." But Thou, O Lord, knowest
+								the ways of all the children of men --
+							
+						</p>
+					</div>
+					<div type="page" n="51">
+						<head type="page">51</head>
+						<pb n="51" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-51.jpg" />
+						<p>
+							
+								Millions Thou beholdest living in the gross
+								est superstitions <del>or</del> &amp; the most abominable ido
+								latries, or obeying the dictates of the false
+								Prophet. And O how much even of what
+								is called the Christian Religion, consists
+								in outward show and idolatrous worship
+								of Saints! yea, how many false Teachers
+								me there in Christendom, enemies of the
+								cross of Christ and denying the Lord who
+								bought them!
+							</p>
+						<p>
+								Such is the world, O Lord, thou knowest
+								such are the nations that inhabit the
+								earth, and are ruled by the God of this world
+								who has barricaded his empire with gates
+								of brass and bars of iron, surrounding it
+								with forts and ramparts, w<hi rend="superscript">ch</hi> no human
+								power can destroy.
+							</p>
+						<p>
+								Remember, O Lord, I beseech Thee, for
+								thine own sake, since all the souls of men
+								are thine, the work of thy hands, that
+								Thou cam'st from heaven to save the world
+								to destroy him that has the power of death
+								even the Devil; and to destroy his works,
+								that men, being delivered from the hand of
+								all their enemies might serve thee in rightous
+							
+						</p>
+					</div>
+					<div type="page" n="52">
+						<head type="page">52</head>
+						<pb n="52" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-52.jpg" />
+						<p>
+							
+								ness and true holiness. It is thy Spirit
+								alone, that can convinced men of sin and
+								their sinful and perishing state; it is he
+								that must breathe upon the dry bones and
+								quicken them; it is thy voice alone, O Son
+								of God, that can raise the dead. O do Thou
+								cause many to hear the loud awakeng call:
+								"awake for thou that sleepest, and arise from
+								the dead, and Christ shall give thee light."
+								Do thou open the eyes of the blind; unstop
+								the ears of the deaf, and make the lame to 
+								walk. Let thousands yet experience, that
+								the word of the Cross is both the wisdom
+								and the power of God to every one that be
+								lieveth. Prepare and send forth, many
+								faithful Servants &amp; powerful witnesses,
+								to publish peace and salvation to perishing
+								Sinners. Open doors and a ready entrance
+								for the promulgation of thy glorious gospel;
+								And Oh hasten the time, when the fulness
+								of the Gentiles is to come in and all Israel
+								shall be saved.
+							</p>
+						<p>
+								Thy Gospel make more fully known;
+								Let all the world thy goodness own.
+								Amen!
+							
+						</p>
+					</div>
+					<div type="page" n="53">
+						<head type="page">53</head>
+						<pb n="53" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-53.jpg" />
+						<p>
+							
+								<hi rend="underline">Substance of my prayers &amp; intercession</hi>
+								<hi rend="underline">for all the Children of God, belonging</hi>
+								<hi rend="underline">to his Church on earth.</hi>
+							</p>
+						<p>
+								Thy Church, great Savior, bought with blood,
+								Outcasts of men, but dear to Thee;
+								Esteems thy Cross a pleasant load.
+								An easy yoke, thrice happy she,
+								When bearing thy reproach below,
+								She still partakes of thy free grace,
+								which thou so freely dost bestow,
+								And which afflictions load outweighs.
+							</p>
+						<p>
+								amidst an innumerable multitude of
+								Idolaters, Mahometans, Jews and false
+								Christians, thy all searching eye, O Lord,
+								beholds a small number of believing Souls,
+								partly living together in communities,
+								&amp; partly scattered here and there on the
+								face of the earth, who were awakened by
+								the sound of the gospel trumpet, enlight
+								ened by thy thy Holy Spirit, and upon
+								thy gracious call returned unto Thee, the
+								Shepherd and Bishop of their Souls. Being
+								convinced of sin and their sinful state;
+								they came unto Thee with weeping &amp; supplication, confessing their sins; &amp; imploring
+							
+						</p>
+					</div>
+					<div type="page" n="54">
+						<head type="page">54</head>
+						<pb n="54" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-54.jpg" />
+						<p>
+							
+								thy pardoning grace and the cleansing
+								virtue of thy precious blood. They found favor
+								in thy sight; they received power to become
+								the Children of God, being born again not
+								of corruptible seed, but of incorruptible;
+								they came out from among the children of the
+								world, forsaking their vain conversation;
+								they rejoiced in their lot of grace, to be numbered to the sheep of thy pasture, and to be
+								under thy faithful care, guidance &amp; protection.
+							</p>
+						<p>
+								But they are not yet made perfect; they
+								are engaged in a warfare, still harrassed
+								by Satan, by sin and the world; passing
+								thro' a vale of tears, burthened with infirmities tried in the furnace of affliction by
+								trials, tribulations and temptations. 
+							</p>
+						<p>
+								Thou alone, O Lord, art able to uphold
+								and keep them from falling, to bear them
+								up under all their distresses and afflictions, 
+								to strengthen their faith, &amp; finally to present them faultless before the presence of thy
+								glory with exceeding joy.
+							</p>
+						<p>
+								Thou knowest, O Lord, how apt we are
+								to stray from Thee; how prone to yield to
+								temptations; how liable to fall from our first
+							
+						</p>
+					</div>
+					<div type="page" n="55">
+						<head type="page">55</head>
+						<pb n="55" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-55.jpg" />
+						<p>
+							
+								love, to forget our high and heavenly calling,
+								and by objects of time and sense to be diverted
+								from the great object of our faith and hope.
+								O how many have, like Esau, sold their birth
+								right for a morsel of meat, have again loved
+								the world, and drawn back unto pordition;
+								or like the foolish Virgins, contented with
+								the lamp of profession, have neglected to
+								have oil in their vessels, that is, grace in
+								their hearts and life in their Souls!
+							</p>
+						<p>
+								Do Thou, most gracious Savior, grant
+								us the grace, to be watchful over the treasure
+								we possess, that no enemy may rob us of it;
+								to have always our loins girt about &amp; our
+								lights burning, like Servants waiting for
+								the coming of their Lord. O continue to
+								lead &amp; feed thy Church like a Shepherd;
+								pour out the Spirit of grace &amp; supplication upon it; let thy Church never
+								want faithful Ministers, to give everyone their meat in due season; grant them
+								the needful gifts and graces for the work
+								of the ministry, for the perfecting of Saints
+								and for the edifying of the Body of Christ.
+							</p>
+						<p>
+								May thousands yet be brought the thy
+							
+						</p>
+					</div>
+					<div type="page" n="56">
+						<head type="page">56</head>
+						<pb n="56" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-56.jpg" />
+						<p>
+							
+								fold, to show forth they praises, as living 
+								monuments of they redeeming grace &amp; power
+								Amen!
+							</p>
+						<p>
+								<lg type="hymn">
+									<l>By Thee protected, gracious Lord</l>
+								<l>O may we ever live secure;</l>
+								<l>Led by thy Spirit, grace, and word,</l>
+								<l>Relying on thy covnant sure;</l>
+								<l>Thy work O prosper and defend,</l>
+									<l>We're feeble but confide in thee,</l>
+								<l>Let thy true foll'wers to the end</l>
+								<l>Amidst oppression conqu'rors be.</l>
+								</lg>
+							</p>
+						<p>
+								<hi rend="underline">Substance of my prayers &amp; suppli</hi>
+								<hi rend="underline">cations in behalf of the B<hi rend="superscript">rns</hi>. Church.</hi>
+							</p>
+						<p>
+								Thrice happy Congregation,
+								For thy predestination
+								Adore the suffering Lamb;
+								Who, mov'd by love unbounded,
+								To purchase thee was wounded,
+								The cross endured, despis'd the shame
+							</p>
+						<p>
+								The B<hi rend="superscript">rns</hi>. Church, O Lord, confesses with
+								one consent, and with the deepest abase
+								ment and warmest gratitude, worshiping
+								&amp; adoring Thee in the dust for thy grace
+								election, that she is a work of thy own hands
+							
+						</p>
+					</div>
+					<div type="page" n="57">
+						<head type="page">57</head>
+						<pb n="57" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-57.jpg" />
+						<p>
+							
+								a plant of thy own planting, whereby
+								Thou wouldst be glorified. Through a
+								course of one hundred years Thou hast
+								by inummerble evidences of thy super
+								intending care and special love &amp; mercy,
+								realised that gracious saying of thine: "I
+								the Lord keep my vineyard. I will water
+								it ever moment, lest any hurt it. I will
+								keep it night and day."
+							</p>
+						<p>
+								Thou Lord didst raised the present B<hi rend="superscript">rns</hi>
+								Church from the embers as it were, of the
+								ancient Church of the B<hi rend="superscript">rn</hi>, a small servant of w<hi rend="superscript">ch</hi>, thro' the wonderful leading
+								of thy providence, was brought to a place,
+								where, shelter'd from the storm of persecution
+								they could under the guidance of thy holy
+								Spirit form their constitution after the pattern
+								of their forefathers, and make such rules and
+								regulations, as were adapted to the times &amp;
+								existing circumstances, and conducive to their
+								temporal and spiritual welfare. They laid
+								a sure foundation by make my the word of the
+								cross and of thy all atong sacrifice, the sum
+								&amp; substance of their doctrine, the sole object
+								of their faith, and the only ground of their hope
+								&amp; happiness both for time &amp; for eternity.
+							
+						</p>
+					</div>
+					<div type="page" n="58">
+						<head type="page">58</head>
+						<pb n="58" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-58.jpg" />
+						<p>
+							
+								Thus the B<hi rend="superscript">rns</hi> Church became a burning
+								and a shining light to all around them,
+								a cloud of witnesses to a benighted Christen
+								dom, at a time, when but a small member
+								of Ministers were found, zealous and bold
+								enough, to declare the truth as it is in
+								Christ Jesus, and to preach the gospel of our
+								salvation in its purity, with the demon
+								stration of the Spirit and of power. Thou
+								didst excite in their hearts a strong impulse
+								and irresistible desire, to carry the glad
+								tidings of salvation to the Heathen, opening
+								a door for them, w<hi rend="superscript">ch</hi> no man has been able
+								to shut. Every Cong<hi rend="superscript">n</hi>. now settled in Christi
+								an countries, every Society formed &amp; cared
+								for by the Brethren, &amp; every Missionary
+								Settlement among the Heathen, is a plant
+								of thy own planting, &amp; a monument of
+								thy wisdom and power. O what wonders
+								of love, grace and goodness, what a multitude of thy loving kindnesses, present them
+								selves to our view, when we call to mind
+								thy gracious dealings, and the mighty acts,
+								which Thou hast performed in our behalf
+								in the course of a hundred years.
+							
+						</p>
+					</div>
+					<div type="page" n="59">
+						<head type="page">59</head>
+						<pb n="59" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-59.jpg" />
+						<p>
+							
+								<lg type="hymn">
+									<l>Could we avale thee worthily</l>
+								<l>For thy unbounded grace</l>
+								<l>display'd in various ways to us.</l>
+								<l>Our lauds would never cease.</l>
+								</lg>
+							</p>
+						<p>
+								No one indeed can say, O Lord, that thy labor
+								has been in vain, that thy purposes have been
+								frustrated, and that Thou hast gathered no
+								fruit from this part of thy Vineyard. Thou
+								sands of redeemed Souls from among Christ
+								tians &amp; Heathens have been gained for <del>by</del> Thee
+								thro' the testimony of Witnesses, that went
+								forth from the B<hi rend="superscript">rns</hi> people. Thousands who
+								could find no rest for the sole of their foot in an
+								evil world, found a place of refuge in this City
+								of the Lord. And O how many were in the bosom of the Cong<hi rend="superscript">n</hi>. prepared and made most for
+								an inheritance among the Saints in light!
+							</p>
+						<p>
+								Nevertheless we must own with shame one
+								confusion of faces, that thy aim with us has
+								not been fully obtained; many of they gracious
+								purposes with us have been frustrated; too often
+								has Satan been allowed to gain his point in
+								sowing tares among the wheat; too often has
+								the spirit of the world found entrance among
+								us; too often it was feared, that conformity to
+								the world would gain the ascendancy over
+							
+						</p>
+					</div>
+					<div type="page" n="60">
+						<head type="page">60</head>
+						<pb n="60" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-60.jpg" />
+						<p>
+							
+								primitive plainess and genuine simplicity
+								nor have thy awful warnings and fatherly
+								chastenings always been duly attended to.
+								Indeed, it may be truly said, if it was not for
+								thy mercies we should have been consumed
+								thy long- suffering has been our salvation.
+								We are however still thro' thy mercy, O Lord,
+								thy people; Thou dost still own us as the
+								sheep of thy pasture; we still enjoy thy love
+								and watchful care, and being shelter'd under
+								the wings of thy grace, can trust in thy almighty protection against the enemies of our
+								peace and happiness; the word of God dwells
+								richly among us, and we possess every blessed
+								means of being furthered in our course of grace.
+								We now humbly beseech Thee, O Lord, Thou
+								Head and Master of this thy house &amp; family
+								to pardon all our deviations from the path
+								of righteousness, and from there rules &amp; or
+								dinances, w<hi rend="superscript">ch</hi> thou hast given us, to regulate
+								our walk and conversation accordingly ~
+								Pardon our declension from the first love,
+								godly zeal and true devotedness to thy service,
+								Pardon our lukewarmness in evidencing
+								our love to Thee in loving one another with
+								a true heart fervently, and employing our
+							
+						</p>
+					</div>
+					<div type="page" n="61">
+						<head type="page">61</head>
+						<pb n="61" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-61.jpg" />
+						<p>
+							
+								time and abilities in glorifying Thee, and
+								serving our neighbor in time of need. Pardon our timiorness in prayer &amp; supplication,
+								our want of sympathy with the perishing
+								state of our fellow creatures, with their ignoance and blindness with their distresses &amp;
+								misery. Pardon our neglecting to improve
+								the means of grace, w<hi rend="superscript">ch</hi> are so abundantly
+								minister'd unto us, and above all pardon our
+								??? ness in making use of that high priviledge, to live in constant love's fellowship
+								with Thee in time, so as we desire to live
+								with Thee to all eternity; yea, pardon all
+								our sins and trangressions, for thy great
+								mercy's sake. O form us soon into such a
+								people, over whom Thou mayest rejoice,
+								as a Bridegroom rejoiceth over the Bride,
+								as people zealous of good works. Let thy
+								B<hi rend="superscript">rns</hi>. Church take root downward &amp; bear
+								fruit upward, that it man be like a tree
+								planted by the river side, w<hi rend="superscript">ch</hi> spreadeth
+								its roots along the waters.
+							</p>
+						<p>
+								O let the Servants of thy Cong<hi rend="superscript">n</hi>. in every
+								department approve themselves as the Ministers of God and fellow workers with Him;
+							
+						</p>
+					</div>
+					<div type="page" n="62">
+						<head type="page">62</head>
+						<pb n="62" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-62.jpg" />
+						<p>
+							
+								direct them by Thy Holy Spirit, give them
+								the needful grace and unction, and support
+								them under all their difficulties.
+							</p>
+						<p>
+								<lg type="hymn">
+									<l>Bless, O Lord, thy Congregation,</l>
+								<l>Bless each choir and family,</l>
+								<l>Bless the youth, the rising generation,</l>
+								<l>Bless the Children dear to Thee;</l>
+								<l>Bless thy servants, grant them grace and</l>
+								<l>unction,</l>
+								<l>That they may with care discharge their</l>
+								<l>function;</l>
+								<l>Lord, on Thee we humbly call,</l>
+								<l>Let thy blessing rest on all!</l>
+								</lg>
+							</p>
+						<p>
+								To the above extensive &amp; circumstantial
+								Narrative, which our late dear &amp; venerable
+								Brother has left behind him in his own hand
+								writing we will only add a few remarks respecting his last days. The Appendix to his
+								Narrative, which for the sake of brevity is omitted, is dated Nov<hi rend="superscript">r</hi> 29 1829 about 13 months
+								before his happy departure. Since that time
+								his health are strength, which had been
+								gradually declining from year to year, in
+								capacitated him in a great incasure from
+								taking the little air &amp; exercise he had been
+							
+						</p>
+					</div>
+					<div type="page" n="63">
+						<head type="page">63</head>
+						<pb n="63" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-63.jpg" />
+						<p>
+							
+								accustomed to do in his garden, and confined him almost entirely to his room. He
+								was no more able so take a part in the deliberations of the E.C. which he have previously attended
+								with great faithfulness &amp; interest, whenever
+								his health would permit; and his intimate
+								acquaintance with the official concerns of
+								the Cong<hi rend="superscript">n</hi> and those of the Irish Province during
+								his residence of 18 years in Gracehill qualified
+								him for rendering at times very effectual aid
+								in these consultations.
+							</p>
+						<p>
+								A fit of the gout to which he was subject
+								in winter had usually the effect of renewing
+								his health so that he could enjoy the latter
+								half of the year with comfort, employing
+								himself in reading, writing, quite exercise
+								in his gardens enjoying the Society
+								of his fellow labourers; but in the last
+								year, tho' not altogether free from the gout at
+								times, he does not appear to have had strength
+								of constitution to throw it out. In the place
+								of gouty, dropsical symptoms manifested
+								themselves and increased upon him, till
+								they proved the means of his happy departure
+								The direct manifestations with which he
+								was favoured from time to time of the
+								presence, peace, &amp; love of his Saviour, often
+								caused his heart and lips to overflow with
+							
+						</p>
+					</div>
+					<div type="page" n="64">
+						<head type="page">64</head>
+						<pb n="64" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-64.jpg" />
+						<p>
+							
+								gratitude &amp; praises; and the review of the Lords
+								dealings with him from his youth, of the
+								goodness &amp; mercy which had followed him
+								all the days of his life, with which he was
+								much occupied in his latter days, was frequently so overwhelming to him that he
+								declared, it was more than he could bear
+								in his weak state of mind &amp; body. The
+								nature of his complaint was such as to
+								cause him many sleepless hours in the
+								night; but these were not unprofitably
+								spent. He occupied them with thinking in
+								the spirit of prayer, of his friends, of the Cong<hi rend="superscript">n</hi>
+								Missions &amp; of the work of God upon earth
+								in general, &amp; in recalling to memory edfying verses &amp; precious portions of the word of
+								God. The divine comfort &amp; consolation
+								he derived fom meditating on the great
+								&amp; precious promise with which the Scriptures abound, and with which his memory
+								was so well stored, that he could repeat
+								them with ease &amp; fluency, induced him
+								to request, that the circumstance might be
+								mecitioned at his funeral, in the hope of
+								stimulating others, especially the young
+								people in the Cong<hi rend="superscript">n</hi>: to study the word of
+								God more diligently, and to seek to have
+							
+						</p>
+					</div>
+					<div type="page" n="65">
+						<head type="page">65</head>
+						<pb n="65" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-65.jpg" />
+						<p>
+							
+								their hearts and memories deeply and in
+								delibly impressed with divine truth; that
+								they might enjoy, the comfort &amp; support them
+								when no longer able to hear or read it. He
+								had taken great pains to set his house as
+								order, even in a temporal point of view
+								so that when the time of his departure drew
+								near he could await it with calm composure and with unshaken confidence in
+								his God &amp; Saviour, to whom he had committed
+								the keeping of soul &amp; body, and for the sake of
+								whose precious merits he knew he should
+								meet with a gracious acceptance when
+								ushered into the presence of his God. The
+								evening before his end it was intimated to
+								him that he would probably soon be permitted to go to his eternal home, and a
+								was expressed that his mind continued in
+								&amp; peaceful state. "To be sure" he replied "y
+								may to quite satisfied respecting that."
+								continued sensible to the last, but unable
+								speak much. About half past one o'clock p.m.
+								the next day Dec<hi rend="superscript">r</hi> 30. 1830 he expressed a
+								to sit up in his easy chair. This had no soon
+								been done, than a sudden alteration took place
+								B<hi rend="superscript">r</hi> Mallaliece who had left him about
+								minutes before, was immediately sent
+							
+						</p>
+					</div>
+					<div type="page" n="66">
+						<head type="page">66</head>
+						<pb n="66" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-66.jpg" />
+						<p>
+							
+								where the Brn &amp; Srs that were about him joined
+								in singing a short verse, and he received
+								the blessing the Lord, and the Cong<hi rend="superscript">n</hi>. The
+								words had scarcely been pronounced when
+								he fell asleep in Jesus without a sigh or
+								a groan, or even a motion of hand or foot.
+							</p>
+						<p>
+								Thus did this honored servant of the Lord
+								terminate his long &amp; useful services in the
+								cause of his divine Master. He was Senior
+								Bishop of the Brns Church having been
+								consecrated to that office nearly 30 years
+								ago. Of his 56 years of active service in the
+								Brns. Unity, his Narrative shows that he
+								himself entertained a very humble opinion: he saw &amp; lamented the imperfection of them: but all, who were acquainted with him will give him the
+								testimony of a most faithful, laborious, indefatigable, and blessed servant of the Lord,
+								who gave himself wholly to the work &amp; to
+								the ministry which he had received.
+							</p>
+						<p>
+								Sincerely attached as he was to the Church
+								of which he was to distinguished a member
+								his Memoir abundantly evidences that he
+								was no bigot; but that his heart expanded
+							
+						</p>
+					</div>
+					<div type="page" n="67">
+						<head type="page">67</head>
+						<pb n="67" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-67.jpg" />
+						<p>
+							
+								to children of God of every denomination yea
+								to the whole human race, that he added to
+								brotherly kindness universal charity.
+							</p>
+						<p>
+								During the last 7 years of his life he has
+								enjoyed an anticipation of that sabbatic
+								rest into which he has now entered, having
+								been induced by age and its consequent in
+								firmities to lay down his offices, and it was
+								truly delightful to see him so cheerful, contented
+								and happy in his retirement. Having finished
+								his work he waited with the most confident
+								power yet with the most patient resignation
+								for the happy moment when he should be
+								permitted to enter with the joy of his Lord,
+								as a humble pardoned sinner, whose trust
+								and dependance was in the merits, the
+								atonement and righteousness of his
+								Saviour. He now rests in peace, after
+								a pilgrimage here below of 84 years
+								and 2 months.
+							
+						</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

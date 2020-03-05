@@ -8,7 +8,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2019-10-07T19:43:07Z. .
+# Schema generated from ODD source 2020-02-20T19:30:06Z. .
 # TEI Edition: Version 3.6.0. Last updated on
 #	16th July 2019, revision daa3cc0b9
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -898,7 +898,7 @@ att.naming.attributes =
   att.naming.attribute.relation,
   att.naming.attribute.occupation,
   att.naming.attribute.office,
-  att.naming.attribute.test,
+  att.naming.attribute.memoirSubject,
   att.naming.attribute.amt,
   att.naming.attribute.gesundheitszustand,
   att.naming.attribute.ereignis,
@@ -938,10 +938,10 @@ att.naming.attribute.office =
   
   ##
   attribute office { text }?
-att.naming.attribute.test =
+att.naming.attribute.memoirSubject =
   
   ##
-  attribute test { text }?
+  attribute memoirSubject { text }?
 att.naming.attribute.amt =
   
   ##
@@ -1662,6 +1662,7 @@ model.listLike =
   | listRelation
   | listObject
   | listNym
+  | listOccupations
 model.listLike_alternation =
   \list
   | table
@@ -1672,6 +1673,7 @@ model.listLike_alternation =
   | listRelation
   | listObject
   | listNym
+  | listOccupations
 model.listLike_sequence =
   \list,
   table,
@@ -1681,7 +1683,8 @@ model.listLike_sequence =
   listPlace,
   listRelation,
   listObject,
-  listNym
+  listNym,
+  listOccupations
 model.listLike_sequenceOptional =
   \list?,
   table?,
@@ -1691,7 +1694,8 @@ model.listLike_sequenceOptional =
   listPlace?,
   listRelation?,
   listObject?,
-  listNym?
+  listNym?,
+  listOccupations?
 model.listLike_sequenceOptionalRepeatable =
   \list*,
   table*,
@@ -1701,7 +1705,8 @@ model.listLike_sequenceOptionalRepeatable =
   listPlace*,
   listRelation*,
   listObject*,
-  listNym*
+  listNym*,
+  listOccupations*
 model.listLike_sequenceRepeatable =
   \list+,
   table+,
@@ -1711,7 +1716,8 @@ model.listLike_sequenceRepeatable =
   listPlace+,
   listRelation+,
   listObject+,
-  listNym+
+  listNym+,
+  listOccupations+
 model.noteLike = note
 model.lLike = l
 model.lLike_alternation = l
@@ -2591,7 +2597,7 @@ name =
     }?,
     
     ## 
-    ## Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw lot; 6] marriage; 7] reception; 8] sacrament; 9] interrment; 10] communion; 11] religious
+    ## Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw lot; 6] marriage; 7] reception; 8] sacrament; 9] interment; 10] communion; 11] religious
     attribute event {
       
       ##
@@ -2619,7 +2625,7 @@ name =
         "sacrament"
       | 
         ##
-        "interrment"
+        "interment"
       | 
         ##
         "communion"
@@ -2763,10 +2769,10 @@ name =
     }?,
     
     ##
-    attribute test {
+    attribute memoirSubject {
       
-      ##
-      "notMemoirSubject"
+      ## Use this only to indicate a person other than the memoir's subjcect
+      "no"
     }?,
     
     ## 
@@ -7836,7 +7842,7 @@ orgName =
     att.naming.attribute.relation,
     att.naming.attribute.occupation,
     att.naming.attribute.office,
-    att.naming.attribute.test,
+    att.naming.attribute.memoirSubject,
     att.naming.attribute.amt,
     att.naming.attribute.gesundheitszustand,
     att.naming.attribute.ereignis,
@@ -8033,7 +8039,7 @@ addName =
     att.naming.attribute.relation,
     att.naming.attribute.occupation,
     att.naming.attribute.office,
-    att.naming.attribute.test,
+    att.naming.attribute.memoirSubject,
     att.naming.attribute.amt,
     att.naming.attribute.gesundheitszustand,
     att.naming.attribute.ereignis,
@@ -8093,7 +8099,7 @@ roleName =
     att.naming.attribute.relation,
     att.naming.attribute.occupation,
     att.naming.attribute.office,
-    att.naming.attribute.test,
+    att.naming.attribute.memoirSubject,
     att.naming.attribute.amt,
     att.naming.attribute.gesundheitszustand,
     att.naming.attribute.ereignis,
@@ -9519,4 +9525,10 @@ office =
   
   ##
   element office { macro.specialPara, att.datable.attributes, empty }
+listOccupations =
+  
+  ##
+  element listOccupations {
+    empty, att.global.linking.attributes, empty
+  }
 start = TEI

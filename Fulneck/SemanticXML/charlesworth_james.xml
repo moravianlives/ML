@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -90,19 +88,96 @@
 					<msIdentifier>
 						<repository ref="#mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="Ful_3_02_CharlesworthJames">James Charlesworth</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-02.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-03.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-04.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-05.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-06.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-07.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-09.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-01.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-02.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-03.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-04.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-05.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-06.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-07.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-09.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-02-27T20:15:06.803Z",
+	"dcterms:issued": "2020-02-27T20:28:53.333Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:PersonalName",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000544",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000544">James Charlesworth</persName>
@@ -123,123 +198,112 @@
 				<head>James Charlesworth</head>
 				<div type="page" n="1">
 					<head type="page">1</head>
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-01.jpg"/>
 					<p> Personalia of our late d<hi rend="superscript">r</hi>
 						<roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
-						<persName ref="#mlper000544">James Charlsworth</persName> who enter&apos;d into the Joy of his <roleName type="honorific">Lord</roleName>
+						<rs cert="high" ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000544">James Charlsworth</rs> who enter'd into the Joy of his <roleName type="honorific">Lord</roleName>
 						<date type="death" when-iso="1770-07-30">July 30th 1770</date>. Our late dr <roleName type="honorific">Br.</roleName>
-						<persName ref="#mlper000544">James Charlesworth</persName> has left the following short account of some of the most remarkable particular Circumstances of his Life till to the
+						<rs ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000544" key="James Charlesworth" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#PersonalName">James Charlesworth</rs> has left the following short account of some of the most remarkable particular Circumstances of his Life till to the
 						year <date when-iso="1753">1753</date>.</p>
-					<p> I was born at <placeName>Little Gummersal</placeName> in the parish of <placeName ref="#mlpla000030">Birstal</placeName> in the County of <placeName>York</placeName> on the
+					<p> I was born at <rs ref="#mlpla000041" cert="high">Little Gummersal</rs> in the parish of <rs ref="#mlpla000030" cert="high">Birstal</rs> in the <rs cert="high">County of York</rs> on the
 							<date type="birth" when-iso="1721-12-16">16<hi rend="superscript">th</hi> Dec<hi rend="superscript">r</hi> 1721</date>. And was Educated by my Parents in the principles of
-						the <orgName religion="Anglican">Church of England</orgName>, in a strict &amp; careful manner, &amp; preserv&apos;d from the Seductions w<hi rend="superscript">ch</hi> many
+						the <orgName religion="Anglican">Church of England</orgName>, in a strict &amp; careful manner, &amp; preserv'd from the Seductions w<hi rend="superscript">ch</hi> many
 							<hi rend="underline">people</hi>
-						<add place="above">youths</add> are expos&apos;d to. When at the Age of 12 to 14 Years I began to keep company &amp; frequent some of the places of Diversions in the World; I
+						<add place="above">youths</add> are expos'd to. When at the Age of 12 to 14 Years I began to keep company &amp; frequent some of the places of Diversions in the World; I
 						never <hi rend="superscript">ed</hi> do it with the same ease &amp; Satisfaction w<hi rend="superscript">ch</hi> I saw other people did, but always felt Remorse of Conscience,
-						&amp; when I was alone often pray&apos;d to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to have Mercy upon me &amp; keep &amp; preserve me from
+						&amp; when I was alone often pray'd to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to have Mercy upon me &amp; keep &amp; preserve me from
 						all Sin. At ab<hi rend="superscript">t</hi> the <date when-iso="1736" cert="medium">age of 15</date>, I left off all Pleasures &amp; became acquainted with a small
-							<orgName>Company of Mysticks</orgName> to whom I join&apos;d my Self, Read their Books &amp; became very sober &amp; Religious, but found my poor heart wanted something
+							<orgName>Company of Mysticks</orgName> to whom I join'd my Self, Read their Books &amp; became very sober &amp; Religious, but found my poor heart wanted something
 							w<hi rend="superscript">ch</hi> I had not.</p>
-					<p> When I was about <date when-iso="1739">7 years of age (in the Year 1739)</date> I become <roleName type="honorific">acquainted</roleName> with the B<hi rend="superscript"
-							>rn</hi> at their first coming to <placeName ref="#mlpla000084">Yorkshire</placeName>, &amp; my dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
+					<p> When I was about <date when-iso="1739">7 years of age (in the Year 1739)</date> I become <roleName type="honorific">acquainted</roleName> with the B<hi rend="superscript">rn</hi> at their first coming to <rs ref="#mlpla000084" cert="high">Yorkshire</rs>, &amp; my dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
 						made me sensible of my lost state &amp; condition, &amp; the Misery &amp; Corruption of my Nature, &amp; that it was his Blood alone w<hi rend="superscript">ch</hi> in make me
-						happy, &amp; as such a poor Sinner. I fled for Refuge to his wounds &amp; found peace thro&apos; the Virtue &amp; power of his merits &amp; Death. In the year <date
-							when-iso="1740">1740</date> I went to <placeName ref="#mlpla000054">Lond<hi rend="superscript">n</hi></placeName>. I staid some time w<hi rend="superscript">th</hi> the
-							B<hi rend="superscript:true;">rn</hi> there, &amp; return&apos;d again to <placeName ref="#mlpla000084">Yorkshire</placeName> the <date when-iso="1740">same year</date>. I
+						happy, &amp; as such a poor Sinner. I fled for Refuge to his wounds &amp; found peace thro' the Virtue &amp; power of his merits &amp; Death. In the year <date when-iso="1740">1740</date> I went to Lond<hi rend="superscript">n</hi>. I staid some time w<hi rend="superscript">th</hi> the
+							B<hi rend="superscript:true;">rn</hi> there, &amp; return'd again to <rs ref="#mlpla000084" cert="high">Yorkshire</rs> the <date when-iso="1740">same year</date>. I
 						was <name event="reception">Reced</name> into the Cong<hi rend="superscript">r</hi>
-						<date when-iso="1742-12-08">Decr: 8<hi rend="superscript">th</hi>. 1742</date> soon after the Cong<hi rend="superscript">n</hi> was establishd here, &amp; was <name
-							event="communion">admitted</name> to be a Partaker of the Body &amp; Blood of my Crucified <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> w<hi
-							rend="superscript">th</hi> the Cong<hi rend="superscript">n</hi>
-						<date when-iso="1743-07-06">July 6<hi rend="superscript">th</hi> 1743</date>. I was <name event="confirmationn">Confirmd</name> as a witness of the sufferings &amp; Atonem<hi
-							rend="superscript">t</hi> of the Lamb of <roleName type="honorific">God</roleName> by <roleName en="brother">B<hi rend="superscript">r</hi></roleName>
-						<persName>Spangenberg</persName> the <date when-iso="1743-12-21">21<hi rend="superscript">st</hi> Dec the same year</date> before w<hi rend="superscript">ch</hi> had left my
+						<date when-iso="1742-12-08">Decr: 8<hi rend="superscript">th</hi>. 1742</date> soon after the Cong<hi rend="superscript">n</hi> was establishd here, &amp; was <name event="communion">admitted</name> to be a Partaker of the Body &amp; Blood of my Crucified <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> w<hi rend="superscript">th</hi> the Cong<hi rend="superscript">n</hi>
+						<date when-iso="1743-07-06">July 6<hi rend="superscript">th</hi> 1743</date>. I was <name event="confirmationn">Confirmd</name> as a witness of the sufferings &amp; Atonem<hi rend="superscript">t</hi> of the Lamb of <roleName type="honorific">God</roleName> by <roleName en="brother">B<hi rend="superscript">r</hi></roleName>
+						<rs cert="high">Spangenberg</rs> the <date when-iso="1743-12-21">21<hi rend="superscript">st</hi> Dec the same year</date> before w<hi rend="superscript">ch</hi> had left my
 						Busyness &amp; Relations &amp; went to Live at the </p>
 				</div>
 				<div type="page" n="2">
 					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-02.jpg" />
-					<p> first <orgName en="œconomy">S. B<hi rend="superscript">rns</hi> Oeconomy</orgName> at <placeName>Holbeck</placeName> where I continued till the <date when-iso="1744-07-20">20
-							July 1744</date>, when I was bless&apos;d by imposition of hands to the <name office="officer">Office of Vorsteher</name> of the S. B<hi rend="superscript">rn</hi>, after
-						wch I was mostly <name office="visitor">employd in Preaching</name> &amp; visiting the young Men in the different Societies, which I continued till <date when-iso="1748"
-							>1748</date> about w<hi rend="superscript">ch</hi> time I was obliged to engage so deeply in the <name occupation="manufacturer">Manufactory</name> and other outward
-						affairs that I declin&apos;d preaching, &amp; for sev<hi rend="superscript">l </hi>years together went thro&apos; <name type="emotion">a Scene of Distress in my own Mind</name>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-02.jpg"/>
+					<p> first <orgName en="œconomy">S. B<hi rend="superscript">rns</hi> Oeconomy</orgName> at <rs cert="high">Holbeck</rs> where I continued till the <date when-iso="1744-07-20">20
+							July 1744</date>, when I was bless'd by imposition of hands to the <name office="officer">Office of Vorsteher</name> of the S. B<hi rend="superscript">rn</hi>, after
+						wch I was mostly <name office="visitor">employd in Preaching</name> &amp; visiting the young Men in the different Societies, which I continued till <date when-iso="1748">1748</date> about w<hi rend="superscript">ch</hi> time I was obliged to engage so deeply in the <name occupation="manufacturer">Manufactory</name> and other outward
+						affairs that I declin'd preaching, &amp; for sev<hi rend="superscript">l </hi>years together went thro' <name type="emotion">a Scene of Distress in my own Mind</name>
 						with the External affairs in w<hi rend="superscript">ch</hi> I was engagd, however I continued <hi rend="strikethrough">therein</hi> to assist therein, &amp; went several times
 						to <placeName>Holland</placeName> on that Acc<hi rend="superscript">t</hi> &amp; bore a part in most of the Transactions till the year <date when-iso="1753">1753</date>, when
-						Ruin seem&apos;d to threaten our whole Constitution, if our <hi rend="superscript">dr</hi>
-						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> had not miraculously interpos&apos;d &amp; Inspird the d<hi rend="superscript">r</hi> Disciple w<hi
-							rend="superscript">th</hi> Courage &amp; Generosity more than Human, whereby he was enabled to satisfy all the Creditors, being willing to take all the Debt upon himself
-							w<hi rend="superscript">ch</hi> had been Contracted without his knowledge &amp; Consent. &apos;Tis true I endea- vour&apos;d to hinder his engaging himself for such vast
-						Sums of Money w<hi rend="superscript">ch</hi> He had no visible fund to discharge withal, &amp; wo&apos;d rather have suffer&apos;d any hardships myself, than be the occasion
-						of Involving his dr. Person, but he was Resolv&apos;d to do it &amp; did it I dout not af the Command of his Lord &amp; Master, who <hi rend="strikethrough">has</hi> indeed has
-						miraculously help&apos;d him thro&apos; to the wonder &amp; astonishmt of all men both Friend &amp; Enemies, &amp; wch certainly among the Surprising Transactions of his Life
+						Ruin seem'd to threaten our whole Constitution, if our <hi rend="superscript">dr</hi>
+						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> had not miraculously interpos'd &amp; Inspird the d<hi rend="superscript">r</hi> Disciple w<hi rend="superscript">th</hi> Courage &amp; Generosity more than Human, whereby he was enabled to satisfy all the Creditors, being willing to take all the Debt upon himself
+							w<hi rend="superscript">ch</hi> had been Contracted without his knowledge &amp; Consent. 'Tis true I endea- vour'd to hinder his engaging himself for such vast
+						Sums of Money w<hi rend="superscript">ch</hi> He had no visible fund to discharge withal, &amp; wo'd rather have suffer'd any hardships myself, than be the occasion
+						of Involving his dr. Person, but he was Resolv'd to do it &amp; did it I dout not af the Command of his Lord &amp; Master, who <hi rend="strikethrough">has</hi> indeed has
+						miraculously help'd him thro' to the wonder &amp; astonishmt of all men both Friend &amp; Enemies, &amp; wch certainly among the Surprising Transactions of his Life
 						in the Kingdon of our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
 						<add place="above">will</add> see transmilted down to the latest posterity as an unparrelld act of <hi rend="strikethrough">his</hi> love &amp; faithfulness &amp; Generosity to
-						his people. with the conclusion of these dangerous &amp; troublesome Affairs of the Cong<hi rend="superscript">n</hi>, I reckon I may also conclude one period of my Life w<hi
-							rend="superscript">ch</hi> probably contains pretty near the whole of the mortal past &amp; when I look back how I have spent it and consider that I have been almost twice
+						his people. with the conclusion of these dangerous &amp; troublesome Affairs of the Cong<hi rend="superscript">n</hi>, I reckon I may also conclude one period of my Life w<hi rend="superscript">ch</hi> probably contains pretty near the whole of the mortal past &amp; when I look back how I have spent it and consider that I have been almost twice
 						seven Years in the Kingdom of our <add place="above">dr</add>
-						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, <name type="emotion">I really Blush</name> &amp; <name type="emotion">my heart is asham&apos;d</name>
+						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, <name type="emotion">I really Blush</name> &amp; <name type="emotion">my heart is asham'd</name>
 						before my faithful Creator &amp; Redeemer, that I have been so little Joy to Him </p>
 				</div>
 				<div type="page" n="3">
 					<head type="page">3</head>
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-03.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-03.jpg"/>
 					<p> Him in this world, for all the Smart &amp; pain w<hi rend="superscript">ch</hi> He has sufferred on my acct, &amp; can only entreat Him that He wo<hi rend="superscript">d</hi>
-						forgive the best actions of my Life, &amp; entirely obliterate the worst &amp; greatest part for when I Reflect upon the whole, my poor heart sincerely sighs <hi
-							rend="underline">Kyrie Eleison</hi>!</p>
+						forgive the best actions of my Life, &amp; entirely obliterate the worst &amp; greatest part for when I Reflect upon the whole, my poor heart sincerely sighs <hi rend="underline">Kyrie Eleison</hi>!</p>
 					<p> on his Birth Day <date when-iso="1753-12-16">Dec<hi rend="superscript">r</hi> 16<hi rend="superscript">th</hi> 1753</date>. He wrote <add place="above">the</add> following My
 						ever dearest Lamb, my only <roleName type="honorific">Saviour</roleName> &amp; Redeemer, my Heart adores &amp; worships thee in thy Crucified <add place="above">&amp;
 							Bleeding</add> form, and with a Sinnerlike heart implores thy Pardon &amp; absolution for every thing in my whole Life. but particularly for every thing in the year past,
-						Thou know&apos;st o my <persName type="deity">God</persName> that it has been a year of Trial &amp; Temptations to thy People in general &amp; to my poor heart in particular, O
+						Thou know'st o my <persName type="deity">God</persName> that it has been a year of Trial &amp; Temptations to thy People in general &amp; to my poor heart in particular, O
 						forgive I pray thee my dearest Lamb! O forgive all my unfaithfulness, all my unbelief, all my disharmony towards my B<hi rend="superscript">rn</hi> &amp; let every thing that
-						is past be Buried in thy wounds &amp; Rem<add place="above">em</add>bred no more, &amp; help thy People thro&apos; all Difficulties in w<hi rend="superscript">ch</hi> they are
-						Involv&apos;d to the Honour of thy Name &amp; Gospel &amp; particularly, I entreat thee my dearest <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to
-						bless &amp; preserve me in this my <date when-iso="1754" cert="medium">33<hi rend="superscript">d </hi>year of my Life</date> in wch I am now enter&apos;d, &amp; is the more
+						is past be Buried in thy wounds &amp; Rem<add place="above">em</add>bred no more, &amp; help thy People thro' all Difficulties in w<hi rend="superscript">ch</hi> they are
+						Involv'd to the Honour of thy Name &amp; Gospel &amp; particularly, I entreat thee my dearest <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to
+						bless &amp; preserve me in this my <date when-iso="1754" cert="medium">33<hi rend="superscript">d </hi>year of my Life</date> in wch I am now enter'd, &amp; is the more
 						important to me, as it in the dear of Life in w<hi rend="superscript">ch</hi> thou didst finish the work of our Eternal Redemption, &amp; didst Seql my Salvation with thy most
 						precious Blood; O let it be an ever Memorable year to my heart; O my Lamb let it be the year in w<hi rend="superscript">ch</hi> my whole Being shall be made like unto thee,
-						&amp; wherein everything unlamblike shall be Interr&apos;d for ever, The year wherein I may Receive an everlarding Impression of thy whole Martyr&apos;d Body, that thy dear
+						&amp; wherein everything unlamblike shall be Interr'd for ever, The year wherein I may Receive an everlarding Impression of thy whole Martyr'd Body, that thy dear
 						amiable wounded person may become the Object of all my wishes &amp; desires, &amp; if those shouldest permit me also to finish my course this Year, oh prepare my heart for the
 						enjoyment &amp; possession of thyself, &amp; Receive me as a poor Sinner into thy bleeding arms; or if thou wouldst have one stay still a little longer here, &amp; help me to
 						act my part faithfully to the Honour &amp; to the Joy </p>
 				</div>
 				<div type="page" n="4">
 					<head type="page">4</head>
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-04.jpg" />
-					<p> of thy People, &amp; so impregnate my Tabernacle w<hi rend="superscript">th</hi> thy holy Hemanel That all the Sids of Corruption may the destroy&apos;d in me, &amp; help me
-						thro&apos; this world w<hi rend="superscript">th</hi> an unspotted Garment, w<hi rend="superscript">th</hi> a Robe washed &amp; kept clear in thy precious Blood.&quot;</p>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-04.jpg"/>
+					<p> of thy People, &amp; so impregnate my Tabernacle w<hi rend="superscript">th</hi> thy holy Hemanel That all the Sids of Corruption may the destroy'd in me, &amp; help me
+						thro' this world w<hi rend="superscript">th</hi> an unspotted Garment, w<hi rend="superscript">th</hi> a Robe washed &amp; kept clear in thy precious Blood."</p>
 					<p> The office w<hi rend="superscript">ch</hi> he had in the Cong<hi rend="superscript">r</hi> at <placeName ref="#mlpla000003">Fulneck</placeName> requiring that he sho have a
-							<name occupation="servant" memoirSubject="no">Helpmate</name>, He enter&apos;d <date when-iso="1754-11-19">Nov<hi rend="superscript">r </hi>19<hi rend="superscript">th</hi>
+							<name occupation="servant" memoirSubject="no">Helpmate</name>, He enter'd <date when-iso="1754-11-19">Nov<hi rend="superscript">r </hi>19<hi rend="superscript">th</hi>
 							1754</date> into the <name event="marriage">M<hi rend="superscript">r</hi> State</name> with the S S<hi rend="superscript">r</hi>
-						<persName>Eleanora Gutbier</persName> his present Widow, to whom he had approv&apos;d himself a faithful tender Husband, &amp; they have liv&apos;d near 16 years together in
+						<persName>Eleanora Gutbier</persName> his present Widow, to whom he had approv'd himself a faithful tender Husband, &amp; they have liv'd near 16 years together in
 						Grace &amp; Blessing.</p>
 					<p> In the year <date when-iso="1755">1755</date> when the place Cong<hi rend="superscript">n</hi> was Settled, He was appointed to be the <name office="warden">Vorsteher (or
 							Warden)</name> of the Cong<hi rend="superscript">n</hi> at the same time <add place="above">that</add> he had the <name occupation="manufacturer">direction of the
 							Manufacture</name>, &amp; in this Office He continued till it pleased our <roleName type="honorific">Lord</roleName> to call him to his Eternal Rest.</p>
-					<p> From the very beginning of the Settlement here, He was particularly engag&apos;d in every undertaking &amp; till the year <date when-iso="1763">1763</date>, all the external
+					<p> From the very beginning of the Settlement here, He was particularly engag'd in every undertaking &amp; till the year <date when-iso="1763">1763</date>, all the external
 						Affairs of this Cong<hi rend="superscript">n</hi> relating to the Settlement viz the Administration of the Estate &amp; Buildings, were in his Hands. In this Situation he had
 						many difficulties to struggle with, &amp; felt often the Lord that was upon him with much concern. From the year 1755, he was not only employed in the External affairs, but He
-						&amp; His dear wife assisted in the Internal Labour. <add place="above">In 1754 He was ordain&apos;d a</add>
-						<add place="above">Deacon of the B<hi rend="superscript">rn&apos;s</hi> Church</add></p>
-					<p> In June 1756, he with his wife went to the Synod at Berthelsdorf Tho&apos; he was chiefly to the Service of the Cong<hi rend="superscript">ns</hi> in Yorkshire, yet he was also
-						engag&apos;d in the Affairs of Ockbrook, Duckenfield, &amp; in sundry concerns of the Unity &amp; our Lord having bestow&apos;d upon him particular Gifts &amp; Grace to his
-						Service, he remain&apos;d active in all those matters.</p>
-					<p> In the Year 1757 he was appointed to be one of the Board of Administation of the Affairs of the Unity in England, &amp; was usefull therein, &amp; when the Oconomates Con<hi
-							rend="superscript">fr</hi> was Settled, he was appointed </p>
+						&amp; His dear wife assisted in the Internal Labour. <add place="above">In 1754 He was ordain'd a</add>
+						<add place="above">Deacon of the B<hi rend="superscript">rn's</hi> Church</add></p>
+					<p> In June 1756, he with his wife went to the Synod at Berthelsdorf Tho' he was chiefly to the Service of the Cong<hi rend="superscript">ns</hi> in Yorkshire, yet he was also
+						engag'd in the Affairs of Ockbrook, Duckenfield, &amp; in sundry concerns of the Unity &amp; our Lord having bestow'd upon him particular Gifts &amp; Grace to his
+						Service, he remain'd active in all those matters.</p>
+					<p> In the Year 1757 he was appointed to be one of the Board of Administation of the Affairs of the Unity in England, &amp; was usefull therein, &amp; when the Oconomates Con<hi rend="superscript">fr</hi> was Settled, he was appointed </p>
 				</div>
 				<div type="page" n="5">
 					<head type="page">5</head>
-					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-05.jpg" />
-					<p> a member thereof &amp; continued as such till that Con<hi rend="superscript">fer</hi> ceas&apos;d in the year 1769. Tho&apos; his Talents in the Conducting the external <add
-							place="above">affairs</add> were known &amp; priz&apos;d by his B<hi rend="superscript">rn</hi> &amp; on that account He was constantly employ&apos;d in that way, yet he
-						also wish&apos;d to be rather employ&apos;d in the Internal Labour, &amp; often express&apos;d his desire to be freed from all his External engagements. In consequence of this
-						his repeated Request, He was Released in 1763 from being immediately active in the Manufacture, tho&apos; he remain&apos;d the Counsellor in it till the year 1766; when it came
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-05.jpg"/>
+					<p> a member thereof &amp; continued as such till that Con<hi rend="superscript">fer</hi> ceas'd in the year 1769. Tho' his Talents in the Conducting the external <add place="above">affairs</add> were known &amp; priz'd by his B<hi rend="superscript">rn</hi> &amp; on that account He was constantly employ'd in that way, yet he
+						also wish'd to be rather employ'd in the Internal Labour, &amp; often express'd his desire to be freed from all his External engagements. In consequence of this
+						his repeated Request, He was Released in 1763 from being immediately active in the Manufacture, tho' he remain'd the Counsellor in it till the year 1766; when it came
 						into another Channel.</p>
-					<p> Being Proprietor of the Estate, He frequently attended the Meetings of the Parish for conducting the Town&apos;s Busyness, &amp; by his prudent advice He gain&apos;d the esteem
+					<p> Being Proprietor of the Estate, He frequently attended the Meetings of the Parish for conducting the Town's Busyness, &amp; by his prudent advice He gain'd the esteem
 						of the acting persons in the Parish &amp; was of Service in this point of view to the Settlement.</p>
-					<p> He went as Deputy of this Cong<hi rend="superscript">n</hi> to the Gen Synods at Marienborn in 1764 &amp; last Year, &amp; returned from the last very infirm, tho&apos; his
-						disorder w&apos;d not permit him to go much about, yet he assisted in the Labour in the Cong<hi rend="superscript">n</hi> &amp; from this time, the publick Testimony of our
-						Savr &amp; his Suffrings &amp; the Discourses w<hi rend="superscript">ch</hi> he Deliver&apos;d to the Cong<hi rend="superscript">n</hi> &amp; Choirs were particularly
+					<p> He went as Deputy of this Cong<hi rend="superscript">n</hi> to the Gen Synods at Marienborn in 1764 &amp; last Year, &amp; returned from the last very infirm, tho' his
+						disorder w'd not permit him to go much about, yet he assisted in the Labour in the Cong<hi rend="superscript">n</hi> &amp; from this time, the publick Testimony of our
+						Savr &amp; his Suffrings &amp; the Discourses w<hi rend="superscript">ch</hi> he Deliver'd to the Cong<hi rend="superscript">n</hi> &amp; Choirs were particularly
 						Anointed, &amp; being delivered with warmth of heart were attended with Blessing. So that some B<hi rend="superscript">rn</hi> made for thence the Remark that they believed he
-							wo<hi rend="superscript">d</hi> not stay long in the Church below for he was preparing for the Church above. It was also observ&apos;d in his Discourses &amp; Conversation,
+							wo<hi rend="superscript">d</hi> not stay long in the Church below for he was preparing for the Church above. It was also observ'd in his Discourses &amp; Conversation,
 						the apprehensions He had of the dangerouse principle of Free thinking &amp; acting w<hi rend="superscript">ch</hi> had erept in amongst us, w<hi rend="superscript">ch</hi>
 						might be more hurtful to our Constitution, than any other difficulty we were sensible of</p>
 					<p> He had for many years past frequent Sicknesses, &amp; having a great portion of sensibility, when matters did not go well &amp; contrary to his hopes, his Body felt the effects
@@ -247,49 +311,44 @@
 				</div>
 				<div type="page" n="6">
 					<head type="page">6</head>
-					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-06.jpg" />
-					<p> inward Grief prey&apos;d upon him, of w<hi rend="superscript">ch</hi> he was sensible &amp; wo<hi rend="superscript">d </hi>speak of at times with concern. All this seem&apos;d
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-06.jpg"/>
+					<p> inward Grief prey'd upon him, of w<hi rend="superscript">ch</hi> he was sensible &amp; wo<hi rend="superscript">d </hi>speak of at times with concern. All this seem'd
 						to impair his Body &amp; <hi rend="strikethrough">of the after land carnal which </hi> He often said &amp; wrote that his chief Busyness &amp; concern was now to he
-						prepar&apos;d to leave this Body, &amp; to enter into the presence of his Lord.</p>
-					<p> Last spring He had a very severe attack of the stone Cholick of w<hi rend="superscript">ch</hi> He Recovr&apos;d so as to be active in his Office, yet the Effects were Visible.
-						He had a second fitt of sickness with an Inflamation in his Face &amp; a violent pain in his Head by w<hi rend="superscript">ch</hi> he was confin&apos;d to his Room ab<hi
-							rend="superscript">t</hi> a fortnight, but was again so well Recover&apos;d as to go about, but his Constitution was apparently weaken&apos;d w<hi rend="superscript"
-							>ch</hi> rais&apos;d the apprehensions of his going home of w<hi rend="superscript">ch</hi> he spoke frequent- ly with desire. He preached on the 15<hi rend="superscript"
-							>th</hi> to a very large Auditory with Life &amp; Energy, of the efficacious power in Jesus&apos; Blood &amp; Death to make us New Creatures, and his last meeting kept in
+						prepar'd to leave this Body, &amp; to enter into the presence of his Lord.</p>
+					<p> Last spring He had a very severe attack of the stone Cholick of w<hi rend="superscript">ch</hi> He Recovr'd so as to be active in his Office, yet the Effects were Visible.
+						He had a second fitt of sickness with an Inflamation in his Face &amp; a violent pain in his Head by w<hi rend="superscript">ch</hi> he was confin'd to his Room ab<hi rend="superscript">t</hi> a fortnight, but was again so well Recover'd as to go about, but his Constitution was apparently weaken'd w<hi rend="superscript">ch</hi> rais'd the apprehensions of his going home of w<hi rend="superscript">ch</hi> he spoke frequent- ly with desire. He preached on the 15<hi rend="superscript">th</hi> to a very large Auditory with Life &amp; Energy, of the efficacious power in Jesus' Blood &amp; Death to make us New Creatures, and his last meeting kept in
 						the Hall was a Discourse to the Cong<hi rend="superscript">n</hi> on the 16<hi rend="superscript">th</hi> for the Conclusion of the Cong<hi rend="superscript">n</hi> Day on the
-						W. W<hi rend="superscript">d </hi>&quot;Shew forth his Salvation from Day to Day.&quot; which he eamestly Recomended to the Br<hi rend="superscript">n</hi> &amp; S<hi
-							rend="superscript">rs</hi> to put in practice in Life &amp; Conversation,&amp; entreated our D<hi rend="superscript">r</hi> Lord, kneeling to happily effect it with each
-						&amp; the whole; this has prov&apos;d his Valedictory discourse &amp; prayer for this Cong<hi rend="superscript">n</hi> &amp; the work of the Lord in general. He soon after had
-						a Boil w<hi rend="superscript">ch</hi> gathered on his Shoulder &amp; was attended with much pain &amp; inflam&apos;d his Back w<hi rend="superscript">ch</hi> threw him into a
-						Bilious Fever. Even during his sickness he shew&apos;d his wonted paternal heart in Counsel &amp; Friedship to those who came to him, as long as he had strength to speak. He
-						was tender &amp; loving to all, saying once &quot;I have nothing against any one &amp; hope no one has any thing against me. <note type="catchword">we</note>
+						W. W<hi rend="superscript">d </hi>"Shew forth his Salvation from Day to Day." which he eamestly Recomended to the Br<hi rend="superscript">n</hi> &amp; S<hi rend="superscript">rs</hi> to put in practice in Life &amp; Conversation,&amp; entreated our D<hi rend="superscript">r</hi> Lord, kneeling to happily effect it with each
+						&amp; the whole; this has prov'd his Valedictory discourse &amp; prayer for this Cong<hi rend="superscript">n</hi> &amp; the work of the Lord in general. He soon after had
+						a Boil w<hi rend="superscript">ch</hi> gathered on his Shoulder &amp; was attended with much pain &amp; inflam'd his Back w<hi rend="superscript">ch</hi> threw him into a
+						Bilious Fever. Even during his sickness he shew'd his wonted paternal heart in Counsel &amp; Friedship to those who came to him, as long as he had strength to speak. He
+						was tender &amp; loving to all, saying once "I have nothing against any one &amp; hope no one has any thing against me. <note type="catchword">we</note>
 					</p>
 				</div>
 				<div type="page" n="7">
 					<head type="page">7</head>
-					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-07.jpg" />
-					<p> we were still in hopes that by the discharge of the Abcess in his Back (w<hi rend="superscript">ch</hi> was pretty large) his Constitution might have been Reliev&apos;d &amp;
-						he Restor&apos;d to Health, but on the 29th ab<hi rend="superscript">t </hi> 2 in the Morning we observ&apos;d an Alteration &amp; that the weight of his disorder was fallen
-						upon his Lungs, then it became evident that our gracious Lord intended to take him soon into his Joy, w<hi rend="superscript">ch</hi> he himself expect- ed wo<hi
-							rend="superscript">d</hi> be accomplished by the sametime real moving, amidst his pain &amp; weakness. He spent his time in such a tender loving &amp; Paternal manner
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-07.jpg"/>
+					<p> we were still in hopes that by the discharge of the Abcess in his Back (w<hi rend="superscript">ch</hi> was pretty large) his Constitution might have been Reliev'd &amp;
+						he Restor'd to Health, but on the 29th ab<hi rend="superscript">t </hi> 2 in the Morning we observ'd an Alteration &amp; that the weight of his disorder was fallen
+						upon his Lungs, then it became evident that our gracious Lord intended to take him soon into his Joy, w<hi rend="superscript">ch</hi> he himself expect- ed wo<hi rend="superscript">d</hi> be accomplished by the sametime real moving, amidst his pain &amp; weakness. He spent his time in such a tender loving &amp; Paternal manner
 						towards all &amp; especially towards his dear wife &amp; Niece, &amp; those by orphans to whom he had been Guardian, &amp; in looking ardently to his faithful Lord in
 						expectation of the happy Moments quick approach; that it was truly edifying to all who came near him.</p>
-					<p> After 12 o Clock in the Night he ask&apos;d what were the Texts for the Day, w<hi rend="superscript">ch</hi> being Read as follows, the W: W<hi rend="superscript">d</hi>.
-						&quot;My Soul breaketh for longing that it hath unto thy Judgments at all times&quot; Feelest thou the Blood Churches ardent Longings Cheek bedew&apos;d with Million Tears
-						forth thronging from th&apos; enamour&apos;d Churches Face? And the Text,. &quot;Righteousness shall be the Girdle of his Loins &amp; faithfulness the Girdle of his
-						Reins.&quot; With the whole merit of thy Life, Bless us O d<hi rend="superscript">r</hi> Lord &amp; god;&quot; of which He took great notice, saying, how comfortable &amp;
-						pretty they were, believing confidently the time drew near when Faith sho<hi rend="superscript">d</hi> be turn&apos;d into Vision. when the Clock struck two, he seem&apos;d
-						something disappointed that he was yet here, &amp; when another hour was elapesd, He look&apos;d up in an earnest manner, &amp; expressed in his great weakness &amp; pain </p>
+					<p> After 12 o Clock in the Night he ask'd what were the Texts for the Day, w<hi rend="superscript">ch</hi> being Read as follows, the W: W<hi rend="superscript">d</hi>.
+						"My Soul breaketh for longing that it hath unto thy Judgments at all times" Feelest thou the Blood Churches ardent Longings Cheek bedew'd with Million Tears
+						forth thronging from th' enamour'd Churches Face? And the Text,. "Righteousness shall be the Girdle of his Loins &amp; faithfulness the Girdle of his
+						Reins." With the whole merit of thy Life, Bless us O d<hi rend="superscript">r</hi> Lord &amp; god;" of which He took great notice, saying, how comfortable &amp;
+						pretty they were, believing confidently the time drew near when Faith sho<hi rend="superscript">d</hi> be turn'd into Vision. when the Clock struck two, he seem'd
+						something disappointed that he was yet here, &amp; when another hour was elapesd, He look'd up in an earnest manner, &amp; expressed in his great weakness &amp; pain </p>
 				</div>
 				<div type="page" n="8">
 					<head type="page">8</head>
-					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-09.jpg" />
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-09.jpg"/>
 					<p> his Desire to his d<hi rend="superscript">r</hi> Lord, to take him to himself complaining that this hour had been very long. Thus he continued looking for the happy moment
 						being quite Sensible, &amp; when He co<hi rend="superscript">d </hi>speake no more, his Looks &amp; Gestures discouend the object his Soul was engaged with, &amp; about half
-						past Six his Lips turn&apos;d Pale in Jesus&apos; Arms &amp; bosom with the Blessing of the Cong<hi rend="superscript">n</hi> during a blessed Liturgy. A very happy Sensation
-						of our d<hi rend="superscript">r </hi>Lord&apos;s presence was felt during this Night by the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> present,
+						past Six his Lips turn'd Pale in Jesus' Arms &amp; bosom with the Blessing of the Cong<hi rend="superscript">n</hi> during a blessed Liturgy. A very happy Sensation
+						of our d<hi rend="superscript">r </hi>Lord's presence was felt during this Night by the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> present,
 						&amp; many Tears accompanied his precious Soul to it eternal home. </p>
-					<p> He has finish&apos;d his course in a very blessed manner in the 49<hi rend="superscript">th</hi> year of his Age. </p>
+					<p> He has finish'd his course in a very blessed manner in the 49<hi rend="superscript">th</hi> year of his Age. </p>
 				</div>
 			</div>
 		</body>

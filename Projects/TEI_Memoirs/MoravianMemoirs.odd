@@ -203,7 +203,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@occupation / English. -->
+<!--          <!-\- CUSTOMIZATION: added name:@occupation / English. -\->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
               <attDef ident="occupation" mode="change">
@@ -227,7 +227,7 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- CUSTOMIZATION: added name:@Beruf / German. -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -244,7 +244,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@office / English. -->
+          <!--<!-\- CUSTOMIZATION: added name:@office / English. -\->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
               <attDef ident="office" mode="change">
@@ -266,7 +266,7 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- CUSTOMIZATION: added name@amt / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
           <elementSpec ident="name" mode="change" module="namesdates">
             <attList>
@@ -555,7 +555,7 @@
           
           <!-- CUSTOMIZATION: added honorific as a suggestion for roleName:@type  -->
           
-          <elementSpec ident="roleName" mode="change" module="core">
+          <!--<elementSpec ident="roleName" mode="change" module="core">
             <attList>
               <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
@@ -564,7 +564,7 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- We cannot use type for the German as well as the English because it creates an error for duplicate type when the odd file is transformed to an rng -->
           <elementSpec ident="roleName" mode="change" module="core">
             <attList>

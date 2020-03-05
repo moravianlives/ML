@@ -1,6 +1,7 @@
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,13 +101,194 @@
 					<msIdentifier>
 						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_SS_47Eagles">Ann Eagles</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-01.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-02.jpg"></msName>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://cwrc-writer.cwrc.ca/">
+        <schem:softwareVersion xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">1.0</schem:softwareVersion>
+        <schem:url xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">https://cwrc-writer.cwrc.ca</schem:url>
+        <rdf:type rdf:resource="http://www.w3.org/ns/activitystreams#Application"/>
+        <rd:label xmlns:rd="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">CWRC Writer</rd:label>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://github.com/schaumju">
+        <cwrc:hasName xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">Justin Schaumberger</cwrc:hasName>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <n0:nick xmlns:n0="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">schaumju</n0:nick>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="">
+        <n1:format xmlns:n1="http://purl.org/dc/elements/1.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">text/xml</n1:format>
+        <rdf:type rdf:resource="dctypes:Text"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Selector">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#XPathSelector"/>
+        <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">TEI/text/body/div/div/p/date</rdf:value>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Target">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+        <o:hasSelector xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Selector"/>
+        <o:hasSource xmlns:o="http://www.w3.org/ns/oa#" rdf:resource=""/>
+        <o:renderedVia xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851">
+        <terms:created xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:28:51.955Z</terms:created>
+        <terms:creator xmlns:terms="http://purl.org/dc/terms/" rdf:resource="https://github.com/schaumju"/>
+        <terms:issued xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:33:06.759Z</terms:issued>
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <n2:generator xmlns:n2="http://www.w3.org/ns/activitystreams#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+        <o:hasBody xmlns:o="http://www.w3.org/ns/oa#" rdf:parseType="Resource">
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+        </o:hasBody>
+        <o:hasTarget xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Target"/>
+        <o:motivatedBy xmlns:o="http://www.w3.org/ns/oa#" rdf:datatype="http://www.w3.org/ns/oa#Motivation">oa:identifying</o:motivatedBy>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://cwrc-writer.cwrc.ca/">
+        <schem:softwareVersion xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">1.0</schem:softwareVersion>
+        <schem:url xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">https://cwrc-writer.cwrc.ca</schem:url>
+        <rdf:type rdf:resource="http://www.w3.org/ns/activitystreams#Application"/>
+        <rd:label xmlns:rd="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">CWRC Writer</rd:label>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://github.com/schaumju">
+        <cwrc:hasName xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">Justin Schaumberger</cwrc:hasName>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <n0:nick xmlns:n0="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">schaumju</n0:nick>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="">
+        <n1:format xmlns:n1="http://purl.org/dc/elements/1.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">text/xml</n1:format>
+        <rdf:type rdf:resource="dctypes:Text"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Selector">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#XPathSelector"/>
+        <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">TEI/text/body/div/div/p/date[2]</rdf:value>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Target">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+        <o:hasSelector xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Selector"/>
+        <o:hasSource xmlns:o="http://www.w3.org/ns/oa#" rdf:resource=""/>
+        <o:renderedVia xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851">
+        <terms:created xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:28:51.956Z</terms:created>
+        <terms:creator xmlns:terms="http://purl.org/dc/terms/" rdf:resource="https://github.com/schaumju"/>
+        <terms:issued xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:33:06.760Z</terms:issued>
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <n2:generator xmlns:n2="http://www.w3.org/ns/activitystreams#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+        <o:hasBody xmlns:o="http://www.w3.org/ns/oa#" rdf:parseType="Resource">
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+        </o:hasBody>
+        <o:hasTarget xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Target"/>
+        <o:motivatedBy xmlns:o="http://www.w3.org/ns/oa#" rdf:datatype="http://www.w3.org/ns/oa#Motivation">oa:identifying</o:motivatedBy>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://cwrc-writer.cwrc.ca/">
+        <schem:softwareVersion xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">1.0</schem:softwareVersion>
+        <schem:url xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">https://cwrc-writer.cwrc.ca</schem:url>
+        <rdf:type rdf:resource="http://www.w3.org/ns/activitystreams#Application"/>
+        <rd:label xmlns:rd="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">CWRC Writer</rd:label>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://github.com/schaumju">
+        <cwrc:hasName xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">Justin Schaumberger</cwrc:hasName>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <n0:nick xmlns:n0="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">schaumju</n0:nick>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="">
+        <n1:format xmlns:n1="http://purl.org/dc/elements/1.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">text/xml</n1:format>
+        <rdf:type rdf:resource="dctypes:Text"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Selector">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#XPathSelector"/>
+        <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">TEI/text/body/div/div/p/date[3]</rdf:value>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Target">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+        <o:hasSelector xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Selector"/>
+        <o:hasSource xmlns:o="http://www.w3.org/ns/oa#" rdf:resource=""/>
+        <o:renderedVia xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851">
+        <terms:created xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:28:51.956Z</terms:created>
+        <terms:creator xmlns:terms="http://purl.org/dc/terms/" rdf:resource="https://github.com/schaumju"/>
+        <terms:issued xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:33:06.760Z</terms:issued>
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <n2:generator xmlns:n2="http://www.w3.org/ns/activitystreams#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+        <o:hasBody xmlns:o="http://www.w3.org/ns/oa#" rdf:parseType="Resource">
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+        </o:hasBody>
+        <o:hasTarget xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Target"/>
+        <o:motivatedBy xmlns:o="http://www.w3.org/ns/oa#" rdf:datatype="http://www.w3.org/ns/oa#Motivation">oa:identifying</o:motivatedBy>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://cwrc-writer.cwrc.ca/">
+        <schem:softwareVersion xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">1.0</schem:softwareVersion>
+        <schem:url xmlns:schem="http://schema.org/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">https://cwrc-writer.cwrc.ca</schem:url>
+        <rdf:type rdf:resource="http://www.w3.org/ns/activitystreams#Application"/>
+        <rd:label xmlns:rd="http://www.w3.org/2000/01/rdf-schema#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">CWRC Writer</rd:label>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="https://github.com/schaumju">
+        <cwrc:hasName xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">Justin Schaumberger</cwrc:hasName>
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdf:type rdf:resource="http://sparql.cwrc.ca/ontologies/cwrc#NaturalPerson"/>
+        <n0:nick xmlns:n0="http://xmlns.com/foaf/0.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">schaumju</n0:nick>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="">
+        <n1:format xmlns:n1="http://purl.org/dc/elements/1.1/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">text/xml</n1:format>
+        <rdf:type rdf:resource="dctypes:Text"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Selector">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#XPathSelector"/>
+        <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">TEI/text/body/div/div[2]/p/date</rdf:value>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851#Target">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+        <o:hasSelector xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Selector"/>
+        <o:hasSource xmlns:o="http://www.w3.org/ns/oa#" rdf:resource=""/>
+        <o:renderedVia xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="eagles_ann.xml?date_annotation_20191209142851">
+        <terms:created xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:28:51.956Z</terms:created>
+        <terms:creator xmlns:terms="http://purl.org/dc/terms/" rdf:resource="https://github.com/schaumju"/>
+        <terms:issued xmlns:terms="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-09T19:33:06.762Z</terms:issued>
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+        <n2:generator xmlns:n2="http://www.w3.org/ns/activitystreams#" rdf:resource="https://cwrc-writer.cwrc.ca/"/>
+        <o:hasBody xmlns:o="http://www.w3.org/ns/oa#" rdf:parseType="Resource">
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description>
+        </o:hasBody>
+        <o:hasTarget xmlns:o="http://www.w3.org/ns/oa#" rdf:resource="eagles_ann.xml?date_annotation_20191209142851#Target"/>
+        <o:motivatedBy xmlns:o="http://www.w3.org/ns/oa#" rdf:datatype="http://www.w3.org/ns/oa#Motivation">oa:identifying</o:motivatedBy>
+    </rdf:Description>
+<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:type rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <rdf:value rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" xml:lang="en">undefined/undefined</rdf:value>
+            </rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000238">Ann Eagles</persName>
@@ -130,26 +312,67 @@
 				<div type="page" n="1">
 					<head type="page">1</head>
 					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-01.jpg" />
+					<p>
+						<persName ref="#mlper000238">Ann Eagles</persName> was Born at <placeName>Cadon</placeName> in <placeName>oxfordshire</placeName>
+						<date type="birth" when-iso="1734-09-07">Sep<hi rend="superscript">t</hi> 7<hi rend="superscript">th</hi> 1734</date> Her Parents both died when she was very yong, wich was
+						followd with great hardships in Service till <date when-iso="1750">She was about 16 years of age</date> about which time <roleName type="honorific">B<hi rend="superscript"
+								>r</hi></roleName>
+						<persName>Gusenbower</persName> Preachd<hi rend="strikethrough">ing</hi> it Cabworth wher she liv&apos;d she hearing him became thoughtfull about her Salvation, &amp; from that
+						time had a particular drawing also to the Bretheren, which made her leave her place that she might have opportunity to hear the Gosple &amp; thereupon she came live with
+								<roleName>B<hi rend="superscript">r</hi></roleName> &amp; <roleName>S<hi rend="superscript">r</hi></roleName>
+						<persName>Ager</persName> at <placeName ref="#mlpla000062">Northampton</placeName>, where from time to time she became Acquainted with the <orgName en="single sisters choir"
+								>S<hi rend="superscript">rs</hi> of her own Choir</orgName> by whom she was very much Belov&apos;d but cou&apos;d not according to her Satisfaction <hi
+							rend="strikethrough">to</hi> enjoy her own Choir, to whom she was so much attach&apos;d <name type="empotion">yet her heart was always with them</name>. She long was
+						usefull in the Service of <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> &amp; <roleName type="honorific">S<hi rend="superscript">r</hi></roleName>
+						<persName>Ager</persName> &amp; at the same time under great obligations to them, <add place="above">since</add> they was the cause of her being acquainted with the <orgName
+							en="congregation">Congregation</orgName>, She always show&apos;d great Tenderness and affection in her Childlike behaviour to them. in y<hi rend="superscript">e</hi> year
+						1756 June 7<hi rend="superscript">th</hi> She was receivd into the Congregation which proved a great blessing to her &amp; She kept in close union with her<orgName en="single
+							sisters choir"> S<hi rend="superscript">rs</hi></orgName> came as often as She cou&apos;d to <placeName ref="#mlpla000025">Bedford</placeName> it being a great way of which
+						gave her great reason to wish &amp; long to be in the Choir-house were with she was so delighted. She often said if I dont soon come to my dear <orgName en="single sisters
+							choir">S<hi rend="superscript">rs</hi></orgName> I believe our <roleName type="honorific">Saviour</roleName> will take me to himself, which she often expressd to her <name
+							office="Labouress" memoirSubject="no">Choir Labouress</name>, this last year the found it very difficult in coming to see us the Small-Pox being in <placeName
+							ref="#mlpla000062">Northampton</placeName>, which She had not had gave her great reason to Stay at home, on which account <name type="emotion">She shed many tears</name>
+						&amp; sent Letters to her <orgName en="single sisters choir">S<hi rend="superscript">rs</hi></orgName> to let them know from time to time how she felt in her heart &amp; so
+						kept up fellowship with them. <date when-iso="06-07">June the 7<hi rend="superscript">th</hi></date> She was took with the <name health="disease" type="smallpox"
+							>Small-Pox</name> &amp; as she all </p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-02.jpg" />
+					<p> along prepar&apos;d her self for going home She went to the Room were <name type="emotion">she was to be with great Chearfullness</name> &amp; Sent word to us about her illness
+						on which account Lorel went the <date when-iso="06-14">14<hi rend="superscript">th</hi> of June</date>, &amp; arriv&apos;d with her at 11 o clock. at the sight of her <name
+							type="emotion">She was over-come with joy, &amp; embrac&apos;d her to such a degree that She was advis&apos;d to keep still</name>, least it might hurt her O no said She, I
+						am so glad to see you nothing will hurt me how Shall I be thankfull enough to my dear <roleName type="honorific">Saviour</roleName> for such a grace, tho&apos; I have nothing
+						to say in particular but to tell you that I am quite ready to go to my dear Sav<hi rend="superscript">r</hi> whom I love very much, I am over come with his grace; he is so near
+						to me that I can embrace him at any time, after She had repeated often how glad &amp; thankfull she was in seeing one of her <roleName type="honorific">Choir Sisters</roleName>
+						She seem&apos;d to grow weak Lorel was left alone with her asking her many questions &amp; if She thought of going soon to embrace her Bridegroom, yes said She, it was made out
+						in my heart before now; but since I ses you I cant recollect so well, I am quite resin&apos;d &amp; believe it will be soon, then Lorel said to her it will be the more joy to
+						you when you get the sight of him sooner then you expected upon which She smil&apos;d was quite Chearfull &amp; taken up entirely with her Bridegroom, After this uncommon joy
+						she seem&apos;d tir&apos;d then Lorel left her but She soon sent for her again, she found her in her the same chearfull way, &amp; Sung several verses asking then if she
+						understood what was sung She said I Sing with you we then percievd a Suden alteration the Person which attended her wanted to ease her turn&apos;d her on her Bed but not
+						expecting that her time was so near. She looking at Lorel who began to sing &amp; her Poor Limbs now dying &amp;c under which verse her Soul took its flight about 7 o Clock the
+						Same Night, all those about <add place="above">her</add> was agreeable surpris&apos;d at her happy departure. </p>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-01.jpg"></pb>
 			<p>
 				
 				<persName ref="#mlper000238">Ann Eagles</persName> was Born at <placeName>Cadon</placeName> in <placeName>oxfordshire</placeName> <date type="birth" when-iso="1734-09-07">Sep<hi rend="superscript">t</hi> 7<hi rend="superscript">th</hi> 1734</date>
 					Her Parents both died when she was very yong, wich was followd
 					with great hardships in Service till <date when-iso="1750">She was about 16 years of age</date>
 					about which time <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> <persName>Gusenbower</persName> Preachd<hi rend="strikethrough">ing</hi> it Cabworth wher
-					she liv&apos;d she hearing him became thoughtfull about her Salvation, &amp; from that time had a particular drawing also to the
+					she liv'd she hearing him became thoughtfull about her Salvation, &amp; from that time had a particular drawing also to the
 					Bretheren, which made her leave her place that she might
 					have opportunity to hear the Gosple &amp; thereupon she came
 					live with <roleName>B<hi rend="superscript">r</hi></roleName> &amp; <roleName>S<hi rend="superscript">r</hi></roleName> <persName>Ager</persName> at <placeName ref="#mlpla000062">Northampton</placeName>, where from time
 					to time she became Acquainted with the <orgName en="single sisters choir">S<hi rend="superscript">rs</hi> of her own Choir</orgName>
-					by whom she was very much Belov&apos;d but cou&apos;d not according to 
+					by whom she was very much Belov'd but cou'd not according to 
 					her Satisfaction <hi rend="strikethrough">to</hi> enjoy her own Choir, to whom she was so
-					much attach&apos;d <name type="empotion">yet her heart was always with them</name>. She long was
+					much attach'd <name type="empotion">yet her heart was always with them</name>. She long was
 					usefull in the Service of <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> &amp; <roleName type="honorific">S<hi rend="superscript">r</hi></roleName> <persName>Ager</persName> &amp; at the same time
 					under great obligations to them, <add place="above">since</add> they was the cause of her being
-					acquainted with the <orgName en="congregation">Congregation</orgName>, She always show&apos;d great Tenderness and affection in her Childlike behaviour to them. in
+					acquainted with the <orgName en="congregation">Congregation</orgName>, She always show'd great Tenderness and affection in her Childlike behaviour to them. in
 					y<hi rend="superscript">e</hi> year 1756 June 7<hi rend="superscript">th</hi> She was receivd into the Congregation
 					which proved a great blessing to her &amp; She kept in close union
-					with her<orgName en="single sisters choir"> S<hi rend="superscript">rs</hi></orgName> came as often as She cou&apos;d to <placeName ref="#mlpla000025">Bedford</placeName> it being
+					with her<orgName en="single sisters choir"> S<hi rend="superscript">rs</hi></orgName> came as often as She cou'd to <placeName ref="#mlpla000025">Bedford</placeName> it being
 					a great way of which gave her great reason to wish &amp; long to
 					be in the Choir-house were with she was so delighted. She
 					often said if I dont soon come to my dear <orgName en="single sisters choir">S<hi rend="superscript">rs</hi></orgName> I believe our
@@ -166,40 +389,40 @@
 				</div>
 				<div type="page" n="2">
 					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_47Eagles-02.jpg"></pb>
 			<p>
 				
-					along prepar&apos;d her self for going home She went to the Room
+					along prepar'd her self for going home She went to the Room
 					were <name type="emotion">she was to be with great Chearfullness</name> &amp; Sent word to us
 					about her illness on which account Lorel went the <date when-iso="06-14">14<hi rend="superscript">th</hi> of
-					June</date>, &amp; arriv&apos;d with her at 11 o clock. at the sight of her
-					<name type="emotion">She was over-come with joy, &amp; embrac&apos;d her to such a degree
-					that She was advis&apos;d to keep still</name>, least it might hurt her
+					June</date>, &amp; arriv'd with her at 11 o clock. at the sight of her
+					<name type="emotion">She was over-come with joy, &amp; embrac'd her to such a degree
+					that She was advis'd to keep still</name>, least it might hurt her
 					O no said She, I am so glad to see you nothing will hurt me
 					how Shall I be thankfull enough to my dear <roleName type="honorific">Saviour</roleName> for
-					such a grace, tho&apos; I have nothing to say in particular but
+					such a grace, tho' I have nothing to say in particular but
 					to tell you that I am quite ready to go to my dear Sav<hi rend="superscript">r</hi>
 					whom I love very much, I am over come with his grace; he is
 					so near to me that I can embrace him at any time, after
 					She had repeated often how glad &amp; thankfull she was in seeing
-					one of her <roleName type="honorific">Choir Sisters</roleName> She seem&apos;d to grow weak
+					one of her <roleName type="honorific">Choir Sisters</roleName> She seem'd to grow weak
 					Lorel was left alone with her asking her many questions
 					&amp; if She thought of going soon to embrace her Bridegroom,
 					yes said She, it was made out in my heart before now;
-					but since I ses you I cant recollect so well, I am quite resin&apos;d
+					but since I ses you I cant recollect so well, I am quite resin'd
 					&amp; believe it will be soon, then Lorel said to her it will be the 
 					more joy to you when you get the sight of him sooner then you
-					expected upon which She smil&apos;d was quite Chearfull &amp; taken up
+					expected upon which She smil'd was quite Chearfull &amp; taken up
 					entirely with her Bridegroom, After this uncommon joy she
-					seem&apos;d tir&apos;d then Lorel left her but She soon sent for her
+					seem'd tir'd then Lorel left her but She soon sent for her
 					again, she found her in her the same chearfull way, &amp; Sung
 					several verses asking then if she understood what was sung
 					She said I Sing with you we then percievd a Suden alteration
-					the Person which attended her wanted to ease her turn&apos;d her
+					the Person which attended her wanted to ease her turn'd her
 					on her Bed but not expecting that her time was so near.
 					She looking at Lorel who began to sing &amp; her Poor Limbs now
 					dying &amp;c under which verse her Soul took its flight about 7 o Clock
-					the Same Night, all those about <add place="above">her</add> was agreeable surpris&apos;d at her
+					the Same Night, all those about <add place="above">her</add> was agreeable surpris'd at her
 					happy departure.
 				
 			</p>

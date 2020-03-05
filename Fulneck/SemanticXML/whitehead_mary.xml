@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mary Whitehead: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_25WhiteheadMary">Mary Whitehead</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Mary Whitehead</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-02.jpg" n="1" />
+			<p>
+				
+					The course of Life of the SS Mary Whithead
+				</p>
+			<p>
+					I was born in streedside in the parish of Tong, May
+					10<hi rend="superscript:true;">th</hi> 1737. My parents being presb<hi rend="superscript:true;">ns</hi> I was Baptz
+					&amp; Educated the same religion, my father
+					departed This Life when I was 7 year old &amp;
+					Left my dear mother with 7 Children to struggle
+					with the difficulties of Life in very <add place="above">much</add> lower
+					Circumstances then she'd ever been us'd to
+					The Lord blesst Her chereful endeavours
+					for our suport, till such Times as we cou'd
+					Earn a little for ourselves.
+				</p>
+			<p>
+					about my 8 year I came into concern after
+					my salvation, &amp; was much affected by reading
+					in the Scriptures which spoke of our Sav<hi rend="superscript:true;">rs</hi>
+					death &amp; sufferings, ask'd my dear mother
+					what was the occasion, the resolv'd me in
+					the best manner she <add place="above">was able</add> told me that Children was
+					sinful creatures as well as up grown people
+					&amp; that we must learn to love God &amp; not the evil
+					things of this world, I was much affected &amp; Terified
+					when I did ought that was not right, &amp; when
+					I see my Sister going to the Meetings I desired
+					to go with Her, but she refused me, however
+					I &amp; some other Child<hi rend="superscript:true;">rn</hi> ventured to the Meeting
+					which was kept at Rich<hi rend="superscript:true;">d</hi> Mortimers in Holm
+					Lane &amp; B<hi rend="superscript:true;">r</hi> Schleet sung the verse, dearest
+					Side Hole, I do covet thy warm blood above all things Viz
+					&amp; spoke in the same manner over our Sav<hi rend="superscript:true;">rs</hi> death
+					&amp; suffering as I had read, &amp; said no one can be saved
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-03.jpg" n="2" />
+			<p>
+				
+					without they become acquainted with the man Christ
+					Jesus, from this time I went constantly to the Meetings
+					&amp; become I much noticed by S<hi rend="superscript:true;">rs</hi> Rachel Walker, who
+					spoke with me about loveing the Lord Jesus, which
+					made a great impression on my mind. I was soon
+					received into the Children Choir &amp; Care<hi rend="superscript:true;">d</hi> for by B<hi rend="superscript:true;">r</hi> &amp;
+					Sister Helt &amp; also went to the Children school kept
+					by the Single Sisters which was a great blessing
+					to my heart, from this Time I went on till my
+					13<hi rend="superscript:true;">th</hi> year &amp; on the Gr Girls Festival was received
+					into their choir, were a new schooling soon comm<add place="above">enced</add>.
+					My Spoilt &amp; corrptd nature began to appear more
+					&amp; more, &amp; tho' I would willingly have been wholy
+					our d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">rs</hi> yet in volantary to my self my
+					natural disposition wou'd have lead me into the
+					world, If strong conviction from the Holy Spirit
+					had not told me I shu'd be a mind &amp; undone Creature
+					My Sinfulness &amp; great deviation which I felt I kept
+					intirely from my Labourers, believing they neither
+					knew nor felt such things as I did; therefore
+					would reproach me that I wou'd not so love or be
+					our Sav<hi rend="superscript:true;">rs</hi> but thought I woul'd be more communicable
+					when all my Sinfulness was done away, I longed
+					with Earnest to be as acquaintd with My dear Sav<hi rend="superscript:true;">r</hi> &amp;
+					have my sins forgiven, but nothing yet of this cou'd
+					I attain &amp; in my 16 year I got the smallpox being
+					dangerously ill I was visitd by S<hi rend="superscript:true;">r</hi> Lorel Seidel
+					who who Labours amongest the Girls, she ask me
+					If I did not recover had I any asshurrance that
+					I was our d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">rs</hi>, I told Her no, but I believed He
+					woud have Mercy on me &amp; bring further acquaintd
+					with himself before be took me Hence, of this
+				
+			</p>
+			<cb />
+			<p>
+				
+					Sickness I recoverd &amp; retaind a true desire in my Heart
+					to become acquaintd, with My dear redeemer, yet
+					I was not without intervals of turning into the world
+					as I cou'd come to no realise in My Heart but since
+					have seen how thro grace &amp; mercy I have been
+					preserved,
+				</p>
+			<p>
+					in the year 1757 I made known my desire to my
+					Labourer to be receivd into the congregation &amp;
+					resolved to give my self up to our dearest Sav<hi rend="superscript:true;">r</hi>
+					as a spoilt poor creature as I was; without
+					waiting till I <add place="above">was</add> better or Holy; with this impression
+					on My Mind that as I could <add place="above">not</add> get myself freed'd
+					from Sinfulness He must take me as I am for I
+					cou'd wait no longer; I came to the Evening Meeting
+					at fulneck the first that B<hi rend="superscript:true;">r</hi> Latrobe kept after
+					His arrival <add place="above">there</add>, who sung, I'll weep when're thoust
+					not home Viz. &amp; kept the discourse from the same
+					words, which made such an impression upon
+					me, that I become like wax before the fire,
+					in My returning home had the oppertunity to give
+					ful vent to my Crys enterd into a field there prostratd
+					with a Thousand tears before my Lambs feet
+					who gave me this Happy meeting, which has been
+					So momentious to me as never to be forgotten tho'
+					all my future course, for this End He had followed
+					&amp; preservd me to Seal me as His own.
+				</p>
+			<p>
+					I returnd home, the rest &amp; peace My soul injoyd
+					sufficed for that night without any other Slumber
+					to My Eyes &amp; I was quite another Creature then before
+					&amp; about 5 days after this I had the Grace July 20<hi rend="superscript:true;">th</hi>
+					to be received into the congregation this brought
+					a fresh concern upon me How I might use this
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-04.jpg" n="3" />
+			<p>
+				
+					Grace according to the mind of my beloved, &amp; tho' I
+					had Experienced that He had accepted of me
+					in the depth of my wretchedness &amp; misery, yet
+					I wanted to please Him with myself Holiness &amp;
+					prittyness of Heart rather then move as a
+					Sinful poor creature, in His presance
+				</p>
+			<p>
+					in the year 1758 I was received into the S<hi rend="superscript:true;">rs</hi> Choir
+					in which I found I had many things to learn
+					I felt a real desire to come unto the Choirhouse
+					but as my mother, told me she shou'd not assist
+					me, &amp; I feard the choirhouse Expencis wou'd be
+					more then I cou'd Earn by Spinning I was much
+					discouraged, but being wearied out by the daily
+					calls &amp; convictions of my Heart, I came to such
+					a resolution that come Life or death I must venture
+					&amp; was comforted by those words, seek the kingdom of
+					Heaven &amp; all other things will be added,
+				</p>
+			<p>
+					augst. 18 1760 I injoyd the Great Grace to remove
+					into the Choir house, little Expecting the unhappy<add place="above">ness</add>
+					that did befall me, in this dear place I only
+					injoy 12 weeks of real cherefulness before a
+					most dangerous delution gaind deep Ground
+					in My Heart &amp; mind, yea hourly the devils Craft
+					laid Such hold on me, that I reason'd over every
+					thing I heard or saw &amp; thought If I got not speedaly
+					from the house I shou;d be destitute of every needful
+					clothing &amp; I shou'd be oblige to go for real want
+					Moreover arts was not wanting to step in to
+					my assistance &amp; under pretence of going to see
+					my mother, shou'd be the means I would make
+					use of, haveing Made a My Matters quite
+					compleat full of sly &amp; craft I ventured of
+				
+			</p>
+			<cb />
+			<p>
+				
+					when I had got about half way home I was all
+					at once Sized with such ap that I stood
+					quite still, Crying out aloud, Lord have Mercy
+					what have I done, many Questions pro; &amp; con pulse
+					in My heart &amp; Conscience, peter denny'd His Lord
+					but peter did not deceive His B<hi rend="superscript:true;">rnn</hi> as I have
+					done My Sisters; pretending to Love them &amp; had
+					nothing real at the bottom. &amp; then comforting
+					my self that prehep I shou'd be happy with
+					my mother &amp; sisters, who received me very Gladly 
+					past some time with an outward Brisk deportment
+					least any <add place="above">one</add> Shoud <add place="above">see</add> alook of pennitence or condemna<add place="above">tion</add>
+					which was all the while mixt with the Severest
+					cutting pain, thus I went on till Christmas &amp;
+					at the night watch I took Courage to venture
+					<add place="margin">with out leave</add> into the S<hi rend="superscript:true;">rs</hi> House, Trembling &amp; frighten allmost
+					out of My Sencies, yet with an asumed boldness; all
+					who saw me viewd me as a Specture. Ann Birkby
+					was the first who came &amp; spoke to me &amp; ask<hi rend="superscript:true;">d</hi> me
+					how I cou'd think of entering this house after such
+					deceite as I had been Guilty of; Especial to the
+					Labourers before whom So Lately in My Classes
+					I had spoke so cherefuly &amp; satisfied, as I did,
+					the truth of what she said reproach &amp; smote my very
+					Heart &amp; conscience; I felt my self as a criminal before
+					the place of Execution, got out of the house as fast as
+					ever I could, not reflecting it was night I hasten home,
+					my Eyes knew no rest for this night &amp; several more, the
+					dreadful apprehenion of every moment being my Last
+					was Continnualy with me, those Eyes who as flames of
+					fire to the Guilty persue'd me were ever I went
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-05.jpg" n="4" />
+			<p>
+				
+					in this deplorable situation I spent one whole week
+					then resolved to beg forgiveness of My Choir in write, for
+					without them I cou'd not bear My Life much longer
+					the contents of what I wrote move'd My dear Labouress
+					to send Sist<hi rend="superscript:true;">rs</hi> to me the sight of which, Suprised
+					me beyond myself so that I could say very little
+					to them, they comfort me in My deep distress, &amp; told me
+					If it was a realite in my Heart that I coud not live
+					with them, I had leave to come to all the opportunities
+					of the Soccitie Sisters, my thankfulness for this was
+					fare from being what it shou'd have been, for my
+					pride made a further claim but this I kept at
+					under all I cou'd, resolve'd to impertune My dearest
+					Lamb for through restoration of My happy
+					lott amongest the Sisters, &amp; begd the favour to
+					Speak My self unto My Laboureres, the permission
+					of which had likd to have cost me very dear, the
+					Guilt &amp; distraction of My mind sized me in such a
+					manner, that had not her friendly arm &amp; bosom
+					been My Suport I<hi rend="superscript:true;">d</hi> sunk down at Her feet, So is
+					Enough be comfortd, &amp; feel we love you turn you to our
+					d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">r</hi>, &amp; If you cannot do be satisfied without
+					fellowship with us, you must only Seriously consider
+					that you must Expect to confirm, to the Circumstances
+					&amp; regulations of our house &amp; thro' Grace suit your
+					self to them, I coud from that moment have seald
+					it as with my Life that those things &amp; I was but
+					once a gain within the house that they wou'd never
+					be any Molestation to my peace; Ah little did I
+					know,
+				
+			</p>
+			<cb />
+			<p>
+				
+					what a poor weak Human Creature was daily yet to
+					appear in me, I return'd home but with a Heavy
+					Heart pour'd out my Living desires with Tears
+					to be forgiven by My Sav<hi rend="superscript:true;">r</hi> &amp; His congregation &amp; the
+					next day I felt the Grace to be a real pennitent in My
+					Heart &amp; in the feeling sence of my Humility I found
+					it no hard Task to beg most Earnestly forgiveness of
+					my Choirs &amp; the Congregation <add place="above">by writing</add> without feeling any
+					right or worthyness at all, <hi rend="underlined:true;">this was read in the Conference</hi>
+					&amp; on the following Sunday the Joyful Tidings was
+					imparted that I had leave to come again into the
+					Choirhouse, this Humbled me into the very dust before
+					My dearest Sav<hi rend="superscript:true;">r</hi> &amp; on April 7<hi rend="superscript:true;">th</hi> 1761 I had the Grace
+					be received in the midst of my Choir within
+					as humane of there love by my d<hi rend="superscript:true;">r</hi> S<hi rend="superscript:true;">rs</hi> many who told
+					me that all former things should be quite forgotten
+					&amp; forgiven, kiss me recomm'd me the to the Heart of
+					of My beloved Sav<hi rend="superscript:true;">r</hi> thus I was blesst for a new beginning
+					but a lass I misst the path for My Joy &amp; thankful
+					ness soon abated &amp; I began to doubt over the
+					Sisters not loveing me as they did one another
+					My unsinnerlike way of thinking hear brought
+					me into abstructedness of every kind &amp; great dry
+					ness of Heart inso much that I felt my self like
+					fish out of water, all which I kep intirely to my
+					self thinking I should never more prosper in
+					this Time, &amp; tho' I had so Lately felt what it was
+					to be Seperatd from the fellowship of my Choir
+					yet My pride look for more Complacency from
+					the Sisters, which my foregeget [Vorsteherin] told me then I
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-06.jpg" n="5" />
+			<p>
+				
+					merited or deserved, this reprove brought me
+					more upon My heart then ought I had meet
+					with &amp; I plainly see the fault lay intirely in
+					my self, I became more Sinnerlike &amp; humble
+					&amp; then love &amp; mercy pourd in upon me &amp; my
+					Gracious Lord gave me leave to become a
+					candidate for the Holy Sacrement Nov 20<hi rend="superscript:true;">th</hi>
+					1761 &amp; on March 13<hi rend="superscript:true;">th</hi> 1762 I had the Grace
+					to become a participant of the Holy Corpses
+					&amp; blood which put much to shame &amp; also the
+					gracious promise of the w w, of the day. I will
+					make an End of all thy Morning &amp; days of Joy
+					shall begin.
+				</p>
+			<p>
+					May the following I was direct'd to keep the
+					Child<hi rend="superscript:true;">rns</hi> School in the Country first Mirfield &amp;
+					<add place="above">then wyke</add> which did not comprise very long; by this appearently
+					I had many things to learn &amp; got a daily insight 
+					of short falling, but was thankful to injoy rest
+					&amp; peace again in My d<hi rend="superscript:true;">r</hi> Choirhouse were Id not
+					been Long before <del>before</del> I was took with an intemit
+					ing fever to gather with my Scurbile disorder that
+					came on me Spring &amp; fall, which occasion me
+					13 week Sickness in the Sickroom which was no
+					small blessing to my heart He provd Himself
+					my all in all Circumstance in My course the dependant
+					situation I was often brought into thro' Sickness &amp;
+					other Occasion was very Contrary to My disposition
+					but My Sav<hi rend="superscript:true;">r</hi> provd it needful &amp; wholesome for me
+					tho' it caused me many an heavy hour, to be thus
+					burdensome to My dear Choir.
+				
+			</p>
+			<cb />
+			<p>
+				
+					the repeated sickness of our Happyly departed Sister caused
+					Her many reflections of the last mention'd kind, as
+					her natural Tendency was not to be burthemsom
+					she applied herself industriously on all occasion that
+					she might maintain herself, but our d<hi rend="superscript:true;">r</hi> Lord who
+					know the disposition of Her mind used all possable
+					means to indear Himself unto Her heart as the
+					only object to be depended on, she was very ???
+					of Her own depravity, &amp; the Inclination to Serve or
+					do Something for our Sav<hi rend="superscript:true;">r</hi> was at Times such a fine as
+					Carry'd <add place="above">Her</add> beyond the Sinnerpoint &amp; injoyment of her
+					wounded friend: this impatient ambition caus'd
+					Her many perplexing Moments, which our D<hi rend="superscript:true;">rst</hi>
+					Lord had to comfort Her very often about.
+					3 months ago, Her former disorder fell upon Her
+					Stomach &amp; early vorlent reachings which occasiond
+					Her moveing into the Sickroom from the Grt Girls
+					whom she had served with great faithfulness
+					Dureing the short time she was with them
+					when in the sickroom it was Soon perceiveable that
+					our dearest Sav<hi rend="superscript:true;">r</hi> intend by this Sickiness to finish
+					Her Course in this Time, but she did not believe
+					it, till Her bodily weakness increased so fast, that
+					she often cal'<hi rend="superscript:true;">d</hi> out to Her deavest Bridegroom to
+					prepare Her Speedily for His arms &amp; bosom as a poor
+					needy Sinner who thro' the merits of His wounds
+					that She might enter into her eternal rest.
+					She often with the greatert earnestness wou'd Express
+					how happy it was to have a recconsil'd Heart &amp; no
+					other desires then to wait with patience those redeemers will
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_25WhiteheadMary-07.jpg" n="6" />
+			<p>
+				
+					&amp; to retain a true &amp; lively sense of all the Grace bestowd
+					upon one Especialy in Such hours &amp; moments when
+					the bodily pains pours in beyond all patience, a few
+					days before Her departure she askd the Sister If they
+					thought or know of ought that cou'd detain Her
+					she thought she had nothing on Her Mind, but
+					what she had throughly spoke about with Her
+					Hearts best freind, but she was answerd by a S<hi rend="superscript:true;">r</hi>
+					that patience &amp; resignation with a longing spirit
+					after Him is of Happy Consequence to a Soul thats
+					waiting for His comeing, she paus'd a little &amp;
+					then said. Ah that is it, He alone can give me
+					patience, tho' I want to be with Him yet I<hi rend="superscript:true;">ll</hi> wait
+					His Time, Her longing increase every moment
+					&amp; Her great pain which had infeeababled Her
+					dying bones grew more bearable &amp; on the
+					29 of June between the hours of 11 &amp; 12 in the
+					night she fell softly &amp; Happyly asleep, thus
+					Close<hi rend="superscript:true;">d</hi> Her Course haveing spent 32 years
+					&amp; some days in this Time
+				
+			</p>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ann Kellet: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_3_17_KelletAnn">Ann Kellet</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Kellet</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-01.jpg" n="1" />
+			<p>
+				<lg>
+					<l>The life of the S<hi rend="superscript:true;">le</hi> Sis<hi rend="superscript:true;">r</hi> Ann Kellet who departed</l>
+					<l>to our Sav<hi rend="superscript:true;">r</hi> in the Choirhouse at Fulneck Jan<hi rend="superscript:true;">y</hi> 5<hi rend="superscript:true;">th</hi></l>
+					<l>1788. She has left the following account of herself.</l>
+				</lg></p>
+			<p><lg>
+					<l>I was born at Whibsey in the Parish of Bradford</l>
+					<l>Yorkshire, March 21<hi rend="superscript:true;">st</hi> 1745, as soon as I was able</l>
+					<l>my Parents sent me to School which was then kept</l>
+					<l>by the Sis<hi rend="superscript:true;">rs</hi> at Scoles and Horton, and I had a great</l>
+					<l>pleasure in it, but the first real feeling I remember</l>
+					<l>to have had, was when B<hi rend="superscript:true;">r</hi>. Gross had the care of the</l>
+					<l>Children, when he came his round, he kept us a</l>
+					<l>meeting, and told us that on such a day in the next</l>
+					<l>week at Lambs-Hill there woud be a Cong<hi rend="superscript:true;">n</hi>. day </l>
+					<l>for Child<hi rend="superscript:true;">n</hi>., which he had wish'd for many Years.</l>
+					<l>telling us how he wish'd us to spend our time till</l>
+					<l>then, asuring us that our Saviour would bless us</l>
+					<l>in a particular manner, I longed for the time to come</l>
+					<l>as I expected something particular and was not</l>
+					<l>dissappointed, it was the first time I had been at</l>
+					<l>such a meeting, we Country Child<hi rend="superscript:true;">n</hi>. were in the Gal</l>
+					<l>lerry, the discourse was kept by B<hi rend="superscript:true;">r</hi>. Tranecker, </l>
+					<l>during which I remember my heart was quite</l>
+					<l>overcome with the feeling, I pray'd our Sav<hi rend="superscript:true;">r</hi>. to </l>
+					<l>bless me, tho' I did not think myself to worthy as</l>
+					<l>those who were below, but He was very near me.</l>
+					<l>I long'd afterwards for these Cong<hi rend="superscript:true;">n</hi>. days to come.</l>
+					<l>When I was reciev'd amongst the Great Girls</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-02.jpg" n="2" />
+			<p>
+				<lg>
+					<l>my whole wish was to prosper for our Saviour and I </l>
+					<l>felt a desire to go and live with the Sis<hi rend="superscript:true;">rs</hi>. which lasted</l>
+					<l>till a Cousin I had who went to live with the B<hi rend="superscript:true;">rn</hi>.</l>
+					<l>soon left them again, and as I know he went with a </l>
+					<l>full intention to stay with them, it put such a damp </l>
+					<l>upon me, that I gave it up, thinking that I might per</l>
+					<l>haps do as he had done. My Parents spoke to me in a </l>
+					<l>very close manner, and told me never to think of going</l>
+					<l>if I thought of acting in the same way, but instead of</l>
+					<l>this proving a blessing, it harden'd my heart, and I did</l>
+					<l>my best to stifle all convictions, I went on this wicked</l>
+					<l>way for near a Year, till I cou'd hold it out no longer, I </l>
+					<l>then made a full resolution to leave all, let the consequence</l>
+					<l>be as they wou'd. My Parents were exceedingly pleas</l>
+					<l>with this, and did to the utmost of their power to get</l>
+					<l>my things in readiness against my removal, which </l>
+					<l>took place Oct<hi rend="superscript:true;">r</hi> 23<hi rend="superscript:true;">d</hi> 1761, when I mov'd into the Choir</l>
+					<l>House at Fulneck, my Mother accompanied me, but on</l>
+					<l>seeing her so concern'd for fear of my not praying, affect</l>
+					<l>me very much, but I soon got to be at home amongst the </l>
+					<l>S<hi rend="superscript:true;">rs</hi>. tho' one thing always put a damp upon me, which</l>
+					<l>was that I was not sure of my Salvation. Jan<hi rend="superscript:true;">y</hi> 1<hi rend="superscript:true;">st</hi>, 1762</l>
+					<l>I was receiv'd into the Cong<hi rend="superscript:true;">n</hi>. quite unexpectedly, but</l>
+					<l>instead of this being a pleasure, it was a pain to me, as I </l>
+					<l>secretly wish'd it not to take place till I knew for certain</l>
+					<l>that my sins were forgiven, now I had no more rest, think</l>
+					<l>I wou'd neither eat nor sleep, till I had attain'd it, as at</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>time I thought it was all fancy, I went on in this way</l>
+					<l>for a whole Year unti Dec<hi rend="superscript:true;">r</hi> 19<hi rend="superscript:true;">th</hi>, when B<hi rend="superscript:true;">r</hi>. LaTrobe</l>
+					<l>preach'd a sermon, and took his text out of the Song</l>
+					<l>of Solomon, where our Sav<hi rend="superscript:true;">r</hi>. is describ'd as a Roe or a</l>
+					<l>Young Hart, he first treated of the swiftness of them</l>
+					<l>and likened them to the haste which our Saviour makes</l>
+					<l>to any poor Soul in distress, whilst he was speaking I </l>
+					<l>felt so overcome that it is impossible to express what I </l>
+					<l>felt in those moments, when I came a little to myself, </l>
+					<l>having my Hymn book on my lap, it came into my</l>
+					<l>mind to open a verse for myself, which was Jesus my</l>
+					<l>Bridegroom my soul is - To thee already joined &amp;c. what </l>
+					<l>I felt at the reading of this is impossible to describe, it </l>
+					<l>was as if our Saviour spoke every word of it Himself</l>
+					<l>and I had never heard the verse before, I was so happy, </l>
+					<l>and felt that such a change had taken place, that I cou'd</l>
+					<l>hardly believe what had happen'd to me, being once in</l>
+					<l>my Class, my Labouress (who I believe had a mind to </l>
+					<l>try my faith) said she had a question to ask me, adding</l>
+					<l>Our Saviour will know if it is so, and the Sis<hi rend="superscript:true;">rs</hi> shall be</l>
+					<l>witnesses, the question was, whether I had felt our</l>
+					<l>Sav<hi rend="superscript:true;">rs</hi>. forgiveness? I told her I knew I had as clearly as</l>
+					<l>I knew when the sun shone, but I know I must have</l>
+					<l>it daily renew'd, she answer'd me with those words, that</l>
+					<l>For without fresh supplies - the former droops and dies</l>
+					<l>Continually we've need. By faith on Him to feel. This</l>
+					<l>made me reason a little, why she should ask me first a</l>
+					<l>question but my faith failed not. In the year 1760 I had</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-03.jpg" n="3" />
+			<p>
+				<lg>
+					<l>the grace and favour of being receiv'd into the S<hi rend="superscript:true;">le</hi>. Sis<hi rend="superscript:true;">rs</hi>.</l>
+					<l>Choir, which has prov'd a real blessing to me, the reception</l>
+					<l>meeting in particular, B<hi rend="superscript:true;">r</hi> LaTrobe sung that verse, Where</l>
+					<l>agonizing Blood - The reeking earth did cover - There</l>
+					<l>each unlamblike though - Shall be interr'd forever.</l>
+					<l>after these words he kneel'd down, and pray'd very affect</l>
+					<l>ingly that every thing displeasing to our Sav<hi rend="superscript:true;">r</hi>. might be</l>
+					<l>remov'd before we enter'd into a new Choir, when he rose</l>
+					<l>up from prayer he sung, Henceforth they'll move no where</l>
+					<l>This made such an impression upon me, that I wish'd with</l>
+					<l>my whole heart that this might be my case. At this</l>
+					<l>time a new school began to take place in my heart, and</l>
+					<l>those things which before seem'd not of much consequence</l>
+					<l>to me, now appear'd as great Sins, I thought at this time</l>
+					<l>that if I disclos'd my mind to anyone, I shou'd not have</l>
+					<l>the favour to stay any longer in the House, and pray'd</l>
+					<l>our Sav<hi rend="superscript:true;">r</hi>. earnestly to help me without opening my mind,</l>
+					<l>a Sis<hi rend="superscript:true;">r</hi>. in the Room, seeing the distress I was in, spoke</l>
+					<l>to me in a tender manner, and gave me to understand</l>
+					<l><add place="above">that</add> She had expereinc'd the same, and advis'd me to speak</l>
+					<l>my mind to my Labouress, but being of a very close turn, </l>
+					<l>I still cou'd not do it, one day when I cou'd hear it no</l>
+					<l>longer, I went alone, and there pray'd our Sav<hi rend="superscript:true;">r</hi>. to help me</l>
+					<l>I open'd that verse, Can any ill distress my heart - Since</l>
+					<l>God with his own Son did part - Whate'er I want can't be</l>
+					<l>deny'd - Because for me the Saviour dy'd. Then I saw</l>
+					<l>clearly that no ill need distrress me, for by my Saviours</l>
+					<l>Birth and Sufferings He had purchas'd all things for</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>me, and wou'd not deny me any thing, now I cou'd speak</l>
+					<l>openheartedly to my Labouress about every thing. Aug<hi rend="superscript:true;">t</hi></l>
+					<l>13<hi rend="superscript:true;">th</hi> the same Year I was made <add place="above">became</add> a Candidate for the </l>
+					<l>Holy Comunion during the Sacrament, the pouring out </l>
+					<l>of the Wine and singing that verse How in this Hall</l>
+					<l>with haste - That thy Church met it render &amp;c. I </l>
+					<l>felt in my heart as if it really was so; afterwards</l>
+					<l>I waited with ardent longing for the time to come when</l>
+					<l>I shou'd enjoy it, which favour was granted me the </l>
+					<l>4<hi rend="superscript:true;">th</hi> of May following, but I did not feel so well as I </l>
+					<l>cou'd have wish'd being very timerous, and wanting</l>
+					<l>to enjoy something so very extraordinary, not expect</l>
+					<l>ing that at such a time one bad thought shou'd arise after</l>
+					<l>another; but I found by experience that they were some</l>
+					<l>times more ripe then, than at any other time, and I</l>
+					<l>felt so many things stirring from time to time; but our</l>
+					<l>Sav<hi rend="superscript:true;">r</hi>. gave me to feel that there was no occasion for me</l>
+					<l>to be a shame to sin of any kind, as in Him there was</l>
+					<l>full santification. In the Year 1767 it pleas'd our</l>
+					<l>Sav<hi rend="superscript:true;">r</hi>. to take my dear Parents home to himself, also my </l>
+					<l>B<hi rend="superscript:true;">r</hi>. and S<hi rend="superscript:true;">r</hi>. in a few weeks who left 3 Child<hi rend="superscript:true;">n</hi> Orphans</l>
+					<l>we were in the greatest distress how they shou'd be </l>
+					<l>cared for, but our Sav<hi rend="superscript:true;">r</hi>. according to his promise has</l>
+					<l>cared for them all, but taking the youngest to himself</l>
+					<l>and the other two are now in Gomersal Oeconomy.</l>
+					<l>In the Year 1768 when the Unitys Elders Conference</l>
+					<l>was here, I serv'd in the kitchen during their stay</l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-04.jpg" n="4" />
+			<p>
+				<lg>
+					<l>and after they were gone, I was desir'd Serve in the </l>
+					<l>Child<hi rend="superscript:true;">rns</hi> work which at first for several reasons was</l>
+					<l>not agreable to me, but it prov'd a School for my heart</l>
+					<l>and made me keep close to our Sav<hi rend="superscript:true;">r</hi> so that I can truly </l>
+					<l>say 5 Years I liv'd there form'd a real blessing for</l>
+					<l>my heart, especially the Child<hi rend="superscript:true;">rns</hi> Cong<hi rend="superscript:true;">n</hi> days, which remind</l>
+					<l>my Childrens Years to me. After that I return'd into</l>
+					<l>the Choir house, where I was employed in the Wash for</l>
+					<l>12 Years. As for those latter Years, I am at a loss</l>
+					<l>what to say, and cannot express what our Sav<hi rend="superscript:true;">r</hi> has been</l>
+					<l>to me, but so far I am joy. He has taught me to know</l>
+					<l>what his in human nature, and other human weak</l>
+					<l>nesses are, together with what He can be to a poor distress</l>
+					<l>ed Soul, for I often thought I was like God, and had to</l>
+					<l>weep the bitterest tears, on account of my thinking too</l>
+					<l>much of certain circumstances that occurred to me, that</l>
+					<l>He never faild to comfort me in a most striking manner</l>
+					<l>by passages of Scripture just so. Are not true Sinners</l>
+					<l>Sold for a farthing, and not one of them shall fall to the</l>
+					<l>ground without my heavenly Fathers knowledge, fear</l>
+					<l>ye not therefore, for the very Hairs of your Head are</l>
+					<l>all remeber'd. Amidst all reasonings I cou'd also believe</l>
+					<l>what that verse expresses, How well O Lord art thou thy </l>
+					<l>People leading - Tho' oft thy ways seem wonderfull and</l>
+					<l>Strange. There can be nothing wrong in thy proceeding</l>
+					<l>Because thy faithfulness can never change - Thy ways</l>
+					<l>are often crooked and yet Straight - In which thy</l>
+				</lg>
+			</p>
+			<cb />
+			<p>
+				<lg>
+					<l>Children are ordain'd to walk-- Tho' all to ruin</l>
+					<l>seems to go and waste - As his to ?? ??? thou art</l>
+					<l>wise and great. And now I hope our Sav<hi rend="superscript:true;">r</hi> will grant</l>
+					<l>me patience to wait his time, untill He shall please to</l>
+					<l>call me home to Himself, then I shall be able to praise</l>
+					<l>him better for all that He has done for me.</l>
+				</lg></p>
+			<p><lg>
+					<l>So for our late Sis<hi rend="superscript:true;">rs</hi> on account.</l>
+				</lg></p>
+			<p><lg>
+					<l>What she writes concerning those last Years is in</l>
+					<l>reference to her receving a Call in the year 1784 to</l>
+					<l>serve our Saviour in Barbados, which she ????</l>
+					<l>accepted but no for account of circumstances) it was</l>
+					<l>afterwards found good to postpone the matter for</l>
+					<l>sometime, it prov'd a great trial to her, and she took</l>
+					<l>it much to heart, which so far impair'd her health</l>
+					<l>that (tho' it was still kept in view for her) it now</l>
+					<l>no less oblig'd to be entirely drop't But as she</l>
+					<l>herself how briefly noted how she felt in those circum</l>
+					<l>stances, will only further mention that in her last</l>
+					<l>sickness, which from what time now gradually, ???</l>
+					<l>ing, and at last terminated in a Consumption, our</l>
+					<l>Sav<hi rend="superscript:true;">r</hi> was particularly gracious to her, and enabled</l>
+					<l>her to resign everything chearfully into his faith</l>
+					<l>full hands, whenever she spoke of her own hearts</l>
+					<l>feeling it was always in the most gratefull tone, that </l>
+					<l>She loved her help'd thro' so well, for said she, when I </l>
+					<l>look my whole course ever, I see abundance of greatness </l>
+				</lg>
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_17_KelletAnn-05.jpg" n="5" />
+			<p>
+				<lg>
+					<l>and mercy which our Sav<hi rend="superscript:true;">r</hi>. has always shown towards</l>
+					<l><hi rend="underlined:true;">me his poor one</hi>, for which I shall remain a debtor</l>
+					<l>to all eternity. the Joy she felt at of the prospect of</l>
+					<l>soon seeing him on whom she had believ'd while here,</l>
+					<l>was visible <add place="above">evident</add> in every conversation with her, and her</l>
+					<l>confidece in our Sav<hi rend="superscript:true;">r</hi>. remain'd unshaken.</l>
+				</lg></p>
+			<p><lg>
+					<l>January 5<hi rend="superscript:true;">th</hi>, early in the morning, it was evident</l>
+					<l>that her time here wou'd not be long, upon which</l>
+					<l>the last blessing of the Cong<hi rend="superscript:true;">n</hi>. and her Choir was im</l>
+					<l>parted to her, during which she was quite sensible </l>
+					<l>and herself had signify'd that a Liturgy shoud be kept</l>
+					<l>by her, which was attended with an awefull feeling</l>
+					<l>of the near presense of our Sav<hi rend="superscript:true;">r</hi>. and of what came to</l>
+					<l>pass in those moments, for, during the same, she fell</l>
+					<l>happily asleep in Him, having spent here below</l>
+					<l>43 Years, 11 weeks wanting.</l>
+				</lg>
+			</p>
+		</body>
+	</text>
+</TEI>

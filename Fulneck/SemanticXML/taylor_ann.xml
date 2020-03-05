@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ann Taylor: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_71Taylor">Ann Taylor</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-05.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-01.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Ann Taylor</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-02.jpg" n="1" />
+			<p>
+				
+					Our Dear Sis<hi rend="superscript:true;">r</hi> Ann Taylor was Born in Clagheaton May ye 8<hi rend="superscript:true;">th</hi> 1731
+					in Burstol parich, was Baptis'd &amp; educated a pressbeterian her
+					Father dieing when she was only Seven years old, &amp; her Mother
+					being in low circumstances &amp; uncapable of taking proper care
+					of her, her unkle &amp; Aunt took to her, &amp; soon after her Mother
+					dieing also she became entirely under of care of her Aunt
+					who in ye year 40 was touch'd in heart by our Sav<hi rend="superscript:true;">r</hi> under ye
+					preaching of M<hi rend="superscript:true;">r</hi> Ingham &amp; became a member of that Society,
+					to w<hi rend="superscript:true;">ch</hi> oppertunities she brought ye above child tho: at that 
+					time, much against her inclination, w<hi rend="superscript:true;">ch</hi> was more for
+					playing with other lightminded Children; this she has often
+					since reflected on with concern, &amp; expressed her hearty thanks
+					to our dear Sav<hi rend="superscript:true;">r</hi> &amp; her aunt for their especial care of her at that
+					time. In 45 B<hi rend="superscript:true;">r</hi> Held haveing of care of ye Yorkshire Children
+					&amp; she being admited to there meetings soon begun to love
+					them &amp; to have a real tender feeling of her heart. In 46 her
+					Aunt comeing to live in an oeconomy, a Sutable place was
+					provided for her, where she stay'd a year &amp; then left it of her
+					own accord, w<hi rend="superscript:true;">ch</hi> however gave her much Smart afterward.
+					for ye year 50 she had ye favour to live with B<hi rend="superscript:true;">r</hi> &amp; Sis<hi rend="superscript:true;">r</hi> Grass at
+					Clagheaton who lov'd her tenderly, but they removeing from thence 
+					she came to live at Holm with some single women belonging
+					to that Society, from, whence she came to live with B<hi rend="superscript:true;">r</hi> &amp; S<hi rend="superscript:true;">r</hi> Harlock
+					at Lambs Hill, &amp; notwithstanding thus favoured to live with
+					Bre<hi rend="superscript:true;">n</hi> &amp; Sis<hi rend="superscript:true;">rs</hi> yet she co'd not be satisfyed because she was not
+					in ye Cong<hi rend="superscript:true;">n</hi> &amp; therefore beg'd to be taken from that place
+					thinking if she was but to live in an oeconomy with Sis<hi rend="superscript:true;">rs</hi>
+					that then she sho'd soonner come to ye enjoyment of that
+					happyness w<hi rend="superscript:true;">ch</hi> she felt she wanted, to w<hi rend="superscript:true;">ch</hi> priviledge, upon her
+					earnest request Sis<hi rend="superscript:true;">r</hi> Mary admited her vis: to Hightown, <add place="above">to live with two</add> sisters
+					where according to her expectation, she profited much, became solidly
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-03.jpg" n="2" />
+			<p>
+				
+					aquainted with our d<hi rend="superscript:true;">r</hi> Sav<hi rend="superscript:true;">r</hi> &amp; her own poor heart, so that she gain'd
+					ye love of <del>all</del> her Sis<hi rend="superscript:true;">rs</hi> &amp; enjoy'd a real fellowship with them.
+					May ye 13<hi rend="superscript:true;">th</hi> 1745 she had ye Grace to become a member of ye Cong<hi rend="superscript:true;">n</hi> to
+					her unspeakable consolation. and on ye 20, when ye oeconomy at 
+					little Gumersel <add place="above">was </add>setled she had ye favour to be one of that happy
+					company, of w<hi rend="superscript:true;">ch</hi> she was very glad &amp; thankfull, remaining in that
+					tender feeling for some time, but her impaticent longing for
+					still farther Blessings, often caus'd her pain &amp; w<hi rend="superscript:true;">ch</hi> was renew'd
+					constantly when she Saw ye other Sis<hi rend="superscript:true;">rs</hi> go to ye Lords Supper. of 
+					wch she spoak in a particular manner once to a Sis<hi rend="superscript:true;">r</hi>, who
+					asking her where she thought ye fault lay, answer'd I don't
+					know, being advised to make application to our dear Sav<hi rend="superscript:true;">r</hi>
+					for a right information, &amp; being asshur'd by ye above Sister
+					that she was not forgoten. she accordingly did so, &amp; very simply
+					said I feel ye fault is all in my self, childlikly beging to
+					be still thought on with regard to that matter, which was
+					also done. And on ye 13th of July ye same year she had her
+					longing desire satisfyed &amp; was made partaker of her Lords
+					Corpse's &amp; blood in ye holy Sacrament, w<hi rend="superscript:true;">ch</hi> proved a real &amp;
+					lasting Blessing to her heart. But her natural dispossision
+					being some what high, she depriv'd her selfe of many happy
+					hours w<hi rend="superscript:true;">ch</hi> otherwise she might have enjoy'd, &amp; this also gave
+					occation of concern to those around her <hi rend="underlined:true;">&amp; some painfull hours</hi>
+					But our D<hi rend="superscript:true;">r</hi> Lamb who know's all things, found out ways &amp;
+					mean's whereby he cou'd constantly bring her again to ye Sinner
+					point, ye this made ye Sisters continue their love to her &amp;
+					have paticence with her.
+				</p>
+			<p>
+					dec<hi rend="superscript:true;">r</hi> 56 she was leased with a sore cough atended with a pain
+					in her side; by ye continuance of w<hi rend="superscript:true;">ch</hi> it was judg'd would
+					prove a Consumption, tho she her selfe did not believe to
+					if she was ask'd at any time if she thought she sho'd go home
+					of this sickness, sho'd answer no I can't believe I shall
+					have that favour yet. But ye disorder encreasing, she came
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-04.jpg" n="3" />
+			<p>
+				
+					upon other thoughts, &amp; said that if she didnot onlter soon it
+					would bring her to our Saviour, This made her often wish she 
+					might once <add place="above">go</add> to live in ye Choir House &amp; there experience in a 
+					more particular manner her choir grace, w<hi rend="superscript:true;">ch</hi> favour however
+					cou'd not be granted her as an inhabitant but was afterwards
+					gratifyd in ye respect on account of chaing of air &amp; better
+					convenancy, so on ye 13 of June lest she came here to her great
+					joy, hopeing that this wou'd be her last home on earth &amp;
+					so growing weaker &amp; weaker she whent into ye Sick Room
+					Nov<hi rend="superscript:true;">r</hi> ye 4<hi rend="superscript:true;">th</hi> believing that our dear Sav<hi rend="superscript:true;">r</hi> wo'd soon make her
+					ready for himself &amp; take her home where allso she wish'd to
+					be. It was always ye greatest pleasure to her when any one
+					told her, they thought she w'd soon go to her eternal Bridegroom
+				</p>
+			<p>
+					on ye 13 it being ye Elders feastival &amp; she being not able
+					to go to ye Hall when ye bell rung for ye absosutation, she 
+					fell prostrate in her Sick Room &amp; there rec'd that full &amp; free
+					absolution from of hands of her dear Head &amp; Elder to her inexpressable consolation w<hi rend="superscript:true;">ch</hi> aquainted her dear Sisr. Mary of in
+					a very tender manner. On ye 24<hi rend="superscript:true;">th</hi> it being our d<hi rend="superscript:true;">r</hi> Mamma's Birth
+					day &amp; tho: she was not capable of being presant at ye oppertu<add place="above">nities</add>
+					yet she enjoy'd ye sweet nearness of her wounded friend ye whole
+					day, at night Sisr Mary came to her, &amp; had some very agreeable
+					conversation with her, as she many times had, &amp; ye Choir
+					now going to enjoy ye cup of thanksgiving, she was told
+					of it, when she tenderly beg'd to be a partaker of ye same
+					Grace &amp; Blessing w<hi rend="superscript:true;">ch</hi> favour was also granted her to her
+					great Joy &amp; comfort.
+				</p>
+			<p>
+					Sunday 26 she enjoy'd for ye last time ye Corpes &amp; Blood of
+					her Beloved in ye Holy Communion.
+				</p>
+			<p>
+					Dec<hi rend="superscript:true;">r</hi> ye 8 one co'd plainly perceive that her dear Bridegroom
+					wo'd soon give her ye last kiss, for w<hi rend="superscript:true;">ch</hi> she most earnestly,
+					long'd. on ye 15<hi rend="superscript:true;">th</hi> she spoak in a very tender &amp; feeling
+					manner of ye love &amp; faithfullness of her dearest Friend
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-05.jpg" n="4" />
+			<p>
+				
+					who had to closly attended &amp; followed her even from
+					her childhood, saying ah! He has been my best friend
+					indeed, of whom had a strength, I cou'd day much. at 
+					night she pray'd very proveingly to her dear Lamb, often
+					uttering in a faultering tone o! dearest Lamb, take me
+					if it be thy time, but if I must yet stay longer
+					here, then only keep near my heart &amp; give one paticence
+					Then speaking to her Sick waiter said, Thou hast many
+					things to forgive me, for I have been a very poor child 
+					indeed. &amp; so beging pardon in a pretty tender way
+					she was assur'd that ye above had not ye least against
+					her but realy love'd her. soon after she sent for Sis<hi rend="superscript:true;">r</hi>
+					Mary with whom she kept a hearty band, telling her
+					at ye same time, that she firmly believed that her
+					dear spouse w'd fetch her home that night w<hi rend="superscript:true;">ch</hi> ye
+					former question'r, she answer'd, but I am ashured <add place="above">of it</add> ye have
+					made out all my matters for my Buring &amp; ever thing,
+					w<hi rend="superscript:true;">ch</hi> I hope will be done acordingly, both to your
+					Satisfaction &amp; mine &amp; now I have nothing more to do,
+					but am quite ready. Sis<hi rend="superscript:true;">r</hi> Mary then going to keep ye evening
+					Blessing, she sent her hearty Salutaition by her, to her
+					her Choir desireing them all to think of <add place="above">her</add> adding, I know our
+					dear Sav<hi rend="superscript:true;">r</hi> will kiss me home this night, &amp; then I will 
+					remember each Sis<hi rend="superscript:true;">r</hi> before him in a particular manner.
+					after w<hi rend="superscript:true;">ch</hi> at Sis<hi rend="superscript:true;">r</hi> Marys return she found her still panting
+					for ye last kiss, saying o' my dear Lamb: come come soon.
+					so she comforted her telling her of that Bloody Sweaty
+					agoney w<hi rend="superscript:true;">ch</hi> her dear Lord had sufferd for her, in the 
+					Garden &amp; how on her account he had allso sweated
+					death sweat, therefore she sho'd only now have a
+					little paticence &amp; that happy mnnite w'd soon come. 
+				
+			</p>
+			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_71Taylor-01.jpg" n="5" />
+			<p>
+				
+					then the lay a little still, but presantly lifted
+					her selfe up &amp; said, come Sis<hi rend="superscript:true;">r</hi> Mary &amp; sing me
+					ye last verce for I am just now going, then was
+					sung, and when in his arm's lastly thy mouth
+					shall pallid grow &amp;c. &amp; <add place="above">then</add> she fell Softly asleep on
+					ye warm <add place="above">Breast</add> of her dear wounded friend, dureing a Sweet
+					litturgy kept by her Choir Labourer's. between eleven
+					&amp; twelve o clock ye same night, in the 28 year of her age
+					decb<hi rend="superscript:true;">r</hi> 15 1758
+				
+			</p>
+		</body>
+	</text>
+</TEI>

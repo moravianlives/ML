@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memoir</title>
+                <funder>The Moravian Lives Project</funder>
+                <principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+                    <address>
+                        <addrLine>Lewisburg, Pennsylvania</addrLine>
+                    </address>
+                    <email>faull@bucknell.edu</email>
+                </principal>
+                <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+                    <address>
+                        <addrLine>Gothenburg, Sweden</addrLine>
+                    </address>
+                    <email>christer.ahlberger@history.gu.se</email>
+                </principal>
+                <respStmt>
+                    <persName xml:id="JAKA1">Diane Jakacki</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Project Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcguire">Michael McGuire</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Developer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mcohen">Marleina Cohen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jhom">Jess Hom</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcmullen">Morgan McMullen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mgruner">Marita Gruner</persName>
+                    <orgName>University of Greifswald</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="skanneman">Sarah Kannemann</persName>
+                    <orgName>University of Mainz</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jschaumberger">Justin Schaumberger</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cpirmann">Carrie Pirmann</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Transkribus, Text Encoding Specialist</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bking">Brian King</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Consultant, Machine Learning</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bacharya">Bhagawat Acharya</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <orgName>The Moravian Archives</orgName>
+                    <address>
+                        <addrLine>41 West Locust Street</addrLine>
+                        <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                        <addrLine>info@moravianchurcharchives.org</addrLine>
+                    </address>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>The Moravian Lives Project</distributor>
+                <availability>
+                    <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/barker_elizabeth.xml?date_annotation_20200321130948496",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-21T17:09:48.496Z",
+	"dcterms:issued": "2020-03-21T17:11:15.251Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/barker_elizabeth.xml?date_annotation_20200321130948496#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/barker_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/barker_elizabeth.xml?date_annotation_20200321130948496#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1720-07-09"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData></teiHeader>
+    
+    <text type="memoir">
+        <body>
+            <head>Elizabeth Barker</head>
+            <div n="1" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-01.jpg" n="1"/><p>A few particulars of the late happily departed widow. Sr. Eliz. Barker —</p><p>Born at Tong in the year <date when="1720-07-09" cert="high">1720 July 9<hi rend="superscript">th</hi></date>. She was awakened to a knowledge of her lost condition soon after the Brn came into Yorkshire. The distress of soul which she was in at this previous to her sight peace and happiness in our Savr. was so great as almost to bereif her of her senses, and over- come every other consideration. Hearing that there would be a preaching, here on the place, she she run with a little child in her arms (her daughter Hanah who now lives in the Sr. House here) and when she got to Fulneck, she left the  child in the care of a Family, best in returning home, her mind occupied with what she had heard, and the state of her own soul, that she forgot her child, and returned home without. Her neighbor believed and said, that the Inghamites (as the Brn at that time were called) had thrown her mad.</p><p><add place="margin">Read into the Congr. April 18th. 1755 partook first time of the H Cong. Sept. 6th. same year</add></p></div><div n="2" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-02.jpg" n="2"/><p>When it pleased our Savr. to reveal himself to her distressed heart, granting her pardon and peace, her joy and and gladness was as great as her as her sorrow and distress had been before. Her resolution now to live to him and his his people, brought upon her the several trial, from the enemies of the Brn., who at that time were very numerous and exceeding bitter. The Landlord under whom they lived sent for her husband and insisted upon it, that he &amp; his wife should go to the Church, and not attend at that baudy house — meaning the Brn preaching  place — threatening them at the same time, that if they did not obey him he would immediately turn him off his work &amp; out of their house. Her husband came home greatly alarmed, at the threats of his Landlord; and thinking that they would be ruined in their out ward circumstances if they, by ( attending the  </p></div><div><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-03.jpg" n="3"/><p>meetings of the Brn, — should provoke him to put his threatening into execution, endeavoured to persuade his our late Sr. to leave the Brn and go with him to Church. This she could not consent, upon which her husband grew exasperated at her and told her that if determined to persist in following the Brn he would be a ruined man — he would therefore leave her to herself and have nothing more to do with her, and left the house, and went and joined his old companions at the ail  house, who were glad to have him in their company again, and that he had forsaken the Brn. and returned to his former course. They did all they could to prejudice his mind more against the Brn by saying all manner of evil against them</p></div><div n="3" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-04.jpg" n="4"/><p>and encouraged him not to return to his wife but to forsake her intirely  if she would not give up her connexion with the Brn.. In this way they spent 3 or 4 days, drinking the whole time. O our late Sr was left with 2 small children the oldest not above 2 years old. This Landlord got to hear that she persisted in going to the Brn Meeting, at which he was terrible enraged, gave her notice to quit the house immediately or he would pull it down upon her head, but as she did not obey, he came the next day with a company of workmen and in a  most furious rage ordered the house to be uncover’d  while she with her 2 small Children were in it when she saw that she must leave it she took her little ones, telling him as she passed Him, “He might pull her earthly house down, but she had a house in heaven</p></div><div n="5" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-05.jpg" n="5"/><p>which he could not destroy. In these distressing circumstance she came for help and advice to the  Brn.. who encouraged her to go and prevail, if possible, with her husband to return home with her. She did so, entreating him with many tears to leave that company and go with her, to which however he would not yield, excepting she would first promise to go to the Church with him. She consented and accompanied him the next Sunday. But the night following he had a very alarming &amp; terrifying dream, respecting his conduct toward his wife and particularly his having forced her against her conscience to stay from the meeting of Fulneck and he likewise became very much destress’d about himself, promised never to hinder her and more and ever after he kept his promise. He himself soon after joined the Brn. Congr. &amp; partook of the H Comm with the same. Altho our late Sr. now met with no obstacles in attending the preaching of the Brn.. from <note type="catchword">the</note></p></div><div n="6" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-06.jpg" n="6"/><p>the side of her husband, yet as several of her neighbors were, at that time, from mistaken notions of the Brn. Were imbittered against them, she was under the necessity of attending in secret &amp; coming by ways for fear of being molested.</p><p>She was for many years the general Nurse in Fulneck and was much Respected in that line.</p><p>In the year 1778 she became a widow, and in 1783 she got leave to be a member Of this Congr. and moved into the Choir house; a favor which she often acknowledged with heartfelt thankfulness and gratitude to our gracious Lord. The Spiritual welfare of her Children was a concern which was ever uppermost in her mind, and whenever an oppty. Offered she never failed to warn those who were careless and indifferent about the salvation of their mortal souls, and to set before</p></div><div n="7" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300004-07.jpg" n="7"/><p>a carnal unregenerated course, and to set before them the love of Jesus to repenting  sinners, and how happy they might be in him.</p><p>about 4 years ago she had the misfortune to fall and break her collar bone and was otherwise much hurt. Tho’ she so far recovered as to be able to walk  about, yet she never got intirely well but always complained of an inward hurt in her side, previous to this she had enjoyed a good state of health and a strong constitution and a great flow of spirit. When she found her health declining and other weaknesses</p></div>
+        </body>
+    </text>
+</TEI>

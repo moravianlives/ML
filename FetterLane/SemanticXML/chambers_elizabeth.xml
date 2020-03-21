@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memoir</title>
+                <funder>The Moravian Lives Project</funder>
+                <principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+                    <address>
+                        <addrLine>Lewisburg, Pennsylvania</addrLine>
+                    </address>
+                    <email>faull@bucknell.edu</email>
+                </principal>
+                <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+                    <address>
+                        <addrLine>Gothenburg, Sweden</addrLine>
+                    </address>
+                    <email>christer.ahlberger@history.gu.se</email>
+                </principal>
+                <respStmt>
+                    <persName xml:id="JAKA1">Diane Jakacki</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Project Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcguire">Michael McGuire</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Developer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mcohen">Marleina Cohen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jhom">Jess Hom</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcmullen">Morgan McMullen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mgruner">Marita Gruner</persName>
+                    <orgName>University of Greifswald</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="skanneman">Sarah Kannemann</persName>
+                    <orgName>University of Mainz</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jschaumberger">Justin Schaumberger</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cpirmann">Carrie Pirmann</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Transkribus, Text Encoding Specialist</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bking">Brian King</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Consultant, Machine Learning</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bacharya">Bhagawat Acharya</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <orgName>The Moravian Archives</orgName>
+                    <address>
+                        <addrLine>41 West Locust Street</addrLine>
+                        <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                        <addrLine>info@moravianchurcharchives.org</addrLine>
+                    </address>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>The Moravian Lives Project</distributor>
+                <availability>
+                    <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/chambers_elizabeth.xml?date_annotation_20200321171443785",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-21T21:14:43.785Z",
+	"dcterms:issued": "2020-03-21T21:15:11.743Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/chambers_elizabeth.xml?date_annotation_20200321171443785#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/chambers_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/chambers_elizabeth.xml?date_annotation_20200321171443785#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1802-04-06"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData></teiHeader>
+    
+    <text type="memoir" xml:lang="en">
+        <body>
+            <head>Elizabeth Chambers</head>
+            <div n="1" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-01.jpg" n="1"/>
+                <p>The Widow S.r Eliz. Chambers late Lewis who departed this life <date when="1802-04-06" cert="high">Apr. 6<hi rend="superscript">th</hi> 1802</date> at Fulneck &amp; has left the following Account of herself.</p><p>I was born in Bath April 27th 1765 baptiz'd in the church of England. In my childrens years I constantly <choice><orig>attented</orig> <corr>attended</corr></choice> the meetings of the Brethren, which my parents had no objection to.</p>
+                <p>I cannot remember that in those years I had any particular impression of our Savior in my heart. In my thirteenth year I was received among the great girls; at this time I began to reflect seriously on my eternal happiness, and of the great importance of living for our dear Savior in this world who out of love to my Soul procured my Salvation at no less price, then the shedding every drop of his most precious blood, that I might be happy here in time, and to all eternity. Many thanks are due</p>
+            </div>
+            <div n="2" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-02.jpg" n="2"/>
+                <p>to Him, that with unwearied patience he has sought and followed me to the present day, amidst many dangers and temptations which I was in my younger years expos'd unto indeed in my period of my past life, I can trace the mercy and goodness of my faithful Redeemer in bringing me his poor lost sheep by nature, among the Sheep fold of his my language now is:</p>
+                <p>Had He not sought me, and followed over I ne'er had sought Him had known him never </p><p>Who is like Him.</p>
+                <p>As a Girl I experienced our Saviors love in my heart, and firmly believed that He died on the cross to redeem me; and at times I was <choice><orig>inabled</orig> <corr>enabled</corr></choice> thro his grace to look on the world, and the things of it, as nothing worth, when put in competition with what was to be enjoyed in the Lord, and among his people, thus I went on for some years very happy and cheerful in my course, not knowing as yet any thing of myself and the depravity that lies in human nature.</p>
+                <p>Jan 14th 1783 I was received into the Cong.n this was a day of peculiar blessing to my poort heart, I surrendered  <note type="catchword">myself</note></p>
+            </div>
+            <div n="3" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-03.jpg" n="3"/>
+                <p>myself anew to Him, who knew I had no other wish, but to be devoted to Him, with Soul and Body; I earnestly prayed to the Lord, that as he had given me leave to attain to this favor He would also Keep and preserve me, amidst the many snares, I was then surrounded with, and which to young minds without grace, was very pleasant and agreeable to be caught with, being in some measure conscious of my natural lively disposition. I often felt afraid, lest I should please the world, and the world should please me, as I felt at times, that things that were diametrically opposite to our Savior, had a very near access to my heart, this caused me to take shelter under the shadow of his wings, finding that in myself I had no power to resist temptations of any kind; such was my unseen friends faithfulness toward me, that whenever I entered into any thing that was contrary to His mind, and inconsistent with my profession, as a child of God, it was as if I heard Him say, by the voice of his holy Spirit in my heart; That is not the path I've appointed for you to walk in, you have once devoted yourself up to me with Soul and Body, and will</p>
+            </div>
+            <div n="4" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-04.jpg" n="4"/>
+                <p>you now pursue that path, that leadeth unto death; - In December the same year it pleased our dear Savior to call into eternal rest my dear mother. Her dissolution prov'd a real blessing to me; - She often beg'd me to price my happy lot of grace in belonging to the Brn Congn and to thank the Lord for calling me when young to a Knowledge of Himself, whom to know is life eternal, indeed her admonitions and advice will never be forgot by me. -</p>
+                <p>May 12th 1785 I was confirmed for the first enjoyment of the holy Comn byBr John Moore; I was the First Sister in Bath that was confirmed after the manner laid down in the Synod of 1782. This solemn act made an incredible impression on my heart, and the feeling of our dear Lord's precious nearness was sensibly felt by all present. During this transaction I felt so happy that I wish to retain the same Sensation throughout my life, but I had much to learn, having as yet not <choice><orig>learnt</orig> <corr>learned</corr></choice> to Know my depraved state by nature.</p>
+                <p>May 15th 1785 I partook for the first </p>
+            </div>
+            <div>
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-05.jpg" n="5"/>
+                <p>time of the Lords Body and blood in the holy Sacrament with the Bath Congn.The text for the day was as follows.</p>
+                <lg>
+                    <l>Oh Lord out thy light and thy truth, let them lead me, let them bring me unto thy holy hill, and to thy tabernacles</l>
+                </lg>
+                <p>and the Antiphon:</p>
+                <lg>
+                    <l>Lord Jesus Christ my life and and light</l>
+                    <l>O let in every place</l>
+                    <l>Thy sounds to me. Thine clear &amp; bright</l>
+                    <l>And guide my Ages and ways.</l>
+                </lg>
+                <p>At this divine apart I cannot say I felt so happy, as I thought I should, this distressd me very much, as I wanted to enjoy still more happiness than at my confirmation, but I have since <choice><orig>learnt</orig> <corr>learned</corr></choice> thro'our Savior's grace to be satisfied with what I am, a poor supplicant that approaches His table, having nothing to bring, but sin and misery, and to be content with the <choice><orig>smalest</orig> <corr>smallest</corr></choice> blessing that he imparts. In Novr the same year it pleas'd our dear Lord to take home my dear Father rather suddenly, this was a very heavy stroke to me, but my faithful Savior supported me admist all my trials. What shall I render unto</p>
+            </div>
+            <div n="6" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-06.jpg" n="6"/>
+                <p>Him for all his goodness and mercies bestowed on me, the least deserving of all his creations! The best reason for one like me, so wretched and so poor Is from his gifts to draw a plea, and ask Him still for more.</p>
+                <p>I had often felt a desire to leave the situation I was placed in - which was a very gay one - and retire from the noisy busy crowd to the calm and safe retreat of a far House in a place Congn, where I thought I could live more according to my Savior's mind, and not have so many things to draw me aside from Him, these thoughts were certainly right; but still I did not Know what a Self I had to take with me, and that I was going to a real and blessed school for my heart; for I had much to learn; In March 1789 I made my desire Known to my laboress that I should like to live in a Srs House, told her I had my choice to live in a place Congn; accordingly the Elder Contce wrote immediately to Fairfield as they wished me very much to leave the gay Town Bath. The answer soon <note type="catchword">came</note></p>
+            </div>
+            <div n="7" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-07.jpg" n="7"/>
+                <p>came that I had leave to come and live in the Srs House in Fairfield. I then began to repent. I had ever mentioned anything of the Kind, feeling myself very tenderly attached to my Brother who was 6 years younger than myself, having promis'd my parents that I would care for him <choice><orig>untill</orig> <corr>until</corr></choice> he had ended his apprenticeship of which he had 3 years to serve, but such was my faithful shepherds came over me that which on the one hand, affection towards my Brother drew me, yet on the other hand, I felt that I must now proceed in the path my Savior had appointed, Altho I had a great struggle in my mind to give all things up. April 15th 1789 I set out for Fairfield, and on the 18th I arrived safe and well at my destin'd place, here I was received in much love by all the Srs; the first year I spent here was very happy and chearful, untill  until the year 1790, a period of my life begun which I cannot pass over, and which will never be forgot by me; our Savior was pleased to show me what a very poor creature I was by nature, in such a manner that indeed I thought at times I should lose my Senses; darkness and despair</p>
+            </div>
+            <div n="8" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-08.jpg" n="8"/>
+                <p>caused me to carry my reasoning so far, as to think that what I had enjoy'd of the love of Jesus in my heart was merely the effect of fancy surely said I if it was reality; how is it possible that I am now so hedged in on every Side, and cannot see my one beam of hope; one ray of light, to comfort my poor afflicted mind. I often repeated that verse:</p>
+                <lg>
+                    <l>If I love, why am I thus!</l>
+                    <l>Why this dark, dejected frame!</l>
+                    <l>Hardly sure, can they be worse</l>
+                    <l>Who have never heard thy name.</l>
+                </lg>
+                <p>I thus went on for some months, not knowing which way to turn, and to the Lord I had no access; like the children of Israel, I often look'd back; and wish'd I had never Known Fairfield, nor the Brn Congn. In this distress'd situation of heart, I frequently visited my Laboress who always <choice><orig>incouraged</orig> <corr>encouraged</corr></choice> me to turn to our Savior with all my sin &amp; misery and that in his own good time He would help me thro' the many difficulties I had now to struggle with, it appeard to me impossible ever to get help from</p>
+            </div>
+            <div n="9" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-09.jpg" n="9"/>
+                <p>any source, so as to be brought into that happy track I had once been in. But adored be my Saviors name that He has had patience with me his poor wandering sheep: On Whitesunday the same year, having been appointed an intercessor for the first time, when Keeping my hour in a field by the Srs House, it was as if the Lord spoke to me, and said "I will be..troth thee unto me for ever." Those words prov'd very comfortable to my poor unhappy heart, and altho the load, under which I had for a long time labour'd was in some measure remov'd, yet I often thought and reasoned whether those words were the operation of the holy Spirit, or merely my own fancy, as I always think it a nice point to distinguish nature from grace, but my Savior enabled me to lay hold of that, and more of his precious promises, which to weary and heavy laden Sinners - such as I now feel myself - proves strength, and consolation; I could now feel the clouds were dispersing, and that I could take refuge to the Lord when storms were beginning to rise, on Him</p>
+            </div>
+            <div n="10" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-10.jpg" n="10"/>
+                <p>I could cast my ever case, both inwardly and outwardly and leave my future course to his direction, being well assured that as he had brought me thus far thro his grace, he would lead and Keep me to the end. May 14th 1792 our Savior appointed me to go with the Srs and Girls to begin a S. Srs oeconomy in Duckingfield, and to have the care of the external concerns; altho I felt myself very insufficient for such an undertaking, yet, as the word of the day, was particularly encouraging - which was as follows - Say to them that are of a fearful heart, be strong fear not. H[?]. 35, 4. I went relying on my faithful unseen friend for courage and support; he has helped thro! in many trying cases and been in our midst with his precious nearness,the two years which I spent in this little comfortable family affords me pleasure and satisfaction, for indeed our Saviors own words were literally fulfilled Where two or three are together in my name, I will be in their midst; Dec.r 29th 1793 I received a call to be Co-helper of the S. Sisters, and c[???]</p>
+            </div>
+            <div n="11" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-11.jpg" n="11"/>
+                <p>laboress of the great girls at Fulneck in Yorkshire. At first it appear'd to me that I never could accept this call, that to have the care of souls committed in any measure to me who had so much to struggle with, could not possibly answer; if it was external concerns I could more willingly enter into it, but this was by far, too weighty a matter for me to undertake. Thus I reasoned for some time, wishing not to walk my own course, and at the same time feeling myself very inadequate for such an important office, whenever I thought of Sending my answer in the negative, those words came into my mind, My Grace is sufficient for thee, for my strength is made perfect in weakness, thus was I encouraged by my ever faithful friend, to accept of my call to Fulneck and he gave me that comfortable assurance in my heart that he would be with me, and help me thro' in every trying case.</p>
+                <p>March 19th 1794 I arrived in Fulneck, where I was received very cordially by dear fr Anna Rosel and the Sisters. March 22d I was blesst to my</p>
+            </div>
+            <div n="12" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-12.jpg" n="12"/><p>THERE IS NO TRANSCRIPTION OF THIS PAGE IN TD</p>
+            </div>
+            <div n="13" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-13.jpg" n="13"/>
+                <p>his protecting hand over me, and helped me thro in many trials only known to Him.</p>
+                <p>What a sweet consolation it is, I have such a friend to turn unto, who having been touched with the feeling of all my infirmities, Knows well how to beart and sympathise with me, one of the poorest of his creatures by nature, but redeemed thro his precious blood, for the many proofs of my redeemers love and tenderness towards me. I am truly conscious that my love to Him falls far too short of what it ought to be, but the language of my heart is:</p>
+                <lg>
+                    <l>I cannot praise thee as I ought</l>
+                    <l>No worths have I to boast</l>
+                    <l>Yet would I glory in the thought</l>
+                    <l>That I shall owe Him most.</l>
+                </lg>
+                <p>On this my Birthday April 27th 1797 what <choice><orig>schall</orig><corr>shall</corr></choice> I say unto thee my Lord! words fall indeed far too short to express my gratitude, for the many blessings and favors confer'd upon me in the year past. Thou hast been with me, and helped me thro in many eases, in some that were only Known to thee. It's well for me O my Savior that I've thee to sigh unto to whom should I fly but to thee who has been touched</p>
+            </div>
+            <div n="14" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-14.jpg" n="14"/>
+                <p>with the feeling of all my diseases, this is my consolation, that there is a fountain open to cleanse and heal the wounded, even thy own most precious blood, whose power and efficacy I've prov'd in the Years past, in many circumstances. I've had a free access to thee in all my trials, thy bleeding wounds have prov'd my refuge sure. Contained o my Savior! to heal, cheer, &amp; comfort me in the ensuing year, and throughout my pilgrimage here below, until thou shalt call me home to join that train, who have washed their robes white in thy blood, and are continually singing: Worthy is the Lamb that was slain, for ever and ever.. Amen.</p>
+                <p>As the conclusion of this year 1797 I find on looking back what a very great debter I stand before my dear Lord and Savior when recounting the many proofs of his unbounded love towards me in the year past, and how basely I've requited him that if it was the case that a just <choice><orig>ballance</orig> <corr>balance</corr></choice> was required what should I do!</p>
+                <p>Helpless and poor indeed, I approach</p>
+            </div>
+            <div n="15" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-15.jpg" n="15"/>
+                <p>the footstool of thy cross, deeply bowed with a sense of my manifold failing &amp; deviations, beseeching thee o my most merciful Savior to pardon, forgive and wash away in the ocean of thy precious blood all that which in me has been so diametrically contrary to thy mind, how often have I experienced thy readings to speak peace and pardon to my poor heart when feeling a load of sin, wounding me in such a manner, that did I not know the power and efficacy of thy all atoning sacrifice,which has proved my balm for every wound, life would indeed a burthen be to me, But thou art my ever Faithful friend, - My confident most true, on whom I can depend In joy and sorrow too. - Dec. 31 1797.</p>
+                <p>I now dear Lord devote myself anew intreating thy watchful shepherd care over me in this year if thou shalt see fit to spare me to the end of it.</p>
+                <p>Thou Knowest my heart, that however at times I am toss'd too and from, as on a tempesteous Main, yet I have that</p>
+            </div>
+            <div n="16" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-16.jpg" n="16"/>
+                <p>confidence in thee my Lord, that thro thy grace I shall sustain no wreck, but that thou wilt lead me safe thro this vale of tears CHOICE untill  until in thy own good time thou wilt land me to rest in thy presence forever. How gladly shall I be theren to meet, - Thy Chosen at thy thro' pierced feet That worship thee and sing the song of the Redeemed and the Lamb. Jan 11 - 1798.</p>
+                <p>June 2d 1798 a proposal of marriage was made to me with the S. Br John Chambers choir laborer of the S. Brn in Fulneck - having receivd a call to be assistant Congr. Warden &amp; Inspector of the Congn Shop. I earnestly intreated our Savior to make this matter clear to me, that I might not in any measure accept of the proposal from any other motive, but in simply following the direction of Him who best knew what was good for me.</p>
+                <p>June 18th I entered into the mentioned state with the above mentioned Brother I cannot from a sense of love and gra-</p>
+            </div>
+            <div n="17" type="page">
+                    <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-17.jpg" n="17"/>
+                <p>titude to my faithful Savior passover the time that I spent in the Sisters house In Fulneck &amp; not thank him enough for his enabling grace to serve that dear Choir in as far as one of the very weakest of his childdren could do, and what I now feel to part with them I cannot express in words the love and confidence of the major part of the Srs and particularly of the great girls, often excited me to thanks and praise to him whoever has, &amp; I trust ever will be, my support and comfort, thro every period of my future life.</p>
+                <p>It was not my intention to have annexed any thing more relative to my course through time, but thought at the close of my single state my much beloved Husband should add what he pleas'd little thinking at that time He would be called home first, but Alas! it has pleas'd my Savior to take him from me to rest in his presence for ever after a very short, but violent illness of ten days, the loss of so good and tender an Husband and affectionate Father combined thereto the <choice><orig>tru</orig> <corr>true</corr></choice> child of God is</p>
+            </div>
+            <div n="18" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-18.jpg" n="18"/>
+                <p>and will in the sequel of time be surely felt by me and his dear <choice><orig>ofsprings</orig> <corr>offsprings</corr></choice>, but what shall I say to the all wise disposer of events but earnestly intreat Him to fulfill all his gracious promises left in record for the Widows and Fatherless; my prayer by night and day is, that if my Savior should be pleas'd to spare to me my dear children that they may grow up and live for Him, to whom they have been devoted from their Birth, and I trust my gracious Lord will be with me and help me thro my heavy, very heavy distress, which at present I labor under, having the hour of nature trial topass thro, when human help withoutHim awaiteth nothing. I dare notsay "Lord for what hast thou thus afflicted me" for as it's said He never has made mistake; no doubt but it's for some wise end, which as His ways are in the deep, will not do for me to meddle with, I am in various ways, can sometimes think with Job: It's good for me to be afflicted and that it will all work together for my good. It will be seen by the above mentioned date that our married state has been but of a short</p>
+            </div>
+            <div n="19" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-19.jpg" n="19"/>
+                <p>NO TRANSCRIPTION IN TD</p>
+            </div>
+            <div n="20" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-20.jpg" n="20"/>
+                <p>With regard to our late Srs character it is better Known, than we are able to describe it. She was employed as Co-helper to Sr Anna Rosd, and Choir Labores of the great Girls, upwards of 4 years in which office she distinguished herself as an active handmaid of Jesus whose delight and pleasure it was to serve him.</p>
+                <p>June 18th 1798 she was married to our late dear Br Chambers, who had already been appointed manager of the Congn Shop. In this situation she was peculiarly well qualified to be a useful helpmate to her husband. Her diligence, faithfulness and close attention to the Drapers Shop, are well Known; her great assiduity and constant application to business, were more than her Friends wished for; for it was very perceptible her consitution was unequal to the fatigue; of which she was fully convinced, when too late and she often regretted the neglect of her own health. August 28th 1801</p>
+            </div>
+            <div n="21" type="page">
+                    <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-21.jpg" n="21"/>
+                <p>it pleased our Savior to call her dear Husband into his everlasting rest.</p>
+                <p>The circumstances she was left in added greatly to her <choice><orig>distres</orig> <corr>distress</corr></choice> March 2d 1802 she was safely delivered of a healthy boy.The symptoms of a consumption which had appeared during her pregnancy, now increased in the most rapid manner; her speedy dissolution was evident to all around her, that she herself, was very unwilling to believe it: she once broke out into these words: "Our Savior will surely never deal thus with me, to take me from my dear children the eldest not 3 years old": the struggles of her mind on this account were beyond description: about the middle of March our merciful Savior granted her resignation to his divine will. Upon being visited by a friend she expressed herself in the following manner: "I am now not only resigned but longing to go to our Savior: and feel I can give my dear Children up into the hands of Him who has</p>
+            </div>
+            <div n="22" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-22.jpg" n="22"/>
+                <p>promised to be a father to the fatherless.She prayed earnestly that our Savior would hold his protecting hand over them in this world, &amp; in a particular manner for her infant son, that the The text of the day on which he was born, might be truly verified in him - which was - Jesus said of Nathaniel: Behold an Israelite indeed in whom is no guile! After a good deal of conversation she added, I have now nothing more on my mind, but am waiting patiently for our Lords coming &amp; my only plea is.</p>
+                <lg>
+                    <l>There is a Sinner who would fain</l>
+                    <l>Thro the Lambs ramson[?] entrance gain.</l>
+                </lg>
+                <p>She suffered much from a burning hectic fever, and was at times delirious but nothing posed her so much as repeating on singing some Verses about her departure to our Savior.</p>
+                <p>April 6th it was perceptible that her disolution drew near, and in the same day in the afternoon at 2 o clock, her</p>
+                </div>
+            <div n="23" type="page">
+                <pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300010-23.jpg" n="23"/>
+                <p>breath ceased, and her redeemed soul went over into ever lasting bliss, having spenthere below 37 Years within 3 weeks She has left 1 Son and 2 Daughters.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

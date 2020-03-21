@@ -41,6 +41,7 @@
       </editorialDecl>
     </encodingDesc>
     <revisionDesc>
+      <change when="2020-02-26" who="#jschaumberger">Added tags to be used in the Work Ontology</change>
       <change when="2019-11-21" who="#jschaumberger">Added the customization of the work tag</change>
       <change when="2019-08-01" who="#jschaumberger">Added injury as an option for name:@health</change>
       <change when="2019-07-30" who="#jschaumberger #JAKA1">Added some German translations</change>
@@ -155,7 +156,7 @@
                   <valItem ident="marriage" sameAs="hochzeit" />
                   <valItem ident="reception" sameAs="aufnahme" />
                   <valItem ident="sacrament" />
-                  <valItem ident="interrment" />
+                  <valItem ident="interment" />
                   <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
                 </valList>
@@ -202,7 +203,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@occupation / English. -->
+<!--          <!-\- CUSTOMIZATION: added name:@occupation / English. -\->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
               <attDef ident="occupation" mode="change">
@@ -226,7 +227,7 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- CUSTOMIZATION: added name:@Beruf / German. -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -243,7 +244,7 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@office / English. -->
+          <!--<!-\- CUSTOMIZATION: added name:@office / English. -\->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
               <attDef ident="office" mode="change">
@@ -265,7 +266,7 @@
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- CUSTOMIZATION: added name@amt / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
           <elementSpec ident="name" mode="change" module="namesdates">
             <attList>
@@ -466,17 +467,7 @@
             </attList>
           </elementSpec>
           
-          <elementSpec ident="office" mode="add">
-            <classes>
-              <memberOf key="model.persStateLike"></memberOf>
-              <memberOf key="att.datable"/>
-            </classes>
-            
-            <content>
-              <macroRef key="macro.specialPara"/>
-            </content>
-            
-          </elementSpec>
+          
           
           <elementSpec ident="work"
             module="namesdates" mode="add">
@@ -515,70 +506,8 @@
               </attDef>
             </attList>
           </elementSpec>
-          
-          
-         <!-- <elementSpec ident="work" mode="add">
-            <classes>
-              <memberOf key="model.persStateLike"></memberOf>
-              <memberOf key="att.datable"/>
-            </classes>
-            
-            <content>
-              <macroRef key="macro.paraContent"/>
-            </content>
-          </elementSpec>
-          
-          <!-\- Creates the work tag that can be used inside of <p> tags -\->
-          <elementSpec ident="work" mode="add">
-            <classes>
-              <!-\-<memberOf key="model.persNamePart"></memberOf>
-              <memberOf key="att.global"/>
-              <memberOf key="att.typed"/>-\->
-              
-              
-            </classes>
-            <content>
-              <macroRef key="macro.paraContent"/>
-            </content>
-          </elementSpec>-->
-          
-          <!--<classSpec ident="att.naming" module="tei" type="atts" mode="change">
-            <attList>
-              <attDef ident="ceremony" mode="change" sameAs="zeremonie" />
-              <attDef ident="emotion" mode="change" sameAs="gefühl" />
-              <attDef ident="event" mode="change" sameAs="ereignis" />
-              <attDef ident="health" mode="change" sameAs="gesundheitszustand" />
-              <attDef ident="relation" mode="change" sameAs="verwandte" />
-              <attDef ident="occupation" mode="change" />
-              <attDef ident="office" mode="change" sameAs="amt"></attDef>
-              <attDef ident="memoirSubject" mode ="change"></attDef>
-            </attList>
-          </classSpec>-->
-          
-          <!--<!-\- CUSTOMIZATION: added name:@occupation / English. -\->
-          <elementSpec ident="work" mode="add" module="core">
-            <attList>
-              <attDef ident="occupation" mode="change">
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!-\- CUSTOMIZATION: added name:@office / English. -\->
-          <elementSpec ident="work" mode="add" module="core">
-            <attList>
-              <attDef ident="office" mode="change">
-              </attDef>
-            </attList>
-          </elementSpec>-->
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
+
           <!-- From here to the bottom we are currently not translating to German -->
           <!-- CUSTOMIZATION: Adding cause to date -->
           <classSpec ident="att.datable.iso" module="core" type="atts" mode="change">
@@ -626,15 +555,16 @@
           
           <!-- CUSTOMIZATION: added honorific as a suggestion for roleName:@type  -->
           
-          <elementSpec ident="roleName" mode="change" module="core">
+          <!--<elementSpec ident="roleName" mode="change" module="core">
             <attList>
               <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="honorific" sameAs="ehrend"></valItem>
+                  <valItem ident="other"></valItem>
                 </valList>
               </attDef>
             </attList>
-          </elementSpec>
+          </elementSpec>-->
           <!-- We cannot use type for the German as well as the English because it creates an error for duplicate type when the odd file is transformed to an rng -->
           <elementSpec ident="roleName" mode="change" module="core">
             <attList>
@@ -645,6 +575,109 @@
               </attDef>
             </attList>
           </elementSpec>
+          
+          
+          
+          
+          
+          
+          
+          <!-- Builds in <listOccupation> beneath <body> for the work ontology -->
+          <elementSpec ident="listOccupation" mode="add">
+            <classes>
+              <memberOf key="model.listLike"/>
+              <memberOf key="model.orgPart"/>
+              <memberOf key="att.declarable"/>
+              <memberOf key="att.global"/>
+              <memberOf key="att.sortable"/>
+              <memberOf key="att.typed"/>
+            </classes>
+            
+            <content>
+              <sequence>
+                <!-- Includes elements that can and have to be in the occupation tag -->
+                <classRef key="model.headLike" minOccurs="0"/>
+                <elementRef key="occupation" minOccurs="1" maxOccurs="1"/>
+                
+              </sequence>
+              
+            </content>
+
+          <!-- Adds to the occupation tag to allow it to contain <def> and <listRelation>. This is used in the ontology -->
+          </elementSpec>
+          <elementSpec ident="occupation" mode="change">
+              <content>
+                <macroRef key="macro.specialPara"/>
+                <elementRef key="def" minOccurs="0"></elementRef>
+                <elementRef key="listRelation" minOccurs="0"/>
+                <elementRef key="variant" minOccurs="0"/>
+              </content>
+          </elementSpec>
+          
+          <!-- Builds in <listOffice> beneath <body> for the work ontology -->
+          <elementSpec ident="listOffice" mode="add">
+            <classes>
+              <memberOf key="model.headLike"/>
+              <memberOf key="model.listLike"/>
+              <memberOf key="model.orgPart"/>
+              <memberOf key="att.declarable"/>
+              <memberOf key="att.global"/>
+              <memberOf key="att.sortable"/>
+              <memberOf key="att.typed"/>
+            </classes>
+            
+            <!-- Requires <listOffice> to contain 1 <office> tag -->
+            <content>
+              <sequence>
+                <classRef key="model.headLike" minOccurs="0"/>
+                <elementRef key="office" minOccurs="1" maxOccurs="1"/>
+
+              </sequence>
+              
+            </content>
+            
+          </elementSpec>
+          
+          <!-- Builds the office tag to include certain tags. This is used for the ontology -->
+          <elementSpec ident="office" mode="add">
+            <classes>
+              <memberOf key="model.persStateLike"></memberOf>
+              <memberOf key="att.canonical"></memberOf>
+              <memberOf key="att.global.linking"></memberOf>
+              <memberOf key="att.datable"/>
+              <memberOf key="model.entryPart"></memberOf>
+            </classes>
+            
+            <!-- These are the nested tags that office can contain -->
+            <content>
+              <macroRef key="macro.specialPara"/>
+              <elementRef key="def" minOccurs="0"></elementRef>
+              <elementRef key="listRelation" minOccurs="0"/>
+              <elementRef key="variant" minOccurs="0"/>
+              
+            </content>
+            
+          </elementSpec>
+          
+          <!-- Builds the variant tag to include certain tags. This is used for the ontology -->
+          <elementSpec ident="variant" mode="add">
+            <classes>
+              <memberOf key="att.canonical"></memberOf>
+              <memberOf key="att.global.linking"></memberOf>
+              <memberOf key="model.entryPart"></memberOf>
+            </classes>
+            <content>
+              <macroRef key="macro.specialPara"/>
+              <elementRef key="desc" minOccurs="1" maxOccurs="1"/>
+            </content>
+
+            
+          </elementSpec>
+          
+          
+          
+            
+          
           
           
           

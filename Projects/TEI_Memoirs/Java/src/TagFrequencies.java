@@ -40,6 +40,11 @@ public abstract class TagFrequencies {
     protected ArrayList<Integer> frequencies;
 
     /**
+     * Holds the memoir name
+     */
+    protected ArrayList<String> memoirNames;
+
+    /**
      * Stores the pattern we are working with for occupation tags
      */
     protected Pattern pOccupation;
@@ -65,6 +70,7 @@ public abstract class TagFrequencies {
         this.elementName = new ArrayList<>();
         this.attributeValues = new ArrayList<>();
         this.frequencies = new ArrayList<>();
+        this.memoirNames = new ArrayList<>();
 
     }
 
@@ -96,7 +102,7 @@ public abstract class TagFrequencies {
             //String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OFFICE.length() + 1);
             //String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OFFICE.length(), sMatch.indexOf(">") - 1);
 
-            addTag(eName, aName, aValue);
+            addTag(eName, aName, aValue, file);
 
 
         }
@@ -110,8 +116,14 @@ public abstract class TagFrequencies {
      * @param aName  the attribute name of the tag
      * @param aValue the attribute value of the tag
      */
-    private void addTag(String eName, String aName, String aValue) {
-        if (attributeValues.contains(aValue)) {
+    private void addTag(String eName, String aName, String aValue, String file) {
+
+        attributeValues.add(aValue);
+        attributeNames.add(aName);
+        elementName.add(eName);
+        memoirNames.add(file);
+
+        /*if (attributeValues.contains(aValue)) {
             frequencies.set(attributeValues.indexOf(aValue), frequencies.get(attributeValues.indexOf(aValue)) + 1);
 
         } else {
@@ -119,7 +131,7 @@ public abstract class TagFrequencies {
             attributeNames.add(aName);
             elementName.add(eName);
             frequencies.add(1);
-        }
+        }*/
     }
 
     /**
@@ -145,7 +157,7 @@ public abstract class TagFrequencies {
             String aName = sMatch.substring(ELEMENT_NAME.length() + 1, ELEMENT_NAME.length() + OCCUPATION.length() + 1);
             String aValue = sMatch.substring(3 + ELEMENT_NAME.length() + OCCUPATION.length(), sMatch.indexOf(">") - 1);*/
 
-            addTag(eName, aName, aValue);
+            addTag(eName, aName, aValue, file);
 
 
         }
@@ -174,7 +186,8 @@ public abstract class TagFrequencies {
             csvData.append(',');
             csvData.append(attributeValues.get(i));
             csvData.append(',');
-            csvData.append(frequencies.get(i));
+            //csvData.append(frequencies.get(i));
+            csvData.append(memoirNames.get(i));
             csvData.append('\n');
         }
 
@@ -185,9 +198,9 @@ public abstract class TagFrequencies {
         csvData.append(',');
         csvData.append(',');
         csvData.append(',');
-        csvData.append("Total");
-        csvData.append(',');
-        csvData.append(getSum(frequencies));
+        //csvData.append("Total");
+        //csvData.append(',');
+        //csvData.append(getSum(frequencies));
         writer.write(csvData.toString());
         writer.close();
     }
@@ -224,7 +237,8 @@ public abstract class TagFrequencies {
             csvData.append(',');
             csvData.append(attributeValues.get(i));
             csvData.append(',');
-            csvData.append(frequencies.get(i));
+            //csvData.append(frequencies.get(i));
+            csvData.append(memoirNames.get(i));
             csvData.append('\n');
         }
         csvData.append('\n');
@@ -234,9 +248,9 @@ public abstract class TagFrequencies {
         csvData.append(',');
         csvData.append(',');
         csvData.append(',');
-        csvData.append("Total");
-        csvData.append(',');
-        csvData.append(getSum(frequencies));
+        //csvData.append("Total");
+        //csvData.append(',');
+        //csvData.append(getSum(frequencies));
 
         writer.write(csvData.toString());
         writer.close();

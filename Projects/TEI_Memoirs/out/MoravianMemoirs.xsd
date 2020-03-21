@@ -8,7 +8,7 @@
    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
               schemaLocation="xml.tmp"/>
    <!--
-    Schema generated from ODD source 2019-10-07T19:44:01Z. .
+    Schema generated from ODD source 2020-02-20T19:30:33Z. .
     TEI Edition: Version 3.6.0. Last updated on
     	16th July 2019, revision daa3cc0b9
     TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -1345,7 +1345,7 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
       <xs:attributeGroup ref="tei:att.naming.attribute.relation"/>
       <xs:attributeGroup ref="tei:att.naming.attribute.occupation"/>
       <xs:attributeGroup ref="tei:att.naming.attribute.office"/>
-      <xs:attributeGroup ref="tei:att.naming.attribute.test"/>
+      <xs:attributeGroup ref="tei:att.naming.attribute.memoirSubject"/>
       <xs:attributeGroup ref="tei:att.naming.attribute.amt"/>
       <xs:attributeGroup ref="tei:att.naming.attribute.gesundheitszustand"/>
       <xs:attributeGroup ref="tei:att.naming.attribute.ereignis"/>
@@ -1407,8 +1407,8 @@ Suggested values include: 1] m (metre); 2] kg (kilogram); 3] s (second); 4] Hz (
          </xs:annotation>
       </xs:attribute>
    </xs:attributeGroup>
-   <xs:attributeGroup name="att.naming.attribute.test">
-      <xs:attribute name="test">
+   <xs:attributeGroup name="att.naming.attribute.memoirSubject">
+      <xs:attribute name="memoirSubject">
          <xs:annotation>
             <xs:documentation/>
          </xs:annotation>
@@ -2778,6 +2778,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element ref="tei:listRelation"/>
          <xs:element ref="tei:listObject"/>
          <xs:element ref="tei:listNym"/>
+         <xs:element ref="tei:listOccupations"/>
       </xs:choice>
    </xs:group>
    <xs:group name="model.listLike_alternation">
@@ -2791,6 +2792,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element ref="tei:listRelation"/>
          <xs:element ref="tei:listObject"/>
          <xs:element ref="tei:listNym"/>
+         <xs:element ref="tei:listOccupations"/>
       </xs:choice>
    </xs:group>
    <xs:group name="model.listLike_sequence">
@@ -2804,6 +2806,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element ref="tei:listRelation"/>
          <xs:element ref="tei:listObject"/>
          <xs:element ref="tei:listNym"/>
+         <xs:element ref="tei:listOccupations"/>
       </xs:sequence>
    </xs:group>
    <xs:group name="model.listLike_sequenceOptional">
@@ -2817,6 +2820,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element minOccurs="0" ref="tei:listRelation"/>
          <xs:element minOccurs="0" ref="tei:listObject"/>
          <xs:element minOccurs="0" ref="tei:listNym"/>
+         <xs:element minOccurs="0" ref="tei:listOccupations"/>
       </xs:sequence>
    </xs:group>
    <xs:group name="model.listLike_sequenceOptionalRepeatable">
@@ -2830,6 +2834,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:listRelation"/>
          <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:listObject"/>
          <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:listNym"/>
+         <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:listOccupations"/>
       </xs:sequence>
    </xs:group>
    <xs:group name="model.listLike_sequenceRepeatable">
@@ -2843,6 +2848,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <xs:element maxOccurs="unbounded" ref="tei:listRelation"/>
          <xs:element maxOccurs="unbounded" ref="tei:listObject"/>
          <xs:element maxOccurs="unbounded" ref="tei:listNym"/>
+         <xs:element maxOccurs="unbounded" ref="tei:listOccupations"/>
       </xs:sequence>
    </xs:group>
    <xs:group name="model.noteLike">
@@ -4520,7 +4526,7 @@ Suggested values include: 1] choir festival; 2] foot washing; 3] lovefeast; 4] M
                <xs:attribute name="event">
                   <xs:annotation>
                      <xs:documentation>
-Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw lot; 6] marriage; 7] reception; 8] sacrament; 9] interrment; 10] communion; 11] religious</xs:documentation>
+Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw lot; 6] marriage; 7] reception; 8] sacrament; 9] interment; 10] communion; 11] religious</xs:documentation>
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:union memberTypes="xs:Name">
@@ -4598,7 +4604,7 @@ Suggested values include: 1] baptism; 2] birth; 3] conversion; 4] death; 5] draw
                         </xs:simpleType>
                         <xs:simpleType>
                            <xs:restriction base="xs:token">
-                              <xs:enumeration value="interrment">
+                              <xs:enumeration value="interment">
                                  <xs:annotation>
                                     <xs:documentation/>
                                  </xs:annotation>
@@ -4986,15 +4992,15 @@ Suggested values include: 1] acolyte; 2] bishop; 3] choir helper; 4] choir labou
                      </xs:union>
                   </xs:simpleType>
                </xs:attribute>
-               <xs:attribute name="test">
+               <xs:attribute name="memoirSubject">
                   <xs:annotation>
                      <xs:documentation/>
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:token">
-                        <xs:enumeration value="notMemoirSubject">
+                        <xs:enumeration value="no">
                            <xs:annotation>
-                              <xs:documentation/>
+                              <xs:documentation>Use this only to indicate a person other than the memoir's subjcect</xs:documentation>
                            </xs:annotation>
                         </xs:enumeration>
                      </xs:restriction>
@@ -11913,7 +11919,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</xs:documenta
                <xs:attributeGroup ref="tei:att.naming.attribute.relation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.occupation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.office"/>
-               <xs:attributeGroup ref="tei:att.naming.attribute.test"/>
+               <xs:attributeGroup ref="tei:att.naming.attribute.memoirSubject"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.amt"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.gesundheitszustand"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.ereignis"/>
@@ -12353,7 +12359,7 @@ Suggested values include: 1] Anglican; 2] Quaker; 3] Presbyterian; 4] Lutheran; 
                <xs:attributeGroup ref="tei:att.naming.attribute.relation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.occupation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.office"/>
-               <xs:attributeGroup ref="tei:att.naming.attribute.test"/>
+               <xs:attributeGroup ref="tei:att.naming.attribute.memoirSubject"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.amt"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.gesundheitszustand"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.ereignis"/>
@@ -12461,7 +12467,7 @@ Suggested values include: 1] brother; 2] married couple; 3] sister</xs:documenta
                <xs:attributeGroup ref="tei:att.naming.attribute.relation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.occupation"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.office"/>
-               <xs:attributeGroup ref="tei:att.naming.attribute.test"/>
+               <xs:attributeGroup ref="tei:att.naming.attribute.memoirSubject"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.amt"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.gesundheitszustand"/>
                <xs:attributeGroup ref="tei:att.naming.attribute.ereignis"/>
@@ -14344,6 +14350,14 @@ Sample values include: 1] no; 2] yes; 3] weak; 4] strong</xs:documentation>
                <xs:attributeGroup ref="tei:att.datable.attributes"/>
             </xs:extension>
          </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="listOccupations">
+      <xs:annotation>
+         <xs:documentation/>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:attributeGroup ref="tei:att.global.linking.attributes"/>
       </xs:complexType>
    </xs:element>
 </xs:schema>

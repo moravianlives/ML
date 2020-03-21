@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Elizabeth Bethell: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<p/>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?date_annotation_20200321100755284",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-21T14:07:55.284Z",
+	"dcterms:issued": "2020-03-21T14:09:09.903Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?date_annotation_20200321100755284#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?date_annotation_20200321100755284#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p[3]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1754-05-21"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?place_annotation_20200321100834322",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-21T14:08:34.322Z",
+	"dcterms:issued": "2020-03-21T14:09:09.905Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?place_annotation_20200321100834322#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/bethell_elizabeth.xml?place_annotation_20200321100834322#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p[3]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Monmouth",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Elizabeth Bethell</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			
+				<head>Elizabeth Bethell</head>
+				<div n="1" type="page">
+					<pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300006-01.jpg" n="1"/>
+					<p>1783. </p><p>Leominster Archives Course of Life of our late Maid Sister Eliz: Bethell from her own hand Writing.</p><p>I was born <date when="1754-05-21" cert="high">May the 21<hi rend="superscript">st</hi> 1754</date> in the Town of <placeName ref="http://dbpedia.org/resource/Monmouth" key="Monmouth" cert="high">Monmouth</placeName> where my Father was placed as Officer in the Excise, &amp; in my third Year my Father was removed to Leominster in Herefordshire; When I was about Six Years old, my Aunt took me to her into Shropshire; She had no Child of her own, &amp; was tender to me; My Unkle was of a rough disposition and subject to swear very much, which made me think God would not love him; for <del>if</del> I thought if I did once Swear I sh<hi rend="superscript">d</hi> go to the bad Place, &amp; I often would go to the retir'd part of the Garden to pray to God to keep me from the place where bad Children were sent to. I was very fond of reading Books that mentiond anything about God; at last my Aunt began to be uneasy about me, &amp; thought I was not playfull enough like other Children: In my 12<hi rend="superscript">th</hi> Year my Mother came for me, &amp; took me home that I might have better Education; This was a hurt to me, &amp; I soon got a Love for pleasure, &amp; vain amusements &amp;quite forgot my religious Course; My Mother was exceding fond of me &amp; often would remind me what a reward was promised to those that love God; but the ever faithfull friend of Sinners knew how to make my pleasant days bitter, by taking from me my tender, &amp; Affectionate Mother in a few Months after I came home; this was a great trial to me, &amp; the holy <del>Ghost</del> <add place="above">Spirit</add> showed me how I had Sinned against God in getting out of the simple track I was in, in my youngerYears; I often called to mind how my dear Mother on her death Bed cryed out Dear Sav<hi rend="superscript">r</hi> come &amp; take me; &amp; in a short time he took her to himself without Sigh or groan: I found I had now lost a good Friend, &amp; had it more difficult in many respects; This was a means of stirring up my thoughts to a religious Course, &amp; I was glad to get into any Corner I could to pray to God; &amp; I often wish'd to return again to my Aunt, &amp; carried a Book in my Pocket to be ready to go at any time; In a short time I became so distress'd about my Salvation that I would freely have given my body to have saved my Soul from the Misery w<hi rend="superscript">ch</hi> I expected the Lord would lay upon me: I was now about 14 Years old; and my distress encreasing I once went into the Fields, &amp; wander'd about where there was no Path for </p>
+				</div>
+			<div n="2" type="page">
+				<pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300006-02.jpg" n="2"/>
+				<p>any one to see me &amp; stay'd until it was dark: At another time the Enemy put such thoughts into my Head, as I saw no likelyhood of my finding happiness on Earth, I would therefore take the first Opportunity of putting an end to my Life; and I went one day by the Water Side to compleat my Wicked Intention; but the ever faithful Friend of Sinners still watched over me, &amp; prevented my wicked design: I returned home with Shame, &amp; true Repentance, begging of the Lord to put all such thoughts far from me, &amp; to look in Mercy on my afflicted Soul; A few Nights after I dreamed that I was in my Fathers Garden, &amp; was sighing &amp; bemoaning my distress of heart, &amp; I thought I heard a great Noise, &amp; looking up towards the Sky I thought I saw numbers of Angels coming towards me w<hi rend="superscript">ch</hi> lighted down by me, so that the Walk where I was was full; they were as I thought all dressed in white, &amp; I was the same, they had each of them two Wings w<hi rend="superscript">ch</hi> I thought grew out of each Shoulder, but I thought I had none; After a short time spent in singing, &amp; a Sweet harmony of Musick, I thought all those happy Spirits went to a fine Pool of Water wch was in a Meadow, &amp; I went with them, &amp; I thought we all washed our Feet; And after that they all flew up, &amp; I was left alone: I then got more easy in my Mind, &amp; thought I might take it for granted that God would forgive me my Sins or I should not have had such a pleasant dream: I soon forgot to whom I was to look for preservation, &amp; got into a very Self working Strain for some time. In my 22<hi rend="superscript">d</hi> Year was marr<hi rend="superscript">d</hi> to my present Husband, in this new State I was more Introduc'd to Company &amp; Pleasure, but still kept Self-righteousness very close to me; but at length I grew that I could mix -Religion &amp; the pleasures of the World together. I had a very tender and Affectionate Husband, &amp; I went on in my unhappy State very easy for about 4 Years. (after I was marry'd  married) about w<hi rend="superscript">ch</hi> time I went to hear the B<hi rend="superscript">rn</hi> now &amp; then, &amp; I soon began to Wish to be in some connexion with them, wch was granted me, my dear Sav<hi rend="superscript">r</hi> soon shewed me how filthy all my self righteousness appeared, &amp; that nothing but being washed in the blood of the Lamb would make me happy: The enemy of Man now began to Roar, &amp; great uneasiness <note type="catchword">arose</note></p>
+			</div>
+			<div n="3" type="page">
+				<pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300006-03.jpg" n="3"/>
+				<p>arose on account of my leaving the Church; this was a time of great trial unto me: I saw I could not please God &amp; Mammon, &amp; our dear Sav<hi rend="superscript">r</hi> gave me the Grace to make choice of him, &amp; leave all other troubles to his direction. On Christmas Day 1781. I had the Grace to be rec<hi rend="superscript">d</hi> into the Cong<hi rend="superscript">n</hi>; &amp; on the 13<hi rend="superscript">th</hi> of Aug: 1782. our dear Lord permitted me to be Spectator at the holy Com<hi rend="superscript">n</hi> with the Cong<hi rend="superscript">n</hi> in London the first time, w<hi rend="superscript">ch</hi> blessed time I shall never forget; Our dear Sav<hi rend="superscript">rs</hi> Presence was so near me, that he appeared to me as hanging in his crucified form before my Eyes; I never can thank &amp; adore him enough for his unbounded Love to me the chief of Sinners, who makes such small returns, &amp; proves so ungratefull for such boundless Love w<hi rend="superscript">ch</hi> he bestows on me his poorest Creature: Soon after my return home from London I was taken ill, &amp; the Lamb that was Crucified - without the Gates of Jerusalem, that Friend of Sinners never withdrew his sweet nearness from me during my Confinement; at w<hi rend="superscript">ch</hi> time I rec<hi rend="superscript">d</hi> his Body &amp; Blood in the holy Com<hi rend="superscript">n</hi> for the first time on my Sick Bed to my Souls comfort: This memorial day was the 14<hi rend="superscript">th</hi> of October 1782. Since w<hi rend="superscript">ch</hi> time I have had repeated Seals of his Love; O grant I may always remain as a poor Sinner at his Feet</p>
+				<p>Thus far her own Account.</p>
+				<p>In our late Sisters heavy Sickness which begun last October our Lord supported her in a very gracious manner, &amp; many of her Friends &amp; Acquaintance who had been much against her were now qu ite overcome, &amp; agreeably Struck with her sereene &amp; happy disposition of heart &amp; that Peace of God which was felt ruling in her heart; and the simple real &amp; unaffected Confession of what our dear Sav<hi rend="superscript">r</hi> is to a poor Creature who believes in him made a good Impression on many, and w<hi rend="superscript">ch</hi> we hope - will not be forgotten: When at times she was better she attended the Meetings dilligently, &amp; indeed often recover'd to our Surprize; was particularly thankfull for being able to attend the Meetings when B<hi rend="superscript">r</hi> La Trobe was here and to hear the Synod read, &amp; took it as a favour &amp; Gift from our Sav<hi rend="superscript">r</hi>; Was much concern'd for her two Children (the younger being deaf &amp; dumb) that</p>
+				</div>
+			<div n="4" type="page">
+				<pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300006-04.jpg" n="4"/>
+				<p>they might be preserv'd for our Sav<hi rend="superscript">r</hi>; &amp; her whole desire was that they might be under the Care of the Brethen, &amp; spoke fully thereon with her Husband &amp; Father.  In the last Period of her Sickness which last<hi rend="superscript">d</hi> about 3 Weeks, &amp; was very afflicting She had still to learn in the School of the H Ghost what a poor Creature she was, &amp; to be Stript of every thing but Jesus &amp; his Mood; About 14 Days before her departure when the extremity of Pain had brot her - almost to distraction, &amp; wherein the comfort from our Sav<hi rend="superscript">r</hi> was not so clear to her heart; She was <add place="above">afterwards</add> enabled to rejoice the more in the feeling of his gracious Presence &amp; Peace, and desired the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> to thank our Sav<hi rend="superscript">r</hi> for what he had done for Her, w<hi rend="superscript">ch</hi> was done with a gratefull Impression: The same Evening being again able to speak she sent for B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Mortimer &amp; spoke very heartily with them, told them She had spoke fully with her Husband &amp; Father regarding the Children &amp;c. Was Sinner like &amp; loving &amp; our hearts tenderly united to thank our Lord for all Mercy bestow'd on her, &amp; that he would still graciously Accomplish all his Thoughts of Peace in her &amp; with her. On the 29<hi rend="superscript">th</hi> which was her last she express'd her self very lovingly to all about her, and then said: O thou Lamb of God which takest away the Sin of the World thou hast also took away mine, &amp; wilt receive me bad as I am: Said to those about her He has taken away my hearing, but has given me my Speech to tell You he will receive me. She then said: Thou hast made my Bed soft, while thou diedst on the Ignominious Free; Thy Head was crown'd with Thorns Thy Back plow'd with deep Furrows &amp;c. We could perceive almost to her last, or as long as she was able to aim at speaking it was about the Sufferings &amp; death of our gracious Saviour: Her last moments were accompanied with our heart Prayers, beseeching our dear Lord to bless and to receive this his redeemed Soul; who now enter'd into his everlasting Rest in the 30th Year of this dying Life. </p></div>
+		</body>
+	</text>
+</TEI>

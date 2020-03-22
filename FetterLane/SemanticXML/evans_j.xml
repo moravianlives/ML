@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Memoir</title>
+                <funder>The Moravian Lives Project</funder>
+                <principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+                    <address>
+                        <addrLine>Lewisburg, Pennsylvania</addrLine>
+                    </address>
+                    <email>faull@bucknell.edu</email>
+                </principal>
+                <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+                    <address>
+                        <addrLine>Gothenburg, Sweden</addrLine>
+                    </address>
+                    <email>christer.ahlberger@history.gu.se</email>
+                </principal>
+                <respStmt>
+                    <persName xml:id="JAKA1">Diane Jakacki</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Project Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcguire">Michael McGuire</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Developer</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mcohen">Marleina Cohen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-2019</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jhom">Jess Hom</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mmcmullen">Morgan McMullen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="mgruner">Marita Gruner</persName>
+                    <orgName>University of Greifswald</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="skanneman">Sarah Kannemann</persName>
+                    <orgName>University of Mainz</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="jschaumberger">Justin Schaumberger</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="cpirmann">Carrie Pirmann</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Transkribus, Text Encoding Specialist</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bking">Brian King</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Consultant, Machine Learning</resp>
+                </respStmt>
+                <respStmt>
+                    <persName xml:id="bacharya">Bhagawat Acharya</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <orgName>The Moravian Archives</orgName>
+                    <address>
+                        <addrLine>41 West Locust Street</addrLine>
+                        <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                        <addrLine>info@moravianchurcharchives.org</addrLine>
+                    </address>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>The Moravian Lives Project</distributor>
+                <availability>
+                    <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105727007",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-22T14:57:27.007Z",
+	"dcterms:issued": "2020-03-22T16:27:18.799Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105727007#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105727007#Selector",
+			"@type": "oa:XPathSelector"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1714-05-03"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105836033",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-22T14:58:36.033Z",
+	"dcterms:issued": "2020-03-22T16:27:18.802Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105836033#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322105836033#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1714-05-03"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322121227348",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-03-22T16:12:27.348Z",
+	"dcterms:issued": "2020-03-22T16:27:18.802Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322121227348#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/FetterLane/SemanticXML/evans_j.xml?date_annotation_20200322121227348#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div[2]/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1764-01"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData></teiHeader>
+    
+    <text>
+        <body>
+            <head>J. Evans</head>
+            <div n="1" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300016-01.jpg" n="1"/><p>The Life of the Widower B<hi rend="superscript">r</hi> J<hi rend="superscript">r.</hi> Evans as Dictated by himself.  I was born at Presteign Radnorshire <date when="1714-05-03" cert="high">May 3<hi rend="superscript">d</hi> 1714</date>. being in low Circumstances I went as a Boy into Service to do Husbandry work, but had early impressions, ab<hi rend="superscript">t</hi> my present &amp; future State, not without Temptations to make away w<hi rend="superscript">th</hi> my Self having at times great A<add place="above">n</add>xiety ab<hi rend="superscript">t</hi> my unsafe State. But our Sav<hi rend="superscript">r</hi> has graciously kept his hand over me &amp; preserv'd me <add place="above">in</add> many dangers of Body &amp; Soul. While in Service w<hi rend="superscript">th</hi> Esq<hi rend="superscript">r</hi> Legge I was sent up a Ladder to the pidgeon holes &amp; got a fall, by which my Thigh joint was put out &amp; has remain'd so ever since. I then learnd the Clothing <choice><orig>Busyness</orig> <corr>Business</corr>,</choice> here my Concern for my Salvation <choice><orig>encreasd</orig>  <corr>increased</corr></choice> &amp; I thought I had committed the Sin against the H. Ghost, but was much comforted by hearing some Religious Books Read on the Subject. </p><p>One Parker from Lond<hi rend="superscript">n</hi> &amp; soon after the late B<hi rend="superscript">r</hi> Beaumon came &amp; preach'd in those parts, &amp; when a <choice><orig>Soicety</orig> <corr>Society</corr></choice> was settled at thelgore, I was also a Member thereof, I hereby got some knowledge of the Br<hi rend="superscript">n.</hi> I went on in a very legal course, but co<hi rend="superscript">d</hi> find no Rest for my Soul, till once in my distress <del>I</del> <add place="above">our Sav<hi rend="superscript">r</hi></add> manifested <add place="above">himself</add> to my Soul, w<hi rend="superscript">ch</hi> removed all my Fears, &amp; I enjoy'd a happy Intercourse w<hi rend="superscript">th</hi> him for 3 Years. After M<hi rend="superscript">r</hi>. Beaumons Decease there was different Doctrines Taught by the Methodists but <persName cert="high" type="real">B<hi rend="superscript">r</hi> Cennick</persName> having preach'd there many were dispos'd to adhere to the B<hi rend="superscript">rn</hi> when I w<hi rend="superscript">th</hi> sev<hi rend="superscript">l</hi> more Join'd B<hi rend="superscript">r</hi> Roberts &amp; sent a Written Invitation to the B<hi rend="superscript">rn</hi>, w<hi rend="superscript">ch</hi> was accepted of. </p><p>At a time when there was a difference in opinion whether we sho<hi rend="superscript">d</hi> pay our Devotion to our Sav<hi rend="superscript">r</hi> in his Glorified State or in that of his Suffring's upon w<hi rend="superscript">ch</hi> I pray'd our Sav<hi rend="superscript">r</hi> to make it clear to <del>him</del> <add place="above">me</add>, upon w<hi rend="superscript">ch</hi>  <note type="catchword">I</note></p></div><div n="2" type="page"><pb facs="http://moravianlives.bucknell.edu/MCH/MemLon_300016-02.jpg" n="2"/><p>I had such a Manifestation of our Sav<hi rend="superscript">r</hi> in his suffering from in Spirit as if he had seen him w<hi rend="superscript">th</hi> his bodily Eyes, w<hi rend="superscript">ch</hi> melted <del>him</del> <add place="above">me</add> into Tears of Love &amp; tenderness. He remov'd to Leominster in order to enjoy the more special Fellowships of the Cong<hi rend="superscript">n</hi> I was Rec'd in the Cong<hi rend="superscript">n</hi> in August 64, but not admitted to the Com<hi rend="superscript">n</hi> till July 63. during w<hi rend="superscript">ch</hi> time of waiting he had [muornering]?in his Mind; &amp; being engaged <add place="above">in foulness</add> w<hi rend="superscript">th</hi> merely Natural people <del>in Mr. Nelnos? Busyness</del>, he went aside &amp; cast himself at our Sav<hi rend="superscript">rs</hi> feet &amp; implor'd him to shew him what was his hindrance, who manifested it to him that it was <add place="above">his</add> own fault, his heart was grown Dry &amp; indifferent towards him, w<hi rend="superscript">ch</hi> he acknowledg'd w<hi rend="superscript">th</hi> abasem<hi rend="superscript">nt</hi> &amp; soon after was admitted to partake of that Grace. </p><p>In <date when="1764-01" cert="high">Jan<hi rend="superscript">y</hi> 64</date>. he was Marr<hi rend="superscript">d</hi> to his late Wife w<hi rend="superscript">th</hi> whom he liv'd in a Comfortable &amp; happy manner. She has always [???] &amp; enjoy'd the fellowship &amp; blessings in the Cong<hi rend="superscript">n</hi> <del>while</del> without interruption. </p><p>He became a Widower in July 81. this alteration affected him much finding himself so lonely &amp; often thought he sho<hi rend="superscript">d</hi> <add place="above">not</add> be long after her, &amp; last <add place="above">winter</add> he began to fail pretty much, &amp; ab<hi rend="superscript">t</hi> Candlemas grew incapable of doing his work, altho' he had struggled w<hi rend="superscript">th</hi> it longer than co<hi rend="superscript">d</hi> have been expected. </p><p><del>During</del> his Sickness <add place="above">was</add> <del>in</del> a Dropsical Disorder, it has been evident that he <add place="margin">has</add> Legitimated himself as a faithful Serv<hi rend="superscript">t</hi> where he has work'd both at Paesteign &amp; Leominster he having rec'd much kindness &amp; assistance from them. he was of a plain blunt, but very honest disposition. but our Sav<hi rend="superscript">r</hi> was his object &amp; his heart cleav'd to him, &amp; most pleas'd w<hi rend="superscript">th</hi> what honour'd him. </p><p>In his heavy Sickness he earnestly desires to be disolv'd &amp; to be at home w<hi rend="superscript">th</hi> his Lord. He was diligently visited, &amp; many Verses sung by him <del>for</del> for which he was <choice><orig>thankfull</orig> <corr>thankful</corr></choice>; on the 5t<hi rend="superscript">h</hi> in the afternoon as his dissolution drew near, some B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> came to him, &amp; in a feeling Prayer recommended him to our Sav<hi rend="superscript">r</hi> for the Accomplishment of all his thoughts of Peace in him &amp; with him &amp; in the Peace of Jesus Christ the blessing of the Cong<hi rend="superscript">rn</hi> was imparted <add place="above">to him</add> &amp; in the Evening he departed happily to his Everlasting Rest.</p></div>
+        </body>
+    </text>
+</TEI>

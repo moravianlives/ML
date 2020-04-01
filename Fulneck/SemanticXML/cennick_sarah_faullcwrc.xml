@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Sarah Cennick: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University, 2018-Present</orgName>
+					<resp>Research Assistant and encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_68Cennick">Sarah Cennick</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-01.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-02.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-03.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-04.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-05.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-06.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-07.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-08.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-09.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-10.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-11.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-12.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-13.jpg"></msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-14.jpg"></msName>
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?date_annotation_20191209155044",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T20:50:44.844Z",
+	"dcterms:issued": "2019-12-16T19:52:27.998Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?date_annotation_20191209155044#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?date_annotation_20191209155044#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/hi/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"dc:format": "text/plain",
+		"rdf:value": "1770-01-24"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155529",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T20:55:29.046Z",
+	"dcterms:issued": "2019-12-16T19:52:28.004Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155529#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155529#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:FormalOrganization",
+		"@id": "http://www.wikidata.org/entity/Q82708",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191209155616",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T20:56:16.144Z",
+	"dcterms:issued": "2019-12-16T19:52:28.005Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191209155616#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191209155616#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:PersonalName",
+		"@id": "http://www.wikidata.org/entity/Q5605963",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155811",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T20:58:11.280Z",
+	"dcterms:issued": "2019-12-16T19:52:28.005Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155811#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209155811#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:FormalOrganization",
+		"@id": "http://www.wikidata.org/entity/Q170208",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209160127",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T21:01:27.523Z",
+	"dcterms:issued": "2019-12-16T19:52:28.006Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209160127#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?org_annotation_20191209160127#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:FormalOrganization",
+		"@id": "http://www.wikidata.org/entity/Q82708",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164627",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T21:46:27.225Z",
+	"dcterms:issued": "2019-12-16T19:52:28.006Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164627#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164627#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://dbpedia.org/resource/London",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164708",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T21:47:08.404Z",
+	"dcterms:issued": "2019-12-16T19:52:28.006Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164708#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164708#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://dbpedia.org/resource/London",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164754",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-09T21:47:54.517Z",
+	"dcterms:issued": "2019-12-16T19:52:28.006Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164754#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191209164754#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/rs[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://www.wikidata.org/entity/Q831377",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191210184807",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-10T23:48:07.085Z",
+	"dcterms:issued": "2019-12-16T19:52:28.006Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191210184807#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191210184807#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://geonames.org/2654675",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191213132431",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-13T18:24:31.602Z",
+	"dcterms:issued": "2019-12-16T19:52:28.007Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191213132431#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?person_annotation_20191213132431#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/hi/rs/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:PersonalName",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000227",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191213132814",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2019-12-13T18:28:14.790Z",
+	"dcterms:issued": "2019-12-16T19:52:28.007Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/katiefaull",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191213132814#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/cennick_sarah_faullcwrc.xml?place_annotation_20191213132814#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[2]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Place",
+		"@id": "http://dbpedia.org/resource/Kingswood,_South_Gloucestershire",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Sarah Cennick</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when-iso="2019-08-30" who="#cpirmann">Corrected for structure</change>
+			<change>Created TEI file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Sarah Cennick</head>
+				<div type="page" n="1">
+					<head type="page">1</head>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-01.jpg"></pb>
+					<p>
+						
+							<hi rend="underline">The Life of the S. S<hi rend="superscript">r</hi> <rs cert="high"><rs ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000227" key="Sarah Cennick" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#PersonalName">Sarah Cennick</rs></rs> who went happily home <date when="1770-01-24" cert="high">Jan<hi rend="superscript">y</hi> 24<hi rend="superscript">th</hi> 1770</date></hi>
+							I was born June the 12<hi rend="superscript">th</hi> old Style 1712 in <placeName>Reading Berks</placeName>. 
+							wass baptiz'd in the <rs ref="http://www.wikidata.org/entity/Q82708" key="Church of England" cert="high" type="http://www.w3.org/ns/org#FormalOrganization">Church of England</rs> and brought up in that Comunion.
+							The first thing I remember is the simple and happy intercourse I 
+							lived in with the Lord: I knew he lov'd me; and I lov 'd him; &amp; therefore
+							used to have recourse to Him without the least reserve.
+						</p>
+					<p>
+							When I was about 5 Years old, I remember to have been particularly
+							naughty &amp; self willd, which caused me much heaviness, tho' I strove all
+							I could to divert and get rid of the Conviction by play &amp;c. But
+							running hastily into my Mothers room, where she was sitting with
+							my late d<hi rend="superscript">r</hi> Bro<hi rend="superscript">r</hi> <rs ref="http://www.wikidata.org/entity/Q5605963" key="John Cennick" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#PersonalName">John</rs> - then an Infant - lying in her lap.
+							I saw her weeping with lifted up hands, and heard her pray. I was
+							much affected: But felt so hard, to acknowledge my fault, but
+							upon repeatedly asking my Mother, why she cried and what she
+							was saying? She referr'd the Cause to me and Said: "I was praying
+							for <hi rend="underline">you</hi> and for your Brother." This pierc'd me through, and I
+							thought my heart would break. For I thought, The Lord also is
+							greived! I therefore silently withdrew condemn'd and asham'd
+							and hasted to a private Place, where with many Tears, I beged
+							Him to forgive me; which he most graciously did directly, and
+							all my Burthen instantly removed.
+						</p>
+					<p>
+							My Father and his Relations being all <rs ref="http://www.wikidata.org/entity/Q170208" key="Religious Society of Friends" cert="high" type="http://www.w3.org/ns/org#FormalOrganization">Quakers</rs> of the
+							most primitive sort, and my Mother and hers all strict <rs ref="http://www.wikidata.org/entity/Q82708" key="Church of England" cert="high" type="http://www.w3.org/ns/org#FormalOrganization">Church
+							of England</rs>; Her attachment to, and chief acquaintance were the
+							Clergy; So that I had the Oppertunity of an intimate familiarity
+							with <add place="above">each</add>, not perceiving, at this time, the least disunion on either Side.
+						</p>
+					<p>
+							Our Parish Vicar and his Family was a part of our
+							most intimate acquaintance, and his Daughter, who had taken
+							a liking to me from my Infancy, calling me her own Child,
+							at last prevailed with my Parents, to take me more particularly
+							home to her; But our houses Joining each other, I was nearly
+							as much with my Parents as I was with them. This lady,
+							taking me, to a friends house with her, I slip'd out from
+							the Company, and saw two small Boats fastened to the
+							Landing Place in a deep Moat, I got into one of them
+							and reached out of it to the Side of the other Boat:
+							when both parting, and swiming from each other
+							had dragged me out of that I stood in, had not the toes
+							of my shoes hitch'd in something, and prevented it:
+							Thus hanging over the Water between both, I had
+							scarce time to give my self up for lost, Before I Slip'd
+							my hold and pitched into the Water, where to my Joyfull
+							surprise, instead of Sinking I found, as it were, Hands
+						
+					</p>
+				</div>
+				<div type="page" n="2">
+					<head type="page">2</head>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-02.jpg"></pb>
+					<p>
+						
+							bearing so strong against my hands as to get and keep my head above
+							water. Yea those kind Assistants bore me up so long, even till I was
+							capable of taking hold with one Hand of that Boat, wherein, all 
+							while my shoes had hitch'd, but how I recover'd wholly, I never
+							could remember, only that, as I came to my self, I was flat on
+							my Back, safe and well. I know, who those ministers were, of
+							whose kinder Orders they Obey'd obeyed, and thanked them, and Him,
+							Friend: beging Him 100 times over: O pray don't let it be found
+							out &amp;c. Which, however remarkable, never was.
+						</p>
+					<p>
+							I was this Gentlemans* <add place="margin">The parish vicar</add> fond Companion also, and often<note>In the memoir, the phrase "the parish vicar" is written in pencil
+									in a different hand</note>
+							Slid unobserv'd to him, when he was retir'd to private Devotion
+							sometimes I kneel'd behind, and at other times close by his side,
+							that I might be a partaker of those influences, which I beleiv'd,
+							he enjoy'd.
+						</p>
+					<p>
+							As I Grew older, I had more liberty among the Servants,
+							who endeavour'd to seduce me and bring me into all manner of
+							Wickedness, as much as they could, But finding me frighten'd,
+							and fearing I should tell, they threaten'd me hard, what they
+							would do to me, if I did. This brought me more particularly to my
+							own Hearts Friend, and they let me alone for sometime; till one
+							evening, I went into a back Garden, where a Company of them wo
+							got, but I did not know nor think of them, till I was almost
+							shock'd to death, and could scarce stagger into <add place="above">the House</add>
+								<hi rend="strikethrough">door</hi>, when, even in
+							the very Passage, the Lord met me, Comforted me, and gave me
+							the Assurance in my Heart, "He would preserve me for himself
+							for ever." This Promise has always been a secret Comfort to me,
+							all my Course through, yea even, when in the highest of my Folly
+							in the World. I was near 8 years old, &amp; made a memorandum of that
+							important Day. I was kept more close to my learning, and was
+							instructed in all the Principles of the Church. I also got Courage
+							to discover those notorious deceivers, without their knowing it was me
+							Yet my Heart departed from its dearest Object, and I became as
+							Formal and vain as any Body; I saw myself a fair Candidate
+							for the World; but also, Ruin, Destruction, and eternal death
+							stood as fair before me. This made me go on heavily, but I could
+							tell no one: And as I was under Preparation for the H. Com<hi rend="superscript">n</hi>
+							I was the more distress'd; Sometimes in dispair and sometimes
+							desperate. In this Situation I went to Evening Prayers, but I
+							could neither pray, nor desire. I was so condemn'd; But in the
+							Begining of the last Prayers, my Heart became as melting Wax,
+							and as such a Wretch I turn'd again to my Friend, and begg'd for mercy 
+							and got Confidence to trust and rely on him. I had sometime before
+							privately made it out in my own mind, that, as Oppertunity should
+							serve, I would privately retire to a Cloister, and in that especiall
+							manner dedicate myself to the Lord Forever.
+						
+					</p>
+				</div>
+				<div type="page" n="3">
+					<head type="page">3</head>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-03.jpg"></pb>
+					<p>
+						
+							In my 17<hi rend="superscript">th</hi> year it was thought proper by my Friends, that I should
+							go to <rs ref="http://dbpedia.org/resource/London" key="London" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">London</rs> for further Improvement. I was receiv'd with the
+							greatest heartiness, and every one was kindly officious in bringing 
+							me to public Places, and shewing me the Curiosities of the Town. I
+							saw the Glory's of the World - and loved it - and concluded, as I had
+							often been told, I was made for the World, for it suited my Inclination
+							and tast every way; And I had well nigh set through all Convictions,
+							Though at the Bottom I had a Condemn'd heart and guilty Conscience.
+							My Mother being in <rs ref="http://dbpedia.org/resource/London" key="London" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">London</rs> at this time took me with her, to see a
+							Friend of hers in <rs ref="http://www.wikidata.org/entity/Q831377" key="Bethlem Royal Hospital" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">Bedlam</rs>, and surveying the many Shocking objects
+							there, she tumed to me and said. "This is the <add place="above">sad</add> effect of Love and Pride."
+							I made her no answere; but ispairingly despairingly thought: and this will
+							one day be my unhappy Case unless God exert his Almighty
+							Power in rescuing me. 
+						</p>
+					<p>
+							I soon followed my Mother privately to Reading, giving all my
+							Acquaintance the Slip; But was soon surrounded with my old
+							Friends and Acquaintance who were very desireous to hear news, and
+							learn more particularly the Fashions of the Town. I told them, I was
+							quite tired of all those things, and therefore resolv'd soon to retire from
+							all, and come and live in a quite different way: If any of them w<hi rend="strikethrough">h</hi>ere 
+							inclin'd to make one of the Company, when I came to settle at home,
+							it could be made out.
+						</p>
+					<p>
+							From this time I had no rest for my poor distresst Heart &amp; mind
+							Therefore in my 21<hi rend="superscript">st</hi> year I left London the Last time, to put in practice
+							what I had so long purposed, renewing my Acquaintance with the
+							most solid and religious Part of my Friends. I followed as near
+							as I could. Step for step, with my Mother &amp; Brother, who had
+							begun some time ago a more religious Course of Life; But, alas!
+							I grew faint hearted and tir'd: And seeing all my Works, Prayers
+							and Duties, good for nothing at all, and I myself that same de-
+							plorable Creature as ever I was, I cry'd out in the Bitterness of
+							my Soul: O Lord Jesus Christ' if this is the way to Heaven, I shall
+							never come there! My distress still increased, being more &amp; more
+							Sensible of my Degeneracy; But above all did my base ingratitude
+							to my once so tender Lover fill me with horror and Dejection. 
+						</p>
+					<p>
+							We had heard of the Awakening in Oxford, where my B<hi rend="superscript">r</hi> went,
+							got acquainted with several, and brought M<hi rend="superscript">r</hi>. Kinchin<hi rend="strikethrough">g</hi> to our house;
+							and afterwards M<hi rend="superscript">r</hi> Wesleys, Hutchins, Whitfield &amp;c. I was much
+							 perplex'd in my own mind at this rash (as I thought then) proceeding
+							of my Brothers, fearing a Schism in the Church. But being convinced
+							of the truth of their Doctrine, was soon Zealously attached thereto.
+							But the Preaching being in our House, it made a great stir in the
+							Town, and caused us much Trouble and disgrace; So that my Mother
+							hearing of it in London, came home, and put an intire Stop to it.
+							<note type="catchword">Hereupon</note>
+						
+					</p>
+				</div>
+				<div type="page" n="4">
+					<head type="page">4</head>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-04.jpg"></pb>
+					<p>
+						
+							Hereupon my Brother went to <rs ref="http://geonames.org/2654675" key="Bristol England United Kingdom" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">Bristoll</rs>, and I, and a well disposed singled
+							Woman took a house in the Town; but the Preaching was given up.
+							By these means got the ill Will of all my Friends and Relations
+							My Acquaintance also shun'd me, and every one's Face was set against
+							me. Thus forsaken of all, and destitute of my best Friend, I grew
+							dejected, and quite malancholy.
+						</p>
+					<p>
+							In 1740 I visited <rs ref="http://dbpedia.org/resource/Kingswood,_South_Gloucestershire" key="Kingswood, South Gloucestershire" cert="high" type="http://sparql.cwrc.ca/ontologies/cwrc#Place">Kingswood</rs> and Bristol; but could not be reconcil'd
+							to those Agitations among the Methodists at that time. Here I had
+							happiness of seeing first our d<hi rend="superscript">r</hi> Bro<hi rend="superscript">r</hi> Toellshig, who seeing my concern,
+							help'd me much. I soon return'd to Reading exceedingly distress'd,
+							And finding my dear Companion so happy in our Sav<hi rend="superscript">r</hi> and myself
+							so wretched, I gave up all hopes of ever being sav'd. But here in
+							one moment did my most gracious Saviour reveal Himself to me,
+							forgave me all my sin, and in an instant I was dispossess'd of every
+							Pain: I could hardly tell if I was in the Body or not. For my heart
+							saw nothing but Jesus. I felt after Sin; but behold! there was
+							no Sin. I felt after my own guilt and Distress, but there was
+							no Place found for them, and nothing but light surrounded me. 
+							I had not enjoy'd this happiness long, before my venerable Companion
+							fell happily asleep on the Bosom of her eternal Bridegroom.
+						</p>
+					<p>
+							At my return the former Disturbances were reviv'd. many were
+							distresst concerning their Salvation; And the Clergy being greatly
+							perplex'd, endeavour'd to put me to Trouble; But our Saviour
+							kept me stay'd upon Him and deliver'd me safe out of their Hands.
+							I gave up my House, and went again to Kingswood, where M<hi rend="superscript">r</hi>
+							Whitfield, my B<hi rend="superscript">r</hi> and others were separated from M<hi rend="superscript">r</hi> Wesleys, and
+							had begun more regular Society, and gave me the care of the
+							Single Women, with whom I labour'd as well as I could;
+							But knowing my own Insufficiency, and seeing many Irregularities
+							creeping in among the Young People, I told my Bro<hi rend="superscript">r</hi> this was not
+							what suited me; and therefore I came to Reading, where a Widow
+							Quaker Gentlewoman had long and often desir'd I would stay with
+							her and <hi rend="underline">take</hi>
+								<add place="above">use</add> her House as my own. I did so, And all my Quaker
+							Friends were exceeding kind to me, and earnestly wish'd me to
+							settle amongst them; I would have done it, but had no leave from
+							our Savr in my own Heart. My Mind was secretly Hankering
+							after a Cloister: But my Bro<hi rend="superscript">r</hi> desiring my Assistance at
+							Tetherton, I went to him, and with all the Money I had, Goods &amp;
+							Furniture, engaged with him, and the Peace of God ruled &amp; rested
+							upon us.
+						</p>
+					<p>
+							In 44 I went on a Visit to London, where our late S<hi rend="superscript">r</hi> Stonehouse
+							brought me aquainted with my ever dearest Anna Johanna, with
+							whom my Heart was tenderly united, as was hers to me.
+							<note type="catchword">I had</note>
+						
+					</p>
+				</div>
+				<div type="page" n="5">
+					<head type="page">5</head>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-05.jpg"></pb>
+					<p>
+						
+							I had heard of the Order among the Single Sisters, and that it was
+							something like a Nunery, which exacted my enquiry and I wish'd once
+							to see such a Choir. My Bro<hi rend="superscript">r</hi> had already contracted a large Acquaintance
+							with the Brethren, and sometime after gave our Societies into their
+							care and went on a Visit to Hhaag, and from thence to Ireland.
+							In his Absence I had the favour of a Visit at Tetherton from our late
+							d<hi rend="superscript">r</hi> Disciple and Discipless, Christel, Anna Johanna &amp;c. The Discipless
+							was particularly hearty with me to, whom, at first, I was somewhat
+							reserved; But coming upon Heart Matters, I was quite openhearted,
+							and she spoke to me in the most Comfortable and encouraging manner,
+							telling me, how tenderly She and her Company felt towards me, and
+							assuring me of our Saviours Thoughts of Peace concerning me.
+						</p>
+					<p>
+							My Brother soon after return'd, who told me yet more about the
+							single Sis<hi rend="superscript">rs</hi>, and how earnestly he had Pray'd our Sav<hi rend="superscript">r</hi> to bring me 
+							into their happy Circle, That he knew it was just a Regulation as
+							would please me. Upon duly weighing the matter before our Sav<hi rend="superscript">r</hi>, I wrote
+							to my much respected Friend, the d<hi rend="superscript">r</hi> Discipless for leave to visit the Cong<hi rend="superscript">n</hi>
+							in Germany, who readily granted me the favour. My Mother also
+							at this time, was well inclin'd towards to Bre<hi rend="superscript">n</hi>; But meeting with
+							some unhpy Circumstances, she was turn'd quite against them: And
+							tho' I was much Staggered, yet our Sav<hi rend="superscript">r</hi> preserved me, and gave me Courage
+							of persevere in my Purpose. Yet I had it hard to get away, and was forc'd
+							to leave her against her Will.
+						</p>
+					<p>
+							In March 1747 I arrived with many more English Brethen and
+							Sis<hi rend="superscript">rs</hi> together with B<hi rend="superscript">r</hi> &amp; Sis Teltschig in Hhaag, where I m<hi rend="strikethrough">e</hi>et with
+							the most cordial reception from our d<hi rend="superscript">r</hi> Disciple &amp; Discipless.
+							The Congregation and its regulations I saw with wonder and delight;
+							Especially that of the S. Sis<hi rend="superscript">rs</hi>. My first Intention only was to Visit
+							the Cong<hi rend="superscript">n</hi>, and not to become a Member thereof; But in London, on my
+							way h<hi rend="strikethrough">e</hi>ither, being a Spectator at the Holy Communion, I was so affected
+							that I forgott my Resolution; Till by Occasion, soon after my arrival,
+							I grew Suspicious, till I was quite confus'd. But having an unreserved
+							Confidence to the late d<hi rend="superscript">r</hi> Discipless, I told her all my Concern, who
+							with the greatest tenderness &amp; Frankness clear'd up those matters which
+							had given me so much pain. I now became quite happy and saw
+							the Cong<hi rend="superscript">n</hi> in a right light, and the Beginning of that happy Period,
+							which the H Ghost had so many years been preparing me for.
+						</p>
+					<p>
+							I had the Grace to be received into the Congregation the same year,
+							Was soon after Confirm'd and in Jan 1748 was made a happy Partaker
+							of the Lords Body and Blood in the H Communion. Here also I
+							had the Grace to be admitted into the Class of Intercessors, and soon
+							after set out with B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Boehler &amp;c. for England. Our D<hi rend="superscript">r</hi> Papa,
+							Mamma, the Mother, Anna Johanna &amp;c. accompanied us to Francfort,
+						
+					</p>
+				</div>
+				<div type="page" n="6">
+					<head type="page">6</head>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-06.jpg"></pb>
+					<p>
+						
+							where, after many Blessings, the rest day we proceeded on our Journey
+							in the Peace of God, and blessing of the Congregation.
+						</p>
+					<p>
+							After staying sometime in London, I was sent to Fulneck, where
+							I was one of the Cong<hi rend="superscript">n</hi> Servants, Choir Servant &amp; Helper. In June
+							1750 I was called to London, where I enjoy'd many blessings in the
+							Dear Disciples House in Bloomsbury Square. From whence I
+							was sent to Dublin to have the Care of the S. Sis<hi rend="superscript">rs</hi> There and in the
+							north of Ireland. The same year I visited the North, and the Year
+							after was sent there; where also, as in Dublin our Sav<hi rend="superscript">r</hi> accom-
+							panied, blessed and prosper'd me, gave me the Hearts of the Sisters,
+							for whom I have ever retained the tenderest affection, and shall
+							to my latest Breath. So that, notwithstanding the many heavy
+							Circumstances, I enjoy'd the still Communion with my Hearts
+							best Friend; Nor were my many Faults, weaknesses and mistakes
+							a hindrence thereto. 
+						</p>
+					<p>
+							In Sept<hi rend="superscript">r</hi> 1758 I got a Call to the Disciple House, from my
+							dear Anna Johanna. And the 19<hi rend="superscript">th</hi> arriv'd S<hi rend="superscript">r</hi> Mary, S<hi rend="superscript">r</hi> Ripley 
+							and Matty Haley, who were most heartily receiv'd by all, and
+							especially by our own d<hi rend="superscript">r</hi> little Choir in Ballunderry. 
+						</p>
+					<p>
+							The 30<hi rend="superscript">th</hi> S<hi rend="superscript">r</hi> Mary Spoke the Sis<hi rend="superscript">rs</hi> to the Com<hi rend="superscript">n</hi> and in the
+								Afternoon
+							we partook of the same. Particular meetings were appointed
+							in all the Plans for the Reception of the above two Sisters, which
+							with other meetings and matters lasted to the 18<hi rend="superscript">th</hi> of Oct<hi rend="superscript">r</hi> when we
+							viz: B<hi rend="superscript">r</hi> Watson, S<hi rend="superscript">r</hi>. Mary, Marg<hi rend="superscript">t</hi> Graham a Widow, myself,
+							My dear little Neice Betsey Cennick, and Betsey Mortimer,
+							set off from Ballunderry, and came to Bellfast the same evening
+							where we were detain'd till the 24<hi rend="superscript">th</hi> when in our way down
+							to the Vessel S<hi rend="superscript">r</hi> Mary got a sad fall; we got on board however
+							the same evening. On the 27<hi rend="superscript">th</hi> a Voilent Storm arose and
+							we were given up for lost. this was a trying Circumstance
+							to me, after I had gone through so many trials before; But
+							I immediately turn'd to my best and <add place="above">only</add> Friend, thought perhaps
+							I was the Jonas and therefore became a sinner before Him on all
+							accounts, and in 5 minutes all were well between Him and
+							me, and my heart rejoice'd that I should so soon see him. the WW<hi rend="superscript">d</hi>
+							of the Day was. Rom. 14, 8. "Wether we live, we live unto the Lord,
+							or wether we die, we die unto the Lord."
+							"Must a ling'ring Death await us, This Text ever will stand Good:
+							He in Glory to translate us, Purchas'd all Things by his Blood."
+							The 28<hi rend="superscript">th</hi> we got among the sandbanks. The 29 we landed in 
+							Liver Pool safe and well. Nov<hi rend="superscript">r</hi> the 2<hi rend="superscript">d</hi> we came to Fulneck abt
+							4 o'Clock. After Tea S<hi rend="superscript">r</hi> Hendrengen took care of the Children,
+						
+					</p>
+				</div>
+				<div type="page" n="7">
+					<head type="page">7</head>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-07.jpg"></pb>
+					<p>
+						
+							And in the evening S<hi rend="superscript">r</hi> Mary sent to invite me into her house, where
+							I enjoy 'd many Blessings; till in Jan. 59 B<hi rend="superscript">r</hi> &amp; Sis<hi rend="superscript">r</hi>. Houptmann
+							received their Call to Bedford, I embrace'd this Oppertunity of going
+							with them from hence to that Place, where I was receiv'd with the
+							greatest love and heartiness. I soon went to London, when, after
+							waiting along while, and meeting with many hindrences, however
+							on the 7<hi rend="superscript">th</hi> of May I arrived with several more Brethern &amp; Sisters
+							to my exceeding great Joy, having that long wish'd for happiness
+							of seeing my dear Papa, Mamagen and Anna Johanna once more.
+							The 10<hi rend="superscript">th</hi> I was brought to Annenhoff, where I enjoy'd many inexpressible
+							Blessings. The 1<hi rend="superscript">4th</hi> I was receiv'd as Acoluth and ordained a Deaconess. 
+							Here I had the favour of Staying till the Close thereof, a time,
+							I shall never forget. July the 17<hi rend="superscript">th</hi> I set out from Zeist with the
+							respectable B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> H<add place="above">ei</add>nrichs von Reuss &amp; Salome Gross came to
+							Gnadenthal August the 3<hi rend="superscript">d</hi> the 11<hi rend="superscript">th</hi> to Kleinwelke, &amp; the 12<hi rend="superscript">th</hi> to Hhuth,
+							where I enjoy'd a real Sabatic season, Continuing in the most
+							tender Comunion with my eternal Friends; and in heartiest
+							Fellowship with all. At the latter end of this year our dear
+							Disciple House arrived to the universal great joy of all here; I
+							had the Blessing of being present at the S. Sis<hi rend="superscript">rs</hi> Synod to the end;
+							as also at that memorable Conclusion of the faithfull Labour of those
+							two eminent Witnesses the d<hi rend="superscript">r</hi> Disciple &amp; Disciples of Jesus in May 1760.
+							That Peace of God, which came more espeically upon the
+							Cong<hi rend="superscript">ns</hi> at that time, I also partook of in a particular manner
+							In which happy Sensation I left Hhuth Sep<hi rend="superscript">t</hi> the 4<hi rend="superscript">th</hi> with B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi>
+							
+							Teltschig and came to Kleinwelke; the 9<hi rend="superscript">th</hi> to Barby; there I
+							enjoy'd many particular Blessings. The 13<hi rend="superscript">th</hi> we proceeded
+							on our Journey, and came to Zeist on the 19<hi rend="superscript">th</hi>. From thence we
+							came to London Oct<hi rend="superscript">r</hi> the 6<hi rend="superscript">th</hi>, And the 13<hi rend="superscript">th</hi> I came to Bedford, where
+							I was receiv'd most heartily and it went blessed<add place="above">ly</add> for a time, but
+							afterwards not so; Therefore I was sent to Lembster to
+							B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Rice to have the Care of some young Women, Collected
+							from several Parts, there being only two Natives. As to outward
+							Circumstances it was morally impossible to come thro' in a manner
+							suitable to an Oeconomy; But the principle thing in the whole
+							was <add place="above">the</add> want of hearts, and the true Spirit of Love and Harmony
+							amongs't us all. I shall not enter into Farther Particulars,
+							They being of too painfull a nature.
+						</p>
+					<p>
+							In Nov<hi rend="superscript">r</hi>. 1764 I receiv'd a Call from the General Synod at
+							Marienborn, by the Hand of my dear Bror Johann, to asist
+						
+					</p>
+				</div>
+				<div type="page" n="8">
+					<head type="page">8</head>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-08.jpg"></pb>
+					<p>
+						
+							Sis<hi rend="superscript">r</hi> Mary Vogls<hi rend="superscript">ng</hi> in Caring for the S. Sisters and Great Girls of
+							the Country Cong<hi rend="superscript">ns</hi>. I receiv'd my Call with awe &amp; real bow-
+							edness of heart. I wrote to S<hi rend="superscript">r</hi> Mary on that account, who answer'd
+							me as a Priestess of God. In Dec<hi rend="superscript">r</hi>. I set out with a B<hi rend="superscript">r</hi>. and his
+							Daughter a great Girl, who had lived with me, for ockbrook,
+							where she was to reside. We arrived there safe and well after
+							a heavy Journey, and I stay'd to refresh myself for several days
+							among my old Acquaintance and then set out for Fulneck.
+							On the 21<hi rend="superscript">st</hi> Dec<hi rend="superscript">r</hi>. I came to Leeds where our late B<hi rend="superscript">r</hi> Shultze was
+							waiting to bring me to Fulneck the next Day, and presented me
+							with a very hearty Congratulatory Letter from my D<hi rend="superscript">r</hi> Sis<hi rend="superscript">r</hi> Mary
+							We arrived at Fulneck ab<hi rend="superscript">t</hi> Noon on the 22<hi rend="superscript">d</hi> and met with a
+							very hearty Reception from all my d<hi rend="superscript">r</hi> old S. Sisters, and stay'd
+							till the 16<hi rend="superscript">th</hi> of Jan; when I was brought to Gumersall Oeconomy be
+							S<hi rend="superscript">r</hi> Mary and Ann Birkby. I felt well as soon as I enterd the
+							House. Early the next morning the <add place="above">two</add> above mentioned Sis<hi rend="superscript">rs</hi>
+							took their leave of us. I got alone into my little room and
+							kept a hearty Band with my Best Friend, and with many 
+							tears devoted myself afresh to him: Put Him in mind of his
+							Promise viz: That He would once bring me into an
+							Asylum, where I should enjoy a real Sabatic sea-
+							son and Bridal Intercourse with Him, preparatory
+							to his taking me into His arms and Bosom.
+						</p>
+					<p>
+							He shewed me something more concerning my present call, than I
+							found, Some others knew, and was to remain a sceeret between Him
+							and me, I soon found myself at Home, and that he would bring
+							me safely thro'. I felt also that the Hearts of the Sis<hi rend="superscript">rs</hi> were tenderly
+							inclin'd towards me; so that we soon became one Heart and one
+							Mind, and a Blessed Period commence'd, tho' under many Difficulties.
+							Not long after, a certain Sabbatic mood and most intimat inter-
+							course, between me and my Friend took Place; So that my
+							Labour among the Souls, was my Delight, it per adventure
+							I might happily gain some, to become lovers of this my so favourite
+							Object. My Journeys were long and heavy, to go to the different
+							Cong<hi rend="superscript">ns</hi>, and I being very weakly made me oft secretly sigh and weep be
+							fore my Friend: For it being just the depth of the winter that I come here,
+							made walking in those bad roads almost impracticable; But here I must
+							mention with the greatest gratitude &amp; humility the more then
+							Brotherly &amp; Sisterly love and Faithfullness of my good, old,
+							venerable Hearts Watsons; Happy for me they were at this time
+							<note type="catchword">living</note>
+						
+					</p>
+				</div>
+				<div type="page" n="9">
+					<head type="page">9</head>
+					<pb n="9" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-09.jpg"></pb>
+					<p>
+						
+							living here in Gumersall, and had the Care of Wyke Plan also, they
+							therefore most Chearfully help'd me always, when, and where they
+							could with their horse &amp;c. In Dec<hi rend="superscript">r</hi> following, we had the misfortune
+							to loose them; For they went to Mirfield: Here also they faithfully
+							assisted me in every respect, and that same genuin look &amp; heartiness
+							still subsisting between us especially my good S<hi rend="superscript">r</hi> Watson our hearts
+							became joined and united in the heart of our wounded Friend, To be
+							Separated no more for ever. As I have always mostly travel'd on foot
+							My walks however have been made to me liturgic Walks, and my Friend
+							has so made perfect <add place="above">his strength</add> in my weakness, that, when I have been well nigh
+							fainting and thought I could get no farther, I have been so Comforted
+							refresh'd and Strengthened that I have not been sensible of pain and
+							weakness, and oftentimes stood still to consider whereabout I was, and
+							with surprize found myself nearer my Journeys end, then I could have thought
+							or imagin'd. My Garden has been like a little Paradise, wherein I
+							have admir'd, worship'd and ador'd my Dearest Heart, the Great Gardener
+							of the universe, and He has always attended me in my meanest employ<hi rend="strikethrough">ment</hi>
+							therein. He has made my Labour truly a Liturgy. And how he and I have
+							Been engaged together. Some few Verses made on a Garden &amp; Flowers, some
+							of which are here inserted, Do more emp<add place="above">h</add>atically express,
+						</p>
+					<p>
+						<lg type="stanza" n="1">
+							<l>1</l>
+							<l>Josephs Garden here's intomb'd my Lover</l>
+							<l>Hollw'd Cave! here lies my Gain</l>
+							<l>Here I sing in this cool silent Power</l>
+							<l>Bout the Man! my Pleasing strain</l>
+							<l>Softest Musick, gently soothing sorrow</l>
+							<l>While thy Love sick spouse her spices gather</l>
+							<l>From thy Corpse so pale &amp; wan</l>
+							<l>Which she's fondly dotting on</l>
+						</lg>
+						<lg type="stanza" n="2">
+							<l>2</l>
+							<l>Red and white my Jesu's wounded Body</l>
+							<l>As <add place="above">in</add> Gardens Flowers excell</l>
+							<l>Lylies fair and full Bloom roses Ruddy</l>
+							<l>Yeild their Odoriferous smell</l>
+							<l>engrav'd upon thy Corpse so sweetly</l>
+							<l>Wounds like roses fresh and set compleatly</l>
+							<l>And some smaller holes between</l>
+							<l>Just like Buds twist Jesemin</l>
+						</lg>
+						<lg type="stanza" n="3">
+							<l>3</l>
+							<l>Lovly Picture Beauty most transcendent</l>
+							<l>Matchless he! My paradice</l>
+							<l>Thou my Garden fertile fragrant pleasant</l>
+							<l>Thou my food My tree of Life</l>
+							<l>Sweet inlaid among thy Clothed Tresses</l>
+							<l>From the Thorns Pomgranates have their place</l>
+							<l>Fruit and flowers, these compose</l>
+							<l>My Belov'd my Sharons rose</l>
+						</lg>
+						<note>In the memoir, the fourth stanza is placed after stanza 8 in the right column</note>
+						<lg type="stanza" n="4">
+							
+							<l>4</l>
+							<l>Edens Garden my love planted for me</l>
+							<l>favour'd place he brought me there</l>
+							<l>Was himself still with me so delight'd</l>
+							<l>I with him. Ah happy pair</l>
+							<l>Short liv'd Joy I got there in a surfeit</l>
+							<l>Every comfort was the fatal forfeit</l>
+							<l>Rudly ravish'd from my Love</l>
+							<l>Morn'd my Widow'd with Dove</l>
+						</lg>
+						<lg type="stanza" n="5">
+							<l>5</l>
+							<l>Long I wander'd in the Howling desert</l>
+							<l>left my first my Virgin Spouse</l>
+							<l>Got new lovers seeming fair &amp; pleasant</l>
+							<l>Join'd in league with my Love's for</l>
+							<l>In Gethsemeny I saw the Combat</l>
+							<l>When he fought for Me his faithless Consort</l>
+							<l>And on Calvary with his Life</l>
+							<l>Rejoic'd in his Dear Lov'd Wife</l>
+						</lg>
+						<lg type="stanza" n="6">
+							<l>6</l>
+							<l>Here it is that I with Brides Affection</l>
+							<l>To those places oft </l>
+							<l>With my Bridegroom in his own Affliction</l>
+							<l>Here each other we admire</l>
+							<l>Softt Sensations is the pleasing Coverse</l>
+							<l>As there Gardens on together traverse</l>
+							<l>Mutual Kisses we impart</l>
+							<l>To and from each others Heart</l>
+						</lg>
+						<lg type="stanza" n="7">
+							<l>7</l>
+							<l>Oft we stood and seiz'd with Admiration</l>
+							<l>How intent and fond he's been</l>
+							<l>With what diligence and warm affection</l>
+							<l>He has nurs'd some Little thing</l>
+							<l>Hardly worth another thought or notion</l>
+							<l>This has been to him the very Christ</l>
+							<l>All the finest flowers he's left</l>
+							<l>And this one more in his Breast</l>
+						</lg>
+						<lg type="stanza" n="8">
+							<l>8</l>
+							<l>Yes I know him exquisite his test in</l>
+							<l>What even Gardners count above</l>
+							<l>These in nosegays raisd to higher Graces </l>
+							<l>He will in his Bosom wear</l>
+							<l>Publick Grandour once demonstrating</l>
+							<l>When the Marriage will be Consumating</l>
+							<l>Ever Greens and flowers rare</l>
+							<l>Grow old with these shall then appear</l>
+						</lg>
+					</p>
+				</div>
+				<div type="page" n="10">
+					<head type="page">10</head>
+					<pb n="10" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-10.jpg"></pb>
+					<p>
+						
+							My little Room has been a Cabinet of Jewels to me, Therefore I have
+							long concluded, that if our Sav<hi rend="superscript">r</hi> took me home here in Yorkshire, I
+							would die in my nest, and so slip away, as it were incognito
+							Since our dr B<hi rend="superscript">r</hi> Boehlor's Visitation here, our Family has been
+							brought again into the injoyment of our Choir Graces with our Choir
+							to our very great abasement.
+						</p>
+					<p>
+							For this Year last past, I have felt that my time was out
+							in Gummersal, and last summer thought I should get a Call after
+							the Synod; but could never find out any Place where I could be sent
+							to. I once kept a hearty Band with my Friend about it, at the
+							Conclusion of which, and summing up the whole, I said to Him:
+							"Now would it not be better thou tookst me home to thy <add place="above">own dr</add> self."
+							I had no room to suspect any thing of the kind, from what I felt from him
+							at that time; But July last, As I was in the Chaple <add place="above">Garden</add> at Work, He drew near
+							To me in an extraordinary manner, and discover'd to me Such an Union
+							&amp; oneness between Him &amp; me, as is altogether unutterable, tho' I 
+							did attempt to express something of it in a few Verses.
+						</p>
+					<p>
+							From this time I had often gentle hints of a Change, of something that would
+							take place, which should entirely suit me.
+						</p>
+					<p>
+							In August last I got it Voilent Cold, which grew worse &amp; worse,
+							And found my Lungs were infected. In the Beginning of Sept last,
+							I felt myself strangly ill; so as I had never been before, which lasted
+							some few nights &amp; days; And during the whole time, I was most happily
+							Comforted with my Friends nearness, Insomuch that I felt no illness at all,
+							only that I was weak and drowsy. One night, unasked for, He
+							came Close to my Bedside, and stood there. My Heart saw Him,
+							And my Soul adored Him! He dispersed intirely in a moment
+							every painfull thought and Sensation, inwardly and outwardly
+							I felt after one Wound and another sore; But behold! they were all
+							healed. I felt after Sin, and there was no sin. I felt after misery
+							and Dejection, But there was none to be found; And thus I was made
+							sound and whole, except those pleasing Wounds of Love, which He
+							had made long before in my enamour'd Heart, But now more
+							Deeply impress'd.
+						</p>
+					<p>
+							Now it was, He gave me, the soft impression of his Gracious
+							intention Concerning me; while I silently worship'd before Him.
+							On the 26<hi rend="superscript">th</hi> my d<hi rend="superscript">r</hi> S<hi rend="superscript">r</hi> Lorel called on us in her return from
+							Duckenfield, and was quite alarm'd at my seeming bad state
+							of Health, would not rest, But insisted on my going to Fulneck,
+							To stay there for some time which I did; where I assisted in
+							seeing the Sisters for the Communion, and could not forbear to 
+							drop a word now and then concerning something, the very obscure of
+							my happy Situation. On the 9<hi rend="superscript">th</hi> I return'd to Gummersal, where
+							my Disorder increased, And my Friend confirmed more 
+							<note type="catchword">strongly</note>
+						
+					</p>
+				</div>
+				<div type="page" n="11">
+					<head type="page">11</head>
+					<pb n="11" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-11.jpg"></pb>
+					<p>
+						
+							Strongly what he had made allready manifest to me. I was very well
+							seemingly, fix'd and suited; But my d<hi rend="superscript">r</hi>. S<hi rend="superscript">r</hi>. Lorel could not be reconcil'd
+							to my staying at Gumersel, and I must own shew'd more then Mothers
+							Faithfulness and Affection: In these Circumstances she could not be
+							prevailed upon to be Satisfy'd, unless I came to Fulneck.
+						</p>
+					<p>
+							I therefore set out in mere faith, with B<hi rend="superscript">r</hi> Samuel Fowler and
+							Joseph Peal Nov<hi rend="superscript">r</hi>. 20<hi rend="superscript">th</hi>
+								<add place="margin">1769</add> and arriv'd here safe, and meet with a very
+							hearty Reception. The first d<hi rend="superscript">r</hi> Heart which saluted me, was
+							my most dear and venerable Heart Anna Johanna; I was also made
+							happily sensable of that genuine Love and hearty affection of the
+							Choir in general, And more especially <hi rend="strikethrough">of</hi>
+								<add place="above">from</add> all those in Office; so that
+							that peace of God, and that Sabbath, which I never had heard any
+							one possessing, at least so long before their Departure, accompanied
+							me here also in the clearest manner, which begun at the time above
+							mentioned, when our Sav<hi rend="superscript">r</hi> manifested Himself to me in such an
+							especiall manner. But here I must mention some essential
+							things, which I forgot to mention in their proper places, viz.
+							After all that the Lord had done for me, and I was clear and well
+							establish'd in it: One Day, as He &amp; I were solacing ourselves in
+							each others love, it came into my mind; But that oneness &amp; union
+							which I had possessed in Him. I was not so clear in at this time: He
+							shew'd me, I was wholly in Him and He in me, and that we
+							were One as he and the Father are One. I saw myself cloathed
+							upon in Him, and possessed of all the Bridal Ornaments of the Bridegroom. 
+							I must therefore ascribe all the Honour and Glory alone to my own d<hi rend="superscript">r</hi>.
+							eternal Slaughter'd Lord and Saviour and conclude my
+							Narrative with the Greatest truth in all the World: viz.
+							That, Where Sin hath abounded, Grace hath abounded
+							Much more.
+						</p>
+					<p>
+							Our venerable and Happily departed Sis<hi rend="superscript">r</hi> Sarah Cennick,
+							Has in some measure Specify'd How varioussly her Election of Grace
+							has <add place="above">been</add> manifested w<add place="above">h</add>ere-ever her happy Lot Has been cast, during
+							Her Course through this vale of tears.
+						</p>
+					<p>
+							Her Strong Capacity, Great Gifts, and quick sensations, was
+							Iluminated by such extraordinary Grace from the H. Ghost
+							As evidently Signalized Her a peculiar Person of Blessed
+							remembrance to the Hearts of many Souls.
+						</p>
+					<p>
+							Yet amidst all those great Endowments, she had the
+							Happiness, through the infinite Mercys of God, to be throughty
+							Convinced of her great depravity in Soul and Body, and
+							which truly as a monument of uncommon Mercy and Grace, 
+							was preserved, in her Earlyest years, From the dangers and
+							vain Foibels of her natural Inclinations, and as her own
+							words has spoke it, she counted it the highest Dignity
+							<note type="catchword">to</note>
+						
+					</p>
+				</div>
+				<div type="page" n="12">
+					<head type="page">12</head>
+					<pb n="12" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-12.jpg"></pb>
+					<p>
+						<lg type="stanza">
+							<l>to be rank'd amongst the Chiefest of Sinners, and has with particular</l>
+							<l>clearness expresst her mind in a few verses on this subject, in the</l>
+							<l>Beginning of her last Sickness, as follows</l>
+						</lg></p>
+					<p><lg type="stanza">
+							<l>Thou Feast of worms &amp; atoms</l>
+							<l>Repast of Sinners poor</l>
+							<l>Who on thy Godheads Bottom</l>
+							<l>Stands sav'd for evermore</l>
+							<l>What signified to Thee</l>
+							<l>Our vast depravity</l>
+							<l>Thou Abyss of Perfection</l>
+							<l>Thou loves immensity</l>
+						</lg>
+						<lg type="stanza">
+							<l>Inseperable union</l>
+							<l>Devotions fragrant Source </l>
+							<l>Most Heavenly Comunion</l>
+							<l>Devinest Intercourse </l>
+							<l>Soft Gentle soothing Hum</l>
+							<l><hi rend="strikethrough">Effectual</hi> aninum</l>
+							<l>for evermore to Solace </l>
+							<l>The Spirit&amp; Bride say, Come.</l>
+						</lg></p>
+					<p>
+						
+							By these Veres somithing may be understood of that truly
+							Evangelical intercourse, which our late happy Sis<hi rend="superscript">r</hi> had with
+							her Souls Bridegroom; She has certainly been favour'd with a
+							more than common union and nearness from her Friend &amp; Lover.
+							Her Soul magnify'd the Lord, and her Spirit daily rejoiced in God
+							her Sav<hi rend="superscript">r</hi> whom she recommended on all Occasstions, with such
+							energy, as is not to be expresst in words, which bears an Indelible
+							Signature of Blessing in her Choir. During her last Sickness
+							we have seen many Blessed Testemonies of this Kind, wherein
+							she has plainly shown, that her very Soul was animated with
+							new life whenever our Sav<hi rend="superscript">r</hi> or his matters was named,
+							Especially with regard to the General and Individual Intercourse
+							which our dear Lord should have in the Choir. On Consideration
+							of our dear Sis<hi rend="superscript">rs</hi> Situation, and Circumstances in Sickness at
+							Gumersall, At our desire she remov'd to end her days in the 
+							midst of her Choir at Fulneck, yet she retained the same Love
+							and Concern, for her dear Gumersall Sis<hi rend="superscript">rs</hi>, to whom we
+							perceiv'd on all Occassions, she had the tenderest attachment
+							And her hearts Connexion with the Fountain of Love defus'd it
+							self thro' the whole Choir. For notwithstanding her great
+							weakness, she desir'd to see the Sis<hi rend="superscript">rs</hi> Room by Room, took a
+							most tender and solemn farewell of them all; Like wise Little
+							Moore &amp; Gumersall Oeconomies, The Latter of which, she desir'd
+							to see once again, when her Dissolution was perceptably hastening,
+							which was a most moving scene, To Behold and feel with what power
+							and grace, she gave her last Benediction to that dear Oeconomy
+							Where she had finishe' her faithfull Labour in this Crosses Kingdom
+							<note type="catchword"></note>
+						
+					</p>
+				</div>
+				<div type="page" n="13">
+					<head type="page">13</head>
+					<pb n="13" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-13.jpg"></pb>
+					<p>
+						
+							Here Below. And blest each with impossion of hands in the most
+							maternal and feeling manner.
+						</p>
+					<p>
+							From this time her weakness increas'd more sensibly, which
+							Excited a more Eager desire to see her Class, which Oppertunity was
+							most thankfully embraced to have once more a LFeast with her,
+							And her aspect testify'd what her heart injoy'd on this Occasion to
+							have the great priviledge to declare in our midst, that the Peace
+							of God our Saviour, was so preceptably felt to rule and preside
+							By one Spirit among'st us, to the Great Comfort and astonishment
+							Of her heart, which she confess'd m<hi rend="strikethrough">e</hi>et her at the first entrance
+							 at our Doors. She pray'd fervently, that this Peace and blessed Harmony
+							in our Choir, and particularly in this her Class, might daily increase &amp;
+							Prosper to the Honour of his holy name, and the Blessing on the whole
+							Choir, which made a latting impression on all present; And at the
+							Close took a most Affecting leave, and like a Handmaid and Priestess
+							of God, sencerely recommended her fellow Helper Lorel Seidel to the
+							Special blessing of the Lord in her future Course &amp; Labour in the Choir.
+							The 23 in the evening she Complain'd of a pain in her Side, but had
+							a Tolerable good night, and took her Breakfast in the Moming, with
+							More relish then usual, but felt very weary.
+						</p>
+					<p>
+							About 9 o'Clock on S<hi rend="superscript">r</hi> Lorels entering the Room she call'd
+							Her to her bedside, And with uncommon firmness of mind <add place="above">said</add> Lorel
+							this very day. I'm determin'd to go home and repeated it again with
+							the greatest fervency, Saying, I have been speaking with my
+							Friend about it, See to it, that you have my mansion ready
+							(the Corpses Chamber), and then was still for some moments, a Sister
+							Continuing by her Bedside whom she ask'd, what she was reading
+							so devotly in Her Countenance. The Sis<hi rend="superscript">r</hi> Answer'd, it's the near
+							Approaches of your Desolution, which engages my attention in
+							an unutterable manner. She smiling made no answer and
+							remained still for some time, and then ask'd, what it was that
+							she now perceiv'd come with a little noise from her Breast said
+							is it Death! answer'd by the Sister I beleive it is, then she haistyly
+							reply'd, Pray then call Lorel. At whose entrance into the
+							Room, she fixt her eyes upon her and said, Dont took so anxious
+							This Ruttling in my Breast is no pain to me, I am quite easy
+							and shall very soon be with him, in whose heart centers all my wishes. 
+						</p>
+					<p>
+							She retain'd a Strong presence of Mind, and during her
+							Whole Sickness to her last Moments, was Carried on with remarkable
+							Serinity and ease, Traceing many intimations from some
+							Months past of her Gracious Lords intentions with her
+							By this sickness, And that no pains should interrupt that
+							<note type="catchword">Sweet</note>
+						
+					</p>
+				</div>
+				<div type="page" n="14">
+					<head type="page">14</head>
+					<pb n="14" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_68Cennick-14.jpg"></pb>
+					<p>
+						
+							Sweet Comunion that her Soul injoy'd with its Beloved Bridegroom
+							Which was truly verify'd to the end.
+						</p>
+					<p>
+							About an Hour before she departed it was perceivd her
+							Lips moved very quick, beleiving she call'd some one by name,
+							On being ask'd if it was so, she reply'd it's possibly. But I 
+							was conversing with my Friend and lover: Continuing in this
+							way about 3 quarters of an hour, And then wanted very much
+							To Speak, Her Fa<hi rend="strikethrough">l</hi>iltering Tongue could no more be understood
+							only Christ &amp; Cry &amp;c. a few moments would now end the Period
+							of her time, upon which Sis<hi rend="superscript">r</hi>. Lorel laid her hand upon her head
+							and she look'd once more up. And then Closs'd her eyes to Sleep
+							in the Arms of her everlasting Bridegroom. during
+							The Blessing of her Choir, with a most powerfull feeling of
+							Grace, from the sensible near presence of our dearest Lord,
+							Which will never be forgotten by those who had the favour
+							To be present, at this important Event
+						</p>
+					<p>
+							Her Corpes had a most lovly Aspect. She has spent in this
+							Dying Life 57 Years, 7 Months, and some Days.
+							<note>In the margin in pencil, next to the last line, is written "1770"</note>
+						
+					</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

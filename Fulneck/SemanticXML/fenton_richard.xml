@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title>Richard Fenton: Memoir</title>
 				<funder>The Moravian Lives Project</funder>
-				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal
+					Investigator <orgName>Bucknell University</orgName>
 					<address>
 						<addrLine>Lewisburg, Pennsylvania</addrLine>
 					</address>
 					<email>faull@bucknell.edu</email>
 				</principal>
-				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator,
+					2015-2018 <orgName>University of Gothenburg</orgName>
 					<address>
 						<addrLine>Gothenburg, Sweden</addrLine>
 					</address>
@@ -82,21 +82,773 @@
 			<publicationStmt>
 				<distributor>The Moravian Lives Project</distributor>
 				<availability>
-					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+						International</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<msDesc>
 					<msIdentifier>
 						<repository>Moravian Archives, Fulneck</repository>
-						<msName type="memoir" ana="MAF/Ful_3_29_FentonRichard-01">Richard Fenton</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-02.jpg" />
+						<msName type="memoir" ana="MAF/Ful_3_29_FentonRichard-01">Richard
+							Fenton</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-01.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-02.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818818",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.818Z",
+	"dcterms:issued": "2020-04-09T13:29:16.997Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818818#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818818#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/hi/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000556",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818819",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.819Z",
+	"dcterms:issued": "2020-04-09T13:29:17.000Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818819#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?person_annotation_20200409092818819#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000556",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.820Z",
+	"dcterms:issued": "2020-04-09T13:29:17.001Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1772-12-29"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.820Z",
+	"dcterms:issued": "2020-04-09T13:29:17.002Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818820#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "17577-05-16"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.821Z",
+	"dcterms:issued": "2020-04-09T13:29:17.002Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Fulneck_Moravian_Settlement,_Pudsey",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.821Z",
+	"dcterms:issued": "2020-04-09T13:29:17.002Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?place_annotation_20200409092818821#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Calverley",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.822Z",
+	"dcterms:issued": "2020-04-09T13:29:17.002Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/date[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1769-06"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.822Z",
+	"dcterms:issued": "2020-04-09T13:29:17.002Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1772-12-29"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.822Z",
+	"dcterms:issued": "2020-04-09T13:29:17.003Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818822#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/name[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1772-12-24"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818823",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-09T13:28:18.823Z",
+	"dcterms:issued": "2020-04-09T13:29:17.003Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818823#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/fenton_richard.xml?date_annotation_20200409092818823#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1772-12-29"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000556">Richard Fenton</persName>
@@ -107,7 +859,8 @@
 			</langUsage>
 		</profileDesc>
 		<revisionDesc>
-			<change when="2019-08-09" who="#jschaumberger">Started and finished markup of file</change>
+			<change when="2019-08-09" who="#jschaumberger">Started and finished markup of
+				file</change>
 			<change>Created TEI file</change>
 		</revisionDesc>
 	</teiHeader>
@@ -117,52 +870,83 @@
 				<head>Richard Fenton</head>
 				<div type="page" n="1">
 					<head type="page">1</head>
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-01.jpg"/>
 					<p> The Course of Life, of the <roleName type="honorific">great Boy</roleName>
-						<persName ref="#mlper000556"><hi rend="underline">Rich<hi rend="superscript">d</hi> Fenton</hi></persName> who departed <date type="death" when-iso="1772-12-29">Dec. 29
-							1772</date>.</p>
+						<hi rend="underline"><persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000556" key="Richd Fenton" cert="high" type="real">Rich<hi rend="superscript">d</hi> Fenton</persName></hi>
+						<lb/>who departed <date when="1772-12-29" cert="high">Dec. 29
+						1772</date>.</p>
 					<p>
-						<persName ref="#mlper000556">Rich<hi rend="superscript">d</hi> Fenton</persName>, Son of our <roleName type="honorific">Br</roleName>
-						<persName>Richd Fenton</persName> was born the <date type="birth" when-iso="1757-05-16">16<hi rend="superscript">th</hi> of May 1757</date> at <placeName>Pudsey</placeName>, in
-						the <placeName>Parish of Calverly</placeName>. As a Child he went to the <placeName>B<hi rend="superscript">rns</hi> School</placeName> at <placeName>Lane End</placeName> where
-						he learn&apos;d till he was <date when-iso="1769" cert="medium">12 Years old</date>. In <date when-iso="1769-06">June 1769</date> he was bound <name occupation="apprentice"
-							>Apprentice</name> to <roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
-						<persName>John Spicer</persName> to learn the <name occupation="glover">Glover&apos;s Business</name> &amp; came at the same time to live in the <placeName>Choir
-							House</placeName>, where he went on in a still &amp; quiet Course to the Satisfaction of his <orgName>Brn</orgName> In the following Year he <name health="disease">began to
-							be sickly</name>, &amp; as all endeavours for his recovery proved ineffectual, <name health="disease">he grew weaker &amp; weaker from time to time</name> &amp; as his
-						Parents lived near, it was propos&apos;d to him to go and live with them whereby he might enjoy more of their Parental Care &amp; Nursing; but he declin&apos;d it. However as
-						he grew more helpless, he, in the <date when="1772-06">beginning of last July</date>, agreed to go &amp; be with his Parents, where he has enjoyed a happy &amp; sabbatical time
-						waiting with Patience &amp; Resig. nation when it would please our <roleName type="honorific">Saviour</roleName> to take him into his eternal Joy &amp; Security. He was now
-						&amp; then visited by the <orgName>B<hi rend="superscript">rn</hi></orgName> to whom he declared that altho&apos; he was resigned to our <roleName type="honorific">Sav<hi
-								rend="superscript">r</hi></roleName> yet he know that it would be better for him to be with <persName type="deity">Christ</persName>, than to recover <note
-							type="catchword">his</note>
+						<persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000556" key="Richd Fenton" cert="high" type="real">Rich<hi rend="superscript">d</hi> Fenton</persName>, Son of our <roleName type="honorific">Br</roleName>
+						<persName>Richd Fenton</persName> was born <lb/> the <date when="17577-05-16" cert="high">16<hi rend="superscript">th</hi> of May
+							1757</date> at <placeName ref="http://dbpedia.org/resource/Fulneck_Moravian_Settlement,_Pudsey" key="Fulneck Moravian Settlement, Pudsey" cert="high">Pudsey</placeName>, in the <placeName ref="http://dbpedia.org/resource/Calverley" key="Calverley" cert="high">Parish of Cal-<lb/>verly</placeName>. As a Child he went to the
+								<placeName>B<hi rend="superscript">rns</hi> School</placeName> at
+							<placeName cert="high">Lane -<lb/> End</placeName> where he learn'd till
+						he was <date when-iso="1769" cert="medium">12 Years old</date>. In <date when="1769-06" cert="high">June <lb/> 1769</date> he was bound <name occupation="apprentice">Apprentice</name> to <roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
+						<persName>John Spicer</persName> <lb/> to learn the <name occupation="glover">Glover's Business</name> &amp; came at the
+						same <lb/> time to live in the <placeName>Choir House</placeName>, where he
+						went on <add place="above">in</add> a <lb/> still &amp; quiet Course to the
+						Satisfaction of his <orgName>Brn</orgName> <lb/> In the following Year he
+							<name health="disease">began to be sickly</name>, &amp; as all <lb/>
+						endeavours for his recovery proved ineffectual, <name health="disease">he
+							grew <lb/> weaker &amp; weaker from time to time</name> &amp; as his
+						Parents <lb/> lived near, it was propos'd to him to go and live with
+						them, <lb/> whereby he might enjoy more of their Parental Care &amp; <lb/>
+						Nursing; but he declin'd it. However as he grew more <lb/> helpless, he, in
+						the <date when="1772-06">beginning of last July</date>, agreed to go <lb/>
+						&amp; be with his Parents, where he has enjoyed a happy <lb/> &amp;
+						sabbatical time waiting with Patience &amp; Resig<lb/>- nation when it would
+						please our <roleName type="honorific">Saviour</roleName> to take him <lb/>
+						into his eternal Joy &amp; Security. He was now &amp; then <lb/> visited by
+						the <orgName>B<hi rend="superscript">rn</hi></orgName> to whom he declared
+						that altho' <lb/> he was resigned to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> yet he know that it would <lb/>
+						be better for him to be with <persName type="deity">Christ</persName>, than
+						to recover <note type="catchword">his</note>
 					</p>
 				</div>
 				<div type="page" n="2">
 					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-02.jpg" />
-					<p> his Health, &amp; live here still longer. He had an Impression of our <roleName type="honorific">Saviour</roleName>&apos;s love towards him, which made him look &amp; pray to
-						our <roleName type="honorific">Saviour</roleName> with Confidence. When he was visited by <orgName>B<hi rend="superscript">rn</hi></orgName> whom he was accquainted with, he
-						desired that they might sign sing some Verses with him, &amp; several Times he mentioned in particular that the following should be sung: I am a poor Sinner, yes &apos;tis true
-						I am &amp;c. He came here to the Meetings as long as he was able to walk, or ride, which always seem&apos;d to be a refreshment to him, &amp; when he was no more able to come
-						to the meetings, he was <add place="above">very</add> Sorry for it, especially when he thought that he should not have the pleasure to attend the meetings on <name
-							type="holiday">Christmas Eve</name>, on which account he propos&apos;d that a couple of <orgName>B<hi rend="superscript">rn</hi></orgName> should earry him to the
-							<placeName>Hall</placeName> in a Sedan; But on the <date when-iso="1772-12-19">19<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi></date> in the Night, he
-						had such a gracious visit of our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> that he became quite satisfied, with his not being able to come to the
-						meetings on <name type="holiday">Christmas Eve</name>, for when he got up in the Morning &amp; dressed himself he began to speak to his Mother about it &amp; told her there had
-						happened an alteration with him last Night when she asked what way, he told her that our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_29_FentonRichard-02.jpg"/>
+					<p> his Health, &amp; live here still longer. He had an Im- <lb/> pression of our
+							<roleName type="honorific">Saviour</roleName>'s love towards him, which
+						made <lb/> him look &amp; pray to our <roleName type="honorific">Saviour</roleName> with Confidence. <lb/> When he was visited by
+								<orgName>B<hi rend="superscript">rn</hi></orgName> whom he was
+						accquainted with, <lb/> he desired that they might sign sing some Verses <lb/> with him,
+						&amp; several Times he mentioned in particular that <lb/> the following should be
+						sung: I am a poor Sinner, yes <lb/> 'tis true I am &amp;c. He came here to the
+						Meetings as long <lb/> as he was able to walk, or ride, which always seem'd <lb/> to be
+						a refreshment to him, &amp; when he was no more able <lb/> to come to the
+						meetings, he was <add place="above">very</add> Sorry for it, especially <lb/> when
+						he thought that he should not have the pleasure <lb/> to attend the meetings on
+							<name type="holiday">Christmas Eve</name>, on which <lb/> account he propos'd
+						that a couple of <orgName>B<hi rend="superscript">rn</hi></orgName> should
+						carry <lb/> him to the <placeName>Hall</placeName> in a Sedan; But on the 19<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> <lb/> in the Night, he had such a
+						gracious visit of our <lb/> <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> that he became quite satisfied, with his not <lb/>
+						being able to come to the meetings on <name type="holiday"><date when="1772-12-24" cert="high">Christmas Eve</date></name>, <lb/> for when
+						he got up in the Morning &amp; dressed himself <lb/> he began to speak to his
+						Mother about it &amp; told her there <lb/> had happened an alteration with him
+						last Night <lb/> when she asked what way, he told her that our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
 						<note type="catchword">had</note>
 					</p>
-					<pb />
-					<p> had been very <add place="above">near</add> to him &amp; he had kept a band with him about every thing, &amp; our <roleName type="honorific">Sav<hi rend="superscript"
-							>r</hi></roleName> had forgiven him all &amp; would take him soon to himself. He also said: &quot;I gave myself quite anew to our <roleName type="honorific"
-							>Saviour</roleName>, &amp; he accepted me as his own Child, Believing his time would be short, he desired that his <roleName type="honorific">Srs</roleName> in the
-							<placeName>Choir House</placeName> might be sent for, to tell them how happy our <roleName type="honorific">Saviour</roleName> had made him, &amp; that he would soon take
-						him to himself to be happy &amp; to live with him forever. Since this time <name health="disease">he grew weaker so fast</name>, that one could see the time of his Departure
-						came on very quickly. Some Days before his going home, his Master came to see him, &amp; when he was going to leave him, he reached his hand to his Master &amp; thanked him for
-						all the love &amp; favours he had shewn to him, telling him he very likely might never see him any more in this World, &amp; so it came to pass, for on <date type="death"
-							when-iso="1772-12-29">Decr 29<hi rend="superscript">th</hi>, 1772</date> in the Moming his Soul took its Flight, to that God, who had created &amp; redeemed him &amp; made
-						him so happy by his precious Nearness, in the 16<hi rend="superscript">th</hi> Year of his Age. </p>
+					<pb/>
+					<p> had been very <add place="above">near</add> to him &amp; he had kept a band
+						with him <lb/> about every thing, &amp; our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> had forgiven him all &amp; <lb/>
+						would take him soon to himself. He also said: "I gave <lb/> myself quite anew to
+						our <roleName type="honorific">Saviour</roleName>, &amp; he accepted me as <lb/>
+						his own Child, Believing his time would be short, he <lb/> desired that his
+							<roleName type="honorific">Srs</roleName> in the <placeName>Choir
+							House</placeName> might be <lb/> sent for, to tell them how happy our
+							<roleName type="honorific">Saviour</roleName> had <lb/> made him, &amp; that
+						he would soon take him to himself <lb/> to be happy &amp; to live with him
+						forever. Since this <lb/> time <name health="disease">he grew weaker so
+							fast</name>, that one could see the <lb/> time of his Departure came on very
+						quickly. Some <lb/> Days before his going home, his Master came to <lb/> see him, &amp;
+						when he was going to leave him, he reached <lb/> his hand to his Master &amp;
+						thanked him for all the <lb/> love &amp; favours he had shewn to him, telling him: <lb/>
+						he very likely might never see him any more in this <lb/> World, &amp; so it came
+						to pass, for on <date when="1772-12-29" cert="high">Decr 29<hi rend="superscript">th</hi>, 1772</date> <lb/> in the Morning his Soul took
+						its Flight, to that <lb/> God, who had created &amp; redeemed him &amp; made him <lb/>
+						so happy by his precious Nearness, in the 16<hi rend="superscript">th</hi> <lb/>
+						Year of his Age. </p>
 				</div>
 			</div>
 		</body>

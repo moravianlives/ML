@@ -129,10 +129,10 @@
 		"schema": "http://schema.org/",
 		"xsd": "http://www.w3.org/2001/XMLSchema#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506",
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?rs_annotation_20200407132515876",
 	"@type": "oa:Annotation",
-	"dcterms:created": "2020-02-27T20:15:06.803Z",
-	"dcterms:issued": "2020-02-27T20:28:53.333Z",
+	"dcterms:created": "2020-04-07T17:25:15.876Z",
+	"dcterms:issued": "2020-04-07T18:01:39.800Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -144,7 +144,7 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506#Target",
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?rs_annotation_20200407132515876#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
 			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml",
@@ -158,14 +158,90 @@
 			"schema:softwareVersion": "1.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?person_annotation_20200227151506#Selector",
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?rs_annotation_20200407132515876#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/rs[2]"
 		}
 	},
 	"oa:hasBody": {
-		"@type": "cwrc:PersonalName",
+		"@type": "http://sparql.cwrc.ca/ontologies/cwrc#PersonalName",
 		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000544",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?place_annotation_20200407132815586",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-07T17:28:15.586Z",
+	"dcterms:issued": "2020-04-07T18:01:39.801Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?place_annotation_20200407132815586#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/charlesworth_james.xml?place_annotation_20200407132815586#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[6]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/England",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
@@ -288,25 +364,25 @@
 					<p> In June 1756, he with his wife went to the Synod at Berthelsdorf Tho' he was chiefly to the Service of the Cong<hi rend="superscript">ns</hi> in Yorkshire, yet he was also
 						engag'd in the Affairs of Ockbrook, Duckenfield, &amp; in sundry concerns of the Unity &amp; our Lord having bestow'd upon him particular Gifts &amp; Grace to his
 						Service, he remain'd active in all those matters.</p>
-					<p> In the Year 1757 he was appointed to be one of the Board of Administation of the Affairs of the Unity in England, &amp; was usefull therein, &amp; when the Oconomates Con<hi rend="superscript">fr</hi> was Settled, he was appointed </p>
+					<p> In the Year <date when-iso="1757">1757</date> he was appointed to be one of the <name office="administrator">Board of Administation of the Affairs of the Unity</name> in <placeName ref="http://dbpedia.org/resource/England" key="England" cert="high">England</placeName>, &amp; was usefull therein, &amp; when the Oconomates Con<hi rend="superscript">fr</hi> was Settled, he was appointed </p>
 				</div>
 				<div type="page" n="5">
 					<head type="page">5</head>
 					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-05.jpg"/>
-					<p> a member thereof &amp; continued as such till that Con<hi rend="superscript">fer</hi> ceas'd in the year 1769. Tho' his Talents in the Conducting the external <add place="above">affairs</add> were known &amp; priz'd by his B<hi rend="superscript">rn</hi> &amp; on that account He was constantly employ'd in that way, yet he
+					<p> a member thereof &amp; continued as such till that Con<hi rend="superscript">fer</hi> ceas'd in the year <date when-iso="1769">1769</date>. Tho' his Talents in the Conducting the external <add place="above">affairs</add> were known &amp; priz'd by his B<hi rend="superscript">rn</hi> &amp; on that account He was constantly employ'd in that way, yet he
 						also wish'd to be rather employ'd in the Internal Labour, &amp; often express'd his desire to be freed from all his External engagements. In consequence of this
-						his repeated Request, He was Released in 1763 from being immediately active in the Manufacture, tho' he remain'd the Counsellor in it till the year 1766; when it came
+						his repeated Request, He was <name event="religious">Released</name> in <date when-iso="1763">1763</date> from being immediately active in the Manufacture, tho' he remain'd the <name office="counsellor">Counsellor</name> in it till the year <date when-iso="1766">1766</date>; when it came
 						into another Channel.</p>
-					<p> Being Proprietor of the Estate, He frequently attended the Meetings of the Parish for conducting the Town's Busyness, &amp; by his prudent advice He gain'd the esteem
+					<p> Being Proprietor of the Estate, He frequently attended the <name event="religious">Meetings of the Parish</name> for conducting the Town's Busyness, &amp; by his prudent advice He gain'd the esteem
 						of the acting persons in the Parish &amp; was of Service in this point of view to the Settlement.</p>
-					<p> He went as Deputy of this Cong<hi rend="superscript">n</hi> to the Gen Synods at Marienborn in 1764 &amp; last Year, &amp; returned from the last very infirm, tho' his
+					<p> He went as <name office="deputy">Deputy of this Cong<hi rend="superscript">n </hi></name>to the <name event="religious">Gen Synods</name> at <placeName ref="mlpla000057" cert="high">Marienborn</placeName> in <date when-custom="1764">1764</date> &amp; <date>last Year</date>, &amp; returned from the last very <name health="disease">infirm</name>, tho' his
 						disorder w'd not permit him to go much about, yet he assisted in the Labour in the Cong<hi rend="superscript">n</hi> &amp; from this time, the publick Testimony of our
-						Savr &amp; his Suffrings &amp; the Discourses w<hi rend="superscript">ch</hi> he Deliver'd to the Cong<hi rend="superscript">n</hi> &amp; Choirs were particularly
+						<roleName type="honorific">Savr</roleName> &amp; his Suffrings &amp; the Discourses w<hi rend="superscript">ch</hi> he Deliver'd to the Cong<hi rend="superscript">n</hi> &amp; Choirs were particularly
 						Anointed, &amp; being delivered with warmth of heart were attended with Blessing. So that some B<hi rend="superscript">rn</hi> made for thence the Remark that they believed he
 							wo<hi rend="superscript">d</hi> not stay long in the Church below for he was preparing for the Church above. It was also observ'd in his Discourses &amp; Conversation,
 						the apprehensions He had of the dangerouse principle of Free thinking &amp; acting w<hi rend="superscript">ch</hi> had erept in amongst us, w<hi rend="superscript">ch</hi>
 						might be more hurtful to our Constitution, than any other difficulty we were sensible of</p>
-					<p> He had for many years past frequent Sicknesses, &amp; having a great portion of sensibility, when matters did not go well &amp; contrary to his hopes, his Body felt the effects
+					<p> He had for many years past frequent <name health="disease">Sicknesses</name>, &amp; having a great portion of sensibility, when matters did not go well &amp; contrary to his hopes, his Body felt the effects
 						thereof. He was of a thinking disposition, &amp; when he was shut up in himself, his </p>
 				</div>
 				<div type="page" n="6">
@@ -315,8 +391,8 @@
 					<p> inward Grief prey'd upon him, of w<hi rend="superscript">ch</hi> he was sensible &amp; wo<hi rend="superscript">d </hi>speak of at times with concern. All this seem'd
 						to impair his Body &amp; <hi rend="strikethrough">of the after land carnal which </hi> He often said &amp; wrote that his chief Busyness &amp; concern was now to he
 						prepar'd to leave this Body, &amp; to enter into the presence of his Lord.</p>
-					<p> Last spring He had a very severe attack of the stone Cholick of w<hi rend="superscript">ch</hi> He Recovr'd so as to be active in his Office, yet the Effects were Visible.
-						He had a second fitt of sickness with an Inflamation in his Face &amp; a violent pain in his Head by w<hi rend="superscript">ch</hi> he was confin'd to his Room ab<hi rend="superscript">t</hi> a fortnight, but was again so well Recover'd as to go about, but his Constitution was apparently weaken'd w<hi rend="superscript">ch</hi> rais'd the apprehensions of his going home of w<hi rend="superscript">ch</hi> he spoke frequent- ly with desire. He preached on the 15<hi rend="superscript">th</hi> to a very large Auditory with Life &amp; Energy, of the efficacious power in Jesus' Blood &amp; Death to make us New Creatures, and his last meeting kept in
+					<p> Last spring He had a <name health="recovered">very severe attack of the stone Cholick</name> of w<hi rend="superscript">ch</hi> He Recovr'd so as to be active in his Office, yet the Effects were Visible.
+						He had a second fitt of <name health="recovered">sickness with an Inflamation in his Face &amp; a violent pain in his Head</name> by w<hi rend="superscript">ch</hi> he was confin'd to his Room ab<hi rend="superscript">t</hi> a fortnight, but was again so well Recover'd as to go about, but his Constitution was apparently weaken'd w<hi rend="superscript">ch</hi> rais'd the apprehensions of his going home of w<hi rend="superscript">ch</hi> he spoke frequent- ly with desire. He preached on the 15<hi rend="superscript">th</hi> to a very large Auditory with Life &amp; Energy, of the efficacious power in <persName type="real" cert="high">Jesus</persName>' Blood &amp; Death to make us New Creatures, and his last meeting kept in
 						the Hall was a Discourse to the Cong<hi rend="superscript">n</hi> on the 16<hi rend="superscript">th</hi> for the Conclusion of the Cong<hi rend="superscript">n</hi> Day on the
 						W. W<hi rend="superscript">d </hi>"Shew forth his Salvation from Day to Day." which he eamestly Recomended to the Br<hi rend="superscript">n</hi> &amp; S<hi rend="superscript">rs</hi> to put in practice in Life &amp; Conversation,&amp; entreated our D<hi rend="superscript">r</hi> Lord, kneeling to happily effect it with each
 						&amp; the whole; this has prov'd his Valedictory discourse &amp; prayer for this Cong<hi rend="superscript">n</hi> &amp; the work of the Lord in general. He soon after had
@@ -329,8 +405,7 @@
 					<head type="page">7</head>
 					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_02_CharlesworthJames-07.jpg"/>
 					<p> we were still in hopes that by the discharge of the Abcess in his Back (w<hi rend="superscript">ch</hi> was pretty large) his Constitution might have been Reliev'd &amp;
-						he Restor'd to Health, but on the 29th ab<hi rend="superscript">t </hi> 2 in the Morning we observ'd an Alteration &amp; that the weight of his disorder was fallen
-						upon his Lungs, then it became evident that our gracious Lord intended to take him soon into his Joy, w<hi rend="superscript">ch</hi> he himself expect- ed wo<hi rend="superscript">d</hi> be accomplished by the sametime real moving, amidst his pain &amp; weakness. He spent his time in such a tender loving &amp; Paternal manner
+						he Restor'd to Health, but on the <date>29th</date> ab<hi rend="superscript">t </hi> 2 in the Morning we observ'd an Alteration &amp; that <name health="disease">the weight of his disorder was fallen upon his Lungs</name>, then it became evident that our gracious Lord intended to take him soon into his Joy, w<hi rend="superscript">ch</hi> he himself expect- ed wo<hi rend="superscript">d</hi> be accomplished by the sametime real moving, amidst his pain &amp; weakness. He spent his time in such a tender loving &amp; Paternal manner
 						towards all &amp; especially towards his dear wife &amp; Niece, &amp; those by orphans to whom he had been Guardian, &amp; in looking ardently to his faithful Lord in
 						expectation of the happy Moments quick approach; that it was truly edifying to all who came near him.</p>
 					<p> After 12 o Clock in the Night he ask'd what were the Texts for the Day, w<hi rend="superscript">ch</hi> being Read as follows, the W: W<hi rend="superscript">d</hi>.

@@ -498,6 +498,7 @@ body > div > div > head{
     margin-bottom: 0.5em;
     margin-top: 11px;
 }
+/* Testing to see whether I can hide the grey background block */
 body > div > div > div > head{
     display: block;
     padding-top: 14px;
@@ -508,6 +509,7 @@ body > div > div > div > head{
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 1em;
+
 }
 /*  testing dateline change from block to inline */
 div opener dateline{
@@ -857,6 +859,12 @@ p{
 pb{
     display: block;
 }
+
+pb:before{
+    content: "Page ";
+    font-weight: bold;
+}
+
 pb:after{
     content: attr(n);
     font-weight: bold;

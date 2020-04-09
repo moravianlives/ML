@@ -20,7 +20,7 @@
 TEI{
     margin: 10px 25px;
     font-family: Georgia, serif;
-    line-height: 1.5;
+    line-height: 1.9;
 }
 
 /*  added <ab> styling - same as <p> */
@@ -32,6 +32,7 @@ ab{
 abbr{
     display: inline;
 }
+
 add{
     display: inline;
     color: green;
@@ -42,6 +43,7 @@ add{
 add[place = "above"] {
     color: green;
     vertical-align: super;
+    font-size: smaller;
 }
 
 /*address {
@@ -208,6 +210,12 @@ epigraph > cit{
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
+
+/* indicating where a choice has been made from original to corrected spelling */
+choice {
+        text-decoration : underline;
+}
+
 classCode{
     display: block;
 }
@@ -238,7 +246,7 @@ creation{
 /* Testing change from block to inline for date */
 date{
     display: inline;
-    color: purple;
+    color: blue;
 }
 change > date,
 publicationStmt > date{
@@ -743,11 +751,22 @@ mentioned{
 milestone{
     display: none;
 }
-/* IF WE WANT TO FIND AN OFFSET COLOR FOR SOME OF THE TAGGED NAMES */
-/*  name{ 
+/* IF WE WANT TO FIND AN OFFSET COLOR FOR SOME OF THE TAGGED NAMES 
+name{ 
     display: inline;
-    color: purple;  testing adding color for names in documents 
+    color: purple;    testing adding color for names in documents 
 }*/
+
+name[occupation] {
+    display: inline;
+    color: orange;
+}
+
+name[health] {
+    display: inline;
+    color: purple;
+}
+
 note{
     display: block;
     color: #999;
@@ -772,6 +791,7 @@ opener note:before{
 opener note[type]:before{
     content: '';
 }
+
 note[n]:before{
     content: attr(n) " ";
     vertical-align: super;

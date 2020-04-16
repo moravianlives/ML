@@ -20,7 +20,7 @@
 TEI{
     margin: 10px 25px;
     font-family: Georgia, serif;
-    line-height: 1.9;
+    line-height: 1.9em;
 }
 
 /*  added <ab> styling - same as <p> */
@@ -35,15 +35,16 @@ abbr{
 
 add{
     display: inline;
-    color: green;
     background-color: inherit;
     text-decoration: underline;
 }
 
+/* Changed color of added text from green to black */
 add[place = "above"] {
-    color: green;
+    color: #000;
     vertical-align: super;
     font-size: smaller;
+    line-height: 0;
 }
 
 /*address {
@@ -290,6 +291,7 @@ body > div[type = "letter"]{
 div[type = "poem"]{
     counter-reset: line;
 }
+
 div1{
     display: block;
     margin-bottom: 1em;
@@ -594,6 +596,7 @@ hi[rend = "superscript"]{
     display: inline;
     vertical-align: super;
     font-size: smaller;
+    line-height: 0;
 }
 
 hi[rend = "sub"]{
@@ -759,15 +762,21 @@ name{
     color: purple;    testing adding color for names in documents 
 }*/
 
-name[occupation] {
+name[event] {
     display: inline;
-    color: orange;
+    color: green;
 }
 
 name[health] {
     display: inline;
     color: purple;
 }
+
+name[occupation] {
+    display: inline;
+    color: orange;
+}
+
 
 note{
     display: block;
@@ -852,14 +861,17 @@ orgName{
     display: inline;
     color: red;
 }
+
 p{
     display: block;
     margin-bottom: 0.5em;
+    line-height: 2em;
 }
 pb{
     display: block;
 }
 
+/* Trying to add "Page" before page # */
 pb:before{
     content: "Page ";
     font-weight: bold;

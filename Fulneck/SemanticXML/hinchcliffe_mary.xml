@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader>
-		<fileDesc>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader><fileDesc>
 			<titleStmt>
 				<title>Mary Hinchcliffe: Memoir</title>
 				<funder>The Moravian Lives Project</funder>
@@ -100,117 +97,1063 @@
 					<msIdentifier>
 						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_3_27_HinchcliffeMary">Mary Hinchcliffe</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-01.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-02.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
-		</fileDesc>
-		<profileDesc>
+		</fileDesc><xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939966",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.966Z",
+	"dcterms:issued": "2020-04-17T03:40:13.103Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939966#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939966#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000574",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939968",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.968Z",
+	"dcterms:issued": "2020-04-17T03:40:13.105Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939968#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939968#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1770-08-29"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.969Z",
+	"dcterms:issued": "2020-04-17T03:40:13.105Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q7998083",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.969Z",
+	"dcterms:issued": "2020-04-17T03:40:13.106Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939969#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Bradford",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939970",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.970Z",
+	"dcterms:issued": "2020-04-17T03:40:13.106Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939970#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939970#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q163",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939970",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.970Z",
+	"dcterms:issued": "2020-04-17T03:40:13.106Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939970#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939970#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1718-08"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.971Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1745"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.971Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939971#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1749"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939972",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.972Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939972#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939972#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/add[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Pudsey",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939973",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.973Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939973#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?place_annotation_20200416233939973#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Fulneck_Moravian_Settlement,_Pudsey",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.974Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[5]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1758"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.974Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?date_annotation_20200416233939974#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[6]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1763-09"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939975",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-17T03:39:39.975Z",
+	"dcterms:issued": "2020-04-17T03:40:13.107Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939975#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/hinchcliffe_mary.xml?person_annotation_20200416233939975#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://moravianlives.bucknell.edu/data/personography.html#mlper000574",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
-					<persName ref="#">Mary Hinchcliffe</persName>
+					<persName ref="#mlper000574">Mary Hinchcliffe</persName>
 				</person>
 			</particDesc>
 			<langUsage>
 				<language ident="en">English</language>
 			</langUsage>
-		</profileDesc>
-		<revisionDesc>
+		</profileDesc><revisionDesc>
 			<change when-iso="2019-11-10" who="#cpirmann">Corrected for structure</change>
 			<change>Created TEI file</change>
-		</revisionDesc>
-	</teiHeader>
+		</revisionDesc></teiHeader>
 	<text type="memoir">
 		<body xml:lang="en">
 			<div type="memoir">
 				<head>Mary Hinchcliffe</head>
 				<div type="page" n="1">
-					<head type="page">1</head>
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-01.jpg" />
-					<p>
-						
-							The Course of Life of the 
-							Married Sister Mary Hinchcliff
-							who went happily to our Sav<hi rend="superscript">r</hi>: on the 29<hi rend="superscript">th</hi> Aug<hi rend="superscript">st</hi> 1770
-							She was born at Wibsey in the Parish of
-							Bradford Yorkshire in August 1718,
-							<del>and</del> was brought up in the Presbyterian
-							Religion and in her Youth behaved order
-							ly, and living with her Uncle and aunt
-							Pollard when they began to love the Br<hi rend="superscript">n</hi>
-							She also came among them &amp; was reciev&apos;d
-							into Society in 1745: but afterwards
-							absented herself for a while till after she
-							had married B<hi rend="superscript">r</hi> John Hinchcliff in 1749,
-							<del>after a while</del>
-								<add place="above">when</add> she came again with her
-							Husband to the Meetings of the Brethren
-							and since has gone on as a loving Sinner-
-							-Heart. She was reciev&apos;d into the <add place="above">Pudsey</add> Congreg<hi rend="superscript">n</hi>
-							(at Fullneck) in 1758 and partook the
-							1<hi rend="superscript">st</hi> Time of the Holy Sacrament with the 
-							Congreg<hi rend="superscript">n</hi> in September 1763. Our Sav<hi rend="superscript">r</hi>
-							blessd her Marriage with one Son who is
-							yet with his Father and a Member of our
-							Society, and one Daugh<hi rend="superscript">r</hi> who is already
-							gone home to the Lord. B<hi rend="superscript">r</hi> &amp; Sis<hi rend="superscript">r</hi> Greening
-							say: that since they have known Sis<hi rend="superscript">r</hi>
-						
+					
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-01.jpg"/>
+					<p> The Course of Life of the <lb/> Married <roleName type="honorific">Sister</roleName> <persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000574" key="Mary Hinchcliff" cert="high" type="real">Mary Hinchcliff</persName> <lb/> who went happily to
+						our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>: on the <date when="1770-08-29" cert="high">29<hi rend="superscript">th</hi> Aug<hi rend="superscript">st</hi> 1770</date> <lb/> She was <name event="birth">born</name> at
+						<placeName ref="http://www.wikidata.org/entity/Q7998083" key="Wibsey" cert="high">Wibsey</placeName> in the Parish of <lb/> <placeName ref="http://dbpedia.org/resource/Bradford" key="Bradford" cert="high">Bradford</placeName> <placeName ref="http://www.wikidata.org/entity/Q163" key="Yorkshire" cert="high">Yorkshire</placeName> in <date when="1718-08" cert="high">August 1718</date>, <lb/>
+						<del>and</del> was brought up in the <orgName religion="Presbyterian">Presbyterian</orgName> <lb/> Religion and in her
+						Youth behaved order <lb/>-ly, and living with her Uncle and aunt <lb/>
+						<persName cert="high" type="real">Pollard</persName> when they began to love the Br<hi rend="superscript">n</hi>
+						<lb/> She also came among them &amp; was reciev'd <lb/> into <orgName en="congregation">Society</orgName> in
+						<date when="1745" cert="high">1745</date>: but afterwards <lb/> absented herself for a while till after she <lb/>
+						had <name event="marriage">married</name> <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> <persName cert="high" type="real">John Hinchcliff</persName> in <date when="1749" cert="high">1749</date>, <lb/>
+						<del>after a while</del>
+						<add place="above">when</add> she came again with her <lb/> Husband to the
+						Meetings of the <orgName en="congregation">Brethren</orgName> <lb/> and since has gone on as a loving Sinner-
+						<lb/> -Heart. She was reciev'd into the <add place="above"><placeName ref="http://dbpedia.org/resource/Pudsey" key="Pudsey" cert="high">Pudsey</placeName></add>
+							Congreg<hi rend="superscript">n</hi>
+						<lb/> (at <placeName ref="http://dbpedia.org/resource/Fulneck_Moravian_Settlement,_Pudsey" key="Fulneck Moravian Settlement, Pudsey" cert="high">Fullneck</placeName>) in <date when="1758" cert="high">1758</date> and partook the <lb/> 1<hi rend="superscript">st</hi> Time of the <name event="sacrament">Holy Sacrament</name> with the <lb/> <orgName en="congregation">Congreg<hi rend="superscript">n</hi></orgName> in <date when="1763-09" cert="high">September 1763</date>. Our Sav<hi rend="superscript">r</hi>
+						<lb/> blessd her Marriage with one Son who is <lb/> yet with his Father and
+						a Member of our <lb/> <orgName en="congregation">Society</orgName>, and one Daugh<hi rend="superscript">r</hi>
+						who is already <lb/> gone home to the <roleName type="honorific">Lord</roleName>. <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> &amp; Sis<hi rend="superscript">r</hi>
+						<lb/> <persName cert="high" type="real">Greening</persName> say: that since they have known Sis<hi rend="superscript">r</hi>
 					</p>
 				</div>
 				<div type="page" n="2">
-					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-02.jpg" />
-					<p>
-						
-							Hinchcliff they observd in her something
-							of the character which the Holy Scriptures
-							give us of the Mother of our Lord: that is
-							she was poor in her own Eyes, quiet and 
-							yet hearty. When at the late settling of the
-							Helpers Conference in this Congreg<hi rend="superscript">n</hi> our 
-							Sav<hi rend="superscript">r</hi> directed that she should be a Member
-							thereof, it had a very blessed Effect on her
-							Heart, she expressd herself about it with Love
-							Shames &amp; counted herself very poor &amp; unfit.
-							The Sunday before her Departure having
-							been at the Meetings with her Husband she
-							afterwards <add place="above">was overheard</add> comforting a dejected Sis<hi rend="superscript">r</hi> very
-							heartily &amp; lovingly on the Tuesday B<hi rend="superscript">r</hi> Green
-							ing providentially calld at her House and 
-							B<hi rend="superscript">r</hi> Hinchcliff being out on his Business, she
-							sat down and convers&apos;d awhile very heartily 
-							about her own <add place="above">inward</add> poverty, expressing at the same
-							time (tho indirectly) her Love towards our
-							dear Sav<hi rend="superscript">r</hi>, <add place="above">&amp; more directly</add> her Love to her Husband, her
-							care &amp; concern that her Sons Soul might
-							prosper, and that he might be preserved for
-							the Lord. She then appeard pretty well in
-							Health as she was also the next Day till
-							afternoon, when she complain&apos;d of her Head
-							&amp; soon after sitting down was gone to her
-							Lord in a minute of two in a quiet and 
-						
-					</p>
-					<cb />
-					<p>
-						
-							easy Manner (with scarce any Struggle
-							of the Body) in the 52<hi rend="superscript">d</hi> Year of her Age. 
-							Her Corpse had afterwards a lovely aspect
-							as teh Countenance of a reconciled comforted Sinner which had placidly slept
-							in the Lord. She was also a most loving
-							Daughter in Law to B<hi rend="superscript">r</hi> Hinchcliffs Father
-							&amp; Mother who are both very ancient &amp; could 
-							not enough express how kind &amp; affectionate
-							she had been to them, and who have therefore
-							a real Loss in her Departure, as well as
-							other necessitous People, whom she made 
-							it her Pleasure to help. For the Lord had
-							given her a loving compassionate Heart.
-						
-					</p>
+					
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_27_HinchcliffeMary-02.jpg"/>
+					<p> <persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000574" key="Hinchcliff" cert="high" type="real">Hinchcliff</persName> they observd in her something <lb/> of the character which the Holy Scriptures
+						<lb/> give us of the Mother of our <roleName type="honorific">Lord</roleName>: that is <lb/> she was poor in her
+						own Eyes, quiet and <lb/> yet hearty. When at the late settling of the <lb/>
+						<name event="religious">Helpers Conference</name> in this <orgName en="congregation">Congreg<hi rend="superscript">n</hi></orgName> our <lb/>
+							<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> directed that she should be a Member
+						<lb/> thereof, it had a very blessed Effect on her <lb/> Heart, she expressd
+						herself about it with Love <lb/> Shames &amp; counted herself very poor
+						&amp; unfit. <lb/> The Sunday before her Departure having <lb/> been at the
+						Meetings with her Husband she <lb/> afterwards <add place="above">was
+							overheard</add> comforting a dejected <roleName type="honorific">Sis<hi rend="superscript">r</hi></roleName> very <lb/> heartily &amp; lovingly on the Tuesday <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> <persName cert="high" type="real">Green
+<lb/>
+-ing</persName> providentially calld at her House and <lb/>
+							<roleName type="honorific">B<hi rend="superscript">r</hi></roleName> <persName cert="high" type="real">Hinchcliff</persName> being out on his Business, she
+						<lb/> sat down and convers'd awhile very heartily <lb/> about her own
+							<add place="above">inward</add> poverty, expressing at the same <lb/>
+						time (tho indirectly) her Love towards our <lb/> dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, <add place="above">&amp; more directly</add>
+						her Love to her Husband, her <lb/> care &amp; concern that her Sons Soul
+						might <lb/> prosper, and that he might be preserved for <lb/> the <roleName type="honorific">Lord</roleName>. She
+						then appeard pretty well in <lb/> Health as she was also the next Day till
+						<lb/> afternoon, when she <name health="disease">complain'd of her Head</name> <lb/> &amp; soon after
+						sitting down was <name event="death">gone</name> to her <lb/> <roleName type="honorific">Lord</roleName> in a minute of two in a quiet and </p>
+					<cb/>
+					<p> easy Manner (with scarce any Struggle <lb/> of the Body) in the 52<hi rend="superscript">d</hi> Year of her Age. <lb/> Her Corpse had afterwards a lovely aspect
+						<lb/> as the Countenance of a reconciled com- <lb/>forted Sinner which had
+						placidly slept <lb/> in the <roleName type="honorific">Lord</roleName>. She was also a most loving <lb/> Daughter
+						in Law to <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> <persName cert="high" type="real">Hinchcliffs</persName> Father <lb/> &amp;
+						Mother who are both very ancient &amp; could <lb/> not enough express how
+						kind &amp; affectionate <lb/> she had been to them, and who have therefore
+						<lb/> a real Loss in her Departure, as well as <lb/> other necessitous
+						People, whom she made <lb/> it her Pleasure to help. For the <roleName type="honorific">Lord</roleName> had <lb/>
+						given her a loving compassionate Heart. </p>
 				</div>
 			</div>
 		</body>

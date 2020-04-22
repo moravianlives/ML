@@ -20,7 +20,7 @@
 TEI{
     margin: 10px 25px;
     font-family: Georgia, serif;
-    line-height: 1.5;
+    line-height: 1.9em;
 }
 
 /*  added <ab> styling - same as <p> */
@@ -32,12 +32,21 @@ ab{
 abbr{
     display: inline;
 }
+
 add{
     display: inline;
-    color: green;
     background-color: inherit;
     text-decoration: underline;
 }
+
+/* Changed color of added text from green to black */
+add[place = "above"] {
+    color: #000;
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 0;
+}
+
 /*address {
     display : block;
     margin-top : 2em;
@@ -202,6 +211,12 @@ epigraph > cit{
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
+
+/* indicating where a choice has been made from original to corrected spelling */
+choice {
+        text-decoration : underline;
+}
+
 classCode{
     display: block;
 }
@@ -232,7 +247,7 @@ creation{
 /* Testing change from block to inline for date */
 date{
     display: inline;
-    color: purple;
+    color: blue;
 }
 change > date,
 publicationStmt > date{
@@ -276,6 +291,7 @@ body > div[type = "letter"]{
 div[type = "poem"]{
     counter-reset: line;
 }
+
 div1{
     display: block;
     margin-bottom: 1em;
@@ -484,6 +500,7 @@ body > div > div > head{
     margin-bottom: 0.5em;
     margin-top: 11px;
 }
+/* Testing to see whether I can hide the grey background block */
 body > div > div > div > head{
     display: block;
     padding-top: 14px;
@@ -494,6 +511,7 @@ body > div > div > div > head{
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 1em;
+
 }
 /*  testing dateline change from block to inline */
 div opener dateline{
@@ -578,6 +596,7 @@ hi[rend = "superscript"]{
     display: inline;
     vertical-align: super;
     font-size: smaller;
+    line-height: 0;
 }
 
 hi[rend = "sub"]{
@@ -737,11 +756,28 @@ mentioned{
 milestone{
     display: none;
 }
-/* IF WE WANT TO FIND AN OFFSET COLOR FOR SOME OF THE TAGGED NAMES */
-/*  name{ 
+/* IF WE WANT TO FIND AN OFFSET COLOR FOR SOME OF THE TAGGED NAMES 
+name{ 
     display: inline;
-    color: purple;  testing adding color for names in documents 
+    color: purple;    testing adding color for names in documents 
 }*/
+
+name[event] {
+    display: inline;
+    color: green;
+}
+
+name[health] {
+    display: inline;
+    color: purple;
+}
+
+name[occupation] {
+    display: inline;
+    color: orange;
+}
+
+
 note{
     display: block;
     color: #999;
@@ -766,6 +802,7 @@ opener note:before{
 opener note[type]:before{
     content: '';
 }
+
 note[n]:before{
     content: attr(n) " ";
     vertical-align: super;
@@ -815,6 +852,8 @@ opener p{
 }
 orig{
     display: inline;
+    color: gray;
+    background-color: inherit;
 }
 
 /* Testing color for entity tags */
@@ -822,13 +861,22 @@ orgName{
     display: inline;
     color: red;
 }
+
 p{
     display: block;
     margin-bottom: 0.5em;
+    line-height: 2em;
 }
 pb{
     display: block;
 }
+
+/* Trying to add "Page" before page # */
+pb:before{
+    content: "Page ";
+    font-weight: bold;
+}
+
 pb:after{
     content: attr(n);
     font-weight: bold;

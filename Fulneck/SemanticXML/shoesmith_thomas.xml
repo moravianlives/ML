@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,14 +98,319 @@
 					<msIdentifier>
 						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_3_20_ShoesmithThomas">Thomas Shoesmith</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-02.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-03.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-06.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-02.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-03.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-06.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?place_annotation_20200408102018746",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-08T14:20:18.746Z",
+	"dcterms:issued": "2020-04-08T14:32:59.949Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?place_annotation_20200408102018746#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?place_annotation_20200408102018746#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Norwood_Green,_West_Yorkshire",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?person_annotation_20200408102022054",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-08T14:20:22.054Z",
+	"dcterms:issued": "2020-04-08T14:32:59.952Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?person_annotation_20200408102022054#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?person_annotation_20200408102022054#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "mlper000271",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?date_annotation_20200408102303098",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-08T14:23:03.098Z",
+	"dcterms:issued": "2020-04-08T14:32:59.952Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?date_annotation_20200408102303098#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?date_annotation_20200408102303098#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1770-07-24"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?org_annotation_20200408102423036",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-04-08T14:24:23.036Z",
+	"dcterms:issued": "2020-04-08T14:32:59.953Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?org_annotation_20200408102423036#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/shoesmith_thomas.xml?org_annotation_20200408102423036#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/orgName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:Organization",
+		"@id": "http://www.wikidata.org/entity/Q82708",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Thomas Shoesmith</persName>
@@ -128,27 +431,30 @@
 				<head>Thomas Shoesmith</head>
 				<div type="page" n="1">
 					<head type="page">1</head>
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-02.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-02.jpg"/>
 					<p>
 						
+
 							The Course of Life
-							of the married Brother Tho<hi rend="superscript">s</hi>. Shoesmith
-							whose Remains were inter&apos;d July 24 1770
+							of the married Brother <persName ref="mlper000271" cert="high" type="real">Tho<hi rend="superscript">s</hi>. Shoesmith</persName>
+							whose Remains were inter'd <date when="1770-07-24" cert="high">July 24 1770</date>
+
 						
 					</p>
 					<p>
 						
-							He was born Febr 20 1741 in Norwood Green
+
+							He was born Febr 20 1741 in <placeName ref="http://dbpedia.org/resource/Norwood_Green,_West_Yorkshire" key="Norwood Green, West Yorkshire" cert="high">Norwood Green</placeName>
 							in the Parish of Halifax Yorkshire; and
-							baptizd in the Church of England His Parents
+							baptizd in the <orgName ref="http://www.wikidata.org/entity/Q82708" key="Church of England" religion="Anglican" cert="high">Church of England</orgName> His Parents
 							being some of the first Yorkshire People that
-							adher&apos;d to the Breth<hi rend="superscript">n</hi> perciev&apos;d in his Boys years
+							adher'd to the Breth<hi rend="superscript">n</hi> perciev'd in his Boys years
 							that he was often much drawn by our dearest
 							Saviour and he knew it timerself but continually resisted the Grace offerd unto him, and
-							even hinder&apos;d his B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">rs</hi> by his bad Course.
+							even hinder'd his B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">rs</hi> by his bad Course.
 							He did not like to go to the Meetings and would
-							have even hinder&apos;d his Parents, for which Purpose once, <add place="above">when</add> he was about 14 Years of Age, he
-							contriv&apos;d to behave very badly while they
+							have even hinder'd his Parents, for which Purpose once, <add place="above">when</add> he was about 14 Years of Age, he
+							contriv'd to behave very badly while they
 							were gone to the Meetings at Fullneck that
 							they might fear to go another Time, but that
 							Night he could not sleep till after Midnight
@@ -158,17 +464,19 @@
 							was yet awake. This caused him to alter his
 							Behaviour to an orderly but dejected Course.
 							When he was about 17 he obtained Leave to live
+
 							in the Course House where he continued 4
 						
 					</p>
 				</div>
 				<div type="page" n="2">
 					<head type="page">2</head>
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-03.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-03.jpg"/>
 					<p>
 						
+
 							or 5 Years, at first he was therein an hopefull
-							Youth &amp; was soon reciev&apos;d into the Congregatn
+							Youth &amp; was soon reciev'd into the Congregatn
 							but after a while he became refractory and
 							so very high minded that he lost his Senses
 							and for some Time it become needfull to keep
@@ -180,6 +488,7 @@
 							unruly as to shew a Disposition to beat his
 							own Father. Thus it became unavoidable
 							that he must leave his Fathers House and
+
 							seek a Place for himself. He then boarded
 							for some Time with a relation and went on
 							in the Worlds bad Ways, but the Convictions of
@@ -189,15 +498,15 @@
 							then went to live in Leeds where he listed for a
 							Soldier, but soon repented it and was got free by
 							his Father, &amp; soon listed again &amp; repented again
-							but was then oblig&apos;d to remain a Soldier about
-							3 Months, tho&apos; very miserable &amp; much shock&apos;d at
+							but was then oblig'd to remain a Soldier about
+							3 Months, tho' very miserable &amp; much shock'd at
 							the bad actions of his Comerades, till the Soldiers
 							finding him unfit for their Purpose, gave him
 							his Distrarge in London. A Bro<hi rend="superscript">r</hi> pitying him
 							lent him Money to return <add place="above">to</add> his Father and he
 						
 					</p>
-					<cb />
+					<cb/>
 					<p>
 						
 							came to him sickly &amp; under Convictions. After
@@ -211,16 +520,16 @@
 							broke out in a very disagreable Manner when
 							contradicted the otherwise he kept to his Work &amp;
 							went on orderly. As to his Heart &amp; Conscience he
-							constantly shewd &amp; express&apos;d himself self condemnd
+							constantly shewd &amp; express'd himself self condemnd
 							dejected &amp; reserved. When his impending Disso
 							lution began to appear this Spring, by plain
 							Tokens of a Consumption he could not bear to 
 							hear any Thing of it. The many Mention stirring up an Enmity in him till about May 20<hi rend="superscript">th</hi>
 							one Night he got a gracious Look from his
 							mercifull Sav<hi rend="superscript">r</hi> whereby he was quite alterd.
-							believ&apos;d thenceforward that our Lord would take
+							believ'd thenceforward that our Lord would take
 							him in Mercy, became genuinely openhearted
-							(which had been hitherto wanting) confess&apos;d
+							(which had been hitherto wanting) confess'd
 							that Pride &amp; fleshly Lusts had been the Cause
 							of all his Deviations, &amp; said: the Enmity of ones
 							own Heart is much worse to bear than <add place="above">all</add> bodily
@@ -234,7 +543,7 @@
 				</div>
 				<div type="page" n="3">
 					<head type="page">3</head>
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-06.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_20_ShoesmithThomas-06.jpg"/>
 					<p>
 						
 							died for him, whom he could now look on as his
@@ -242,10 +551,10 @@
 							bel against our Sav<hi rend="superscript">r</hi> but now He will have
 							Mercy on me and I want to go to him this very
 							1/4 of hour if it might be while you are here, he
-							mention&apos;d in a contrite Manner his own bad behaviour at the Time of his Bro<hi rend="superscript">r</hi> Stephens last
+							mention'd in a contrite Manner his own bad behaviour at the Time of his Bro<hi rend="superscript">r</hi> Stephens last
 							Sickness, and also to his own Wife at different
 							Times. On July 16<hi rend="superscript">th</hi> His Head continually catchd
-							as convuls&apos;d in he often gaspd for Breath, and
+							as convuls'd in he often gaspd for Breath, and
 							looked ghastly as a dying Man: yet often repeated
 							very Sweetly: Dearest Sav<hi rend="superscript">r</hi> come &amp; fetch me! 
 							Dearest Lamb! my Saviour! my dear Lamb!

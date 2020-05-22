@@ -1,5 +1,6 @@
-<?xml-model href="../../TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="../../TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -40,8 +41,13 @@
             </respStmt>
             <respStmt>
                <persName xml:id="jhom">Jess Hom</persName>
-               <orgName>Bucknell University, 2018-Present</orgName>
-               <resp>Research Assistant and encoder</resp>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="mmcmullen">Morgan McMullen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2019-2020</resp>
             </respStmt>
             <respStmt>
                <persName xml:id="mgruner">Marita Gruner</persName>
@@ -64,8 +70,13 @@
                <resp>Transkribus, Text Encoding Specialist</resp>
             </respStmt>
             <respStmt>
+               <persName xml:id="bking">Brian King</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Consultant, Machine Learning</resp>
+            </respStmt>
+            <respStmt>
                <persName xml:id="bacharya">Bhagawat Acharya</persName>
-               <orgName>Bucknell Univesrity</orgName>
+               <orgName>Bucknell University</orgName>
                <resp>Research Assistant</resp>
             </respStmt>
          </titleStmt>
@@ -86,27 +97,25 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <msDesc>
-               <msIdentifier>
-                  <repository>Repository Name</repository>
-                  <msName type="memoir" ana="#">Name</msName>
-                  <!-- <msName facs="http://moravianlives.bucknell.edu/##-01.jpg" />
-                  <msName facs="http://moravianlives.bucknell.edu/##-02.jpg" />
-                  <msName facs="http://moravianlives.bucknell.edu/##-03.jpg" />-->
-               </msIdentifier>
-            </msDesc>
+            <p>Memoirs from the Fulneck Archive</p>
          </sourceDesc>
       </fileDesc>
-      <revisionDesc>
-         <change when="2019-06-10" who="#JAKA1">Updated header</change>
-      </revisionDesc>
+      <profileDesc>
+         <particDesc>
+            <person role="subject">
+               <persName ref="#">[NAME]</persName>
+            </person>
+         </particDesc>
+         <langUsage>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
    </teiHeader>
    <text type="memoir">
       <body xml:lang="en">
          <div type="memoir">
             <head>name</head>
             <div type="page" n="1">
-               <head type="page">1</head>
                <pb n="1" facs="url" />
                <p>PAGE TEXT HERE</p>
             </div>

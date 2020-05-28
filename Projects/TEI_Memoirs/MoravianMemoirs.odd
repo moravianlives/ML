@@ -150,6 +150,7 @@
                 <valList mode="add" type="semi">
                   <valItem ident="baptism" sameAs="taufe" />
                   <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="awakening" />
                   <valItem ident="conversion" sameAs="bekehrung" />
                   <valItem ident="death" sameAs="tod" />
                   <valItem ident="draw lot" sameAs="losen" />
@@ -159,10 +160,18 @@
                   <valItem ident="interment" />
                   <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
+          
+
+
           <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -572,6 +581,33 @@
               <attDef ident="typeGerman" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="ehrend" sameAs="honorific"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- Creating event types for personography -->
+          <elementSpec ident="event" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="baptism" />
+                  <valItem ident="birth" />
+                  <valItem ident="awakening" />
+                  <valItem ident="conversion" />
+                  <valItem ident="death" />
+                  <valItem ident="draw lot" />
+                  <valItem ident="marriage" />
+                  <valItem ident="reception" />
+                  <valItem ident="sacrament" />
+                  <valItem ident="interment" />
+                  <valItem ident="communion"/>
+                  <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="exclusion" />
+                  <valItem ident="expulsion" />
                 </valList>
               </attDef>
             </attList>

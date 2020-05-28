@@ -388,13 +388,12 @@
                   <date type="birth" when-iso="1731-02-21">21 February, 1731</date>
                   <!-- need to include attribution of above dates (first 2 are YF doc; 3rd is memoir) -->
                   <placeName>Wortley Parish of Leeds</placeName>
-                  <!-- how do we encode the above, with two place names? do we just encode Leeds? -->
+                  <!-- needs placeID, or two place IDs? how do we handle place names that are like the above? -->
                </birth>
                <death>
                   <date type="death" when-iso="1765-11-30">30 November, 1765</date>
                   <placeName ref="#mlpla000063">Ockbrook</placeName>
                </death>
-               <occupation>stockiner</occupation>
                <event type="baptism">
                   <desc>
                      <placeName>St Bartholomew's Church Armley</placeName>
@@ -412,14 +411,14 @@
                </event>
                <event type="reception" when-iso="1757-04-27">
                   <desc> received congregation <placeName>Pudsey in Fulneck</placeName>
-                    <!-- needs placeID -->
+                    <!-- needs placeID-->
                   </desc>
                </event>
                <event type="entrance" when-iso="1758-01">
                   <desc> entered sisters' house <placeName ref="mlpla000041">Gomersal</placeName>
                   </desc>
                </event>
-               <!-- Diane question: is this event type (entrance) okay to add? -->
+               <!-- Diane questions: is this event type (entrance) okay to add? also is there a way to get the options for type here to pop up in a menu?-->
                <event type="entrance" when-iso="1760-04-10">
                   <desc> entered sisters' house <placeName ref="mlpla000063">Ockbrook</placeName>
                   </desc>
@@ -429,11 +428,12 @@
                      <placeName ref="#mlpla000063">Ockbrook</placeName>
                   </desc>
                </event>
-               <event when-iso="07">
+               <event type="reception" when-iso="07">
                   <!-- Only date is July -->
                   <desc> received as acoluth </desc>
                </event>
                <occupation from="1744" to="1750" cert="medium">apprenticeship</occupation>
+               <occupation>stockiner</occupation>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/62</bibl>
                <note>(P/G/O)+^WILSON, Elizabeth (Betty) (1731-1765) b 22.02.1730 (OS) / 05.03.1731 (NS) Wortley Parish of Leeds occupation: stockiner reception: baptized St Bartholomew’s Church Armley
@@ -473,6 +473,7 @@
                   </desc>
                </event>
                <event type="sacrament" when-iso="1741">
+                  <!-- does this event type need a description in the <desc> field beyond the location? -->
                   <desc>
                      <placeName ref="#mlpla000014">Hernnhaag</placeName>
                   </desc>
@@ -491,6 +492,7 @@
                   </desc>
                </event>
                <event when-iso="1747-07-04">
+                  <!-- should we establish an event type for blessings? -->
                   <desc> blessed as a deaconess <placeName ref="#mlpla000014">Hernnhaag</placeName>
                   </desc>
                </event>
@@ -506,13 +508,13 @@
                   <desc> arrived <placeName ref="#mlpla000001">Herrnhut</placeName>
                   </desc>
                </event>
-               <event when-iso="1743-06-23">
+               <event type="reception" when-iso="1743-06-23">
                   <desc> received as acoluth <placeName ref="mlpla000057">Marienborn</placeName>
-                     <!-- should this be event type reception? -->
                   </desc>
                </event>
                <event when-iso="1734">
                   <desc> Father died </desc>
+                  <!--Katie question: are we recording in the personography family events such as deaths that are not listed in the YF doc? if so, should this have event type=death? -->
                </event>
                <residence from="1734"><placeName ref="#mlpla000026">Berthelsdorf</placeName></residence>
                <residence><placeName ref="#mlpla000053">Lobenstein</placeName></residence>
@@ -559,10 +561,10 @@
                <birth>
                   <date type="birth" when-iso="1734-08-12">12 August, 1734</date>
                   <date type="birth" calendar="Gregorian" when-iso="1734-12-12">12 December, 1734</date>
-                  <!-- first date from YF doc, second date from memoir -->
+                  <!-- first date from YF doc, second date from memoir. Can ask Sr. Hillary. Also suggest putting in notes and/or attribution statement when there is conflicting info like this between YF doc and memoir.-->
                   <placeName>Rastrick Parish of Halifax</placeName>
                   <placeName>Barksland in the Parish of Elland</placeName>
-                  <!-- first place from YF doc, second place from memoir -->
+                  <!-- first place from YF doc, second place from memoir. need placeIDs -->
                </birth>
                <death>
                   <date type="death" when-iso="1754-12-25">25 December, 1754</date>
@@ -663,6 +665,7 @@
                <education when-iso="1748">girls' school <placeName>Row Head</placeName></education>
               <!-- need placeID -->
                <residence from="1740" to="1758"><placeName>Hartshead</placeName></residence>
+               <!-- need place ID -->
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/19</bibl>
                <bibl type="memoir">Ful/3/55</bibl>
@@ -734,6 +737,7 @@
                   </desc>
                </event>
                <event when-iso="1755-04-19">
+                  <!-- is this actually an event? or some other descriptive element? -->
                   <desc> founder member Fulneck congregation <placeName ref="#mlpla000003">Fulneck</placeName>
                   </desc>
                </event>

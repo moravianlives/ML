@@ -383,12 +383,10 @@
                   <surname type="birth">Wilson</surname>
                </persName>
                <birth>
-                  <date type="birth" calendar="Julian" when-iso="1730-02-22">22 February, 1730</date>
-                  <date type="birth" calendar="Gregorian" when-iso="1731-03-05">5 March, 1731</date>
-                  <date type="birth" when-iso="1731-02-21">21 February, 1731</date>
-                  <!-- need to include attribution of above dates (first 2 are YF doc; 3rd is memoir) -->
-                  <placeName>Wortley Parish of Leeds</placeName>
-                  <!-- needs placeID, or two place IDs? how do we handle place names that are like the above? -->
+                  <date type="birth" calendar="Julian" when-iso="1730-02-22" resp="#Yorkshire_Families">22 February, 1730</date>
+                  <date type="birth" calendar="Gregorian" when-iso="1731-03-05" resp="#Yorkshire_Families">5 March, 1731</date>
+                  <date type="birth" when-iso="1731-02-21" resp="memoir">21 February, 1731</date>
+                  <placeName ref="#mlpla000095">Wortley</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1765-11-30">30 November, 1765</date>
@@ -405,28 +403,23 @@
                   <desc> received Presbyterian Church </desc>
                </event>
                <event type="reception" when-iso="1752">
-                  <desc> received society <placeName>Holbeck</placeName>
-                     <!-- needs placeID -->
+                  <desc> received society <placeName ref="#mlpla000089">Holbeck</placeName>
                   </desc>
                </event>
                <event type="reception" when-iso="1757-04-27">
-                  <desc> received congregation <placeName>Pudsey in Fulneck</placeName>
-                    <!-- needs placeID-->
+                  <desc> received congregation <placeName ref="#mlpla000090">Pudsey</placeName>
                   </desc>
                </event>
                <event type="entrance" when-iso="1758-01">
-                  <desc> entered sisters' house <placeName ref="mlpla000041">Gomersal</placeName>
+                  <desc> entered sisters' house <placeName ref="#mlpla000041">Gomersal</placeName>
                   </desc>
                </event>
-               <!-- Diane questions: is this event type (entrance) okay to add? also is there a way to get the options for type here to pop up in a menu?-->
                <event type="entrance" when-iso="1760-04-10">
-                  <desc> entered sisters' house <placeName ref="mlpla000063">Ockbrook</placeName>
+                  <desc> entered sisters' house <placeName ref="#mlpla000063">Ockbrook</placeName>
                   </desc>
                </event>
-               <event type="sacrament" when-iso="1760-04-16">
-                  <desc>
-                     <placeName ref="#mlpla000063">Ockbrook</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000063" when-iso="1760-04-16">
+                  <desc>first sacrament at Ockbrook</desc>
                </event>
                <event type="reception" when-iso="07">
                   <!-- Only date is July -->
@@ -473,8 +466,7 @@
                   </desc>
                </event>
                <event type="sacrament" when-iso="1741">
-                  <!-- does this event type need a description in the <desc> field beyond the location? -->
-                  <desc>
+               <desc>
                      <placeName ref="#mlpla000014">Hernnhaag</placeName>
                   </desc>
                </event>
@@ -482,18 +474,15 @@
                   <desc> received into <orgName en="greater girls choir">the Great Girls Choir</orgName>
                   </desc>
                </event>
-               <event when-iso="1764-05">
-                <!-- should all events have a type? should these be type "return" or "arrival" or "travel"? -->
-                  <desc> returned <placeName>Europe</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000096" when-iso="1764-05">
+                  <desc> returned to Europe </desc>
                </event>
-               <event when-iso="1764-06-24">
-                  <desc> arrived <placeName ref="#mlpla000054">London</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000054" when-iso="1764-06-24">
+                  <desc> arrived in London</desc>
                </event>
                <event when-iso="1747-07-04">
-                  <!-- should we establish an event type for blessings? -->
-                  <desc> blessed as a deaconess <placeName ref="#mlpla000014">Hernnhaag</placeName>
+                  <desc> blessed as a <name office="">deaconess</name> <placeName ref="#mlpla000014">Hernnhaag</placeName>
+                     <!-- need office tag; what is event type? -->
                   </desc>
                </event>
                <event when-iso="1748-09-20">
@@ -511,10 +500,6 @@
                <event type="reception" when-iso="1743-06-23">
                   <desc> received as acoluth <placeName ref="mlpla000057">Marienborn</placeName>
                   </desc>
-               </event>
-               <event when-iso="1734">
-                  <desc> Father died </desc>
-                  <!--Katie question: are we recording in the personography family events such as deaths that are not listed in the YF doc? if so, should this have event type=death? -->
                </event>
                <residence from="1734"><placeName ref="#mlpla000026">Berthelsdorf</placeName></residence>
                <residence><placeName ref="#mlpla000053">Lobenstein</placeName></residence>
@@ -559,12 +544,11 @@
                   <surname type="birth">Allot</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1734-08-12">12 August, 1734</date>
-                  <date type="birth" calendar="Gregorian" when-iso="1734-12-12">12 December, 1734</date>
-                  <!-- first date from YF doc, second date from memoir. Can ask Sr. Hillary. Also suggest putting in notes and/or attribution statement when there is conflicting info like this between YF doc and memoir.-->
-                  <placeName>Rastrick Parish of Halifax</placeName>
-                  <placeName>Barksland in the Parish of Elland</placeName>
-                  <!-- first place from YF doc, second place from memoir. need placeIDs -->
+                  <date type="birth" when-iso="1734-08-12" resp="#Yorkshire_Families">12 August, 1734</date>
+                  <date type="birth" calendar="Gregorian" when-iso="1734-12-12" resp="#memoir">12 December, 1734</date>
+                  <placeName resp="#Yorkshire_Families">Rastrick Parish of Halifax</placeName>
+                  <!-- need to confirm geography for Halifax -->
+                  <placeName ref="#mlpla000100" resp="#memoir">Barksland in the Parish of Elland</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1754-12-25">25 December, 1754</date>
@@ -574,12 +558,10 @@
                   <desc><orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception" when-iso="1746-05">
-                  <desc>received society/sisters’ house <placeName>Cleckheaton</placeName></desc>
-                  <!--needs placeID-->
+                  <desc>received society/sisters’ house <placeName ref="#mlpla000097">Cleckheaton</placeName></desc>
                </event>
                <event type="reception" when-iso="1750">
-                  <desc>received sisters' house <placeName>Tyersal</placeName>
-                     <!--needs placeID-->
+                  <desc>received sisters' house <placeName ref="#mlpla000098">Tyersal</placeName>
                   </desc>
                </event>
                <event type="reception">
@@ -593,9 +575,8 @@
                   <desc>received new sisters' house <placeName ref="#mlpla000003">Fulneck</placeName>
                   </desc>
                </event>
-               <event type="sacrament" when-iso="1753-02-25">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
+               <event type="sacrament" where="#mlpla000003" when-iso="1753-02-25">
+                  <desc>received sacrament at Fulneck
                   </desc>
                </event>
                <event when-iso="1734-12-12">
@@ -607,8 +588,7 @@
                   </desc>
                   <!-- Katie question: do we want to encode movement such as the above, when it is not in the YF doc? -->
                </event>
-               <residence when-iso="1748-07"><placeName>Cackheaton</placeName></residence>
-               <!-- needs placeID (variant of Cleckheaton?) -->
+               <residence when-iso="1748-07"><placeName ref="#mlpla000097">Cackheaton</placeName></residence>
                <event when-iso="1753">
                   <desc> received from <orgName en="greater girls choir">Great Girls</orgName> to the <orgName en="single sisters choir">Single Sisters Choir</orgName>
                   </desc>
@@ -632,8 +612,7 @@
                <birth>
                   <date type="birth" when-iso="1740-09-08" calendar="Julian">9 August, 1740</date>
                   <date type="birth" when-iso="1740-20-08" calendar="Gregorian">20 August, 1740</date>
-                  <placeName>Hartshead</placeName>
-                  <!-- need to add placename ID for Hartshead -->
+                  <placeName ref="#mlpla000099">Hartshead</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1761-05-05">5 May, 1761</date>
@@ -641,7 +620,7 @@
                </death>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <event type="baptism">
-                  <desc>St Peter's Church <placeName>Hartshead</placeName>
+                  <desc>St Peter's Church <placeName ref="#mlpla000099">Hartshead</placeName>
                      <date when-iso="1740-11-08" calendar="Julian">11 August, 1740</date>
                      <date when-iso="1740-22-08" calendar="Gregorian">22 August, 1740</date>
                   </desc>
@@ -662,14 +641,11 @@
                <event type="sacrament" when-iso="1759-11-28">
                   <desc><placeName ref="#mlpla000003">Fulneck</placeName></desc>
                </event>
-               <education when-iso="1748">girls' school <placeName>Row Head</placeName></education>
-              <!-- need placeID -->
-               <residence from="1740" to="1758"><placeName>Hartshead</placeName></residence>
-               <!-- need place ID -->
+               <education when-iso="1748">girls' school <placeName ref="#mlpla000101">Row Head</placeName></education>
+               <residence from="1740" to="1758"><placeName ref="#mlpla000099">Hartshead</placeName></residence>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/19</bibl>
                <bibl type="memoir">Ful/3/55</bibl>
-               <!-- is the above correct where we have two memoirs for the same person? -->
                <note />
                <note>(W/F/G)ASHLEY, Hannah (1740-1761) b 09.08.1740 (OS) / 20.08.1740 (NS) Hartshead educated: girls’ school Row Head 1748 resided: Hartshead 1740-1758 reception: baptized St Peter’s
                   Church Hartshead 11.08.1740 (OS) / 22.08.1740 (NS), received society Mirfield 1752, received congregation Fulneck 13.11.1756, sisters’ house Gomersal 01.07.1758, sisters’ house
@@ -693,10 +669,9 @@
                   <surname type="birth">Bentley</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1722-09-23">23 September, 1722</date>
-                  <date type="birth" when-iso="1722-04-23">23 April, 1722</date>
-                  <!-- first date from YF doc, second date from memoir -->
-                  <placeName>Wyke Parish of Birstall</placeName>
+                  <date type="birth" when-iso="1722-09-23" resp="#Yorkshire_Families">23 September, 1722</date>
+                  <date type="birth" when-iso="1722-04-23" resp="#memoir">23 April, 1722</date>
+                  <placeName ref="#mlpla000102">Wyke</placeName>
                   <!-- need placeID -->
                </birth>
                <death>
@@ -711,16 +686,14 @@
                   </desc>
                </event>
                <event type="reception" when-iso="1742">
-                  <desc> received society <placeName>Norwood Green</placeName>
-                     <!-- need placeID -->
+                  <desc> received society <placeName ref="#mlpla000103">Norwood Green</placeName>
                   </desc>
                </event>
                <event type="transfer" when-iso="1748">
                   <desc>transfered society <placeName ref="#mlpla000059">Mirfield</placeName></desc>
                </event>
                <event type="transfer" when-iso="1752">
-                  <desc> transfered society <placeName>Holme</placeName>
-                     <!-- need placeID -->
+                  <desc> transfered society <placeName ref="#mlpla000104">Holme</placeName>
                   </desc>
                </event>
                <event type="reception" when-iso="1752-11-13">
@@ -792,7 +765,6 @@
                <event type="sacrament" when-iso="1753-09-09">
                   <desc><placeName ref="#fulneck">Yorkshire in Fulneck</placeName></desc>
                </event>
-               <!--  Is "founder member Fulneck congregation 19.04.1755" an event that should be tagged?-->
                <affiliation ref="#fulneck">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/39</bibl>
                <note>(W/F)BOOTH, Elizabeth (Betty) (1735-1764) b 11.09.1735 Mirfield educated: girls’ school Row Head 1748 reception: baptized St Mary’s Church Mirfield 14.09.1735 (OS) / 25.09.1735

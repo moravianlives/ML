@@ -393,8 +393,8 @@
                   <placeName ref="#mlpla000063">Ockbrook</placeName>
                </death>
                <event type="baptism">
-                  <desc>
-                     <placeName>St Bartholomew's Church Armley</placeName>
+               <!-- not sure how to structure this event into one line of code w/the 2 dates/calendars -->
+                  <desc>St Bartholomew's Church <placeName ref="#mlpla000105">Armley</placeName>
                      <date calendar="Julian" when-iso="1730-03-07">7 March, 1730</date>
                      <date calendar="Gregorian" when-iso="1731-03-18">18 March, 1731</date>
                   </desc>
@@ -402,27 +402,23 @@
                <event type="reception">
                   <desc> received Presbyterian Church </desc>
                </event>
-               <event type="reception" when-iso="1752">
-                  <desc> received society <placeName ref="#mlpla000089">Holbeck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000089" when-iso="1752">
+                  <desc> received into society at Holbeck</desc>
                </event>
-               <event type="reception" when-iso="1757-04-27">
-                  <desc> received congregation <placeName ref="#mlpla000090">Pudsey</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000090" when-iso="1757-04-27">
+                  <desc> received into congregation at Pudsey</desc>
                </event>
-               <event type="entrance" when-iso="1758-01">
-                  <desc> entered sisters' house <placeName ref="#mlpla000041">Gomersal</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000041" when-iso="1758-01">
+                  <desc> entered sisters' house at Gomersal</desc>
                </event>
-               <event type="entrance" when-iso="1760-04-10">
-                  <desc> entered sisters' house <placeName ref="#mlpla000063">Ockbrook</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000063" when-iso="1760-04-10">
+                  <desc> entered sisters' house at Ockbrook</desc>
                </event>
                <event type="sacrament" where="#mlpla000063" when-iso="1760-04-16">
-                  <desc>first sacrament at Ockbrook</desc>
+                  <desc>received sacrament at Ockbrook</desc>
                </event>
                <event type="reception" when-iso="07">
-                  <!-- Only date is July -->
+                  <!-- Only date is July; no location given -->
                   <desc> received as acoluth </desc>
                </event>
                <occupation from="1744" to="1750" cert="medium">apprenticeship</occupation>
@@ -451,28 +447,22 @@
                   <date type="death" when-iso="1803-02-20">20 Febuary, 1803</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName> Sisters' House</death>
                <event type="baptism">
-                  <desc><orgName religion="Lutheran">Lutheran Church</orgName></desc>
+                  <desc><orgName religion="Lutheran">baptized in Lutheran Church</orgName></desc>
                </event>
-               <event type="entrance" when-iso="1738" cert="medium">
-                  <desc>entered orphan house <placeName ref="#mlpla000057">Marienborn</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000057" when-iso="1738" cert="medium">
+                  <desc>entered orphan house at Marienborn</desc>
                </event>
-               <event type="entrance" when-iso="1739">
-                  <desc> entered sisters' house <placeName ref="#mlpla000057">Marienborn</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000057" when-iso="1739">
+                  <desc> entered sisters' house at Marienborn</desc>
                </event>
-               <event type="reception" when-iso="1740">
-                  <desc> received congregation <placeName ref="#mlpla000057">Marienborn</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000057" when-iso="1740">
+                  <desc> received into congregation at Marienborn</desc>
                </event>
-               <event type="sacrament" when-iso="1741">
-               <desc>
-                     <placeName ref="#mlpla000014">Hernnhaag</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000014" when-iso="1741">
+               <desc>received sacrament at Herrnhaag</desc>
                </event>
                <event type="reception" when-iso="1741">
-                  <desc> received into <orgName en="greater girls choir">the Great Girls Choir</orgName>
-                  </desc>
+                  <desc> received into <orgName en="greater girls choir">the Great Girls Choir</orgName></desc>
                </event>
                <event type="arrival" where="#mlpla000096" when-iso="1764-05">
                   <desc> returned to Europe </desc>
@@ -480,26 +470,21 @@
                <event type="arrival" where="#mlpla000054" when-iso="1764-06-24">
                   <desc> arrived in London</desc>
                </event>
-               <event when-iso="1747-07-04">
-                  <desc> blessed as a <name office="">deaconess</name> <placeName ref="#mlpla000014">Hernnhaag</placeName>
+               <event where="#mlpla000014" when-iso="1747-07-04">
+                  <desc> blessed as a <name office="">deaconess</name> at Herrnhaag</desc>
                      <!-- need office tag; what is event type? -->
-                  </desc>
                </event>
-               <event when-iso="1748-09-20">
-                  <desc> arrived <placeName ref="#mlpla000002">Bethlehem</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000002" when-iso="1748-09-20">
+                  <desc> arrived at Bethlehem</desc>
                </event>
-               <event when-iso="1764-07-04">
-                  <desc> arrived <placeName ref="#mlpla000057">Marienborn</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000057" when-iso="1764-07-04">
+                  <desc> arrived at Marienborn</desc>
                </event>
-               <event when-iso="1764-08">
-                  <desc> arrived <placeName ref="#mlpla000001">Herrnhut</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000001" when-iso="1764-08">
+                  <desc> arrived at Herrnhut</desc>
                </event>
-               <event type="reception" when-iso="1743-06-23">
-                  <desc> received as acoluth <placeName ref="mlpla000057">Marienborn</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000057" when-iso="1743-06-23">
+                  <desc> received as acoluth at Marienborn</desc>
                </event>
                <residence from="1734"><placeName ref="#mlpla000026">Berthelsdorf</placeName></residence>
                <residence><placeName ref="#mlpla000053">Lobenstein</placeName></residence>
@@ -546,8 +531,7 @@
                <birth>
                   <date type="birth" when-iso="1734-08-12" resp="#Yorkshire_Families">12 August, 1734</date>
                   <date type="birth" calendar="Gregorian" when-iso="1734-12-12" resp="#memoir">12 December, 1734</date>
-                  <placeName resp="#Yorkshire_Families">Rastrick Parish of Halifax</placeName>
-                  <!-- need to confirm geography for Halifax -->
+                  <placeName ref="#mlpla000106" resp="#Yorkshire_Families">Rastrick Parish of Halifax</placeName>
                   <placeName ref="#mlpla000100" resp="#memoir">Barksland in the Parish of Elland</placeName>
                </birth>
                <death>
@@ -555,29 +539,26 @@
                   <placeName ref="#mlpla000003">Fulneck</placeName> Sisters' House </death>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
+                  <desc><orgName religion="Anglican">baptized in Church of England</orgName></desc>
                </event>
-               <event type="reception" when-iso="1746-05">
-                  <desc>received society/sisters’ house <placeName ref="#mlpla000097">Cleckheaton</placeName></desc>
+               <event type="reception" where="#mlpla000097" when-iso="1746-05">
+                  <desc>received into society/sisters’ house at Cleckheaton</desc>
                </event>
-               <event type="reception" when-iso="1750">
-                  <desc>received sisters' house <placeName ref="#mlpla000098">Tyersal</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000098" when-iso="1750">
+                  <desc>received into sisters' house at Tyersal</desc>
                </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <!-- how do we encode Yorkshire in Fulneck when both places have placeIDs? markup as 2 place names? -->
-                     <date calendar="Julian" when-iso="1751-03-25">25 March, 1751</date>
-                     <date calendar="Gregorian" when-iso="1751-04-05">5 April, 1751</date>
-                  </desc>
+               <event type="reception" where="#mlpla000003">
+                  <!-- not sure how to structure this event into one line of code w/the 2 dates/calendars -->
+                  <desc>received into congregation at Fulneck
+                  <date calendar="Julian" when-iso="1751-03-25">25 March, 1751</date>
+                  <date calendar="Gregorian" when-iso="1751-04-05">5 April, 1751</date>
+               </desc>    
                </event>
-               <event type="reception" when-iso="1752-12-15">
-                  <desc>received new sisters' house <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1752-12-15">
+                  <desc>received into new sisters' house at Fulneck</desc>
                </event>
                <event type="sacrament" where="#mlpla000003" when-iso="1753-02-25">
-                  <desc>received sacrament at Fulneck
-                  </desc>
+                  <desc>received sacrament at Fulneck</desc>
                </event>
                <event when-iso="1734-12-12">
                   <desc> Father died and lived with mother and <persName>Betty Midgley</persName>
@@ -625,21 +606,20 @@
                      <date when-iso="1740-22-08" calendar="Gregorian">22 August, 1740</date>
                   </desc>
                </event>
-               <event type="reception" when-iso="1752">
-                  <desc>received society <placeName ref="#mlpla000059">Mirfield</placeName></desc>
+               <event type="reception" where="#mlpla000059" when-iso="1752">
+                  <desc>received into society at Mirfield</desc>
                </event>
-               <event type="reception" when-iso="1756-13-11">
-                  <desc>received congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1756-13-11">
+                  <desc>received into congregation at Fulneck</desc>
                </event>
-               <event type="entrance" when-iso="1758-07-01">
-                  <desc>entered sisters' house <placeName ref="#mlpla000041">Gomersal</placeName></desc>
+               <event type="entrance" where="#mlpla000041" when-iso="1758-07-01">
+                  <desc>entered sisters' house at Gomersal</desc>
                </event>
-               <event type="entrance" when-iso="1759-02-02">
-                  <desc>entered sisters' house <placeName ref="#mlpla000003">Fulneck</placeName></desc>
+               <event type="entrance" where="#mlpla000003" when-iso="1759-02-02">
+                  <desc>entered sisters' house at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1759-11-28">
-                  <desc><placeName ref="#mlpla000003">Fulneck</placeName></desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1759-11-28">
+                  <desc>received sacrament at Fulneck</desc>
                </event>
                <education when-iso="1748">girls' school <placeName ref="#mlpla000101">Row Head</placeName></education>
                <residence from="1740" to="1758"><placeName ref="#mlpla000099">Hartshead</placeName></residence>
@@ -672,42 +652,34 @@
                   <date type="birth" when-iso="1722-09-23" resp="#Yorkshire_Families">23 September, 1722</date>
                   <date type="birth" when-iso="1722-04-23" resp="#memoir">23 April, 1722</date>
                   <placeName ref="#mlpla000102">Wyke</placeName>
-                  <!-- need placeID -->
                </birth>
                <death>
                   <date type="death" when-iso="1766-12-07">7 December, 1766</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName> Sisters' House</death>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event type="entrance">
-                  <desc>entered <orgName>Ingham's society</orgName> at <placeName>Wyke</placeName>
+               <event type="entrance" where="#mlpla000102">
+                  <desc>entered <orgName>Ingham's society</orgName> at Wyke</desc>
                      <!-- Diane question: Should Ingham also be encoded with persID? -->
-                  </desc>
                </event>
-               <event type="reception" when-iso="1742">
-                  <desc> received society <placeName ref="#mlpla000103">Norwood Green</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000103" when-iso="1742">
+                  <desc> received into society at Norwood Green</desc>
                </event>
-               <event type="transfer" when-iso="1748">
-                  <desc>transfered society <placeName ref="#mlpla000059">Mirfield</placeName></desc>
+               <event type="transfer" where="#mlpla000059" when-iso="1748">
+                  <desc>transfered to society at Mirfield</desc>
                </event>
-               <event type="transfer" when-iso="1752">
-                  <desc> transfered society <placeName ref="#mlpla000104">Holme</placeName>
-                  </desc>
+               <event type="transfer" where="#mlpla000104" when-iso="1752">
+                  <desc> transfered to society at Holme</desc>
                </event>
-               <event type="reception" when-iso="1752-11-13">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1752-11-13">
+                  <desc> received into congregation at Fulneck</desc>
                </event>
-               <event type="entrance" when-iso="1752-12-15">
-                  <desc> entered new sisters' house <placeName ref="mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000003" when-iso="1752-12-15">
+                  <desc> entered new sisters' house at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1754-01-27">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1754-01-27">
+                  <desc>received sacrament at Fulneck</desc>
                </event>
                <event when-iso="1755-04-19">
                   <!-- is this actually an event? or some other descriptive element? -->

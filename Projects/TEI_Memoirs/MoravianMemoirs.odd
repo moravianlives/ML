@@ -161,10 +161,14 @@
                   <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
                   <valItem ident="acceptance" />
-                  <valItem ident="departure" />
-                  <valItem ident="arrival" />
+                  <valItem ident="entrance" />
                   <valItem ident="expulsion" />
                   <valItem ident="exclusion" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->
+
                 </valList>
               </attDef>
             </attList>
@@ -590,24 +594,27 @@
           <elementSpec ident="event" mode="change" module="core">
             <attList>
               <attDef ident="type" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="baptism" />
-                  <valItem ident="birth" />
+                <valList mode="add" type="semi">
+                  <valItem ident="baptism" sameAs="taufe" />
+                  <valItem ident="birth" sameAs="geburt" />
                   <valItem ident="awakening" />
-                  <valItem ident="conversion" />
-                  <valItem ident="death" />
-                  <valItem ident="draw lot" />
-                  <valItem ident="marriage" />
-                  <valItem ident="reception" />
+                  <valItem ident="conversion" sameAs="bekehrung" />
+                  <valItem ident="death" sameAs="tod" />
+                  <valItem ident="draw lot" sameAs="losen" />
+                  <valItem ident="marriage" sameAs="hochzeit" />
+                  <valItem ident="reception" sameAs="aufnahme" />
                   <valItem ident="sacrament" />
                   <valItem ident="interment" />
-                  <valItem ident="communion"/>
+                  <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
                   <valItem ident="acceptance" />
+                  <valItem ident="entrance" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
                   <valItem ident="departure" />
                   <valItem ident="arrival" />
-                  <valItem ident="exclusion" />
-                  <valItem ident="expulsion" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->                  
                 </valList>
               </attDef>
             </attList>

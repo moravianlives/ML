@@ -150,6 +150,7 @@
                 <valList mode="add" type="semi">
                   <valItem ident="baptism" sameAs="taufe" />
                   <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="awakening" />
                   <valItem ident="conversion" sameAs="bekehrung" />
                   <valItem ident="death" sameAs="tod" />
                   <valItem ident="draw lot" sameAs="losen" />
@@ -159,10 +160,22 @@
                   <valItem ident="interment" />
                   <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="entrance" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->
+
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
+          
+
+
           <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -572,6 +585,36 @@
               <attDef ident="typeGerman" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="ehrend" sameAs="honorific"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- Creating event types for personography -->
+          <elementSpec ident="event" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="baptism" sameAs="taufe" />
+                  <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="awakening" />
+                  <valItem ident="conversion" sameAs="bekehrung" />
+                  <valItem ident="death" sameAs="tod" />
+                  <valItem ident="draw lot" sameAs="losen" />
+                  <valItem ident="marriage" sameAs="hochzeit" />
+                  <valItem ident="reception" sameAs="aufnahme" />
+                  <valItem ident="sacrament" />
+                  <valItem ident="interment" />
+                  <valItem ident="communion" sameAs="abendmahl"/>
+                  <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="entrance" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->                  
                 </valList>
               </attDef>
             </attList>

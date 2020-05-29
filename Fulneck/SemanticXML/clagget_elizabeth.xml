@@ -109,7 +109,599 @@
 			</sourceDesc>
 		</fileDesc>
 		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105139248",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:51:39.248Z",
+	"dcterms:issued": "2020-05-29T15:31:44.355Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105139248#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105139248#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[4]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1767-08-12"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105317409",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:53:17.409Z",
+	"dcterms:issued": "2020-05-29T15:31:44.359Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105317409#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105317409#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1715"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105328374",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:53:28.374Z",
+	"dcterms:issued": "2020-05-29T15:31:44.359Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105328374#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105328374#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1720"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105400866",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:54:00.866Z",
+	"dcterms:issued": "2020-05-29T15:31:44.359Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105400866#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105400866#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1729"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105455772",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:54:55.772Z",
+	"dcterms:issued": "2020-05-29T15:31:44.360Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105455772#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105455772#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1730"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105537126",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:55:37.126Z",
+	"dcterms:issued": "2020-05-29T15:31:44.360Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105537126#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105537126#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[5]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1732"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105659929",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:56:59.929Z",
+	"dcterms:issued": "2020-05-29T15:31:44.360Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105659929#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105659929#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[6]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1734"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105738299",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-05-29T14:57:38.299Z",
+	"dcterms:issued": "2020-05-29T15:31:44.360Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105738299#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clagget_elizabeth.xml?date_annotation_20200529105738299#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date[7]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1736"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Elizabeth Clagget</persName>
@@ -132,21 +724,21 @@
 					<p>
 						
 							This is a memoir of <lb/>
-							S S<hi rend="superscript">r</hi>. Elizt Claggett. 
+							S <roleName type="honorific">S<hi rend="superscript">r</hi></roleName>. <persName ref="#mlper000228" cert="high" type="real">Elizt Claggett</persName>. 
 						</p>
 					<p>
 							She has left in her Choir house a good odour behind her, <lb/>
 							so that those who were acquainted with <del>her</del>, and had an <lb/>
 							opportunity to converse with her, will always retain a <lb/>
 							blessed remembrance of the grace which our dear <lb/>
-							Lord had bestowed upon her. 
+							<roleName type="honorific">Lord</roleName> had bestowed upon her. 
 						</p>
 					<p>
-							Tho' she has not, for some time past, frequent<hi rend="superscript">ed</hi> the meetings <lb/>
-							on acct of her disorder, yet it was remarkable that she <lb/>
+							Tho' she has not, for some time past, frequent<hi rend="superscript">ed</hi> the <name event="religious">meetings</name> <lb/>
+							on acct of her <name health="disease">disorder</name>, yet it was remarkable that she <lb/>
 							always had a feeling &amp; partook <add place="above">of</add> those blessings which <lb/>
-							were enjoyed by the Cong<hi rend="superscript">n</hi> or her Choir, and would speak <lb/>
-							of it to the S<hi rend="superscript">rs</hi> as if she had been in the meeting.
+							were enjoyed by the <orgName en="congregation">Cong<hi rend="superscript">n</hi> </orgName> or her Choir, and would speak <lb/>
+							of it to the <roleName type="honorific">S<hi rend="superscript">rs</hi> </roleName> as if she had been in the meeting.
 						</p>
 					<p>
 							Some <del>short</del> time before her dissolution, her peculiar <lb/>
@@ -163,8 +755,7 @@
 							pleasant, tho her disorder would else have been very <lb/>
 							disagreeable to the outw<hi rend="superscript">d</hi> senses of those who came into <lb/>
 							the room. At last, her long &amp; ardent wish to be dissolved <lb/>
-							and with our Sav<hi rend="superscript">r</hi> came happily to pass on the 12<hi rend="superscript">th</hi> <lb/>
-							Inst; with a sensible feeling of her Bridegroom's <lb/>
+							and with our <roleName type="honorific">Sav<hi rend="superscript">r</hi> </roleName> came happily to pass on the <date cert="medium" when="1767-08-12">12<hi rend="superscript">th</hi> <lb/>f</date> Inst; with a sensible feeling of her Bridegroom's <lb/>
 							Nearess, &amp; w<hi rend="superscript">th</hi> the blessd of her Choir in the 52<hi rend="superscript">th</hi> Yr of <lb/>
 							her age.
 					</p>
@@ -173,25 +764,25 @@
 					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_57Clagget-02.jpg"/>
 					<p>
 						
-							I was born in Yorkshire in the year 1715 where I staid with my <lb/>
-							Mothers Relations till the year 20 in which my Mother came &amp; fetch'd me <lb/>
-							to London. I remember to have head some Influences of Grace even in my <lb/>
-							Infant years, but when I was about 14 Years of age, I came under strong <lb/>
+							I was born in <placeName ref="#mlpla000084" cert="high">Yorkshire</placeName> in the <date when="1715" cert="high">year 1715</date> where I staid with my <lb/>
+							Mothers Relations till the <date when="1720" cert="high">year 20</date> in which my Mother came &amp; fetch'd me <lb/>
+							to <placeName ref="#mlpla000054" cert="high">London</placeName>. I remember to have head some Influences of Grace even in my <lb/>
+							Infant years, but when I was about <date cert="medium" when="1729">14 Years of age</date>, I came under strong <lb/>
 							Convictions. in the rights I was sometimes so terrified, that I thought I <lb/>
-							realy heard the Trumpet give the Signal of our Sav<hi rend="superscript">rs</hi> coming to Judgment. <lb/>
+							realy heard the Trumpet give the Signal of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi> </roleName> coming to Judgment. <lb/>
 							I believed I shou'd be in the Number of those who would call on the Rocks <lb/>
 							&amp; mountains to cover them. I made repeated Resolutions of devoting my fu- <lb/>
-							ture life if God shou'd spare me a little longer, to his Service. I began to be <lb/>
-							pretty diligent in Prayer, both publick &amp; private, &amp; in the 15<hi rend="superscript">th</hi> year of my Age <lb/>
-							having now read in Invitation from one of my Aunts in Yorkshire a religi- <lb/>
+							ture life if <persName type="real" cert="high">God</persName> shou'd spare me a little longer, to his Service. I began to be <lb/>
+							pretty diligent in Prayer, both publick &amp; private, &amp; in the <date cert="medium" when="1730">15<hi rend="superscript">th</hi> year of my Age</date> <lb/>
+							having now read in Invitation from one of my Aunts in <placeName ref="#mlpla000084" cert="high">Yorkshire</placeName> a religi- <lb/>
 							ous woman, to go &amp; stay some Time with her; having first intreated the Lord <lb/>
 							with many Tears, that he wou'd direct this affair, I ask'd &amp; obtaind leave of <lb/>
 							my Father &amp; Mother to go. She encouraged &amp; instructed me as will as she <lb/>
 							could, which I prosicuted in my way, but was never satisfied. when I <lb/>
-							was 17 years old, I went to the Sacrament in the Church of England, for the <lb/>
-							first Time. I was near 19 years old when I returnd back to London, where <lb/>
+							was <date cert="medium" when="1732">17 years old</date>, I went to the <name event="sacrament" when-iso="1732">Sacrament</name> in the <orgName religion="Anglican">Church of England</orgName>, for the <lb/>
+							first Time. I was <date cert="medium" when="1734">near 19 years old</date> when I returnd back to <placeName ref="#mlpla000054" cert="high">London</placeName>, where <lb/>
 							I still continued a kind of religious course, but the Gayeties and Divertions of <lb/>
-							the Town, strongly took hold of my Heart, till in my 21<hi rend="superscript">st</hi> year, when I got such <lb/>
+							the Town, strongly took hold of my Heart, till in my <date cert="medium" when="1736">21<hi rend="superscript">st</hi> year</date>, when I got such <lb/>
 							a sense of the total Depravity of my nature, that I believ'd the very marrow of <lb/>
 							my Bones was <add place="above">infected</add> with sin. I had never heard of any ones being awakend <lb/>
 							nor did I know there was such a Thing; so I concluded there was not another <lb/>

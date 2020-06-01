@@ -120,17 +120,7 @@
               <attDef ident="memoirSubject" mode ="change"></attDef>
             </attList>
           </classSpec>
-          <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
-          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
-            <attList>
-              <attDef ident="amt" mode="change" sameAs="office"></attDef>
-              <attDef ident="gesundheitszustand" mode="change" sameAs="health" />
-              <attDef ident="ereignis" mode="change" sameAs="event" />
-              <attDef ident="gefühl" mode="change" sameAs="emotion" />
-              <attDef ident="verwandte" mode="change" sameAs="relation" />
-              <attDef ident="zeremonie" mode="change" sameAs="ceremony" />
-            </attList>
-          </classSpec>
+          
           
           <!-- CUSTOMIZATION: added name:@ / English. -->
           <elementSpec ident="name" mode="change" module="core">
@@ -143,13 +133,14 @@
             </attList>
           </elementSpec>
           
-          <!-- CUSTOMIZATION: added name:@event / English. Wherever possible adding @sameAs to track parallels -->
-          <elementSpec ident="name" mode="change" module="core">
+          <!-- Creating event types for personography -->
+          <elementSpec ident="event" mode="change" module="core">
             <attList>
-              <attDef ident="event" mode="change">
+              <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="baptism" sameAs="taufe" />
                   <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="awakening" />
                   <valItem ident="conversion" sameAs="bekehrung" />
                   <valItem ident="death" sameAs="tod" />
                   <valItem ident="draw lot" sameAs="losen" />
@@ -159,27 +150,19 @@
                   <valItem ident="interment" />
                   <valItem ident="communion" sameAs="abendmahl"/>
                   <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="entrance" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->                  
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="ereignis" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="abendmahl" sameAs="communion"></valItem>
-                  <valItem ident="aufnahme" sameAs="reception" />
-                  <valItem ident="bekehrung" sameAs="conversion" />
-                  <valItem ident="geburt" sameAs="birth" />
-                  <valItem ident="hochzeit" sameAs="marriage" />
-                  <valItem ident="losen" sameAs="draw lot" />
-                  <valItem ident="taufe" sameAs="baptism" />
-                  <valItem ident="tod" sameAs="death" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
+          
           <!-- CUSTOMIZATION: added name:@health / English. -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>
@@ -192,105 +175,9 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@Gesundheit / German -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="gesundheitszustand" mode="change">
-              <valList mode="add" type="closed">
-                <valItem ident="krankheit" sameAs="disease"/>
-                <valItem ident="genesend" sameAs="recovered"/>
-              </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-<!--          <!-\- CUSTOMIZATION: added name:@occupation / English. -\->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="occupation" mode="change">
-                <valList mode="add" type="semi">
-                    <valItem ident="baker"/>
-                    <valItem ident="clothier"/>
-                    <valItem ident="clothmaker"/>
-                    <valItem ident="cook"/>
-                    <valItem ident="husbandman"/>
-                    <valItem ident="farmer"/>
-                    <valItem ident="joiner"/>
-                    <valItem ident="mason"/>
-                    <valItem ident="needleworker"/>
-                    <valItem ident="schoolmaster"/>
-                    <valItem ident="spinner"/>
-                    <valItem ident="student"/>
-                    <valItem ident="tailor"/>
-                    <valItem ident="sustenation"/>
-                    <valItem ident="washer"/>
-                    <valItem ident="weaver"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>-->
-          <!-- CUSTOMIZATION: added name:@Beruf / German. -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="beruf" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="" sameAs="clothier"/>
-                  <valItem ident="" sameAs="clothmaker"/>
-                  <valItem ident="" sameAs="husbandman"/>
-                  <valItem ident="" sameAs="farmer"/>
-                  <valItem ident="" sameAs="mason"/>
-                  <valItem ident="" sameAs="schoolmaster"/>
-                  <valItem ident="" sameAs="weaver"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!--<!-\- CUSTOMIZATION: added name:@office / English. -\->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="office" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="acolyte" sameAs="accoluth"/>
-                  <valItem ident="bishop" sameAs="bischof"/>
-                  <valItem ident="choir helper" sameAs="chorhelfer/chorpfleger"/>
-                  <valItem ident="choir labourer" sameAs="chorarbeiter"/>
-                  <valItem ident="deacon" sameAs="diaconus"/>
-                  <valItem ident="deaconess" sameAs="diaconisse"/>
-                  <valItem ident="elder" sameAs="ältester"/>
-                  <valItem ident="eldress" sameAs="ältestin"/>
-                  <valItem ident="general elder" sameAs="generalältester"/>
-                  <valItem ident="general eldress" sameAs="generalältestin"/>
-                  <valItem ident="heathen worker" sameAs="heidenarbeiter"/>
-                  <valItem ident="overseer" sameAs="aufseher"/>
-                  <valItem ident="sick waiter" sameAs="krankenwärter/in"/>
-                  <valItem ident="supervisor" sameAs="vorsteher"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>-->
-          <!-- CUSTOMIZATION: added name@amt / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
-          <elementSpec ident="name" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="amt" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="accoluth" sameAs="acolyte"/>
-                  <valItem ident="almosenpfleger" sameAs=""/>
-                  <valItem ident="ältester" sameAs="elder"/>
-                  <valItem ident="ältestin" sameAs="eldress"/>
-                  <valItem ident="aufseher" sameAs="overseer"/>
-                  <valItem ident="bischof" sameAs="bishop"/>
-                  <valItem ident="chorarbeiter" sameAs="choir labourer"/>
-                  <valItem ident="chorhelfer/chorpfleger" sameAs="choir helper"/>
-                  <valItem ident="diaconus" sameAs="deacon"/>
-                  <valItem ident="diaconisse" sameAs="deaconess"/>
-                  <valItem ident="generalältester" sameAs="general elder"/>
-                  <valItem ident="generalältestin" sameAs="general eldress"/>
-                  <valItem ident="heidenarbeiter" sameAs="heathen worker"/>
-                  <valItem ident="krankenwärter" sameAs="sick waiter"/>
-                  <valItem ident="vorsteher" sameAs="supervisor"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
+          
+
+          
           
           <!-- CUSTOMIZATION: added name:@relation / English -->
           <elementSpec ident="name" mode="change" module="core">
@@ -305,49 +192,8 @@
               </attDef>
             </attList>
           </elementSpec>
-          <!-- CUSTOMIZATION: added name:@verwandte / German -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="verwandte" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="ehepartner" sameAs="spouse" />
-                  <valItem ident="eltern" sameAs="parent" />
-                  <valItem ident="geschwister" sameAs="sibling" />
-                  <valItem ident="kind" sameAs="child" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!-- CUSTOMIZATION: added name:@ceremony / English -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="ceremony" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="choir festival" sameAs="chorfest" />
-                  <valItem ident="foot washing" sameAs="fußwaschung" />
-                  <valItem ident="lovefeast" sameAs="liebesmahl" />
-                  <valItem ident="Mother Feast" />
-                  <valItem ident="religious gathering" sameAs="versammlung" />
-                  <valItem ident="singing hour" sameAs="singstunde" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!-- CUSTOMIZATION: added name:@zeremonie /German -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="zeremonie" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="ältestenfest" />
-                  <valItem ident="chorfest" sameAs="choir festival" />
-                  <valItem ident="fußwaschung" sameAs="foot washing" />
-                  <valItem ident="liebesmahl" sameAs="lovefeast" />
-                  <valItem ident="singstunde" sameAs="singing hour" />
-                  <valItem ident="versammlung" sameAs="religious gathering" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
+          
+
           <!-- CUSTOMIZATION: added en, de to distinguish language for roleName, orgName, addName -->
           <classSpec ident="att.naming" module="namesdates" type="atts" mode="change">
             <attList>
@@ -356,39 +202,8 @@
               <attDef ident="religion" mode="change"/>
             </attList>
           </classSpec>
-          <!-- CUSTOMIZATION: added objectName, object, and listObject to namesdates module - because TEI has not yet implemented objectName universally -->
-          <elementSpec module="namesdates" ident="att.typed" mode="add">
-            <attList>
-              <attDef ident="objectName" mode="change" />
-              <attDef ident="object" mode="change" />
-              <attDef ident="listObject" mode="change" />
-            </attList>
-          </elementSpec>
-          <!-- CUSTOMIZATION: added addName:@en / English -->
-          <!-- NEED TO RETHINK THIS -->
-          <elementSpec ident="addName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="en" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="brother" sameAs="bruder" />
-                  <valItem ident="married couple" sameAs="geschwister" />
-                  <valItem ident="sister" sameAs="schwester" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          <!-- CUSTOMIZATION: added addName:@de / German -->
-          <elementSpec ident="addName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="de" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="bruder" sameAs="brother" />
-                  <valItem ident="geschwister" sameAs="married couple" />
-                  <valItem ident="schwester" sameAs="sister" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
+
+          
           <!-- CUSTOMIZATION: added orgName:@en / English -->
           <elementSpec ident="orgName" mode="change" module="namesdates">
             <attList>
@@ -414,47 +229,28 @@
             </attList>
           </elementSpec>
           
+          
+          
           <!-- CUSTOMIZATION: added orgName:@religion / English -->
           <!-- For now we are not going to translate the religious groups to German -->
           <elementSpec ident="orgName" mode="change" module="namesdates">
             <attList>
               <attDef ident="religion" mode="change">
                 <valList mode="add" type="semi">
-                  <valItem ident="Anglican"></valItem>
-                  <valItem ident="Quaker"></valItem>
-                  <valItem ident="Presbyterian"></valItem>
-                  <valItem ident="Lutheran"></valItem>
-                  <valItem ident="Roman Catholic"></valItem>
-                  <valItem ident="Moravian Church"></valItem>
+                  <valItem ident="Anglican"/>
+                  <valItem ident="Lutheran"/>
+                  <valItem ident="Methodist"/>
+                  <valItem ident="Moravian Church"/>
+                  <valItem ident="Presbyterian"/>
+                  <valItem ident="Quaker"/>
+                  <valItem ident="Roman Catholic"/>
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
           
           
-          <!-- CUSTOMIZATION: added orgName@de / German -->
-          <elementSpec ident="orgName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="de" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="œconomie" sameAs="œconomy" />
-                  <valItem ident="ehechor" sameAs="married choir" />
-                  <valItem ident="gemeine" sameAs="congregation" />
-                  <valItem ident="große knaben" sameAs="greater boys choir" />
-                  <valItem ident="große maedchen" sameAs="greater girls choir" />
-                  <valItem ident="jüngerhaus" sameAs="disciple's house" />
-                  <valItem ident="kinderchor" sameAs="childrens choir" />
-                  <valItem ident="ledige brueder" sameAs="single brothers choir" />
-                  <valItem ident="ledige schwestern" sameAs="single sisters choir" />
-                  <valItem ident="pilgergemeine" sameAs="pilgrim congregation" />
-                  <valItem ident="seegemeine" sameAs="sea congregation" />
-                  <valItem ident="synode" sameAs="synod" />
-                  <valItem ident="witwenchor" sameAs="widows choir" />
-                  <valItem ident="witwerchor" sameAs="widowers choir" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
+          
           
           <!-- CUSTOMIZATION: added roleName@en / English - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
           <elementSpec ident="roleName" mode="change" module="namesdates">
@@ -554,35 +350,42 @@
             </attList>
           </elementSpec>
           
-          <!-- CUSTOMIZATION: added honorific as a suggestion for roleName:@type  -->
-          
-          <!--<elementSpec ident="roleName" mode="change" module="core">
+          <!-- Creating event types for personography -->
+          <elementSpec ident="event" mode="change" module="core">
             <attList>
               <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
-                  <valItem ident="honorific" sameAs="ehrend"></valItem>
-                  <valItem ident="other"></valItem>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>-->
-          <!-- We cannot use type for the German as well as the English because it creates an error for duplicate type when the odd file is transformed to an rng -->
-          <elementSpec ident="roleName" mode="change" module="core">
-            <attList>
-              <attDef ident="typeGerman" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="ehrend" sameAs="honorific"></valItem>
+                  <valItem ident="baptism" sameAs="taufe" />
+                  <valItem ident="birth" sameAs="geburt" />
+                  <valItem ident="awakening" />
+                  <valItem ident="conversion" sameAs="bekehrung" />
+                  <valItem ident="death" sameAs="tod" />
+                  <valItem ident="draw lot" sameAs="losen" />
+                  <valItem ident="marriage" sameAs="hochzeit" />
+                  <valItem ident="reception" sameAs="aufnahme" />
+                  <valItem ident="sacrament" />
+                  <valItem ident="interment" />
+                  <valItem ident="communion" sameAs="abendmahl"/>
+                  <valItem ident="religious"/>
+                  <valItem ident="acceptance" />
+                  <valItem ident="entrance" />
+                  <valItem ident="expulsion" />
+                  <valItem ident="exclusion" />
+                  <valItem ident="departure" />
+                  <valItem ident="arrival" />
+                  <valItem ident="confirmation"/><!-- need Katie Faull's OK -->
+                  <valItem ident="transfer" /><!-- need Katie Faull's OK -->                  
                 </valList>
               </attDef>
             </attList>
           </elementSpec>
           
-          
-          
-          
-          
-          
-          
+          <!-- 
+          ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              Build ins for work ontology below
+          -->
+
+
           <!-- Builds in <listOccupation> beneath <body> for the work ontology -->
           <elementSpec ident="listOccupation" mode="add">
             <classes>
@@ -632,11 +435,8 @@
               <sequence>
                 <classRef key="model.headLike" minOccurs="0"/>
                 <elementRef key="office" minOccurs="1" maxOccurs="1"/>
-
               </sequence>
-              
             </content>
-            
           </elementSpec>
           
           <!-- Builds the office tag to include certain tags. This is used for the ontology -->
@@ -655,11 +455,8 @@
               <macroRef key="macro.specialPara"/>
               <elementRef key="def" minOccurs="0"></elementRef>
               <elementRef key="listRelation" minOccurs="0"/>
-              <elementRef key="variant" minOccurs="0"/>
-              
-              
+              <elementRef key="variant" minOccurs="0"/> 
             </content>
-            
           </elementSpec>
           
           <!-- Builds the variant tag to include certain tags. This is used for the ontology -->
@@ -673,15 +470,137 @@
               <macroRef key="macro.specialPara"/>
               <elementRef key="desc" minOccurs="1" maxOccurs="1"/>
             </content>
-
-            
           </elementSpec>
           
           
+          <!-- 
+          ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              German below
+          -->
           
+          <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
+          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
+            <attList>
+              <attDef ident="amt" mode="change" sameAs="office"></attDef>
+              <attDef ident="gesundheitszustand" mode="change" sameAs="health" />
+              <attDef ident="ereignis" mode="change" sameAs="event" />
+              <attDef ident="gefühl" mode="change" sameAs="emotion" />
+              <attDef ident="verwandte" mode="change" sameAs="relation" />
+              <attDef ident="zeremonie" mode="change" sameAs="ceremony" />
+            </attList>
+          </classSpec>
+          
+          <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="ereignis" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="abendmahl" sameAs="communion"></valItem>
+                  <valItem ident="aufnahme" sameAs="reception" />
+                  <valItem ident="bekehrung" sameAs="conversion" />
+                  <valItem ident="geburt" sameAs="birth" />
+                  <valItem ident="hochzeit" sameAs="marriage" />
+                  <valItem ident="losen" sameAs="draw lot" />
+                  <valItem ident="taufe" sameAs="baptism" />
+                  <valItem ident="tod" sameAs="death" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: added name:@Gesundheit / German -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="gesundheitszustand" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="krankheit" sameAs="disease"/>
+                  <valItem ident="genesend" sameAs="recovered"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: added name:@Beruf / German. -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="beruf" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="" sameAs="clothier"/>
+                  <valItem ident="" sameAs="clothmaker"/>
+                  <valItem ident="" sameAs="husbandman"/>
+                  <valItem ident="" sameAs="farmer"/>
+                  <valItem ident="" sameAs="mason"/>
+                  <valItem ident="" sameAs="schoolmaster"/>
+                  <valItem ident="" sameAs="weaver"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: added name:@verwandte / German -->
+          <elementSpec ident="name" mode="change" module="core">
+            <attList>
+              <attDef ident="verwandte" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="ehepartner" sameAs="spouse" />
+                  <valItem ident="eltern" sameAs="parent" />
+                  <valItem ident="geschwister" sameAs="sibling" />
+                  <valItem ident="kind" sameAs="child" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          
+          <!-- CUSTOMIZATION: added name@amt / German - DKJ: I'm really not convinced we need to get this degree of granularity. We should probably create a more comprehensive taxonomy file-->
+          <elementSpec ident="name" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="amt" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="accoluth" sameAs="acolyte"/>
+                  <valItem ident="almosenpfleger" sameAs=""/>
+                  <valItem ident="ältester" sameAs="elder"/>
+                  <valItem ident="ältestin" sameAs="eldress"/>
+                  <valItem ident="aufseher" sameAs="overseer"/>
+                  <valItem ident="bischof" sameAs="bishop"/>
+                  <valItem ident="chorarbeiter" sameAs="choir labourer"/>
+                  <valItem ident="chorhelfer/chorpfleger" sameAs="choir helper"/>
+                  <valItem ident="diaconus" sameAs="deacon"/>
+                  <valItem ident="diaconisse" sameAs="deaconess"/>
+                  <valItem ident="generalältester" sameAs="general elder"/>
+                  <valItem ident="generalältestin" sameAs="general eldress"/>
+                  <valItem ident="heidenarbeiter" sameAs="heathen worker"/>
+                  <valItem ident="krankenwärter" sameAs="sick waiter"/>
+                  <valItem ident="vorsteher" sameAs="supervisor"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
             
           
-          
+          <!-- CUSTOMIZATION: added orgName@de / German -->
+          <elementSpec ident="orgName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="de" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="œconomie" sameAs="œconomy" />
+                  <valItem ident="ehechor" sameAs="married choir" />
+                  <valItem ident="gemeine" sameAs="congregation" />
+                  <valItem ident="große knaben" sameAs="greater boys choir" />
+                  <valItem ident="große maedchen" sameAs="greater girls choir" />
+                  <valItem ident="jüngerhaus" sameAs="disciple's house" />
+                  <valItem ident="kinderchor" sameAs="childrens choir" />
+                  <valItem ident="ledige brueder" sameAs="single brothers choir" />
+                  <valItem ident="ledige schwestern" sameAs="single sisters choir" />
+                  <valItem ident="pilgergemeine" sameAs="pilgrim congregation" />
+                  <valItem ident="seegemeine" sameAs="sea congregation" />
+                  <valItem ident="synode" sameAs="synod" />
+                  <valItem ident="witwenchor" sameAs="widows choir" />
+                  <valItem ident="witwerchor" sameAs="widowers choir" />
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
           
           
           

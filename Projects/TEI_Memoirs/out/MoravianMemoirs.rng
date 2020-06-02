@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-28T21:29:19Z. .
+Schema generated from ODD source 2020-05-29T15:44:02Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -4342,7 +4342,7 @@ Suggested values include: 1] choir festival; 2] foot washing; 3] lovefeast; 4] M
          <optional>
             <attribute name="event">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] baptism; 2] birth; 3] awakening; 4] conversion; 5] death; 6] draw lot; 7] marriage; 8] reception; 9] sacrament; 10] interment; 11] communion; 12] religious; 13] acceptance; 14] departure; 15] arrival; 16] expulsion; 17] exclusion</a:documentation>
+Suggested values include: 1] baptism; 2] birth; 3] awakening; 4] conversion; 5] death; 6] draw lot; 7] marriage; 8] reception; 9] sacrament; 10] interment; 11] communion; 12] religious; 13] acceptance; 14] entrance; 15] expulsion; 16] exclusion; 17] departure; 18] arrival; 19] confirmation; 20] transfer</a:documentation>
                <choice>
                   <value>baptism</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -4370,13 +4370,19 @@ Suggested values include: 1] baptism; 2] birth; 3] awakening; 4] conversion; 5] 
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>acceptance</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>departure</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>arrival</value>
+                  <value>entrance</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>expulsion</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>exclusion</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>departure</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>arrival</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>confirmation</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>transfer</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <data type="Name"/>
                </choice>
@@ -12272,7 +12278,8 @@ Sample values include: 1] primary; 2] secondary; 3] undergraduate; 4] graduate; 
          <ref name="att.sortable.attributes"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] baptism; 2] birth; 3] awakening; 4] conversion; 5] death; 6] draw lot; 7] marriage; 8] reception; 9] sacrament; 10] interment; 11] communion; 12] religious; 13] acceptance; 14] entrance; 15] expulsion; 16] exclusion; 17] departure; 18] arrival; 19] confirmation; 20] transfer</a:documentation>
                <choice>
                   <value>baptism</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -12300,14 +12307,23 @@ Sample values include: 1] primary; 2] secondary; 3] undergraduate; 4] graduate; 
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>acceptance</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>entrance</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>expulsion</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>exclusion</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>departure</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>arrival</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>exclusion</value>
+                  <value>confirmation</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>expulsion</value>
+                  <value>transfer</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
                </choice>
             </attribute>
          </optional>

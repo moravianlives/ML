@@ -299,6 +299,14 @@
             </attList>
           </elementSpec>
           
+          <!-- CUSTOMIZATION: added objectName, object, and listObject to namesdates module - because TEI has not yet implemented objectName universally -->
+          <elementSpec module="namesdates" ident="att.typed" mode="add">
+            <attList>
+              <attDef ident="objectName" mode="change" />
+              <attDef ident="object" mode="change" />
+              <attDef ident="listObject" mode="change" />
+            </attList>
+          
           <!--______________________________________________________________________________________________________________________________________________________________________________-->
           <!--                                                             Below is code relating to the schema for the work ontology                                                       -->
           <!--______________________________________________________________________________________________________________________________________________________________________________-->

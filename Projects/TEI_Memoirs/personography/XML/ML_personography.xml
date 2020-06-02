@@ -1227,8 +1227,7 @@
                <event type="reception" where="#mlpla000120" when-iso="1744">
                   <desc> received in society at Shelf</desc>
                </event>
-               <event type="transfer" when-iso="1745">
-                  <!-- does Smith House get a placeID? Wikipedia says it was a farmhouse near Halifax -->
+               <event type="transfer" where="#mlpla000122" when-iso="1745">
                   <desc>transfered to society at Smith House</desc>
                </event>
                <event type="entrance" where="#mlpla000121" when-iso="1745-02">
@@ -1278,7 +1277,7 @@
                   <placeName ref="#mlpla000003">Fulneck</placeName> sisters' house 
                </death>
                <event type="baptism" where="#mlpla000119" when-iso="1727-02-14">
-                  <desc>baptized at Northowram and Coley non-conformist (Presbyterian) Church 14 Febuary, 1727 (3 Febuary, 1726 OS)</desc>
+                  <desc>baptized at Northowram and Coley non-conformist <orgName religion="Presbyterian">(Presbyterian) Church</orgName> 14 Febuary, 1727 (3 Febuary, 1726 OS)</desc>
                </event>
                <event type="receeption" where="#mlpla000041" when-iso="1748">
                   <desc>received into society at Little Gomersal</desc>
@@ -1315,65 +1314,40 @@
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1718-04-17">17 April, 1718</date>
                   <date type="birth" calendar="Gregorian" when-iso="1718-04-28">28 April, 1718</date>
-                  <placeName>Northowram Parish of Halifax</placeName>
+                  <placeName ref="#mlpla000119">Northowram Parish of Halifax</placeName>
                </birth>
                <death>
                   <date type="death" calendar="Julian" when-iso="1749-06-23">23 June, 1749</date>
                   <date type="death" calendar="Gregorian" when-iso="1749-07-04">4 July, 1749</date>
-                  <placeName ref="#fulneck">Fulneck</placeName>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism">
-                  <desc>
-                     <date calendar="Julian" when-iso="1718-05-01">1 May, 1718</date>
-                     <date calendar="Gregorian" when-iso="1718-05-12">12 May, 1718</date>
-                     <placeName>Northowram and Coley non-conformist (Presbyterian) Church</placeName>
-                  </desc>
+               <event type="baptism" where="#mlpla000119" when-iso="1718-05-12">
+                  <desc>baptized at Northowram and Coley non-conformist <orgName religion="Presbyterian">(Presbyterian) Church</orgName> 12 May, 1718 (1 May, 1718 OS)</desc>
                </event>
-               <event when-iso="1740">
-                  <desc> awakened </desc>
+               <event type="entrance" where="#mlpla000120">
+                  <desc>entered Ingham's society at Shelf</desc>
                </event>
-               <event>
-                  <desc>
-                     <orgName>Ingham's society </orgName>
-                     <placeName>Shelf</placeName>
-                  </desc>
-               </event>
-               <event type="reception">
+               <event type="reception" where="#mlpla000120">
                   <desc> received society <placeName>Shelf</placeName>
                   </desc>
                </event>
-               <event when-iso="1745">
-                  <desc> transfered society <placeName>Smith House</placeName>
-                  </desc>
+               <event type="transfer" where="#mlpla000122" when-iso="1745">
+                  <desc> transfered to society at Smith House</desc>
                </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1745-01-19">19 January, 1745</date>
-                     <date calendar="Gregorian" when-iso="1746-01-30">30 January, 1746</date>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1746-01-30">
+                  <desc>received into congregation at Fulneck 30 January, 1746 (19 January, 1745 OS)</desc>
                </event>
-               <event when-iso="1746-02-24">
-                  <desc>
-                     <placeName>sisters' house Oxheys</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000121" when-iso="1746-02-24">
+                  <desc>entered sisters' house at Oxheys</desc>
                </event>
-               <event type="sacrament">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1747-04-20">20 April, 1747</date>
-                     <date calendar="Gregorian" when-iso="1747-05-01">1 May, 1747</date>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1747-05-01">
+                  <desc>sacrament at Fulneck 1 May, 1747 (20 April, 1747 OS)</desc>
                </event>
-               <event when-iso="1747-02-27">
-                  <desc> transfered <placeName>sisters' house Pudsey</placeName>
-                  </desc>
+               <event type="transfer" where="#mlpla000090" when-iso="1747-02-27">
+                  <desc>transfered to sisters' house at Pudsey</desc>
                </event>
-               <event>
-                  <desc>
-                     <placeName>conngregation house Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1749-05-26">26 May, 1749</date>
-                     <date calendar="Gregorian" when-iso="1749-06-06">6 June, 1749</date>
-                  </desc>
+               <event type="entrance" where="#mlpla000003" when-iso="1749-06-06">
+                  <desc>entered congregation house at Fulneck 6 June, 1749 (26 May, 1749 OS)</desc>
                </event>
                <!-- Don't know whether the below should be an event or occupation. Asked question on daily log Google Doc -->
                <!-- congregation office:  visitor Yorkshire 26.03.1748 (OS) / 06.04.1748 (NS) -->
@@ -1382,7 +1356,7 @@
                   <date calendar="Julian" when-iso="1748-03-26">26 March, 1748</date>
                   <date calendar="Gregorian" when-iso="1748-04-06">6 April, 1748</date> visitor <placeName ref="#mlpla000084">Yorkshire</placeName>
                </office>
-               <affiliation ref="#fulneck">Fulneck</affiliation>
+               <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/10</bibl>
                <note>(LW/P/F)CBss=#CLARK, Grace (1718-1749) b 17.04.1718 (OS) / 28.04.1718 (NS) Northowram Parish of Halifax reception: baptized Northowram and Coley non-conformist (Presbyterian)
                   Church 01.05.1718 (OS) / 12.05.1718 (NS), awakened 1740, Ingham’s society Shelf, received society Shelf, transferred society Smith House 1745, received congregation Yorkshire in
@@ -1393,26 +1367,83 @@
                </note>
             </person>
          </listPerson>
-         <!-- There is no Ester Clerk but there is an Ester Cleak who was singlse. Are these possibly the same person? -->
          <listPerson>
             <person xml:id="mlper000233">
                <persName>
                   <forename>Esther</forename>
                   <surname type="birth">Clerk</surname>
+                  <name type="variant" resp="#Yorkshire_Families">Cleak</name>
+                  <name type="variant" resp="#memoir">Cleake</name>
                </persName>
-               <affiliation ref="#fulneck">Fulneck</affiliation>
-               <bibl type="memoir" n="1">Ful/SS/14_1</bibl>
-               <bibl type="memoir" n="2">Ful/SS/14_2</bibl>
+               <birth>
+                  <date type="birth" calendar="Julian" when-iso="1715-06-27"> 27 June, 1715</date>
+                  <date type="birth" calendar="Gregorian" when-iso="1715-07-08">8 July, 1715</date>
+                  <placeName ref="#mlpla000123">Kirton Lincolnshire</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1791-05-29">29 May, 1791</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName> sisters' house 
+               </death>
+               <event type="baptism">
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000004" when-iso="1745-03-16">
+                  <desc>received into society at Fetter Lane</desc>
+               </event>
+               <event type="reception" where="#mlpla000054" when-iso="1747-05-29">
+                  <desc>received into congregation at London 29 May, 1747 (18 May, 1747 OS)</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000054" when-iso="1747-11-13">
+                  <desc>sacrament at London 13 November, 1747 (2 November, 1747)</desc>
+               </event>
+               <event where="#mlpla000082">
+                  <desc>blessed as deaconess at Wiltshire</desc>
+               </event>
+               <event where="#mlpla000003" when-iso="1784">
+                  <desc>retired at Fulneck</desc>
+               </event>
+               <office when-iso="1751-08-29">single sisters’ labourer at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
+               <office when-iso="1751-10-13">opened girls’ day school at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
+               <!-- is the above an office or event, or both? it is listed in the church service section from YF doc -->
+               <office when-iso="1757-09-16">single sisters’ labourer at <placeName ref="#mlpla000025">Bedford</placeName></office>
+               <office when-iso="1763-07-19">single sisters’ labourer at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
+               <office when-iso="1772">single sisters’ labourer at <placeName ref="#mlpla000054">London</placeName></office>
+               <affiliation ref="#mlpla000003">Fulneck</affiliation>
+               <bibl type="memoir" n="2">Ful/SS/14/2</bibl>
+               <note>(F/O)CLEAK, Esther (Hetty) (1715-1791) b 27.06.1715 (OS) / 08.07.1715 (NS) Kirton Lincolnshire reception: baptized Church of England, received society Fetter Lane 16.03.1745,
+                  received congregation London 18.05.1747 (OS) / 29.05.1747 (NS), sacrament London 02.11.1747 (OS) / 13.11.1747 (NS) church orders: blessed as deaconess Wiltshire
+                  church service: single sisters’ labourer Ockbrook 29.08.1751, opened girls’ day school Ockbrook 13.10.1751, single sisters’ labourer Bedford 16.09.1757, Ockbrook 19.07.1763, 
+                  London October 1772, retired Fulneck 1784 family: sister of Thomas (b 1709)? d 29.05.1791 aged 75 sisters’ house Fulneck, interred Fulneck by Br G Traneker 31.05.1791
+                  grave 880 - 1st section, 51st row, 6th grave from path
+               </note>
             </person>
          </listPerson>
-         <!-- There is no Elizabeth Coffin in the monster list -->
+         <!-- There is no Elizabeth Coffin in the monster list; information take from memoir -->
          <listPerson>
             <person xml:id="mlper000234">
                <persName>
                   <forename>Elizabeth</forename>
                   <surname type="birth">Coffin</surname>
                </persName>
-               <affiliation ref="#fulneck">Fulneck</affiliation>
+               <birth>
+                  <date type="birth" when-iso="1777">1777</date>
+                  <placeName ref="#mlpla000124">Ellesmere</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1855-01-28">28 January, 1855</date>
+                  <placeName ref="#mlpla000003" cert="medium">Fulneck</placeName>
+               </death>
+               <event type="arrival" where="#mlpla000054">
+                  <desc>removed to London at age of 17 or 18</desc>
+               </event>
+               <event type="arrival" where="#mlpla000030" when-iso="1820" cert="medium">
+                  <desc>removed to Bristol</desc>
+               </event>
+               <event type="arrival" where="#mlpla000003" when-iso="1831-07">
+                  <desc>removed to Fulneck</desc>
+               </event>
+               <!-- should the above events also (or only) be encoded as residences? -->
+               <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/46</bibl>
             </person>
          </listPerson>
@@ -1423,50 +1454,40 @@
                   <surname type="birth">Craven</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1723-12-01">1 December, 1723</date>
-                  <placeName>Rothwell</placeName>
+                  <date type="birth" when-iso="1723-12-01" resp="#Yorkshire_Families">1 December, 1723</date>
+                  <date type="birth" when-iso="1717-11-11" resp="#memoir">11 Novemeber, 1717</date>
+                  <!-- both versions of the memoir have the 11 November, 1717 birthdate -->
+                  <placeName ref="#mlpla000125">Rothwell</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1790-11-10">10 November, 1790</date>
-                  <placeName ref="#fulneck">Fulneck</placeName>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
                <event type="baptism">
-                  <desc>
-                     <orgName religion="Anglican">Church of England</orgName>
-                  </desc>
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event>
-                  <desc>
-                     <orgName>Ingham's society</orgName>
-                     <placeName>Rothwell</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000125">
+                  <desc>entered <orgName>Ingham's society</orgName> at Rothwell</desc>
                </event>
-               <event type="reception" when-iso="1745">
-                  <desc> received society <placeName>Holbeck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000089" when-iso="1745">
+                  <desc>received into society at Holbeck</desc>
                </event>
-               <event when-iso="1755-05-20">
-                  <desc>
-                     <placeName>sisters' house Gomeresal</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000041" when-iso="1755-05-20">
+                  <desc>entered sisters' house at Gomeresal</desc>
                </event>
-               <event type="reception" when-iso="1756-03-04">
-                  <desc> received congregation <placeName ref="#fulneck">Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1756-03-04">
+                  <desc>received into congregation at Fulneck</desc>
                </event>
-               <event when-iso="1756-09-20">
-                  <desc>
-                     <placeName>sisters' house Fulneck</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000003" when-iso="1756-09-20">
+                  <desc>entered sisters' house at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1757-03-21">
-                  <desc>
-                     <placeName ref="#fulneck">Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1757-03-21">
+                  <desc>sacrament at Fulneck</desc>
                </event>
                <occupation>spinner</occupation>
-               <affiliation ref="#fulneck">Fulneck</affiliation>
+               <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/41</bibl>
+               <bibl type="memoir">Ful/3/08</bibl>
                <note>(W/P/G/F)>=#CRAVEN, Sarah (1723-1790) b 01.12.1723 Rothwell occupation: spinner reception: baptized Church of England, Ingham’s society Rothwell, received society Holbeck 1745,
                   sisters’ house Gomersal 20.05.1755, received congregation Gomersal in Fulneck 04.03.1756, sisters’ house Fulneck 20.09.1756, sacrament Fulneck 21.03.1757 d 10.11.1790 aged 66
                   Fulneck, interred Fulneck by Br G Traneker 15.11.1790 grave 869 - 1st section, 51st row, 1st grave by path</note>
@@ -1590,6 +1611,7 @@
                </event>
                <affiliation ref="#fulneck">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/75</bibl>
+               <!-- there is also a memoir for Hannah Dyson in the London/Fetter Lane collection -->
                <note> (LW/G/P/F)CBssDYSON, Hannah (1727-1767) b 27.09.1727 Kirkheaton resided: Grace Hall Fulneck 1753- reception: baptized Church of St John the Baptist Kirkheaton 19.10.1727 (OS) /
                   30.10.1727 (NS), received society Little Gomersal 1746, sisters’ house Cleckheaton 1746, received congregation Yorkshire in Fulneck 22.05.1747 (OS) / 02.06.1747 (NS), sacrament
                   Yorkshire in Fulneck 10.07.1748 (OS) / 21.07.1748 (NS), sisters’ house Tyersal 1749, sisters’ house Fulneck 15.12.1752 - 1753, founder member Fulneck congregation 19.04.1755,

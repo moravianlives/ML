@@ -1857,7 +1857,7 @@
                <birth>
                   <date type="birth" when-iso="1725-04-16" resp="#Yorkshire_Families">16 April, 1725</date>
                   <date type="birth" when-iso="1724-04-16" resp="#memoir">16 April, 1724</date>
-                  <placeName ref="#mlpla000138">Spen Parish of Birstall</placeName>
+                  <placeName ref="#mlpla000154">Spen Parish of Birstall</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1757-07-10">10 July, 1757</date>
@@ -2044,27 +2044,28 @@
                </persName>
                <birth>
                   <date type="birth" when-iso="1755-05-16">16 May, 1755</date>
-                  <placeName>Gomersal</placeName>
+                  <placeName ref="#mlpla000041">Gomersal</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1769-07-20">20 July, 1769</date>
-                  <placeName>sisters' house Fulneck</placeName>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>sisters' house 
                </death>
-               <residence notBefore="1775-05-16" notAfter="1759"><placeName>Gomersal</placeName></residence>
+               <residence notBefore="1755-05-16" notAfter="1759"><placeName ref="#mlpla000041">Gomersal</placeName></residence>
                <residence notBefore="1759" notAfter="1769-07-20"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <event type="baptism" when-iso="1755-05-18">
-                  <desc>
-                     <placeName>Gomersal</placeName>
-                  </desc>
+               <event type="baptism" where="#mlpla000041" when-iso="1755-05-18">
+                  <desc>baptized at Gomersal</desc>
                </event>
-               <event type="reception" when-iso="1769-03-27">
-                  <desc> received congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="arrival" where="#mlpla000003" when="1760">
+                  <desc>removed with her parents to Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1769-07-16">
-                  <desc>
-                     <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" cert="medium" when-iso="03-25">
+                  <desc>received into the <orgName en="greater girls choir">great girls choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1769-03-27">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1769-07-16">
+                  <desc>sacrament at Fulneck</desc>
                </event>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/16</bibl>
@@ -2075,66 +2076,39 @@
                   house Fulneck, interred Fulneck by Br J Worthington 22.07.1769 grave 378 - 1st section, 15th row, 9th grave from path </note>
             </person>
          </listPerson>
+         <!-- This is not the same Hannah Hutchinson as in YF document. Information pulled from memoir. -->
          <listPerson>
             <person xml:id="mlper000253">
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Hutchinson</surname>
-                  <surname type="married">Grundy</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1760-03-10">10 March, 1760</date>
-                  <placeName>Pudsey</placeName>
+                  <date type="birth" when-iso="1784-11-22">22 November, 1784</date>
+                  <placeName ref="#mlpla000052">Littlemoor</placeName>
                </birth>
                <death>
-                  <date type="death" when-iso="1837-02-02">2 Febuary, 1837</date>
+                  <date type="death" when-iso="1810-04-04">4 April, 1810</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" when-iso="1760-04-03">
-                  <desc>
-                     <placeName> All Saint's chapel-of-ease Pudsey</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000003" when-iso="1800-07">
+                  <desc>entered Sisters' house at Fulneck</desc>
                </event>
-               <event when-iso="1774-09-23">
-                  <desc>
-                     <placeName>sisters' house Littlemoor</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1803-03">
+                  <desc>received into congregation at Fulneck</desc>
                </event>
-               <event type="reception" when-iso="1776-10-14">
-                  <desc> received congregation <placeName>Pudsey in Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1803-05-04">
+                  <desc>received into <orgName en="single sisters choir">Single Sisters' Choir</orgName> at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1781-01-28">
-                  <desc>
-                     <placeName>Pudsey in Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1804-03-29">
+                  <desc>sacrament at Fulneck</desc>
                </event>
-               <event>
-                  <desc>
-                     <placeName>sisters' house Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1810-03-31">
+                  <desc>last sacrament at Fulneck</desc>
                </event>
-               <event notAfter="1801">
-                  <desc>
-                     <placeName>sisters' house Lower Wyke</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1820">
-                  <desc> widows' house Fulneck </desc>
-               </event>
-               <office when-iso="1802">congregation labourer <placeName ref="#mlpla000035">Dukinfield</placeName></office>
-               <occupation when-iso="1805"><placeName>Kingswood</placeName></occupation>
-               <occupation when-iso="1813-11-24">housekeeper <placeName>boys' school Ockbrook</placeName></occupation>
-               <event from="1818-07-27" to="1820">
-                  <desc> retired <placeName>Baildon</placeName>
-                  </desc>
-               </event>
+               <occupation from="1807-01" to="1809-12">teacher at Boarding School at <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/43</bibl>
-               <note>HUTCHINSON, Hannah (1760-1837) b 10.03.1760 Pudsey reception: baptized All Saints’ chapel-of-ease Pudsey 03.04.1760, sisters’ house Littlemoor 23.09.1774, received congregation
-                  Pudsey in Fulneck 14.10.1776, sacrament Pudsey in Fulneck 28.01.1781, sisters’ house Fulneck, sisters’ house Lower Wyke -1801, widows’ house Fulneck 1820 church service: congregation
-                  labourer Dukinfield 1802, Kingswood 1805, housekeeper boys’ school Ockbrook 24.11.1813, retired Baildon 27.07.1818 - 1820 m James GRUNDY (b 1748) St Wilfrid’s Church Calverley
-                  07.12.1801 – widowed 11.10.1820 family: daughter of Joseph Hutchinson, daughter-in-law of Elizabeth Grundy (née Alred) (b 1717) d 02.02.1837 aged 76 Fulneck, interred Fulneck by Br J
-                  Smith 06.02.1837 grave 1585 - 2nd section, 67th row, 8th grave from path</note>
             </person>
          </listPerson>
          <listPerson>
@@ -2142,9 +2116,64 @@
                <persName>
                   <forename>Suzanna</forename>
                   <surname type="birth">Liley</surname>
+                  <name type="variant" resp="#Yorkshire_Families">Susan Liley</name>
+                  <name type="variant" resp="#memoir">Susana Lily</name>
                </persName>
+               <birth>
+                  <date type="birth" calendar="Julian" when-iso="1722-11-01">1 November, 1722</date>
+                  <date type="birth" calendar="Gregorian" when-iso="1722-11-12">12 November, 1722</date>
+                  <placeName ref="#mlpla000154">Spen Parish of Birstall</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1758-01-18">18 January, 1758</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName> sisters' house
+               </death>
+               <event type="baptism">
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="entrance" where="#mlpla000097">
+                  <desc>entered Ingham’s society at Cleckheaton</desc>
+               </event>
+               <event type="reception" where="#mlpla000097" when-iso="1744">
+                  <desc>received into society at Cleckheaton</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1745-04-25">
+                  <desc>received into congregation at Fulneck 25 April, 1745 (14 April, 1745 OS)</desc>
+               </event>
+               <event type="transfer" where="#mlpla000122" when-iso="1745">
+                  <desc>transferred to society at Smith House</desc>
+               </event>
+               <event type="transfer" where="#mlpla000059" when-iso="1745">
+                  <desc>transferred to society at Mirfield</desc>
+               </event>
+               <event type="entrance" where="#mlpla000121" when-iso="1745">
+                  <desc>entered sisters’ house at Oxheys</desc>
+               </event>
+               <event type="sacrament" where="mlpla000003" when-iso="1746-05-01">
+                  <desc>sacrament at Fulneck 1 May, 1746 (20 April, 1746 OS)</desc>
+               </event>
+               <event type="entrance" where="#mlpla000097" when-iso="1747">
+                  <desc>entered sisters’ house at Cleckheaton</desc>
+               </event>
+               <event type="entrance" where="#mlpla000104" when-iso="1748">
+                  <desc>entered sisters’ house at Holme</desc>
+               </event>
+               <event type="entrance" where="#mlpla000003" when-iso="1752-12-15">
+                  <desc>entered sisters' house at Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000041" when-iso="1755-05-20">
+                  <desc>entered sisters’ house at Gomersal</desc>
+               </event>
+               <event type="arrival" where="#mlpla000003">
+                  <desc>returned to sisters’ house at Fulneck</desc>
+               </event>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/SS/18</bibl>
+               <note>(LW/G/W/P/F)CBss LILEY, Susan (Susy) (1722-1758) b 01.11.1722 (OS) / 12.11.1722 (NS) Spen Parish of Birstall reception: baptized Church of England, Ingham’s society Cleckheaton,
+                  received society Cleckheaton 1744, received congregation Yorkshire in Fulneck 14.04.1745 (OS) / 25.04.1745 (NS), transferred society Smith House 1745, transferred society Mirfield 1745,
+                  sisters’ house Oxheys 1745, sacrament Yorkshire in Fulneck 20.04.1746 (OS) / 01.05.1746 (NS), sisters’ house Cleckheaton 1747, sisters’ house Holme 1748, sisters’ house Fulneck 15.12.1752, 
+                  founder member Fulneck congregation 19.04.1755, sisters’ house Gomersal 20.05.1755, returned sisters’ house Fulneck d 18.01.1758 aged 35 sisters’ house Fulneck, 
+                  interred Fulneck by Br B La Trobe 20.01.1758 grave 125 - 1st section, 4th row, 7th grave from path </note>
             </person>
          </listPerson>
          <listPerson>
@@ -2156,44 +2185,48 @@
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1718-10-09">9 October, 1718</date>
                   <date type="birth" calendar="Gregorian" when-iso="1718-10-20">20 October, 1718</date>
-                  <placeName>Killinghall Parish of Ripley</placeName>
+                  <date type="birth" when-iso="1718-09-20" resp="#memoir"></date>
+                  <placeName ref="#mlpla000155">Killinghall Parish of Ripley</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1798-03-31">31 March, 1798</date>
-                  <placeName>sisters' house Fulneck</placeName>
+                  <placeName ref="#mlpla000003">Fulneck</placeName> sisters' house
                </death>
-               <occupation>quilter</occupation>
-               <occupation when-iso="1744">servant maid <placeName>congregation house Fulneck</placeName></occupation>
-               <occupation from="1747-02-08" to="1753">cook <placeName>congregation house Fulneck</placeName></occupation>
-               <event type="baptism">
-                  <desc>
-                     <date calendar="Julian" when-iso="1718-10-17">17 October, 1718</date>
-                     <date calendar="Gregorian" when-iso="1718-10-28">28 October, 1718</date>
-                     <placeName>All Saints' Church Ripley</placeName>
-                  </desc>
+               <event type="baptism" where="#mlpla000156" when-iso="1718-10-28">
+                  <desc>baptized at All Saints' Church Ripley 28 October, 1718 (17 October, 1718 OS)</desc>
                </event>
                <event type="reception">
-                  <desc> received society </desc>
+                  <desc>received into society</desc>
                </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
+               <event type="confirmation" notBefore="1734">
+                  <desc>confirmed by the Bishop</desc>
+               </event>
+               <event type="arrival" where="#mlpla000090" when-iso="1742-09-06">
+                  <desc>arrived in Pudsey</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1746-06-19">
+                  <desc>received into congregation at Fulneck 19 June, 1746 (8 June, 1746 OS)
                   </desc>
                </event>
-               <event type="sacrament">
-                  <desc>
-                     <date calendar="Julian" when-iso="1748-04-01">1 April, 1748</date>
-                     <date calendar="Gregorian" when-iso="1748-04-12">12 April, 1748</date>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" when-iso="1747-03-25" resp="memoir">
+                  <desc>sacrament</desc>
                </event>
-               <event when-iso="1753">
-                  <desc>
-                     <placeName>sisters’ house Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1748-04-12" resp="#Yorkshire_Families">
+                  <desc>sacrament at Fulneck 12 April, 1748 (1 April, 1748 OS)</desc>
+               </event>
+               <event type="entrance" where="#mlpla000003" when-iso="1753">
+                  <desc>entered sisters’ house at Fulneck</desc>
+               </event>
+               <event type="arrival" where="#mlpla000003" when-iso="1755">
+                  <desc>returned to Fulneck</desc>
                </event>
                <event when-iso="1755-04-19">
-                  <desc> founder member Fulneck congregation </desc>
+                  <desc>founder member Fulneck congregation</desc>
                </event>
+               <occupation>quilter</occupation>
+               <occupation notBefore="1735">servant at <placeName ref="#mlpla000157">Rippon</placeName></occupation>
+               <occupation when-iso="1744">servant maid congregation house <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
+               <occupation from="1747-02-08" to="1753">cook congregation house <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir" />
                <note>(F)CBssLUTY, Eleanor (Ellen/Nelly) (1718-1798) b 09.10.1718 (OS) / 20.10.1718 (NS) Killinghall Parish of Ripley occupation: quilter, servant maid congregation house Fulneck 1744,

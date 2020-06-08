@@ -119,7 +119,607 @@
 			</sourceDesc>
 		</fileDesc>
 		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608102114469",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:21:14.469Z",
+	"dcterms:issued": "2020-06-08T16:12:32.425Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608102114469#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608102114469#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[7]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000043",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103806775",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:38:06.775Z",
+	"dcterms:issued": "2020-06-08T16:12:32.430Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103806775#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103806775#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[7]/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000072",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103936523",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:39:36.523Z",
+	"dcterms:issued": "2020-06-08T16:12:32.430Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103936523#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608103936523#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[7]/rs[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000073",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608104628951",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:46:28.951Z",
+	"dcterms:issued": "2020-06-08T16:12:32.431Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608104628951#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?rs_annotation_20200608104628951#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[8]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000072",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105053589",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:50:53.589Z",
+	"dcterms:issued": "2020-06-08T16:12:32.431Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105053589#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105053589#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[13]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1852"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105131453",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:51:31.453Z",
+	"dcterms:issued": "2020-06-08T16:12:32.431Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105131453#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105131453#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[13]/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1860"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105428860",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T14:54:28.860Z",
+	"dcterms:issued": "2020-06-08T16:12:32.431Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105428860#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608105428860#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[15]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1862"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608113915065",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-08T15:39:15.065Z",
+	"dcterms:issued": "2020-06-08T16:12:32.432Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608113915065#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/marychurch_ann.xml?date_annotation_20200608113915065#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/p[23]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1860"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 
 			<particDesc>
 				<person role="subject">
@@ -134,27 +734,26 @@
 		<body>
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-01.jpg" n="1"/>
 			<p>
-				A. E. Marychurch <lb/>     After a careful search through my dear<lb/> Sisters papers I regret to say, that we
+				<persName ref="#mlper000565" cert="high" type="real">A. E. Marychurch</persName> <lb/>     After a careful search through my dear<lb/> <roleName type="honorific">Sisters</roleName> papers I regret to say, that we
 				<lb/> have been unable to find any distinct <lb/> memory of her past life, there are
 				various <lb/> short diaries written even in a very early <lb/> period of her life
-				containing statements <lb/> of <name>deep religious feeling</name>, and even spirit
+				containing statements <lb/> of deep religious feeling, and even spirit
 				<lb/> ual experience, but she seems to have <lb/> shrunk from the last of compiling
 				<lb/> any thing like a regular memoir. <lb/> What she declined to do for herself
-				from <lb/> a feeling a rising probably from her <name>ex <lb/> treme humility</name>
+				from <lb/> a feeling a rising probably from her ex <lb/> treme humility
 				her brother and her <lb/> friends have endeavoured in some de <lb/> gree to supply.
 				Her life was not crowd <lb/> ed with exciting events, yet it was <lb/> one of
 				unusual usefulness, and her <lb/> energies became more active as her <lb/> bodily
 				strength declined; her light shone <lb/> more &amp; more until she reached the <lb/>
-				perfect day. Ann Elizabeth
-					Marychurch
-				<lb/> was <name event="birth">born</name>
+				perfect day. <persName ref="#mlper000565" cert="high" type="real">Ann Elizabeth Marychurch</persName>
+				<lb/> was <name event="birth" when-iso="1804-09-24">born</name>
 				<date when="1804-09-24" cert="high">Sep<hi rend="superscript">tr</hi> 24<hi rend="superscript">th</hi> 1804</date> &amp; was <name event="baptism">baptized</name>
-				<lb/> in the Brethrens Church in Bristol
+				<lb/> in the <placeName ref="#mlpla000030" cert="high">Brethrens Church in Bristol</placeName>
 				<lb/> Thus her earthly course began in that </p>
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-02.jpg" n="2"/>
 			<p>
 				<rs cert="high">Church</rs> which she loved through <lb/> life more than any other
-				portion <lb/> of Gods heritage, she enbibid its
+				portion <lb/> of <persName type="real" cert="high">Gods</persName> heritage, she enbibid its
 				spirit <lb/> in early childhood and cherished it <lb/> to the last. Her parents were
 				esteemed <lb/> members of the <orgName en="congregation">Congregation</orgName>
 				&amp; her <lb/> Father was for many years, most <lb/> faithfully zealous and active
@@ -162,60 +761,61 @@
 				one <lb/> of the first members when the <orgName en="congregation">Congre <lb/>
 					gation</orgName> was settled in <date when="1755" cert="high">1755</date>. She
 				was <lb/> brought up by a very affectionate and <lb/> tender mother who trained her
-				early <lb/> in the ways of Gods people. In due
-				<lb/> time she was sent to school, but her <lb/> School days were <name>not
-					happy</name>, she <lb/> suffered much from those peculiar <lb/> school troubles
+				early <lb/> in the ways of <persName type="real" cert="high">Gods</persName> people. In due
+				<lb/> time she was sent to school, but her <lb/> School days were not
+					happy, she <lb/> suffered much from those peculiar <lb/> school troubles
 				which are often very <lb/> keenly felt by young sensitive child <lb/> ren, -
 				speaking of her school days <lb/> she once said I was a poor little timid <lb/>
 				thing and the unkind ridicule <lb/> of some of the older girls made me </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-03.jpg" n="3"/>
 			<p>
-				<name>very unhappy</name>, and pressed down my <lb/> spirits, so that my childhood
-				was <name>not <lb/> so happy</name> as it might have been. <lb/> Her mother being an
+				very unhappy, and pressed down my <lb/> spirits, so that my childhood
+				was not <lb/> so happy as it might have been. <lb/> Her mother being an
 				invalid, she became <lb/> very early useful in the family and <lb/> the active
-				habits which were thus <lb/> formed continued through life. <lb/> In <date when="1821" cert="high">1821</date> she was <name event="religious">confirmed</name> by the <roleName type="h">Rev<hi rend="superscript">d</hi>
-						<lb/> D<hi rend="superscript">r.</hi> </roleName>Okely the <name office="deacon">minister</name> of the <orgName en="congregation">Congrega <lb/>
+				habits which were thus <lb/> formed continued through life. <lb/> In <date when="1821" cert="high">1821</date> she was <name event="confirmation" when-iso="1821">confirmed</name> by the <persName ref="#mlper000703" cert="high" type="real"><roleName type="h"><roleName type="h">Rev<hi rend="superscript">d </hi></roleName></roleName>
+<lb/>
+<roleName type="h">D<hi rend="superscript">r.</hi> </roleName>Okely</persName> the <name office="#mloff000002">minister</name> of the <orgName en="congregation">Congrega <lb/>
 					tion</orgName> and in <date when="1822" cert="high">1822</date> she became a
-				received <lb/> member. A <name health="disease">dangerous illness</name> had excit
+				<name event="reception" when-iso="1822">received</name> <lb/> member. A <name health="disease">dangerous illness</name> had excit
 				<lb/> ed Solemn thought &amp; made her feel it <lb/> right to take these important
 				steps <lb/> but had not at that time received any <lb/> deep religious impressions,
 				she had not <lb/> as yet felt the burden of sin, nor the <lb/>
-				<name>inescpressible love</name> of <hi rend="underline">Jesus.</hi> She was in- <lb/> deed faithful in prayer and
-				had <name>ear <lb/> nest desires</name> that every thought should <lb/> be brought
-				into captivity to Christ. She <lb/> often retired
+				inescpressible love of <hi rend="underline"><persName type="real" cert="high">Jesus</persName>.</hi> She was in- <lb/> deed faithful in prayer and
+				had ear <lb/> nest desires that every thought should <lb/> be brought
+				into captivity to <persName type="real" cert="high">Christ</persName>. She <lb/> often retired
 				for prayer, and she wrote <lb/> out a solemn dedication of herself to <lb/> her
 					<roleName type="h">Saviour</roleName>, but her heart was not yet <lb/> decided
 				and she could not yet say </p>
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-04.jpg" n="4"/>
 			<p>
 				<roleName type="h">Lord</roleName> I will follow thee whither so ever <lb/> thou
-				goeth. But the Holy Spirit led her <lb/> into
+				goeth. But the <roleName type="honorific">Holy Spirit</roleName> led her <lb/> into
 				clearer views of her own ruined state <lb/> by nature, her sinfulness &amp;
-				depravity in <lb/> the sight of God, and often it
-				later years <lb/> did she bemoan herself almost in the <lb/> language of <roleName type="h">St.</roleName> Paul, "O wretched man <lb/>
+				depravity in <lb/> the sight of <persName type="real" cert="high">God</persName>, and often it
+				later years <lb/> did she bemoan herself almost in the <lb/> language of <persName type="real" cert="high">St. Paul</persName>, "O wretched man <lb/>
 				that I am who shall deliver me from <lb/> the body of this death." This deep convic
 				<lb/> tion of the corruption of her heart com <lb/> bined at times with what she
 				deplored <lb/> as a natural tendency to sceptism <lb/> frequently robbed her soul of
 				the peace <lb/> to be found in simply looking to the <lb/> blood &amp; righteousness
-				of Christ as the <lb/> sinners only hope. It was
-				once of her <lb/> greatest sources of <name>disquietude</name> amount <lb/> ing at
-				times to distracting torment, <lb/> that Satan was
+				of <persName type="real" cert="high">Christ</persName> as the <lb/> sinners only hope. It was
+				once of her <lb/> greatest sources of disquietude amount <lb/> ing at
+				times to distracting torment, <lb/> that <persName type="real" cert="high">Satan</persName> was
 				permitted to infuse <lb/> doubts into her mind of those great <lb/> and sacred
 				truths which she cherished <lb/> most dearly. </p>
 			<p> Possibly her active intellect aided the <lb/> temptation. But he who permitted it </p>
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-05.jpg" n="5"/>
-			<p> made a way to escape. Her <name>harrased <lb/> mind</name> sought comfort in the word
-				<lb/>of God &amp; in prayer; and through the <lb/>
-				Holy Spirits help she became established <lb/>
+			<p> made a way to escape. Her harrased <lb/> mind sought comfort in the word
+				<lb/>of <persName type="real" cert="high">God</persName> &amp; in prayer; and through the <lb/>
+				<roleName type="honorific">Holy Spirits</roleName> help she became established <lb/>
 				strengthened &amp; settled in the faith. Still <lb/> through life she at times
 				complained <lb/> of her hardness of heart &amp; slowness to <lb/> believe was "her
-				thorn in the flesh" often <lb/> producing <name>poignant distress</name>, but like <lb/>
-				<roleName type="h">St</roleName> Paul she heard the voice of
+				thorn in the flesh" often <lb/> producing poignant distress, but like <lb/>
+				<persName type="real" cert="high">St Paul</persName> she heard the voice of
 				comfort <lb/> saying, "My Grace is sufficient for thee" <lb/> There were however
 				times especially at <lb/> the <name event="communion">Holy Comnmunion</name> when
 				she realized <lb/> the saving love of her <roleName type="h">Lord</roleName>, &amp;
-				when her <lb/> heart was filled with <name>rapture &amp; joy</name>
+				when her <lb/> heart was filled with rapture &amp; joy
 				<lb/> Thus as life progressed she obtained <lb/> deeper spiritual experience -- her
 				faith <lb/> was not a dead faith, but brought <lb/> forth good fruit. It led her to
 				work <lb/> to work heartity in the <roleName type="h">Lords</roleName> service.
@@ -224,36 +824,40 @@
 				anscious to communicate </p>
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-06.jpg" n="6"/>
 			<p> it. In her early with she was a zealous <lb/>
-				<name occupation="schoolmaster">Sunday School teacher</name>, &amp; even in later
+				<rs ref="#mlocc000043" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sunday School teacher</rs>, &amp; even in later
 				<lb/> years, when her infermities would have <lb/> proved a sufficient excuse for
 				refusing <lb/> she undertook the Bible Class, when a <lb/> difficulty of supply was
-				experienced. She <lb/> became also a faithful and valued <name office="acolyte">dis
-					<lb/> trict visitor</name>, first in the <rs cert="high">Parish of S<hi rend="superscript">t</hi> James</rs>
-				<lb/> under the guidance of the <roleName type="h">Rev<hi rend="superscript">d</hi> </roleName>T T Beddulph
-				<lb/> and afterward in the <rs cert="high">Parish of S<hi rend="superscript">t</hi> Michael</rs>
+				experienced. She <lb/> became also a faithful and valued <name office="#mloff000008">dis
+					<lb/> trict visitor</name>, first in the <placeName ref="#mlpla000164" cert="high">Parish of S<hi rend="superscript">t</hi> James</placeName>
+				<lb/> under the guidance of the <persName cert="high" type="real"><roleName type="h">Rev<hi rend="superscript">d</hi> </roleName>T T Beddulph</persName>
+				<lb/> and afterward in the <placeName ref="#mlpla000165" cert="high">Parish of S<hi rend="superscript">t</hi> Michael</placeName>
 				<lb/>
 				<name health="disease">Failing health</name> alone compelled her to <lb/> relinquish
 				these duties, which she had <lb/> performed during many years with <lb/>
 				conscientious regularlity. She took deep <lb/> interest also in the work of the
 					<orgName>Bible Society</orgName>
-				<lb/> and faithfully filled the office of <name occupation="baker">Association <lb/>
-					Secretary</name> to the end of her life. In conjunc <lb/> tion with the general
+				<lb/> and faithfully filled the office of <rs ref="#mlocc000072" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Association
+<lb/>
+Secretary</rs> to the end of her life. In conjunc <lb/> tion with the general
 				work of the <orgName>Bible <lb/> Society</orgName>, she watched with especial
-				interest <lb/> the origin and growth of the branch <lb/> connected with the <orgName en="congregation">Brethrens Congrega <lb/> tion</orgName> in Bristol of which her revered <lb/> Father had been <name office="overseer">treasurer</name>. These were <lb/> labours of love invigorating her spiritual </p>
+				interest <lb/> the origin and growth of the branch <lb/> connected with the <orgName religion="Moravian Church">Brethrens Congrega
+<lb/>
+tion</orgName> in <placeName ref="#mlpla000030" cert="high">Bristol</placeName> of which her revered <lb/> Father had been <rs ref="#mlocc000073" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">treasurer</rs>. These were <lb/> labours of love invigorating her spiritual </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-07.jpg" n="7"/>
 			
 				
 				<p> life, and with drawing her mind from <lb/> dwelling too much upon her peculiar <lb/>
 				tendency to despondency to which her <lb/>
-				<name>nervous constitution</name> made her constantly <lb/> liable. But it was
-				especially to the <lb/> advancement of the Brethrens Mission <lb/> in connection
+				nervous constitution made her constantly <lb/> liable. But it was
+				especially to the <lb/> advancement of the <orgName religion="Moravian Church">Brethrens</orgName> Mission <lb/> in connection
 				with this <orgName en="congregation">Congregation</orgName>
 				<lb/> that she devoted her strength both of body <lb/> &amp; mind. Her persevering
 				self denying <lb/> labours in behalf of this great work <lb/> will not easily be
-				forgotten. For upwards <lb/> of 30 years dating from the early part <lb/> of  B<hi rend="superscript">r </hi>Ramftler's ministry in this <lb/>
-				place, she held the <name office="secretary">office of Secretary <lb/> of the Ladies
-					Association</name>, an office which <lb/> she filled with increasing delight
+				forgotten. For upwards <lb/> of 30 years dating from the early part <lb/> of  <persName ref="#mlper000541" cert="high" type="real"><roleName type="honorific">B<hi rend="superscript">r </hi></roleName>Ramftler</persName>'s ministry in this <lb/>
+				place, she held the <rs ref="#mlocc000072" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">office of Secretary
+<lb/>
+of the <orgName>Ladies Association</orgName></rs>, an office which <lb/> she filled with increasing delight
 				<lb/> &amp; increasing efficiency. In the last <lb/> year of her life she would
 				gladly have <lb/> resigned it into younger &amp; stronger <lb/> hands, but her
 				services were too valuable <lb/> to be lost and she was though with <lb/>
@@ -265,69 +869,69 @@
 
 			<p> of the branch under her charge to add <lb/> to the comforts of the Missionaries or to <lb/>
 				extend the sphere of their labours. <lb/> Her knowledge of the special circum <lb/>
-				stances of various Mission Stations <lb/> especially those of the West Indies <lb/>
-				and the peculiar difficulties which <lb/> Missionaries have to encounter, was <lb/>
+				stances of various Mission Stations <lb/> especially those of the <placeName ref="#mlpla000167" cert="high">West Indies</placeName> <lb/>
+				and the peculiar difficulties which <lb/> <name memoirSubject="n" office="#mloff000017">Missionaries</name> have to encounter, was <lb/>
 				enlarged by an extensive correspondence <lb/> which she held with those devoted
-				<lb/> servants of God; and this intimate <lb/> knowledge of their state she turned
-				<lb/> to good account by enlisting for them <lb/> the sympathise of children of God
+				<lb/> servants of <persName type="real" cert="high">God</persName>; and this intimate <lb/> knowledge of their state she turned
+				<lb/> to good account by enlisting for them <lb/> the sympathise of children of <persName type="real" cert="high">God</persName>
 				in <lb/> the various Christian denominations <lb/> around her. She has ceased from
 				her <lb/> blessed labours but her works follow <lb/> her and in many a distant land
 				<lb/> the announcement of her death will <lb/> be received with heartfelt sorrow.
-				<lb/> May the Lord of the Vineyard raise <lb/> up from this Congregation, a suitable
+				<lb/> May the <roleName type="honorific">Lord</roleName> of the Vineyard raise <lb/> up from this <orgName en="congregation">Congregation</orgName>, a suitable
 				<lb/> and devoted successor. These were evi <lb/> dences external to herself that
 				she was <lb/> in possession of true saving Faith </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-09.jpg" n="9"/>
 
-			<p> which in seasons of temptation she <lb/> aometimes doubted. She  loved the Lords <lb/> people
+			<p> which in seasons of temptation she <lb/> aometimes doubted. She  loved the <roleName type="honorific">Lords</roleName> <lb/> people
 				of every name and she had a <lb/> heart ever ready to sympathise in their joys &amp;
 				sorrows </p>
 			<p> To her own Church, she was warmly at <lb/> tached. Few have possessed the true <lb/>
-				Brethrens spirit in a larger degree <lb/> She loved the pious practices &amp; habits
+				<orgName religion="Moravian Church">Brethrens</orgName> spirit in a larger degree <lb/> She loved the pious practices &amp; habits
 				of <lb/> her Forefathers, she opposed innovation, <lb/> she sorrowed much over what
 				seemed <lb/> to her a declension from the good old ways <lb/> which so beautifully
 				distinguish her Church <lb/> from other less favoured Christian bodies <lb/> Several
 				papers were found in her desk <lb/> in which she had expressed her feelings <lb/> on
 				these subjects </p>
-			<p> Nevertheless she fervently loved the people <lb/> of God amongst whom her lot was cast, <lb/>
+			<p> Nevertheless she fervently loved the people <lb/> of <persName type="real" cert="high">God</persName> amongst whom her lot was cast, <lb/>
 				They were the people of her choice &amp; <lb/> her Church was to her as her earthly
-				<lb/> home. It was the strength of her love <lb/> &amp; attachment to the Brethrens
-				Church, <lb/> which made her peculiarly sensitive <lb/> as to any change in its
+				<lb/> home. It was the strength of her love <lb/> &amp; attachment to the <orgName religion="Moravian Church">Brethrens Church</orgName>, <lb/> which made her peculiarly sensitive <lb/> as to any change in its
 				rites &amp; customs </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-10.jpg" n="10"/>
 
-			<p> In 1852 her venerable &amp; beloved Father was <lb/> removed from her by sudden death. <lb/>
+			<p> In <date when="1852" cert="high">1852</date> her venerable &amp; beloved Father was <lb/> removed from her by sudden death. <lb/>
 				The shock which her nervous system re <lb/> ceived by this event, she never fully re
 				<lb/> covered, the great enemy of Souls took <lb/> advantage of her weak state to
 				strengthen <lb/> old doubts and fears and to infuse new <lb/> ones, so that she was
 				at times led to <lb/> question whether she had ever escperienced <lb/> real saving
 				grace. Her condition for a <lb/> time was most unhappy it was evi <lb/> dently in a
 				great degree the result <lb/> of a morbid state of the nervous system <lb/> &amp;
-				excessive bodily weakness. But as her <lb/> heath gradually improved, she was en
+				excessive bodily weakness. But as her <lb/> <name health="recovered">heath gradually improved</name>, she was en
 				<lb/> abled to overcome these temptatous to <lb/> despondency and to prove more than
-				<lb/> conqueror through Him that loved her. <lb/> In 1860 her health received
-				another shock <lb/> by the fracture of a leg, whilst on a visit <lb/> at Calne.
+				<lb/> conqueror through Him that loved her. <lb/> In <date when="1860" cert="high">1860</date> her health received
+				another shock <lb/> by the f<name health="injury">racture of a leg</name>, whilst on a visit <lb/> at <placeName ref="#mlpla000169" cert="high">Calne</placeName>.
 				Under this severe affection, she <lb/> manifested the true spirit of the child <lb/>
-				of God by her extreme patience &amp; resignation <lb/> Indeed all these toubles
+				of <persName type="real" cert="high">God</persName> by her extreme patience &amp; resignation <lb/> Indeed all these toubles
 				seemed to ripen <lb/> her for her heavenly home. She even spoke </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-11.jpg" n="11"/>
 
 			<p> of the state of her soul with humility <lb/> and fear, but her faith and love were <lb/>
 				growing stronger &amp; stronger. </p>
-			<p> In reference to her illness at Calne she wrote <lb/> thus, I feel that I must be satisfied to
+			<p> In reference to her <name health="disease">illness</name> at <placeName ref="#mlpla000169" cert="high">Calne</placeName> she wrote <lb/> thus, I feel that I must be satisfied to
 				be <lb/> an invalid, but it is all right, I feel more <lb/> about it for my dear
 				sympathising friends <lb/> than for myself. I only want the work &amp; <lb/> grace
-				of Christ to be more manifested <lb/> within me &amp; by me and my coldness <lb/>
-				&amp; deadness to be absorbed in the warmth <lb/> and life of Christ. Again she
+				of <persName type="real" cert="high">Christ</persName> to be more manifested <lb/> within me &amp; by me and my coldness <lb/>
+				&amp; deadness to be absorbed in the warmth <lb/> and life of <persName type="real" cert="high">Christ</persName>. Again she
 				wrote in <lb/> prospect of a change for her healths sake: <lb/> "It may do me good
-				if the Lord please, <lb/> but I wish to leave it without any ansciety <lb/> &amp;
+				if the <roleName type="honorific">Lord</roleName> please, <lb/> but I wish to leave it without any ansciety <lb/> &amp;
 				without a choice, I expect to go halting <lb/> to the end of my days, but I trust a
 				<lb/> cheerful mind &amp; patience will be given <lb/> me." Though so long a
-				sufferer, her death <lb/> seemed to come suddenly. In the summer <lb/> of 1862 she
-				had spent four happy weeks <lb/> with her Brother &amp; Sister in the North <lb/> of
-				England who accompanied her to <lb/> Fulnec </p>
+				sufferer, her death <lb/> seemed to come suddenly. <date when="1862" cert="high">In the summer <lb/> of 1862</date> she
+				had spent four happy weeks <lb/> with her Brother &amp; Sister in the <placeName ref="#mlpla000072" cert="high">North
+<lb/>
+of England</placeName> who accompanied her to <lb/> <placeName ref="#mlpla000003" cert="high">Fulnec</placeName> </p>
 			<p>
 					She was always cheerful, delighted
 				
@@ -335,27 +939,33 @@
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-12.jpg" n="12"/>
 
-			<p> to meet old friends, but withat indica <lb/> ting great bodily weakness, &amp; great
-				difficult <lb/> ly breathing. </p>
+			<p> to meet old friends, but <name health="disease">withat indica
+<lb/>
+ting great bodily weakness, &amp; great difficult
+<lb/>
+ly breathing</name>. </p>
 			<p> On the way homewards she paid a week <lb/> visit to a dear &amp; valued friend in Stafford
 				<lb/> shire. </p>
-			<p> On her arrival at home, she seemed ra <lb/> ther improved in health than otherwise <lb/> by
-				her long journey. But as the winter <lb/> advanced increased symptoms of weak <lb/>
-				less appeared especially in the re <lb/> gion of the heart &amp; the lung. </p>
+			<p> On her arrival at home, she seemed ra <lb/> ther i<name health="recovered">mproved in health</name> than otherwise <lb/> by
+				her long journey. But as the winter <lb/> advanced increased <name health="disease">symptoms of weak
+<lb/>
+less appeared especially in the re
+<lb/>
+gion of the heart &amp; the lung</name>. </p>
 			<p> Kind friends were around her one <lb/> especially watched over tenderly &amp; an <lb/>
 				sciously until the close of life. She received <lb/> also the incessant attention of
 				an attach <lb/> ed servant who had lived in her family <lb/> more than 20 years </p>
-			<p> But God had thoughts of peace con <lb/> cerning her. She had at times ex <lb/> pressed fears
+			<p> But <persName type="real" cert="high">God</persName> had thoughts of peace con <lb/> cerning her. She had at times ex <lb/> pressed fears
 				of death, but she never <lb/> knew what death was, she departed <lb/> in sleep. </p>
 			<p> The above is a sketch of a very unevent <lb/> ful life, but yet one of unususal christi </p>
 
 			<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_82_Ann_Marychurch-13.jpg" n="13"/>
 
-			<p> an activity. She possessed a strong <lb/> mind in a very weak body. Her love <lb/> for Christ
-				and for Christ's people was <lb/> great, and her labours in His cause <lb/> were
+			<p> an activity. She possessed a strong <lb/> mind in a very weak body. Her love <lb/> for <persName type="real" cert="high">Christ</persName>
+				and for <persName type="real" cert="high">Christ's</persName> people was <lb/> great, and her labours in His cause <lb/> were
 				unremitting. She now rests in <lb/> peace, she has realized what she wrote <lb/> in
-				1860 concerning a happily depart <lb/> ed and beloved Sister in Christ. "The <lb/>
-				beloved Saint is with Christ, no longer <lb/> clad in weakness, and faint with suf
+				<date when="1860" cert="high">1860</date> concerning a happily depart <lb/> ed and beloved Sister in <persName type="real" cert="high">Christ</persName>. "The <lb/>
+				beloved Saint is with <persName type="real" cert="high">Christ</persName>, no longer <lb/> clad in weakness, and faint with suf
 				<lb/> fering, but clothed in the bright robes <lb/> &amp; our Saviour's
 				righteousness, and <lb/> rejoicing in the presence of God for <lb/> ever" We may
 				truly say this of <lb/> herself, she is with that Saviour, for <lb/> whom she felt

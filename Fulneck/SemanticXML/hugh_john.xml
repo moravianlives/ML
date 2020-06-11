@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -90,15 +88,244 @@
 					<msIdentifier>
 						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_03_60_HughJohn">John Hugh</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-02.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-03.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-04.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-01.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-02.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-03.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-04.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111821903",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-10T15:18:21.903Z",
+	"dcterms:issued": "2020-06-11T13:19:22.177Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111821903#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111821903#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[2]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "mlocc000034",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111836821",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-10T15:18:36.821Z",
+	"dcterms:issued": "2020-06-11T13:19:22.183Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111836821#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200610111836821#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[2]/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "mlocc000034",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200611091825710",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T13:18:25.710Z",
+	"dcterms:issued": "2020-06-11T13:19:22.184Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200611091825710#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/hugh_john.xml?rs_annotation_20200611091825710#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "mlocc000077",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000550">John Hugh</persName>
@@ -118,51 +345,41 @@
 			<div type="memoir">
 				<head>John Hugh</head>
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-01.jpg"/>
 					<p>
-						<persName ref="#mlper000550">John Hugh</persName> who Departed <date when-iso="1772-05-22">May 22d 1772</date> has dictated the <hi rend="underline">folloing concerning his
+						<persName ref="#mlper000550">John Hugh</persName> who <name event="death" when-iso="1772-05-22">Departed</name> <date when-iso="1772-05-22">May 22d 1772</date> has dictated the <hi rend="underline">folloing concerning his
 							Life</hi></p>
-					<p> I was born at <placeName>Frestrup</placeName> in the <placeName>Parish of
-							Pembrokshire</placeName>
+					<p> I was born at <placeName ref="mlpla000200" cert="high">Frestrup in the Parish of Pembrokshire</placeName>
 						<date when-iso="1741-02-06">Febr 6<hi rend="superscript">th</hi>
-							<lb/> 1741</date>, &amp; lived with my Parents till <date
-							when-iso="1748" cert="medium">I was 7 years of Age</date>; about this
-						<lb/> time <persName><roleName type="honorific">B<hi rend="superscript"
-									>r</hi></roleName> Cennick</persName> came into this Country
+							<lb/> 1741</date>, &amp; lived with my Parents till <date when-iso="1748" cert="medium">I was 7 years of Age</date>; about this
+						<lb/> time <persName ref="mlper000408"><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Cennick</persName> came into this Country
 						&amp; Preached the Gospel, <lb/> my Mother who went frequently to hear him,
-						took me with her <lb/> which I liked. When a <name event="religious"
-							>Childrens Meeting</name> was begun, I had the <lb/> Grace to be one of
+						took me with her <lb/> which I liked. When a <name event="ecclesiastical">Childrens Meeting</name> was begun, I had the <lb/> Grace to be one of
 						them who attended it, which proved a <name type="emotion">blessing <lb/> to
-							me</name>, for there I got the first Impression of our <roleName
-							type="honorific">Sav<hi rend="superscript">rs</hi></roleName> Love. </p>
+							me</name>, for there I got the first Impression of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi></roleName> Love. </p>
 					<p>
-						<persName><roleName type="honorific">Esq<hi rend="superscript"
-								>r</hi></roleName> Roach</persName> of
+						<persName><roleName type="honorific">Esq<hi rend="superscript">r</hi></roleName> Roach</persName> of
 							<placeName>Clarison</placeName> being a lover of the Gospel &amp; a
 						friend <lb/> of Children he settled a School, to which I also was taken, but
 						I <lb/> having no Genius for learning, did not bring it far, yet by frequent
 						<lb/> hearing the Versses out of the little Hymn Book which he had bought
-						<lb/> for the Children, I learned many of them by heart &amp; <name
-							type="emotion">delighted in <lb/> singing them</name>. Our Master who
+						<lb/> for the Children, I learned many of them by heart &amp; <name type="emotion">delighted in <lb/> singing them</name>. Our Master who
 						was a very good Man, used to sing <lb/> Verses before &amp; after Meals of
 						which the following made a particular <lb/> Impression upon me: We thank the
 							<roleName type="honorific">Lord</roleName> for this our Food; but more
 						<lb/> for <persName type="deity">Jesus</persName> Flesh &amp; Blood the
-						Manna to the Spirit giv&apos;n the living Bread <lb/> sent down from
-							<placeName type="biblical">Heav&apos;n</placeName>. At Nights our Master
-						used to kneel <lb/> down with us, &amp; oftens pray&apos;d very heartily
-						that our <roleName type="honorific">Sav<hi rend="superscript"
-							>r</hi></roleName> might <lb/> preserve us from every bad thing &amp;
+						Manna to the Spirit giv'n the living Bread <lb/> sent down from
+							<placeName type="biblical">Heav'n</placeName>. At Nights our Master
+						used to kneel <lb/> down with us, &amp; oftens pray'd very heartily
+						that our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> might <lb/> preserve us from every bad thing &amp;
 						lead us in the way to everlasting <lb/> Life. We Children kept also Meetings
 						among ourselves &amp; when we <lb/> went into the Fields, we sometimes
-						kneel&apos;d down under the Hedges &amp; <lb/> pray&apos;d to our <roleName
-							type="honorific">Sav<hi rend="superscript">r</hi></roleName> in a
+						kneel'd down under the Hedges &amp; <lb/> pray'd to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> in a
 						Childlike simple manner. When I was about <lb/>
-						<date when-iso="1753" cert="medium">12 years of age</date> I went to <name
-							event="religious">Service</name>, where I had it very hard, nor did </p>
+						<date when-iso="1753" cert="medium">12 years of age</date> I went to <name event="ecclesiastical">Service</name>, where I had it very hard, nor did </p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-02.jpg"/>
 					<p> I get enough to eat. <date when-iso="1755" cert="medium">After 2 Years</date> I went to
 						another place, where I <lb/> had it better in outward respects, but was much
 						exposed to bad and <lb/> hurtful Company, so that I lost those good
@@ -170,21 +387,19 @@
 						is Vanity took place in me. </p>
 					<p> When <date when-iso="1760" cert="medium">I was about 19 Years old</date>,
 						one of my former Masters wanted <lb/> me to enter again into his Service,
-						with whom I also agreed, &amp; as <lb/> I learn&apos;d afterwards, a Scheme
+						with whom I also agreed, &amp; as <lb/> I learn'd afterwards, a Scheme
 						was laid, that if I had come there, <lb/> I very likely should have settled
 						&amp; been entirely lost in the things of <lb/> this World; but before the
 						time came quite on, I went to see my <lb/> Mother &amp; Sister, who
-						persuaded me to go &amp; work as a <name occupation="mason">Mason</name> on
-						the <lb/> Fortification, which was then to be build, tho&apos; I never had
-						been em- <lb/> ploy&apos;d as a <name occupation="mason">Mason</name>
-						before, but I got Tools &amp; went, &amp; the <roleName type="honorific"
-							>Lord</roleName> to <lb/> whom I pray&apos;d, helped me, so that I could
+						persuaded me to go &amp; work as a <rs ref="mlocc000034" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Mason</rs> on
+						the <lb/> Fortification, which was then to be build, tho' I never had
+						been em- <lb/> ploy'd as a <rs ref="mlocc000034" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Mason</rs>
+						before, but I got Tools &amp; went, &amp; the <roleName type="honorific">Lord</roleName> to <lb/> whom I pray'd, helped me, so that I could
 						go on with the work &amp; there- <lb/> by all Dangers, which awaited me, if
 						I had gone again to Service, <lb/> were prevented. Living now with my
-						Mother, she asked me to go with <lb/> her to <name event="religious">divine
+						Mother, she asked me to go with <lb/> her to <name event="ecclesiastical">divine
 							Service</name>, which I did, as I had no particular Choise in <lb/> this
-						Respect. After I had been to hear <persName><roleName type="honorific">B<hi
-									rend="superscript">r</hi></roleName> Nyberg</persName> several
+						Respect. After I had been to hear <persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Nyberg</persName> several
 						times he spoke <lb/> to me &amp; invited me to call &amp; see him, which I
 						did the Sunday after, when <lb/> we had had some Conversation together, he
 						told me, that now the <lb/>
@@ -193,64 +408,53 @@
 							holy awe</name> &amp; the praying <lb/> of the Litany in that Meeting
 						made such an Impression upon me <lb/> that I not only looked upon them as
 						true Children of <persName type="deity">God</persName>, but became <lb/>
-						also seriously concerned about myself. I then went to the <name
-							event="religious">Meeting</name>
+						also seriously concerned about myself. I then went to the <name event="ecclesiastical">Meeting</name>
 						<note type="catchword">every</note>
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-03.jpg" />
-					<p> every Sunday &amp; in my return, I oftens pray&apos; d to our <roleName type="honorific"
-								>Sav<hi rend="superscript">r</hi></roleName> to <lb/>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-03.jpg"/>
+					<p> every Sunday &amp; in my return, I oftens pray' d to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to <lb/>
 						<name type="emotion">make me happy &amp; give me the assurance thereof in my
 							heart</name>. <lb/> I had still some Difficulties on account of my
-						former Connexions, <lb/> but my faithfull <roleName type="honorific">Sav<hi
-								rend="superscript">r</hi></roleName> help&apos;d me thro&apos; &amp;
+						former Connexions, <lb/> but my faithfull <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> help'd me thro' &amp;
 						made me free from them all. <lb/> As we lived about 3 Miles distant from
-							<placeName>Haverforthwest</placeName>, &amp; my <lb/> Mother was not so
+							<placeName ref="mlpla000201">Haverforthwest</placeName>, &amp; my <lb/> Mother was not so
 						well cared for as I could wish, I took a House <lb/> &amp; moved with her to
-							<placeName>Haverforthwest</placeName> where we lived happily toge- <lb/>
+							<placeName ref="mlpla000201">Haverforthwest</placeName> where we lived happily toge- <lb/>
 						ther. <date when-iso="1765-05-12">May the 12<hi rend="superscript">th</hi>
-							1765</date> I was <name event="reception">received</name> into the
+							1765</date> I was <name event="reception" when-iso="1765-05-12">received</name> into the
 							<orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName>
 						which I <lb/> esteemed very highly. In general <name type="emotion">I have
 							had a very happy time</name>
-						<lb/> &amp; had many a Visit from our <roleName type="honorific">Sav<hi
-								rend="superscript">r</hi></roleName> in the Converse with him; As
+						<lb/> &amp; had many a Visit from our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> in the Converse with him; As
 						well <lb/> in my Sleeping place, as when I took a walk in the Fields &amp;
 						once <lb/> in particular when I walked by the River Side, He appeared to my
 						poor <lb/> heart &amp; assured me that I should be His &amp; that he has
 						shed his Blood for <lb/> all my Sins; <date when-iso="1768-03-31">March
 								31<hi rend="superscript">st</hi> 1768</date> I was made a partaker
 						of our <roleName type="honorific">Lords</roleName>
-						<lb/> Flesh &amp; Blood in the <name event="sacrament">holy
+						<lb/> Flesh &amp; Blood in the <name event="communion" when-iso="1768-03-31">holy
 						Sacrament</name>, Ah! how thankful am I <lb/> for all the Grace our
 							<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
-						has bestow&apos;d upon me, how often has He drawn <lb/> so near to me, that
+						has bestow'd upon me, how often has He drawn <lb/> so near to me, that
 						I have melted into Tears, when I have been praying <lb/> or speaking to him,
 						these were happy Times, which I shall never forget.</p>
 					<p>Thus far his own words.</p>
-					<p> When <persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
+					<p> When <persName ref="mlper000027"><roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
 							Petrus</persName> was in <placeName>Haverforthwest</placeName>, he
-						desired &amp; obtained leave <lb/> to come to <placeName ref="mlpla000003"
-							>Fulneck</placeName> &amp; arrived here <date when-iso="1768-08-28"
-							>Augst 28<hi rend="superscript">th</hi> 1768</date>. His course here has
+						desired &amp; obtained leave <lb/> to come to <placeName ref="mlpla000003">Fulneck</placeName> &amp; arrived here <date when-iso="1768-08-28">Augst 28<hi rend="superscript">th</hi> 1768</date>. His course here has
 						<lb/> been Edifying &amp; to our Satisfaction, he always expressed a great
-						<lb/> Regard for the <orgName en="congregation">Cong<hi rend="superscript"
-								>n</hi></orgName>, but when he saw or heard any thing unbecoming
-						<lb/> in any one, who lived in the <orgName en="congregation">Cong<hi
-								rend="superscript">n</hi></orgName>, he did not rightly know how to
-						<lb/> take it, yet our <roleName type="honorific">Sav<hi rend="superscript"
-								>r</hi></roleName> always reminded him to look to himself &amp; </p>
+						<lb/> Regard for the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName>, but when he saw or heard any thing unbecoming
+						<lb/> in any one, who lived in the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName>, he did not rightly know how to
+						<lb/> take it, yet our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> always reminded him to look to himself &amp; </p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-04.jpg" />
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_03_60_HughJohn-04.jpg"/>
 					<p> to dwell upon the faults of others &amp; thereby farther hurt was <lb/> prevented. He
-						oftens expressed a Desire to serve our <roleName type="honorific">Sav<hi
-								rend="superscript">r</hi></roleName>, &amp; some <lb/> time before
+						oftens expressed a Desire to serve our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, &amp; some <lb/> time before
 						his <name health="disease">last Sickness</name> begun; he declared to his
-						Labourer: <lb/> That he had devoted himself quite a new to our <roleName
-							type="honorific">Sav<hi rend="superscript">r</hi></roleName> &amp; his
+						Labourer: <lb/> That he had devoted himself quite a new to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> &amp; his
 						People, <lb/> was quite satisfied as &amp; where he was at present, but if
 						our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
 						<lb/> would give him a Call to any other place or employ, if he but <lb/>
@@ -258,8 +462,7 @@
 							<date when-iso="1771-12">Last December</date>
 						<name health="disease" type="cold">he got a bad Cold</name>, which turned
 						<lb/> to a <name health="disease" type="fever">severe Cough attended with a
-							Hectic Fever</name>. He expressed <lb/> a Desire to go to our <roleName
-							type="honorific">Sav<hi rend="superscript">r</hi></roleName>, but said,
+							Hectic Fever</name>. He expressed <lb/> a Desire to go to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, but said,
 						that he was not clear, if <lb/> it would be now. The Medicine he took had
 						but little affect <lb/> yet we thought, the warm wheather &amp; some gentle
 						Exercise <lb/> might perhaps be a means of his recovery, &amp; when it was
@@ -269,19 +472,19 @@
 						<lb/> &amp; fixed the day for his setting out, which proved to be the day of
 						<lb/> his happy Departure. Eight Days ago his Sickness took a turn, <lb/>
 						when it appeared, that his time here would be but short, &amp; when <lb/>
-						the <name occupation="doctor" memoirSubject="no">Doctor</name> told him so,
+						the <rs ref="mlocc000077" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Doctor</rs> told him so,
 						he was exceeding glad of it &amp; waited with <lb/> resignation for his
 						Desolution; a little before his Departure, a <lb/>
 						<roleName type="honorific">B<hi rend="superscript">r</hi></roleName> said to
-						him: that now he would soon be with our <roleName type="honorific"
-							>Savr</roleName> and appear <lb/> before him in his Blood &amp;
+						him: that now he would soon be with our <roleName type="honorific">Savr</roleName> and appear <lb/> before him in his Blood &amp;
 						Righteousness, upon which he answered <lb/> Ah! that is pretty, if I had no
 							<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>,
 						what should I do now? In this <lb/> Comfortable Disposition &amp; with a
-						Reconciled heart he went to his <roleName type="honorific"
-							>Redeemer</roleName>
-						<lb/> in the <date when-iso="1772" cert="medium" type="death">31<hi
-								rend="superscript">st</hi> Year of his Age</date>. </p>
+						Reconciled heart <name event="death" when-iso="1772">he went to his <roleName type="honorific">Redeemer</roleName>
+<lb/>
+in the
+<date when-iso="1772" cert="medium" type="death">31<hi rend="superscript">st</hi> Year of his Age</date>
+.</name> </p>
 				</div>
 			</div>
 		</body>

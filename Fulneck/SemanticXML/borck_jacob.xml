@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,7 +97,756 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759611",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.611Z",
+	"dcterms:issued": "2020-06-11T18:56:47.609Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759611#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759611#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1727-10-13"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.613Z",
+	"dcterms:issued": "2020-06-11T18:56:47.613Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1741"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.613Z",
+	"dcterms:issued": "2020-06-11T18:56:47.613Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759613#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/hi/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1791-10-24"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759614",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.614Z",
+	"dcterms:issued": "2020-06-11T18:56:47.613Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759614#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759614#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000053",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759615",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.615Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759615#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759615#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/date[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1756"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759615",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.615Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759615#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759615#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000053",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759616",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.616Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759616#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135759616#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1739"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.616Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000079",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:57:59.616Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20200611135759616#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/rs[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000053",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135853218",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-11T17:58:53.218Z",
+	"dcterms:issued": "2020-06-11T18:56:47.614Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135853218#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20200611135853218#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1760-10"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Jacob Borck</persName>
@@ -115,187 +861,192 @@
 		<body xml:lang="en">
 			<div type="memoir">
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-01.jpg"/>
 			<p>
 				
-					North of England <lb />
-					<hi rend="underline">Memoir of our late B<hi rend="superscript">r.</hi> Jacob Borck who <lb />
-					departed at Bedford. Oct. 24. 1791</hi> </p>
+					<placeName ref="#mlpla000072" cert="high">North of England</placeName> <lb/>
+					<hi rend="underline">Memoir of our late <roleName type="honorific">B<hi rend="superscript">r.</hi> </roleName> <persName ref="#mlper000586" cert="high" type="real">Jacob Borck</persName> who <lb/>
+					<name event="death" when-iso="1791-10-24">departed</name> at <placeName ref="#mlpla000025" cert="high">Bedford</placeName>. <date when="1791-10-24" cert="high">Oct. 24. 1791</date></hi> </p>
 					<p>
-					Our late Bro. having left no written account <lb />
-					of his Life, we can only say the following: <lb />
-					He was born at Arendal in Norway Oct. 13. 1727. <lb />
-					He lost his Father when very Young, the pray- <lb />
-					ers &amp; admonitions of his Mother who was a <lb />
-					pious Woman &amp; sought to Educate him in the <lb />
-					nurture &amp; admonition of the Lord were a great <lb />
-					blessing to him, as a Child, &amp; when at 14 Years of <lb />
-					In age he went to Copenhagen &amp; there become Sur- <lb />
-					geons Mate in the Danish Army, having been <lb />
-					brought up in that time of Life; In 1756 he enterd <lb />
-					Into the Service of the Russians army as Surgeon, <lb />
-					&amp; being in Russia, he was noticed by several <lb />
-					persons of the highest Rank, both on Account <lb />
-					of his engaging manners &amp; Skilfulness in his <lb />
-					profession, especially by the Viceroy of Ukraine <lb />
-					who greatly favord him, &amp; with whom he <lb />
-					travelled thro various parts of Russia, but thro' <lb />
-					these conexions he was led into bad Company, &amp; <lb />
-					sinful habits, by which means he lost those <lb />
-					impressions of our Saviours grace, which he <lb />
-					had received in his Younger Years when he <lb />
-					had been solidly awakened, &amp; obtained a view <lb />
-					in Spirit of our Sav<hi rend="superscript">rs</hi> sufferings, which remain- <lb />
-					ed unforgetten by him. He however felt <lb />
-					great uneasiness of mind, amidst the gaieties <lb />
+					Our late <roleName type="honorific">Bro.</roleName> having left no written account <lb/>
+					of his Life, we can only say the following: <lb/>
+					He was <name event="birth" when-iso="1727-10-13">born</name> at <placeName ref="#mlpla000210" cert="high">Arendal in Norway</placeName> <date when="1727-10-13" cert="high">Oct. 13. 1727</date>. <lb/>
+					He lost his Father when very Young, the pray- <lb/>
+					ers &amp; admonitions of his Mother who was a <lb/>
+					pious Woman &amp; sought to Educate him in the <lb/>
+					nurture &amp; admonition of the <roleName type="honorific">Lord</roleName> were a great <lb/>
+					blessing to him, as a Child, &amp; when at <date when="1741" cert="high">14 Years of <lb/>
+					In age</date> he went to <placeName ref="#mlpla000211" cert="high">Copenhagen</placeName> &amp; there become <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur-
+<lb/>
+geons Mate in the Danish Army</rs>, having been <lb/>
+					brought up in that time of Life; In <date when="1756" cert="high">1756</date> he enterd <lb/>
+					Into the <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Service of the Russians army as Surgeon</rs>, <lb/>
+					&amp; being in <placeName ref="#mlpla000212" cert="high">Russia</placeName>, he was noticed by several <lb/>
+					persons of the highest Rank, both on Account <lb/>
+					of his engaging manners &amp; Skilfulness in his <lb/>
+					profession, especially by the <roleName type="leader">Viceroy</roleName> of <placeName ref="#mlpla000213" cert="high">Ukraine</placeName> <lb/>
+					who greatly favord him, &amp; with whom he <lb/>
+					travelled thro various parts of <placeName ref="#mlpla000212" cert="high">Russia</placeName>, but thro' <lb/>
+					these conexions he was led into bad Company, &amp; <lb/>
+					sinful habits, by which means he lost those <lb/>
+					impressions of our <roleName type="honorific">Saviours</roleName> grace, which he <lb/>
+					had received in his Younger Years when he <lb/>
+					<name event="awakening">had been solidly awakened, &amp; obtained a view
+<lb/>
+in Spirit of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi> </roleName> sufferings, which remain-
+<lb/>
+ed unforgetten by him.</name> He however felt <lb/>
+					great uneasiness of mind, amidst the gaieties <lb/>
 					&amp; pleasures of the World, which he once disclosed 
 				
 			</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-02.jpg"/>
 			<p>
 				
-					to a person of Rank in Russia acquainted with <lb />
-					the B<hi rend="superscript">rn</hi> especially with Count Zinzendorff, who <lb />
-					spoke to him in and enrcourageng manner, &amp; <lb />
-					whose conversation was greatly blessed to him <lb />
-					the above mentioned person at the same time <lb />
-					related to him several particulars concerning <lb />
-					the Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi> which created a wish in him, <lb />
-					to become more nearly acquainted with them. <lb />
-					Accordingly in 1739 when he quitted Russia, he <lb />
-					resolved to pay a visit to the Cong<hi rend="superscript">n</hi> at Zeist, intend- <lb />
-					ing to go from thence to England, to enter into his <lb />
-					Majestys Service on board a Westindia Ship. The first <lb />
-					meeting he attended at Zeist was a singing meeting <lb />
-					during which he was so overpowerd with a feeling of <lb />
-					divine Grace, that it was immediately made clear <lb />
-					to him that this was the people he belonged to, having <lb />
-					always from his infancy had a desire to live among <lb />
-					Children of God:, Here he also got acquainted with Count <lb />
-					Zinzendorff, who received him very cordially, Never- <lb />
-					 theless he for the present, pursued his intentions <lb />
-					of proceeding to England, where he engaged as Sur- <lb />
-					geon onboord the Monarque in which Station he <lb />
-					remained about a Year, during the whole of which <lb />
-					time the Vessel lay in the harbours He kept up in <lb />
-					the mean time an acquaintance with the B<hi rend="superscript">rn</hi> in <lb />
-					London: But the great Wickedness &amp; abandoned <lb />
-					life of the Ships crews, to which he was witness was <lb />
-					so disgusting to him, that he was glad to obtain <lb />
-					his dissmission. After this he lodged for a short time <lb />
-					with a B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> in London &amp; being desirous of coming <lb />
-					into still closer connection with the Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi> 
+					to a person of Rank in <placeName ref="#mlpla000212" cert="high">Russia</placeName> acquainted with <lb/>
+					the B<hi rend="superscript">rn</hi> especially with <persName ref="#mlper000566" cert="high" type="real">Count Zinzendorff</persName>, who <lb/>
+					spoke to him in and enrcourageng manner, &amp; <lb/>
+					whose conversation was greatly blessed to him <lb/>
+					the above mentioned person at the same time <lb/>
+					related to him several particulars concerning <lb/>
+					the <orgName religion="Moravian Church">Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi> </orgName> which created a wish in him, <lb/>
+					to become more nearly acquainted with them. <lb/>
+					Accordingly in <date when="1739" cert="high">1739</date> when he quitted <placeName ref="#mlpla000212" cert="high">Russia</placeName>, he <lb/>
+					resolved to pay a visit to the <orgName en="congregation">Cong<hi rend="superscript">n</hi> </orgName> at <placeName ref="#mlpla000150" cert="high">Zeist</placeName>, intend- <lb/>
+					ing to go from thence to <placeName ref="#mlpla000072" cert="high">England</placeName>, to enter into his <lb/>
+					<rs ref="#mlocc000079" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Majestys Service</rs> on board a Westindia Ship. The first <lb/>
+					<name event="ecclesiastical">meeting</name> he attended at <placeName ref="#mlpla000150" cert="high">Zeist</placeName> was a singing meeting <lb/>
+					during which he was so overpowerd with a feeling of <lb/>
+					divine Grace, that it was immediately made clear <lb/>
+					to him that this was the people he belonged to, having <lb/>
+					always from his infancy had a desire to live among <lb/>
+					Children of <persName type="real" cert="high">God</persName>:, Here he also got acquainted with <persName ref="#mlper000566" cert="high" type="real">Count
+<lb/>
+Zinzendorff</persName>, who received him very cordially, Never- <lb/>
+					 theless he for the present, pursued his intentions <lb/>
+					of proceeding to <placeName ref="#mlpla000072" cert="high">England</placeName>, where he engaged as <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur-
+<lb/>
+geon</rs> onboord the <objectName ref="#Q3023330">Monarque</objectName> in which Station he <lb/>
+					remained about a Year, during the whole of which <lb/>
+					time the Vessel lay in the harbours He kept up in <lb/>
+					the mean time an acquaintance with the B<hi rend="superscript">rn</hi> in <lb/>
+					<placeName ref="#mlpla000054" cert="high">London</placeName>: But the great Wickedness &amp; abandoned <lb/>
+					life of the Ships crews, to which he was witness was <lb/>
+					so disgusting to him, that he was glad to obtain <lb/>
+					his dissmission. After this he lodged for a short time <lb/>
+					with a <roleName type="honorific">B<hi rend="superscript">r</hi> </roleName> &amp; <roleName type="honorific">S<hi rend="superscript">r</hi> </roleName> in <placeName ref="#mlpla000054" cert="high">London</placeName> &amp; being desirous of coming <lb/>
+					into still closer connection with the <orgName religion="Moravian Church">Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi></orgName> 
 				<note type="catchword">went</note>
 				
 			</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-03.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-03.jpg"/>
 			<p>
 				
-					went in Oct<hi rend="superscript">r.</hi> 1760 according to their advice to Bedford <lb />
-					where he moved into the Single B<hi rend="superscript">rns</hi> House.</p>
+					went in <date when="1760-10" cert="high">Oct<hi rend="superscript">r.</hi> 1760</date> according to their advice to <placeName ref="#mlpla000025" cert="high">Bedford</placeName> <lb/>
+					where <name event="entrance" when-iso="1760-10">he moved into the Single B<hi rend="superscript">rns</hi> House</name>.</p>
 					<p>
-					Tho' he had it at first very hard in externals yet he <lb />
-					never despaired but was always thankful to our <lb />
-					Sav<hi rend="superscript">r</hi> for having brought him thither, &amp; used to express <lb />
-					himself to that effect, that he should esteem it the <lb />
-					greatest favor to live with Children of God, were he even <lb />
-					necessitated to live on Bread &amp; Water. He first engaged <lb />
-					with the late Doc. Vowel as a partner in business, but <lb />
-					after sometime this partnership was dissolved, &amp; <lb />
+					Tho' he had it at first very hard in externals yet he <lb/>
+					never despaired but was always thankful to our <lb/>
+					<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> for having brought him thither, &amp; used to express <lb/>
+					himself to that effect, that he should esteem it the <lb/>
+					greatest favor to live with Children of God, were he even <lb/>
+					necessitated to live on Bread &amp; Water. He first engaged <lb/>
+					with the late Doc. Vowel as a partner in business, but <lb/>
+					after sometime this partnership was dissolved, &amp; <lb/>
 					the set up for himself as Surgeon &amp; Apothecary. </p>
 					<p>
-					He was received in the Cong<hi rend="superscript">n</hi> April 20 1761 &amp; admitted <lb />
+					He was received in the Cong<hi rend="superscript">n</hi> April 20 1761 &amp; admitted <lb/>
 					to the holy Comunion Sept<hi rend="superscript">r</hi> 26 in the same Year. </p>
 					<p>
-					Nov<hi rend="superscript">r</hi> 19<hi rend="superscript">th</hi> 1766 he was married to the S. Sister Hanah <lb />
-					Scorfield of the Choir House at Fulnec, his present <lb />
-					Widow by whom he has had one Daughter, now a <lb />
-					member of the Cong<hi rend="superscript">n</hi> at Bedford, He was very success <lb />
-					full in his profession, whereby he also proved a bless- <lb />
-					ing to many of his patients in their dying mom- <lb />
-					ents, was respected in the Town &amp; neighbourhood, <lb />
-					&amp; always a steady Friend to the poor even to his own <lb />
-					disadvantage. Tho his warm &amp; positive temper <lb />
-					&amp; disposition sometimes caused him trouble, <lb />
-					Yet his upright Sincere &amp; generous mind pro- <lb />
-					cured him many Friends by whom he was much <lb />
-					esteemed, The reflection on his past unfaithful- <lb />
-					ness to our Saviours Grace, &amp; the powerful sensa- <lb />
-					tions he had of his great depravity, caused him <lb />
-					indeed many heavy hours, but amidst all this he <lb />
+					Nov<hi rend="superscript">r</hi> 19<hi rend="superscript">th</hi> 1766 he was married to the S. Sister Hanah <lb/>
+					Scorfield of the Choir House at Fulnec, his present <lb/>
+					Widow by whom he has had one Daughter, now a <lb/>
+					member of the Cong<hi rend="superscript">n</hi> at Bedford, He was very success <lb/>
+					full in his profession, whereby he also proved a bless- <lb/>
+					ing to many of his patients in their dying mom- <lb/>
+					ents, was respected in the Town &amp; neighbourhood, <lb/>
+					&amp; always a steady Friend to the poor even to his own <lb/>
+					disadvantage. Tho his warm &amp; positive temper <lb/>
+					&amp; disposition sometimes caused him trouble, <lb/>
+					Yet his upright Sincere &amp; generous mind pro- <lb/>
+					cured him many Friends by whom he was much <lb/>
+					esteemed, The reflection on his past unfaithful- <lb/>
+					ness to our Saviours Grace, &amp; the powerful sensa- <lb/>
+					tions he had of his great depravity, caused him <lb/>
+					indeed many heavy hours, but amidst all this he <lb/>
 					cleaved as a poor pardoned Sinner to his Redeemer 
 					<note type="catchword">&amp;</note>
 				
 			</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-04.jpg" />
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-04.jpg"/>
 			<p>
 				
-					&amp; experienced rich comforts from him, which was <lb />
-					more especially perceptible in the last years of his <lb />
-					Life, when he grew more chearful &amp; happy &amp; resigned <lb />
-					His constitution which was naturally strong, <lb />
-					had been much impaired by fatiague of body &amp; <lb />
-					mind, about 5 Years ago he got a paralitic Stroke <lb />
-					which greatly enfeabled him, Since this time he <lb />
-					suffered greatly from increasing weakness, which <lb />
-					at last brought on a total delay of strength. His <lb />
-					present Widow our dear Sister Borck, has shew&apos;n <lb />
-					great &amp; unremitting tenderness in faithfully nur- <lb />
-					sing him during this long period of illess. Amidst <lb />
-					his sufferings which was very great, his patience <lb />
-					was exemplary, &amp; he always expressed himself <lb />
+					&amp; experienced rich comforts from him, which was <lb/>
+					more especially perceptible in the last years of his <lb/>
+					Life, when he grew more chearful &amp; happy &amp; resigned <lb/>
+					His constitution which was naturally strong, <lb/>
+					had been much impaired by fatiague of body &amp; <lb/>
+					mind, about 5 Years ago he got a paralitic Stroke <lb/>
+					which greatly enfeabled him, Since this time he <lb/>
+					suffered greatly from increasing weakness, which <lb/>
+					at last brought on a total delay of strength. His <lb/>
+					present Widow our dear Sister Borck, has shew'n <lb/>
+					great &amp; unremitting tenderness in faithfully nur- <lb/>
+					sing him during this long period of illess. Amidst <lb/>
+					his sufferings which was very great, his patience <lb/>
+					was exemplary, &amp; he always expressed himself <lb/>
 					thankful for the least services done him. </p>
 					<p>
-					When visited his favorite topick was the Love &amp; <lb />
-					forbearance of our Sav<hi rend="superscript">r</hi> so consisintly displayed <lb />
-					in the mercy shewn to him, being plucked as <lb />
-					a brand out of the fire. Several weeks before <lb />
-					his departure it was evident, that he would not <lb />
-					continue long here below, from which time <lb />
-					forward, his mind seemed wholly disengaged <lb />
-					from all earthly cares, &amp; occupied in converse <lb />
-					with our Sav<hi rend="superscript">r</hi>, he frequently prayed fervently <lb />
-					to him, entreating our Sav<hi rend="superscript">r</hi> to strengthen him &amp; <lb />
-					support him in his trouble, &amp; especially to be <lb />
-					near him in his last hours, He once told a <lb />
+					When visited his favorite topick was the Love &amp; <lb/>
+					forbearance of our Sav<hi rend="superscript">r</hi> so consisintly displayed <lb/>
+					in the mercy shewn to him, being plucked as <lb/>
+					a brand out of the fire. Several weeks before <lb/>
+					his departure it was evident, that he would not <lb/>
+					continue long here below, from which time <lb/>
+					forward, his mind seemed wholly disengaged <lb/>
+					from all earthly cares, &amp; occupied in converse <lb/>
+					with our Sav<hi rend="superscript">r</hi>, he frequently prayed fervently <lb/>
+					to him, entreating our Sav<hi rend="superscript">r</hi> to strengthen him &amp; <lb/>
+					support him in his trouble, &amp; especially to be <lb/>
+					near him in his last hours, He once told a <lb/>
 					Brother who visited him that altho he had the 
 						<note type="catchword">full</note>
 				
 			</p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-05.jpg" />
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-05.jpg"/>
 			<p>
 				
-					full assurance that he should go to our Sav<hi rend="superscript">r</hi> <lb />
-					as an absolved sinner, yet he could not deny <lb />
-					that he felt some dread at the thoughts of the <lb />
-					separation of Soul &amp; Body, but some days <lb />
-					after he intimated to the same Brother, that <lb />
-					he could now say with thanks to our Sav<hi rend="superscript">r</hi> <lb />
-					that this dread had been entirely removed. <lb />
-					A day or two before his departure, he expressed <lb />
-					in a very emphatical manner, his thankful <lb />
-					ness for having brought him to his ransom&apos;d <lb />
+					full assurance that he should go to our Sav<hi rend="superscript">r</hi> <lb/>
+					as an absolved sinner, yet he could not deny <lb/>
+					that he felt some dread at the thoughts of the <lb/>
+					separation of Soul &amp; Body, but some days <lb/>
+					after he intimated to the same Brother, that <lb/>
+					he could now say with thanks to our Sav<hi rend="superscript">r</hi> <lb/>
+					that this dread had been entirely removed. <lb/>
+					A day or two before his departure, he expressed <lb/>
+					in a very emphatical manner, his thankful <lb/>
+					ness for having brought him to his ransom'd <lb/>
 					Congregation &amp; sealed his Salvation. </p>
 					<p>
-					Oct<hi rend="superscript">r.</hi> 24<hi rend="superscript">th</hi> 1791 he was no longer able to speak, <lb />
-					&amp; from that time lay Still in sweet expectati- <lb />
-					on of that blessed moment when his Redeemed <lb />
-					Soul should be translated into the mansions <lb />
-					of bliss. This favor was granted him about <lb />
-					nine oClock the same Evening when he <lb />
+					Oct<hi rend="superscript">r.</hi> 24<hi rend="superscript">th</hi> 1791 he was no longer able to speak, <lb/>
+					&amp; from that time lay Still in sweet expectati- <lb/>
+					on of that blessed moment when his Redeemed <lb/>
+					Soul should be translated into the mansions <lb/>
+					of bliss. This favor was granted him about <lb/>
+					nine oClock the same Evening when he <lb/>
 					departed softly &amp; happily aged 64 years 11 days </p>
 					<p>
-					Blessed are the dead, which die in the <lb />
-					Lord, from henceforth, yea, saith the Spirit, <lb />
-					that they may rest from their Labour, &amp; <lb />
+					Blessed are the dead, which die in the <lb/>
+					Lord, from henceforth, yea, saith the Spirit, <lb/>
+					that they may rest from their Labour, &amp; <lb/>
 					their works do follow them. Rev<hi rend="superscript">l</hi> 14. 13 
 				
 			</p>

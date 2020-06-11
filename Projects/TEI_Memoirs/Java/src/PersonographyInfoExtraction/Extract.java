@@ -20,6 +20,7 @@ public class Extract {
     private static final String NAME = "name";
     private static final String EVENT = "event";
     private static final String DATE = "date";
+    private static final String EMOTION = "emotion";
     /**
      * Pattern used to find all instances of <name ...></name>
      */
@@ -68,7 +69,7 @@ public class Extract {
             /**
              * Skip if it is not about the subject of the memoir
              */
-            if (sMatch.contains("memoirSubject")) {
+            if (sMatch.contains("memoirSubject") || sMatch.contains("name type=")) {
                 continue;
             }
 
@@ -76,9 +77,10 @@ public class Extract {
             String attributeName;
 
             sMatch = cleanUpString(sMatch);
+
+
             if (sMatch.contains(OFFICE)) {
                 attributeName=OFFICE;
-
                  attributePattern = Pattern.compile("(?<=office=\\\").*?(?=\\\">)");
 
 
@@ -90,7 +92,14 @@ public class Extract {
                 attributeName=EVENT;
                 attributePattern = Pattern.compile("(?<=event=\\\").*?(?=\\\">)");
 
-            } else {
+            }
+            else if (sMatch.contains(EMOTION)) {
+                attributeName=EMOTION;
+                attributePattern = Pattern.compile("(?<=emotion=\\\").*?(?=\\\">)");
+
+            }
+
+            else {
                 continue;
             }
 

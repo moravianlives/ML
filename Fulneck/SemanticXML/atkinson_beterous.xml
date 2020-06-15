@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -99,10 +97,379 @@
                 <p>Memoirs from the Fulneck Archive</p>
             </sourceDesc>
         </fileDesc>
-    <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
-                xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-                xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> </rdf:RDF></xenoData>
-        <profileDesc>
+    
+        <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612102010561",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-12T14:20:10.561Z",
+	"dcterms:issued": "2020-06-12T15:18:20.435Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612102010561#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612102010561#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1742-05-04"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111247735",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-12T15:12:47.735Z",
+	"dcterms:issued": "2020-06-12T15:18:20.436Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111247735#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111247735#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1763"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111320771",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-12T15:13:20.771Z",
+	"dcterms:issued": "2020-06-12T15:18:20.436Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111320771#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111320771#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[3]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1766-09-21"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111507678",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-12T15:15:07.678Z",
+	"dcterms:issued": "2020-06-12T15:18:20.436Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111507678#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111507678#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[4]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1769-12"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111814552",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-12T15:18:14.552Z",
+	"dcterms:issued": "2020-06-12T15:18:20.437Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111814552#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/atkinson_beterous.xml?date_annotation_20200612111814552#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/name[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1770-07-15"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
             <particDesc>
                 <person role="subject">
                     <persName ref="#">Beterous Atkinson</persName>
@@ -118,58 +485,64 @@
             <div type="memoir">
                 <head>Beterous Atkinson</head>
                 <div type="page" n="1">
-            <pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-01.jpg" n="1" />
+            <pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-01.jpg" n="1"/>
             <p>
                 
-                    Our S<hi rend="superscript">r</hi> Beterous Atkinson was born <lb />
-                    May the 4<hi rend="superscript">th</hi> 1742 at Wike in Birstal Parish. Tho' <lb />
-                    she was still baptised in the Church of England, yet as <lb />
-                    her Parents belong'd to the Br<hi rend="superscript">n</hi> from the time of the <lb />
-                    first awakening in this Country, she from her <lb />
-                    Childhood was in the Care of the Sisters. But <lb />
-                    as nothing very particular of the Work of our <lb />
-                    Lord was observed in her Heart, she in her 21<hi rend="superscript">st</hi> Year <lb />
-                    took some little offence, which ended in a Confusion <lb />
-                    of Mind, and of Consequence a Coldness and Shyness <lb />
-                    towards those, who sought the Prosperity of her Soul <lb />
-                    <del>took place</del> which continued till she was married on <lb />
-                    Sept. 21. 1766. The uneasiness of Heart which she was <lb />
-                    never quite free from, become now serious, and this <lb />
-                    was the Period of her Life, in which she was <lb />
-                    actually awakened, and saw and felt that she had <lb />
-                    never known our dear Sav<hi rend="superscript">r</hi>, as a Sinner. She <lb />
-                    now sought again for Fellowship with the Cong<hi rend="superscript">n</hi> <lb />
-                    and in Dec. 1769 she was readmitted into the Society, <lb />
-                    and after repeated Supplications she was recieved <lb />
-                    into the Cong<hi rend="superscript">n</hi> April 15<hi rend="superscript">th</hi>. 1770. She was now at times <lb />
-                    very chearful and increased in the Knowledge of <lb />
-                    herself. Last winter she fell into a lingering state <lb />
-                    of Health, and this no Pains were spared towards <lb />
+                    Our <roleName type="honorific">S<hi rend="superscript">r</hi> </roleName><persName ref="#mlper000570" cert="high" type="real">Beterous Atkinson</persName> was <name event="birth" when-iso="1742-05-04">born</name> <lb/>
+                    <date when="1742-05-04" cert="high">May the 4<hi rend="superscript">th</hi> 1742</date> at <placeName ref="#mlpla000102" cert="high">Wike in Birstal Parish</placeName>. Tho' <lb/>
+                    she was still <name event="baptism">baptised in the <orgName religion="Anglican">Church of England</orgName></name>, yet as <lb/>
+                    her Parents belong'd to the <orgName religion="Moravian Church">Br<hi rend="superscript">n</hi></orgName> from the time of the <lb/>
+                    first awakening in this Country, she from her <lb/>
+                    Childhood was in the Care of the Sisters. But <lb/>
+                    as nothing very particular of the Work of our <lb/>
+                    <roleName type="honorific">Lord</roleName> was observed in her Heart, she in her <date when="1763" cert="high">21<hi rend="superscript">st</hi> Year</date> <lb/>
+                    took some little offence, which ended in a Confusion <lb/>
+                    of Mind, and of Consequence a Coldness and Shyness <lb/>
+                    towards those, who sought the Prosperity of her Soul <lb/>
+                    <del>took place</del> which continued till <name event="marriage" when-iso="1766-09-21">she was married on
+<lb/>
+<date when="1766-09-21" cert="high">Sept. 21. 1766</date></name>. The uneasiness of Heart which she was <lb/>
+                    never quite free from, become now serious, and this <lb/>
+                    was the Period of her Life, in which she was <lb/>
+                    actually awakened, and saw and felt that she had <lb/>
+                    never known our dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, as a Sinner. She <lb/>
+                    now sought again for Fellowship with the Cong<hi rend="superscript">n</hi> <lb/>
+                    and in <name event="reception" when-iso="1769-12"><date when="1769-12" cert="high">Dec. 1769</date> she was readmitted into the Society</name>, <lb/>
+                    and after repeated Supplications <name event="reception" when-iso="1770-04-15">she was recieved
+<lb/>
+into the Cong<hi rend="superscript">n</hi> April 15<hi rend="superscript">th</hi>. 1770</name>. She was now at times <lb/>
+                    very chearful and increased in the Knowledge of <lb/>
+                    herself. Last winter <name health="disease">she fell into a lingering state
+<lb/>
+of Health</name>, and this no Pains were spared towards <lb/>
                     her Recovery, yet it was all in Vain, and a regular 
                 
             </p>
                 </div>
                 <div type="page" n="2">
-            <pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-03.jpg" n="2" />
+            <pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_23_AtkinsonBeterous-03.jpg" n="2"/>
             <p>
-                    consumptive Disorder took Place. As she had <lb />
-                    entertain'd great Hopes of overcoming this Sickness, <lb />
-                    she was so much the more disappointed when she <lb />
-                    was insured of the Contrary, and a certain Fear <lb />
-                    of Death siezed her, which made her at first very <lb />
-                    heavy; But she pray'd our dear Sav<hi rend="superscript">r</hi> so long, till <lb />
-                    he was graciously pleased to remove this from <lb />
-                    her. From thence ensued a settled Hearts Desire <lb />
-                    and longing to be with him the sooner the better, <lb />
-                    and she grew so remarkably in the inner Con, that <lb />
-                    it was a Pleasure to behold it. She had a great <lb />
-                    desire to enjoy the h. Sacrament <add place="above">while</add> here, which she <lb />
-                    also obtained June 24<hi rend="superscript">th</hi> and the Days following <lb />
-                    she was inexpressibly Happy in her Heart, and <lb />
-                    thus she kept growing in our Lord Grace and <lb />
-                    longing after his coming till the 15<hi rend="superscript">th</hi> of July <lb />
-                    when a few Moments before her Soul took <lb />
-                    flight she still said: Sweet Jesus! Her dying <lb />
+                    consumptive Disorder took Place. As she had <lb/>
+                    entertain'd great Hopes of overcoming this Sickness, <lb/>
+                    she was so much the more disappointed when she <lb/>
+                    was insured of the Contrary, and a certain Fear <lb/>
+                    of Death siezed her, which made her at first very <lb/>
+                    heavy; But she pray'd our dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> so long, till <lb/>
+                    he was graciously pleased to remove this from <lb/>
+                    her. From thence ensued a settled Hearts Desire <lb/>
+                    and longing to be with him the sooner the better, <lb/>
+                    and she grew so remarkably in the inner Con, that <lb/>
+                    it was a Pleasure to behold it. She had a great <lb/>
+                    desire to enjoy the <name event="communion" when-iso="1770-06-24">h. Sacrament <add place="above">while</add> here, which she
+<lb/>
+also obtained June 24<hi rend="superscript">th</hi></name> and the Days following <lb/>
+                    she was inexpressibly Happy in her Heart, and <lb/>
+                    thus she kept growing in our <roleName type="honorific">Lord</roleName> Grace and <lb/>
+                    longing after his coming till the <name event="death" when-iso="1770-07-15"><date when="1770-07-15" cert="high">15<hi rend="superscript">th</hi> of July</date>
+<lb/>
+when a few Moments before her Soul took
+<lb/>
+flight</name> she still said: Sweet Jesus! Her dying <lb/>
                     life lasted 29 years and 2 months.
                 
             </p>

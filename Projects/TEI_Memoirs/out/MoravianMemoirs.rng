@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-06-15T15:43:31Z. .
+Schema generated from ODD source 2020-06-16T16:51:37Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -101,6 +101,22 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
       <optional>
          <attribute name="who">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the person, or group of people, to whom the element content is ascribed.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.ascribed.directed.attributes">
+      <ref name="att.ascribed.attributes"/>
+      <ref name="att.ascribed.directed.attribute.toWhom"/>
+   </define>
+   <define name="att.ascribed.directed.attribute.toWhom">
+      <optional>
+         <attribute name="toWhom">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the person, or group of people, to whom a speech act or action is directed.</a:documentation>
             <list>
                <oneOrMore>
                   <data type="anyURI"/>
@@ -659,6 +675,17 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
             <data type="token">
                <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
             </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.duration.w3c.attributes">
+      <ref name="att.duration.w3c.attribute.dur"/>
+   </define>
+   <define name="att.duration.w3c.attribute.dur">
+      <optional>
+         <attribute name="dur">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(duration) indicates the length of this element in time.</a:documentation>
+            <data type="duration"/>
          </attribute>
       </optional>
    </define>
@@ -1644,6 +1671,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
           </sch:rule>
    </pattern>
    <define name="att.timed.attributes">
+      <ref name="att.duration.attributes"/>
       <ref name="att.timed.attribute.start"/>
       <ref name="att.timed.attribute.end"/>
    </define>
@@ -2989,6 +3017,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="model.lLike"/>
          <ref name="model.pLike"/>
          <ref name="lg"/>
+         <ref name="model.divPart.spoken"/>
       </choice>
    </define>
    <define name="model.persStateLike">
@@ -3634,6 +3663,7 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
          <ref name="metamark"/>
          <ref name="notatedMusic"/>
          <ref name="figure"/>
+         <ref name="model.global.spoken"/>
       </choice>
    </define>
    <define name="model.biblPart">
@@ -3734,11 +3764,15 @@ Suggested values include: 1] volume; 2] issue; 3] page; 4] line; 5] chapter; 6] 
       </choice>
    </define>
    <define name="model.sourceDescPart">
-      <notAllowed/>
+      <choice>
+         <ref name="scriptStmt"/>
+         <ref name="recordingStmt"/>
+      </choice>
    </define>
    <define name="model.encodingDescPart">
       <choice>
          <ref name="charDecl"/>
+         <ref name="transcriptionDesc"/>
          <ref name="schemaRef"/>
          <ref name="projectDesc"/>
          <ref name="samplingDecl"/>
@@ -3886,6 +3920,19 @@ Suggested values include: 1] full (full form); 2] pref (prefix); 3] suff (suffix
       <choice>
          <ref name="place"/>
       </choice>
+   </define>
+   <define name="att.duration.iso.attributes">
+      <ref name="att.duration.iso.attribute.dur-iso"/>
+   </define>
+   <define name="att.duration.iso.attribute.dur-iso">
+      <optional>
+         <attribute name="dur-iso">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(duration) indicates the length of this element in time.</a:documentation>
+            <data type="token">
+               <param name="pattern">[0-9.,DHMPRSTWYZ/:+\-]+</param>
+            </data>
+         </attribute>
+      </optional>
    </define>
    <define name="att.milestoneUnit.attributes">
       <ref name="att.milestoneUnit.attribute.unit"/>
@@ -4553,6 +4600,7 @@ Measures]</a:documentation>
          <ref name="att.datable.custom.attribute.to-custom"/>
          <ref name="att.datable.custom.attribute.datingPoint"/>
          <ref name="att.datable.custom.attribute.datingMethod"/>
+         <ref name="att.duration.attributes"/>
          <ref name="att.editLike.attributes"/>
          <ref name="att.dimensions.attributes"/>
          <ref name="att.typed.attributes"/>
@@ -7539,6 +7587,389 @@ Suggested values include: 1] label; 2] data</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="att.duration.attributes">
+      <ref name="att.duration.w3c.attributes"/>
+      <ref name="att.duration.iso.attributes"/>
+   </define>
+   <define name="model.global.spoken">
+      <choice>
+         <ref name="pause"/>
+         <ref name="vocal"/>
+         <ref name="kinesic"/>
+         <ref name="incident"/>
+         <ref name="writing"/>
+         <ref name="shift"/>
+      </choice>
+   </define>
+   <define name="model.recordingPart">
+      <choice>
+         <ref name="model.dateLike"/>
+         <ref name="respStmt"/>
+         <ref name="equipment"/>
+         <ref name="broadcast"/>
+      </choice>
+   </define>
+   <define name="model.divPart.spoken">
+      <choice>
+         <ref name="u"/>
+         <ref name="annotationBlock"/>
+      </choice>
+   </define>
+   <define name="model.divPart.spoken_alternation">
+      <choice>
+         <ref name="u"/>
+         <ref name="annotationBlock"/>
+      </choice>
+   </define>
+   <define name="model.divPart.spoken_sequence">
+      <ref name="u"/>
+      <ref name="annotationBlock"/>
+   </define>
+   <define name="model.divPart.spoken_sequenceOptional">
+      <optional>
+         <ref name="u"/>
+      </optional>
+      <optional>
+         <ref name="annotationBlock"/>
+      </optional>
+   </define>
+   <define name="model.divPart.spoken_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="u"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="annotationBlock"/>
+      </zeroOrMore>
+   </define>
+   <define name="model.divPart.spoken_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="u"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="annotationBlock"/>
+      </oneOrMore>
+   </define>
+   <define name="scriptStmt">
+      <element name="scriptStmt">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(script statement) contains a citation giving details of the script used for a spoken text. [8.2. Documenting the Source of Transcribed Speech 2.2.7. The Source Description 15.3.2. Declarable Elements]</a:documentation>
+         <choice>
+      
+            <oneOrMore>
+               <ref name="model.pLike"/>
+            </oneOrMore>
+      
+            <ref name="model.biblLike"/>
+         </choice>
+         <ref name="att.global.attributes"/>
+         <ref name="att.declarable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="recordingStmt">
+      <element name="recordingStmt">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(recording statement) describes a set of recordings used as the basis for transcription of a spoken text. [8.2. Documenting the Source of Transcribed Speech 2.2.7. The Source Description]</a:documentation>
+         <choice>
+      
+            <oneOrMore>
+               <ref name="model.pLike"/>
+            </oneOrMore>
+      
+      
+            <oneOrMore>
+               <ref name="recording"/>
+            </oneOrMore>
+      
+         </choice>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="recording">
+      <element name="recording">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(recording event) provides details of an audio or video recording event used as the source of a spoken text, either directly or from a public broadcast. [8.2. Documenting the Source of Transcribed Speech 15.3.2. Declarable Elements]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="model.recordingPart"/>
+               <ref name="model.pLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.declarable.attributes"/>
+         <ref name="att.duration.attributes"/>
+         <ref name="att.typed.attribute.subtype"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="type"
+                       a:defaultValue="audio">
+               <a:documentation>the kind of recording.</a:documentation>
+               <choice>
+                  <value>audio</value>
+                  <a:documentation>audio recording</a:documentation>
+                  <value>video</value>
+                  <a:documentation>audio and video recording</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="equipment">
+      <element name="equipment">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides technical details of the equipment and media used for an audio or video recording used as the source for a spoken text. [8.2. Documenting the Source of Transcribed Speech 15.3.2. Declarable Elements]</a:documentation>
+         <oneOrMore>
+            <ref name="model.pLike"/>
+         </oneOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.declarable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="broadcast">
+      <element name="broadcast">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes a broadcast used as the source of a spoken text. [8.2. Documenting the Source of Transcribed Speech 15.3.2. Declarable Elements]</a:documentation>
+         <choice>
+      
+            <oneOrMore>
+               <ref name="model.pLike"/>
+            </oneOrMore>
+      
+            <ref name="model.biblLike"/>
+            <ref name="recording"/>
+         </choice>
+         <ref name="att.global.attributes"/>
+         <ref name="att.declarable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="transcriptionDesc">
+      <element name="transcriptionDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the set of transcription conventions used, particularly for spoken material. [8.2. Documenting the Source of Transcribed Speech]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="model.labelLike"/>
+               <ref name="model.ptrLike"/>
+               <ref name="model.pLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <attribute name="ident">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies an identifier for the encoding convention, independent of any version number.</a:documentation>
+            <data type="Name"/>
+         </attribute>
+         <optional>
+            <attribute name="version">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a version number for the encoding conventions used, if any.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[\d]+[a-z]*[\d]*(\.[\d]+[a-z]*[\d]*){0,3}</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="u">
+      <element name="u">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(utterance) contains a stretch of speech usually preceded and followed by silence or by a change of speaker. [8.3.1. Utterances]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.declaring.attributes"/>
+         <ref name="att.ascribed.directed.attributes"/>
+         <ref name="att.notated.attributes"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="trans"
+                       a:defaultValue="smooth">
+               <a:documentation>(transition) indicates the nature of the transition between this utterance and the previous one.</a:documentation>
+               <choice>
+                  <value>smooth</value>
+                  <a:documentation>this utterance begins without unusual pause or rapidity.</a:documentation>
+                  <value>latching</value>
+                  <a:documentation>this utterance begins with a markedly shorter pause than normal.</a:documentation>
+                  <value>overlap</value>
+                  <a:documentation>this utterance begins before the previous one has finished.</a:documentation>
+                  <value>pause</value>
+                  <a:documentation>this utterance begins after a noticeable pause.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="pause">
+      <element name="pause">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks a pause either between or within utterances. [8.3.2. Pausing]</a:documentation>
+         <empty/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.ascribed.directed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="vocal">
+      <element name="vocal">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks any vocalized but not necessarily lexical phenomenon, for example voiced pauses, non-lexical backchannels, etc. [8.3.3. Vocal, Kinesic, Incident]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.descLike"/>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.ascribed.directed.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="iterated"
+                       a:defaultValue="false">
+               <a:documentation>indicates whether or not the phenomenon is repeated.</a:documentation>
+               <choice>
+                  <data type="boolean"/>
+                  <choice>
+                     <value>unknown</value>
+                     <a:documentation/>
+                     <value>inapplicable</value>
+                     <a:documentation/>
+                  </choice>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="kinesic">
+      <element name="kinesic">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks any communicative phenomenon, not necessarily vocalized, for example a gesture, frown, etc. [8.3.3. Vocal, Kinesic, Incident]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.descLike"/>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.ascribed.directed.attributes"/>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="iterated"
+                       a:defaultValue="false">
+               <a:documentation>indicates whether or not the phenomenon is repeated.</a:documentation>
+               <choice>
+                  <data type="boolean"/>
+                  <choice>
+                     <value>unknown</value>
+                     <a:documentation/>
+                     <value>inapplicable</value>
+                     <a:documentation/>
+                  </choice>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="incident">
+      <element name="incident">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks any phenomenon or occurrence, not necessarily vocalized or communicative, for example incidental noises or other events affecting communication. [8.3.3. Vocal, Kinesic, Incident]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.descLike"/>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.ascribed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="writing">
+      <element name="writing">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a passage of written text revealed to participants in the course of a spoken text. [8.3.4. Writing]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.ascribed.directed.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <optional>
+            <attribute name="gradual">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates whether the writing is revealed all at once or gradually.</a:documentation>
+               <choice>
+                  <data type="boolean"/>
+                  <choice>
+                     <value>unknown</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>inapplicable</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  </choice>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="shift">
+      <element name="shift">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks the point at which some paralinguistic feature of a series of utterances by any one speaker changes. [8.3.6. Shifts]</a:documentation>
+         <empty/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="ML-shift-shiftNew-constraint-assert-18">
+            <rule context="tei:shift">
+               <assert test="@new" role="warning">              
+The @new attribute should always be supplied; use the special value
+"normal" to indicate that the feature concerned ceases to be
+remarkable at this point.</assert>
+            </rule>
+         </pattern>
+         <ref name="att.global.attributes"/>
+         <ref name="att.ascribed.attributes"/>
+         <optional>
+            <attribute name="feature">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a paralinguistic feature.
+Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6] voice</a:documentation>
+               <choice>
+                  <value>tempo</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">speed of utterance.</a:documentation>
+                  <value>loud</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">loudness.</a:documentation>
+                  <value>pitch</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">pitch range.</a:documentation>
+                  <value>tension</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tension or stress pattern.</a:documentation>
+                  <value>rhythm</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">rhythmic qualities.</a:documentation>
+                  <value>voice</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">voice quality.</a:documentation>
+                  <data type="token">
+                     <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                       name="new"
+                       a:defaultValue="normal">
+               <a:documentation>specifies the new state of the paralinguistic feature specified.</a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="annotationBlock">
+      <element name="annotationBlock">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups together various annotations, e.g. for parallel interpretations of a spoken segment. [8.4.6. Analytic Coding]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="u"/>
+            
+               <ref name="model.global.spoken"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.ascribed.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="att.patternReplacement.attributes">
       <ref name="att.patternReplacement.attribute.matchPattern"/>
       <ref name="att.patternReplacement.attribute.replacementPattern"/>
@@ -9044,7 +9475,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines an association or hypertextual link among elements or passages, of some type not more precisely specifiable by other elements. [16.1. Links]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-link-linkTargets3-constraint-assert-18">
+                  id="ML-link-linkTargets3-constraint-assert-19">
             <rule context="tei:link">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9251,7 +9682,7 @@ Suggested values include: 1] d (days); 2] h (hours); 3] min (minutes); 4] s (sec
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-join-joinTargets3-constraint-assert-19">
+                  id="ML-join-joinTargets3-constraint-assert-20">
             <rule context="tei:join">
                <assert test="contains(@target,' ')">
 You must supply at least two values for @target on <name/>
@@ -9468,7 +9899,7 @@ You must supply at least two values for @target on <name/>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the system used to ensure correct ordering of the quires or similar making up a codex, incunable, or other object typically by means of annotations at the foot of the page. [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-catchwords-catchword_in_msDesc-constraint-assert-20">
+                  id="ML-catchwords-catchword_in_msDesc-constraint-assert-21">
             <rule context="tei:catchwords">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9681,7 +10112,7 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(second folio) marks the word or words taken from a fixed point in a codex (typically the beginning of the second leaf) in order to provide a unique identifier for it.  [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-secFol-secFol_in_msDesc-constraint-assert-21">
+                  id="ML-secFol-secFol_in_msDesc-constraint-assert-22">
             <rule context="tei:secFol">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9698,7 +10129,7 @@ Sample values include: 1] leaves; 2] ruled; 3] pricked; 4] written; 5] miniature
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains discussion of the leaf or quire signatures found within a codex or similar object. [10.3.7. Catchwords, Signatures, Secundo Folio]</a:documentation>
          <ref name="macro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-signatures-signatures_in_msDesc-constraint-assert-22">
+                  id="ML-signatures-signatures_in_msDesc-constraint-assert-23">
             <rule context="tei:signatures">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -12473,7 +12904,7 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
             <ref name="desc"/>
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="ML-relation-reforkeyorname-constraint-assert-23">
+                  id="ML-relation-reforkeyorname-constraint-assert-24">
             <rule context="tei:relation">
                <assert test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
             </rule>

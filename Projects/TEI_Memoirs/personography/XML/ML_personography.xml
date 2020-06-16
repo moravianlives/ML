@@ -395,6 +395,7 @@
                <event type="baptism" where="#mlpla000105" when-iso="1731-03-18">
                   <desc>baptized at St Bartholomew's Church Armley 18 March, 1731 (7 March, 1730 OS)</desc>
                </event>
+               <!-- memoir states baptized in Church of England. do I encode that on different line, or add it to the above? -->
                <event type="reception">
                   <desc>received <orgName religion="Presbyterian">Presbyterian Church</orgName> </desc>
                </event>
@@ -414,14 +415,16 @@
                   <desc>received sacrament at Ockbrook</desc>
                </event>
                <event type="reception" when-iso="07">
-                  <!-- Only date is July; no location given; is this the proper event type? -->
+                  <!-- Only date is July -->
                   <desc> received as acoluth </desc>
+               </event>
+               <event type="interment" where="#mlpla000063" when-iso="1765-12-02" ref="#mlper000693">
+                  <desc>interred at Ockbrook by John Ockershausen</desc>
                </event>
                <occupation from="1744" to="1750" cert="medium">apprenticeship</occupation>
                <occupation>stockiner</occupation>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/62</bibl>
-               <note>(P/G/O)+^WILSON, Elizabeth (Betty) (1731-1765) b 22.02.1730 (OS) / 05.03.1731 (NS) Wortley Parish of Leeds occupation: stockiner reception: baptized St Bartholomew’s Church Armley
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/62</bibl>
+               <note resp="#Yorkshire_Families">(P/G/O)+^WILSON, Elizabeth (Betty) (1731-1765) b 22.02.1730 (OS) / 05.03.1731 (NS) Wortley Parish of Leeds occupation: stockiner reception: baptized St Bartholomew’s Church Armley
                   07.03.1730 (OS) / 18.03.1731 (NS), received Presbyterian Church, received society Holbeck 1752, received congregation Pudsey in Fulneck 27.04.1757, sisters’ house Gomersal January
                   1758, sisters’ house Ockbrook 10.04.1760, sacrament Ockbrook 16.04.1760 church office: received as acoluth July family: daughter of Thomas Wilson (b 1700) and Hannah (née Renner) (b
                   1701), sister of Benjamin (b 1727), Hannah (Horsfield) (b 1733), Esther (Klosé) (b 1736), Grace (b 1738) and Mary d 30.11.1765 aged 34 Ockbrook, interred Ockbrook by Br J
@@ -434,7 +437,7 @@
                   <forename>Anna <addName>Rosina</addName>
                   </forename>
                   <surname type="birth">Anderson</surname>
-                  <name type="variant">Anders</name>
+                  <surname type="variant">Anders</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1727-08-09">9 August, 1727</date>
@@ -444,7 +447,7 @@
                   <date type="death" when-iso="1803-02-20">20 Febuary, 1803</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName> Sisters' House</death>
                <event type="baptism">
-                  <desc><orgName religion="Lutheran">baptized in Lutheran Church</orgName></desc>
+                  <desc>baptized in <orgName religion="Lutheran">Lutheran Church</orgName></desc>
                </event>
                <event type="entrance" where="#mlpla000057" when-iso="1738" cert="medium">
                   <desc>entered orphan house at Marienborn</desc>
@@ -453,7 +456,7 @@
                   <desc> entered sisters' house at Marienborn</desc>
                </event>
                <event type="reception" where="#mlpla000057" when-iso="1740">
-                  <desc> received into congregation at Marienborn</desc>
+                  <desc> received into <orgName en="childrens choir">childrens' congregation</orgName> at Marienborn</desc>
                </event>
                <event type="sacrament" where="#mlpla000014" when-iso="1741">
                <desc>received sacrament at Herrnhaag</desc>
@@ -461,18 +464,23 @@
                <event type="reception" when-iso="1741">
                   <desc> received into <orgName en="greater girls choir">the Great Girls Choir</orgName></desc>
                </event>
+               <event type="reception" where="#mlpla000057" when-iso="1743-06-23">
+                  <desc> received as acoluth at Marienborn</desc>
+               </event>
+               <event type="reception" when-iso="1744">
+                  <desc>received into <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000014" when-iso="1747-07-04">
+                  <desc> blessed as a deaconess at Herrnhaag</desc>
+               </event>
+               <event type="arrival" where="#mlpla000002" when-iso="1748-09-20">
+                  <desc> arrived at Bethlehem</desc>
+               </event>
                <event type="arrival" where="#mlpla000096" when-iso="1764-05">
                   <desc> returned to Europe </desc>
                </event>
                <event type="arrival" where="#mlpla000054" when-iso="1764-06-24">
                   <desc> arrived in London</desc>
-               </event>
-               <event where="#mlpla000014" when-iso="1747-07-04">
-                  <desc> blessed as a <name office="">deaconess</name> at Herrnhaag</desc>
-                     <!-- need office tag; what is event type? -->
-               </event>
-               <event type="arrival" where="#mlpla000002" when-iso="1748-09-20">
-                  <desc> arrived at Bethlehem</desc>
                </event>
                <event type="arrival" where="#mlpla000057" when-iso="1764-07-04">
                   <desc> arrived at Marienborn</desc>
@@ -480,8 +488,8 @@
                <event type="arrival" where="#mlpla000001" when-iso="1764-08">
                   <desc> arrived at Herrnhut</desc>
                </event>
-               <event type="reception" where="#mlpla000057" when-iso="1743-06-23">
-                  <desc> received as acoluth at Marienborn</desc>
+               <event type="interment" where="#mlpla000003" when-iso="1803-02-24" ref="#mlper000557">
+                  <desc>interred at Fulneck by Samuel Benade</desc>
                </event>
                <residence from="1734"><placeName ref="#mlpla000026">Berthelsdorf</placeName></residence>
                <residence><placeName ref="#mlpla000053">Lobenstein</placeName></residence>
@@ -492,9 +500,8 @@
                <office when-iso="1765">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office when-iso="1765" notAfter="1772">single sisters' labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
                <office from="1722" to="1801">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/8</bibl>
-               <note> ANDERSON, Anna Rosina (1727-1803) b 09.08.1727 Berthelsdorf reception: baptised Lutheran Church, orphan house Marienborn c 1738, sisters’ house Marienborn 1739, received
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>
+               <note resp="#Yorkshire_Families"> ANDERSON, Anna Rosina (1727-1803) b 09.08.1727 Berthelsdorf reception: baptised Lutheran Church, orphan house Marienborn c 1738, sisters’ house Marienborn 1739, received
                   congregation Marienborn 1740, sacrament Herrnhaag 1741 congregation office: children and great girls bandkeeper 1742 Marienborn church orders: received as acoluth Herrnhaag
                   23.06.1743 blessed as deaconess Herrnhaag 04.07.1747 church service: assistant children’s oeconomy Marienborn 1743, Herrnhaag 1743, single sisters’ labourer Bethlehem, arrived
                   20.09.1748, returned Europe May 1764, arrived London 24.06.1764, arrived Marienborn 04.07.1764, arrived Herrnhut August 1764, single sisters’ labourer Fulneck 1765, Bedford 1765,
@@ -506,8 +513,8 @@
                <persName>
                   <forename>Martha</forename>
                   <surname type="birth">Adkinson</surname>
-                  <name type="variant" resp="#Yorkshire_Families">Atkinson</name>
-                  <name type="variant" resp="#memoir">Atkeson</name>
+                  <surname type="variant" resp="#Yorkshire_Families">Atkinson</surname>
+                  <surname type="variant" resp="#memoir">Atkeson</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1743-06-28" resp="#Yorkshire_Families">28 June, 1743</date>
@@ -530,15 +537,18 @@
                <event type="entrance" where="#mlpla000052" when-iso="1762-04">
                   <desc>entered sisters’ house at Littlemoor</desc>
                </event>
-               <event type="reception" where="#mlpla000090" when-iso="162-04-12">
+               <event type="reception" where="#mlpla000090" when-iso="1762-04-12">
                   <desc>received into congregation at Pudsey</desc>
                </event>
                <event type="sacrament" where="#mlpla000090" when-iso="1767-01-31">
                   <desc>sacrament at Pudsey</desc>
                </event>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/38</bibl>
-               <note>(LW/F/P)/x+^ATKINSON, Martha (1743-1768) b 28.06.1743 Scholes reception: baptized St Peter’s Church Birstall 10.07.1743 (OS) / 21.07.1743 (NS), received society Wyke 1758, 
+               <event type="interment" where="#mlpla000003" when-iso="1768-07-02" ref="#mlper000027">
+                  <desc>interred at Fulneck by Peter Böhler</desc>
+               </event>
+               <occupation>cook in the economy at <placeName ref="#mlpla000052">Littlemoor</placeName></occupation>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/38</bibl>
+               <note resp="#Yorkshire_Families">(LW/F/P)/x+^ATKINSON, Martha (1743-1768) b 28.06.1743 Scholes reception: baptized St Peter’s Church Birstall 10.07.1743 (OS) / 21.07.1743 (NS), received society Wyke 1758, 
                   sisters’ house Fulneck 26.11.1761, sisters’ house Littlemoor April 1762, received congregation Pudsey in Fulneck 12.04.1762, sacrament Pudsey in Fulneck 31.01.1767
                   family: daughter of James Atkinson (b 1715) and Elizabeth (née Mortimer) (b 1712), granddaughter of Sam Atkinson, sister of Thomas (b 1741), Grace (b 1745), Sarah (Webster) (b 1747), 
                   John (b 1749) and Elizabeth (b 1752), sister-in-law of Beatrix (née Ashley) and David Webster (b 1727) d 30.06.1768 aged 25 sisters’ house Littlemoor, interred Fulneck 
@@ -550,7 +560,7 @@
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Allot</surname>
-                  <name type="variant" resp="#memoir">Alott</name>
+                  <surname type="variant" resp="#memoir">Alott</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1734-08-12" resp="#Yorkshire_Families">12 August, 1734</date>
@@ -563,7 +573,7 @@
                   <placeName ref="#mlpla000003">Fulneck</placeName> Sisters' House </death>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">baptized in Church of England</orgName></desc>
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception" where="#mlpla000097" when-iso="1746-05">
                   <desc>received into society/sisters’ house at Cleckheaton</desc>
@@ -589,7 +599,6 @@
                   </desc>
                   <!-- Katie question: do we want to encode movement such as the above, when it is not in the YF doc? -->
                </event>
-               <residence when-iso="1748-07"><placeName ref="#mlpla000097">Cackheaton</placeName></residence>
                <event when-iso="1753">
                   <desc> received from <orgName en="greater girls choir">Great Girls</orgName> to the <orgName en="single sisters choir">Single Sisters Choir</orgName>
                   </desc>
@@ -597,8 +606,12 @@
                <event from="1744" cert="medium">
                   <desc> carried about a very sickly and weakly Tabernacle </desc>
                </event>
-               <bibl type="memoir">Ful/SS/12</bibl>
-               <note>(LW/G/F)CBssALLOT, Mary (1734-1754) b 12.08.1734 Rastrick Parish of Halifax reception: baptized Church of England, received society/sisters’ house Cleckheaton May 1746, sisters’
+               <event type="interment" where="#mlpla000003" when-iso="1754-12-28" ref="#mlper000694">
+                  <desc>interred at Fulneck by George Traneker</desc>
+               </event>
+               <residence when-iso="1748-07"><placeName ref="#mlpla000097">Cackheaton</placeName></residence>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/12</bibl>
+               <note resp="#Yorkshire_Families">(LW/G/F)CBssALLOT, Mary (1734-1754) b 12.08.1734 Rastrick Parish of Halifax reception: baptized Church of England, received society/sisters’ house Cleckheaton May 1746, sisters’
                   house Tyersal 1750, received congregation Yorkshire in Fulneck 25.03.1751 (OS) / 05.04.1751 (NS), new sisters’ house Fulneck 15.12.1752, sacrament Yorkshire in Fulneck 25.02.1753 d
                   25.12.1754 aged 20 sisters’ house Fulneck, interred Fulneck by Br G Traneker 28.12.1754 grave 75 - 1st section, 2nd row, 8th grave from path</note>
             </person>
@@ -608,7 +621,7 @@
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Ashley</surname>
-                  <name type="variant">Ashly</name>
+                  <surname type="variant">Ashly</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1740-09-08" calendar="Julian">9 August, 1740</date>
@@ -617,17 +630,21 @@
                </birth>
                <death>
                   <date type="death" when-iso="1761-05-05">5 May, 1761</date>
-                  <!-- There is no place listed for where she died -->
                </death>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <event type="baptism" where="#mlpla000099" when-iso="1740-22-08">
                   <desc>baptized at St Peter's Church Hartshead 22 August, 1740 (11 August, 1740 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000059" when-iso="1752">
                   <desc>received into society at Mirfield</desc>
                </event>
+               <event type="reception" when-iso="1753" cert="low" ref="#mlper000699">
+                  <desc>received into <orgName en="greater girls choir">Great Girls Choir</orgName> by Anna Johanna Piesch</desc>
+               </event>
                <event type="reception" where="#mlpla000003" when-iso="1756-13-11">
                   <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="reception" when-iso="1756">
+                  <desc>received into the Little Virgins Choir</desc>
                </event>
                <event type="entrance" where="#mlpla000041" when-iso="1758-07-01">
                   <desc>entered sisters' house at Gomersal</desc>
@@ -635,16 +652,22 @@
                <event type="entrance" where="#mlpla000003" when-iso="1759-02-02">
                   <desc>entered sisters' house at Fulneck</desc>
                </event>
+               <event type="reception" when-iso="1759-05-04">
+                  <desc>received into <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
+               </event>
                <event type="sacrament" where="#mlpla000003" when-iso="1759-11-28">
                   <desc>received sacrament at Fulneck</desc>
                </event>
+               <event type="love feast" where="#mlpla000003" when-iso="1761-04-05">
+                  <desc>her class Sisters had a Love-Feast in the sick room</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1761-05-07" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
+               </event>
                <education when-iso="1748">girls' school <placeName ref="#mlpla000101">Row Head</placeName></education>
                <residence from="1740" to="1758"><placeName ref="#mlpla000099">Hartshead</placeName></residence>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/19</bibl>
-               <bibl type="memoir">Ful/3/55</bibl>
-               <note />
-               <note>(W/F/G)ASHLEY, Hannah (1740-1761) b 09.08.1740 (OS) / 20.08.1740 (NS) Hartshead educated: girls’ school Row Head 1748 resided: Hartshead 1740-1758 reception: baptized St Peter’s
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/19; Ful/3/55</bibl>
+               <note resp="#Yorkshire_Families">(W/F/G)ASHLEY, Hannah (1740-1761) b 09.08.1740 (OS) / 20.08.1740 (NS) Hartshead educated: girls’ school Row Head 1748 resided: Hartshead 1740-1758 reception: baptized St Peter’s
                   Church Hartshead 11.08.1740 (OS) / 22.08.1740 (NS), received society Mirfield 1752, received congregation Fulneck 13.11.1756, sisters’ house Gomersal 01.07.1758, sisters’ house
                   Fulneck 02.02.1759, sacrament Fulneck 28.11.1759 family: daughter of John Ashley (b 1712) and Martha (née Keighley) (b 1711), sister of Mary (Southwell) (b 1734), Martha (b 1737),
                   Joshua (b 1744), Sarah (b 1745), Betty (b 1747) and Benigna (b 1749) d 05.05.1761 aged 20, interred Fulneck by Br B La Trobe 07.05.1761 grave 188 - 1st section, 6th row, 3rd grave
@@ -678,8 +701,7 @@
                   <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="entrance" where="#mlpla000102">
-                  <desc>entered <orgName>Ingham's society</orgName> at Wyke</desc>
-                     <!-- Diane question: Should Ingham also be encoded with persID? what is event type here?-->
+                  <desc>entered <orgName en="Ingham's society">Ingham's society</orgName> at Wyke</desc>
                </event>
                <event type="reception" where="#mlpla000103" when-iso="1742">
                   <desc> received into society at Norwood Green</desc>
@@ -699,19 +721,20 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1754-01-27">
                   <desc>received sacrament at Fulneck</desc>
                </event>
-               <event when-iso="1755-04-19">
-                  <!-- is this actually an event? or some other descriptive element? -->
-                  <desc> founder member Fulneck congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="interment" where="#mlpla000003" when-iso="1766-12-10" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/58</bibl>
-               <note>(LW/W/P/F)=#BENTLEY, Abigail (1722-1766) b 23.09.1722 Wyke Parish of Birstall reception: baptized Church of England, Ingham’s society Wyke, received society Norwood Green 1742,
+               <occupation>worked in Childrens Oeconomy Wash Kitchen</occupation>
+               <occupation>overseer in a Work Room</occupation>
+               <affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/58</bibl>
+               <note resp="#Yorkshire_Families">(LW/W/P/F)=#BENTLEY, Abigail (1722-1766) b 23.09.1722 Wyke Parish of Birstall reception: baptized Church of England, Ingham’s society Wyke, received society Norwood Green 1742,
                   transferred society Mirfield 1748, transferred society Holme 1752, received congregation Yorkshire in Fulneck 13.11.1752, new sisters’ house Fulneck 15.12.1752, sacrament Yorkshire
                   in Fulneck 27.01.1754, founder member Fulneck congregation 19.04.1755 d 07.12.1766 aged 44 sisters’ house Fulneck, interred Fulneck by Br B La Trobe 10.12.1766 grave 307 - 1st
                   section, 11th row, 7th grave from path</note>
             </person>
          </listPerson>
+         <!-- Not in Yorkshire Families document. Part of uncataloged Single Sisters collection; information taken from memoir. -->
          <listPerson>
             <person xml:id="mlper000220">
                <persName>
@@ -719,7 +742,6 @@
                   <surname type="birth">Bird</surname>
                   <surname type="married">?</surname>
                </persName>
-               <!-- Not in Yorkshire Families document. Part of uncataloged Single Sisters collection; information taken from memoir. -->
                <birth>
                   <date type="birth" when-iso="1754-12-01">1 December, 1754</date>
                   <placeName ref="#mlpla000023">Bath</placeName>
@@ -739,8 +761,7 @@
                <education>boarding school at <placeName ref="#mlpla000030">Bristol</placeName></education>
                <office>attendant at Lady Huntingdon Chappel</office>
                <occupation when-iso="1795">opened a Day School with her daughter</occupation>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/50</bibl>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/50</bibl>
             </person>
          </listPerson>
          <listPerson>
@@ -757,7 +778,6 @@
                   <date type="death" when-iso="1764-04-21">21 April, 1764</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <education when-iso="1748"><placeName ref="#mlpla000101">girls' school Row Head</placeName></education>
                <event type="baptism" where="#mlpla000059" when-iso="1735-09-25">
                   <desc>baptized at St Mary's Church Mirfield 25 September, 1735 (14 September, 1735 OS)</desc>
                </event>
@@ -770,9 +790,13 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1753-09-09">
                   <desc>sacrament at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1764-04-24" ref="#mlper000544">
+                  <desc>interred at Fulneck by James Charlesworth</desc>
+               </event>
+               <education when-iso="1748"><placeName ref="#mlpla000101">girls' school Row Head</placeName></education>
                <office>intercessor at <placeName ref="mlpla000003">Fulneck</placeName></office>
-               <affiliation ref="#mlpla000003">Fulneck</affiliation>
-               <bibl type="memoir">Ful/SS/39</bibl>
+               <affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/39</bibl>
                <!-- note: there are two copies of Elizabeth Booth's memoir under the same archival number -->
                <note>(W/F)BOOTH, Elizabeth (Betty) (1735-1764) b 11.09.1735 Mirfield educated: girls’ school Row Head 1748 reception: baptized St Mary’s Church Mirfield 14.09.1735 (OS) / 25.09.1735
                   (NS), received congregation Yorkshire in Fulneck 13.11.1752, sisters’ house Fulneck 30.12.1752, sacrament Yorkshire in Fulneck 09.09.1753, founder member Fulneck congregation
@@ -6825,7 +6849,7 @@
                   <placeName>West Tythertonn Wiltshire</placeName>
                </birth>
                <death>
-                  <date type="death" cause="smallpox" when-iso="1761-11-16">16 November, 1761</date>
+                  <date type="death" when-iso="1761-11-16">16 November, 1761</date>
                   <placeName>brethren’s house Fulneck</placeName>
                </death>
                <occupation when-iso="1756">day labourer</occupation>
@@ -6955,7 +6979,7 @@
                   <placeName>Pudsey</placeName>
                </birth>
                <death>
-                  <date type="death" cause="consumption" when-iso="1796-12-05">5 December, 1796</date>
+                  <date type="death" when-iso="1796-12-05">5 December, 1796</date>
                   <placeName>Pudsey</placeName>
                </death>
                <event type="baptism" when-iso="1764-08-30">
@@ -7378,7 +7402,7 @@
                   <placeName>Wyke Parish of Birstall</placeName>
                </birth>
                <death>
-                  <date type="death" cause="consumption" when-iso="1752-12-16">16 December, 1752</date>
+                  <date type="death" when-iso="1752-12-16">16 December, 1752</date>
                   <placeName>Wyke</placeName>
                </death>
                <occupation>shoemaker</occupation>
@@ -7489,7 +7513,7 @@
                   <placeName>Little Wild Street London</placeName>
                </birth>
                <death>
-                  <date type="death" cause="consumption" when-iso="1772-02-07">7 Febuary, 1772</date>
+                  <date type="death" when-iso="1772-02-07">7 Febuary, 1772</date>
                   <placeName>brethren's house Fulneck</placeName>
                </death>
                <education>
@@ -8904,6 +8928,22 @@
             </person>
          </listPerson>
          <listPerson>
+            <person xml:id="mlper000693" sex="m">
+               <persName>
+                  <forename>John</forename>
+                  <surname>Ockershausen</surname>
+               </persName>
+            </person>
+         </listPerson>
+         <listPerson>
+            <person xml:id="mlper000694" sex="m">
+               <persName>
+                  <forename>George</forename>
+                  <surname>Traneker</surname>
+               </persName>
+            </person>
+         </listPerson>
+         <listPerson>
             <person xml:id="mlper000695" sex="m">
                <persName>
                   <forename>John</forename>
@@ -8919,6 +8959,14 @@
                </persName>
                <affiliation ref="#mlpla000003">Fulneck</affiliation>
                <bibl type="memoir">Ful/3/99</bibl>
+            </person>
+         </listPerson>
+         <listPerson>
+            <person xml:id="mlper000697" sex="m">
+               <persName>
+                  <forename>Benjamin</forename>
+                  <surname>La Trobe</surname>
+               </persName>
             </person>
          </listPerson>
          <listPerson>

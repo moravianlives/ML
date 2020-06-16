@@ -1362,6 +1362,9 @@
                   in Fulneck 02.12.1753, sisters’ house Fulneck 09.11.1754, founder member Fulneck congregation 19.04.1755 family: daughter of William Clark d 11.10.1756 aged 29 sisters’ house
                   Fulneck, interred Fulneck by Br G Traneker 14.10.1756 grave 103 - 1st section, 3rd row, 8th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="sibling" mutual="#mlper000232"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000232">
@@ -1422,14 +1425,18 @@
                   07.07.1749 (NS) grave 1 - wing of 1st section, 1st row, 1st grave by fence into field resited gravestone - right hand side of path down from gate, 3rd stone down in 1st section
                </note>
             </person>
+            <listRelation type="personal">
+               <relation name="sibling" mutual="#mlper000231"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000233">
                <persName>
                   <forename>Esther</forename>
+                  <forename type="variant">Hetty</forename>
                   <surname type="birth">Clerk</surname>
-                  <name type="variant" resp="#Yorkshire_Families">Cleak</name>
-                  <name type="variant" resp="#memoir">Cleake</name>
+                  <surname type="variant" resp="#Yorkshire_Families">Cleak</surname>
+                  <surname type="variant" resp="#memoir">Cleake</surname>
                </persName>
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1715-06-27"> 27 June, 1715</date>
@@ -1452,12 +1459,19 @@
                <event type="sacrament" where="#mlpla000054" when-iso="1747-11-13">
                   <desc>sacrament at London 13 November, 1747 (2 November, 1747)</desc>
                </event>
-               <event where="#mlpla000082">
+               <event type="reception" where="#mlpla000082">
                   <desc>blessed as deaconess at Wiltshire</desc>
                </event>
-               <event where="#mlpla000003" when-iso="1784">
+               <event type="retirement" where="#mlpla000003" when-iso="1782-06-20">
                   <desc>retired at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1791-05-31" ref="#mlper000694">
+                  <desc>interred at Fulneck by George Traneker</desc>
+               </event>
+               <residence from="1734" cert="low"><placeName ref="#mlpla000054">London</placeName></residence>
+               <residence><placeName ref="#mlpla000228">Blackheath</placeName></residence>
+               <occupation>servant / governess to multiple families</occupation>
+               <occupation>caregiver for Betsey Holand at <placeName ref="#mlpla000228">Blackheath</placeName></occupation>
                <office when-iso="1751-08-29">single sisters’ labourer at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
                <office when-iso="1751-10-13">opened girls’ day school at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
                <!-- is the above an office or event, or both? it is listed in the church service section from YF doc -->
@@ -1497,8 +1511,6 @@
                <event type="arrival" where="#mlpla000003" when-iso="1831-07">
                   <desc>removed to Fulneck</desc>
                </event>
-               <!-- should the above events also (or only) be encoded as residences? -->
-               
                <bibl type="memoir" source="#mlpla000003">Ful/SS/46</bibl>
             </person>
          </listPerson>
@@ -1522,7 +1534,7 @@
                   <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="entrance" where="#mlpla000125">
-                  <desc>entered <orgName>Ingham's society</orgName> at Rothwell</desc>
+                  <desc>entered <orgName en="Ingham's society">Ingham's society</orgName> at Rothwell</desc>
                </event>
                <event type="reception" where="#mlpla000089" when-iso="1745">
                   <desc>received into society at Holbeck</desc>
@@ -1536,13 +1548,15 @@
                <event type="entrance" where="#mlpla000003" when-iso="1756-09-20">
                   <desc>entered sisters' house at Fulneck</desc>
                </event>
+               <!-- memoir says the above happened on 20 April, 1756 -->
                <event type="sacrament" where="#mlpla000003" when-iso="1757-03-21">
                   <desc>sacrament at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1790-11-15" ref="#mlper000694">
+                  <desc>interred at Fulneck by George Traneker</desc>
+               </event>
                <occupation>spinner</occupation>
-               
-               <bibl type="memoir" source="#mlpla000003">Ful/SS/41</bibl>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/08</bibl>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/41; Ful/3/08</bibl>
                <note resp="#Yorkshire_Families">(W/P/G/F)>=#CRAVEN, Sarah (1723-1790) b 01.12.1723 Rothwell occupation: spinner reception: baptized Church of England, Ingham’s society Rothwell, received society Holbeck 1745,
                   sisters’ house Gomersal 20.05.1755, received congregation Gomersal in Fulneck 04.03.1756, sisters’ house Fulneck 20.09.1756, sacrament Fulneck 21.03.1757 d 10.11.1790 aged 66
                   Fulneck, interred Fulneck by Br G Traneker 15.11.1790 grave 869 - 1st section, 51st row, 1st grave by path</note>
@@ -1563,8 +1577,8 @@
                   <date type="death" when-iso="1810-06-19">19 June, 1810</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000126" when-iso="1729-11-01">
-                  <desc>baptized at St Botolph’s Church Billingsgate 1 November, 1729 (21 October, 1729 OS)</desc>
+               <event type="baptism" where="#mlpla000229" when-iso="1729-11-01">
+                  <desc>baptized at St Botolph’s Church Billingsgate 1 November, 1729 (21 October, 1729 OS). baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception" where="#mlpla000054" when-iso="1749-09-25">
                   <desc> received into congregation at London</desc>
@@ -1581,8 +1595,13 @@
                <event type="reception" where="#mlpla000003" when-iso="1768-07-27">
                   <desc>received as acoluth at Fulneck</desc>
                </event>
+               <event where="#mlpla000003" when-iso="1810-04-17">
+                  <desc>burned when her clothes caught fire in the sickroom</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1810-06-21" ref="#mlper000706">
+                  <desc>interred at Fulneck by James Gottlieb La Trobe</desc>
+               </event>
                <occupation>teacher at girls' day school at <placeName ref="#mlpla000025">Bedford</placeName></occupation>
-               
                <bibl type="memoir" source="#mlpla000003">Ful/SS/9</bibl>
                <note resp="#Yorkshire_Families"> (F)DELAMOTTE, Mary (1729-1810) b 08.10.1729 (OS) / 19.10.1729 (NS) Thames Street London occupation: sewer reception: baptized St Botolph’s Church Billingsgate 21.10.1729 (OS) /
                   01.11.1729 (NS), received congregation London 25.09.1749, sisters’ house Bedford 02.05.1750, sacrament Bedford 15.04.1751, sisters’ house Fulneck 29.10.1757 church orders: received
@@ -1609,7 +1628,7 @@
                   <date type="death" when-iso="1767-09-11">11 September 1767</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName> sisters' house
                </death>
-               <event type="baptism" where="mlpla000127" when-iso="1727-10-30">
+               <event type="baptism" where="#mlpla000230" when-iso="1727-10-30">
                   <desc>baptized at Church of St John the Baptist Kirkheaton 30 October, 1727 (19 October, 1727 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000041" when-iso="1746">
@@ -1630,16 +1649,16 @@
                <event type="entrance" where="#mlpla000003" from="1752-12-15" to="1753">
                   <desc>entered sisters' house ar Fulneck</desc>
                </event>
-               <event where="#mlpla000003" when-iso="1755-04-19">
-                  <desc>founder member Fulneck congregation</desc>
-               </event>
                <event type="entrance" where="#mlpla000025" when-iso="1760">
                   <desc>entered sisters' house at Bedford</desc>
                </event>
                <event type="arrival" where="#mlpla000003" notBefore="1760" notAfter="1767">
                   <desc>returned to sisters' house at Fulneck</desc>
                </event>
-               
+               <event type="interment" where="#mlpla000003" when-iso="1767-09-13" ref="#mlper000544">
+                  <desc>interred at Fulneck by James Charlesworth</desc>
+               </event>
+               <affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/75</bibl>
                <!-- there is also a memoir for Hannah Dyson in the London/Fetter Lane collection -->
                <note resp="#Yorkshire_Families"> (LW/G/P/F)CBssDYSON, Hannah (1727-1767) b 27.09.1727 Kirkheaton resided: Grace Hall Fulneck 1753- reception: baptized Church of St John the Baptist Kirkheaton 19.10.1727 (OS) /
@@ -1665,7 +1684,6 @@
                <event type="reception" when-iso="1756-06-07">
                   <desc>received into congregation</desc>
                </event>
-               
                <bibl type="memoir" source="#mlpla000003">Ful/SS/47</bibl>
             </person>
          </listPerson>
@@ -1682,7 +1700,6 @@
                <event type="reception" where="#mlpla000025" when-iso="1821-10-26">
                   <desc>received into sisters' house at Bedford</desc>
                </event>
-               
                <bibl type="memoir" source="#mlpla000003">Ful/SS/56</bibl>
             </person>
          </listPerson>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -99,7 +97,82 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20200617093608670",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-17T13:36:08.670Z",
+	"dcterms:issued": "2020-06-17T13:36:12.717Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20200617093608670#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20200617093608670#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1744-04-28"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -115,183 +188,183 @@
 			<div type="memoir">
 				<head>Rachel Brook</head>
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-01.jpg"/>
 			<p>
 				
-					Our late Sr Rachel Brook was  <lb />
-					born Apr. 28<hi rend="superscript">th</hi> 1744 at Birstol. <lb />
-					Her Parents, who loved the Lord <lb />
-					directed her from her earliest <lb />
-					years to the friend of Children  <lb />
-					and took her, when a Child to the <lb />
-					Chaple at Gumersal, where she at <lb />
-					tended the Childrens meetings, and  <lb />
-					and used to be delighted to hear <lb />
-					of our Saviours love, and when <lb />
-					comming home she would some <lb />
-					time kneel down in a corner <lb />
-					and pray to him to bless her <lb />
-					and form her to his mind. <lb /></p>
+					Our late Sr Rachel Brook was  <lb/>
+					born <date when="1744-04-28" cert="high">Apr. 28<hi rend="superscript">th</hi> 1744</date> at Birstol. <lb/>
+					Her Parents, who loved the Lord <lb/>
+					directed her from her earliest <lb/>
+					years to the friend of Children  <lb/>
+					and took her, when a Child to the <lb/>
+					Chaple at Gumersal, where she at <lb/>
+					tended the Childrens meetings, and  <lb/>
+					and used to be delighted to hear <lb/>
+					of our Saviours love, and when <lb/>
+					comming home she would some <lb/>
+					time kneel down in a corner <lb/>
+					and pray to him to bless her <lb/>
+					and form her to his mind. <lb/></p>
 					<p>
-					<del>But</del> When she grew older she found <lb />
-					that tender Childlike love to our  <lb />
-					growing cold, she wished to injoy <lb />
-					the world, and its vain pleasured, <lb />
-					but always felt a monitor within, <lb />
-					warning her from going the broad <lb />
-					road, which leadeth to destruction; <lb />
-					she spent some time in great <lb />
-						<note type="catchword">trouble</note> <lb />
+					<del>But</del> When she grew older she found <lb/>
+					that tender Childlike love to our  <lb/>
+					growing cold, she wished to injoy <lb/>
+					the world, and its vain pleasured, <lb/>
+					but always felt a monitor within, <lb/>
+					warning her from going the broad <lb/>
+					road, which leadeth to destruction; <lb/>
+					she spent some time in great <lb/>
+						<note type="catchword">trouble</note> <lb/>
 				
 			</p>
 				</div>
 					<div type="page" n="2">
-						<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-02.jpg" />
+						<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-02.jpg"/>
 			<p>
 				
-					trouble of mind, not willing to <lb />
-					follow the Lord, and full of fear <lb />
-					to be last eternally; during this <lb />
-					period, which was in her 16<hi rend="superscript">th</hi> <lb />
-					year, she had a very remarkable <lb />
-					dream: it was to her as if she  <lb />
-					saw our Saviour on the Cross, in <lb />
-					the most lovely attitude, saying <lb />
-					to her, &quot;all my sufferings, wounds <lb />
-					and bruises were for thee, to <lb />
-					save and redeem thy sinful soul.&quot; <lb />
-					This made a deep impression on her <lb />
-					mind, and she turned in earnest <lb />
-					prayer to the Lord, that he would <lb />
-					pardon her sins and transgressions <lb />
-					and renew a right spirit within <lb />
-					her, &amp; once when walking in a field <lb />
-					by herself, with tears and prayer <lb />
-					lifting up her hands to him, she <lb />
-					got an assurance that her guilt <lb />
-					should be done away, and that <lb />
-					he would prove her good Shepherd <lb />
-					<note type="catchword">who</note> <lb />
+					trouble of mind, not willing to <lb/>
+					follow the Lord, and full of fear <lb/>
+					to be last eternally; during this <lb/>
+					period, which was in her 16<hi rend="superscript">th</hi> <lb/>
+					year, she had a very remarkable <lb/>
+					dream: it was to her as if she  <lb/>
+					saw our Saviour on the Cross, in <lb/>
+					the most lovely attitude, saying <lb/>
+					to her, "all my sufferings, wounds <lb/>
+					and bruises were for thee, to <lb/>
+					save and redeem thy sinful soul." <lb/>
+					This made a deep impression on her <lb/>
+					mind, and she turned in earnest <lb/>
+					prayer to the Lord, that he would <lb/>
+					pardon her sins and transgressions <lb/>
+					and renew a right spirit within <lb/>
+					her, &amp; once when walking in a field <lb/>
+					by herself, with tears and prayer <lb/>
+					lifting up her hands to him, she <lb/>
+					got an assurance that her guilt <lb/>
+					should be done away, and that <lb/>
+					he would prove her good Shepherd <lb/>
+					<note type="catchword">who</note> <lb/>
 				
 			</p>
 						<cb/>
 			<p>
 				
-					who seeks that which was lost <lb />
-					with unwearied faithfulness. <lb />
-					This has followed <add place="above">her</add> all her life and  <lb />
-					often thro&apos; grace been renewed. <lb /></p>
+					who seeks that which was lost <lb/>
+					with unwearied faithfulness. <lb/>
+					This has followed <add place="above">her</add> all her life and  <lb/>
+					often thro' grace been renewed. <lb/></p>
 						<p>
-					She now felt a desire to be closer <lb />
-					united with the Brns Cong<hi rend="superscript">n</hi> and  <lb />
-					to injoy the priviliges of the same. <lb />
-					Oct 4<hi rend="superscript">th</hi> 1760 she moved into the <lb />
-					S<hi rend="superscript">rs</hi> House here in Fulnek, May 11. <lb />
-					1761 she was recd into the B<hi rend="superscript">rns</hi> Cong<hi rend="superscript">n</hi> <lb />
-					and May 8<hi rend="superscript">th</hi> the following year <lb />
-					partook for the first time of <lb />
-					the H. Com<hi rend="superscript">n</hi>. She often spoke <lb />
-					with great pleasure, of the time <lb />
-					of her first com<del>m</del>ing, how happy <lb />
-					she was in communion with our <lb />
-					Saviour, and how comfortable the <lb />
-					S<hi rend="superscript">rs</hi> were together in the so called <lb />
-					spinning days, and how they delighted <lb />
-					midst great poverty in singing the <lb />
-					praises of the Lord. She was <lb />
-					soon impolyed in serving as an Over <lb />
-							<note type="catchword">seer</note> <lb />
+					She now felt a desire to be closer <lb/>
+					united with the Brns Cong<hi rend="superscript">n</hi> and  <lb/>
+					to injoy the priviliges of the same. <lb/>
+					Oct 4<hi rend="superscript">th</hi> 1760 she moved into the <lb/>
+					S<hi rend="superscript">rs</hi> House here in Fulnek, May 11. <lb/>
+					1761 she was recd into the B<hi rend="superscript">rns</hi> Cong<hi rend="superscript">n</hi> <lb/>
+					and May 8<hi rend="superscript">th</hi> the following year <lb/>
+					partook for the first time of <lb/>
+					the H. Com<hi rend="superscript">n</hi>. She often spoke <lb/>
+					with great pleasure, of the time <lb/>
+					of her first com<del>m</del>ing, how happy <lb/>
+					she was in communion with our <lb/>
+					Saviour, and how comfortable the <lb/>
+					S<hi rend="superscript">rs</hi> were together in the so called <lb/>
+					spinning days, and how they delighted <lb/>
+					midst great poverty in singing the <lb/>
+					praises of the Lord. She was <lb/>
+					soon impolyed in serving as an Over <lb/>
+							<note type="catchword">seer</note> <lb/>
 				
 			</p>
 					</div>
 						<div type="page" n="3">
-							<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-03.jpg" />
+							<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-03.jpg"/>
 			<p>
 				
-					seer with the Girls, and afterwards <lb />
-					with Sisters. In 1790 she was accepted  <lb />
-					atcoluth, and for 18 years she held <lb />
-					the Office of Houseservant, she  <lb />
-					showed much faithfulness in what <lb />
-					was committed to her, and looked <lb />
-					opon it as a favour, which <lb />
-					made her Office a pleasant duty. <lb />
-					<del>to her.</del> The last few years, she <lb />
-					was not able to do as formerly <lb />
-					but injoying the love of the S<hi rend="superscript">rs</hi> <lb />
-					they were willing to lend her a <lb />
-					helping hand whenever required, <lb />
-					particularly those S<hi rend="superscript">rs</hi> in her room <lb />
-					showed her much love &amp; attention. <lb />
-					Tho&apos; nothing very striking seemed to <lb />
-					distinguish her course, we are sure <lb />
-					that she lived in communion with <lb />
-					our Saviour, and with Childlike <lb />
-					confidence and humble faith looked <lb />
-					to him for help and support in <lb />
-					every time of need.  <lb />
-					<note type="catchword">Oct.</note> <lb />
+					seer with the Girls, and afterwards <lb/>
+					with Sisters. In 1790 she was accepted  <lb/>
+					atcoluth, and for 18 years she held <lb/>
+					the Office of Houseservant, she  <lb/>
+					showed much faithfulness in what <lb/>
+					was committed to her, and looked <lb/>
+					opon it as a favour, which <lb/>
+					made her Office a pleasant duty. <lb/>
+					<del>to her.</del> The last few years, she <lb/>
+					was not able to do as formerly <lb/>
+					but injoying the love of the S<hi rend="superscript">rs</hi> <lb/>
+					they were willing to lend her a <lb/>
+					helping hand whenever required, <lb/>
+					particularly those S<hi rend="superscript">rs</hi> in her room <lb/>
+					showed her much love &amp; attention. <lb/>
+					Tho' nothing very striking seemed to <lb/>
+					distinguish her course, we are sure <lb/>
+					that she lived in communion with <lb/>
+					our Saviour, and with Childlike <lb/>
+					confidence and humble faith looked <lb/>
+					to him for help and support in <lb/>
+					every time of need.  <lb/>
+					<note type="catchword">Oct.</note> <lb/>
 				
 			</p>
 							<cb/>
 			<p>
 				
-					Oct 4<hi rend="superscript">th</hi> 1810 she called to mind that <lb />
-					it was 50 years since she moved <lb />
-					into this house, she expressed <lb />
-					herself that she could not suffi- <lb />
-					ciently thank our Saviour, for all <lb />
-					his love and care, his longsuffering <lb />
-					and forbearance, and for all his  <lb />
-					mercy towards her, and looked back <lb />
-					with gratitude and amazement how <lb />
-					he had proved her true friends in <lb />
-					all her spiritual and temporal <lb />
-					concerns, that she had laked <lb />
-					nothing; and she renewed her  <lb />
-					convenant to cleave to him, to  <lb />
-					trust his Shepherd care, till <lb />
-					hope and faith shall cease, and <lb />
+					Oct 4<hi rend="superscript">th</hi> 1810 she called to mind that <lb/>
+					it was 50 years since she moved <lb/>
+					into this house, she expressed <lb/>
+					herself that she could not suffi- <lb/>
+					ciently thank our Saviour, for all <lb/>
+					his love and care, his longsuffering <lb/>
+					and forbearance, and for all his  <lb/>
+					mercy towards her, and looked back <lb/>
+					with gratitude and amazement how <lb/>
+					he had proved her true friends in <lb/>
+					all her spiritual and temporal <lb/>
+					concerns, that she had laked <lb/>
+					nothing; and she renewed her  <lb/>
+					convenant to cleave to him, to  <lb/>
+					trust his Shepherd care, till <lb/>
+					hope and faith shall cease, and <lb/>
 					Love prevail alone. </p>
 							<p>
-					Hitherto she had injoyed an unin- <lb />
-					terrupted good stale of health, but <lb />
-					now she began to feel the infir- <lb />
-					mities of age, and for these last 3 <lb />
+					Hitherto she had injoyed an unin- <lb/>
+					terrupted good stale of health, but <lb/>
+					now she began to feel the infir- <lb/>
+					mities of age, and for these last 3 <lb/>
 					years, she was not able to attend  
 								<note type="catchword">the</note> 
 				
 			</p>
 						</div>
 					<div type="page" n="4">
-						<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-04.jpg" />
+						<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-04.jpg"/>
 			<p>
 				
-					the meetings as she used to do, <lb />
+					the meetings as she used to do, <lb/>
 					which was a great trial to her. </p>
 						<p>
-					She was however able to go about <lb />
-					in the house, tho&apos; at last with <lb />
-					great difficulty, till the 6<hi rend="superscript">th</hi> <lb />
-					of this month, when she had to  <lb />
-					be confined to the sickroom, her <lb />
-					weakness increased rapidly; tho&apos; <lb />
-					she did not think that her de- <lb />
-					parture was so near, she felt <lb />
-					resigned to our Saviours will, <lb />
-					saying: &quot;My times are in his hands <lb />
-					"I can <del>say</del> do nothing but pray <lb />
-					"to him to receive me, a poor <lb />
-					"and worthless sinner, in mercy, <lb />
-					"and I am sure he will.&quot; - </p>
+					She was however able to go about <lb/>
+					in the house, tho' at last with <lb/>
+					great difficulty, till the 6<hi rend="superscript">th</hi> <lb/>
+					of this month, when she had to  <lb/>
+					be confined to the sickroom, her <lb/>
+					weakness increased rapidly; tho' <lb/>
+					she did not think that her de- <lb/>
+					parture was so near, she felt <lb/>
+					resigned to our Saviours will, <lb/>
+					saying: "My times are in his hands <lb/>
+					"I can <del>say</del> do nothing but pray <lb/>
+					"to him to receive me, a poor <lb/>
+					"and worthless sinner, in mercy, <lb/>
+					"and I am sure he will." - </p>
 						<p>
-					On the 13<hi rend="superscript">th</hi> she called to mind the <lb />
-					blessings she had often enjoyed on <lb />
-					that great memorial day, and  <lb />
-					particularly what she had felt the <lb />
-					first time, when she celebrated it <lb />
-					55 years ago, during the singing of <lb />
-					that verse: <lb />
+					On the 13<hi rend="superscript">th</hi> she called to mind the <lb/>
+					blessings she had often enjoyed on <lb/>
+					that great memorial day, and  <lb/>
+					particularly what she had felt the <lb/>
+					first time, when she celebrated it <lb/>
+					55 years ago, during the singing of <lb/>
+					that verse: <lb/>
 				
 			</p>
 						<pb/>
@@ -301,7 +374,7 @@
 					<l>Who do not love the Saviour?</l>
 					<l>Who do not think his burden light</l>
 					<l>Nor his sweet Yoke a favour!</l>
-					<l>O ye, who don&apos;t stand well with him,</l>
+					<l>O ye, who don't stand well with him,</l>
 					<l>Do ye long for redemption?</l></lg>
 				<lg type="verse">
 					<l>Now, now, is for you the right time</l>
@@ -326,20 +399,20 @@
 			</p>
 					</div>
 					<div type="page" n="5">
-						<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-05.jpg" />
+						<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-05.jpg"/>
 			<p>
 				<lg type="verse">
 					<l>With cheerful voice she joins</l>
 					<l>The blessed company,</l>
-					<l>Ascribing to Gods&apos; grace</l>
-					<l>Her heav&apos;nly destiny.</l></lg>
+					<l>Ascribing to Gods' grace</l>
+					<l>Her heav'nly destiny.</l></lg>
 				
 							<lg type="verse">
 					<l>At home she rests in peace</l>
 					<l>With her beloved Saviour,</l>
 					<l>All her afflictions cease,</l>
-					<l>Each tear wip&apos;d off for ever:</l>
-					<l>Her longing gratify&apos;d</l>
+					<l>Each tear wip'd off for ever:</l>
+					<l>Her longing gratify'd</l>
 					<l>She views her Bridegroom, Friend:</l>
 					<l>Who graciously supplied,</l>
 					<l>Each need unto the end. </l>

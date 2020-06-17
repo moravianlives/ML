@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -103,7 +100,82 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200617114657277",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-17T15:46:57.277Z",
+	"dcterms:issued": "2020-06-17T15:47:07.037Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki",
+		"foaf:nick": "djakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200617114657277#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200617114657277#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[5]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1748-07-01"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Mary Alott</persName>
@@ -122,52 +194,50 @@
 					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
 					<p>
 						
-							Mary Alott <lb />
-							Was born at Barksland in the Parish of <lb />
+							Mary Alott <lb/>
+							Was born at Barksland in the Parish of <lb/>
 							Elland. On the 12<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> 1734 N S.
 						</p>
 					<p>
-							When she was about Three years old her <lb />
-							Father dyed &amp; she liv&apos;d with her Mother &amp; <lb />
-							her Aunt (Namely Betty Midgley) who <lb />
-							jointly Nurs&apos;d &amp; Maintain&apos;d <add place="above"
-									>her</add> till she was <lb />
-							about seven, then her Mother being again <lb />
-							Married her Aunt left them took a Room <lb />
-							&amp; design&apos;d to live by herself, But <add place="above"
-									>Mary</add> not being <lb />
-							at all willing to be left behind often begg&apos;d  <lb />
-							her Aunt to take her with her, which  <lb />
+							When she was about Three years old her <lb/>
+							Father dyed &amp; she liv'd with her Mother &amp; <lb/>
+							her Aunt (Namely Betty Midgley) who <lb/>
+							jointly Nurs'd &amp; Maintain'd <add place="above">her</add> till she was <lb/>
+							about seven, then her Mother being again <lb/>
+							Married her Aunt left them took a Room <lb/>
+							&amp; design'd to live by herself, But <add place="above">Mary</add> not being <lb/>
+							at all willing to be left behind often begg'd  <lb/>
+							her Aunt to take her with her, which  <lb/>
 							according<add place="above">ly</add> in a few weeks after she
-								Willlingly <lb />
+								Willlingly <lb/>
 							did, &amp; Cared for her as her own.
 						</p>
 					<p>
-							When she was about Nine years old she <lb />
-							by the Drawing of the Holy Ghost was inclin&apos;d <lb />
-							to hear the Gospel which she of her own free <lb />
+							When she was about Nine years old she <lb/>
+							by the Drawing of the Holy Ghost was inclin'd <lb/>
+							to hear the Gospel which she of her own free <lb/>
 							accord begun &amp; Continued Constantly to do.
 						</p>
 					<p>
-							Some time after her Aunt had a mind for <lb />
-							the more Convenince of hearing the B<hi rend="superscript">rn</hi> <lb />
-							to live nearer Smith House &amp; she made it <lb />
-							out with the Brethren that Mary should also <lb />
-							come &amp; remain with her which she was very  <lb />
+							Some time after her Aunt had a mind for <lb/>
+							the more Convenince of hearing the B<hi rend="superscript">rn</hi> <lb/>
+							to live nearer Smith House &amp; she made it <lb/>
+							out with the Brethren that Mary should also <lb/>
+							come &amp; remain with her which she was very  <lb/>
 							glad off. 
 						</p>
 					<p>
-							In July 1748 they Both of them together got <lb />
-							leave to live with the Single Sisters in Clack- <lb />
-							Heaton &amp; she remain&apos;d there &amp; in the same <lb />
-							Oconomy at Tyre-sell-Hall till we came <lb />
-							in the Choir House (Which I shall take <lb />
+							In <date when="1748-07-01" cert="high">July 1748</date> they Both of them together got <lb/>
+							leave to live with the Single Sisters in Clack- <lb/>
+							Heaton &amp; she remain'd there &amp; in the same <lb/>
+							Oconomy at Tyre-sell-Hall till we came <lb/>
+							in the Choir House (Which I shall take <lb/>
 							Notice of afterwards)
 						</p>
 					<p>
 							In the year 1751 on the 5<hi rend="superscript">th</hi> of April
-								she <lb />
-							was receiv&apos;d in the Congregation which Pleas&apos;d  
+								she <lb/>
+							was receiv'd in the Congregation which Pleas'd  
 <note type="catchword">her</note>						
 					</p>
 				</div>
@@ -175,48 +245,48 @@
 					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-02.jpg"/>
 					<p>
 						
-							her very much. In 1753 on the 25 of February <lb />
-							she after many a Hearty wish &amp; Earnest longing <lb />
-							for it was addmitted to the Lords Supper <lb />
-							In the same year was Receiv&apos;d from the Great Girls <lb />
+							her very much. In 1753 on the 25 of February <lb/>
+							she after many a Hearty wish &amp; Earnest longing <lb/>
+							for it was addmitted to the Lords Supper <lb/>
+							In the same year was Receiv'd from the Great Girls <lb/>
 							to the Single Sisters Choir.
 						</p>
 					<p>
-							She has since about 10, or 11, Years Old, <lb />
-							carried about a Very Sickly &amp; Weakly Tabernacle <lb />
-							which she bore without Complaint, &amp; being of an  <lb />
-							exceeding shill quiet, but also very solid &amp; <lb />
-							sensible <del>Dispossition</del> she was seldom <lb />
-							heard to speak about any thing except when <lb />
-							spoken to: But however as we now have found she <lb />
-							took good Notice of ever thing &amp; Ponder<add place="above">'d</add> them in  <lb />
+							She has since about 10, or 11, Years Old, <lb/>
+							carried about a Very Sickly &amp; Weakly Tabernacle <lb/>
+							which she bore without Complaint, &amp; being of an  <lb/>
+							exceeding shill quiet, but also very solid &amp; <lb/>
+							sensible <del>Dispossition</del> she was seldom <lb/>
+							heard to speak about any thing except when <lb/>
+							spoken to: But however as we now have found she <lb/>
+							took good Notice of ever thing &amp; Ponder<add place="above">'d</add> them in  <lb/>
 							her Heart.
 						</p>
 					<p>
-							In February this present year she had the <lb />
-							Small-Pox which not only went very hardly <lb />
-							with her But also left that remaining on her <lb />
-							which Render&apos;d her Much more Weak &amp; Sickly <lb />
-							than before a Consumption appearing thro&apos; her <lb />
-							Whole Constitution: It was manifest to all about her <lb />
-							she could not hold it out long, tho she herself wo'd <lb />
-							commonly say when ask&apos;d about it &quot;that she was <lb />
-							pretty well Nevertheless what she inwardly felt <lb />
+							In February this present year she had the <lb/>
+							Small-Pox which not only went very hardly <lb/>
+							with her But also left that remaining on her <lb/>
+							which Render'd her Much more Weak &amp; Sickly <lb/>
+							than before a Consumption appearing thro' her <lb/>
+							Whole Constitution: It was manifest to all about her <lb/>
+							she could not hold it out long, tho she herself wo'd <lb/>
+							commonly say when ask'd about it "that she was <lb/>
+							pretty well Nevertheless what she inwardly felt <lb/>
 							Brought her <add place="above">also</add> upon the thoughts &amp;
-								consideration  <lb />
-							of going to Our Saviour (as she afterward, de- <lb />
-							clar&apos;d with Joy.) 
+								consideration  <lb/>
+							of going to Our Saviour (as she afterward, de- <lb/>
+							clar'd with Joy.) 
 						</p>
 					<p>
-							In July she was a little Better but the disor- <lb />
-							der Presently return&apos;d more strong than ever: <lb />
-							Yet she continued to walk about till the 22d of <lb />
-							November, then she entirely took her to her <lb />
+							In July she was a little Better but the disor- <lb/>
+							der Presently return'd more strong than ever: <lb/>
+							Yet she continued to walk about till the 22d of <lb/>
+							November, then she entirely took her to her <lb/>
 							Room &amp; soon after to her Bed. 
 						</p>
 					<p>
-							Now she freely acknowledgeing that she <lb />
-							had all this summer last, been in a Continual <lb />
+							Now she freely acknowledgeing that she <lb/>
+							had all this summer last, been in a Continual <lb/>
 							meditation &amp; Consultation with her Dear Saviour
 							<note type="catchword">about</note> 
 						
@@ -225,44 +295,44 @@
 					<p>
 						
 							about her going to him, having <add place="above">all</add> along
-								been Senscible <lb />
-							of it for herself that she should not stay here <lb />
-							but the Reason why she would not confess it <lb />
-							openly was because she was affraid she should <lb />
-							not go as soon as she wish&apos;d for. 
+								been Senscible <lb/>
+							of it for herself that she should not stay here <lb/>
+							but the Reason why she would not confess it <lb/>
+							openly was because she was affraid she should <lb/>
+							not go as soon as she wish'd for. 
 						</p>
 					<p>
-							She was now exceeding Bad, but quite Brisk <lb />
+							She was now exceeding Bad, but quite Brisk <lb/>
 							in <add place="above">her</add> Spirits &amp; chearful in Heart &amp;
-								Soul, &amp; as before <lb />
-							even Ever since we have known her she has <lb />
-							been us&apos;d to speak very little, so Now to the Con- <lb />
+								Soul, &amp; as before <lb/>
+							even Ever since we have known her she has <lb/>
+							been us'd to speak very little, so Now to the Con- <lb/>
 							trary, <add place="above">she</add> spoke a great deal especialy to
-								these <lb />
-							with whom she had had an intimiate acquaintance <lb />
-							&amp; Perticularly with Our dear Sister Mary <lb />
+								these <lb/>
+							with whom she had had an intimiate acquaintance <lb/>
+							&amp; Perticularly with Our dear Sister Mary <lb/>
 							who very faithfully visited her all the time
 						</p>
 					<p>
 							On the 12<hi rend="superscript">th</hi> instant she had her
-								Birth-Day <lb />
-							(being 20; years old,) when many Sisters who vis- <lb />
-							ited her Express&apos;d their Hearty wishes for her <lb />
-							which she receiv&apos;d, &amp; answer&apos;d with much satis- <lb />
-							faction: In the afternoon her Class made <lb />
-							her a Very Pretty Love-Feast which rejoic- <lb />
-							ed her Exceedingly &amp; in which she spoke of <lb />
-							her Departure with such Pleasure &amp; Delight <lb />
-							as she never had done before; she spoke with <lb />
-							sister Mary &amp; Made out Ev&apos;ry thing that was in  <lb />
-							her Mind about her Burial, as well as all <lb />
-							the Hearty wishes &amp; desires of her heart for <lb />
-							her Class &amp; c. In short she said that this had <lb />
-							been to her the Happiest day she ever had <lb />
-							had in all her life. This day &amp; forward she  <lb />
-							unbosom&apos;d &amp; declar&apos;d what she had (Perhaps) <lb />
-							kept Treasur&apos;d up in her Heart to this Opper- <lb />
-							tunity for some years Past, She spoke of her  <lb />
+								Birth-Day <lb/>
+							(being 20; years old,) when many Sisters who vis- <lb/>
+							ited her Express'd their Hearty wishes for her <lb/>
+							which she receiv'd, &amp; answer'd with much satis- <lb/>
+							faction: In the afternoon her Class made <lb/>
+							her a Very Pretty Love-Feast which rejoic- <lb/>
+							ed her Exceedingly &amp; in which she spoke of <lb/>
+							her Departure with such Pleasure &amp; Delight <lb/>
+							as she never had done before; she spoke with <lb/>
+							sister Mary &amp; Made out Ev'ry thing that was in  <lb/>
+							her Mind about her Burial, as well as all <lb/>
+							the Hearty wishes &amp; desires of her heart for <lb/>
+							her Class &amp; c. In short she said that this had <lb/>
+							been to her the Happiest day she ever had <lb/>
+							had in all her life. This day &amp; forward she  <lb/>
+							unbosom'd &amp; declar'd what she had (Perhaps) <lb/>
+							kept Treasur'd up in her Heart to this Opper- <lb/>
+							tunity for some years Past, She spoke of her  <lb/>
 							various Troubles &amp; Anxieties in Particular Circum- 
 							<note type="catchword">-stances</note>
 						
@@ -272,45 +342,42 @@
 					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-03.jpg"/>
 					<p>
 						
-							Circumstances, such as no body had perciev&apos;d on her <lb />
-							with <del>with</del> a Chearful &amp; Thankful Heart, being <lb />
-							bowed with Shame before him will whom she <lb />
+							Circumstances, such as no body had perciev'd on her <lb/>
+							with <del>with</del> a Chearful &amp; Thankful Heart, being <lb/>
+							bowed with Shame before him will whom she <lb/>
 							had spent many happy Moments, days &amp; years 
 						</p>
 					<p>
 							About the 15<hi rend="superscript">th</hi> it being Two years
-								since <lb />
+								since <lb/>
 							we came in <add place="above">our</add> Choir House she told Sister
-								Mary <lb />
-							Ev&apos;rything how she had been &amp; was in Tyre- <lb />
-							sell-Hall at that time, What Anxiety &amp; <lb />
-							Concern she felt about coming in the Choir House <lb />
-							fearing Least she should not have leave to  <lb />
-							come &amp; how she had in Shillness Pray&apos;d &amp; wept <lb />
-							before her dear Lamb, that he would give <lb />
-							her Leave to come &amp; that if she should have  <lb />
-							that favour that he would grant her the feel- <lb />
-							ing &amp; nearness of his Wounds that she might <lb />
-							be faithful to him therein &amp;c. Nay his almost <lb />
-							incredible, how quick &amp; active her Memory <lb />
-							was over this matter she not only gave Sis<hi rend="superscript">r</hi> <lb />
-							Mary an account of herself but of all the  <lb />
-							Sisters in Tyre-sell-Hall at that time, she  <lb />
-							(unperceiv&apos;d) had taken Notice of ev&apos;ry One, <lb />
-							conduct words &amp; behaviour, But to return <lb />
-							she also Express&apos;d herself in a very Lively <lb />
-							manner with grace &amp; Understanding <hi rend="underline"
-								>how</hi> <lb />
-							Exceedingly she was Rejoiced when she was <lb />
-							assured she should come here. She at the  <lb />
-							same time viz&apos; the 15<hi rend="superscript">th</hi> or 16<hi
-									rend="superscript">th</hi> Instant spoke w<hi rend="superscript"
-									>th</hi> <lb />
-							with an inly Tender feeling about the Choir <lb />
-							&amp; Choir Grace what she has felt since <lb />
-							she was Receiv&apos;d in the Single Sisters Choir <lb />
-							&amp; what her dear Bridegroom has done from <lb />
-							time to time on her therein, &amp; Perticularly <lb />
+								Mary <lb/>
+							Ev'rything how she had been &amp; was in Tyre- <lb/>
+							sell-Hall at that time, What Anxiety &amp; <lb/>
+							Concern she felt about coming in the Choir House <lb/>
+							fearing Least she should not have leave to  <lb/>
+							come &amp; how she had in Shillness Pray'd &amp; wept <lb/>
+							before her dear Lamb, that he would give <lb/>
+							her Leave to come &amp; that if she should have  <lb/>
+							that favour that he would grant her the feel- <lb/>
+							ing &amp; nearness of his Wounds that she might <lb/>
+							be faithful to him therein &amp;c. Nay his almost <lb/>
+							incredible, how quick &amp; active her Memory <lb/>
+							was over this matter she not only gave Sis<hi rend="superscript">r</hi> <lb/>
+							Mary an account of herself but of all the  <lb/>
+							Sisters in Tyre-sell-Hall at that time, she  <lb/>
+							(unperceiv'd) had taken Notice of ev'ry One, <lb/>
+							conduct words &amp; behaviour, But to return <lb/>
+							she also Express'd herself in a very Lively <lb/>
+							manner with grace &amp; Understanding <hi rend="underline">how</hi> <lb/>
+							Exceedingly she was Rejoiced when she was <lb/>
+							assured she should come here. She at the  <lb/>
+							same time viz' the 15<hi rend="superscript">th</hi> or 16<hi rend="superscript">th</hi> Instant spoke w<hi rend="superscript">th</hi> <lb/>
+							with an inly Tender feeling about the Choir <lb/>
+							&amp; Choir Grace what she has felt since <lb/>
+							she was Receiv'd in the Single Sisters Choir <lb/>
+							&amp; what her dear Bridegroom has done from <lb/>
+							time to time on her therein, &amp; Perticularly <lb/>
 							in this Present Year, together with the Esteem 
 							<note type="catchword">&amp;</note>
 						
@@ -318,42 +385,42 @@
 					<pb/>
 					<p>
 						
-							&amp; Satisfaction she has had for, &amp; in the Choir House <lb />
-							this she did from time to time Repeat And <lb />
-							also she would allways take notice of many <lb />
-							Sisters whom she saw &amp; Reflected on their <lb />
-							Situation at Present and time Past &amp; when <lb />
-							Sister Mary came to her then she would sell <lb />
-							her all her Mind about them &amp; Especialy the <lb />
-							concern she had had, about her Class under <lb />
-							some heavy Circumstances some Months agoe <lb />
-							&amp; being ask&apos;d why she did not speak at such <lb />
-							time what she had in her mind? She answer&apos;d <lb />
-							&quot;that she always thought herself too mean <lb />
-							&amp; too insignificant to Speak Her mind about <lb />
-							any thing, But she had instead of that gone <lb />
-							somewhere in a Corner &amp; Wept for them be <lb />
-							fore her dear Saviour &amp; Pray&apos;d him that he <lb />
-							would Bless Preserve &amp; keep them &amp; Her <lb />
+							&amp; Satisfaction she has had for, &amp; in the Choir House <lb/>
+							this she did from time to time Repeat And <lb/>
+							also she would allways take notice of many <lb/>
+							Sisters whom she saw &amp; Reflected on their <lb/>
+							Situation at Present and time Past &amp; when <lb/>
+							Sister Mary came to her then she would sell <lb/>
+							her all her Mind about them &amp; Especialy the <lb/>
+							concern she had had, about her Class under <lb/>
+							some heavy Circumstances some Months agoe <lb/>
+							&amp; being ask'd why she did not speak at such <lb/>
+							time what she had in her mind? She answer'd <lb/>
+							"that she always thought herself too mean <lb/>
+							&amp; too insignificant to Speak Her mind about <lb/>
+							any thing, But she had instead of that gone <lb/>
+							somewhere in a Corner &amp; Wept for them be <lb/>
+							fore her dear Saviour &amp; Pray'd him that he <lb/>
+							would Bless Preserve &amp; keep them &amp; Her <lb/>
 							&amp; that they Might all become a Joy to Him 
 						</p>
 					<p>
-							Once in Sister Mary&apos;s Presence after having <lb />
-							fully spoken &amp; Open&apos;d all her Mind to her a <lb />
-							bout Many things, she took Notice that her <lb />
-							Aunt (who faithfuly tended &amp; Nurs&apos;d <lb />
-							her all the time of Sickness) was a Cry- <lb />
-							ing: So she demanded the Reason of her why <lb />
-							she wept, telling her she had no Ocassion <lb />
-							to weep for her since &quot;says she&quot; I am fully <lb />
-							Satisfied &amp; Reconciled both with My Lamb &amp; <lb />
-							&amp; with all my Sisters &amp; have spoke my mind  <lb />
-							about Everything &amp; Now am Ready to go  <lb />
-							whenever he Pleases <lb />
+							Once in Sister Mary's Presence after having <lb/>
+							fully spoken &amp; Open'd all her Mind to her a <lb/>
+							bout Many things, she took Notice that her <lb/>
+							Aunt (who faithfuly tended &amp; Nurs'd <lb/>
+							her all the time of Sickness) was a Cry- <lb/>
+							ing: So she demanded the Reason of her why <lb/>
+							she wept, telling her she had no Ocassion <lb/>
+							to weep for her since "says she" I am fully <lb/>
+							Satisfied &amp; Reconciled both with My Lamb &amp; <lb/>
+							&amp; with all my Sisters &amp; have spoke my mind  <lb/>
+							about Everything &amp; Now am Ready to go  <lb/>
+							whenever he Pleases <lb/>
 						</p>
 					<p>
-							Thus she Continued under a Deep Sense <lb />
-							&amp; Speaking of herself &amp; her Choir &amp; Often <lb />
+							Thus she Continued under a Deep Sense <lb/>
+							&amp; Speaking of herself &amp; her Choir &amp; Often <lb/>
 							Expressing her Desire to go. But yet she 
 							<note type="catchword">wo'd</note> 
 						
@@ -363,45 +430,45 @@
 					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-04.jpg"/>
 					<p>
 						
-							would Secretly sometimes say to her Aunt that <lb />
-							she believ&apos;d she should live till Christmas, but <lb />
-							If our Saviour Pleasd to take her before, she <lb />
+							would Secretly sometimes say to her Aunt that <lb/>
+							she believ'd she should live till Christmas, but <lb/>
+							If our Saviour Pleasd to take her before, she <lb/>
 							would be glad 
 						</p>
 					<p>
-							Sunday Last about 11 or 12 in the Evening <lb />
-							she was Siez&apos;d with the monst Violent pain <lb />
-							So that Sister Mary who at the same time <lb />
-							watch&apos;d with her Perceiv&apos;d such a Senscible <lb />
-							Alteration not only by her Excessive Pains <lb />
-							but also by the Motion &amp; Alteration of all <lb />
-							her Faculties that she thought she Realy would  <lb />
-							go, &amp; thereupon ask&apos;d her if she was now quite <lb />
-							Ready. She with Pleasure &amp; Serenity answer'd <lb />
-							&quot;yes! I am Quite Ready now &amp; shall be glad to <lb />
-							go to my Lamb as soon as he Pleases&quot; 
+							Sunday Last about 11 or 12 in the Evening <lb/>
+							she was Siez'd with the monst Violent pain <lb/>
+							So that Sister Mary who at the same time <lb/>
+							watch'd with her Perceiv'd such a Senscible <lb/>
+							Alteration not only by her Excessive Pains <lb/>
+							but also by the Motion &amp; Alteration of all <lb/>
+							her Faculties that she thought she Realy would  <lb/>
+							go, &amp; thereupon ask'd her if she was now quite <lb/>
+							Ready. She with Pleasure &amp; Serenity answer'd <lb/>
+							"yes! I am Quite Ready now &amp; shall be glad to <lb/>
+							go to my Lamb as soon as he Pleases" 
 						</p>
 					<p>
-							However she reviv&apos;d a little &amp; then desired <lb />
-							2 verses which she named to be sung for her <lb />
-							viz Appear as her Protector who turns to <lb />
-							Joy all Tears &amp; When she shall get Per- <lb />
-							mission to leave this Mortal Tent, From Pains <lb />
-							&amp; Griefs Dissmission Thy self Just then present <lb />
-							And then says she &quot;Sing Hush stir not up <lb />
+							However she reviv'd a little &amp; then desired <lb/>
+							2 verses which she named to be sung for her <lb/>
+							viz Appear as her Protector who turns to <lb/>
+							Joy all Tears &amp; When she shall get Per- <lb/>
+							mission to leave this Mortal Tent, From Pains <lb/>
+							&amp; Griefs Dissmission Thy self Just then present <lb/>
+							And then says she "Sing Hush stir not up <lb/>
 							the friend of Christ, Wake not the Lovely 
 							Bride &amp;c 
 						</p>
 					<p>
-							She was very Bad all Night &amp; Lay like <lb />
-							one Expireing till towards Night on Monday <lb />
-							Yet she Bore her Pains with Much more <lb />
+							She was very Bad all Night &amp; Lay like <lb/>
+							one Expireing till towards Night on Monday <lb/>
+							Yet she Bore her Pains with Much more <lb/>
 							Patience <add place="above">than</add> any one could Expect who did
-								but <lb />
+								but <lb/>
 							<hi rend="underline">see</hi> how she was Munday night she was
-								some- <lb />
-							what Easier &amp; appear&apos;d to us as if she might <lb />
-							Possibly continue a few days, But if she heard <lb />
+								some- <lb/>
+							what Easier &amp; appear'd to us as if she might <lb/>
+							Possibly continue a few days, But if she heard <lb/>
 							any one take notice of the near approach
 							<note type="catchword">of</note> 
 						
@@ -409,43 +476,41 @@
 					<pb/>
 					<p>
 						
-							of <lb />
-							Christmass &amp; of the Joy we Expected in the Birth <lb />
-							day of our Saviour She would readly answer <lb />
-							them that if our Saviour only was Pleas&apos;d to let <lb />
-							her go to him before or in the Holidays She <lb />
-							should have a far Better Christmass than  <lb />
+							of <lb/>
+							Christmass &amp; of the Joy we Expected in the Birth <lb/>
+							day of our Saviour She would readly answer <lb/>
+							them that if our Saviour only was Pleas'd to let <lb/>
+							her go to him before or in the Holidays She <lb/>
+							should have a far Better Christmass than  <lb/>
 							We and that she would be glad of.
 						</p>
 					<p>
-							Tusday Night she Alter&apos;d again &amp; on Wed- <lb />
-							nesday Morning was much Worse. In the <lb />
-							Forenoon we thought again she would Certain- <lb />
-							ly Depart, But she continued and lay severly <lb />
-							Oppresse&apos;d with the Most Excessive Pangs thro&apos; <lb />
-							Ev&apos;ry Limb &amp; Fibre, Speaking very little, But <lb />
-							Panting in Stillness for the Happy Moment <lb />
-							when she should get the Departing Kiss, And  <lb />
-							when Sometimes her Tabernacle seem&apos;d to be <lb />
-							almost Rack&apos;d in Pieces with the most shock- <lb />
-							ing &amp; Excessive Pain as almost could be thought <lb />
-							Unpossibl a Human Creature could Bear. she  <lb />
-							<del>herself was concern'd how she</del> would say &quot;Ah! how  <lb />
-							shall I hold it Out Why does he not fetch me <lb />
-							Sis Mary then would remind her of the Hard <lb />
-							Toil &amp; Conflict of our Saviour which he bore <lb />
-							in his Humanity Saying My dear Heart it <lb />
-							is but a few Minutes &amp; you will be with  <lb />
-							him, She that Moment was again in a  <lb />
-							Calm Serenity<add place="above">Heavenly</add> &amp; Peace <add
-									place="above">&amp;</add> Said O! yes he soon <lb />
-							will fetch me to his Embraces, Which she <lb />
-							Obtain&apos;d Under these Words, The Lamb w<hi rend="superscript"
-									>th</hi> <lb />
-							all his Grief &amp; Smart Remains the Pleasure <lb />
-							of the Heart Long as it Moves in Thee <lb />
-							And Now when Here it Beats no more <lb />
-							There where the Spear His Side did  <lb />
+							Tusday Night she Alter'd again &amp; on Wed- <lb/>
+							nesday Morning was much Worse. In the <lb/>
+							Forenoon we thought again she would Certain- <lb/>
+							ly Depart, But she continued and lay severly <lb/>
+							Oppresse'd with the Most Excessive Pangs thro' <lb/>
+							Ev'ry Limb &amp; Fibre, Speaking very little, But <lb/>
+							Panting in Stillness for the Happy Moment <lb/>
+							when she should get the Departing Kiss, And  <lb/>
+							when Sometimes her Tabernacle seem'd to be <lb/>
+							almost Rack'd in Pieces with the most shock- <lb/>
+							ing &amp; Excessive Pain as almost could be thought <lb/>
+							Unpossibl a Human Creature could Bear. she  <lb/>
+							<del>herself was concern'd how she</del> would say "Ah! how  <lb/>
+							shall I hold it Out Why does he not fetch me <lb/>
+							Sis Mary then would remind her of the Hard <lb/>
+							Toil &amp; Conflict of our Saviour which he bore <lb/>
+							in his Humanity Saying My dear Heart it <lb/>
+							is but a few Minutes &amp; you will be with  <lb/>
+							him, She that Moment was again in a  <lb/>
+							Calm Serenity<add place="above">Heavenly</add> &amp; Peace <add place="above">&amp;</add> Said O! yes he soon <lb/>
+							will fetch me to his Embraces, Which she <lb/>
+							Obtain'd Under these Words, The Lamb w<hi rend="superscript">th</hi> <lb/>
+							all his Grief &amp; Smart Remains the Pleasure <lb/>
+							of the Heart Long as it Moves in Thee <lb/>
+							And Now when Here it Beats no more <lb/>
+							There where the Spear His Side did  <lb/>
 							bore thou Last thy Place Etneraly and 
 						
 					</p>
@@ -454,33 +519,33 @@
 					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-05.jpg"/>
 					<p>
 						
-							so she sweetly went to sleep in the Arms of  <lb />
-							her Lover about 5 o&apos;clock in the Evening  <lb />
+							so she sweetly went to sleep in the Arms of  <lb/>
+							her Lover about 5 o'clock in the Evening  <lb/>
 							on Christmas Day. 
 						</p>
 					<p>
-							It is to be Oberv&apos;d that this dear Heart <lb />
-							was the Only One Great Girl in all the  <lb />
-							Oconomies was One of the first that was <lb />
-							Receiv&apos;d in the Congregation The Only One <lb />
-							that came in the Choir House at first <lb />
-							She was the first that was admitted to the <lb />
-							Sacrament. And Now the first that is gone <lb />
-							to Our saviour. Where she Rests from all her <lb />
-							Pain: And has Left behind her the Char- <lb />
-							acter of an Honest Upright Unaffected <lb />
-							&amp; Enamour&apos;d Virgin Heart She has been <lb />
-							Known by those who have liv&apos;d with her from <lb />
+							It is to be Oberv'd that this dear Heart <lb/>
+							was the Only One Great Girl in all the  <lb/>
+							Oconomies was One of the first that was <lb/>
+							Receiv'd in the Congregation The Only One <lb/>
+							that came in the Choir House at first <lb/>
+							She was the first that was admitted to the <lb/>
+							Sacrament. And Now the first that is gone <lb/>
+							to Our saviour. Where she Rests from all her <lb/>
+							Pain: And has Left behind her the Char- <lb/>
+							acter of an Honest Upright Unaffected <lb/>
+							&amp; Enamour'd Virgin Heart She has been <lb/>
+							Known by those who have liv'd with her from <lb/>
 							her first Commg <add place="above">among us</add> to this Her
-								Dissolution to be <lb />
-							an Example of Patience of Steadfastness &amp; <lb />
-							Constancy in her Love to him who first gave <lb />
-							her Confidence to believe in his Wounds she <lb />
-							never Once having been Perceiv&apos;d to Draw back <lb />
-							or to Slight her Calling in Joy or in Smart, <lb />
-							and Now at last her Mouth has made <del>a</del> <lb />
-							a Brief Confession of Him Whom her Heart <lb />
-							has Loved Felt &amp; Believ&apos;d on. 
+								Dissolution to be <lb/>
+							an Example of Patience of Steadfastness &amp; <lb/>
+							Constancy in her Love to him who first gave <lb/>
+							her Confidence to believe in his Wounds she <lb/>
+							never Once having been Perceiv'd to Draw back <lb/>
+							or to Slight her Calling in Joy or in Smart, <lb/>
+							and Now at last her Mouth has made <del>a</del> <lb/>
+							a Brief Confession of Him Whom her Heart <lb/>
+							has Loved Felt &amp; Believ'd on. 
 						
 					</p>
 				</div>

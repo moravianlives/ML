@@ -134,6 +134,38 @@
             </attList>
           </elementSpec>
           
+          <!-- CUSTOMIZATION: modified options for  listRelation:@type / English. -->
+          <elementSpec ident="listRelation" mode="change" module="core">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="Moravian"/>
+                  <valItem ident="personal"/>
+                  <valItem ident="social"></valItem>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+          <!-- CUSTOMIZATION: modified options for  relation:@name / English. -->
+          <elementSpec ident="relation" mode="change" module="core">
+            <attList>
+              <attDef ident="name" mode="change">
+                <valList mode="add" type="semi">
+                  <valItem ident="child"/>
+                  <valItem ident="interred"/>
+                  <valItem ident="parent"/>
+                  <valItem ident="sibling"/>
+                  <valItem ident="spouse"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
+          
+
+          
+          
+          
           <!-- CUSTOMIZATION: added name:@event / English. Wherever possible adding @sameAs to track parallels -->
           <elementSpec ident="name" mode="change" module="core">
             <attList>

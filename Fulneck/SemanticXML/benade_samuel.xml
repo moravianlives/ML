@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -103,7 +100,304 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622100445081",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-22T14:04:45.081Z",
+	"dcterms:issued": "2020-06-22T17:04:59.203Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622100445081#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622100445081#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1746-10-28"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622111855022",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-22T15:18:55.022Z",
+	"dcterms:issued": "2020-06-22T17:04:59.207Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622111855022#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622111855022#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[3]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1756"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112638304",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-22T15:26:38.304Z",
+	"dcterms:issued": "2020-06-22T17:04:59.207Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112638304#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112638304#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[4]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1756-11-13"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112931355",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-06-22T15:29:31.355Z",
+	"dcterms:issued": "2020-06-22T17:04:59.208Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112931355#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/benade_samuel.xml?date_annotation_20200622112931355#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1759"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -119,8 +413,7 @@
 			<div type="memoir">
 				<head>Samuel Benade</head>
 				<div type="page" n="1">
-					<pb n="1"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-01.jpg"/>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-01.jpg"/>
 					<p> Narrative of my pilgrimage <lb/> thro' the vale of tears. </p>
 					<p> They that sow in tears, shall reap in <lb/> joy. He that goeth forth and
 						reap weepeth <lb/> bearing precious seed, shall doubtless <lb/> come again
@@ -128,61 +421,57 @@
 					<lg type="verse">
 						<l>All they, who weeping now go forth</l>
 						<l>And bear the precious seed,</l>
-						<l>May in our Savior's walk on earth:</l>
+						<l>May in our <roleName type="honorific">Savior</roleName>'s walk on earth:</l>
 						<l>Pattern and comfort read.</l>
 					</lg>
-					<p>Samuel Traugott Benade </p>
+					<p><persName ref="#mlper000557" cert="high" type="real">Samuel Traugott Benade</persName> </p>
 
 					<p> Having, while I lived on earth, among <lb/> other favors and privileges
 						conferred upon <lb/> me, thro' the unmerited &amp; undessed grace <lb/> of
-						my Lord and Savior been honored with <lb/> the appointment of a Minister of
-						the Gospel <lb/> I deem it my bounden duty, once more <lb/> thro' this
+						my <roleName type="honorific">Lord</roleName> and <roleName type="honorific">Savior</roleName> been honored with <lb/> the appointment of a <name office="#mloff000002">Minister of the Gospel</name> <lb/> I deem it my bounden duty, once more <lb/> thro' this
 						narrative of my earthly pilgri- <lb/> mage, to bear testimony to the power
-						and <lb/> efficacy of a living faith in a crucified <lb/> Redeemer, as
+						and <lb/> efficacy of a living faith in a crucified <lb/> <roleName type="honorific">Redeemer</roleName>, as
 						experienced by me to the <lb/> saving of my Soul and the rejoicing of <lb/>
 					</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-02.jpg"/>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-02.jpg"/>
 					<p> of my heart. And Oh! the may this feeble testi- <lb/> mony prove an
 						encouragement to my fellow <lb/> pilgrims who as yet have not reached their
 						<lb/> heavenly home, but are still laboring to enter <lb/> into that eternal
-						rest, which God, the faith- <lb/> ful covenant keeping God, has prepared for
+						rest, which <persName type="real" cert="high">God</persName>, the faith- <lb/> ful covenant keeping <persName type="real" cert="high">God</persName>, has prepared for
 						<lb/> his people. To All, that shall hear or read this <lb/> narrative, I
 						solemnly declare, that my salva- <lb/> tion has been from beginning to end,
-						the work <lb/> of God, and a succession of miracles, wrought <lb/> by the
-						grace of God, for my deliverance as well <lb/> as for the promoting of my
+						the work <lb/> of <persName type="real" cert="high">God</persName>, and a succession of miracles, wrought <lb/> by the
+						grace of <persName type="real" cert="high">God</persName>, for my deliverance as well <lb/> as for the promoting of my
 						happiness, &amp; for <lb/> the completion of my heavenly calling &amp;
 						election. <lb/> Ever since I came to the knowledge of my natu- <lb/> ral
 						depravity and sinfulness &amp; knew experi- <lb/> mentally the truth of that
 						declaration, "that <lb/> there is neither health nor help in ourselves",
 						<lb/> scarcely a day has passed, but I had occasion <lb/> to weep and to
 						mourn, yea to abhor myself. <lb/> and scarcely a day, but I experienced some
-						ma- <lb/> nifestation of my Savior's redeeming grace &amp; <lb/> power, for
+						ma- <lb/> nifestation of my <roleName type="honorific">Savior</roleName>'s redeeming grace &amp; <lb/> power, for
 						my comfort &amp; encouragement <lb/> On revising my own works, it is no
 						compli- <lb/> ment to say, that I find no ground for glorying; <lb/> but
-						calling to mind the Lord's mercies, I find <lb/> abundant cause for
+						calling to mind the <roleName type="honorific">Lord</roleName>'s mercies, I find <lb/> abundant cause for
 						everlast'g thanks &amp; prayer. <note type="catchword">Hear</note>
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-03.jpg"/>
-					<p> Hear then, what the Lord has done for my <lb/> Soul! </p>
-					<p> I was born the 28<hi rend="superscript">th</hi> of October 1746 at <lb/>
-						Milkel in Upper Lusatia about to 10 E. miles <lb/> from Bautzen the Capital.
-						My Father was <lb/> the Minister of the place, and my Mother <lb/>
-						Christiana, whose maiden name was Faber <lb/> a Minister's daughter. These
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-03.jpg"/>
+					<p> Hear then, what the <roleName type="honorific">Lord</roleName> has done for my <lb/> Soul! </p>
+					<p> I was <name event="birth" when-iso="1746-10-28">born</name> the <date when="1746-10-28" cert="high">28<hi rend="superscript">th</hi> of October 1746</date> at <lb/>
+						<placeName ref="#mlpla000248" cert="high">Milkel in Upper Lusatia</placeName> about to 10 E. miles <lb/> from <placeName ref="#mlpla000249" cert="high">Bautzen</placeName> the Capital.
+						My Father was <lb/> the <name memoirSubject="n" office="#mloff000002">Minister</name> of the place, and my Mother <lb/>
+						<persName ref="#mlper000720" cert="high" type="real">Christiana</persName>, whose maiden name was Faber <lb/> a <name memoirSubject="n" office="#mloff000002">Minister</name>'s daughter. These
 						my dear Pa- <lb/> rents were earnestly concerned, to bring <lb/> up their
 						Children, of whom they had 6 living, <lb/> in the fear and nurture of the
-						Lord, and <lb/> to prerserve them from this present evil world <lb/> &amp;
+						<roleName type="honorific">Lord</roleName>, and <lb/> to prerserve them from this present evil world <lb/> &amp;
 						from the spirit of seduction. Wherefore, <lb/> getting acquainted with the
-						Brethren, <lb/> who frequently passed thro' the village <lb/> in going from
-						Kleinwelke to Uhyst, they <lb/> soon embraced that opportunity, to place
-						<lb/> us, one after another, in the Seminaries <lb/> of the B<hi
-							rend="superscript">rn</hi>, and thus in my eigth year <lb/> I came to
-						live in the Oeconomy at Uhyst. <lb/>
+						<orgName religion="Moravian Church">Brethren</orgName>, <lb/> who frequently passed thro' the village <lb/> in going from
+						<placeName ref="#mlpla000152" cert="high">Kleinwelke</placeName> to <placeName ref="#mlpla000250" cert="high">Uhyst</placeName>, they <lb/> soon embraced that opportunity, to place
+						<lb/> us, one after another, in the Seminaries <lb/> of the B<hi rend="superscript">rn</hi>, and thus in my eigth year <lb/> I came to
+						live in the <orgName en="œconomy">Oeconomy at <placeName ref="#mlpla000250" cert="high">Uhyst</placeName></orgName>. <lb/>
 					</p>
 					<p> It was high time for me to be then brought <lb/> to a place of safety; for
 						young &amp; little as I <lb/> was, the evil propensities of the heart began
@@ -192,59 +481,59 @@
 					</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-04.jpg"/>
-					<p> Numberless times in the sequel I have <lb/> thanked our Savior with tears,
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-04.jpg"/>
+					<p> Numberless times in the sequel I have <lb/> thanked our <roleName type="honorific">Savior</roleName> with tears,
 						that he in <lb/> good time plucked me as a brand from the burn- <lb/> ing,
-						and planted me as a tender plant in the <lb/> B<hi rend="superscript"
-							>rns</hi> Church, &amp; thereby preserved me from <lb/> running headlong
+						and planted me as a tender plant in the <lb/> <orgName religion="Moravian Church">B<hi rend="superscript">rns</hi> Church</orgName>, &amp; thereby preserved me from <lb/> running headlong
 						into Sin. </p>
-					<p> Being then under the B<hi rend="superscript">rns</hi> care, I spent <lb/>
+					<p> Being then under the <orgName religion="Moravian Church">B<hi rend="superscript">rns</hi></orgName> care, I spent <lb/>
 						the remainder of my childhood in a happy <lb/> manner receiving early and
-						deep impressions <lb/> of Jesus' dying love, which excited me to love <lb/>
+						deep impressions <lb/> of <persName type="real" cert="high">Jesus</persName>' dying love, which excited me to love <lb/>
 						him again; tho' my innate self love &amp; self <lb/> complacency did not
 						fail to show itself from <lb/> time to time. </p>
-					<p> In 1756 the Boys Oeconomy moved from <lb/> Uhyst to Niesky, where my love to
-						our Sa- <lb/> vior and fellowship with him was much <lb/> further'd by the
-						faithful care of the late B<hi rend="superscript">r</hi>
-						<lb/> Bryant, and by his edifying manner of <lb/> treating his Pupils,
+					<p> In <date when="1756" cert="high">1756</date> the <orgName en="œconomy">Boys Oeconomy</orgName> moved from <lb/> <placeName ref="#mlpla000250" cert="high">Uhyst</placeName> to <placeName ref="#mlpla000251" cert="high">Niesky</placeName>, where my love to
+						our <roleName type="honorific">Sa-
+<lb/>
+vior</roleName> and fellowship with him was much <lb/> further'd by the
+						faithful care of the late <persName cert="high" type="real"><roleName type="honorific">B<hi rend="superscript">r</hi>
+<lb/></roleName> Bryant</persName>, and by his edifying manner of <lb/> treating his Pupils,
 						making it his chief busi- <lb/> ness, to lead them into acquaintance with
-						<lb/> our Savior. </p>
+						<lb/> our <roleName type="honorific">Savior</roleName>. </p>
 					<p> While here, one of the most signal visita- <lb/> tions of grace was
-						experienced by me on the <lb/> 13<hi rend="superscript">th</hi> of November
+						experienced by me on the <lb/> <date when="1756-11-13" cert="high">13<hi rend="superscript">th</hi> of November</date>
 						at the meetg for prostration; <lb/> my Soul was overcome and melted by an
-						inex- <lb/> pressible Sense of our Savior's love wch con- <lb/> strained me,
+						inex- <lb/> pressible Sense of our <roleName type="honorific">Savior</roleName>'s love wch con- <lb/> strained me,
 						to devote myself with soul <note type="catchword">and</note>
 					</p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-05.jpg"/>
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-05.jpg"/>
 					<p> and body to Him as his eternal property <lb/> This blessed event I have
 						always remember'd <lb/> with particular gratitude; and to this very <lb/>
 						day the remembrance of it is as fresh and lively <lb/> to my mind, as if it
 						had occured but yesterday. </p>
-					<p> In my 13<hi rend="superscript">th</hi> year I was placed in the Pae- <lb/>
-						dagogium at Hennersdorf, with a view to <lb/> prosecute my studies. At that
-						time the vi- <lb/> sits and discourses of the late Count Zinzen- <lb/> dorf
+					<p> <date cert="medium" when="1759">In my 13<hi rend="superscript">th</hi> year</date> I was placed in the Pae- <lb/>
+						dagogium at <placeName ref="#mlpla000252" cert="high">Hennersdorf</placeName>, with a view to <lb/> prosecute my studies. At that
+						time the vi- <lb/> sits and discourses of the late <persName ref="#mlper000566" cert="high" type="real">Count Zinzen-
+<lb/>
+dorf</persName>
 						were much blessed to my heart; &amp; I was <lb/> deeply affected, when that
-						Servant of God <lb/> was called to enter into the joy of his Lord. <lb/>
-						After his departure the Paedagogium was trans- <lb/> ferred from Hennersdorf
-						to Niesky. </p>
+						Servant of <persName type="real" cert="high">God</persName> <lb/> was called to enter into the joy of his <roleName type="honorific">Lord</roleName>. <lb/>
+						After his departure the Paedagogium was trans- <lb/> ferred from <placeName ref="#mlpla000252" cert="high">Hennersdorf</placeName>
+						to <placeName ref="#mlpla000251" cert="high">Niesky</placeName>. </p>
 					<p> As I advanced in years, my natural depra- <lb/> vily and siful propensities
 						appeared more <lb/> and more, and I should have been carried <lb/> away by
 						the torrent of corruption, if through <lb/> grace a good foundation had not
 						been laid in <lb/> my soul, and if I had not been under the care <lb/> of
 						faithful Tutors. </p>
-					<p> Our Savior continued the good work he had <lb/> begun; and when I on the one
+					<p> Our <roleName type="honorific">Savior</roleName> continued the good work he had <lb/> begun; and when I on the one
 						hand wept &amp; <lb/> mourned over myself, he on the other com- <lb/> forted
 						and supported me by repeated manifesta- <lb/> tions of his love and
 						kindness. I was enabled, <lb/> to look by faith to a crucified Redeemer, and
 					</p>
 				</div>
 				<div type="page" n="6">
-					<pb n="6"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-06.jpg"/>
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-06.jpg"/>
 					<p> perceived virtue going out of him whenever <lb/> I touched him by faith.
 						<lb/>
 					</p>
@@ -258,8 +547,7 @@
 						in the habit of looking unto Jesus in <lb/> my daily wants and necessities. </p>
 					<p> In 1764 I came with 6 others to Barby <lb/> to finish our Studies in the
 						Seminary. </p>
-					<p> The celebration of the 13<hi rend="superscript">th</hi> November, w<hi
-							rend="superscript">ch</hi>
+					<p> The celebration of the 13<hi rend="superscript">th</hi> November, w<hi rend="superscript">ch</hi>
 						<lb/> happened the next day after our arrival. <lb/> proved a blessed
 						welcome and introduction <lb/> to us. My three years stay there was attended
 						<lb/> with much benefit and blessing. I proceeded <lb/> gradually both in
@@ -271,8 +559,7 @@
 					</p>
 				</div>
 				<div type="page" n="7">
-					<pb n="7"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-07.jpg"/>
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-07.jpg"/>
 					<p> object of his divine, infinite and unbounded <lb/> love, and that it was the
 						gracious purpose of <lb/> his love, to grant me a full portion of that sal-
 						<lb/> vation, which he has purchased for all and <lb/> this impression has
@@ -295,8 +582,7 @@
 						exceedingly distresed, </p>
 				</div>
 				<div type="page" n="8">
-					<pb n="8"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-08.jpg"/>
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-08.jpg"/>
 					<p> and at time so cast down that it required <lb/> strong and repeated
 						consolations, to lift me up <lb/> again. Under these circumstance the Holy
 						<lb/> Ghost created me with maternal tenderness <lb/> and attention,
@@ -318,16 +604,13 @@
 					</p>
 				</div>
 				<div type="page" n="9">
-					<pb n="9"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-09.jpg"/>
+					<pb n="9" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-09.jpg"/>
 					<p> The first year of my service at Fulneck <lb/> was extremely heavy to me, as
 						I found the <lb/> circumstances of the Oeconomy so difficult <lb/> and
 						embarrassed, that I could see no remedy <lb/> either one way of another.
 						Nevertheless, I put <lb/> my trust in the Lord, and firmly believed, <lb/>
 						that he in his own good time would bring <lb/> things into a better course,
-							w<hi rend="superscript">ch</hi> also came to <lb/> pass, when B<hi
-							rend="superscript">r</hi>. Traneker came as Cong<hi rend="superscript"
-							>n</hi>
+							w<hi rend="superscript">ch</hi> also came to <lb/> pass, when B<hi rend="superscript">r</hi>. Traneker came as Cong<hi rend="superscript">n</hi>
 						<lb/> Helper to Fulneck and undertook the ma- <lb/> nagement of the
 						Oeconomy. <lb/>
 					</p>
@@ -346,11 +629,9 @@
 					</p>
 				</div>
 				<div type="page" n="10">
-					<pb n="10"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-10.jpg"/>
+					<pb n="10" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-10.jpg"/>
 					<p> to me, to come with prayer &amp; supplication <lb/> to the Savior of
-						Sinners, and to claim the <lb/> healing virtue of his precious blood, w<hi
-							rend="superscript">ch</hi> I <lb/> also experienced according to my
+						Sinners, and to claim the <lb/> healing virtue of his precious blood, w<hi rend="superscript">ch</hi> I <lb/> also experienced according to my
 						faith: <lb/> At times indeed I felt the power of sin &amp; <lb/> the
 						strength of unbelief to such a degree, <lb/> that I was prompted to despair
 						of a com- <lb/> pleat deliverance; but even then "he delivered <lb/> my soul
@@ -359,8 +640,7 @@
 						such an occasion I was most bless- <lb/> edly relieved by a divine
 						assurance, that not <lb/> withstanding all my sinfulness I should <lb/> yet
 						attain to that supreme happiness, to <lb/> love my Savior with all my heart,
-						with all <lb/> my strength and with all my undesrstand<hi rend="superscript"
-							>g</hi>
+						with all <lb/> my strength and with all my undesrstand<hi rend="superscript">g</hi>
 						<lb/> and to be perfectly renewed into his image. <lb/> The labor among the
 						Children appeared to <lb/> me highly important, &amp; I found much <lb/>
 						occasion, to ask for grace and wisdom to <lb/> do justice to the several
@@ -371,8 +651,7 @@
 					</p>
 				</div>
 				<div type="page" n="11">
-					<pb n="11"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-11.jpg"/>
+					<pb n="11" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-11.jpg"/>
 					<p> erroneous ideas of the way and manner, in <lb/> which our Savior manifests
 						himself to the <lb/> soul, and are apt to look for some extraordi- <lb/>
 						nary &amp; striking event. I will here mention <lb/> some instances, among
@@ -400,8 +679,7 @@
 					</p>
 				</div>
 				<div type="page" n="12">
-					<pb n="12"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-12.jpg"/>
+					<pb n="12" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-12.jpg"/>
 					<p> the ships below appearing as small as <lb/> cockle shells and the men like
 						crawling <lb/> insects my mind was uncommonly struck, <lb/> with the sublime
 						and awful scene, and im- <lb/> pressed with an overpowering Sense of the
@@ -425,8 +703,7 @@
 					</p>
 				</div>
 				<div type="page" n="13">
-					<pb n="13"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-13.jpg"/>
+					<pb n="13" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-13.jpg"/>
 					<p> Savior and Redeemer, who has delivered my <lb/> Soul from the pit of
 						corruption, and is become <lb/> to me a never failing source of comfort,
 						peace <lb/> and joy. Thus a grand view of nature proved <lb/> the occasion
@@ -448,8 +725,7 @@
 						how often <lb/> has he laid his hand upon me, when I was </p>
 				</div>
 				<div type="page" n="14">
-					<pb n="14"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-14.jpg"/>
+					<pb n="14" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-14.jpg"/>
 					<p> on the point of deviating from the right <lb/> path and going astray, and if
 						at any time. <lb/> my frail nature had swerved beyond the <lb/> proper
 						bounds, he soon created in me a god- <lb/> ly sorrow on account of it, and
@@ -457,8 +733,7 @@
 						stay at Fulneck I experienced <lb/> a particular prresenation of my life.
 						Being <lb/> one Sunday sent to Baildon to preach, I <lb/> took a short road,
 						where I had to cross a small <lb/> river, w<hi rend="superscript">ch</hi>,
-						in dry weather is fordable on step- <lb/> ping stones, but was now <add
-							place="above">so</add> swelled by the rain <lb/> that it could only be
+						in dry weather is fordable on step- <lb/> ping stones, but was now <add place="above">so</add> swelled by the rain <lb/> that it could only be
 						crossed over in a boat. <lb/> The ferryman having gone to Church, a <lb/>
 						stout looking boy offered to ferry me over &amp; <lb/> we set off, but when
 						we had got into the <lb/> middle of the stream, he found it so rapid <lb/>
@@ -473,8 +748,7 @@
 					</p>
 				</div>
 				<div type="page" n="15">
-					<pb n="15"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-15.jpg"/>
+					<pb n="15" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-15.jpg"/>
 					<p> adjacent houses, to see what would be come <lb/> of us. But when we came to
 						the edge of the <lb/> fall, the boat instead of going down with <lb/> the
 						torrent, gliding gently along close to the <lb/> edge, safely passed the
@@ -482,8 +756,7 @@
 						and ferried me safe over the river. Having <lb/> thus received, as it were,
 						my life anew out <lb/> of the hand of God, I dedicated it anew to <lb/> him,
 						to spend it in his service &amp; to his glory. <lb/> In the year 1770 I was
-						called to Dublin, <lb/> these to have the care of the single B<hi
-							rend="superscript">rn</hi> and <lb/> Boys, including the Children, as
+						called to Dublin, <lb/> these to have the care of the single B<hi rend="superscript">rn</hi> and <lb/> Boys, including the Children, as
 						also to <lb/> assist in preaching. Previous to my setting <lb/> out I was
 						ordained a Deacon of the B<hi rend="superscript">rns</hi>
 						<lb/> Church by B<hi rend="superscript">r</hi>. Johannes de Watteville then
@@ -498,35 +771,27 @@
 					</p>
 				</div>
 				<div type="page" n="16">
-					<pb n="16"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-16.jpg"/>
-					<p> and delivered me in every time of need, <lb/> As the Cong<hi
-							rend="superscript">n</hi>. at that time was desirous, that <lb/> a Boys
-						day school should be instituted under <lb/> the B<hi rend="superscript"
-							>rns</hi> direction and management, I was <lb/> glad of being servicable
-						in establishing and <lb/> promoting said institution, w<hi
-							rend="superscript">ch</hi> indeed in <lb/> the beginning afforded but an
+					<pb n="16" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-16.jpg"/>
+					<p> and delivered me in every time of need, <lb/> As the Cong<hi rend="superscript">n</hi>. at that time was desirous, that <lb/> a Boys
+						day school should be instituted under <lb/> the B<hi rend="superscript">rns</hi> direction and management, I was <lb/> glad of being servicable
+						in establishing and <lb/> promoting said institution, w<hi rend="superscript">ch</hi> indeed in <lb/> the beginning afforded but an
 						unpromising as- <lb/> pect, but in process of time began to prosper <lb/>
 						beyond our expectation and was attended with <lb/> the Lord's blessing. </p>
 					<p> In August 1783, that is, 11 years after my <lb/> arrival in England, I
-						received Call, to be <lb/> one of the Writers to the U.E.C., w<hi
-							rend="superscript">ch</hi> I accepted <lb/> from the conviction, that it
+						received Call, to be <lb/> one of the Writers to the U.E.C., w<hi rend="superscript">ch</hi> I accepted <lb/> from the conviction, that it
 						came from the <lb/> Lord. But it lasted till February following, <lb/>
 						before I could set out on my passage to Ger- <lb/> many. Several occurrences
 						render'd this jour- <lb/> ney very remarkable. First I lost all my <lb/>
 						goods, when the Ship, in which I was send- <lb/> ing them from Dublin to
-						London, was wrecked <lb/> on the Welsh Coast, w<hi rend="superscript"
-							>ch</hi> loss however did not <lb/> affect me much as my immediate wants
-						<lb/> were relieved by the B<hi rend="superscript">rn</hi> &amp; S<hi
-							rend="superscript">rs </hi>in Dublin <lb/> according to their wonted
+						London, was wrecked <lb/> on the Welsh Coast, w<hi rend="superscript">ch</hi> loss however did not <lb/> affect me much as my immediate wants
+						<lb/> were relieved by the B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs </hi>in Dublin <lb/> according to their wonted
 						liberality. The <lb/> next difficulty arose from the hard winter <lb/> then
 						prevailing. The landing in Holland <lb/> had been render'd very difficult
 						&amp; expensive <note type="catchword">by</note>
 					</p>
 				</div>
 				<div type="page" n="17">
-					<pb n="17"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-17.jpg"/>
+					<pb n="17" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-17.jpg"/>
 					<p> by the ice living the coast, and requiring <lb/> ice boats to land the
 						passengers, it was but <lb/> just cleared of the ice when I had to go over.
 						<lb/> The ice having been stopped both in the <lb/> Rhine and in the Elbe,
@@ -550,8 +815,7 @@
 					</p>
 				</div>
 				<div type="page" n="18">
-					<pb n="18"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-18.jpg"/>
+					<pb n="18" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-18.jpg"/>
 					<p> In August 1784 I was married to my late <lb/> wife Johanna Eleanora
 						Gaertinor, &amp; in Sept<hi rend="superscript">r</hi>
 						<lb/> moved with the U.E.C. to Herrnhut. Here in <lb/> consequence of the
@@ -581,11 +845,9 @@
 					</p>
 				</div>
 				<div type="page" n="19">
-					<pb n="19"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-19.jpg"/>
+					<pb n="19" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-19.jpg"/>
 					<p> I was appointed Minister of the Cong<hi rend="superscript">n</hi>
-						<lb/> at Neusalz, and having been ordained a <lb/> Presbyter by B<hi
-							rend="superscript">r</hi> Spangenberg, I arrived there <lb/> with my
+						<lb/> at Neusalz, and having been ordained a <lb/> Presbyter by B<hi rend="superscript">r</hi> Spangenberg, I arrived there <lb/> with my
 						wife, who was then pregnant, the <lb/> 23<hi rend="superscript">d</hi> of
 						March, after a difficult and hazardous <lb/> journey, the snow being
 						uncommonly deep. <lb/> The state of the Cong<hi rend="superscript">n</hi>
@@ -596,8 +858,7 @@
 						expectation. </p>
 					<p> In 1785 the Lord blessed us with the birth <lb/> of a Son, whom we dedicated
 						unto Him <lb/> as his blood bought property. </p>
-					<p> But now began a scene of domestic distress, <lb/> w<hi rend="superscript"
-							>ch</hi> under <del>a</del> various changes &amp; vicissitudes, <lb/>
+					<p> But now began a scene of domestic distress, <lb/> w<hi rend="superscript">ch</hi> under <del>a</del> various changes &amp; vicissitudes, <lb/>
 						lasted till the happy departure of my be- <lb/> loved wife, who during a
 						period of 6 years <lb/> had to endure one sickness after another, <lb/>
 						&amp; even in the intervals did not enjoy any <lb/> comfortable state of
@@ -606,8 +867,7 @@
 						of her frame, <lb/> as she took it much to heart. </p>
 				</div>
 				<div type="page" n="20">
-					<pb n="20"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-20.jpg"/>
+					<pb n="20" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-20.jpg"/>
 					<p> During this period I was often harrassed <lb/> by such a variety and
 						multiplicity of distresses <lb/> and perplexiting circumstances, that I
 						should <lb/> have been quite unfit for the duties of my office <lb/> and the
@@ -633,10 +893,8 @@
 					</p>
 				</div>
 				<div type="page" n="21">
-					<pb n="21"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-21.jpg"/>
-					<p> having been appointed by the Synod La <lb/> borers of the London Cong<hi
-							rend="superscript">n</hi>. <lb/>
+					<pb n="21" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-21.jpg"/>
+					<p> having been appointed by the Synod La <lb/> borers of the London Cong<hi rend="superscript">n</hi>. <lb/>
 					</p>
 					<p> We arrived in London in June following <lb/> Here we had again to pass thro'
 						a variety of <lb/> new &amp; heavy trials; the increasing sickliness <lb/>
@@ -660,11 +918,9 @@
 					</p>
 				</div>
 				<div type="page" n="22">
-					<pb n="22"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-22.jpg"/>
+					<pb n="22" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-22.jpg"/>
 					<p> exceeding and eternal weight of glory, while <lb/> we look not at the things
-							w<hi rend="superscript">ch</hi> are seen, but at <lb/> the things w<hi
-							rend="superscript">ch</hi> are not seen. <lb/>
+							w<hi rend="superscript">ch</hi> are seen, but at <lb/> the things w<hi rend="superscript">ch</hi> are not seen. <lb/>
 					</p>
 					<p> After the happy departure of my late Wife <lb/> in January 1792 I spent one
 						year as a Wi- <lb/> dower, and our Savior granted me a time of <lb/>
@@ -678,8 +934,7 @@
 						to Bedford. <lb/>
 					</p>
 					<p> Our stay there was upon the whole very <lb/> agreeable, and we richly
-						enjoyed the blessing <lb/> of God, and the love and confidence of our B<hi
-							rend="superscript">rn</hi>
+						enjoyed the blessing <lb/> of God, and the love and confidence of our B<hi rend="superscript">rn</hi>
 						<lb/> &amp; S<hi rend="superscript">rs</hi>. We had indeed also our share of
 						diffi- <lb/> culties, but the Lord helped us thro' them all. <lb/>
 					</p>
@@ -695,8 +950,7 @@
 					</p>
 				</div>
 				<div type="page" n="23">
-					<pb n="23"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-23.jpg"/>
+					<pb n="23" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-23.jpg"/>
 					<p> as he had done hitherto. Nor was our confi- <lb/> dence put to shame, and
 						amidst our own <lb/> infirmities, and various trials we had to pass <lb/>
 						thro' we enjoyed much grace and blessing <lb/> from our Savior, and his
@@ -720,13 +974,11 @@
 					</p>
 				</div>
 				<div type="page" n="24">
-					<pb n="24"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-24.jpg"/>
+					<pb n="24" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-24.jpg"/>
 					<p> would have occasioned scenes of unparalled <lb/> cruelty, massacre and
 						devastation. <lb/>
 					</p>
-					<p> We were thankful to the Lord, that we not <lb/> only <add place="above"
-							>could</add> possess our own Souls in patience, but also <lb/>
+					<p> We were thankful to the Lord, that we not <lb/> only <add place="above">could</add> possess our own Souls in patience, but also <lb/>
 						administer comfort and encouragement to others. <lb/> During that time I
 						also experienced a remark- <lb/> able preservation from bodily harm, having
 						<lb/> my legs nearly crushed by a brewer's dray drive- <lb/> ing against a
@@ -734,8 +986,7 @@
 						sideways. The injury I received was however <lb/> such, that for a
 						considerable time I was pre- <lb/> vented officiating in the Church. But far
 						<lb/> more important was the preservation of my <lb/> Soul in the midst of
-						so many temptations <lb/> abounding in such a large City, w<hi
-							rend="superscript">ch</hi> I could <lb/> by no means overcome by my own
+						so many temptations <lb/> abounding in such a large City, w<hi rend="superscript">ch</hi> I could <lb/> by no means overcome by my own
 						strength, <lb/> but solely by looking unto Jesus the Author <lb/> &amp;
 						Finisher of my faith. <lb/>
 					</p>
@@ -749,8 +1000,7 @@
 					</p>
 				</div>
 				<div type="page" n="25">
-					<pb n="25"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-25.jpg"/>
+					<pb n="25" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-25.jpg"/>
 					<p> grace. This constant need of a Savior, and <lb/> the never failing help and
 						refuge I found <lb/> in Him, proved to me the reality of the <lb/> Gospel,
 						and my sure interest in Christ's re- <lb/> demption. And as my experience
@@ -767,8 +1017,7 @@
 						therefore <lb/> devoted myself anew to the Lord for that pur- <lb/> pose.
 						But while I was sitting in my room <lb/> in this happy fame of mind, the
 						postman <lb/> brought a letter, contain<hi rend="superscript">g</hi> our
-						appointment <lb/> to the service of Fulneck Cong<hi rend="superscript"
-							>n</hi>. This indeed <lb/> came very unexpected, and was not altogether
+						appointment <lb/> to the service of Fulneck Cong<hi rend="superscript">n</hi>. This indeed <lb/> came very unexpected, and was not altogether
 						<lb/> agreeable to our wishes, as we were much <lb/> attached to the Dublin
 							Cong<hi rend="superscript">n</hi>, with whom we <lb/> had shared a great
 						deal of joy, as well as of <lb/> distress and trouble, particularly during
@@ -776,17 +1025,14 @@
 					</p>
 				</div>
 				<div type="page" n="26">
-					<pb n="26"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-26.jpg"/>
+					<pb n="26" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-26.jpg"/>
 					<p> late rebellion. But having devoted ourselves <lb/> unreservedly to the
 						Lord's service, &amp; promised <lb/> obedience to his will and guidance, we
 						could <lb/> do no other than accept of that new appointment. <lb/> We
-						arrived at Fulneck Nov. 10. 1801, and on <lb/> the 13<hi rend="superscript"
-							>th</hi> following, on w<hi rend="superscript">ch</hi> day 65 years ago
+						arrived at Fulneck Nov. 10. 1801, and on <lb/> the 13<hi rend="superscript">th</hi> following, on w<hi rend="superscript">ch</hi> day 65 years ago
 						<lb/> I had experienced the first real and abiding <lb/> manifestation of
 						Jesus love and grace, I was <lb/> according to a Synodal resolution,
-						confirmed <lb/> by the Lord, consecrated a Bishop of the B<hi
-							rend="superscript">rns</hi>
+						confirmed <lb/> by the Lord, consecrated a Bishop of the B<hi rend="superscript">rns</hi>
 						<lb/> Church by the B<hi rend="superscript">rn</hi> Traneker and Moore, on
 						<lb/> w<hi rend="superscript">ch</hi> occasion I was so overpowerd by the
 						grace <lb/> of God, that wi<del>ll</del><add place="above">th</add> purpose
@@ -808,8 +1054,7 @@
 					</p>
 				</div>
 				<div type="page" n="27">
-					<pb n="27"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-27.jpg"/>
+					<pb n="27" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-27.jpg"/>
 					<p> differing indeed both in arrangement &amp; cul- <lb/> ture, but all under
 						the care and managment <lb/> of one &amp; the same Gardener; who appoints
 						<lb/> Laborers for each division of his garden &amp; <lb/> vineyard,
@@ -832,16 +1077,13 @@
 					</p>
 				</div>
 				<div type="page" n="28">
-					<pb n="28"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-28.jpg"/>
-					<p> other hand those whom our Savior has <lb/> called to the B<hi
-							rend="superscript">rns</hi> Church, &amp; who are genuine <lb/> members
+					<pb n="28" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-28.jpg"/>
+					<p> other hand those whom our Savior has <lb/> called to the B<hi rend="superscript">rns</hi> Church, &amp; who are genuine <lb/> members
 						of the same, could not foot themselves <lb/> at home in any other
 						denomination, nor be <lb/> so much further'd in their course any where else.
 						<lb/>
 					</p>
-					<p> This at least is my case, conviction and ex- <lb/> perience, and the B<hi
-							rend="superscript">rns</hi> Church has proved <lb/> to me the most
+					<p> This at least is my case, conviction and ex- <lb/> perience, and the B<hi rend="superscript">rns</hi> Church has proved <lb/> to me the most
 						congenial soil for growing in <lb/> the grace and knowledge of our Lord
 						Jesus Christ. <lb/> It is in this fold, that I have been screened and <lb/>
 						secured from the deleterious influence of se- <lb/> duction, so common among
@@ -861,8 +1103,7 @@
 					</p>
 				</div>
 				<div type="page" n="29">
-					<pb n="29"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-29.jpg"/>
+					<pb n="29" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-29.jpg"/>
 					<p> If therefore others have the same special Call, <lb/> let them obey it, and
 						they will find themselves <lb/> in the right place, they will thrive &amp;
 						prosper <lb/> and they will clearly see from their blessed <lb/> experience,
@@ -889,16 +1130,14 @@
 					</p>
 				</div>
 				<div type="page" n="30">
-					<pb n="30"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-30.jpg"/>
+					<pb n="30" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-30.jpg"/>
 					<p> I submitted to every part of my calling in <lb/> reliance upon our Saviors
 						gracious support <lb/> wch. I also richly experienced under a variety of
 						<lb/> heavy circumstances. In the beginning it was <lb/> a great help to me,
 						that our late dear Brother <lb/> Traneker still continued for some time to
 						act <lb/> as Cong<hi rend="superscript">n</hi>. Helper and to take some
 						share in <lb/> the labor, but after his departure I had to en- <lb/> ter
-						fully upon the exercise of all my functions <lb/> as Cong<hi
-							rend="superscript">n</hi>. Helper Minister &amp; Inspector of the <lb/>
+						fully upon the exercise of all my functions <lb/> as Cong<hi rend="superscript">n</hi>. Helper Minister &amp; Inspector of the <lb/>
 						Schools. <lb/>
 					</p>
 					<p> Every period of the B<hi rend="superscript">rns</hi>. Church has been <lb/>
@@ -917,8 +1156,7 @@
 					</p>
 				</div>
 				<div type="page" n="31">
-					<pb n="31"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-31.jpg"/>
+					<pb n="31" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-31.jpg"/>
 					<p> over the blessing, which the Lord had laid <lb/> upon the Schools. For when
 						I first came to <lb/> Fulneck in the year 1772, as first Teacher of <lb/>
 						the Boys Oeconomy, consisting at that time <lb/> of about I Boys, I found it
@@ -940,16 +1178,13 @@
 					<p> In the year 1810 I was brought very low and </p>
 				</div>
 				<div type="page" n="32">
-					<pb n="32"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-32.jpg"/>
-					<p> and much reduced by a slow nervous fever <lb/> w<hi rend="superscript"
-							>ch</hi> almost incapacitated me for any time <lb/> but still I was not
+					<pb n="32" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-32.jpg"/>
+					<p> and much reduced by a slow nervous fever <lb/> w<hi rend="superscript">ch</hi> almost incapacitated me for any time <lb/> but still I was not
 						entirely laid up, &amp; could <lb/> transact the most urgent matters. </p>
 					<p> Our service in Fulneck, arduous &amp; laborious <lb/> at best, on account of
 						the multiplicity of our <lb/> incumbencies, was in the 2 last years rendered
 						<lb/> still more<hi rend="superscript"> </hi>so by the misfortunes,
-						occasioned by <lb/> the spirit of speculation in trade, w<hi
-							rend="superscript">ch</hi> was <lb/> then prevailing throughout the
+						occasioned by <lb/> the spirit of speculation in trade, w<hi rend="superscript">ch</hi> was <lb/> then prevailing throughout the
 						mercantile <lb/> community and was the cause of innume- <lb/> table ruinous
 						failures. The reproach, which <lb/> then, tho' undeservedly; fall upon the
 							Cong<hi rend="superscript">n</hi>
@@ -966,8 +1201,7 @@
 					</p>
 				</div>
 				<div type="page" n="33">
-					<pb n="33"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-33.jpg"/>
+					<pb n="33" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-33.jpg"/>
 					<p> not only the Fulneck Cong<hi rend="superscript">n</hi>, but also its <lb/>
 						dependencies, the rest of our Cong<hi rend="superscript">ns</hi> in York-
 						<lb/> shire, and their numerous Schools. </p>
@@ -976,8 +1210,7 @@
 						succeed our late B<hi rend="superscript">r.</hi> Hartley in that of <lb/>
 							Prov.<hi rend="superscript">e</hi> Helper of Ireland, &amp; Minister of
 						Grace- <lb/> hill; but it lasted till October 1812, before <lb/> we could
-						set out for our new post where we <lb/> arrived on the 14<hi
-							rend="superscript">th</hi> of that month. </p>
+						set out for our new post where we <lb/> arrived on the 14<hi rend="superscript">th</hi> of that month. </p>
 					<p> In this new situation I feel again every day <lb/> anew the absolute
 						necessity, to look to Jesus <lb/> the Author and Finisher of my faith, that
 						I may <lb/> not only be preserved from sin and the evils of <lb/> a corrupt
@@ -992,8 +1225,7 @@
 						listlessness, and <lb/> must blame myself for culpable tardiness </p>
 				</div>
 				<div type="page" n="34">
-					<pb n="34"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-34.jpg"/>
+					<pb n="34" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-34.jpg"/>
 					<p> in pursueing that holiness without which <lb/> no man shall see the Lord.
 						How often do I <lb/> feel irksome, when he applies the refiner's <lb/> fire
 						and the fuller's soap to the purifying of <lb/> my sinful nature. tho' I
@@ -1016,8 +1248,7 @@
 					</p>
 				</div>
 				<div type="page" n="35">
-					<pb n="35"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-35.jpg"/>
+					<pb n="35" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-35.jpg"/>
 					<p> poral circumstances, yea could truly say, even <lb/> in this respect: "my
 						lot has fallen to me in a <lb/> pleasant place, and I have got a goodly
 						heritage," <lb/> tho' in general I have enjoyed a good state of <lb/>
@@ -1040,8 +1271,7 @@
 						<lb/> own heart; and many sleepless hours in the </p>
 				</div>
 				<div type="page" n="36">
-					<pb n="36"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-36.jpg"/>
+					<pb n="36" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-36.jpg"/>
 					<p> night have I spent agreeably in repeating <lb/> or rehearsing such as were
 						familiar to in <lb/> recollection and suitable to my circumstances. </p>
 					<p> And how shall I now O Lord thou God <lb/> of my salvation, express unto Thee
@@ -1060,13 +1290,11 @@
 						<lb/> its helpless state, and of the necessity to flee <lb/> for refuge and
 						to lay hold of the hope that is <lb/> set before us. How can I thank Thee
 						sufficiently <lb/> for all the clear evidences &amp; blessed manifestations
-						<lb/> of thy love and goodness towards me, &amp; of the <note
-							type="catchword">healing</note>
+						<lb/> of thy love and goodness towards me, &amp; of the <note type="catchword">healing</note>
 					</p>
 				</div>
 				<div type="page" n="37">
-					<pb n="37"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-37.jpg"/>
+					<pb n="37" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-37.jpg"/>
 					<p> healing, sanctifying and quickening virtue <lb/> of thy precious blood,
 						without w<hi rend="superscript">ch</hi> I must <lb/> have perished in the
 						leprosy of sin. What <lb/> a poor unhappy mortal should I have been <lb/>
@@ -1088,8 +1316,7 @@
 						how readily hast Thou <lb/> pardoned thy unprofitable Servant on all </p>
 				</div>
 				<div type="page" n="38">
-					<pb n="38"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-38.jpg"/>
+					<pb n="38" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-38.jpg"/>
 					<p> occasions, meeting me half way falling about <lb/> my neck and kissing me,
 						even before I could <lb/> make my humble confession with tears of re- <lb/>
 						pentance and contrtion. However unde- <lb/> serving I may be, still I can
@@ -1111,16 +1338,13 @@
 					<p>
 						<hi rend="underline">Note</hi>. The following occurrence has been <lb/>
 						omitted in the foregoing Narrative, w<hi rend="superscript">ch</hi> how-
-						<lb/> ever belongs to the remarkable incidents of my <note type="catchword"
-							>life</note>
+						<lb/> ever belongs to the remarkable incidents of my <note type="catchword">life</note>
 					</p>
 				</div>
 				<div type="page" n="39">
-					<pb n="39"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-39.jpg"/>
+					<pb n="39" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-39.jpg"/>
 					<p> Life.-- In the year 1803 two Tahitian youths, <lb/> Meydow and Olai, had
-						been by the London <lb/> Miss.g Society committed to the care of B<hi
-							rend="superscript">r</hi> W<hi rend="superscript">m</hi>
+						been by the London <lb/> Miss.g Society committed to the care of B<hi rend="superscript">r</hi> W<hi rend="superscript">m</hi>
 						<lb/> Okely then Minister of our Cong<hi rend="superscript">n</hi> at
 						Mirfield, <lb/> for their instruction both in the English lan- <lb/> guage
 						&amp; in the Christian doctrine. Their <lb/> moral conduct had been from the
@@ -1139,8 +1363,7 @@
 						Messenger in Christian <lb/> country. </p>
 				</div>
 				<div type="page" n="40">
-					<pb n="40"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-40.jpg"/>
+					<pb n="40" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-40.jpg"/>
 					<p>
 						<hi rend="underline">October 28<hi rend="superscript">th</hi> 1817</hi>
 						<lb/> Seventy one years have now passed away since <lb/> I was born, and
@@ -1164,8 +1387,7 @@
 					</p>
 				</div>
 				<div type="page" n="41">
-					<pb n="41"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-41.jpg"/>
+					<pb n="41" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-41.jpg"/>
 					<p> ing, and abundant in goodness and truth. <lb/> forgiving iniquity,
 						transgression and sin. <lb/> and that thy mercy is new every morning. </p>
 					<p> In my forlorn condition. Those Lord, didst <lb/> me receive--Thou savedst
@@ -1183,13 +1405,11 @@
 						<lb/> exhibited to us in thy walk and conversa- <lb/> tion, in thy whole
 						life here on earth. How <lb/> little do I yet discover of that meekness
 						&amp; <lb/> lowliness of heart, w<hi rend="superscript">ch</hi> we are to
-						learn of <lb/> Thee, and of that purrity and holiness, with <lb/> out w<hi
-							rend="superscript">ch</hi> no man shall see the Lord. There <lb/> are
+						learn of <lb/> Thee, and of that purrity and holiness, with <lb/> out w<hi rend="superscript">ch</hi> no man shall see the Lord. There <lb/> are
 						indeed hours of grace, when I am par- </p>
 				</div>
 				<div type="page" n="42">
-					<pb n="42"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-42.jpg"/>
+					<pb n="42" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-42.jpg"/>
 					<p> ticularly led to meditate, both upon that <lb/> wonderful act of thy
 						bleeding &amp; dying love <lb/> when Thou gavest thyself for my salvation
 						<lb/> and redemption, and upon that tender un- <lb/> wearied care Thou hast
@@ -1201,8 +1421,7 @@
 						might the smoking flax be quenched <lb/> and the bruised reed be broken, if
 						thy mercy <lb/> did not sustain me from day to day. </p>
 					<p> And what shall I say respecting my poor <lb/> services? They are not
-						performed with that <lb/> Goal and fervency of spirit, w<hi
-							rend="superscript">ch</hi> ought to <lb/> activate me, whether I declare
+						performed with that <lb/> Goal and fervency of spirit, w<hi rend="superscript">ch</hi> ought to <lb/> activate me, whether I declare
 						the counsel <lb/> of God for our salvation in public, of address <lb/>
 						either the Cong<hi rend="superscript">n</hi>. collectively of any Choir
 						<lb/> separately, or when I administer the holy <lb/> Sacraments, or am
@@ -1212,8 +1431,7 @@
 					</p>
 				</div>
 				<div type="page" n="43">
-					<pb n="43"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-43.jpg"/>
+					<pb n="43" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-43.jpg"/>
 					<p> implore thy forbearance, patience &amp; pardon </p>
 					<p> But O my Savior, what an arduous sta- <lb/> tion hast thou called me to
 						occupy in this <lb/> country. The destitute of the necessary <lb/> means, I
@@ -1241,8 +1459,7 @@
 					</p>
 				</div>
 				<div type="page" n="44">
-					<pb n="44"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-44.jpg"/>
+					<pb n="44" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-44.jpg"/>
 					<p>
 						<hi rend="underline">October 28<hi rend="superscript">th</hi> 1818</hi>
 						<lb/> What shall I say of the year that is now <lb/> gone by. it was indeed
@@ -1253,8 +1470,7 @@
 						years, &amp; <lb/> who not only was a pleasant companion <lb/> to me but
 						also an experienced Assistant in <lb/> the labor, having already previous to
 						our <lb/> marriage served a number of years as a faith <lb/> full handmaid
-						of the Lord among the Girls <lb/> and single Sister. Thus I was now the 2<hi
-							rend="superscript">d</hi>
+						of the Lord among the Girls <lb/> and single Sister. Thus I was now the 2<hi rend="superscript">d</hi>
 						<lb/> time placed in the state of a Widower at <lb/> a time of life, when
 						such an agreeable com- <lb/> panion and faithful helpmnate is doubly <lb/>
 						valuable. My desire was now more than <lb/> ever fixed upon things above,
@@ -1266,8 +1482,7 @@
 					</p>
 				</div>
 				<div type="page" n="45">
-					<pb n="45"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-45.jpg"/>
+					<pb n="45" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-45.jpg"/>
 					<p> regulations agreed upon I should have some- <lb/> additional duties to
 						perform. Nothing there- <lb/> fore remains to me but to commit myself <lb/>
 						anew to the hands of my faithful Lord and <lb/> Savior, relying on his
@@ -1291,8 +1506,7 @@
 						fulfillment of the prophecy: my people </p>
 				</div>
 				<div type="page" n="46">
-					<pb n="46"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-46.jpg"/>
+					<pb n="46" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-46.jpg"/>
 					<p> shall dwell in a peaceable habitation, in <lb/> sure dwellings, and in quiet
 						resting placed <lb/> All my mourning was turned into joy, and <lb/> I could
 						thank the Lord even for the afflictions <lb/> I had to pass thro', as they
@@ -1315,8 +1529,7 @@
 					</p>
 				</div>
 				<div type="page" n="47">
-					<pb n="47"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-47.jpg"/>
+					<pb n="47" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-47.jpg"/>
 					<p>
 						<del>have here and in Gracehill, both by ??? <lb/> ??? substantial
 							buildings, and by ??? idol <lb/> able again on premise both public &amp;
@@ -1326,15 +1539,13 @@
 							promoting its ??? ???? not <lb/> to mention other benefactors of
 							permanent <lb/> ??? so that on comparing the present <lb/> state of
 							Gracehill with that in 1812, the con <lb/> trast is very striking. <lb/>
-							The Lord has done great things for this <lb/> Cong<hi rend="superscript"
-								>n</hi> even in Externals, for w<hi rend="superscript">ch</hi> we
+							The Lord has done great things for this <lb/> Cong<hi rend="superscript">n</hi> even in Externals, for w<hi rend="superscript">ch</hi> we
 							tender <lb/> our unfeigned thanks and praise to the boun <lb/> tiful
 							Giver! </del>
 					</p>
 				</div>
 				<div type="page" n="48">
-					<pb n="48"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-48.jpg"/>
+					<pb n="48" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-48.jpg"/>
 					<p>
 						<hi rend="underline">Subtance of my Prayers in behalf</hi>
 						<lb/>
@@ -1353,23 +1564,19 @@
 						&amp; diseases and finally consigned <lb/> to the dust of the grave;
 						possessing im <lb/> mortal souls that never die, but must <lb/> continue for
 						ever and ever in a state, either <lb/> of unspeakable bliss and glory, or in
-						a state <lb/> of unutterable woe &amp; never ending torments. <note
-							type="catchword">Millions</note>
+						a state <lb/> of unutterable woe &amp; never ending torments. <note type="catchword">Millions</note>
 					</p>
 				</div>
 				<div type="page" n="49">
-					<pb n="49"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-49.jpg"/>
+					<pb n="49" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-49.jpg"/>
 					<p> Millions of human beings are successively, <lb/> one generation after
 						another, born into this <lb/> evil world, and after a longer or shorter
 						<lb/> period of their earthly pilgrimage, called <lb/> into another state;
 						from which no one <lb/> returns, to bring tidings of their new <lb/> scene
 						of existence. Being conceived in <lb/> sin and shapen in iniquity, they
-						bring <lb/> the seeds of every evil with them, w<hi rend="superscript"
-							>ch</hi>
+						bring <lb/> the seeds of every evil with them, w<hi rend="superscript">ch</hi>
 						<lb/> as they grow up, develop themselves, and <lb/> bring forth the bitter
-						fruits of sin and un <lb/> righteousness. The world, in w<hi
-							rend="superscript">ch</hi> they live, <lb/> abounds in tempitations of
+						fruits of sin and un <lb/> righteousness. The world, in w<hi rend="superscript">ch</hi> they live, <lb/> abounds in tempitations of
 						every kind, <lb/> and affords constant food &amp; excitements <lb/> to the
 						lust of the eye, and the lust of the <lb/> flesh and the pride of life;
 						&amp; evil com <lb/> munications corrupt the minds &amp; man <lb/> ners of
@@ -1380,8 +1587,7 @@
 						substance, </p>
 				</div>
 				<div type="page" n="50">
-					<pb n="50"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-50.jpg"/>
+					<pb n="50" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-50.jpg"/>
 					<p> Tho' tenants at will, none of them knowing <lb/>
 						<del>n</del>either the day <del>n</del>or the hour, when they shall <lb/> be
 						called away from all they possess, they make <lb/> this world their home,
@@ -1404,8 +1610,7 @@
 					</p>
 				</div>
 				<div type="page" n="51">
-					<pb n="51"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-51.jpg"/>
+					<pb n="51" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-51.jpg"/>
 					<p> Millions Thou beholdest living in the gross <lb/> est superstitions
 							<del>or</del> &amp; the most abominable ido <lb/> latries, or obeying
 						the dictates of the false <lb/> Prophet. And O how much even of what <lb/>
@@ -1416,8 +1621,7 @@
 					<p> Such is the world, O Lord, thou knowest <lb/> such are the nations that
 						inhabit the <lb/> earth, and are ruled by the God of this world <lb/> who
 						has barricaded his empire with gates <lb/> of brass and bars of iron,
-						surrounding it <lb/> with forts and ramparts, w<hi rend="superscript"
-							>ch</hi> no human <lb/> power can destroy. </p>
+						surrounding it <lb/> with forts and ramparts, w<hi rend="superscript">ch</hi> no human <lb/> power can destroy. </p>
 					<p> Remember, O Lord, I beseech Thee, for <lb/> thine own sake, since all the
 						souls of men <lb/> are thine, the work of thy hands, that <lb/> Thou cam'st
 						from heaven to save the world <lb/> to destroy him that has the power of
@@ -1426,8 +1630,7 @@
 						rightous </p>
 				</div>
 				<div type="page" n="52">
-					<pb n="52"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-52.jpg"/>
+					<pb n="52" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-52.jpg"/>
 					<p> ness and true holiness. It is thy Spirit <lb/> alone, that can convinced men
 						of sin and <lb/> their sinful and perishing state; it is he <lb/> that must
 						breathe upon the dry bones and <lb/> quicken them; it is thy voice alone, O
@@ -1452,8 +1655,7 @@
 					</p>
 				</div>
 				<div type="page" n="53">
-					<pb n="53"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-53.jpg"/>
+					<pb n="53" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-53.jpg"/>
 					<p>
 						<hi rend="underline">Substance of my prayers &amp; intercession <lb/> for
 							all the Children of God, belonging <lb/> to his Church on earth.</hi>
@@ -1474,8 +1676,7 @@
 						<lb/> plication, confessing their sins; &amp; imploring </p>
 				</div>
 				<div type="page" n="54">
-					<pb n="54"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-54.jpg"/>
+					<pb n="54" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-54.jpg"/>
 					<p> thy pardoning grace and the cleansing <lb/> virtue of thy precious blood.
 						They found favor <lb/> in thy sight; they received power to become <lb/> the
 						Children of God, being born again not <lb/> of corruptible seed, but of
@@ -1492,13 +1693,11 @@
 						strengthen their faith, &amp; finally to pre <lb/> sent them faultless
 						before the presence of thy <lb/> glory with exceeding joy. </p>
 					<p> Thou knowest, O Lord, how apt we are <lb/> to stray from Thee; how prone to
-						yield to <lb/> temptations; how liable to fall from our first <note
-							type="catchword">love</note>
+						yield to <lb/> temptations; how liable to fall from our first <note type="catchword">love</note>
 					</p>
 				</div>
 				<div type="page" n="55">
-					<pb n="55"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-55.jpg"/>
+					<pb n="55" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-55.jpg"/>
 					<p> love, to forget our high and heavenly calling, <lb/> and by objects of time
 						and sense to be diverted <lb/> from the great object of our faith and hope.
 						<lb/> O how many have, like Esau, sold their birth <lb/> right for a morsel
@@ -1518,8 +1717,7 @@
 					<p> May thousands yet be brought the thy </p>
 				</div>
 				<div type="page" n="56">
-					<pb n="56"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-56.jpg"/>
+					<pb n="56" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-56.jpg"/>
 					<p> fold, to show forth they praises, as living <lb/> monuments of they
 						redeeming grace &amp; power <lb/> Amen! </p>
 					<lg type="verse">
@@ -1552,8 +1750,7 @@
 					</p>
 				</div>
 				<div type="page" n="57">
-					<pb n="57"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-57.jpg"/>
+					<pb n="57" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-57.jpg"/>
 					<p> a plant of thy own planting, whereby <lb/> Thou wouldst be glorified.
 						Through a <lb/> course of one hundred years Thou hast <lb/> by inummerble
 						evidences of thy super <lb/> intending care and special love &amp; mercy,
@@ -1562,8 +1759,7 @@
 						keep it night and day." </p>
 					<p> Thou Lord didst raised the present B<hi rend="superscript">rns</hi>
 						<lb/> Church from the embers as it were, of the <lb/> ancient Church of the
-							B<hi rend="superscript">rn</hi>, a small ser <lb/> vant of w<hi
-							rend="superscript">ch</hi>, thro' the wonderful leading <lb/> of thy
+							B<hi rend="superscript">rn</hi>, a small ser <lb/> vant of w<hi rend="superscript">ch</hi>, thro' the wonderful leading <lb/> of thy
 						providence, was brought to a place, <lb/> where, shelter'd from the storm of
 						persecution <lb/> they could under the guidance of thy holy <lb/> Spirit
 						form their constitution after the pattern <lb/> of their forefathers, and
@@ -1576,8 +1772,7 @@
 						eternity. </p>
 				</div>
 				<div type="page" n="58">
-					<pb n="58"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-58.jpg"/>
+					<pb n="58" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-58.jpg"/>
 					<p> Thus the B<hi rend="superscript">rns</hi> Church became a burning <lb/> and
 						a shining light to all around them, <lb/> a cloud of witnesses to a
 						benighted Christen <lb/> dom, at a time, when but a small member <lb/> of
@@ -1598,8 +1793,7 @@
 						hundred years. </p>
 				</div>
 				<div type="page" n="59">
-					<pb n="59"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-59.jpg"/>
+					<pb n="59" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-59.jpg"/>
 					<lg type="verse">
 						<l>Could we avale thee worthily</l>
 						<l>For thy unbounded grace</l>
@@ -1625,8 +1819,7 @@
 						over </p>
 				</div>
 				<div type="page" n="60">
-					<pb n="60"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-60.jpg"/>
+					<pb n="60" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-60.jpg"/>
 					<p> primitive plainess and genuine simplicity <lb/> nor have thy awful warnings
 						and fatherly <lb/> chastenings always been duly attended to. <lb/> Indeed,
 						it may be truly said, if it was not for <lb/> thy mercies we should have
@@ -1639,18 +1832,15 @@
 						possess every blessed <lb/> means of being furthered in our course of grace.
 						<lb/> We now humbly beseech Thee, O Lord, Thou <lb/> Head and Master of this
 						thy house &amp; family <lb/> to pardon all our deviations from the path
-						<lb/> of righteousness, and from there rules &amp; or <lb/> dinances, w<hi
-							rend="superscript">ch</hi> thou hast given us, to regulate <lb/> our
+						<lb/> of righteousness, and from there rules &amp; or <lb/> dinances, w<hi rend="superscript">ch</hi> thou hast given us, to regulate <lb/> our
 						walk and conversation accordingly ~ <lb/> Pardon our declension from the
 						first love, <lb/> godly zeal and true devotedness to thy service, <lb/>
 						Pardon our lukewarmness in evidencing <lb/> our love to Thee in loving one
-						another with <lb/> a true heart fervently, and employing our <note
-							type="catchword">time</note>
+						another with <lb/> a true heart fervently, and employing our <note type="catchword">time</note>
 					</p>
 				</div>
 				<div type="page" n="61">
-					<pb n="61"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-61.jpg"/>
+					<pb n="61" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-61.jpg"/>
 					<p> time and abilities in glorifying Thee, and <lb/> serving our neighbor in
 						time of need. Par <lb/> don our timiorness in prayer &amp; supplication,
 						<lb/> our want of sympathy with the perishing <lb/> state of our fellow
@@ -1672,8 +1862,7 @@
 						workers with Him; </p>
 				</div>
 				<div type="page" n="62">
-					<pb n="62"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-62.jpg"/>
+					<pb n="62" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-62.jpg"/>
 					<p> direct them by Thy Holy Spirit, give them <lb/> the needful grace and
 						unction, and support <lb/> them under all their difficulties. </p>
 					<lg type="verse">
@@ -1699,14 +1888,12 @@
 						&amp; exercise he had been </p>
 				</div>
 				<div type="page" n="63">
-					<pb n="63"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-63.jpg"/>
+					<pb n="63" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-63.jpg"/>
 					<p> accustomed to do in his garden, and con <lb/> fined him almost entirely to
 						his room. He <lb/> was no more able so take a part in the delibera <lb/>
 						tions of the E.C. which he have previously attended <lb/> with great
 						faithfulness &amp; interest, whenever <lb/> his health would permit; and his
-						intimate <lb/> acquaintance with the official concerns of <lb/> the Cong<hi
-							rend="superscript">n</hi> and those of the Irish Province during <lb/>
+						intimate <lb/> acquaintance with the official concerns of <lb/> the Cong<hi rend="superscript">n</hi> and those of the Irish Province during <lb/>
 						his residence of 18 years in Gracehill qualified <lb/> him for rendering at
 						times very effectual aid <lb/> in these consultations. </p>
 					<p> A fit of the gout to which he was subject <lb/> in winter had usually the
@@ -1723,8 +1910,7 @@
 						with </p>
 				</div>
 				<div type="page" n="64">
-					<pb n="64"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-64.jpg"/>
+					<pb n="64" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-64.jpg"/>
 					<p> gratitude &amp; praises; and the review of the Lords <lb/> dealings with him
 						from his youth, of the <lb/> goodness &amp; mercy which had followed him
 						<lb/> all the days of his life, with which he was <lb/> much occupied in his
@@ -1746,8 +1932,7 @@
 						diligently, and to seek to have </p>
 				</div>
 				<div type="page" n="65">
-					<pb n="65"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-65.jpg"/>
+					<pb n="65" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-65.jpg"/>
 					<p> their hearts and memories deeply and in <lb/> delibly impressed with divine
 						truth; that <lb/> they might enjoy, the comfort &amp; support them <lb/>
 						when no longer able to hear or read it. He <lb/> had taken great pains to
@@ -1764,16 +1949,13 @@
 						continued sensible to the last, but unable <lb/> speak much. About half past
 						one o'clock p.m. <lb/> the next day Dec<hi rend="superscript">r</hi> 30.
 						1830 he expressed a <lb/> to sit up in his easy chair. This had no soon
-						<lb/> been done, than a sudden alteration took place <lb/> B<hi
-							rend="superscript">r</hi> Mallaliece who had left him about <lb/>
+						<lb/> been done, than a sudden alteration took place <lb/> B<hi rend="superscript">r</hi> Mallaliece who had left him about <lb/>
 						minutes before, was immediately sent </p>
 				</div>
 				<div type="page" n="66">
-					<pb n="66"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-66.jpg"/>
+					<pb n="66" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-66.jpg"/>
 					<p> where the Brn &amp; Srs that were about him joined <lb/> in singing a short
-						verse, and he received <lb/> the blessing the Lord, and the Cong<hi
-							rend="superscript">n</hi>. The <lb/> words had scarcely been pronounced
+						verse, and he received <lb/> the blessing the Lord, and the Cong<hi rend="superscript">n</hi>. The <lb/> words had scarcely been pronounced
 						when <lb/> he fell asleep in Jesus without a sigh or <lb/> a groan, or even
 						a motion of hand or foot. </p>
 					<p> Thus did this honored servant of the Lord <lb/> terminate his long &amp;
@@ -1791,8 +1973,7 @@
 						was no bigot; but that his heart expanded </p>
 				</div>
 				<div type="page" n="67">
-					<pb n="67"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-67.jpg"/>
+					<pb n="67" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_78_BenadeSamuel-67.jpg"/>
 					<p> to children of God of every denomination yea <lb/> to the whole human race,
 						that he added to <lb/> brotherly kindness universal charity. </p>
 					<p> During the last 7 years of his life he has <lb/> enjoyed an anticipation of

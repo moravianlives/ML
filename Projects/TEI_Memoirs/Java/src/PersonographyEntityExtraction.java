@@ -48,6 +48,7 @@ public class PersonographyEntityExtraction {
         writer = new PrintWriter(new File(exportPath));
         writer.write(csvHeader.toString());
         scanForOccupations();
+        scanForOffices();
 
 
 
@@ -80,10 +81,36 @@ public class PersonographyEntityExtraction {
 //            csvData.append(',');
 //            csvData.append("Will fill in later");
 //            csvData.append('\n');
-
-
         }
 
+    }
+
+    /**
+     * Scans through the file for <office=... ></office> and adds them to the csv
+     * @throws FileNotFoundException
+     */
+    public void scanForOffices() throws FileNotFoundException {
+        FileReader reader = new FileReader(filePath);
+        Scanner in = new Scanner(reader);
+        String sMatch;
+        while ((sMatch = in.findWithinHorizon(pOffice, 0)) != null) {
+            sMatch = cleanUpString(sMatch);
+            System.out.println(sMatch);
+//            csvData.append("Occupation");
+//            csvData.append(",");
+//            csvData.append();
+//            csvData.append(",");
+//            csvData.append("Ignore column for now");
+//            csvData.append('\n');
+
+
+//            csvData.append(elementName.get(i));
+//            csvData.append(',');
+//            csvData.append(attributeNames.get(i));
+//            csvData.append(',');
+//            csvData.append("Will fill in later");
+//            csvData.append('\n');
+        }
     }
     /**
      * Cleans the String so that it no longer contains new line characters or tabs

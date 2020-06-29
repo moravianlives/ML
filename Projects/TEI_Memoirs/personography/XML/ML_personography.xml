@@ -4430,9 +4430,9 @@
                <relation name="sibling" mutual="John Bradley" notBefore="1753"/>
             </listRelation>
          </listPerson>
-         <!-- not in YF document -->
+         <!-- not in YF document; this entry needs more work -->
          <listPerson>
-            <person xml:id="mlper000408">
+            <person xml:id="mlper000408" sameAs="https://www.wikidata.org/wiki/Q5605963">
                <persName>
                   <forename>John</forename>
                   <surname type="birth">Cennick</surname>
@@ -4448,8 +4448,42 @@
                <event type="baptism" where="#mlpla000320">
                   <desc>baptized at St. Laurence Church, Reading</desc>
                </event>
+               <event type="arrival" where="#mlpla000178" when-iso="1745">
+                  <desc>traveled to Germany to study Moravian doctrines</desc>
+               </event>
+               <event type="reception" where="#mlpla000014" when-iso="1746">
+                  <desc>received into the <orgName religion="Moravian Church">Moravian Church</orgName> at Herrnhaag</desc>
+               </event>
+               <event type="arrival" where="#mlpla000144" notBefore="1746">
+                  <desc>arrived in Dublin</desc>
+               </event>
+               <event type="marriage" when-iso="1747" ref="#mlper000355">
+                  <desc>married Jane Bryant</desc>
+               </event>
+               <event type="ordination" where="#mlpla000054" when-iso="1749">
+                  <desc>ordained a deacon at London</desc>
+               </event>
+               <event type="interment" where="#mlpla000322" when-iso="1755-07">
+                  <desc>interred at Moravian Burial Ground (Sharon's Garden) at Chelsea</desc>
+               </event>
+               <faith notBefore="1745">Moravian</faith>
                <occupation>land surveyor at <placeName ref="#mlpla000111">Reading</placeName></occupation>
+               <occupation notBefore="1740">teacher at <placeName ref="#mlpla000296">Mr. Wesley's school at Kingswood</placeName></occupation>
+               <occupation notBefore="1740">lay preacher</occupation>
+               <occupation notBefore="1740" notAfter="1745">preacher/assistant to George Whitefield in <placeName ref="#mlpla000321">Gloucestershire</placeName> and <placeName ref="#mlpla000082">Wiltshire</placeName></occupation>
+               <office notBefore="1749">deacon</office>
+               <bibl type="memoir" source="#mlpla000001">R_22_08_14</bibl>
+               <note>
+                  Personography information drawn from: memoir, https://www.ccel.org/ccel/hutton/moravian.v.xi.html, https://hymnary.org/person/Cennick_J, https://en.wikipedia.org/wiki/John_Cennick
+               </note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000355" notBefore="1747" notAfter="1755-07-04"/>
+               <relation name="child" passive="George Cennick"/>
+               <relation name="child" passive="Anna Cennick"/>
+               <relation name="sibling" passive="#mlper000227"/>
+               <relation name="sibling" passive="Anna (Stone)"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000429">
@@ -4539,7 +4573,7 @@
             </listRelation>
          </listPerson>
          <listPerson>
-            <person xml:id="mlper000535" sex="m" sameAs="https://www.wikidata.org/wiki/Q5605963">
+            <person xml:id="mlper000535" sex="m">
                <persName>
                   <forename>Peter <addName>Jacob</addName></forename>
                   <surname type="birth">Planta</surname>
@@ -4825,7 +4859,7 @@
                <relation name="parent" active="Johanna (Clough)"/>
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000711" when-iso="1774-09-10"></relation>
+               <relation name="interment" passive="#mlper000711" when-iso="1774-09-10"/>
             </listRelation>
          </listPerson>
          <listPerson>
@@ -4982,56 +5016,38 @@
                </persName>
                <birth>
                   <date type="birth" when-iso="1691-10-07">7 October, 1691</date>
-                  <placeName>Mytholmroyd Parish of Halifax</placeName>
+                  <placeName ref="#mlpla000323">Mytholmroyd Parish of Halifax</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1761-08-03">3 August, 1761</date>
-                  <placeName>King Cross near Halifax</placeName>
+                  <placeName ref="#mlpla000174">King Cross near Halifax</placeName>
                </death>
-               <occupation>cloth dresseer</occupation>
-               <residence><placeName>King Cross Halifax</placeName></residence>
-               <event type="baptism">
-                  <desc>
-                     <placeName>Church of St John the Baptist Halifax</placeName>
-                     <date calendar="Julian" when-iso="1692-09-07">7 September, 1692</date>
-                     <date calendar="Gregorian" when-iso="1692-09-18">18 September, 1692</date>
-                  </desc>
+               <event type="baptism" where="#mlpla000324" when-iso="1692-09-18">
+                  <desc>batpized at Church of St John the Baptist Halifax 18 September, 1692 (7 September, 1692 OS)</desc>
                </event>
-               <event type="reception" when-iso="1744">
-                  <desc> received society <placeName>Halifax</placeName>
-                  </desc>
+               <event type="marriage" where="#mlpla000324" when-iso="1714-11-08"> 
+                  <desc>married Phoebe Haigh at Church of St John the Baptist Halifax 8 November, 1714 (28 October, 1714 OS)</desc>
                </event>
-               <event type="reception">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1749-08-02">2 August, 1749</date>
-                     <date calendar="Gregorian" when-iso="1749-08-13">13 August, 1749</date>
-                  </desc>
+               <event type="reception" where="#mlpla000091" when-iso="1744">
+                  <desc>received into society at Halifax</desc>
                </event>
-               <event type="confirmation">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1750-05-09">9 May, 1750</date>
-                     <date calendar="Gregorian" when-iso="1750-05-20">20 May, 1750</date>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1749-08-13">
+                  <desc>received into congregation at Fulneck 13 August, 1749 (2 August, 1749 OS)</desc>
                </event>
-               <event type="sacrament">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1750-06-06">6 June, 1750</date>
-                     <date calendar="Gregorian" when-iso="1750-06-17">17 June, 1750</date>
-                  </desc>
+               <event type="confirmation" where="#mlpla000003" when-iso="1750-05-20">
+                  <desc>confirmed at Fulneck 20 May, 1750 (9 May, 1750 OS)</desc>
                </event>
-               <event when-iso="1755-04-15">
-                  <desc> founder member Lower Wyke congregation </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1750-06-17">
+                  <desc>sacrament at Fulneck 17 June, 1750 (6 June, 1750 OS)</desc>
                </event>
-               <event type="marriage">
-                  <desc>
-                     <date calendar="Julian" when-iso="1714-10-28">28 October, 1714</date>
-                     <date calendar="Gregorian" when-iso="1714-11-08">8 Nove,ber, 1714</date>
-                     <placeName>Church of St John the Baptist Halifax</placeName>
-                  </desc>
+               <event type="interment" where="#mlpla000003" when-iso="1761-08-05" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               <occupation>apprentice to a clothier for <date dur="P10Y">10 years</date></occupation>
+               <occupation>cloth dresser</occupation>
+               <occupation>volunteer with the King's Dragoons</occupation>
+               <residence><placeName ref="#mlpla000174">King Cross Halifax</placeName></residence>
+               <affiliation type="founder" when-iso="1755-04-15" ref="#mlpla000102">founder member of Lower Wyke congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/43</bibl>
                <note resp="#Yorkshire_Families">(LW)CB/x^>=TATTERSALL, Edmund (1691-1761) b 07.10.1691 Mytholmroyd Parish of Halifax occupation: cloth dresser resided: King Cross Halifax reception; baptized Church of St John
                   the Baptist Halifax 07.09.1692 (OS) / 18.09.1692 (NS), received society Halifax 1744, received congregation Yorkshire in Fulneck 02.08.1749 (OS) / 13.08.1749 (NS), confirmed
@@ -5041,6 +5057,19 @@
                   later Johnson) (b 1724) and John Haigh (b 1718), grandfather of Mary (b 1756), James Christian (b 1758), Phoebe Hannah (b 1760), Rachel (b 1761) and Hannah Tattersall (b 1766) d
                   03.08.1761 aged 69 King Cross near Halifax, interred Fulneck by Br B La Trobe 05.08.1761 grave 199 - 2nd section, 5th row, 10th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Timothy Tattersall"/>
+               <relation name="spouse" mutual="Phoebe Haigh" notBefore="1714-11-08" notAfter="1761-08-03"/>
+               <relation name="parent" active="John Tattersall"/>
+               <relation name="parent" active="Sarah Tattersall"/>
+               <relation name="parent" active="James Tattersall"/>
+               <relation name="parent" active="Mary Tattersall"/>
+               <relation name="parent" active="Martha (Haigh)"/>
+               <relation name="parent" active="Elizabeth Tattersall"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interred" passive="#mlper000697" when-iso="1761-08-05"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000543" sex="m">
@@ -5049,38 +5078,46 @@
                   <surname type="birth">Wood</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1736">1736</date>
-                  <placeName>Holbeck</placeName>
+                  <date type="birth" when-iso="1736-09-05" resp="#Yorkshire_Families">5 September, 1736</date>
+                  <date type="birth" when-iso="1735-08-25" resp="#memoir">25 August, 1735</date>
+                  <placeName ref="#mlpla000089">Holbeck</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1761-02-03">3 Febuary, 1761</date>
-                  <placeName>brethren's house Fulneck</placeName>
+                  <placeName ref="#mlpla000304">Brethren's house Fulneck</placeName>
                </death>
-               <occupation>clothier</occupation>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event type="reception" when-iso="1752">
-                  <desc> received society <placeName>Holbeck</placeName>
-                  </desc>
+               <event type="reception" when-iso="1750" cert="low" ref="#mlper000544">
+                  <desc>received into the <orgName en="greater boys choir">great boys' choir</orgName> by James Charlesworth</desc>
                </event>
-               <event when-iso="1755">
-                  <desc>
-                     <placeName>brethren's house Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000089" when-iso="1752">
+                  <desc>received into society at Holbeck</desc>
                </event>
-               <event type="reception" when-iso="1756-11-13">
-                  <desc> received congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000304" when-iso="1755">
+                  <desc>entered brethren's house at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1757-06-11">
-                  <desc />
+               <!-- memoir says the above happened 1756-07-08 -->
+               <event type="reception" where="#mlpla000003" when-iso="1756-11-13">
+                  <desc>received into congregation at Fulneck</desc>
                </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1757-06-11">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1761-02-05" ref="#mlper000709">
+                  <desc>interred at Fulneck by Abraham Taylor</desc>
+               </event>
+               <occupation>apprentice to a clothier</occupation>
+               <occupation>clothier</occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/52</bibl>
                <note resp="#Yorkshire_Families">(P/F)>WOOD, George (1736-1761) b 05.09.1736 Holbeck occupation: clothier reception: baptized Church of England, received society Holbeck 1752, brethren’s house Fulneck 1755,
                   received congregation Fulneck 13.11.1756, sacrament Fulneck 11.06.1757 d 03.02.1761 aged 24 brethren’s house Fulneck, interred Fulneck by Br A Taylor 06.02.1761 grave 175 - 2nd
                   section, 4th row, 6th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interred" passive="#mlper000709" when-iso="1761-02-05"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000544" sex="m">
@@ -5091,94 +5128,59 @@
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1721-12-05">5 December, 1721</date>
                   <date type="birth" calendar="Gregorian" when-iso="1721-12-16">16 December, 1721</date>
-                  <placeName>Little Gomersal Parish of Birstall</placeName>
+                  <placeName ref="#mlpla000041">Little Gomersal Parish of Birstall</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1770-07-30">30 July, 1770</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
+               <event type="baptism" where="#mlpla000220" when-iso="1722-01-12">
+                  <desc>baptized at St Peter's Church Birstall 12 January, 1722 (1 January, 1721 OS)</desc>
+               </event>
+               <event type="entrance" where="#mlpla000041">
+                  <desc>entered <orgName en="Ingham's society">Ingham's society</orgName> at Little Gomersal</desc>
+               </event>
+               <event type="reception" where="#mlpla000041" when-iso="1742">
+                  <desc> received into society at Little Gomersal</desc>
+               </event>
+               <event type="entrance" where="#mlpla000325" when-iso="1742">
+                  <desc>entered brethren's house Holbeck</desc>
+               </event>
+               <event type="reception" where="#mlpla000084" when-iso="1742-12-08">
+                  <desc>received into congregation at Yorkshire 8 December, 1742 (27 November, 1742 OS)</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000084" when-iso="1743-07-06">
+                  <desc>received into congregation at Yorkshire 6 July, 1743 (25 June, 1743 OS)</desc>
+               </event>
+               <event type="confirmation" where="#mlpla000084" when-iso="1743-12-10">
+                  <desc>confirmed at Yorkshire</desc>
+               </event>
+               <event type="entrance" where="#mlpla000326" when-iso="1744-07-31">
+                  <desc>entered brethren's house at Lane End, Pudsey</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1752-01-11">
+                  <desc>entered brethren's house at Fulneck 11 January, 1752 (31 December, 1751 OS)</desc>
+               </event>
+               <event type="marriage" where="#mlpla000327" when-iso="1754-11-19" ref="#mlper000356">
+                  <desc>married Eleanor Gutbier at Church of St Dunstan's in West London</desc>
+               </event>
+               <event type="ordination" when-iso="1754">
+                  <desc>ordained as a deacon</desc>
+               </event>
                <occupation>cloth worker/cloth dresser</occupation>
-               <event type="baptism">
-                  <desc>
-                     <placeName>St Peter's Church Birstall</placeName>
-                     <date calendar="Julian" when-iso="1721-01-01">1 January, 1721</date>
-                     <date calendar="Gregorian" when-iso="1722-01-12">12 January, 1722</date>
-                  </desc>
-               </event>
-               <event>
-                  <desc>
-                     <orgName>Ingham's society</orgName>
-                     <placeName>Little Gomersal</placeName>
-                  </desc>
-               </event>
-               <event type="reception" when-iso="1742">
-                  <desc> received society <placeName>Little Gomersal</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1742">
-                  <desc>
-                     <placeName>brethren's house Holbeck</placeName>
-                  </desc>
-               </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000084">Yorkshire</placeName>
-                     <date calendar="Julian" when-iso="1742-11-27">27 November, 1742</date>
-                     <date calendar="Gregorian" when-iso="1722-12-8">8 December, 1742</date>
-                  </desc>
-               </event>
-               <event type="sacrament">
-                  <desc> received congregation <placeName ref="#mlpla000084">Yorkshire</placeName>
-                     <date calendar="Julian" when-iso="1743-06-25">25 June, 1743</date>
-                     <date calendar="Gregorian" when-iso="1743-07-06">6 July, 1743</date>
-                  </desc>
-               </event>
-               <event type="confirmation" when-iso="1743-12-10">
-                  <desc>
-                     <placeName ref="#mlpla000084">Yorkshire</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1744-07-31">
-                  <desc>
-                     <placeName>brethren's house Lane End Pudsey</placeName>
-                  </desc>
-               </event>
-               <event>
-                  <desc>
-                     <placeName>brethren's house Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1751-12-31">31 December, 1751</date>
-                     <date calendar="Gregorian" when-iso="1752-01-11">11 January, 1752</date>
-                  </desc>
-               </event>
-               <event when-iso="1755-04-19">
-                  <desc> founder member Fulneck congregation </desc>
-               </event>
-               <event>
-                  <desc> ordained as a deacon </desc>
-               </event>
+               <office when-iso="1744-07-20">single brethren's warden <placeName ref="#mlpla000084">Yorkshire</placeName></office>
                <office when-iso="1744">intercessor <placeName ref="#mlpla000084">Yorkshire</placeName></office>
                <office when-iso="1748-03-26">visitor <placeName ref="#mlpla000084">Yorkshire</placeName></office>
-               <occupation>single brethren's warden <placeName ref="#mlpla000084">Yorkshire</placeName><date calendar="Julian" when-iso="1744-07-20">20 July, 1744</date></occupation>
-               <occupation> single brethren's warden <placeName ref="#mlpla000084">Yorkshire</placeName>
-                  <date calendar="Julian" when-iso="1744-07-20">20 July, 1744</date>
-               </occupation>
                <office when-iso="1744">preacher <placeName ref="#mlpla000084">Yorkshire</placeName></office>
                <office when-iso="1754">congregation warden <placeName ref="#mlpla000084">Yorkshire</placeName></office>
                <office when-iso="1755">congregation warden <placeName ref="#mlpla000003">Fulneck</placeName></office>
-               <office from="1765" to="1767">congregation labourer <placeName>Pudsey</placeName></office>
-               <!--  unity office: deputy General Synod Herrnhut 1756, Marienborn 1764, -->
+               <office from="1765" to="1767">congregation labourer <placeName ref="#mlpla000090">Pudsey</placeName></office>
                <office when-iso="1757">member of the board of administrators</office>
-               <event type="marriage" when-iso="1754-11-19">
-                  <desc>
-                     <placeName>Church of St Dunstan's in the West London</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1767">
-                  <desc> oeconomates’ conference </desc>
-               </event>
                <office when-iso="1756">deputy General at <name event="religious">Synod</name>
                   <placeName ref="#mlpla000001">Herrnhut</placeName></office>
                <office when-iso="1764">deputy General at <name event="religious">Synod</name>
                   <placeName ref="#mlpla000057">Marienborn</placeName></office>
+               <affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/02</bibl>
                <note resp="#Yorkshire_Families">(LW/G/P/F)CBsb#CHARLESWORTH, James (1721-1770) b 05.12.1721 (OS) / 16.12.1721 (NS) Little Gomersal Parish of Birstall occupation: cloth worker / cloth dresser reception: baptized
                   St Peter’s Church Birstall 01.01.1721 (OS) / 12.01.1722 (NS), Ingham’s society Little Gomersal, received society Little Gomersal when first settled 1742, brethren’s house Holbeck

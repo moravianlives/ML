@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-06-24T17:26:31Z. .
+Schema generated from ODD source 2020-06-29T14:08:12Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -4346,7 +4346,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <optional>
             <attribute name="event">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 5] baptism; 6] birth; 7] communion; 8] confirmation; 9] conversion; 10] death; 11] departure; 12] draw lot; 13] ecclesiastical; 14] entrance; 15] exclusion; 16] expulsion; 17] interment; 18] love feast; 19] marriage; 20] ordination; 21] reception; 22] resignation; 23] retirement; 24] sacrament; 25] spiritual; 26] transfer; 27] widowed</a:documentation>
+Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 5] baptism; 6] birth; 7] communion; 8] confirmation; 9] conversion; 10] death; 11] departure; 12] draw lot; 13] ecclesiastical; 14] entrance; 15] exclusion; 16] expulsion; 17] interment; 18] love feast; 19] marriage; 20] ordination; 21] reception; 22] resignation; 23] retirement; 24] sacrament; 25] spiritual; 26] synod; 27] transfer; 28] widowed</a:documentation>
                <choice>
                   <value>acceptance</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -4397,6 +4397,8 @@ Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 
                   <value>sacrament</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>spiritual</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>synod</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>transfer</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -12140,7 +12142,7 @@ Sample values include: 1] primary; 2] secondary; 3] undergraduate; 4] graduate; 
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
-Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 5] baptism; 6] birth; 7] communion; 8] confirmation; 9] conversion; 10] death; 11] departure; 12] draw lot; 13] ecclesiastical; 14] entrance; 15] exclusion; 16] expulsion; 17] interment; 18] love feast; 19] marriage; 20] ordination; 21] reception; 22] resignation; 23] retirement; 24] sacrament; 25] spiritual; 26] transfer; 27] widowed</a:documentation>
+Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 5] baptism; 6] birth; 7] communion; 8] confirmation; 9] conversion; 10] death; 11] departure; 12] draw lot; 13] ecclesiastical; 14] entrance; 15] exclusion; 16] expulsion; 17] interment; 18] love feast; 19] marriage; 20] ordination; 21] reception; 22] resignation; 23] retirement; 24] sacrament; 25] spiritual; 26] synod; 27] transfer; 28] widowed</a:documentation>
                <choice>
                   <value>acceptance</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -12191,6 +12193,8 @@ Suggested values include: 1] acceptance; 2] accident; 3] arrival; 4] awakening; 
                   <value>sacrament</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>spiritual</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>synod</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>transfer</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -12966,13 +12970,17 @@ Sample values include: 1] primary; 2] other; 3] paid; 4] unpaid</a:documentation
          <optional>
             <attribute name="name">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a name for the kind of relationship of which this is an instance.
-Suggested values include: 1] child; 2] interred; 3] parent; 4] sibling; 5] spouse</a:documentation>
+Suggested values include: 1] child; 2] baptism; 3] interment; 4] parent; 5] reception; 6] sibling; 7] spouse</a:documentation>
                <choice>
                   <value>child</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>interred</value>
+                  <value>baptism</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>interment</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>parent</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>reception</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>sibling</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>

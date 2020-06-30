@@ -5340,7 +5340,7 @@
             <person xml:id="mlper000547" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth" resp="#memoir">Astley</surname>
+                  <surname type="variant" resp="#memoir">Astley</surname>
                   <surname type="birth" resp="#Yorkshire_Families">Ashley</surname>
                </persName>
                <birth>
@@ -5399,7 +5399,7 @@
             <person xml:id="mlper000548" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth" resp="#memoir">Bentham</surname>
+                  <surname type="variant" resp="#memoir">Bentham</surname>
                   <surname type="birth" resp="#Yorkshire_Families">Benton</surname>
                </persName>
                <birth>
@@ -5492,9 +5492,8 @@
                <event where="#mlpla000004" when-iso="1765-04-09">
                   <desc> readmitted to society at Fetter Lane</desc>
                </event>
-               <event type="reception" where="" when-iso="1766-01-13">
-                  <desc> received congregation <placeName ref="#mlpla000054">London</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000054" when-iso="1766-01-13">
+                  <desc> received into congregation at London</desc>
                </event>
                <event type="entrance" where="#mlpla000304" when-iso="1767-02-22">
                   <desc>entered brethren's house Fulneck</desc>
@@ -5502,9 +5501,10 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1767-05-23">
                   <desc>sacrament at Fulneck</desc>
                </event>
-               <event type="interment" where="#mlpla000003" when-iso="1770-02-09" ref="#mlper000357 ">
+               <event type="interment" where="#mlpla000003" when-iso="1770-02-09" ref="#mlper000357">
                   <desc>interred at Fulneck by Peter Syms</desc>
                </event>
+               <occupation>apprentice to a Dissenter</occupation>
                <occupation>clothier</occupation>
                <occupation>shopkeeper</occupation>
                <occupation>sailor</occupation>
@@ -5517,48 +5517,41 @@
                   readmitted society Fetter Lane 09.04.1765, received congregation London 13.01.1766, brethren’s house Fulneck 22.02.1767, sacrament Fulneck 23.05.1767 d 06.02.1770 aged 33 brethren’s
                   house Fulneck, interred Fulneck by Br P Syms 09.02.1770 grave 391 - 2nd section, 9th row, 7th grave from path </note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000357" when-iso="1770-02-09"/>
+            </listRelation>
          </listPerson>
+         <!-- Fulneck catalog lists last name as Haigh; name given in memoir is Hugh. Metadata and memoir clearly match the info below for John Hugh found in YF doc. -->
          <listPerson>
             <person xml:id="mlper000550" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth">Haigh</surname>
-                  <name type="variant">Hugh</name>
+                  <surname>Hugh</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1718-11">November 1718</date>
-                  <placeName>Halifax</placeName>
+                  <date type="birth" when-iso="1743-02-06" resp="#Yorkshire_Families">6 February, 1743</date>
+                  <date type="birth" when-iso="1741-02-06" resp="#memoir">6 February, 1741</date>
+                  <placeName ref="#mlpla000200">Freystrop Parish Pembrokeshire</placeName>
                </birth>
-               <occupation>stuff weaver</occupation>
-               <residence>Halifax</residence>
+               <death>
+                  <date type="death" when-iso="1772-05-22">22 May, 1772</date>
+                  <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName>
+               </death>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event type="reception" when-iso="1752">
-                  <desc> received society <placeName>Halifax</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000201" when-iso="1766-05-08">
+                  <desc>received into congregation at Haverfordwest</desc>
                </event>
-               <event type="reception" when-iso="1755-07-23">
-                  <desc> received congnregation <placeName>Lower Wyke in Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000201" when-iso="1767-02-01">
+                  <desc>sacrament at Haverfordwest</desc>
                </event>
-               <event type="sacrament" when-iso="1757-09-03">
-                  <desc>
-                     <placeName>Lower Wyke in Fulneck</placeName>
-                  </desc>
-               </event>
-               <event type="marriage">
-                  <desc>
-                     <placeName>Church of St John the Baptist Halifax</placeName>
-                     <date calendar="Julian" when-iso="1748-11-03">3 November, 1748</date>
-                     <date calendar="Gregorian" when-iso="1748-11-14">14 November, 1748</date>
-                  </desc>
-               </event>
+               <occupation>mason</occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/60</bibl>
-               <note resp="#Yorkshire_Families">(LW)o/x^>HAIGH, John (1718-) b November 1718 Halifax occupation: stuff weaver resided: Halifax reception: baptized Church of England, received society Halifax 1752, received
-                  congregation Lower Wyke in Fulneck 23.07.1755, sacrament Lower Wyke in Fulneck 03.09.1757 m Martha Tattersall (b 1723) Church of St John the Baptist Halifax 03.11.1748 (OS) /
-                  14.11.1748 (NS) family: son-in-law of Edmund Tattersall (b 1692) and Phoebe (née Haigh) (b 1690), brother-in-law of John (b 1715), Sarah (b 1716), James (b 1717), Mary (b 1719) and
-                  Elizabeth Tattersall (b 1724), father of 9 children</note>
+               <note resp="#Yorkshire_Families">(F)HUGH, John (1743-1772) b 06.02.1743 Freystrop Parish Pembrokeshire occupation: mason reception: baptized Church of England, received congregation 
+                  Haverfordwest 08.05.1766, sacrament Haverfordwest 01.02.1767, left Haverfordwest 17.08.1768, brethren’s house Fulneck 28.08.1768 according to the Brethren’s advice 
+                  family: brother of Stephen (b 1745), brother-in-law of Mary (née Davies), uncle of John (b 1780), Mary (b 1781), Elisabeth (b 1784) and Francis (b 1786) d 22.05.1772 aged 31 
+                  brethren’s house Fulneck, interred Fulneck by Br J F Zander 24.05.1772 grave 444 - 1st section, 11th row, 2nd grave from path</note>
             </person>
          </listPerson>
          <listPerson>

@@ -127,7 +127,7 @@
 	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701093737343",
 	"@type": "oa:Annotation",
 	"dcterms:created": "2020-07-01T13:37:37.343Z",
-	"dcterms:issued": "2020-07-01T14:39:35.327Z",
+	"dcterms:issued": "2020-07-01T14:55:11.351Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/clm043",
 		"@type": [
@@ -201,7 +201,7 @@
 	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?place_annotation_20200701103256140",
 	"@type": "oa:Annotation",
 	"dcterms:created": "2020-07-01T14:32:56.140Z",
-	"dcterms:issued": "2020-07-01T14:39:35.330Z",
+	"dcterms:issued": "2020-07-01T14:55:11.354Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/clm043",
 		"@type": [
@@ -277,7 +277,7 @@
 	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?place_annotation_20200701103506088",
 	"@type": "oa:Annotation",
 	"dcterms:created": "2020-07-01T14:35:06.088Z",
-	"dcterms:issued": "2020-07-01T14:39:35.330Z",
+	"dcterms:issued": "2020-07-01T14:55:11.354Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/clm043",
 		"@type": [
@@ -321,6 +321,80 @@
 		"schema:softwareVersion": "1.0"
 	},
 	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701104642923",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T14:46:42.923Z",
+	"dcterms:issued": "2020-07-01T14:55:11.355Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701104642923#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701104642923#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[7]/p/date[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1740-01"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
 }
 ]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
@@ -579,9 +653,9 @@ ful</name> meditation concerning the great
 				</div>
 				<div type="page" n="7">
 					<pb facs="http://moravianlives.bucknell.edu/MAF/Ful_3_04_MoltherPhilipHenry-13.jpg" n="7"/>
-					<p> went to <placeName ref="#mlpla000001">Herrnhut</placeName>, where I was much struck <lb/>
+					<p> went to <placeName ref="#mlpla000001">Herrnhut</placeName>, where I was <name emotion="much struck">much struck</name> <lb/>
 						with the primitive simplicity of the place <lb/> and the singing of all the
-						single brethren <lb/> who were just going in procession through <lb/> the
+						single <roleName type="honorific">brethren</roleName> <lb/> who were just going in procession through <lb/> the
 						place when I arrived. Having <name emotion="enjoyed">enjoy-
 <lb/>
 ed</name> many <name emotion="blessings">blessings</name> during my abode
@@ -596,7 +670,7 @@ ed</name> many <name emotion="blessings">blessings</name> during my abode
 						<date when-iso="1739-09-23">Sept<hi rend="superscript">r</hi> the 23<hi rend="superscript">d</hi></date> I sat out and arrived at <lb/>
 						<placeName ref="#mlpla000054">London</placeName>
 						<date when-iso="1739-10-18">Oct. the 18<hi rend="superscript">th</hi></date>. As no ship was to <lb/> sail <add place="above">to
-								<placeName>Pensylvania</placeName></add>till the middle of Jan<hi rend="superscript">y</hi> I endeavoured <lb/> to spend my time as useful
+								<placeName>Pensylvania</placeName></add>till the <date cert="medium" when="1740-01">middle of Jan<hi rend="superscript">y</hi></date> I endeavoured <lb/> to spend my time as useful
 						as I could, and kept meetings to a member of Germans <lb/> who had been
 						awakened by means of the <lb/> testimony of <roleName type="honorific">brother</roleName>
 						<persName>Richter</persName>, who <del>was</del><add place="above">had</add>
@@ -613,10 +687,10 @@ ed</name> many <name emotion="blessings">blessings</name> during my abode
 						then cared for by the <roleName type="honorific">Rev<hi rend="superscript">d</hi></roleName>
 						<persName>John</persName> &amp; <lb/>
 						<persName>charles Wesly</persName>. As these people did not <lb/> rightly
-						know what they were at they were <lb/> come into a strange fanatical way, so
+						know what they were at they were <lb/> come into a <name emotion="strange">strange</name> <name emotion="fanatical">fanatical</name> way, so
 						<lb/> that I did not know what to think when <lb/> I came for the first time
-						into their mee- <lb/> tings and heard them sigh grown and howl <lb/> in a
-						very strange manner, which they cal- <lb/> led the demonstration of the
+						into their mee- <lb/> tings and heard them <name emotion="sigh">sigh</name> <name emotion="groan">grown</name> and <name emotion="howl">howl</name> <lb/> in a
+						<name emotion="very strange">very strange</name> manner, which they cal- <lb/> led the demonstration of the
 						spirit and the <lb/> power of <persName type="deity">God</persName>. at
 						speaking with the indi- <lb/> viduals of this society, I found many <lb/>
 						<name emotion="deeply concerned">deeply concerned</name> for their souls. As <lb/> deficient as I was in expressing

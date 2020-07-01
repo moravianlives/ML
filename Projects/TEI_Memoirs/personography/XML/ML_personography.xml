@@ -5340,7 +5340,7 @@
             <person xml:id="mlper000547" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth" resp="#memoir">Astley</surname>
+                  <surname type="variant" resp="#memoir">Astley</surname>
                   <surname type="birth" resp="#Yorkshire_Families">Ashley</surname>
                </persName>
                <birth>
@@ -5399,7 +5399,7 @@
             <person xml:id="mlper000548" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth" resp="#memoir">Bentham</surname>
+                  <surname type="variant" resp="#memoir">Bentham</surname>
                   <surname type="birth" resp="#Yorkshire_Families">Benton</surname>
                </persName>
                <birth>
@@ -5492,9 +5492,8 @@
                <event where="#mlpla000004" when-iso="1765-04-09">
                   <desc> readmitted to society at Fetter Lane</desc>
                </event>
-               <event type="reception" where="" when-iso="1766-01-13">
-                  <desc> received congregation <placeName ref="#mlpla000054">London</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000054" when-iso="1766-01-13">
+                  <desc> received into congregation at London</desc>
                </event>
                <event type="entrance" where="#mlpla000304" when-iso="1767-02-22">
                   <desc>entered brethren's house Fulneck</desc>
@@ -5502,9 +5501,10 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1767-05-23">
                   <desc>sacrament at Fulneck</desc>
                </event>
-               <event type="interment" where="#mlpla000003" when-iso="1770-02-09" ref="#mlper000357 ">
+               <event type="interment" where="#mlpla000003" when-iso="1770-02-09" ref="#mlper000357">
                   <desc>interred at Fulneck by Peter Syms</desc>
                </event>
+               <occupation>apprentice to a Dissenter</occupation>
                <occupation>clothier</occupation>
                <occupation>shopkeeper</occupation>
                <occupation>sailor</occupation>
@@ -5517,49 +5517,57 @@
                   readmitted society Fetter Lane 09.04.1765, received congregation London 13.01.1766, brethren’s house Fulneck 22.02.1767, sacrament Fulneck 23.05.1767 d 06.02.1770 aged 33 brethren’s
                   house Fulneck, interred Fulneck by Br P Syms 09.02.1770 grave 391 - 2nd section, 9th row, 7th grave from path </note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000357" when-iso="1770-02-09"/>
+            </listRelation>
          </listPerson>
+         <!-- Fulneck catalog lists last name as Haigh; name given in memoir is Hugh. Metadata and memoir clearly match the info below for John Hugh found in YF doc. -->
          <listPerson>
             <person xml:id="mlper000550" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname type="birth">Haigh</surname>
-                  <name type="variant">Hugh</name>
+                  <surname type="birth">Hugh</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1718-11">November 1718</date>
-                  <placeName>Halifax</placeName>
+                  <date type="birth" when-iso="1743-02-06" resp="#Yorkshire_Families">6 February, 1743</date>
+                  <date type="birth" when-iso="1741-02-06" resp="#memoir">6 February, 1741</date>
+                  <placeName ref="#mlpla000200">Freystrop Parish Pembrokeshire</placeName>
                </birth>
-               <occupation>stuff weaver</occupation>
-               <residence>Halifax</residence>
+               <death>
+                  <date type="death" when-iso="1772-05-22">22 May, 1772</date>
+                  <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName>
+               </death>
                <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event type="reception" when-iso="1752">
-                  <desc> received society <placeName>Halifax</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000201" when-iso="1766-05-08">
+                  <desc>received into congregation at Haverfordwest</desc>
                </event>
-               <event type="reception" when-iso="1755-07-23">
-                  <desc> received congnregation <placeName>Lower Wyke in Fulneck</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000201" when-iso="1767-02-01">
+                  <desc>sacrament at Haverfordwest</desc>
                </event>
-               <event type="sacrament" when-iso="1757-09-03">
-                  <desc>
-                     <placeName>Lower Wyke in Fulneck</placeName>
-                  </desc>
+               <event type="departure" where="#mlpla000201" when-iso="1768-08-17">
+                  <desc>left Haverfordwest</desc>
                </event>
-               <event type="marriage">
-                  <desc>
-                     <placeName>Church of St John the Baptist Halifax</placeName>
-                     <date calendar="Julian" when-iso="1748-11-03">3 November, 1748</date>
-                     <date calendar="Gregorian" when-iso="1748-11-14">14 November, 1748</date>
-                  </desc>
+               <event type="entrance" where="#mlpla000304" when-iso="1768-08-28">
+                  <desc>entered brethren’s house at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1772-05-24" ref="#mlper000718">
+                  <desc>interred at Fulneck by John Frederick Zander</desc>
+               </event>
+               <occupation>mason</occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/60</bibl>
-               <note resp="#Yorkshire_Families">(LW)o/x^>HAIGH, John (1718-) b November 1718 Halifax occupation: stuff weaver resided: Halifax reception: baptized Church of England, received society Halifax 1752, received
-                  congregation Lower Wyke in Fulneck 23.07.1755, sacrament Lower Wyke in Fulneck 03.09.1757 m Martha Tattersall (b 1723) Church of St John the Baptist Halifax 03.11.1748 (OS) /
-                  14.11.1748 (NS) family: son-in-law of Edmund Tattersall (b 1692) and Phoebe (née Haigh) (b 1690), brother-in-law of John (b 1715), Sarah (b 1716), James (b 1717), Mary (b 1719) and
-                  Elizabeth Tattersall (b 1724), father of 9 children</note>
+               <note resp="#Yorkshire_Families">(F)HUGH, John (1743-1772) b 06.02.1743 Freystrop Parish Pembrokeshire occupation: mason reception: baptized Church of England, received congregation 
+                  Haverfordwest 08.05.1766, sacrament Haverfordwest 01.02.1767, left Haverfordwest 17.08.1768, brethren’s house Fulneck 28.08.1768 according to the Brethren’s advice 
+                  family: brother of Stephen (b 1745), brother-in-law of Mary (née Davies), uncle of John (b 1780), Mary (b 1781), Elisabeth (b 1784) and Francis (b 1786) d 22.05.1772 aged 31 
+                  brethren’s house Fulneck, interred Fulneck by Br J F Zander 24.05.1772 grave 444 - 1st section, 11th row, 2nd grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="sibling" mutual="Stephen Hugh"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000718" when-iso="1772-05-24"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000551" sex="m">
@@ -5570,50 +5578,49 @@
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1729-02-01">1 Febuary, 1729</date>
                   <date type="birth" calendar="Gregorian" when-iso="1730-02-12">12 Febuary, 1730</date>
-                  <placeName>West Tythertonn Wiltshire</placeName>
+                  <placeName ref="#mlpla000333">West Tytherton Wiltshire</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1761-11-16">16 November, 1761</date>
-                  <placeName>brethren’s house Fulneck</placeName>
+                  <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName>
                </death>
+               <event type="baptism" where="#mlpla000334" when-iso="1730-02-15">
+                  <desc>baptized at St Andrew's Church Chippenham 15 Febuary, 1730 (4 Febuary, 1729 OS)</desc>
+               </event>
+               <event type="reception" where="#mlpla000082">
+                  <desc>received into society at Wiltshire</desc>
+               </event>
+               <event type="reception" where="#mlpla000335" when-iso="1755" ref="#mlper000358">
+                  <desc>received into Single Brethren's House at Foxham by Christian Schultze</desc>
+               </event>
+               <event type="reception" where="#mlpla000066" when-iso="1756-11-13">
+                  <desc>received into congregation at Tytherton</desc>
+               </event>
+               <event type="confirmation" where="#mlpla000066" when-iso="1758-04-16">
+                  <desc>confirmed at Tytherton</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000066" when-iso="1758-05-24">
+                  <desc>sacrament at Tytherton</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1761-06-05">
+                  <desc>entered brethren’s house at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1761-11-17" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
+               </event>
                <occupation when-iso="1756">day labourer</occupation>
                <occupation when-iso="1761">dairyman</occupation>
-               <event type="baptism">
-                  <desc>
-                     <placeName>St Andrew's Church Chippenham</placeName>
-                     <date calendar="Julian" when-iso="1729-02-04">4 Febuary, 1729</date>
-                     <date calendar="Gregorian" when-iso="1730-02-15">15 Febuary, 1730</date>
-                  </desc>
-               </event>
-               <event type="reception">
-                  <desc> received society <placeName>Wiltshire</placeName>
-                  </desc>
-               </event>
-               <event type="reception" when-iso="1756-11-13">
-                  <desc> received congregation <placeName ref="#mlpla000066">Wiltshire at Tytherton</placeName>
-                  </desc>
-               </event>
-               <event type="confirmation" when-iso="1758-04-16">
-                  <desc>
-                     <placeName ref="#mlpla000066">Wiltshire at Tytherton</placeName>
-                  </desc>
-               </event>
-               <event type="sacrament" when-iso="1758-05-24">
-                  <desc>
-                     <placeName ref="#mlpla000066">Wiltshire at Tytherton</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1761-06-05">
-                  <desc>
-                     <placeName>brethren’s house Fulneck</placeName>
-                  </desc>
-               </event>
+               <occupation>cook at <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName></occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/59</bibl>
-               <note resp="#Yorkshire_Families">(F)PLAISTED, John (1730-1761) b 01.02.1729 (OS) 12.02.1730 (NS) West Tytherton Wiltshire occupation: day labourer 1756, dairyman 1761 reception: baptized St Andrew’s Church
-                  Chippenham 04.02.1729 (OS) / 15.02.1730 (NS), received society Wiltshire, received congregation Wiltshire at Tytherton 13.11.1756, confirmed Wiltshire at Tytherton 16.04.1758,
+               <note resp="#Yorkshire_Families">(F)PLAISTED, John (1730-1761) b 01.02.1729 (OS) 12.02.1730 (NS) West Tytherton Wiltshire occupation: day labourer 1756, dairyman 1761 reception: baptized St Andrew’s 
+                  Church Chippenham 04.02.1729 (OS) / 15.02.1730 (NS), received society Wiltshire, received congregation Wiltshire at Tytherton 13.11.1756, confirmed Wiltshire at Tytherton 16.04.1758,
                   sacrament Wiltshire at Tytherton 24.05.1758, brethren’s house Fulneck 05.06.1761 d 16.11.1761 aged 31 of smallpox brethren’s house Fulneck, interred Fulneck by Br B La Trobe
                   17.11.1761 grave 202 - 2nd section, 5th row, 8th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000697" when-iso="1761-11-17"/>
+               <relation name="reception" passive="#mlper000358" when-iso="1755"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000552" sex="m">
@@ -5623,64 +5630,51 @@
                </persName>
                <birth>
                   <date type="birth" when-iso="1703-07">July 1703</date>
-                  <placeName>Lightcliffe Parish of Halifax</placeName>
+                  <placeName ref="#mlpla000336">Lightcliffe Parish of Halifax</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1773-06-30">30 June, 1773</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="marriage" where="#mlpla000324" when-iso="1727-07-27">
+                  <desc>married Rebecca Nichols at Church of St John the Baptist Halifax 27 July, 1727 (16 July, 1727 OS)</desc>
+               </event>
+               <event type="entrance" where="#mlpla000336">
+                  <desc>entered <orgName en="Ingham's society">Ingham's society</orgName> at Lightcliffe</desc>
+               </event>
+               <event type="reception" where="#mlpla000103" when-iso="1744">
+                  <desc>received into society at Norwood Green</desc>
+               </event>
+               <event type="widowed" where="#mlpla000336" when-iso="1746-03-29">
+                  <desc>widowed</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1750-11-13">
+                  <desc>received into congregation at Fulneck 13 November, 1750 (2 November, 1750 OS)</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1751-06-21">
+                  <desc>sacrament at Fulneck 21 June, 1751 (10 June, 1751 OS)</desc>
+               </event>
+               <event type="transfer" where="#mlpla000102" when-iso="1752">
+                  <desc>transferred to Newhouse society</desc>
+               </event>
+               <event type="transfer" where="#mlpla000090" when-iso="1758">
+                  <desc>transferred to congregation at Pudsey</desc>
+               </event>
+               <event type="transfer" where="#mlpla000003" when-iso="1758">
+                  <desc>transferred to congregation at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1773-07-03" ref="#mlper000711">
+                  <desc>interred at Fulneck by Erasmus Miller</desc>
+               </event>
+               <occupation notBefore="1711">apparentice to a Norwich carrier</occupation>
                <occupation when-iso="1727">labourer</occupation>
                <occupation when-iso="1750">husbandman</occupation>
-               <residence from="1703" to="1758"><placeName>Lightcliffe</placeName></residence>
-               <event type="baptism">
-                  <desc><orgName religion="Anglican">Church of England</orgName></desc>
-               </event>
-               <event>
-                  <desc>
-                     <orgName>Ingham's society</orgName>
-                     <placeName>Lightcliffe</placeName>
-                  </desc>
-               </event>
-               <event type="reception" when-iso="1744">
-                  <desc> received society <placeName>Norwood Green</placeName>
-                  </desc>
-               </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1750-11-02">2 November, 1750</date>
-                     <date calendar="Gregorian" when-iso="1750-11-13">13 November, 1750</date>
-                  </desc>
-               </event>
-               <event type="sacrament">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1751-06-10">10 June, 1751</date>
-                     <date calendar="Gregorian" when-iso="1751-06-21">21 June, 1751</date>
-                  </desc>
-               </event>
-               <event type="transfer" when-iso="1752">
-                  <desc> Newhouse society </desc>
-               </event>
-               <event when-iso="1754">
-                  <desc>Newhouse society renamed Wyke</desc>
-               </event>
-               <event when-iso="1755-04-15">
-                  <desc> founder member Lower Wyke congregationn </desc>
-               </event>
-               <event type="transfer" when-iso="1758">
-                  <desc> Pudsey congregationnn </desc>
-               </event>
-               <event type="transfer" when-iso="1758">
-                  <desc> congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
-               </event>
-               <event type="marriage">
-                  <desc>
-                     <placeName>Church of St John the Baptist Halifax</placeName>
-                     <date calendar="Julian" when-iso="1727-07-16">16 July, 1727</date>
-                     <date calendar="Gregorian" when-iso="1727-07-27">27 July, 1727</date>
-                  </desc>
-               </event>
+               <residence from="1703" to="1758"><placeName ref="#mlpla000336">Lightcliffe</placeName></residence>
+               <residence notBefore="1758-11-27"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
+               <affiliation type="founder" when-iso="1755-04-15" ref="#mlpla000102">founder member of Wyke congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/74</bibl>
                <note resp="#Yorkshire_Families">(LW/P/F)CB+^>=#SKELTON, John (1703-1773) b July 1703 Lightcliffe Parish of Halifax occupation: labourer 1727, husbandman 1750 resided: Lightcliffe 1703-1758 reception: baptized
                   Church of England, Ingham’s society Lightcliffe, received society Norwood Green 1744, received congregation Yorkshire in Fulneck 02.11.1750 (OS) / 13.11.1750 (NS), sacrament
@@ -5689,64 +5683,130 @@
                   1746-1748 family: father of Abraham (b 1728), John (b 1730), Mary (b 1732), Jeremiah (b 1736), William (b 1739), Joseph (b 1742), Rebecca (b 1744) and Ann (b 1746), father-in-law of
                   Ann (née Fawcet) and Hannah (b 1727) d 30.06.1773 aged 69 Fulneck, interred Fulneck by Br E Miller 03.07.1773 grave 471 - 2nd section, 12th row, 1st grave by path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="Rebecca Nichols" notBefore="1727-07-27" notAfter="1746-03-29"/>
+               <relation name="child" active="Abraham Skelton"/>
+               <relation name="child" active="John Skelton" notBefore="1730"/>
+               <relation name="child" active="Mary Skelton"/>
+               <relation name="child" active="Jeremiah Skelton"/>
+               <relation name="child" active="William Skelton"/>
+               <relation name="child" active="Joseph Skelton"/>
+               <relation name="child" active="Rebecca Skelton" notBefore="1744"/>
+               <relation name="child" active="Ann Skelton"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000711" when-iso="1773-07-03"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000553" sex="m">
                <persName>
                   <forename>Joseph</forename>
-                  <surname>Carr</surname>
+                  <surname type="birth">Carr</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1764-08-27">27 August, 1764</date>
-                  <placeName>Pudsey</placeName>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
                </birth>
                <death>
                   <date type="death" when-iso="1796-12-05">5 December, 1796</date>
-                  <placeName>Pudsey</placeName>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
                </death>
-               <event type="baptism" when-iso="1764-08-30">
-                  <desc>
-                     <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="baptism" where="#mlpla000003" when-iso="1764-08-30" ref="#mlper000689">
+                  <desc>baptized at Fulneck by Gottlob John Hauptman</desc>
                </event>
-               <event>
-                  <desc>
-                     <placeName>brethren's house Fulneck</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000304">
+                  <desc>entered brethren's house Fulneck</desc>
                </event>
-               <event type="reception" when-iso="1791-12-26">
-                  <desc> received congregation <placeName ref="#mlpla000003">Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1791-12-26">
+                  <desc>received into congregation at Fulneck</desc>
                </event>
-               <event type="sacrament" when-iso="1792-08-29">
-                  <desc>
-                     <placeName ref="#mlpla000003" />
-                  </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1792-08-29">
+                  <desc>sacrament at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when="1796-12-10" ref="#mlper000359">
+                  <desc>interred at Fulneck by William Arme</desc>
+               </event>
+               <occupation>apprentice to shopkeeper</occupation> 
+               <occupation>housekeeper</occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/14</bibl>
                <note resp="#Yorkshire_Families">CARR, Joseph (1764-1796) b 27.08.1764 Pudsey occupation: tailor reception: baptized Fulneck by Br G J Hauptman 30.08.1764, brethren’s house Fulneck, received congregation Fulneck
                   26.12.1791, sacrament Fulneck 29.08.1792 family: son of Joseph Carr (b 1720) and Frances (née Wilson) (b 1717) d 05.12.1796 aged 32 Pudsey of a consumptive sickness interred Fulneck
-                  by Br W Arme 10.12.1796 grave 1008 - 2nd section, 35th row, 7th grave fro</note>
+                  by Br W Arme 10.12.1796 grave 1008 - 2nd section, 35th row, 7th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Joseph Carr" notBefore="1720"/>
+               <relation name="child" passive="Frances (Wilson) Carr"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000689" when-iso="1764-08-30"/>
+               <relation name="interment" passive="#mlper000359" when="1796-12-10"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000554" sex="m">
                <persName>
                   <forename>Joseph</forename>
-                  <surname>Haley</surname>
+                  <surname type="birth">Haley</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1727-06-25">25 June, 1727</date>
+                  <placeName ref="#mlpla000253">Liversedge</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1772-07-10">10 July, 1772</date>
+                  <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000041" when-iso="1759-10">
+                  <desc>received into society at Gomersal</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1761-03-23">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1761-04-08">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1761-12-19">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000337" when-iso="1763-12-26">
+                  <desc>entered brethren’s house Bedford</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1767-03-26">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000338" when-iso="1768-06-03">
+                  <desc>entered brethren’s house Wellhouse</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1772-07-10">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1772-07-12" ref="#mlper000709">
+                  <desc>interred at Fulneck by Abraham Taylor</desc>
+               </event>
+               <occupation notAfter="1738">apprentice to a broad-clothier for <date dur="P10Y">10 years</date> in <placeName ref="#mlpla000099">Hartshead</placeName></occupation>
+               <occupation notBefore="1763" notAfter="1767">cook at <placeName ref="#mlpla000337">brethren’s house Bedford</placeName></occupation>
+               <residence>with the single man <persName ref="#mlper000626">William Taylor</persName> at <placeName ref="#mlpla000097">Cleckheaton</placeName></residence>
+               <residence><placeName ref="#mlpla000035">Duckenfield</placeName></residence>
+               <residence notBefore="1770-06" notAfter="1772-07-10">Oeconomy at <placeName ref="#mlpla000059">Mirfield</placeName></residence>
                <bibl type="memoir" source="#mlpla000003">Ful/3/36</bibl>
                <note resp="#Yorkshire_Families">(G/F/W)x+HALEY, Joseph (1727-1772) b 25.06.1727 Liversedge occupation: clothier, cook brethren’s house Bedford 1763-1767 reception: baptized Church of England, received society
                   Gomersal October 1759, brethren’s house Fulneck 08.04.1761, received congregation Fulneck 23.03.1761, sacrament Fulneck 19.12.1761, brethren’s house Bedford 26.12.1763, brethren’s
                   house Fulneck 26.03.1767, brethren’s house Wellhouse 03.06.1768, brethren’s house Fulneck d 10.07.1772 aged 45 brethren’s house Fulneck, interred Fulneck by Br A Taylor 12.07.1772
                   grave 452 - 2nd section, 11th row, 4th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000709" when-iso="1772-07-12"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000555" sex="m">
                <persName>
                   <forename>Joshua</forename>
-                  <surname>Barker</surname>
+                  <surname type="birth">Barker</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1696-12-11">11 December, 1696</date>
@@ -5754,46 +5814,47 @@
                </birth>
                <death>
                   <date type="death" when-iso="1761-03-24">24 March, 1761</date>
-                  <placeName>Hopton Mirfield</placeName>
+                  <placeName ref="#mlpla000339">Hopton Mirfield</placeName>
                </death>
                <event type="baptism">
-                  <desc>
-                     <orgName religion="Anglican">Church of England</orgName>
-                  </desc>
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
-               <event>
-                  <desc><orgName>Ingham's society</orgName>
-                     <placeName ref="#mlpla000059">Mirfield</placeName></desc>
+               <event type="marriage" when-iso="1719-07-13">
+                  <desc>married Hannah Barker</desc>
                </event>
-               <event type="reception" when-iso="1746">
-                  <desc> received society <placeName ref="#mlpla000059">Mirfield</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000059">
+                  <desc>entered <orgName>Ingham's society</orgName> at Mirfield</desc>
                </event>
-               <event type="reception">
-                  <desc> received congregation <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                     <date calendar="Julian" when-iso="1752-04-22">22 April, 1752</date>
-                     <date calendar="Gregorian" when-iso="1752-05-03">3 May, 1752</date>
-                  </desc>
+               <event type="reception" where="#mlpla000059" when-iso="1746">
+                  <desc>received into society at Mirfield</desc>
                </event>
-               <event type="sacrament" when-iso="1752-11-19">
-                  <desc>
-                     <placeName ref="#mlpla000003">Yorkshire in Fulneck</placeName>
-                  </desc>
+               <event type="reception" where="#mlpla000003" when-iso="1752-05-03">
+                  <desc>received into congregation at Fulneck 3 May, 1752 (22 April, 1752 OS)</desc>
                </event>
-               <event when-iso="1755-04-16">
-                  <desc> founder member Wellhouse congregation </desc>
+               <event type="sacrament" where="#mlpla000003" when-iso="1752-11-19">
+                  <desc>sacrament at Fulneck</desc>
                </event>
-               <event type="marriage">
-                  <desc> </desc>
+               <event type="interment" where="#mlpla000003" when-iso="1761-03-27" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               <occupation notBefore="1715">apprentice to a broad-clothier</occupation>
                <occupation>weaver</occupation>
-               <residence>Hopton</residence>
+               <office notBefore="1760-01">band servant</office>
+               <residence><placeName ref="#mlpla000339">Hopton</placeName></residence>
+               <affiliation type="founder" when-iso="1755-04-16" ref="#mlpla000330">founder member of Wellhouse congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/58</bibl>
                <note resp="#Yorkshire_Families"> (W)CB/+^>=#BARKER, Joshua (1696-1761) b 11.12.1696 Mirfield occupation: weaver resided: Hopton reception: baptized Church of England, Ingham’s society Mirfield, received society
                   Mirfield 1746, received congregation Yorkshire in Fulneck 22.04.1752 (OS) / 03.05.1752 (NS), sacrament Yorkshire in Fulneck 19.11.1752, founder member Wellhouse congregation
                   16.04.1755 m Hannah (b 1695) family: father of Joshua (b 1734), father-in-law of Martha (née Sissop) (b 1728) d 24.03.1761 aged 64 Hopton Mirfield, interred Fulneck by Br B La Trobe
                   27.03.1761 grave 182 - 2nd section, 4th row, 5th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="Hannah Barker" notBefore="1719-07-13" notAfter="1761-03-24"/>
+               <relation name="parent" active="Joshua Barker" notBefore="1734"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000697" when-iso="1761-03-27"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000556" sex="m">
@@ -5809,7 +5870,7 @@
             <person xml:id="mlper000557" sex="m">
                <persName>
                   <forename>Samuel Traugott</forename>
-                  <surname>BenadeBe</surname>
+                  <surname>Benade</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1746-10-20">20 September, 1746</date>

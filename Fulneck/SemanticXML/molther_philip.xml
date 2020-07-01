@@ -96,7 +96,81 @@
 			</sourceDesc>
 		</fileDesc>
 		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701093737343",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T13:37:37.343Z",
+	"dcterms:issued": "2020-07-01T13:47:25.983Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/clm043",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": null,
+		"foaf:nick": "clm043"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701093737343#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/clm043/ML/master/Fulneck/SemanticXML/molther_philip.xml?date_annotation_20200701093737343#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1737"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000561">Phillip Molther</persName>
@@ -194,12 +268,12 @@ upon me,</name> and to assure me of my being
 						to accept of a living, he withdrew his <lb/> asistance, which on the one
 						hand obliged <lb/> me to find my support by teaching frensh <lb/> but set me
 						on the other hand at liberty <lb/> from accepting my father's proposal
-						con <lb/> trary to the dictates of my heart. <persName>Christian <lb/>
+						con <lb/> trary to the <name emotion="dictates of my heart">dictates of my heart</name>. <persName>Christian <lb/>
 							<add place="above">Renatus de</add> Zinzendorf</persName> coming in the
 						year <date when-iso="1737">1737</date>
 						<lb/> under the care of <persName>John Nitchman</persName>, to <lb/>
 						<placeName>Jena</placeName>, I had the <name emotion="pleasure">pleasure</name> <name occupation="teacher">to be his teacher <lb/> in music and the frensh language</name>. About
-						easter the same year the late ordinar <lb/> travelling through
+						<name event="ecclesiastical">easter</name> <date when="1737" cert="high">the same year</date> the late ordinar <lb/> travelling through
 							<persName>Jena</persName>, he had an enteview <lb/> with all those who
 						were employed to teach <lb/> his son, and asked every one, after he had
 						<lb/> first spoke with each of us separately: <lb/>Wether we were willing to
@@ -216,13 +290,13 @@ upon me,</name> and to assure me of my being
 						<name emotion="with my whole heart">with
 <lb/>
 my whole heart</name>, for not doing it will <lb/> render me an
-						unfortunate man. But to <lb/> be <name emotion="devoted">devoted</name> to the
+						<name emotion="unfortunate">unfortunate</name> man. But to <lb/> be <name emotion="devoted">devoted</name> to the
 							<orgName>Congregation</orgName> I do not <lb/> understand." He
 						replied: "It is very well, <lb/> this matter is only for such as
 						understand <lb/> it, meanwhile you may continue to instruct <lb/> my
 						son". In <date when-iso="1737-06">June of the same year</date> our <lb/>
 						<roleName type="honorific">Saviour</roleName> was <name emotion="pleased">pleased</name> to convince me, in
-						<lb/> a most striking manner of my call <lb/> of to the brethren's
+						<lb/> a most <name emotion="striking">striking</name> manner of my call <lb/> of to the <roleName type="honorific">brethren's</roleName>
 						church, which time I <lb/> never shall forget. Till now I thought <lb/> as
 						is common in my circumstances, that <lb/> I was bound in duty to serve my
 						native <lb/> country, which had prevented me from to <note type="catchword">see</note>

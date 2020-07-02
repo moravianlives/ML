@@ -5993,7 +5993,18 @@
                   <date type="death" when-iso="1772-12-29">29 December, 1772</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
+               <event type="baptism" where="#mlpla000003" when-iso="1757-05-22" ref="#mlper000328">
+                  <desc>baptized at Fulneck by Johann Christopher Pyrlaeus</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1769-05-05">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1772-12-31" ref="#mlper000711">
+                  <desc>interred at Fulneck by Erasmus Miller</desc>
+               </event>
+               <education notAfter="1768-06"><placeName ref="#mlpla000341">Brethren's School at Lane End</placeName></education>
                <occupation>glover</occupation>
+               <affiliation type="choir"><orgName en="greater boys choir">Great Boys' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/29</bibl>
                <note resp="#Yorkshire_Families">(P/F)FENTON, Richard (1757-1772) b 16.05.1757 Pudsey Parish of Calverley occupation: glover reception: baptized Fulneck by Br J C Pyrlaeus 22.05.1757, 
                   brethren’s house Fulneck 05.05.1769 family: son of Richard Fenton (b 1724) and Mary (née Rayner) (b 1726), grandson of Joseph Fenton, and Joshua Rayner, stepson of 
@@ -6001,48 +6012,56 @@
                   Hannah Alice (b 1761), Joseph (b 1763) and Hannah (Kirkland) (b 1766), step-brother of Hannah (b 1747) and Mary Burnell (b 1749) d 29.12.1772 aged 15 Fulneck, 
                   interred Fulneck by Br E Miller 31.12.1772 grave 464 - 2nd section, 11th row, 9th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Richard Fenton" notBefore="1724"/>
+               <relation name="child" passive="Mary (Rayner) Fenton"/>
+               <relation name="sibling" mutual="Ann Fenton"/>
+               <relation name="sibling" mutual="Elizabeth (Rogers)"/>
+               <relation name="sibling" mutual="Joseph Fenton"/>
+               <relation name="sibling" mutual="Johannes Fenton"/>
+               <relation name="sibling" mutual="Anna Mary Fenton"/>
+               <relation name="sibling" mutual="Sophia Fenton"/>
+               <relation name="sibling" mutual="Hannah Alice Fenton" notBefore="1761"/>
+               <relation name="sibling" mutual="Joseph Fenton"/>
+               <relation name="sibling" mutual="Hannah (Kirkland)" notBefore="1766"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000328" when-iso="1757-05-22"/>
+               <relation name="interment" passive="#mlper000711" when-iso="1772-12-31"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000557" sex="m">
                <persName>
-                  <forename>Samuel Traugott</forename>
-                  <surname>Benade</surname>
+                  <forename>Samuel</forename>
+                  <addName>Traugott</addName>
+                  <surname type="birth">Benade</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1746-10-20">20 September, 1746</date>
-                  <placeName ref="#mlpla000080">Bautzen Upper Lusatia</placeName>
+                  <date type="birth" when-iso="1746-10-20" resp="#Yorkshire_Families">20 October, 1746</date>
+                  <date type="birth" when-iso="1746-10-28" resp="#memoir">28 October, 1746</date>
+                  <placeName ref="#mlpla000249" resp="#Yorkshire_Families">Bautzen, Upper Lusatia</placeName>
+                  <placeName ref="#mlpla000248" resp="#memoir">Milkel, Upper Lusatia</placeName> 
                </birth>
                <death>
                   <date type="death" when-iso="1830-12-30">30 December, 1830</date>
                   <placeName ref="#mlpla000040">Gracehill</placeName>
                </death>
-               <occupation>literatus</occupation>
-               <occupation>hymn writer</occupation>
                <event type="baptism">
-                  <desc><orgName religion="Lutheran">Lutheran Church</orgName></desc>
+                  <desc>baptized in the <orgName religion="Lutheran">Lutheran Church</orgName></desc>
                </event>
-               <event when-iso="1754-05-24">
-                  <desc>
-                     <placeName>brethren's house Uhyst</placeName>
-                  </desc>
+               <event type="entrance" where="#mlpla000342" when-iso="1754-05-24">
+                  <desc>entered brethren's house Uhyst</desc>
                </event>
                <event type="reception" when-iso="1759-11-26">
                   <desc> received congregation <placeName ref="#mlpla000001">Herrnhut</placeName>
                   </desc>
                </event>
-               <event type="sacrament" when-iso="1761-01-17">
-                  <desc>
-                     <placeName>Niesky</placeName>
-                  </desc>
+               <event type="sacrament" where="#mlpla000251" when-iso="1761-01-17">
+                  <desc>sacrament at Niesky</desc>
                </event>
-               <event>
-                  <desc>
-                     <placeName>brethren's house Fulneck</placeName>
-                  </desc>
-               </event>
-               <event when-iso="1772-06-14">
-                  <desc> received as acoluth <placeName ref="#mlpla000022">Barby</placeName>
-                  </desc>
+               <event type="reception" office="acoluth" where="#mlpla000022" when-iso="1772-06-14">
+                  <desc>received as acoluth at Barby</desc>
                </event>
                <event>
                   <desc> ordained as deacon </desc>
@@ -6050,29 +6069,33 @@
                <event when-iso="1785-03-20">
                   <desc> ordained as presbyter </desc>
                </event>
-               <event when-iso="1801-11-13">
-                  <desc> consecrated as bishop <placeName>Dublin</placeName>
-                  </desc>
-               </event>
-               <occupation>preacher</occupation>
-               <occupation when-iso="1772-08-04">inspector of <placeName>boys' school Fulneck</placeName></occupation>
-               <occupation when-iso="1779">single brethren's and boys' labourer <placeName>Dublin</placeName></occupation>
-               <occupation when-iso="1790">congregation labourer <placeName ref="#mlpla000054">London</placeName></occupation>
-               <occupation when-iso="1793-04-09"><placeName ref="#mlpla000025">Bedford</placeName></occupation>
-               <occupation when-iso="1794"><placeName>Dublin</placeName></occupation>
-               <occupation>co-congregation labourer</occupation>
-               <occupation when-iso="1801">married choir helper and director of schools <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
-               <occupation when-iso="1802">congregation labourer and director of schools <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
-               <occupation from="1813" to="1820">congregation labourer <placeName ref="#mlpla000040">Gracehill</placeName></occupation>
-               <occupation from="1813" to="1824">provincial helper for <placeName>Ireland</placeName></occupation>
-               <event type="marriage">
-                  <desc> </desc>
-               </event>
                <event type="marriage" when-iso="1793-04-02">
                   <desc>
                      <placeName>Dublin</placeName>
                   </desc>
                </event>
+               <event when-iso="1801-11-13">
+                  <desc> consecrated as bishop <placeName>Dublin</placeName>
+                  </desc>
+               </event>
+               <residence notBefore="1756"><placeName ref="#mlpla000251">Niesky</placeName></residence>
+               <education><placeName ref="#mlpla000343">Paedagogium at Hennersdorf</placeName></education>
+               <education notBefore="1760"><placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></education>
+               <education notBefore="1764-11"><placeName ref="#mlpla000262">Pedagogium of the Brethrens’ Unity at Barby</placeName></education>
+               <occupation>literatus</occupation>
+               <occupation>hymn writer</occupation>
+               <occupation>preacher</occupation>
+               <occupation notBefore="1768" notAfter="1772">teacher in the <placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></occupation>
+               <occupation when-iso="1772-08-04">inspector of <placeName ref="#mlpla000345">boys' school Fulneck</placeName></occupation>
+               <office when-iso="1779">single brethren's and boys' labourer <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office when-iso="1790">congregation labourer at <placeName ref="#mlpla000054">London</placeName></office>
+               <office when-iso="1793-04-09">congregation labourer at <placeName ref="#mlpla000025">Bedford</placeName></office>
+               <office when-iso="1794">congregation labourer at <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office>co-congregation labourer</office>
+               <office when-iso="1801">married choir helper and director of schools <placeName ref="#mlpla000003">Fulneck</placeName></office>
+               <office when-iso="1802">congregation labourer and director of schools <placeName ref="#mlpla000003">Fulneck</placeName></office>
+               <office from="1813" to="1820">congregation labourer <placeName ref="#mlpla000040">Gracehill</placeName></office>
+               <office from="1813" to="1824">provincial helper for <placeName>Ireland</placeName></office>
                <bibl type="memoir" source="#mlpla000003">Ful/3/78</bibl>
                <note resp="#Yorkshire_Families">BENADE, Samuel Traugott (1746-1830) b 20.10.1746 Milkel near Bautzen Upper Lusatia occupation: literatus reception: baptized Lutheran Church, brethren’s house Uhyst 24.05.1754,
                   received congregation Herrnhut 26.11.1759, sacrament Niesky 17.01.1761, brethren’s house Fulneck church orders: received as acoluth Barby 14.06.1772 ordained as deacon ordained as

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,7 +97,454 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701094102324",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T13:41:02.324Z",
+	"dcterms:issued": "2020-07-01T15:29:35.541Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701094102324#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701094102324#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name/add[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1777"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?rs_annotation_20200701094138365",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T13:41:38.365Z",
+	"dcterms:issued": "2020-07-01T15:29:35.543Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?rs_annotation_20200701094138365#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?rs_annotation_20200701094138365#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/rs"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:Occupation",
+		"@id": "#mlocc000022",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701095641359",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T13:56:41.359Z",
+	"dcterms:issued": "2020-07-01T15:29:35.544Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701095641359#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701095641359#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1794/1795"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102324958",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T14:23:24.958Z",
+	"dcterms:issued": "2020-07-01T15:29:35.544Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102324958#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102324958#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[4]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1820"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102737860",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T14:27:37.860Z",
+	"dcterms:issued": "2020-07-01T15:29:35.544Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102737860#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701102737860#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[6]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1831-07"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701103326029",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2020-07-01T14:33:26.029Z",
+	"dcterms:issued": "2020-07-01T15:29:35.544Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701103326029#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/coffin_elizabeth.xml?date_annotation_20200701103326029#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[7]/add/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1855-01-28"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Elizabeth Coffin</persName>
@@ -116,249 +560,254 @@
 			<div type="memoir">
 				<head>Elizabeth Coffin</head>
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-01.jpg"/>
 			<p>
 				
-					Our late S<hi rend="superscript">r</hi> Eliz<hi rend="superscript">th</hi> Coffin was born   <lb />
-					<add place="above">near</add> <hi rend="strikethrough">at</hi> Elledmere, on the borders of Wales, <add place="above">A.D. 1777</add> <lb />
-					her father being an extensive farmer. <lb />
-					Of her earlier years, very little is <lb />
-					known to us; as our late S<hi rend="superscript">r</hi> left <lb />
-					no memoranda of her course thro&apos; <lb />
-					time. It appears however that <lb />
-					her religious impressions were <lb />
-					received early in life; &amp; she was accustomed <lb />
-					to refer to one youthful experience <lb />
+					Our late <persName ref="#mlper000234" cert="high" type="real"><roleName type="honorific">S<hi rend="superscript">r</hi></roleName> Eliz<hi rend="superscript">th</hi> Coffin</persName> was <name event="birth" when-iso="1777">born
+<lb/>
+<add place="above">near</add> <hi rend="strikethrough">at</hi> <placeName ref="#mlpla000124" cert="high">Elledmere, on the borders of Wales</placeName>, <add place="above"><date when="1777" cert="high">A.D. 1777</date></add>
+<lb/></name> her father being an extensive <rs memoirSubject="no" ref="#mlocc000022" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">farmer</rs>. <lb/>
+					Of her earlier years, very little is <lb/>
+					known to us; as our late <roleName type="honorific">S<hi rend="superscript">r</hi>f</roleName> left <lb/>
+					no memoranda of her course thro' <lb/>
+					time. It appears however that <lb/>
+					her religious impressions were <lb/>
+					received early in life; &amp; she was accustomed <lb/>
+					to refer to one youthful experience <lb/>
 					as a turning proint in her <hi rend="strikethrough">experience</hi> <add place="above">course</add>. 
 			</p>
 			<p>
 				
-					Whilst attending the parish Church, <lb />
-					some particular sentence in the morning <lb />
-					prayer come home to her heart with <lb />
-					such power, that she felt the love of  <lb />
-					Christ as accomplishing her redemption.  <lb />
-					She was <add place="above">thus</add> persuaded of her interest in <lb />
-					his atonement, &amp; it is remarkable <lb />
-					in the religious experience of our <lb />
-					late S<hi rend="superscript">r</hi>, that her course was not so <lb />
+					Whilst attending the parish Church, <lb/>
+					some particular sentence in the morning <lb/>
+					prayer come home to her heart with <lb/>
+					such power, that she felt the love of  <lb/>
+					<persName type="real" cert="high">Christ</persName> as accomplishing her redemption.  <lb/>
+					She was <add place="above">thus</add> persuaded of her interest in <lb/>
+					his atonement, &amp; it is remarkable <lb/>
+					in the religious experience of our <lb/>
+					late <roleName type="honorific">S<hi rend="superscript">r</hi></roleName>, that her course was not so <lb/>
 					subject to change &amp; deviation as 
 			</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-02.jpg"/>
 			<p>
 				
-					that of the majority of the Lord&apos;s <lb />
-					children. As far as her X<hi rend="superscript">n</hi> experience <lb />
-					is known to us, she has alway spoken <lb />
-					of his life of faith as a happy one; <lb />
-					she knew no periods of gloom &amp; tasted <lb />
-					not the bitterness of the soul from  <lb />
-					whom the Lord&apos;s comforts are with <lb />
+					that of the majority of the <roleName type="honorific">Lord</roleName>'s <lb/>
+					children. As far as her X<hi rend="superscript">n</hi> experience <lb/>
+					is known to us, she has alway spoken <lb/>
+					of his life of faith as a happy one; <lb/>
+					she knew no periods of gloom &amp; tasted <lb/>
+					not the bitterness of the soul from  <lb/>
+					whom the <roleName type="honorific">Lord</roleName>'s comforts are with <lb/>
 					drawn.
 			</p>
 			<p>
 				
-					As the age of 17 or 18, she removed <lb />
-					to London, and entered the family <lb />
-					of our late S<hi rend="superscript">r</hi> Vowel <hi rend="strikethrough">with</hi> whom she <lb />
-					lived till that lady&apos;s death. It <lb />
-					was during her residence there, &amp; <lb />
-					during B<hi rend="superscript">r</hi> Montgomry&apos;s service of <lb />
-					the Congn that she joined the Church <lb />
-					of the B<hi rend="superscript">rn</hi>, of which she has been <lb />
+					<date cert="medium" from="1794" to="1795">As the age of 17 or 18</date>, she removed <lb/>
+					to <placeName ref="#mlpla000054" cert="high">London</placeName>, and entered the family <lb/>
+					of our late <persName cert="high" type="real"><roleName type="honorific">S<hi rend="superscript">r</hi>f</roleName> Vowel</persName> <hi rend="strikethrough">with</hi> whom she <lb/>
+					lived till that lady's death. It <lb/>
+					was during her residence there, &amp; <lb/>
+					during <persName cert="high" type="real"><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Montgomry</persName>'s service of <lb/>
+					the <orgName en="congregation">Congn</orgName> that she joined the <orgName religion="Moravian Church">Church
+<lb/>
+of the B<hi rend="superscript">rn</hi></orgName>, of which she has been <lb/>
 					so many years a consistent member
 			</p>
 			<p>
 				
-					After S<hi rend="superscript">r</hi> Vowel&apos;s departure, she  <lb />
-					remained with the 2 M<hi rend="superscript">r</hi> Youngs, the <lb />
+					After <persName cert="high" type="real"><roleName type="honorific">S<hi rend="superscript">r</hi></roleName> Vowel</persName>'s departure, she  <lb/>
+					remained with the 2 <persName cert="high" type="real">M<hi rend="superscript">r</hi> Youngs</persName>, the <lb/>
 					nephews <add place="above">of the deceased</add> till her own health began to fail.
 			</p>
 			<p>
 				
-					About the year 1820, she removed <lb />
-					to Bristol, where she became an in <lb />
+					About the <date when="1820" cert="high">year 1820</date>, she removed <lb/>
+					to Bristol, where she became an in <lb/>
 					mate, of the sisters house, during 
 			</p>
 					<cb/>
 			<p>
 				
-					B<hi rend="superscript">r</hi> Okelys&apos; ministry. Her stay <lb />
-					in Bristol was but short, &amp; <lb />
-					the subsequent years of her life,  <lb />
-					up to her last removal in Fulneck, <lb />
-					appear to have been somewhat un- <lb />
-					settled as to her abode. She lived <lb />
-					in Fulneck S<hi rend="superscript">rs</hi> House for a few <lb />
-					years; &amp; also spent some time again <lb />
-					in London, &amp; with more than one <lb />
+					<persName cert="high" type="real"><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Okelys</persName>' ministry. Her stay <lb/>
+					in <placeName ref="#mlpla000030" cert="high">Bristol</placeName> was but short, &amp; <lb/>
+					the subsequent years of her life,  <lb/>
+					up to her last removal in <placeName ref="#mlpla000003" cert="high">Fulneck</placeName>, <lb/>
+					appear to have been somewhat un- <lb/>
+					settled as to her abode. She lived <lb/>
+					in <placeName cert="high" ref="#mlpla000271">Fulneck S<hi rend="superscript">rs</hi> House</placeName> for a few <lb/>
+					years; &amp; also spent some time again <lb/>
+					in London, &amp; with more than one <lb/>
 					family of her relatives. 
 			</p>
 			<p>
 				
-					In July 1831 <add place="above">i.e about</add> 24 years ago <lb />
-					she settled finally on Fulneck, a <lb />
-					place which seems above others to <lb />
-					be that of her choice. Her <lb />
-					walk among us here, her peculiarities <lb />
-					her cheerful nature, her activitz &amp; <lb />
-					especially her great love for the meetings <lb />
-					for family &amp; public worship these <lb />
-					are well known to many who this <lb />
-					day see her mortal remains conveyed <lb />
-					to their last resting place.  <lb />
+					In <date when="1831-07" cert="high">July 1831</date> <add place="above">i.e about</add> 24 years ago <lb/>
+					she settled finally on <placeName ref="#mlpla000003" cert="high">Fulneck</placeName>, a <lb/>
+					place which seems above others to <lb/>
+					be that of her choice. Her <lb/>
+					walk among us here, her peculiarities <lb/>
+					her cheerful nature, her activitz &amp; <lb/>
+					especially her great love for the meetings <lb/>
+					for family &amp; public worship these <lb/>
+					are well known to many who this <lb/>
+					day see her mortal remains conveyed <lb/>
+					to their last resting place.  <lb/>
 				
 			</p>
 			<p>
 				
-					Being so long an invalid, her thoughts <lb />
+					Being so long an invalid, her thoughts <lb/>
 					were often busied <add place="above">concerning</add> <hi rend="strikethrough">upon</hi> her own
 			</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-03.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-03.jpg"/>
 			<p>
 				
-					health whilst she inquired sympa- <lb />
+					health whilst she inquired sympa- <lb/>
 					thisingly after the welfare of others.
 			</p>
 			<p>
 				
-					About a year ago, when speaking <lb />
-					of a recent attack of illness, she re- <lb />
-					marked I had sometimes the feeling <lb />
-					that she Lord would take me to <lb />
-					himself. Being asked whether she <lb />
-					felt herself prepared for the last change <lb />
-					she replied in her quick characteristic <lb />
-					manner &amp; quite cheerfully -- It would <lb />
-					be a great shame if I were not ready <lb />
-					for it; for it is now 50 years since <lb />
-					I first knew the Lord; &amp; since that <lb />
-					time he has enabled me to serve <lb />
-					Him It would be ungrateful in me <lb />
-					to think he would not accept me <lb />
-					at the last.&quot; 
+					About a year ago, when speaking <lb/>
+					of a recent attack of illness, she re- <lb/>
+					marked I had sometimes the feeling <lb/>
+					that she <roleName type="honorific">Lord</roleName> would take me to <lb/>
+					himself. Being asked whether she <lb/>
+					felt herself prepared for the last change <lb/>
+					she replied in her quick characteristic <lb/>
+					manner &amp; quite cheerfully -- It would <lb/>
+					be a great shame if I were not ready <lb/>
+					for it; for it is now 50 years since <lb/>
+					I first knew the <roleName type="honorific">Lord</roleName>; &amp; since that <lb/>
+					time he has enabled me to serve <lb/>
+					Him It would be ungrateful in me <lb/>
+					to think he would not accept me <lb/>
+					at the last." 
 			</p>
 			<p>
 				
-					For the last twelve month <del>s</del> her <lb />
-					health was perceived to her failing con- <lb />
-					siderably tho&apos; she would not, till <lb />
-					near the last, hear of seeking medi- <lb />
-					cal advice. Tho&apos; she most often <lb />
-					have been suffering from weakness <lb />
+					For the last twelve month <del>s</del> her <lb/>
+					<name health="disease">health was perceived to her failing con-
+<lb/>
+siderably</name> tho' she would not, till <lb/>
+					near the last, hear of seeking medi- <lb/>
+					cal advice. Tho' she most often <lb/>
+					have been suffering from weakness <lb/>
 					&amp; pain she was still seen as her -
 			</p>
 					<cb/>
 			<p>
 				
-					place in the Prayer Hall &amp; Chapel <lb />
-					where the meetings were always a <lb />
-					source of spiritual enjoyment <add place="above">To her</add> &quot;As <lb />
-					long as I can I must go&quot; she would <lb />
-					say &quot;for soon I may not be able&quot;-
+					place in the Prayer Hall &amp; Chapel <lb/>
+					where the meetings were always a <lb/>
+					source of spiritual enjoyment <add place="above">To her</add> "As <lb/>
+					long as I can I must go" she would <lb/>
+					say "for soon I may not be able"-
 			</p>
 			<p>
 				
-					Towards the close of last week, <lb />
-					a<hi rend="strikethrough">s</hi> perceptible change was noticed in  <lb />
-					her &amp; it be came evident to her friends, <lb />
-					tho&apos; not as first to herself, that her <lb />
-					time here below was drawing near <lb />
-					it close. When her labouress <lb />
-					alluded to the approaching end, &amp; asked <lb />
-					her whether she felt ready for our Saviours <lb />
-					coming, if it should please Him to  <lb />
-					take her now, she answered, that <lb />
-					she would like to feel Him nearer, but <lb />
+					Towards the close of last week, <lb/>
+					a<hi rend="strikethrough">s</hi> perceptible change was noticed in  <lb/>
+					her &amp; it be came evident to her friends, <lb/>
+					tho' not as first to herself, that her <lb/>
+					time here below was drawing near <lb/>
+					it close. When her labouress <lb/>
+					alluded to the approaching end, &amp; asked <lb/>
+					her whether she felt ready for our <roleName type="honorific">Saviours</roleName> <lb/>
+					coming, if it should please Him to  <lb/>
+					take her now, she answered, that <lb/>
+					she would like to feel Him nearer, but <lb/>
 					she had no fear.
 			</p>
 			<p>
 				
-					On Sunday, the last day of her <lb />
-					life, tho&apos; growing very feeble, she <lb />
-					retained a clear conciousness &amp; on <lb />
-					unshaken faith. In reply to a question <lb />
-					as to her spiritual support in this trouble <lb />
-					she answered with energy &quot;I will trust <lb />
-					Him tho&apos; he slay me.&quot; And again <lb />
-					she said &quot;I care not what pain 
+					On Sunday, the last day of her <lb/>
+					life, tho' growing very feeble, she <lb/>
+					retained a clear conciousness &amp; on <lb/>
+					unshaken faith. In reply to a question <lb/>
+					as to her spiritual support in this trouble <lb/>
+					she answered with energy "I will trust <lb/>
+					Him tho' he slay me." And again <lb/>
+					she said "I care not what pain 
 			</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-04.jpg" />
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_46Coffin-04.jpg"/>
 			<p>				
 					I have, if I have only <hi rend="underline">Him</hi> with me 
 			</p>
 			<p>
 				
-					For the attention of the Sisters &amp; <lb />
-					friends to her in her illness, she was <lb />
-					truly grateful, &amp; expressed herself <lb />
-					surprised at the display of love <lb />
+					For the attention of the Sisters &amp; <lb/>
+					friends to her in her illness, she was <lb/>
+					truly grateful, &amp; expressed herself <lb/>
+					surprised at the display of love <lb/>
 					which she witnessed. 
 			</p>
 			<p>
-					On Sunday evening when her <lb />
-					Laboress told her <del>she</del> our Savr <del>might</del> <add place="above">would probably</add> <lb />
-					very soon come &amp; take her to himself, <lb />
-					she seemed still somewhat surprised that <lb />
-					her end should be so near; but was <lb />
-					free from all apprehension of the event. <lb />
-					Her feeling appeared to be that of the <lb />
-					conviction &amp; confidence expressed <lb />
+					On Sunday evening when her <lb/>
+					<name memoirSubject="n" office="#mloff000004">Laboress</name> told her <del>she</del> our <roleName type="honorific">Savr</roleName> <del>might</del> <add place="above">would probably</add> <lb/>
+					very soon come &amp; take her to himself, <lb/>
+					she seemed still somewhat surprised that <lb/>
+					her end should be so near; but was <lb/>
+					free from all apprehension of the event. <lb/>
+					Her feeling appeared to be that of the <lb/>
+					conviction &amp; confidence expressed <lb/>
 					in the Hymn 1184. 2 Thou knowst &amp;c.
 			</p>
 			<p>
 				
 					<note>Insert is at the bottom of second column, page 4.</note>
-					*Insert <lb />
-					She regretted B<hi rend="superscript">r</hi> Libbay&apos;s absence from <lb />
-					the Congn at this time, much wishing to  <lb />
-					live to see him again; as at the first, <lb />
-					she appeared not right to have under- <lb />
+					*Insert <lb/>
+					She regretted B<hi rend="superscript">r</hi> Libbay's absence from <lb/>
+					the Congn at this time, much wishing to  <lb/>
+					live to see him again; as at the first, <lb/>
+					she appeared not right to have under- <lb/>
 					stood him in his Conversat with her.
 			</p>
 			<p>
 				
-					When asked if she wished to par <lb />
-					take of the H. Com<hi rend="superscript">n</hi> again, she replied <lb />
-					somewhat doubtfull, -- I do not rest on <lb />
-					<hi rend="underline">that</hi> - You know <hi rend="underline">He</hi> is my Bread of <lb />
+					When asked if she wished to par <lb/>
+					take of the <name event="communion">H. Com<hi rend="superscript">n</hi></name> again, she replied <lb/>
+					somewhat doubtfull, -- I do not rest on <lb/>
+					<hi rend="underline">that</hi> - You know <hi rend="underline">He</hi> is my Bread of <lb/>
 					Life. 
 			</p>
 			<p>
 				
-					The same evening she received the  <lb />
-					blessing of the Congn. imparted by B<hi rend="superscript">r</hi> <lb />
-					Okely after a fervent prayer for the  <lb />
-					nearness &amp; support of Jesus in this <lb />
-					hour of trial - She was not only per- <lb />
-					fectly conscious during this transaction <lb />
-					but expressed also the enjoyment &amp; <lb />
+					The same evening she received the  <lb/>
+					blessing of the <orgName en="congregation">Congn</orgName>. imparted by <persName ref="#mlper000703" cert="high" type="real">B<hi rend="superscript">r</hi>
+<lb/>
+Okely</persName> after a fervent prayer for the  <lb/>
+					nearness &amp; support of <persName type="real" cert="high">Jesus</persName> in this <lb/>
+					hour of trial - She was not only per- <lb/>
+					fectly conscious during this transaction <lb/>
+					but expressed also the enjoyment &amp; <lb/>
 					benefit she had derived from it.
 			</p>
 			<p>
 				
-					About 10 o&apos;cl. the same evening <lb />
-					<add place="above">Jan 28<hi rend="superscript">th</hi> /55</add> whilst supported in the arms of some 
+					About 10 o'cl. the same evening <lb/>
+					<add place="above"><date when="1855-01-28" cert="high">Jan 28<hi rend="superscript">th</hi> /55</date></add> whilst supported in the arms of some 
 			</p>
 					<cb/>
 			<p>
 				
-					the sisters the hour of her departure <lb />
-					came; the silver cord was loosed, <lb />
-					&amp; she gently breathed her last, her <lb />
-					ransomed? spirit departing to be with <lb />
-					that Lord whom she had long here <lb />
-					followed in faith tho&apos; in feebleness &amp; <lb />
-					<add place="above">with the sense of</add> much unperfection. <add place="above">Her age was 77 years.</add> May our <lb />
-					end be as tranquil &amp; happy, &amp; as <lb />
-					full of confidence in our unseen <lb />
-					but present &amp; faithful Redeemer!  <lb />
+					the sisters <name event="death" when-iso="1855-01-28">the hour of her departure
+<lb/>
+came</name>; the silver cord was loosed, <lb/>
+					&amp; she gently breathed her last, her <lb/>
+					ransomed? spirit departing to be with <lb/>
+					that <roleName type="honorific">Lord</roleName> whom she had long here <lb/>
+					followed in faith tho' in feebleness &amp; <lb/>
+					<add place="above">with the sense of</add> much unperfection. <add place="above">Her age was 77 years.</add> May our <lb/>
+					end be as tranquil &amp; happy, &amp; as <lb/>
+					full of confidence in our unseen <lb/>
+					but present &amp; faithful <roleName type="honorific">Redeemer</roleName>!  <lb/>
 				
 			</p>
 				</div>

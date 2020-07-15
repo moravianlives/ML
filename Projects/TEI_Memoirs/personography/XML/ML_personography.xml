@@ -96,6 +96,12 @@
                   <category xml:id="Yorkshire_Families">
                      <catDesc>Big Book of Yorkshire Families</catDesc>
                   </category>
+                  <category>
+                     <catDesc>Church Records</catDesc>
+                     <category xml:id="Fulneck_Families_19th_Century">
+                        <catDesc>Fulneck Families 19th Century</catDesc>
+                     </category>
+               </category>
                </category>
             </taxonomy>
          </classDecl>
@@ -1390,7 +1396,6 @@
                <relation name="interment" passive="#mlper000694" when-iso="1791-05-31"/>
             </listRelation>
          </listPerson>
-         <!-- There is no Elizabeth Coffin in the monster list; information take from memoir -->
          <listPerson>
             <person xml:id="mlper000234">
                <persName>
@@ -1403,7 +1408,7 @@
                </birth>
                <death>
                   <date type="death" when-iso="1855-01-28">28 January, 1855</date>
-                  <placeName ref="#mlpla000003" cert="medium">Fulneck</placeName>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
                <event type="arrival" where="#mlpla000054">
                   <desc>removed to London at age of 17 or 18</desc>
@@ -1414,9 +1419,16 @@
                <event type="arrival" where="#mlpla000003" when-iso="1831-07">
                   <desc>removed to Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1855-02-02" ref="#mlper000373">
+                  <desc>interred at Fulneck by Joseph Hutton Willey</desc>
+               </event>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/46</bibl>
+               <note resp="#Fulneck_Families_19th_Century">COFFIN, Elizabeth (1778-1855) b 1778 d 28.01.1855 aged 77 Fulneck, interred Fulneck by Br J H Willey 02.02.1855 grave 1800 - 1st section, 78th row, 10th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000373" when-iso="1855-02-02"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000235">
@@ -1617,22 +1629,33 @@
                <bibl type="memoir" source="#mlpla000003">Ful/SS/47</bibl>
             </person>
          </listPerson>
-         <!-- not in Yorkshire Families list, information pulled from memoir -->
          <listPerson>
             <person xml:id="mlper000239">
                <persName>
-                  <forename>Ann <addName>Georgiana</addName>
-                  </forename>
+                  <forename>Ann <addName>Georgiana</addName></forename>
                   <surname type="birth">Edwards</surname>
                   <name type="variant">Ann Georgeana</name>
                </persName>
-               <!-- there is no birth or death date/place information in memoir -->
+               <birth>
+                  <date type="birth" when-iso="1784">1784</date>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1852-02-28">28 February, 1852</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
                <event type="reception" where="#mlpla000284" when-iso="1821-10-26">
                   <desc>received into sisters' house at Bedford</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1852-03-03" ref="#mlper000374">
+                  <desc>interred at Fulneck by William Edwards</desc>
+               </event>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/56</bibl>
+               <note resp="#Fulneck_Families_19th_Century">EDWARDS, Ann Georgiana (1784-1852) b 1784 d 28.02.1852 aged 68 Fulneck, interred Fulneck by Br W Edwards 03.03.1852 grave 1769 - 1st section, 75th row, 2nd grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="mlper000374" when-iso="1852-03-03"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000240">
@@ -1753,7 +1776,6 @@
                <relation passive="#mlper000697"/>
             </listRelation>
          </listPerson>
-         <!-- not in Yorkshire Families list, information pulled from memoir -->
          <listPerson>
             <person xml:id="mlper000242">
                <persName>
@@ -1768,13 +1790,29 @@
                <death>
                   <date type="death" when-iso="1869-12-20">20 December, 1869</date>
                </death>
+               <event type="baptism" where="#mlpla000063" when-iso="1837-03-19" ref="#mlper000371">
+                  <desc>baptized at Ockbrook by John King Martyn</desc>
+               </event>
                <event type="entrance" where="#mlpla000268">
                   <desc>entered sisters' house at Ockbrook</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1869-12-23" ref="#mlper000375">
+                  <desc>interred at Fulneck by Geoffrey Clemens</desc>
                </event>
                <office when-iso="1850" ref="#mloff000031">Warden of the Single Sisters' at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/53</bibl>
+               <note resp="#Fulneck_Families_19th_Century">FLETCHER, Sarah Ann (1820-1869) b 02.07.1820 Mapperley Kirk Hallam reception: baptized Ockbrook by Br J K Martyn 19.03.1837 church service: 
+                  single sisters’ warden Fulneck 1850 family: daughter of Jethro Fletcher and Fanny d 20.12.1869 aged 49 Fulneck, interred Fulneck by Br G Clemens 23.12.1869 grave 1951 - 1st section, 86th row, 7th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Jethro Fletcher"/>
+               <relation name="child" passive="Fanny Fletcher"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000371" when-iso="1837-03-19"/>
+               <relation name="interment" passive="#mlper000375" when-iso="1869-12-23"/>
+            </listRelation>
          </listPerson>
          <!-- not in Yorkshire Families list, information pulled from memoir -->
          <listPerson>
@@ -2146,23 +2184,35 @@
                   <surname type="birth">Horsman</surname>
                </persName>
                <birth>
-                  <date type="birth" when-iso="1795" cert="medium">1795</date>
+                  <date type="birth" when-iso="1795-04-23">23 April, 1795</date>
                   <placeName ref="#mlpla000050">Leeds</placeName>
                </birth>
                <death>
-                  <date type="death" when-iso="1855" cert="medium"></date>
+                  <date type="death" when-iso="185502-27">27 February, 1855</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
                <event type="baptism" where="#mlpla000287" when-iso="1795">
                   <desc>baptized in Leeds at Church of Sr Johas Peter</desc>
                </event>
-               <event type="reception" notBefore="1820">
-                  <desc>received into congregation</desc>
+               <event type="reception" where="#mlpla000003" when-iso="1820-03-20">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1820-11-12">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1855-03-02" ref="#mlper000376">
+                  <desc>interred at Fulneck by John Pearse Libbey</desc>
                </event>
                <!-- What occupation is this -->
                <occupation>employed in the Sunday School</occupation>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/52</bibl>
+               <note resp="#Fulneck_Families_19th_Century">HORSMAN, Mary (1795-1855) b 23.04.1795 reception: received congregation Fulneck 30.03.1820, sacrament Fulneck 12.11.1820,
+                  single sister d 27.02.1855 aged 59 Fulneck, interred Fulneck by Br J P Libbey 02.03.1855 grave 1802 - 1st section, 78th row, 8th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000376" when-iso="1855-03-02"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000252">
@@ -2238,7 +2288,7 @@
                <event type="entrance" where="#mlpla000271" when-iso="1800-07">
                   <desc>entered Sisters' house at Fulneck</desc>
                </event>
-               <event type="reception" where="#mlpla000003" when-iso="1803-03">
+               <event type="reception" where="#mlpla000003" when-iso="1803-03-27">
                   <desc>received into congregation at Fulneck</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1803-05-04">
@@ -2250,10 +2300,18 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1810-03-31">
                   <desc>last sacrament at Fulneck</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1810-04-09" ref="#mlper000557">
+                  <desc>interred at Fulneck by Samuel Benade</desc>
+               </event>
                <occupation from="1807-01" to="1809-12" ref="#mlocc000043">teacher at <placeName ref="#mlpla000288">Boarding School at Fulneck</placeName></occupation>
                <affiliation type="choir" notBefore="1803-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/43</bibl>
+               <note resp="#Fulneck_Families_19th_Century">HUTCHINSON, Hannah (1784-1810) b 22.11.1784 Pudsey reception: received congregation Fulneck 27.03.1803, sacrament Fulneck 29.03.1804 
+                  d 04.04.1810 aged 25 Fulneck, interred Fulneck by Br S T Benade 09.04.1810 register 1250 / stone 1249 - 1st section, 54th row, 9th grave from path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000557" when-iso="1810-04-09"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000254">
@@ -3018,15 +3076,35 @@
                <event type="arrival" where="#mlpla000218" when-iso="1853-02">
                   <desc>moved to Heaton to serve as a governess</desc>
                </event>
+               <event type="interment" where="#mlpla000003" when-iso="1855-02-09" ref="#mlper000373">
+                  <desc>interred at Fulneck by Joseph Hutton Willey</desc>
+               </event>
                <education from="1833" to="1838"><placeName ref="#mlpla000288">Boarding School at Fulneck</placeName></education>
                <residence from="1823-11-28" to="1829-12"><placeName ref="#mlpla000215">Antigua</placeName></residence>
                <residence from="1829-12" to="1833"><placeName ref="#mlpla000216">Saint Kitts</placeName></residence>
                <occupation from="1845" ref="#mlocc000100">assistant at Miss Hinchliffe's Boarding School for young ladies</occupation>
                <occupation from="1853-02" to="1854" ref="#mlocc000083">governess</occupation>
                <occupation notBefore="1854" ref="#mlocc000100">assistant at Girls Day School</occupation>
+               <occupation>needlewoman</occupation>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation> 
                <bibl type="memoir" source="#mlpla000003">Ful/SS/54; Ful/3/125</bibl>
+               <note resp="#Fulneck_Families_19th_Century">ROBBINS, Hannah Sophia (1823-1855) b 1823 St John’s Antigua occupation: needlewoman reception: signatory to the Brotherly Agreement April 1849, 
+                  sisters’ house Fulneck family: daughter of George Robbins (b 1789) and Martha (née Stowe) (b 1794) sister of John Frederic (b 1822), George (b 1825), William (b 1828), Mary (b 1830), 
+                  Martha (Schick) (b 1832) and James d 05.02.1855 aged 32 Fulneck, interred Fulneck by Br J H Willey 09.02.1855 grave 1801 - 1st section, 78th row, 9th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="George Robbins" notBefore="1789"/>
+               <relation name="child" passive="Martha (Stowe) Robbins" notBefore="1794"/>
+               <relation name="sibling" mutual="John Frederic Robbins"/>
+               <relation name="sibling" mutual="George Robbins" notBefore="1825"/>
+               <relation name="sibling" mutual="William Robbins"/>
+               <relation name="sibling" mutual="Mary Robbins"/>
+               <relation name="sibling" mutual="Martha (Schick)" notBefore="1832"/>
+               <relation name="sibling" mutual="James Robbins"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000373" when-iso="1855-02-09"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000267">
@@ -3429,16 +3507,30 @@
                <event type="arrival" where="#mlpla000072" notBefore="1862">
                   <desc>returned to England</desc>
                </event>
-               <event type="entrance" where="#mlpla000340" notBefore="1862">
-                  <desc>entered Ladies School at Gomersal</desc>
+               <event type="interment" where="#mlpla000003" when-iso="1866-06-21" ref="#mlper000375">
+                  <desc>interred at Fulneck by Geoffrey Clemens</desc>
                </event>
-               <education notBefore="1851" notAfter="1854"><placeName ref="#mlpla000288">Ladies Boarding School at Fulneck</placeName></education>
+               <education when-iso="1853"><placeName ref="#mlpla000286">Ladies Boarding School at Fulneck</placeName></education>
                <education notBefore="1854" notAfter="1861"><placeName ref="#mlpla000292">Ladies School at Neuwied</placeName></education>
                <education notBefore="1861"><placeName ref="#mlpla000293">Boarding School at Montmirail</placeName></education>
-               <occupation ref="#mlocc000043">teacher at <placeName ref="#mlpla000041">Gomersal</placeName></occupation>
+               <occupation ref="#mlocc000043" when-iso="1862">teacher at <placeName ref="#mlpla000041">Gomersal</placeName></occupation>
                <affiliation type="choir"><orgName en="single sisters choir" notBefore="1861">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/55</bibl>
+               <note resp="#Fulneck_Families_19th_Century">SPENCE, Marianne (1844-1866) b 04.10.1844 Bethabara Jamaica educated: girls’ school Fulneck 1853, ladies’ school Neuwied 1859, 
+                  ladies’ school Montmirail 1861 reception: baptized Bethabara Jamaica church service: teacher ladies school Gomersal 1862 family: daughter of James Spence (b 1810) and Ann (née Greenwood) (b 1814)
+                  sister of Emily (b 1842), Edith (b 1848), Clement Lewis (b 1850) and James Edmund (b 1852) d 18.06.1866 aged 21 Fulneck, interred Fulneck 21.06.1866 by Br G Clemens</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="James Spence" notBefore="1810"/>
+               <relation name="child" passive="Ann (Greenwood) Spence"/>
+               <relation name="sibling" mutual="Emily Spence"/>
+               <relation name="sibling" mutual="Edith Spence"/>
+               <relation name="sibling" mutual="Clement Lewis Spence"/>
+               <relation name="sibling" mutual="James Edmund Spence" notBefore="1852"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000375" when-iso="1866-06-21"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000275">
@@ -3706,6 +3798,20 @@
                <residence><placeName ref="#mlpla000191">Salem</placeName></residence>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/51</bibl>
+               <note resp="#Fulneck_Families_19th_Century">THORNTON, Mary Elizabeth (1831-1855)
+                  b 16.12.1831 Lordship of Tong Parish of Birstall West Yorkshire
+                  resided: Tong 1831, Fulneck 1837, Oldham 1849
+                  reception: baptized Fulneck by Br J B Holmes 22.01.1832, little girl Fulneck 1834,
+                  great girl Fulneck 1844, single sister Fulneck 1849, transferred congregation Salem 26.07.1849,
+                  returned Fulneck
+                  family: daughter of Charles Thornton (b 1807) and Mary (née Webster) (b 1804),
+                  granddaughter of John Thornton (b 1772) and Elizabeth (Betty) (née Brook) (b 1776), and James Webster (clothmaker) and Mary,
+                  great-granddaughter of Charles Thornton (b 1744) and Martha (Matty) (née Fox) (b 1742), great-great-granddaughter of Joseph Thornton, and Thomas Fox,
+                  niece of Martha (Hargreaves) (b 1800), Joseph (b 1802) and Nancy Thornton (b 1809), cousin of William (b 1818), Charles (b 1822), Elizabeth (Betty) (Beaumont) (b 1825),
+                  John (b 1828), Luke (b 1831), Joseph (b 1835), Levi Hargreaves (b 1837) and Sarah Ann (Lockwood, later Ibberston) (b 1839), and
+                  Eliza (b 1823), Elizabeth (b 1823) and George Thornton (b 1825),
+                  sister of Sarah Ann (Hinchliffe) (b 1833), Ellinor (b 1835), Rhoda (Cope) (b 1837), John (b 1839), Anne (b 1841), Martha (b 1844), James Webster (b 1846)
+                  d 14.07.1855 aged 23 Fulneck, interred Fulneck by Br J P Libbey 18.07.1855 grave 1806 - 1st section, 78th row, 5th grave from path</note>
             </person>
          </listPerson>
          <listPerson>
@@ -4714,9 +4820,7 @@
                <residence from="1781-01-03" notAfter="1784-09-08">Green Lane <placeName ref="#mlpla000063">Ockbrook</placeName></residence>
                <residence notBefore="1784-09-08"><placeName ref="#mlpla000063">33 - 35 The Settlement Ockbrook</placeName></residence>
                <education when-iso="1752">apprenticeship under Dr Hurlock <placeName ref="#mlpla000003">Fulneck</placeName></education>
-               <education>apprentice to an eminent surgeon and apothecary <placeName ref="#mlpla000086">Gothenburg</placeName>
-               </education>
-               
+               <education>apprentice to an eminent surgeon and apothecary <placeName ref="#mlpla000086">Gothenburg</placeName></education>
                <occupation when-iso="1751" ref="#mlocc000077">assistant congregation doctor <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <occupation when-iso="1753" ref="#mlocc000077">congregation doctor <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <office when-iso="1759-05-28" ref="#mloff000033">medical missionary <placeName ref="#mlpla000076">Jamaica</placeName></office>
@@ -5098,6 +5202,18 @@
                <affiliation type="choir" notBefore="1792-06-17" notAfter="1809-12-14"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1809-12-14" notAfter="1832-10-26"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/03</bibl>
+                <note resp="#Fulneck_Families_19th_Century">RAMFTLER, Christian Frederic (1780‐1832)
+                   b 12.03.1780 Barby
+                   educated: day school Barby, boys’ school Kleinwelke 1787, day school Barby 26.09.1787,
+                   pädagogium Barby 01.04.1792, seminary Niesky October 1797, returned Barby February 1800 reception: received congregation Barby 17.06.1792, sacrament Barby Maundy Thursday 1793,
+                   brethren’s house Neusaltz Silesia
+                   church orders: ordained as deacon by Fairfield by Br T Moore 01.01.1810
+                   ordained as presbyter Fulneck by Br T Moore February 1812 church service: schoolmaster Neusaltz Silesia,
+                   teacher academy for young noblemen Uhyst 1801, Great Hennersdorf Autumn 1802,
+                   director boys’ academy Fairfield 15.07.1803-1809, preacher Lancashire District October 1803, single brethren’s labourer Fairfield 1805, congregation labourer and director girls’ school Bedford and society labourer Culworth 14.01.1810, congregation labourer Fulneck 1813, Bristol 16.09.1824, retired (ill-health) Bristol 26.01.1831
+                   provincial office: deputy General Synod Herrnhut 1818 and 1825
+                   m Elizabeth Groves (b 1779) St James’ Church Bristol 14.12.1809 family: grandson of Marchioness de Monton, son of accountant at Barby,
+                   father of Elizabeth Groves (b 1815), father-in-law of George Sutton Traneker (b 1807) d 25.10.1832 aged 52 Bristol</note>
             </person>
              <listRelation type="personal">
                 <relation name="spouse" mutual="#mlper000725" notBefore="1809-12-14" notAfter="1832-10-26"/>
@@ -6963,6 +7079,14 @@
                   <surname>Armisted</surname>
                </persName>
                <bibl type="memoir" source="#mlpla000003">Ful/3/122</bibl>
+               <note resp="#Fulneck_Families_19th_Century">STEAD, Eleanor (Ellen) (1791-1846)
+                  b 1791
+                  m William ARMISTEAD (b 1784) St Wilfrid’s Church Calverley 27.12.1843 family: daughter of Matthew Stead (farmer),
+                  daughter-in-law of John Armistead (clothier) and Susanna,
+                  stepmother of Susanna (Carter) (b 1806), Martha (Nedwill) (b 1817) and
+                  Hannah (Webster) (b 1821)
+                  d 30.09.1846 aged 57 Fulneck, interred Fulneck by Br J Rogers 03.10.1846
+                  register 1716 /stone 1709 - 1st section, 73rd row, 7th grave from path together with husband William Armistead (grave 1820)</note>
             </person>
          </listPerson>
          <!-- not in YF document -->
@@ -6973,6 +7097,17 @@
                   <surname>Armstrong</surname>
                </persName>
                <bibl type="memoir" source="#mlpla000003">Ful/3/123</bibl>
+               <note resp="#Fulneck_Families_19th_Century">
+                  ARMSTRONG, Mary (1793-1848)
+                  b January 1793
+                  educated: girls’ school Gracehill ?- 1810
+                  reception: sisters house Ockbrook 22.08.1810 - 02.09.1811,
+                  received congregation Ockbrook 17.02.1811
+                  church service: reader in girls’ school Ockbrook 1811, teacher girls’ school Bedford 04.09.1811,
+                  teacher girls’ school Fulneck
+                  d 06.12.1848 aged 55 Fulneck, interred Fulneck by Br J Rogers 09.12.1848
+                  grave 1735 - 1st section, 74th row, 6th grave from path
+               </note>
             </person>
          </listPerson>
          <!-- not in YF document -->

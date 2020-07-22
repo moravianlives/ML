@@ -3798,6 +3798,9 @@
                <event type="confirmation" where="#mlpla000191">
                   <desc>confirmed in the Church of Christ at Salem</desc>
                </event>
+               <event type="reception" where="#mlpla000003" when-iso="1834">
+                  <desc>received into <orgName en="childrens choir">Little Girls' Choir</orgName> at Fulneck</desc>
+               </event>
                <event type="reception" where="#mlpla000003" when-iso="1844">
                   <desc>received into <orgName en="greater girls choir">Great Girls' Choir</orgName> at Fulneck</desc>
                </event>
@@ -3816,6 +3819,7 @@
                <residence when-iso="1849"><placeName ref="#mlpla000374">Oldham</placeName></residence>
                <residence><placeName ref="#mlpla000083">Lancashire</placeName></residence>
                <residence><placeName ref="#mlpla000191">Salem</placeName></residence>
+               <affiliation type="choir" notBefore="1834" notAfter="1844"><orgName en="childrens choir">Little Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1844" notAfter="1849"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1849"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/51</bibl>
@@ -4833,8 +4837,8 @@
                <event when="1793-12-17">
                   <desc>widowed</desc>
                </event>
-               <event when-iso="1812-01-26">
-                  <desc>Disqualified from committee at <placeName ref="#mlpla000063">Ockbrook</placeName> due to great age and infirmity</desc>
+               <event when-iso="1812-01-26" where="#mlpla000063">
+                  <desc>Disqualified from committee at Ockbrook due to great age and infirmity</desc>
                </event>
                <event type="interment" where="#mlpla000063" when-iso="1815-05-13" ref="#mlper000721">
                   <desc>interred at Ockbrook by Ignatius Traneker</desc>
@@ -4874,8 +4878,8 @@
                <relation name="child" passive="Jacob Planta"/>
                <relation name="child" passive="Martha Planta"/>
                <relation name="parent" active="Anna Johanna Collis" notBefore="1756"/>
-               <relation name="parent" active="Benigna" notBefore="1758"/>
-               <relation name="parent" active="Johannes" notBefore="1764"/>
+               <relation name="parent" active="Benigna Planta" notBefore="1758"/>
+               <relation name="parent" active="Johannes Planta" notBefore="1764"/>
             </listRelation>
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000721" when-iso="1815-05-13"/>
@@ -5572,10 +5576,6 @@
                <relation name="sibling" mutual="Abraham Oates"/>
                <relation name="sibling" mutual="Martha Oates"/>
                <relation name="sibling" mutual="Sarah Oates"/>
-               <relation name="sibling" mutual="Elizabeth Oates"/>
-               <relation name="sibling" mutual="Ann Oates"/>
-               <relation name="sibling" mutual="Oliver Oates"/>
-               <relation name="sibling" mutual="James Oates" notBefore="1769"/>
             </listRelation>
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000697" when-iso="1761-06-05"/>
@@ -6272,6 +6272,7 @@
                <relation name="ordination" passive="#mlper000722" when-iso="1778"/>
                <relation name="ordination" passive="#mlper000602" when-iso="1785-03-20"/>
                <relation name="consecration" passive="#mlper000694 #mlper000726" when-iso="1801-11-13"/>
+               <relation name="interment" passive="#mlper000361" when-iso="1831-01-03"/>
             </listRelation>
          </listPerson>
          <listPerson>
@@ -6741,7 +6742,7 @@
             <person xml:id="mlper000565" sex="f">
                <persName>
                   <forename>Ann <addName>Elizabeth</addName></forename>
-                  <surname>Marychurch</surname>
+                  <surname type="birth">Marychurch</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1804-09-24">24 September, 1804</date>
@@ -6779,7 +6780,7 @@
             <person xml:id="mlper000567" sex="f">
                <persName>
                   <forename>Ann</forename>
-                  <surname>Kellet</surname>
+                  <surname type="birth">Kellet</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1745-03-21">21 March, 1745</date>
@@ -6908,7 +6909,7 @@
             <person xml:id="mlper000569" sex="f">
                <persName>
                   <forename>Anna <addName>Margretta</addName></forename>
-                  <surname>Walker</surname>
+                  <surname type="birth">Walker</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1763-09-20">20 September, 1763</date>
@@ -6947,12 +6948,54 @@
             <person xml:id="mlper000570" sex="f">
                <persName>
                   <forename>Beterous</forename>
-                  <surname>Atkinson</surname>
+                  <surname type="birth" cert="medium">Ashley</surname>
+                  <surname type="married">Atkinson</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1742-05-04">4 May, 1742</date>
+                  <placeName ref="#mlpla000102">Wyke</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1771-07-16">16 July, 1771</date>
+                  <placeName ref="#mlpla000102">Wyke</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000102" when-iso="1758-08">
+                  <desc>received into society at Wyke</desc>
+               </event>
+               <event type="reception" when-iso="1762-04">
+                  <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
+               </event>
+               <event type="marriage" where="#mlpla000220" when-iso="1766-09-21">
+                  <desc>married Thomas Atkinson at St Peter’s Church Birstall</desc>
+               </event>
+               <event when-iso="1769-12">
+                  <desc>readmitted to the society</desc>
+               </event>
+               <event type="reception" where="#mlpla000102" when-iso="1770-04-15">
+                  <desc>received into congregation at Lower Wyke</desc>
+               </event>
+               <event type="sacrament" when-iso="1771-06-24">
+                  <desc>sacrament on sickbed</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1771-07-18" ref="#mlper000357">
+                  <desc>interred at Fulneck by Peter Syms</desc>
+               </event>
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/23</bibl>
                <note resp="#Yorkshire_Families">ATKINSON, Betterous (1742-1771) b 04.05.1742 Wyke reception: received congregation Lower Wyke 15.04.1770, sacrament on sickbed 24.06.1771 m Atkinson
                   d 16.07.1771 aged 29 Wyke, interred Fulneck by Br P Syms 18.07.1771 grave 425 - 1st section, 18th row, 5th grave from path</note>
+               <!-- Cross-referenced with Thomas Atkinson (wedding dates match) to determine her married name. -->
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="Thomas Atkinson" notBefore="1766-09-21" notAfter="1771-07-16"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000357" when-iso="1771-07-18"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000571" sex="f">
@@ -7068,7 +7111,7 @@
             <person xml:id="mlper000573" sex="f">
                <persName>
                   <forename>Grace</forename>
-                  <surname>Thornton</surname>
+                  <surname type="birth">Thornton</surname>
                </persName>
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1736-10-28">28 October, 1736</date>
@@ -7289,7 +7332,7 @@
             <person xml:id="mlper000577" sex="f">
                <persName>
                   <forename>Ann</forename>
-                  <surname>Bullock</surname>
+                  <surname type="birth">Bullock</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1743-08-29">29 August, 1743</date>
@@ -7383,7 +7426,7 @@
             <person xml:id="mlper000579" sex="f">
                <persName>
                   <forename>Mary</forename>
-                  <surname>Armstrong</surname>
+                  <surname type="birth">Armstrong</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1793-01-18">18 January, 1793</date>
@@ -7421,7 +7464,7 @@
             <person xml:id="mlper000580" sex="f">
                <persName>
                   <forename>Mary</forename>
-                  <surname>Athill</surname>
+                  <surname type="birth">Athill</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1814-07-09">9 July, 1814</date>
@@ -7490,7 +7533,7 @@
             <person xml:id="mlper000582" sex="m">
                <persName>
                   <forename>John <addName>Thompson</addName></forename>
-                  <surname>Beck</surname>
+                  <surname type="birth">Beck</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1815" cert="low">1815</date>
@@ -7507,7 +7550,7 @@
             <person xml:id="mlper000583" sex="m">
                <persName>
                   <forename>Joseph</forename>
-                  <surname>Bentley</surname>
+                  <surname type="birth">Bentley</surname>
                </persName>
                <!-- no information on birth or age -->
                <death>
@@ -7521,7 +7564,7 @@
             <person xml:id="mlper000584" sex="m">
                <persName>
                   <forename>William</forename>
-                  <surname>Birkhead </surname>
+                  <surname type="birth">Birkhead</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1703-09-29">29 September, 1703</date>
@@ -7576,7 +7619,7 @@
             <person xml:id="mlper000585" sex="m">
                <persName>
                   <forename>James</forename>
-                  <surname>Boothroyd</surname>
+                  <surname type="birth">Boothroyd</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1773-09-06">6 September, 1773</date>
@@ -7602,7 +7645,7 @@
             <person xml:id="mlper000586" sex="m">
                <persName>
                   <forename>Jacob</forename>
-                  <surname>Borck</surname>
+                  <surname type="birth">Borck</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1727-10-13">13 October, 1727</date>
@@ -7643,7 +7686,7 @@
             <person xml:id="mlper000587" sex="f">
                <persName>
                   <forename>Eleanor</forename>
-                  <surname>Briggs</surname>
+                  <surname type="birth">Briggs</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1751-10-20" resp="#Yorkshire_Families">20 October, 1751</date>
@@ -7682,7 +7725,7 @@
             <person xml:id="mlper000588" sex="m">
                <persName>
                   <forename>William</forename>
-                  <surname>Broadbent</surname>
+                  <surname type="birth">Broadbent</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1743-10-13">13 October, 1743</date>
@@ -7750,7 +7793,7 @@
                <persName>
                   <forename resp="#memoir">Ann</forename>
                   <forename resp="#Yorkshire_Families">Anna</forename>
-                  <surname>Brook</surname>
+                  <surname type="birth">Brook</surname>
                </persName>
                <birth>
                   <date type="birth" calendar="Julian" when-iso="1751-02-28">28 February, 1751</date>
@@ -7903,7 +7946,7 @@
             <person xml:id="mlper000592" sex="m">
                <persName>
                   <forename>Francis</forename>
-                  <surname>Bullock</surname>
+                  <surname type="birth">Bullock</surname>
                </persName>
                <birth>
                   <date type="birth" when-iso="1739-09-09">9 September, 1739</date>
@@ -7946,74 +7989,322 @@
                <relation name="interment" passive="#mlper000709" when-iso="1764-02-01"/>
             </listRelation>
          </listPerson>
+         <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000593" sex="f">
                <persName>
                   <forename>Mary</forename>
-                  <surname>Calvert</surname>
+                  <surname type="married">Calvert</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1710-02-17">17 February, 1710</date>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1772-07-18">18 July, 1772</date>
+               </death>
+               <event type="marriage" when-iso="1731" cert="low">
+                  <desc>married her husband</desc>
+               </event>
+               <event type="reception" when="1768">
+                  <desc>received into the society with her husband</desc>
+               </event>
+               <event type="reception" when="1770-08-13">
+                  <desc>received into congregation</desc>
+               </event>
+               <residence><placeName ref="#mlpla000109">Idle</placeName></residence>
+               <residence><placeName ref="#mlpla000395">Bolton</placeName></residence>
+               <residence><placeName ref="#mlpla000090">Pudsey</placeName></residence>
+               <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/30</bibl>
-               <!-- there is a major discrepancy on the birthdate w/memoir but all other details match -->
-               <note resp="#Yorkshire_Families">(P)ox+^>CALVERT, Mary (1703-1772) b BROOKSBANK 10.10.1703 Shipley Parish of Bradford resided: Eccleshill, Pudsey reception: baptized Presbyterian Church, received society Pudsey 1748,
-                  received congregation Pudsey 18.04.1755, sacrament Pudsey in Fulneck 16.05.1756 m Samuel Calvert (b 1702) St Peter’s Church Bradford 25.08.1731 family: daughter-in-law of James Calvert, 
-                  mother of Mary (b 1745) d 19.07.1772 aged 68 Pudsey, interred Fulneck by Br J F Zander 21.07.1772 grave 454 - 1st section, 20th row, 1st grave by path</note>
             </person>
          </listPerson>
-         <!-- not in YF document -->
          <listPerson>
             <person xml:id="mlper000594" sex="f">
                <persName>
                   <forename>Alice</forename>
-                  <surname>Catton</surname>
+                  <surname type="birth">Cotton</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1767-11-28">28 November, 1767</date>
+                  <placeName ref="#mlpla000396">Linthwaite Parish of Almondbury</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1848-02-06">6 February, 1848</date>
+                  <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
+               </death>
+               <event type="baptism" where="#mlpla000398" when-iso="1767-12-20">
+                  <desc>baptized at St Bartholomew’s chapel-of-ease Marsden</desc>
+               </event>
+               <event type="reception" where="#mlpla000107" when-iso="1769">
+                  <desc>received into <orgName en="childrens choir">Little Girls' Choir</orgName> at Golcar society</desc>
+               </event>
+               <event type="reception" where="#mlpla000059" when-iso="1779">
+                  <desc>received into <orgName en="greater girls choir">Great Girls' Choir</orgName> at Mirfield</desc>
+               </event>
+               <event type="entrance" where="#mlpla000272" when-iso="1784">
+                  <desc>entered sisters’ house Littlemoor</desc>
+               </event>
+               <event type="reception" where="#mlpla000090" when-iso="1785012-26">
+                  <desc>received into congregation at Pudsey</desc>
+               </event>
+               <event type="reception" where="#mlpla000090" when-iso="1786">
+                  <desc>received into <orgName en="single sisters choir">Single Sisters' Choir</orgName> at Pudsey</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000090" when-iso="1786-10-29">
+                  <desc>sacrament at Pudsey</desc>
+               </event>
+               <event type="arrival" where="#mlpla000396" when-iso="1806">
+                  <desc>returned to Linthwaite</desc>
+               </event>
+               <event type="transfer" where="#mlpla000330" when-iso="1806">
+                  <desc>transferred to Wellhouse congregation</desc>
+               </event>
+               <event type="arrival" where="#mlpla000271">
+                  <desc> returned to sisters’ house Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1848-02-10" ref="#mlper000384">
+                  <desc>interred at Fulneck by John Rogers</desc>
+               </event>
+               <residence notBefore="1767" notAfter="1784"><placeName ref="#mlpla000397">Linthwaite Hall</placeName></residence>
+               <occupation>needlework</occupation>
+               <affiliation type="choir" notBefore="1769" notAfter="1779"><orgName en="childrens choir">Little Girls' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1779" notAfter="1786"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1786"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/116</bibl>
+               <note resp="#Fulneck_Families_19th_Century">COTTON, Alice (1767-1848) b 28.11.1767 Linthwaite Parish of Almondbury occupation: needlework resided: Linthwaite Hall 1767-1784
+                  reception: baptized St Bartholomew’s chapel-of-ease Marsden 20.12.1767, little girl Golcar society 1769, great girl Mirfield 1779, sisters’ house Littlemoor 1784, received congregation 
+                  Pudsey in Fulneck 26.12.1785, single sister Pudsey 1786, sacrament Pudsey in Fulneck 29.10.1786,  sisters’ house Fulneck 1796, returned Linthwaite and transferred Wellhouse congregation 1806,
+                  returned sisters’ house Fulneck family: daughter of George Cotton (b 1722) and Frances (née Brook) (b 1738), sister of James (b 1760), Samuel (b 1762), Sophia (b 1763), Elizabeth (Lister) (b 1765),
+                  Martha (b 1769), Frances (b 1771), George (b 1773), Charlotte (b 1776), Abel (b 1778), Richard (b 1780) and Ignatius (b 1782), d 06.02.1848 aged 80 sisters’ house Fulneck, interred Fulneck 
+                  by Br J Rogers 10.02.1848 grave 1725 - 1st section, 73rd row, 2nd grave from path</note>
+               <!-- listed as Alice Catton in the Fulneck catalog -->
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="George Cotton" notBefore="1722"/>
+               <relation name="child" passive="Frances (Brook) Cotton" notBefore="1738"/>
+               <relation name="sibling" mutual="James Cotton"/>
+               <relation name="sibling" mutual="Samuel Cotton"/>
+               <relation name="sibling" mutual="Sophia Cotton"/>
+               <relation name="sibling" mutual="Elizabeth (Lister)"/>
+               <relation name="sibling" mutual="Martha Cotton"/>
+               <relation name="sibling" mutual="Frances Cotton" notBefore="1771"/>
+               <relation name="sibling" mutual="George Cotton" notBefore="1773"/>
+               <relation name="sibling" mutual="Charlotte Cotton"/>
+               <relation name="sibling" mutual="Abel Cotton"/>
+               <relation name="sibling" mutual="Richard Cotton"/>
+               <relation name="sibling" mutual="Ignatius Cotton"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000384" when-iso="1848-02-10"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000595" sex="f">
                <persName>
                   <forename>Mary</forename>
-                  <surname>Clark</surname>
+                  <surname type="birth">Clark</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1761-05-08">8 May, 1761</date>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1772-06-04">4 June, 1772</date>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
+               </death>
+               <event type="interment" where="#mlpla000003" when-iso="1772-06-08" ref="#mlper000709">
+                  <desc>interred at Fulneck by Abraham Taylor</desc>
+               </event>
                <bibl type="memoir" source="#mlpla000003">Ful/3/32</bibl>
                <note resp="#Yorkshire_Families">CLARK, Mary (-1772) d 04.06.1772 child Pudsey, interred Fulneck by Br A Taylor 08.06.1772 grave 447 - wing of 1st section, 8th grave, 1st grave by fence into field</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000709" when-iso="1772-06-08"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000596" sex="m">
                <persName>
                   <forename>John</forename>
-                  <surname>Clarke</surname>
+                  <surname type="birth">Clarke</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1693">1693</date>
+                  <placeName ref="#mlpla000399" resp="#Yorkshire_Families">Burlington</placeName>
+                  <placeName ref="#mlpla000400" resp="#memoir">Buslingthorpe</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1761-06-13">13 June, 1761</date>
+                  <placeName ref="#mlpla000089">Holbeck</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Presbyterian">Presbyterian Church</orgName></desc>
+               </event>
+               <event type="marriage" when-iso="1716">
+                  <desc>married Mary Clark</desc>
+               </event>
+               <event type="entrance" where="#mlpla000089">
+                  <desc>entered <orgName en="Ingham's society">Ingham’s society</orgName> at Holbeck</desc>
+               </event>
+               <event type="reception" where="#mlpla000089" when-iso="1744">
+                  <desc>received into society at Holbeck</desc>
+               </event>
+               <event type="reception" where="#mlpla000084" when-iso="1754-05-13">
+                  <desc>received into congregation at Yorkshire</desc>
+               </event>
+               <event type="widowed" when-iso="1754-12-07">
+                  <desc>widowed</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1761-06-15" ref="#mlper000389">
+                  <desc>interred at Fulneck by Francis Pugh</desc>
+               </event>
+               <education>apprentice to a clothmaker</education>
+               <occupation>weaver</occupation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/49</bibl>
                <note resp="#Yorkshire_Families">(P)x+^>#CLARK, John (1693-1761) b 1693 Burlington occupation: weaver resided: Holbeck 1742 reception: baptized Presbyterian Church, Ingham’s society Holbeck,
                   received society Holbeck 1744, received congregation Yorkshire 13.05.1754, never went to sacrament m Mary – widowed 07.12.1754 d 13.06.1761 Holbeck, interred 
                   Fulneck by Br F Pugh 15.06.1761 grave 195 - 2nd section, 5th row, 1st grave by path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="Mary Clark" notBefore="1716" notAfter="1754-12-07"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000389" when-iso="1761-06-15"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000597" sex="f">
                <persName>
                   <forename>Martha</forename>
-                  <surname>Clayton</surname>
+                  <surname type="birth">Naylor</surname>
+                  <surname type="married">Clayton</surname>
                </persName>
+               <birth>
+                  <date type="birth" calendar="Julian" when-iso="1716-03-10">10 March, 1716</date>
+                  <date type="birth" calendar="Gregorian" when-iso="171-03-21">21 March, 1717</date>
+                  <placeName ref="#mlpla000089">Holbeck, Parish of Leeds</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1762-04-25">25 April, 1762</date>
+                  <placeName ref="#mlpla000095">Wortley</placeName>
+               </death>
+               <event type="baptism" where="@mlpla000401" when-iso="1717-04-18">
+                  <desc>baptized at St Matthew’s Church Holbeck 18 April, 1717 (7 April, 1717 OS)</desc>
+               </event>
+               <event type="marriage" where="#mlpla000332" when-iso="1739-11-29" ref="#mlper000390">
+                  <desc>married Joseph Clayton at St Peter’s Church Leeds 29 November, 1739 (18 November, 1739 OS)</desc>
+               </event>
+               <event type="reception" where="#mlpla000095" when-iso="1744">
+                  <desc>received into society at Wortley</desc>
+               </event>
+               <event type="transfer" where="#mlpla000089" when-iso="1745">
+                  <desc>transferred to society at Holbeck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1751-01-11">
+                  <desc>received into congregation at Fulneck 11 January, 1751 (31 December, 1750 OS)</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1751-05-21">
+                  <desc>sacrament at Fulneck 21 May, 1751 (9 May, 1751 OS)</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1762-04-26" ref="#mlper000697">
+                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
+               </event>
+               <residence><placeName ref="#mlpla000095">Wortley</placeName></residence>
+               <office>servant in the society at <placeName ref="#mlpla000089">Holbeck</placeName> with her husband <persName ref="#mlper000390">Joseph Clayton</persName></office>
+               <office notBefore="1759">band servant of the communicant brothers and sisters at <placeName ref="#mlpla000089">Holbeck</placeName> with her husband <persName ref="#mlper000390">Joseph Clayton</persName></office>
+               <affiliation type="founder" when-iso="1755-04-18" ref="#mlpla000090">founder member of Pudsey congregation</affiliation>
+               <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/64</bibl>
                <note resp="#Yorkshire_Families">(P)CBx+^>CLAYTON, Martha (1717-1762) b NAYLOR 10.03.1716 (OS) / 21.03.1717 (NS) Holbeck Parish of Leeds resided: Wortley reception: baptized St Matthew’s Church 
                   Holbeck 07.04.1717 (OS) / 18.04.1717 (NS), received society Wortley 1744, transferred society Holbeck 1745, received congregation Yorkshire in Fulneck 31.12.1750 (OS) / 
                   11.01.1751 (NS), sacrament Yorkshire in Fulneck 09.05.1751 (OS) / 20.05.1751 (NS), founder member Pudsey congregation 18.04.1755 m Joseph Clayton (b 1715) St Peter’s Church Leeds 
-                  18.11.1739 (OS) / 29.11.1739 (NS) family: daughter of Joseph Naylor, daughter-in-law of Joseph Clayton, mother of Martha (Staw) (b 1747), John (b 1752), Elizabeth (Lee) (b 1754) and 
-                  Hannah (Horne) (b 1756) d 25.04.1762 aged 45 Wortley, interred Fulneck by Br B La Trobe 26.04.1762 grave 211 - 1st section, 6th row, 9th grave from path</note>
+                  18.11.1739 (OS) / 29.11.1739 (NS) family: daughter of Joseph Naylor, mother of Martha (Staw) (b 1747), John (b 1752), Elizabeth (Lee) (b 1754) and  Hannah (Horne) (b 1756) 
+                  d 25.04.1762 aged 45 Wortley, interred Fulneck by Br B La Trobe 26.04.1762 grave 211 - 1st section, 6th row, 9th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Joseph Naylor"/>
+               <relation name="spouse" mutual="#mlper000390" notBefore="1739-11-29" notAfter="1762-04-25"/>
+               <relation name="parent" active="Martha (Staw)"/>
+               <relation name="parent" active="John Clayton"/>
+               <relation name="parent" active="Elizabeth (Lee)"/>
+               <relation name="parent" active="Hannah (Horne)"/>
+            </listRelation>
          </listPerson>
-         <!-- not in YF document -->
+         <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000598" sex="f">
                <persName>
-                  <forename>Sophia</forename>
-                  <surname>Clemens</surname>
+                  <forename>Sophia <addName>Eleanora Dorothea</addName></forename>
+                  <surname type="birth">Leporin</surname>
+                  <surname type="married">Clemens</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1749-04-27">27 April, 1749</date>
+                  <placeName ref="#mlpla000402">Nienburg, Germany</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1802-09-15">15 September, 1802</date>
+                  <placeName ref="#mlpla000037">Fairfield</placeName>
+               </death>
+               <event type="confirmation" where="#mlpla000404" when-iso="1763" cert="low">
+                  <desc>confirmed at Hanover in her 14th year</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000404" when-iso="1764" cert="low">
+                  <desc>sacrament at Hanover</desc>
+               </event>
+               <event type="departure" where="#mlpla000402" when-iso="1778-06-25">
+                  <desc>departed Nienburg</desc>
+               </event>
+               <event type="arrival" where="#mlpla000038" when-iso="1778-06-29">
+                  <desc>arrived in Gnadau</desc>
+               </event>
+               <event type="entrance" where="#mlpla000405" when-iso="1778-08-01" ref="#mlper000393 #mlper000394">
+                  <desc>entered Sisters' House at Gnadau with her sisters Anne Leporin and Charlotte Leporin</desc>
+               </event>
+               <event type="reception" where="#mlpla000038" when-iso="1779-04-05" ref="#mlper000393">
+                  <desc>received into congregation at Gnadau with her sister Anne Leporin</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000038" when-iso="1780-01-01">
+                  <desc>sacrament at Gnadau</desc>
+               </event>
+               <event type="departure" where="#mlpla000405" when-iso="1784-05-05">
+                  <desc>left Sisters' House at Gnadau</desc>
+               </event>
+               <event type="marriage" where="#mlpla000039" when-iso="1784-06-01" ref="#mlper000395">
+                  <desc>married Christian  Gottfried Clemens at Gnadenfrey</desc>
+               </event>
+               <event type="reception" office="acoluth" where="#mlpla000039" when-iso="1785-07-15">
+                  <desc>received as an acoluth at Gnadenfrey</desc>
+               </event>
+               <residence><placeName ref="#mlpla000402">Nienburg</placeName></residence>
+               <residence><placeName ref="#mlpla000403">Osnabrück</placeName></residence>
+               <residence><placeName ref="#mlpla000404">Hanover</placeName></residence>
+               <residence notBefore="1778-06-29" notAfter="1784-05-05"><placeName ref="#mlpla000038">Gnadau</placeName></residence>
+               <residence notBefore="1784-05-19" notAfter="1787-12"><placeName ref="#mlpla000039">Gnadenfrey</placeName></residence>
+               <residence notBefore="1787-12" notAfter="1789-09"><placeName ref="#mlpla000251">Niesky</placeName></residence>
+               <residence notBefore="1789-09" notAfter="1790-07"><placeName ref="#mlpla000036">Ebersdorf</placeName></residence>
+               <residence notBefore="1790-09" notAfter="1794-11"><placeName ref="#mlpla000144">Dublin</placeName></residence>
+               <residence notBefore="1794-11"><placeName ref="#mlpla000030">Bristoll</placeName></residence>
+               <residence notBefore="1800-04"><placeName ref="#mlpla000037">Fairfield</placeName></residence>
+               <office>room overseer in <placeName ref="#mlpla000405">Sisters' House at Gnadau</placeName></office>
+               <office>elected member of the congregation council</office>
+               <office notBefore="1785-07-15">acoluth</office>
+               <office notBefore="1787-12" notAfter="1789-09">congregation service in <placeName ref="#mlpla000251">Niesky</placeName> with <persName ref="#mlper000395">Christian  Gottfried Clemens</persName></office>
+               <office notBefore="1789-09" notAfter="1790-07">care of the married brethren and sisters at <placeName ref="#mlpla000036">Ebersdorf</placeName> with <persName ref="#mlper000395">Christian  Gottfried Clemens</persName></office>
+               <office notBefore="1790-09" notAfter="1794-11">congregation labourer at <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office notBefore="1794-11">congregation labourer at <placeName ref="#mlpla000030">Bristoll</placeName></office>
+               <affiliation type="choir" notBefore="1779-04-05" notAfter="1784-06-01"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1784-06-01"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/79</bibl>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="#mlper000391"/>
+               <relation name="child" passive="#mlper000392"/>
+               <relation name="sibling" mutual="#mlper000393"/>
+               <relation name="sibling" mutual="#mlper000394"/>
+               <relation name="spouse" mutual="#mlper000395" notBefore="1784-06-01" notAfter="1802-09-15"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000599" sex="f">
@@ -8022,10 +8313,9 @@
                   <surname>Clough</surname>
                </persName>
                <bibl type="memoir" source="#mlpla000003">Ful/3/56</bibl>
-               <note resp="#Yorkshire_Families">(G)CLOUGH, Elizabeth (1751-1770) b 16.02.1750 (OS) / 27.02.1751 (NS) Cleckheaton Parish of Birstall educated: Brethren’s day school Gomersal
-                  reception: baptized meeting house Gomersal by Br F W Marschall 19.02.1750 (OS) / 02.03.1751 (NS), received congregation Gomersal on sickbed 23.06.1770 
-                  family: daughter of Michael Clough (b 1712) and Mary (née Walker) (b 1717), sister of Betty (b 1737), John (b 1739), Martha (b 1744), Sarah (b 1744), Isaac (b 1747), 
-                  Anna Maria (Watson) (b 1748), James (b 1753), Benjamin (b 1755), Joseph (b 1757) and Abraham (b 1760)
+               <note resp="#Yorkshire_Families">(G)CLOUGH, Elizabeth (1751-1770) b 16.02.1750 (OS) / 27.02.1751 (NS) Cleckheaton Parish of Birstall educated: Brethren’s day school Gomersal reception: baptized meeting 
+                  house Gomersal by Br F W Marschall 19.02.1750 (OS) / 02.03.1751 (NS), received congregation Gomersal on sickbed 23.06.1770  family: daughter of Michael Clough (b 1712) and Mary (née Walker) (b 1717), 
+                  sister of Betty (b 1737), John (b 1739), Martha (b 1744), Sarah (b 1744), Isaac (b 1747),  Anna Maria (Watson) (b 1748), James (b 1753), Benjamin (b 1755), Joseph (b 1757) and Abraham (b 1760)
                   d 04.07.1770 aged 19 of consumption Gomersal, interred Fulneck by Br P Syms 07.07.1770 grave 403 - 1st section, 16th row, 10th grave from path</note>
             </person>
          </listPerson>
@@ -8037,11 +8327,10 @@
                </persName>
                <bibl type="memoir" source="#mlpla000003">Ful/3/97</bibl>
                <note resp="#Yorkshire_Families">(LW/G)CBo/x+^>#CLOUGH, John (1706-1764) b June 1706 Cleckheaton Parish of Birstall occupation: blacksmith reception: baptized St Peter’s Church Birstall 21.07.1706 (OS)
-                  01.08.1706 (NS), Ingham’s society Cleckheaton 1740, received society Gomersal 1750, received congregation Yorkshire in Fulneck 25.03.1751 (OS) / 05.04.1751 (NS), sacrament 
-                  Yorkshire in Fulneck 23.11.1751 (OS) / 04.12.1751 (NS), founder member Gomersal congregation 17.04.1755 m Grace Brook (b 1717) St Peter’s Church Birstall 22.07.1736 (OS) / 
-                  02.08.1736 (NS) - widowed 26.07.1763 family: son of John Clough (blacksmith), brother of Michael (b 1712) and William (b 1719), father of Mary (Taylor) (b 1737), Grace (b 1738), 
-                  John (b 1740), William (b 1742), Samuel (b 1744), Henry (b 1746), 1 son (b 1748?), Joseph (b 1750), Benjamin (b 1753) and James (b 1756), d 18.03.1764 aged 57 Cleckheaton, 
-                  interred Fulneck by Br S Watson 19.03.1764 grave 261 - 2nd section, 6th row, 4th grave from path</note>
+                  01.08.1706 (NS), Ingham’s society Cleckheaton 1740, received society Gomersal 1750, received congregation Yorkshire in Fulneck 25.03.1751 (OS) / 05.04.1751 (NS), sacrament  Yorkshire in Fulneck 23.11.1751 (OS) 
+                  / 04.12.1751 (NS), founder member Gomersal congregation 17.04.1755 m Grace Brook (b 1717) St Peter’s Church Birstall 22.07.1736 (OS) /   02.08.1736 (NS) - widowed 26.07.1763 family: son of John Clough 
+                  (blacksmith), brother of Michael (b 1712) and William (b 1719), father of Mary (Taylor) (b 1737), Grace (b 1738),  John (b 1740), William (b 1742), Samuel (b 1744), Henry (b 1746), 1 son (b 1748?), 
+                  Joseph (b 1750), Benjamin (b 1753) and James (b 1756), d 18.03.1764 aged 57 Cleckheaton, interred Fulneck by Br S Watson 19.03.1764 grave 261 - 2nd section, 6th row, 4th grave from path</note>
             </person>
          </listPerson>
          <listPerson>
@@ -8052,10 +8341,9 @@
                </persName>
                <bibl type="memoir" source="#mlpla000003">Ful/3/66</bibl>
                <note resp="#Yorkshire_Families">(G/F)o/xCLOUGH, Sarah (1744-1772) b 15.04.1744 Cleckheaton Parish of Birstall reception: baptized St Peter’s Church Birstall 08.08.1744 (OS) / 19.08.1744 (NS),
-                  received society Gomersal 26.12.1760, sisters’ house Gomersal 10.09.1761, received congregation Gomersal in Fulneck 13.08.1762, sisters’ house Fulneck 22.02.1764, 
-                  sacrament Fulneck 07.11.1768 family: daughter of Michael Clough (b 1712) and Mary (née Walker) (b 1717), sister of Betty (b 1737), John (b 1739), Martha (b 1744), Isaac (b 1747),
-                  Anna Maria (Watson) (b 1748), Elizabeth (b 1751), James (b 1753), Benjamin (b 1755), Joseph (b 1757) and Abraham (b 1760)
-                  d 03.11.1772 aged 28 sisters’ house Fulneck, interred Fulneck by Br J F Zander 06.11.1772 grave 461 - 1st section, 20th row, 4th grave from path</note>
+                  received society Gomersal 26.12.1760, sisters’ house Gomersal 10.09.1761, received congregation Gomersal in Fulneck 13.08.1762, sisters’ house Fulneck 22.02.1764, sacrament Fulneck 07.11.1768 
+                  family: daughter of Michael Clough (b 1712) and Mary (née Walker) (b 1717), sister of Betty (b 1737), John (b 1739), Martha (b 1744), Isaac (b 1747), Anna Maria (Watson) (b 1748), Elizabeth (b 1751), 
+                  James (b 1753), Benjamin (b 1755), Joseph (b 1757) and Abraham (b 1760) d 03.11.1772 aged 28 sisters’ house Fulneck, interred Fulneck by Br J F Zander 06.11.1772 grave 461 - 1st section, 20th row, 4th grave from path</note>
             </person>
          </listPerson>
          <listPerson>
@@ -9610,16 +9898,6 @@
                   <forename>John</forename>
                   <surname>Horsfall</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(W/P)CB%o/+^>HORSFALL, John (1703-1785)
-                  b 27.07.1703 (OS) / 07.08.1703 (NS) Golcar Parish of Huddersfield
-                  occupation: clothier
-                  resided: Golcar, Pudsey
-                  reception: baptized St Peter’s Church Huddersfield 08.08.1703 (OS) / 19.08.1703 (NS),
-                  received society Mirfield 1748,
-                  received congregation Yorkshire in Fulneck 10.12.1748 (OS) / 21.12.1748 (NS), sacrament Yorkshire 02.02.1750 (OS) / 13.02.1751 (NS), transferred society Golcar 1752, founder member Wellhouse congregation 16.04.1755, transferred congregation Pudsey
-                  m Sarah (b 1697) - widowed 24.09.1765 family: son of Henry Horsfall,
-                  father of Elizabeth (b 1730), William (b 1733), Mary (b 1735), Joseph (b 1737) and Joseph (b 1740)
-                  d 14.10.1785 aged 82 Pudsey, interred Fulneck by Br G Traneker 18.10.1785 grave 747 - 2nd section, 19th row, 6th grave from path</note>
             </person>
          </listPerson>
          <listPerson>

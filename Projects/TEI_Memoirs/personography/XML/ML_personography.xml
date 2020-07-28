@@ -5692,7 +5692,7 @@
                <event type="reception">
                   <desc>received into the United Flock</desc>
                </event>
-               <event where="#mlpla000090" when-iso="1766">
+               <event type="readmission" where="#mlpla000090" when-iso="1766">
                   <desc>readmitted quarterly sacrament at Pudsey</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1772-08-11" ref="#mlper000709">
@@ -5739,7 +5739,7 @@
                <event type="reception" where="#mlpla000084" when-iso="1755">
                   <desc>received into society at Yorkshire</desc>
                </event>
-               <event where="#mlpla000004" when-iso="1765-04-09">
+               <event type="readmission" where="#mlpla000004" when-iso="1765-04-09">
                   <desc> readmitted to society at Fetter Lane</desc>
                </event>
                <event type="reception" where="#mlpla000054" when-iso="1766-01-13">
@@ -6364,10 +6364,10 @@
                <event type="exclusion" when-iso="1767">
                   <desc> proved unfaithful and excluded from congregation</desc>
                </event>
-               <event where="#mlpla000090">
+               <event type="readmission" where="#mlpla000090">
                   <desc>readmitted to society at Pudsey</desc>
                </event>
-               <event where="#mlpla000090" when-iso="1770-06-04">
+               <event type="readmission" where="#mlpla000090" when-iso="1770-06-04">
                   <desc>readmitted to congregation at Pudsey</desc>
                </event>
                <event type="marriage" where="#mlpla000225" when-iso="1767-09-20">
@@ -6440,10 +6440,10 @@
                <event where="#mlpla000102">
                   <desc>readmitted to society at Wyke</desc>
                </event>
-               <event where="#mlpla000102" when-iso="1757-11-13">
+               <event type="readmission" where="#mlpla000102" when-iso="1757-11-13">
                   <desc>readmitted to congregation at Lower Wyke</desc>
                </event>
-               <event where="#mlpla000102" when-iso="1758-09-03">
+               <event type="readmission" where="#mlpla000102" when-iso="1758-09-03">
                   <desc>reaadmitted to sacrament at Lower Wyke</desc>
                </event>
                <event type="widowed" when-iso="1789-04-24">
@@ -6974,7 +6974,7 @@
                <event type="marriage" where="#mlpla000220" when-iso="1766-09-21">
                   <desc>married Thomas Atkinson at St Peter’s Church Birstall</desc>
                </event>
-               <event when-iso="1769-12">
+               <event type="readmission" when-iso="1769-12">
                   <desc>readmitted to the society</desc>
                </event>
                <event type="reception" where="#mlpla000102" when-iso="1770-04-15">
@@ -8646,7 +8646,7 @@
                <event type="reception" where="#mlpla000003" when-iso="1819-03-07">
                   <desc>received into congregation at Fulneck</desc>
                </event>
-               <event type="reception" where="#mlpla000003" when-iso="1835-07-28">
+               <event type="readmission" where="#mlpla000003" when-iso="1835-07-28">
                   <desc>readmitted to congregation at Fulneck</desc>
                </event>
                <event type="sacrament" where="#mlpla000003" when-iso="1837-11-13">
@@ -8973,10 +8973,10 @@
                <event type="marriage" where="#mlpla000324" when-iso="1775-06-04" ref="#mlper000402">
                   <desc>married John Hartley at Church of St John the Baptist Halifax</desc>
                </event>
-               <event where="#mlpla000330" when-iso="1790-03-28">
+               <event type="readmission" where="#mlpla000330" when-iso="1790-03-28">
                   <desc>readmitted to congregation at Wellhouse</desc>
                </event>
-               <event type="sacrament" where="#mlpla000330" when-iso="1790-06-06">
+               <event type="readmission" where="#mlpla000330" when-iso="1790-06-06">
                   <desc>readmitted to sacrament at Wellhouse</desc>
                </event>
                <residence when-iso="1770-09-17"><placeName ref="#mlpla000091">Halifax</placeName></residence>
@@ -9178,32 +9178,155 @@
             <person xml:id="mlper000617" sex="f">
                <persName>
                   <forename>Hannah</forename>
-                  <surname>Horsefield</surname>
+                  <surname type="birth">Horsefield</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1751-07-09">9 July, 1751</date>
+                  <placeName ref="#mlpla000420">Brighouse</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1775-04-29">29 April, 1775</date>
+                  <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="entrance" where="#mlpla000271" when-iso="1768-10-01">
+                  <desc>entered sisters’ house Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1769-05-04">
+                  <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1769-06-19">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1770-12-05">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1775-05-02" ref="#mlper000711">
+                  <desc>interred at Fulneck by Erasmus Miller</desc>
+               </event>
+               <affiliation type="choir" notBefore="1769-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/61</bibl>
                <note resp="#Yorkshire_Families">HORSFIELD, Hannah (1751-1775) b 09.07.1751 Brighouse reception: baptized Church of England, sisters’ house Fulneck 01.10.1768, received congregation Fulneck 
                   19.06.1769, sacrament Fulneck 05.12.1770 d 29.04.1775 aged 23 sisters’ house Fulneck, interred Fulneck by Br E Miller 02.05.1775 grave 500 - 1st section, 22nd row, 1st grave by path</note>
             </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000711" when-iso="1775-05-02"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000618" sex="f">
                <persName>
                   <forename>Lydia</forename>
-                  <surname>Howe</surname>
+                  <surname type="birth">Howe</surname>
                </persName>
+               <birth>
+                  <date type="birth" calendar="Julian" when-iso="1746-11-24">24 November, 1746</date>
+                  <date type="birth" calendar="Gregorian" when-iso="1746-12-05">5 December, 1746</date>
+                  <placeName ref="#mlpla000090">Pudsey</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1773-05-13">13 May, 1773</date>
+                  <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
+               </death>
+               <event type="baptism" where="#mlpla000421" when-iso="1746-12-05" ref="#mlper000693">
+                  <desc>baptized at Old Chapel Fulneck by John Ockershausen 5 December, 1746 (24 November, 1746 OS)</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1760-03-25">
+                  <desc>received into <orgName en="greater girls choir">Great Girls' Choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1760-08-13">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000271" when-iso="1762-11-08">
+                  <desc>entered sisters’ house Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1765-05-04">
+                  <desc>received into <orgName en="single sisters choir">Single Sisters' Choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1766-03-27">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="reception" office="acoluth" where="#mlpla000003" when-iso="1768-07-27">
+                  <desc>received as an acoluth at Fulneck</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1773-05-17" ref="#mlper000711">
+                  <desc>interred at Fulneck by Erasmus Miller</desc>
+               </event>
+               <education notBefore="1750"><placeName ref="#mlpla000295">Girls’ School Mile End</placeName></education>
+               <education notBefore="1754"><placeName ref="#mlpla000291">Girls' School Chelsea</placeName></education>
+               <education notBefore="1755-04-11"><placeName ref="#mlpla000286">Girls' School Fulneck</placeName></education>
+               <office notBefore="1768-07-27">acoluth</office>
+               <affiliation type="choir" notBefore="1760-03-25" notAfter="1765-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1765-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/75</bibl>
                <note resp="#Yorkshire_Families">(P/F)HOWE, Lydia (1746-1773) b 24.11.1746 (OS) / 05.12.1746 (NS) Pudsey educated: girls’ school Mile End 1750, girls’ school Chelsea 1754, girls’ school Fulneck 11.04.1755
                   reception: baptized old chapel Fulneck by Br J Ockershausen 24.11.1746 (OS) / 05.12.1746 (NS), received congregation Fulneck 13.08.1760, sisters’ house Fulneck 1762,
                   sacrament Fulneck 27.03.1766 church orders: received as acoluth Fulneck 27.07.1768 family: daughter of John Howe (b 1685) and Lydia (née Hirst) (b 1715), sister of John (b 1748), 
                   Benigna (b 1749) and Anna Johanna (b 1752) d 13.05.1773 aged 26 sisters’ house Fulneck, interred Fulneck by Br E Miller 17.05.1773 grave 469 - 1st section, 20th row, 7th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="John Howe" notBefore="1685"/>
+               <relation name="child" passive="Lydia (Hirst) Howe" notBefore="1715"/>
+               <relation name="sibling" mutual="John Howe" notBefore="1748"/>
+               <relation name="sibling" mutual="Benigna Howe"/>
+               <relation name="sibling" mutual="Anna Johanna Howe"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000693" when-iso="1746-12-05"/>
+               <relation name="interment" passive="#mlper000711" when-iso="1773-05-17"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000619" sex="m">
                <persName>
                   <forename>Peter</forename>
-                  <surname>Hyland</surname>
+                  <surname type="birth">Hyland</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1774-09-12">12 September, 1774</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1846-05-21">21 May, 1846</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
+               <event type="baptism" where="#mlpla000003" when-iso="1774-09-13" ref="#mlper000697">
+                  <desc>baptized at Fulneck by Benjamin La Trobe</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1789-01-19">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1791-07-02">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1803-06-15" ref="#mlper000404">
+                  <desc>married Ann Birkby at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="widowed" when-iso="1814-05-28" ref="#mlper000404">
+                  <desc>widowed by Ann Birkby</desc>
+               </event>
+               <!-- memoir says that Ann Birkby died in 1811 -->
+               <event type="marriage" where="#mlpla000225" when-iso="1814-11-23" ref="#mlper000410">
+                  <desc>married Mary Wheatley at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="widowed" when-iso="1838-08-28" ref="#mlper000410">
+                  <desc>widowed by Mary Wheatley</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1846-05-25" ref="#mlper000384">
+                  <desc>interred at Fulneck by John Rogers</desc>
+               </event>
+               <education><placeName ref="#mlpla000345">Boys' Day School at Fulneck</placeName></education>
+               <education>apprentice to his father who was a baker</education>
+               <occupation>baker</occupation>
+               <office>member of the committee of the congregation</office>
+               <office>chapel servant for <date dur="P52Y">52 years</date></office>
+               <affiliation type="choir" notAfter="1803-06-15"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1803-06-15" notAfter="1814-05-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1814-05-28" notAfter="1814-11-23"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1814-11-23" notAfter="1838-08-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1838-08-28"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/124</bibl>
                <note resp="#Yorkshire_Families">(F)HYLAND, Peter (1774-1846) b 12.09.1774 Fulneck occupation: baker reception: baptized Fulneck by Br B La Trobe 13.09.1774, received congregation Fulneck 19.01.1789, 
                   sacrament Fulneck 02.07.1791 m (1) Ann Birkby (b 1773) St Wilfrid’s Church Calverley 15.06.1803 - widowed 28.05.1814 m (2) Mary Wheatley (b 1770) St Wilfrid’s Church 
@@ -9211,17 +9334,71 @@
                   Benjamin (b 1785), Martha (Sönnichsen) (b 1787) and Frances (Clough) (b 1789), father of Mary (b 1804), Joseph (b 1805), John (b 1806), Thomas (b 1808), Peter (b 1810) and
                   Frances (b 1811), d 21.05.1846 aged 71 Fulneck, interred Fulneck by Br J Rogers 25.05.1846 register 1708 / stone 1707 - 2nd section, 73rd row, 1st grave by path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="John Peter Hyland" notBefore="1747"/>
+               <relation name="child" passive="Frances (Brook) Hyland" notBefore="1747"/>
+               <relation name="sibling" mutual="John Hyland" notBefore="1777"/>
+               <relation name="sibling" mutual="Mary Hyland" notBefore="1779"/>
+               <relation name="sibling" mutual="Joseph Hyland" notBefore="1781"/>
+               <relation name="sibling" mutual="Benjamin Hyland"/>
+               <relation name="sibling" mutual="Martha (Sönnichsen)"/>
+               <relation name="sibling" mutual="Frances (Clough)" notBefore="1789"/>
+               <relation name="spouse" mutual="#mlper000404" notBefore="1803-06-15" notAfter="1814-05-28"/>
+               <relation name="spouse" mutual="#mlper000410" notBefore="1814-11-23" notAfter="1838-08-28"/>
+               <relation name="parent" active="Mary Hyland" notBefore="1804"/>
+               <relation name="parent" active="#mlper000405" notBefore="1805"/>
+               <relation name="parent" active="#mlper000407" notBefore="1806"/>
+               <relation name="parent" active="#mlper000409 Hyland"/>
+               <relation name="parent" active="#mlper000406" notBefore="1810"/>
+               <relation name="parent" active="Frances Hyland" notBefore="1811"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000697" when-iso="1774-09-13"/>
+               <relation name="interment" passive="#mlper000384" when-iso="1846-05-25"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000620" sex="f">
                <persName>
                   <forename>Hannah</forename>
-                  <surname>Illingworth</surname>
+                  <surname type="birth">Overend</surname>
+                  <surname type="married">Illingworth</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1721-10-27">27 October, 1721</date>
+                  <placeName ref="#mlpla000349">Wibsey</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1764-01-02">2 January, 1764</date>
+                  <placeName ref="#mlpla000349">Wibsey</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Presbyterian">Presbyterian Church</orgName></desc>
+               </event>
+               <event type="marriage" where="#mlpla000135" when-iso="1749-03" ref="#mlper000411">
+                  <desc>married Joshua Illingworth at Bradford</desc>
+               </event>
+               <event type="reception" where="#mlpla000160" when-iso="1752">
+                  <desc>received into society at Horton</desc>
+               </event>
+               <event type="reception" where="#mlpla000090" when-iso="1761-01-01">
+                  <desc>received into congregation at Pudsey</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1764-01-04" ref="#mlper000709">
+                  <desc>interred at Fulneck by Abraham Taylor</desc>
+               </event>
+               <residence><placeName ref="#mlpla000349">Wibsey</placeName></residence>
+               <affiliation type="choir" notBefore="1761-01-01"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/100</bibl>
                <note resp="#Yorkshire_Families">(H/P)ox+^>ILLINGWORTH, Hannah (1721-1764) b 27.10.1721 Wibsey resided: Wibsey reception: baptized Presbyterian Church, received society Horton 1752,
                   received congregation Pudsey 01.01.1761 m Illingworth d 02.01.1764 aged 42 Wibsey, interred Fulneck by Br A Taylor 04.01.1764 grave 254 - 1st section, 9th row, 4th grave from path</note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000411" notBefore="1749-03" notAfter="1764-01-02"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000709" when-iso="1764-01-04"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000621" sex="f">

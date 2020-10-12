@@ -1,7 +1,5 @@
-<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-    schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/djakacki/moravianlives/master/TEI_Memoirs/XML/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -78,18 +76,543 @@
    </teiHeader>
    <text type="placeography">
       <body xml:lang="en">
+         
          <listPlace>
             <place xml:id="mlpla000001">
-               <placeName>Herrnhut, Moravia <ptr target="#mlpla000001" />
-               </placeName>
-               <idno sameAs="Geonames" />
-            </place>
+               <placeName>Herrnhut</placeName>
+            </place>              
+         </listPlace>
+         
+         <listPlace>
             <place xml:id="mlpla000002">
-               <placeName>Bethlehem, Pennsylvania <ptr target="#mlpla000002" />
-               </placeName>
-               <idno sameAs="Geonames" />
+               <placeName>Bethlehem</placeName>
             </place>
          </listPlace>
+         
+         <listPlace>
+            <place xml:id="mlpla000003">
+               <location>
+                  <geo>53.7837, -1.6648</geo> 
+               </location>
+               <placeName type="standard">
+                  <name>Fulneck</name>
+               </placeName>
+               <placeName type="preferred" xml:lang="en">
+                  <name type="full">Fulneck Moravian Settlement</name>
+                  <respons locus="name">
+                     <desc>Moravian Lives</desc>
+                  </respons>
+               </placeName>
+               <placeName type="variant" xml:lang="en" when-iso="1743">
+                  <name type="moravian">Lambshill</name>
+                  <note>
+                     <label>Zinzendorf's preferred name for Fulneck</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="deprecated">Fulnec</name>
+                  <note>
+                     <label>Alternate spelling</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="historical">The Fall Necke</name>
+                  <note>
+                     <label>Old English term</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="moravian">Fulnek</name>
+                  <note>
+                     <label>Named in honour of the Fulnek settlement in Moravia</label>
+                  </note>
+               </placeName>
+               
+               <event type="establishment" source="https://www.w3.org/TR/NOTE-datetime" when-iso="1744" cert="high" >
+                  <desc>Note about the establishment of Fulneck</desc>
+               </event>
+<!--               <event type="transition" source="https://www.w3.org/TR/NOTE-datetime" when-iso="date">
+                  <desc>If there is a transformation of place that is important to the Moravians ...</desc>
+               </event>
+               <event type="dissolution" source="https://www.w3.org/TR/NOTE-datetime" to="2017-09-01" cert="high">
+                  <desc>If a location were to be dissolved, a note could go here</desc>
+               </event>-->              
+
+               <note type="general" xml:lang="en"> This is a general note about the place.</note>
+               
+               <note type="project-specific" xml:lang="en">
+                  <note>This is a project-specific note about the place.</note>
+                  <respons locus="value">
+                     <desc>
+                        <orgName ref="URI">ML</orgName>
+                     </desc>
+                  </respons>
+               </note>
+               
+               
+
+               <listBibl>
+                  <head>Sources:</head>
+                  <bibl>
+                     <title>Fulneck Moravian Church and Museum</title>
+                     <ref source="website" target="http://www.fulneck.org.uk/"/>
+                  </bibl>
+               </listBibl>
+               
+               <!-- we'll need to clarify the att.global.linking set of attributes that extends from sameAs to include narrowTransitive, broadTransitive and perhaps metonym-->
+
+               <idno type="VIAF" cert="high" sameAs="6558159035174601380001"/> 
+               <!--VIAF place ID is specifically Fulneck Moravian Church -->
+               <idno type="Wikidata" cert="low" corresp="#Q5508369" /> 
+               <!-- the Wikipedia entry is titled "Fulneck Moravian Settlement" but includes information beyond Moravian scope  -->
+               <idno type="GeoNames" cert="high" corresp="#12023531"/>
+               <!-- bad example because GeoNames points at golf club -->
+
+               
+            </place>
+            <relation name="containedBy" passive="mlpla000090">
+               <desc>contained by Pudsey</desc>
+            </relation>
+         </listPlace>
+
+         
+         
+	
+
+<!--mlpla000004	Fetter Lane		London		England	
+mlpla000005			Meniwolagamelah	Pennsylvania		
+mlpla000006			Menigahela	Pennsylvania		
+mlpla000007			St. Johns		Canada	
+mlpla000008			Friedrichstown	Pennsylvania		
+mlpla000009			Lancaster	Pennsylvania		
+mlpla000010			Oly	Pennsylvania		
+mlpla000011			Kanitsochri	Pennsylvania		Muncy
+mlpla000012			Pilgerhut		Surinam	
+mlpla000013			Seilfriesdorf	Oberlausitz/Saxonia		
+mlpla000014			Herrnhaag		Germany	
+mlpla000015			Peilau	Silesia		
+mlpla000016			Schippach	Pennsylvania		
+mlpla000017			Mocker	Upper Silesia		
+mlpla000018			Heichelheim/Worms		Germany	
+mlpla000019			New York	New York		
+mlpla000020			Nazareth	Pennsylvania		
+mlpla000021			Ayr			
+mlpla000022			Barby		Germany	
+mlpla000023			Bath			
+mlpla000024			Bayldon			
+mlpla000025			Bedford			
+mlpla000026			Berthelsdorf			
+mlpla000027			Bogue		Mesopotamia	
+mlpla000028			Brassington			
+mlpla000029			Brinkworth	Wiltshire		
+mlpla000030			Bristol			
+mlpla000031			Buttermare			
+mlpla000032			Carmel		Jamaica	
+mlpla000033			Chowbent			
+mlpla000034			Christansfeld			
+mlpla000035			Duckenfield			
+mlpla000036			Ebbersdorf			
+mlpla000037			Fairfield			
+mlpla000038			Gnadau			
+mlpla000039			Gnadenfrey			
+mlpla000040			Gracehill			
+mlpla000041			Gummersall			
+mlpla000042			Hannam Mount			
+mlpla000043			Huddersfield			
+mlpla000044			Jerusalem			
+mlpla000045			Kingston		Jamaica	
+mlpla000046			Kingswood			
+mlpla000047			Labrador			
+mlpla000048			Lambshill			
+mlpla000049			Leamington			
+mlpla000050			Leeds			
+mlpla000051			Leominster			
+mlpla000052			Littlemore			
+mlpla000053			Lobenstein			
+mlpla000054			London		England	
+mlpla000055			Lyneham			
+mlpla000056			Malmesbury			
+mlpla000057			Marienborn			
+mlpla000058					Mesopotamia	
+mlpla000059			Mirfield			
+mlpla000060			Nayldon			
+mlpla000061			Neusaly			
+mlpla000062			Northampton			
+mlpla000063			Okbrook			
+mlpla000064			Oland			
+mlpla000065			Smithouse			
+mlpla000066			Tytherton	Wiltshire		
+mlpla000067			Whitesentide			
+mlpla000068			Woodford cum Membris			
+mlpla000069						
+mlpla000070					America	
+mlpla000071				Derby		
+mlpla000072					England	
+mlpla000073				Eubau (Iboro)		
+mlpla000074						Europe
+mlpla000075					Israel	
+mlpla000076					Jamaica	
+mlpla000077					Norway	
+mlpla000078	Bitton					
+mlpla000079	the settlement of the Brethren at the Mahony					
+mlpla000080					Upper Lusatia	
+mlpla000081					Wales	
+mlpla000082				Wiltshire		
+mlpla000083				Lancashire		
+mlpla000084				Yorkshire		
+
+
+
+mlpla000085			Jonköping		Sweden	
+mlpla000086			Gothenburg		Sweden	
+mlpla000087				Susquehanna West Branch		
+mlpla000088			Shamokin			
+mlpla000089			Holbeck	Leeds		
+mlpla000090			Pudsey			
+mlpla000091			Hallifax			
+mlpla000092			Black Hay			
+mlpla000093			Birstal			
+mlpla000094			Littletown	Birstall		
+mlpla000095	Wortley			Leeds		
+mlpla000096						Europe
+mlpla000097			Cleckheaton			
+mlpla000098			Tyersal			
+mlpla000099			Hartshead			
+mlpla000100	Barksland			Elland		
+mlpla000101		Roe Head				
+mlpla000102	Wyke			Birstall		
+mlpla000103			Norwood Green			
+mlpla000104			Holme	Bradford		
+mlpla000105			Armley			
+mlpla000106			Rastrick			
+mlpla000107			Golcar			
+mlpla000108			Ashton-under-Lyne Lancashire	Lancashire		
+mlpla000109			Idle	Calverley		
+mlpla000110			Calverley			
+mlpla000111			Reading			
+mlpla000112			Annenhof		Netherlands	
+mlpla000113			East Tytherton			
+mlpla000114					Ireland	
+mlpla000115			Lampeter		Wales	
+mlpla000116			Scholes			
+mlpla000117			Castleford	Yorkshire		
+mlpla000118			Broadoaks	Essex		
+mlpla000119			Northowram			
+mlpla000120			Shelf			
+mlpla000121			Oxheys			
+mlpla000122		Smith House				
+mlpla000123			Kirton	Lincolnshire		
+mlpla000124			Ellesmere			
+mlpla000125			Rothwell			
+mlpla000126			Billingsgate			
+mlpla000127			Kirkheaton			
+mlpla000128			Cadon	Oxfordshire		
+mlpla000129			Mapperley	Derbyshire		
+mlpla000130			Bedlam	Yorkshire		
+mlpla000131				Oxfordshire		
+mlpla000132		Field Head Manor	Dodworth	Yorkshire		
+mlpla000133			Hightown	Yorkshire		
+mlpla000134		Whitechapel (Church)	Cleckheaton	Yorkshire		
+mlpla000135			Bradford	Yorkshire		
+mlpla000136			Bailiff Bridge			
+mlpla000137			Mimms	Middlesex		
+mlpla000138			Tetherton	Birstall		
+mlpla000139				Germany		
+mlpla000140			Warkten Hall	Lancashire		
+mlpla000141			Frankfurt		Germany	
+mlpla000142			Bramhall	Cheshire		
+mlpla000143		Bloomsbury Square	London		England	
+mlpla000144			Dublin		Ireland	
+mlpla000145			Barnsley	Yorkshire		
+mlpla000146			Glossop	Derbyshire		
+mlpla000147			Ballinderry		Ireland	
+mlpla000148			Belfast		Ireland	
+mlpla000149			Liverpool		England	
+mlpla000150			Zeist		Netherlands	
+mlpla000151			Gnadenthal		Germany	
+mlpla000152			Kleinwelka		Germany	
+mlpla000153			Farnley	Leeds		
+mlpla000154			Spen	Birstall		
+mlpla000155			Killinghall			
+mlpla000156			Ripley			
+mlpla000157			Rippon			
+mlpla000158			Southowram	Halifax		
+mlpla000159			Oakenshaw			
+mlpla000160			Great Horton	Bradford		
+mlpla000161			Almondbury			
+mlpla000162			Chelsea			
+mlpla000163			Roberttown	Birstall		
+mlpla000164	Parish of St James					
+mlpla000165	Parish of St Michael					
+mlpla000166			Morton Banks			
+mlpla000167				West Indies		
+mlpla000168			Bingley			
+mlpla000169			Calne	Wiltshire		
+mlpla000170			Bethabara		Jamaica	
+mlpla000171			Neuwied		Germany	
+mlpla000172			Montmirail		Switzerland	
+mlpla000173			Clayton	Bradford		
+mlpla000174			King Cross	Halifax		
+mlpla000175			Sowerby Bridge			
+mlpla000176			Mobberley	Cheshire		
+mlpla000177		Lake Wetter			Sweden	
+mlpla000178					Germany	
+mlpla000179					Netherlands	
+mlpla000180		Morley	Battely	Yorkshire		
+mlpla000181			Tong	Yorkshire		
+mlpla000182					Greenland	
+mlpla000183			Bootle			
+mlpla000184	East India House		London		England	
+mlpla000185				East Indies		
+mlpla000186	Spithead				England	
+mlpla000187					India	
+mlpla000188			Chennai		India	
+mlpla000189					China	
+mlpla000190			Plymouth	Devon	England	
+mlpla000191			Salem			
+mlpla000192			Bishopsgate		England	
+mlpla000193			Frindsbury	Kent		
+mlpla000194		Little Wild Street	London			
+mlpla000195		Mile End	London			
+mlpla000196			Cheadle Hulme	Cheshire		
+mlpla000197			Ossett			
+mlpla000198			Dewsbury			
+mlpla000199		Kensington	London		England	
+mlpla000200			Freystrop	Pembrokeshire	Wales	
+mlpla000201			Haverfordwest	Pembrokeshire	Wales	
+mlpla000202		Dudley Hill	Bradford			
+mlpla000203			Cutler Heights	Bradford		
+mlpla000204			Rushford	Halifax		
+mlpla000205	Upper Fold		Glossop			
+mlpla000206				Derbyshire		
+mlpla000207	St Cuthbert's Parish		York			
+mlpla000208				Berkshire		
+mlpla000209			York		England	
+mlpla000210			Arendal		Norway	
+mlpla000211			Copenhagen		Denmark	
+mlpla000212					Russia	
+mlpla000213					Ukraine	
+mlpla000214			Saint Johns		Antigua	
+mlpla000215					Antigua	
+mlpla000216					Saint Kitts	
+mlpla000217			Harrogate	Yorkshire		
+mlpla000218			Heaton	Bradford		
+mlpla000219		St Bartholomew's Church	Armley			
+mlpla000220		St Peter’s Church	Birstall			
+mlpla000221		St Peter's Church	Hartshead			
+mlpla000222		Lady Huntingdon Chappel				
+mlpla000223		St Mary's Church	Mirfield			
+mlpla000224		Church of St Michael and All Angels	Ashton-under-Lyne			
+mlpla000225		St Wilfrid's Church	Calverley			
+mlpla000226		All Saints' Church	Castleford			
+mlpla000227		Northowram and Coley non-conformist (Presbyterian) Church	Northowram			
+mlpla000228		Blackheath	London			
+mlpla000229		St Botolph’s Church	Billingsgate			
+mlpla000230		Church of St John the Baptist	Kirkheaton			
+mlpla000231		Lindsey House	London			
+mlpla000232		St Peter's Church	Bradford			
+mlpla000233			Bankhouse			
+mlpla000234			Heckmondwyke			
+mlpla000235		Goweer	Huddersfield			
+mlpla000236			Ovenden			
+mlpla000237		Kirklees Estate	Hallifax			
+mlpla000238		St Paul's Church	Bedford			
+mlpla000239		Putney	London			
+mlpla000240					France	
+mlpla000241		All Saints' Church	Bingley			
+mlpla000242	Red Lion Square	Holborn	London		England	
+mlpla000243		Christ Church	Sowerby Bridge			
+mlpla000244		All Saints' Church	Dewsbury			
+mlpla000245		St James' Church	Tong			
+mlpla000246		Church of St Thomas Becket Chapel-en-le frith	Derbyshire			
+mlpla000247		St Cuthbert's Church	York			
+mlpla000248			Milkel	Upper Lusatia	Germany	
+mlpla000249			Bautzen		Germany	
+mlpla000250		Uhyst			Gerrmany	
+mlpla000251		Niesky	Lusatia		Germany	
+mlpla000252			Hennersdorf		Austria	
+mlpla000253			Liversedge	Birstall		
+mlpla000254		Lane End	Fulneck			
+mlpla000255		Scarborough		Yorkshire		Scarboro
+mlpla000256		Baildon	Bradford	Yorkshire		
+mlpla000257			Gradenicz	Upper Silesia		
+mlpla000258			Amsterdam		Netherlands	
+mlpla000259		Great Queen Street	London		England	
+mlpla000260		Dartmouth Row, Blackheath	London		England	
+mlpla000261			Harwich	Essex		
+mlpla000262		Pedagogium of the Brethrens' Unity	Barby		Germany	
+mlpla000263		Theological Seminary	Niesky		Germany	
+mlpla000264			Neusalz	Silesia		
+mlpla000265		Academy for Young Nobleman	Uhyst		Germany	
+mlpla000266		St James Church	Bristol			
+mlpla000267		Sisters' House	Gummersall (Gomersal)			
+mlpla000268		Sisters' House	Ockbrook			
+mlpla000269		Orphan House	Marienborn			
+mlpla000270		Sisters' House	Marienborn			
+mlpla000271		Sisters' House	Fulneck			
+mlpla000272		Sisters' House	Littlemoor			
+mlpla000273		Sisters' House	Cleckheaton			
+mlpla000274		Sisters' House	Tyersal			
+mlpla000275		Boarding School	Bristol			
+mlpla000276		Sisters' House	Duckenfield			
+mlpla000277		Sisters' House	Herrnhaag			
+mlpla000278		Sisters' House	Pudsey			
+mlpla000279		Disciple's House	London			
+mlpla000280		Lambs Inn (Children's Economy)	Broadoaks	Essex		
+mlpla000281		Sisters' House	Oxheys			
+mlpla000282		Sisters' House	Holme			
+mlpla000283		Congregation House	Fulneck			
+mlpla000284		Sisters' House	Bedford			
+mlpla000285		Girls' Day School 	Bedford			
+mlpla000286		Girls' School 	Fulneck			
+mlpla000287		Church of Sr Johas Peter	Leeds			
+mlpla000288		Boarding School	Fulneck			
+mlpla000289		Sisters' House	Lower Wyke			
+mlpla000290		Sisters' House	Fairfield			
+mlpla000291		Girls' School 	Chelsea			
+mlpla000292		Ladies' Boarding School	Neuwied			
+mlpla000293		Boarding School	Montmirail			
+mlpla000294		Girls' School 	Little Wild Street			
+mlpla000295		Girls' School 	Mile End, London			
+mlpla000296		Mr Wesley's school	Kingswood			
+mlpla000297		Girls' School 	Broadoaks			
+mlpla000298		Children's School	Mirfield			
+mlpla000299		Children's School	Wyke			
+mlpla000300		Sisters' House	Wyke			
+mlpla000301					Guinea	
+mlpla000302			Gloadals Hill			
+mlpla000303		All Hallows’ Church	Almondbury			
+mlpla000304		Brethren’s House	Fulneck			
+mlpla000305			Aberford			
+mlpla000306		Batley Grammar School				
+mlpla000307		Oxford University	Oxford			
+mlpla000308				North Yorkshire	England	
+mlpla000309			Oxford		England	
+mlpla000310		Christ Church, Newgate Street	London		England	
+mlpla000311		SS Simmonds				
+mlpla000312			Savannah	Georgia		
+mlpla000313			Wakefield		England	
+mlpla000314			Hirschberg		Germany	
+mlpla000315		Day School	Barby			
+mlpla000316		Boarding School	Kleinwelke			
+mlpla000317		Boarding School	Fairfield			
+mlpla000318		Single Brethrens House	Neusalz			
+mlpla000319		River Oder	Neusalz			
+mlpla000320		St Laurence's Church	Reading		England	
+mlpla000321				Gloucestershire	England	
+mlpla000322		Moravian Burial Ground (Sharon's Garden)	Chelsea		England	
+mlpla000323			Mytholmroyd		England	
+mlpla000324		Church of St John the Baptist	Halifax			
+mlpla000325		Brethren's House	Holbeck			
+mlpla000326		Brethren's House	Lane End, Pudsey			
+mlpla000327		Church of St Dunstan's	West London			
+mlpla000328		Oaker Lane				
+mlpla000329		St John’s Church	Coley			
+mlpla000330		Wellhouse	Mirfield			
+mlpla000331			Farnley Moor Top			
+mlpla000332		St Peter’s Church	Leeds			
+mlpla000333			West Tytherton	Wiltshire		
+mlpla000334		St Andrew's Church	Chippenham			
+mlpla000335		Single Brethren's House	Foxham	Wiltshire		
+mlpla000336			Lightcliffe	Halifax		
+mlpla000337		Brethren's House	Bedford			
+mlpla000338		Brethren's House	Wellhouse			
+mlpla000339		Hopton	Mirfield			
+mlpla000340		Ladies School	Gomersal			
+mlpla000341		Brethren's School	Lane End, Pudsey			
+mlpla000342		Brethren's House	Uhyst			
+mlpla000343		Paedagogium	Hennersdorf			
+mlpla000344		Paedagogium	Niesky			
+mlpla000345		Boys' School	Fulneck			
+mlpla000346			Salisbury	Wiltshire	England	
+mlpla000347		St Cuthbert's Church	Bedford			
+mlpla000348			Birkenshaw	West Yorkshire		
+mlpla000349		Wibsey	Bradford	Yorkshire		
+mlpla000350			Insheim	Elsatia		
+mlpla000351			Bussweiler		Germany	
+mlpla000352			Metz		France	
+mlpla000353		University at Jena	Jena		Germany	
+mlpla000354			Jena		Germany	
+mlpla000355			Berlin		Germany	
+mlpla000356				Wetteravia		
+mlpla000357		Cheapside	London			
+mlpla000358			Madras			
+mlpla000359		St. Lawrence's Church	London			
+mlpla000360			Stockholm		Sweden	
+mlpla000361			Lindheim		Germany	
+mlpla000362		Eisenach			Germany	
+mlpla000363			Portsmouth		England	
+mlpla000364			Dover 		England	
+mlpla000365		Kinsale Harbor			Ireland	
+mlpla000366			Gravesend		England	
+mlpla000367		Port Royal			Jamaica	
+mlpla000368		Mount Zion	Jerusalem		Israel	
+mlpla000369		Boys' School Marystone 	Buttermere	Wiltshire		
+mlpla000370		Boys' School Smith House	Lightcliffe			
+mlpla000371		Wibsey Chapel	Low Moor			
+mlpla000372		Eccleshill	Bradford			
+mlpla000373			Soyland	Halifax		
+mlpla000374			Oldham	Manchester		
+mlpla000375			Culworth			
+mlpla000376		Street Side	Bradford			
+mlpla000377		Greetland	Elland	Halifax		
+mlpla000378		Birchroads	Elland	Halifax		
+mlpla000379		Tory-lane				
+mlpla000380			Westgate Hill			
+mlpla000381		Girls School	Gracehill			
+mlpla000382		Girls School	Ockbrook			
+mlpla000383		Ladies School	Wyke			
+mlpla000384			Edinburgh		Scotland	
+mlpla000385			Deighton	North Yorkshire		
+mlpla000386		St Peter’s Church	Huddersfield			
+mlpla000387		Bradley Lane				
+mlpla000388		Monarque 				
+mlpla000389		St Peter’s Church	Bedford			
+mlpla000390		Children's School	Pudsey			
+mlpla000391		Longwood 	Golcar			
+mlpla000392		Holme Meltham	Almondbury			
+mlpla000393		All Saints’ chapel-of-ease	Pudsey			
+mlpla000394		Heaton Royds	Bradford			
+mlpla000395			Bolton	Lancashire		
+mlpla000396		Linthwaite	Almondbury			
+mlpla000397		Linthwaite Hall				
+mlpla000398		St Bartholomew’s chapel-of-ease	Marsden			
+mlpla000399			Burlington	Yorkshire		
+mlpla000400		Buslingthorpe	Leeds	Yorkshire		
+mlpla000401		St Matthew’s Church	Holbeck			
+mlpla000402			Nienburg		Germany	
+mlpla000403			Osnabrück		Germany	
+mlpla000404			Hanover		Germany	
+mlpla000405		Sisters' House	Gnadau			
+mlpla000406		Brethren’s day school	Gomersal			
+mlpla000407		Meeting House	Gomersal			
+mlpla000408		Boarding School	Duckenfield			
+mlpla000409		Fartown	Pudsey			
+mlpla000410		West Terrace	Fulneck			
+mlpla000411			Drighlington	West Yorkshire		
+mlpla000412			Neder Oderwitz			
+mlpla000413		Nabcroft	Almondsbury 			
+mlpla000414				Manchester 	England	
+mlpla000415		Guiseley	Horsforth			
+mlpla000416		Widows' House	Fulneck			
+mlpla000417			Old Carmel		Jamaica	
+mlpla000418			Spice Grove		Jamaica	
+mlpla000419		Ladies School	Fulneck			
+mlpla000420			Brighouse	Yorkshire		
+mlpla000421		Old Chapel	Fulneck			
+mlpla000422			Yaxham	Norfolk	England	
+mlpla000423		Brompton Cemetery	London		England	
+mlpla000424		Girls' School	Roe Head			
+mlpla000425			Evesham	Worcestershire		
+mlpla000426		All Saints Church	Evesham			
+mlpla000427		Bradley	Huddersfield			
+mlpla000428		Sisters' House	Roberttown			
+mlpla000429		Sisters' House	Little Gomersal			
+mlpla000430			Puttenham	Surrey		
+mlpla000431			Hopeton	Westmoreland	Jamaica	
+mlpla000432			Windsor	Berkshire		-->
+         
+         
       </body>
    </text>
 </TEI>

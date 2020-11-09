@@ -8498,9 +8498,61 @@
          <listPerson>
             <person xml:id="mlper000602" sex="m">
                <persName>
-                  <forename>August Gottlieb</forename>
-                  <surname>Spangenburg</surname>
+                  <forename>August <addName>Gottlieb</addName></forename>
+                  <surname type="birth">Spangenburg</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1704-07-15">15 July, 1704</date>
+                  <placeName ref="#mlpla000471">Klettenberg, Hohenstein</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1792-09-18">18 September, 1792</date>
+                  <placeName ref="#mlpla000026">Berthelsdorf</placeName>
+               </death>
+               <event type="reception" where="#mlpla000001" when-iso="1733">
+                  <desc>received into congregation at Herrnhut</desc>
+               </event>
+               <event type="ordination" where="#mlpla000475" when-iso="1737" ref="#mlper000298">
+                  <desc>ordained as a deacon in Georgia by David Nitschmann</desc>
+               </event>
+               <event type="ordination">
+                  <desc>ordained as a presbyter</desc>
+               </event>
+               <event type="marriage" where="#mlpla000057" when-iso="1740-03-05">
+                  <desc>married Eva Maria Immig (née Ziegelbauer) at Marienborn</desc>
+               </event>
+               <event type="consecration" where="#mlpla000057" when-iso="1744-06-15" ref="#mlper000566 #mlper000397 #mlper000447">
+                  <desc>consecrated as a bishop at Marienborn by Nicholas Zinzendorf, G P Müller and Friedrich von Watteville</desc>
+               </event>
+               <event type="widowed" when-iso="1750">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" where="#mlpla000139" when-iso="1754-05-20">
+                  <desc>married Maria Elizabeth (Martha) Miksch (née Jähne) in Germany</desc>
+               </event>
+               <event type="widowed" when-iso="1789-03-26">
+                  <desc>widowed</desc>
+               </event>
+               <event type="interment" where="#mlpla000001" when-iso="1792-09-23">
+                  <desc>interred at Herrnhut</desc>
+               </event>
+               <residence when-iso="1741-04-05"><placeName ref="#mlpla000004">Fetter Lane</placeName></residence>
+               <residence notBefore ="1741-06-19" notAfter="1742-06-26"><placeName ref="#mlpla000194">Little Wild Street London</placeName></residence>
+               <education><placeName ref="#mlpla000472">Grammar School Ilefeld</placeName></education>
+               <education when-iso="1722"><placeName ref="#mlpla000353">University of Jena</placeName></education>
+               <occupation when-iso="1732">professor at <placeName ref="#mlpla000473">Halle University</placeName></occupation>
+               <occupation notAfter="1733-02-27">assistant director of <placeName ref="#mlpla000474">Orphan House Halle</placeName></occupation>
+               <office when-iso="1733">evangelist at <placeName ref="#mlpla000211">Copenhagen</placeName></office>
+               <office when-iso="1733">elder at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
+               <office notBefore="1737">deacon</office>
+               <office>presbyter</office>
+               <office notBefore="1741" notAfter="1744">board of directors Society for the Furtherance of the Gospel</office>
+               <office notBefore="1741-03-26" notAfter="1743-07-27">general helper</office>
+               <office notBefore="1744-06-15">bishop</office>
+               <office>superintendent in <placeName ref="#mlpla000070">America</placeName></office>
+               <office>hymn writer</office>
+               <office notBefore="1749" notAfter="1751">head of <placeName ref="#mlpla000476">Theological Seminary at Barby</placeName></office>
+               <office when-iso="1752">unity elder at <placeName ref="#mlpla000026">Berthelsdorf</placeName></office>
                <note resp="#Yorkshire_Families">(LW)SPANGENBERG, August Gottlieb (1704-1792) b 15.07.1704 Hohenstein Klettenberg educated: grammar school Ilefeld, University of Jena 1722 qualifications: MA1726
                   occupation: professor Halle University 1732, assistant director Orphan House Halle, dismissed Orphan House 27.02.1733 resided: at Br Brockmer’s house in Fetter Lane London 05.04.1741, 
                   Little Wild Street London 19.06.1741-26.06.1742 reception: received congregation Herrnhut 1733 congregation office: elder Herrnhut 1733 church orders: ordained as deacon Georgia by Br D Nitschmann 1737
@@ -8518,6 +8570,15 @@
                   m (2) Maria Elizabeth (Martha) Miksch (née Jähne) 20.05.1754 Germany – widowed 26.03.1789 family: son of George Spangenberg (Lutheran clergyman) and Elizabeth (née Nesen)
                   d 18.09.1792 aged 88 Berthelsdorf, interred Herrnhut 23.09.1792</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="George Spangenberg"/>
+               <relation name="child" passive="Elizabeth (Nesen) Spangenberg"/>
+               <relation name="spouse" mutual="Eva Maria Immig (Ziegelbauer) Spangenberg" notBefore="1740-03-05" notAfter="1751"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="ordination" passive="#mlper000298" when-iso="1737"/>
+               <relation name="consecration" passive="#mlper000566 #mlper000397 #mlper000447" when-iso="1744-06-15"/>
+            </listRelation>
          </listPerson>
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
@@ -8654,7 +8715,7 @@
                <event type="sacrament" where="#mlpla000003" when-iso="1837-11-13">
                   <desc>sacrament at Fulneck</desc>
                </event>
-               <event type="interment" where="#mlpla000003" when-iso="1871-05-24" ref="#mlper000397 #mlper000398">
+               <event type="interment" where="#mlpla000003" when-iso="1871-05-24" ref="#mlper000375 #mlper000398">
                   <desc>interred at Fulneck by Godfrey Clemens and Charles Bowen Ellis</desc>
                </event>
                <residence><placeName ref="#mlpla000090">Pudsey</placeName></residence>
@@ -8681,7 +8742,7 @@
             </listRelation>
             <listRelation type="Moravian">
                <relation name="baptism" passive="#mlper000718" when-iso="1790-10-31"/>
-               <relation name="interment" passive="#mlper000397 #mlper000398" when-iso="1871-05-24"/>
+               <relation name="interment" passive="#mlper000375 #mlper000398" when-iso="1871-05-24"/>
             </listRelation>
          </listPerson>
          <listPerson>
@@ -8758,7 +8819,7 @@
                <event type="widowed" when-iso="1858-11-02">
                   <desc>widowed</desc>
                </event>
-               <event type="interment" where="#mlpla000003" when-iso="1866-01-31" ref="#mlper000397">
+               <event type="interment" where="#mlpla000003" when-iso="1866-01-31" ref="#mlper000375">
                   <desc>interred at Fulneck by Godfrey Clemens</desc>
                </event>
                <occupation>servant to <persName ref="#mlper000706">James Gottlieb La Trobe</persName> and <persName ref="#mlper000717">Anna La Trobe</persName></occupation>
@@ -8783,7 +8844,7 @@
                <relation name="spouse" mutual="#mlper000400" notAfter="1858-11-02"/>
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000397" when-iso="1866-01-31"/>
+               <relation name="interment" passive="#mlper000375" when-iso="1866-01-31"/>
             </listRelation>
          </listPerson>
          <!-- not in YF document; information taken from memoir -->
@@ -9433,7 +9494,7 @@
                <event type="widowed" when-iso="1837-04-12">
                   <desc>widowed</desc>
                </event>
-               <event type="interment" where="#mlpla000003" when-iso="1866-11-09" ref="#mlper000397 #mlper000398">
+               <event type="interment" where="#mlpla000003" when-iso="1866-11-09" ref="#mlper000375 #mlper000398">
                   <desc>interred at Fulneck by Godfrey Clemens and Charles Bowen Ellis</desc>
                </event>
                <residence when-iso="1796"><placeName ref="#mlpla000090">Pudsey</placeName></residence>
@@ -9457,7 +9518,7 @@
                <relation name="parent" active="William Johnson" notBefore="1831"/>
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000397 #mlper000398" when-iso="1866-11-09"/>
+               <relation name="interment" passive="#mlper000375 #mlper000398" when-iso="1866-11-09"/>
             </listRelation>
          </listPerson>
          <!-- will add more information after memoir is proofread -->
@@ -11767,7 +11828,7 @@
                <bibl type="memoir" source="#mlpla000003">Ful/3/91</bibl>
             </person>
             <listRelation type="personal">
-               <relation name="child" passive="Ignatius Traneker"/>
+               <relation name="child" passive="#mlper000721"/>
                <relation name="child" passive="Anna Rosina (Spicer) Traneker"/>
             </listRelation>
          </listPerson>
@@ -12321,13 +12382,9 @@
                   <surname type="married">Taylor</surname>
                </persName>
                <note>Wife of <persName ref="#mlper000562">Crispin Taylor</persName> and mother of <persName ref="#mlper000277">Hannah Taylor</persName></note>
-               <note resp="#Yorkshire_Families">(LW)CBo/x+^>=#TAYLOR, Mary (1699-1781) b WILKINSON 28.02.1699 Wyke Parish of Birstall resided: Wyke reception: baptized Church of England, Ingham’s society Wyke, received 
-                  society Scholes 1744, received congregation Yorkshire in Fulneck 01.10.1748 (OS) / 12.10.1748 (NS), confirmed Yorkshire 14.09.1751 (OS) / 25.09.1751 (NS), sacrament Yorkshire 14.10.1751 (OS) / 25.10.1751 (NS),
-                  Scholes society renamed Wyke 1754, founder member Lower Wyke congregation 15.04.1755 m Crispin Taylor (b 1698) St Peter’s Church Birstall 14.05.1723 (OS) / 25.05.1723 (NS) - widowed 16.12.1752
-                  family: mother of John (b 1724), Thomas (b 1732), Crispianus (b 1737), Crispin (b 1737) and Hannah (b 1740) d 16.03.1781 aged 82, interred Fulneck by Br J H Sulger 20.03.1781
-                  grave 628 - 1st section, 36th row, 9th grave from path</note>
-            </person>
+               </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000691" sex="m">
                <persName>
@@ -12348,28 +12405,18 @@
                   <forename>Johann</forename>
                   <surname>Toltschig</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(LW/P/F/H/O)=TÖLTSCHIG, John (1703-1764)
-                  b Johann TELTSCHIK 28.07.1703 Zauchtenthal (Suchdol) Moravia education: 3 year course in gardening Sarau (Zary) Poland 1725-28 occupation: gardener
-                  resided: Smith House Lightcliffe July 1741, Little Wild Street London 1742,
-                  Smith House Lightcliffe June 1742, Chapeltown Pudsey 1743, Fulneck 1745-48
-                  reception: arrived Herrnhut 12.05.1724-1725, Herrnhut 1728-34 church orders: ordained as deacon Marienborn 1741
-                  consecrated elder Yorkshire congregation 26.05.1742 (OS) / 06.06.1742 (NS)
-                  ordained as presbyter Marienborn 1747
-                  church service: arrived London 28.12.1734 (OS), missionary Georgia,
-                  sailed from London on the Two Brothers 03.02.1735, arrived Savannah Georgia 06.04.1735, left Georgia 12.03.1738, arrived England 02.06.1738, returned Germany 13.06.1738, appointed master builder at Herrnhaag 1738, returned England 24.10.1739,
-                  visited Ingham at Ossett 04-15.11.1739, visited Bristol with John Wesley 1739,
-                  with William Delamotte he returned to Yorkshire to assist Benjamin Ingham 1739, organized societies Ockbrook and Nottingham 1740, Bristol 1741, Bedford 1742, society labourer Great Horton 1743,
-                  temporary warden Broadoaks 16.03.1742 (OS) / 27.03.1743 (NS)
-                  congregation labourer Yorkshire 17.05.1743 (OS) / 28.05.1743 (NS) - February 1748, established society Dukinfield 1744, left London for Germany 15.01.1746(OS) /26.01.1747(NS), returned Yorkshire July 1747, Ireland February 1748, Holland July 1748,
-                  accompanied a group of sisters on the sixth voyage of the Irene, left London 30.09.1752, arrived New York 20.11.1752, returned Ireland 30.11.1753,
-                  ad interim congregation labourer Dublin 1760-63
-                  provincial office: warden Georgia in 1735, attended General Synod Herrnhaag May 1747, superintendent (Oeconmus) Ireland based Dublin 1753
-                  provincial office: warden Georgia in 1735, superintendent (Oeconmus) Ireland based Dublin 1753 other service: laid out gardens of Zinzendorf’s new Herrschaftshaus 1728,
-                  visit to SPCK England 1728, hymn writer
-                  m Judith Haberland (b 1707) July 1732
-                  family: brother-in-law of Joseph Haberland?, father of Ignatius (b 1742)
-                  d 23.04.1764 aged 60 Dublin, interred Whitechurch (first burial in Dublin burial ground)
-                  grave 1 - brethren’s section, 5th row, 8th grave from wall</note>
+               <note resp="#Yorkshire_Families">(LW/P/F/H/O)=TÖLTSCHIG, John (1703-1764) b Johann TELTSCHIK 28.07.1703 Zauchtenthal (Suchdol) Moravia education: 3 year course in gardening Sarau (Zary) Poland 1725-28 
+                  occupation: gardener resided: Smith House Lightcliffe July 1741, Little Wild Street London 1742, Smith House Lightcliffe June 1742, Chapeltown Pudsey 1743, Fulneck 1745-48
+                  reception: arrived Herrnhut 12.05.1724-1725, Herrnhut 1728-34 church orders: ordained as deacon Marienborn 1741 consecrated elder Yorkshire congregation 26.05.1742 (OS) / 06.06.1742 (NS)
+                  ordained as presbyter Marienborn 1747 church service: arrived London 28.12.1734 (OS), missionary Georgia, sailed from London on the Two Brothers 03.02.1735, arrived Savannah Georgia 06.04.1735, 
+                  left Georgia 12.03.1738, arrived England 02.06.1738, returned Germany 13.06.1738, appointed master builder at Herrnhaag 1738, returned England 24.10.1739, visited Ingham at Ossett 04-15.11.1739, 
+                  visited Bristol with John Wesley 1739, with William Delamotte he returned to Yorkshire to assist Benjamin Ingham 1739, organized societies Ockbrook and Nottingham 1740, Bristol 1741, Bedford 1742, 
+                  society labourer Great Horton 1743, temporary warden Broadoaks 16.03.1742 (OS) / 27.03.1743 (NS) congregation labourer Yorkshire 17.05.1743 (OS) / 28.05.1743 (NS) - February 1748, 
+                  established society Dukinfield 1744, left London for Germany 15.01.1746(OS) /26.01.1747(NS), returned Yorkshire July 1747, Ireland February 1748, Holland July 1748, accompanied a group of sisters 
+                  on the sixth voyage of the Irene, left London 30.09.1752, arrived New York 20.11.1752, returned Ireland 30.11.1753, ad interim congregation labourer Dublin 1760-63
+                  provincial office: warden Georgia in 1735, attended General Synod Herrnhaag May 1747, superintendent (Oeconmus) Ireland based Dublin 1753 other service: laid out gardens of Zinzendorf’s new 
+                  Herrschaftshaus 1728, visit to SPCK England 1728, hymn writer m Judith Haberland (b 1707) July 1732 family: father of Ignatius (b 1742)  23.04.1764 aged 60 Dublin, interred Whitechurch 
+                  (first burial in Dublin burial ground) grave 1 - brethren’s section, 5th row, 8th grave from wall</note>
             </person>
          </listPerson>
          <listPerson>
@@ -12378,34 +12425,17 @@
                   <forename>John</forename>
                   <surname>Ockershausen</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(W/LW/G/F/D/O)=OCKERSHAUSEN, John (1710-1777) b 03.12.1710 (OS) / 14.12.1710 (NS) Germany occupation: sugar refiner
-                  reception: received society Fetter Lane 1740,
-                  received congregation Yorkshire in London 26.05.1742 (OS) / 06.06.1742 (NS), sacrament congregation office: visitor Yorkshire 26.03.1748 (OS) / 06.04.1748 (NS)
-                  church orders: ordained as deacon Yorkshire by Br N L von Zinzendorf
-                  19.02.1742 (OS) / 02.03.1743 (NS)
-                  church service: society labourer London 1742,
-                  Yorkshire based Mirfield 07.07.1742 (OS) / 18.07.1742 (NS),
-                  married choir’s warden Yorkshire 25.12.1743 (OS) / 05.01.1744 (NS),
-                  society labourer Dukinfield 21.07.1748 (OS) / 01.08.1748 (NS),
-                  Ockbrook 12.10.1749 (OS) / 23.10.1749 (NS),
-                  congregation labourer Ockbrook 13.09.1750 (OS) / 24.09.1750 (NS),
-                  Lower Wyke 1757, Gomersal 1759, Lower Wyke 1762, Ockbrook 22.07.1763,
-                  Kingswood 01.03.1768, society labourer Plymouth 1769, congregation warden Fulneck 1772, assistant labourer Leominster 01.02.1776
-                  other service: board of directors of Society for the Furtherance of the Gospel 1741-1749
-                  other information: before Wakefield Justices not having correct papers - accused of being popish
-                  recusant 26.03.1744 (OS) / 06.04.1744 (NS), arrested as vagrant Chinley - imprisoned for 8
-                  days in Derby jail 10.05.1744 (OS) / 21.05.1744 (NS), moved to Pudsey when Wakefield Quarter Sessions ejected him from parish of Mirfield 04.01.1744 (OS) / 15.01.1745 (NS),
-                  because of unrest in Pudsey moved to Smith House 12.06.1745 (OS) / 23.06.1745 (NS), arrested as a spy and unworthy man in Ossett 19.11.1745 (OS) / 30.11.1745 (NS), imprisoned York Castle but released without charge 24.12.1745 (OS) / 04.01.1746 (NS)
-                  m Elizabeth Johnson (née Page) (b 1713) Little Wild Street Holborn London by Br A G Spangenberg 24.06.1742 (OS) / 05.07.1742 (NS)
-                  family: brother of Conrad (b 1726), sister-in-law of Grace (née Brook) (b 1723),
-                  uncle of Mary (b 1756) and Elizabeth Ockershausen (b 1758),
-                  son-in-law of William Page and Elizabeth, stepfather of Elizabeth (Aked, née Johnson) (b 1736), father of Mary (b 1744), Elizabeth (b 1744), Anna Johanna (b 1747) and
-                  Benigna (Bowker) (b 1752), father-in-law of James Bowker (b 1739),
-                  grandfather of John (b 1783) and James Bowker (b 1787),
-                  great-grandfather of Sarah (b 1812), Mary (b 1815), John (b 1817), Edward (b 1819),
-                  Sarah Ann (b 1822), Thomas (b 1823) and William Henry Bowker (b 1827), and Margaret (b 1811), Rose Anne (b 1813), James Ockershausen (b 1815), Ellenor (b 1817), Sarah Elizabeth (b 1820) and Alfred Bowker (b 1822)
-                  d 24.09.1777 aged 66 Leominster
-               </note>
+               <note resp="#Yorkshire_Families">(W/LW/G/F/D/O)=OCKERSHAUSEN, John (1710-1777) b 03.12.1710 (OS) / 14.12.1710 (NS) Germany occupation: sugar refiner reception: received society Fetter Lane 1740,
+                  received congregation Yorkshire in London 26.05.1742 (OS) / 06.06.1742 (NS), sacrament congregation office: visitor Yorkshire 26.03.1748 (OS) / 06.04.1748 (NS) church orders: ordained as deacon 
+                  Yorkshire by Br N L von Zinzendorf 19.02.1742 (OS) / 02.03.1743 (NS) church service: society labourer London 1742, Yorkshire based Mirfield 07.07.1742 (OS) / 18.07.1742 (NS), married choir’s warden 
+                  Yorkshire 25.12.1743 (OS) / 05.01.1744 (NS), society labourer Dukinfield 21.07.1748 (OS) / 01.08.1748 (NS), Ockbrook 12.10.1749 (OS) / 23.10.1749 (NS), congregation labourer Ockbrook 13.09.1750 (OS) / 
+                  24.09.1750 (NS), Lower Wyke 1757, Gomersal 1759, Lower Wyke 1762, Ockbrook 22.07.1763, Kingswood 01.03.1768, society labourer Plymouth 1769, congregation warden Fulneck 1772, assistant labourer 
+                  Leominster 01.02.1776, other service: board of directors of Society for the Furtherance of the Gospel 1741-1749, other information: before Wakefield Justices not having correct papers - accused of being 
+                  popish recusant 26.03.1744 (OS) / 06.04.1744 (NS), arrested as vagrant Chinley - imprisoned for 8 days in Derby jail 10.05.1744 (OS) / 21.05.1744 (NS), moved to Pudsey when Wakefield Quarter Sessions 
+                  ejected him from parish of Mirfield 04.01.1744 (OS) / 15.01.1745 (NS), because of unrest in Pudsey moved to Smith House 12.06.1745 (OS) / 23.06.1745 (NS), arrested as a spy and unworthy man in Ossett 
+                  19.11.1745 (OS) / 30.11.1745 (NS), imprisoned York Castle but released without charge 24.12.1745 (OS) / 04.01.1746 (NS) m Elizabeth Johnson (née Page) (b 1713) Little Wild Street Holborn London 
+                  by Br A G Spangenberg 24.06.1742 (OS) / 05.07.1742 (NS) family: brother of Conrad (b 1726), stepfather of Elizabeth (Aked, née Johnson) (b 1736), father of Mary (b 1744), Elizabeth (b 1744), 
+                  Anna Johanna (b 1747) and Benigna (Bowker) (b 1752), d 24.09.1777 aged 66 Leominster</note>
             </person>
          </listPerson>
          <listPerson>
@@ -12414,29 +12444,13 @@
                   <forename>George</forename>
                   <surname>Traneker</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(LW/F)sbTRANEKER, George (1717-1802)
-                  b 06.10.1717 Odense Jutland Denmark
-                  occupation: literatus
-                  reception: baptized Lutheran Church, received congregation Herrnhaag 08.12.1742,
-                  sacrament Herrnhaag 13.04.1743, regulated Germany church orders: ordained as deacon Yorkshire 16.12.1754
-                  ordained as presbyter 12.05.1757
-                  consecrated as bishop (93 [31]) Zeist by Br J von Watteville 14.08.1783
-                  church service: director boys’ school Smith House 1751, boys’ school Fulneck 03.05.1753,
-                  congregation labourer and director of schools Fulneck 1755, congregation labourer Bedford 1757, Bristol 1763, London 1768, congregation labourer Fulneck 1776 and director of schools to 1791
-                  provincial office: provincial helper London 1768-76 other service: hymn writer
-                  m (1) Anna Margaret Haigh (b 1723) St Wilfrid’s Church Calverley 10.04.1755 by direction of the congregation - widowed 27.09.1758
-                  m (2) Frances Sophia Engelbach (b 1727) St Wilfrid’s Church Calverley 29.10.1759 – widowed 29.03.1784
-                  family: son-in-law of Counsellor Engelbach,
-                  father of stillborn daughter (1756), Anna (b 1758), Benigna Sophia (b 1760),
-                  Catherine Charlotte (b 1762), Ignatius (b 1764), George Frederic (b 1767) and
-                  Mary Dorothea (b 1769),
-                  father-in-law of Anna Rosina (née Spicer) (b 1768), Eleanor (née Sutton) (b 1763) and
-                  Elizabeth Margaret (née Fraser) (b 1787),
-                  grandfather of Charlotte (b 1799), George Edward (b 1802), Sophia Eleanor (Lee) (b 1804) and
-                  George Sutton (b 1807),
-                  great-grandfather of William Traneker (b 1735) and Bertha Sophia Lee (b 1837)
-                  d 15.05.1802 aged 84 Fulneck, interred Fulneck by Br S T Benade 21.05.1802 grave 1116 - 2nd section, 39th row, 9th grave from path
-               </note>
+               <note resp="#Yorkshire_Families">(LW/F)sbTRANEKER, George (1717-1802) b 06.10.1717 Odense Jutland Denmark occupation: literatus reception: baptized Lutheran Church, received congregation Herrnhaag 08.12.1742,
+                  sacrament Herrnhaag 13.04.1743, regulated Germany church orders: ordained as deacon Yorkshire 16.12.1754 ordained as presbyter 12.05.1757 consecrated as bishop (93 [31]) Zeist by Br J von Watteville 14.08.1783
+                  church service: director boys’ school Smith House 1751, boys’ school Fulneck 03.05.1753, congregation labourer and director of schools Fulneck 1755, congregation labourer Bedford 1757, Bristol 1763, 
+                  London 1768, congregation labourer Fulneck 1776 and director of schools to 1791 provincial office: provincial helper London 1768-76 other service: hymn writer m (1) Anna Margaret Haigh (b 1723) 
+                  St Wilfrid’s Church Calverley 10.04.1755 by direction of the congregation - widowed 27.09.1758 m (2) Frances Sophia Engelbach (b 1727) St Wilfrid’s Church Calverley 29.10.1759 – widowed 29.03.1784
+                  family: father of stillborn daughter (1756), Anna (b 1758), Benigna Sophia (b 1760), Catherine Charlotte (b 1762), Ignatius (b 1764), George Frederic (b 1767) and Mary Dorothea (b 1769), d 15.05.1802 aged 84 
+                  Fulneck, interred Fulneck by Br S T Benade 21.05.1802 grave 1116 - 2nd section, 39th row, 9th grave from path</note>
             </person>
          </listPerson>
          <!-- not in YF document -->
@@ -12515,22 +12529,14 @@
                   <forename>Benjamin</forename>
                   <surname>La Trobe</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(P/F)sbLA TROBE, Benjamin (1728-1786) b 08.04.1728 (OS) / 19.04.1728 (NS) Dublin educated: Glasgow University qualifications: matriculated 1743
-                  reception: dedicated and baptized Baptist Church, received society Dublin 1745, brethren’s house London 06.11.1747 (OS) / 17.11.1747 (NS),
-                  received congregation London 11.01.1748, sacrament Herrnhaag 20.05.1748, returned London 22.03.1748 (OS) / 02.04.1749 (NS),
-                  brethren’s house Lane End Pudsey 1750-51
-                  church orders: ordained as deacon Herrnhaag by Br D Nitschmann 1748
-                  ordained as presbyter London by Br J von Watteville 1754
-                  church service: preacher Dublin 1746, founder and labourer Moravian society Dublin 1747-1748,
-                  assistant labourer Bedford 1751, assistant labourer Yorkshire 1752,
-                  accompanied J von Watteville on visitations to West Country, Ireland and Yorkshire 1754-55, assistant labourer Fulneck 1755, Germany 1756-57
-                  congregation labourer and director of schools Fulneck 1757,
-                  mission secretary London 1768-86 and congregation labourer London from 1780-82
-                  provincial offices: after crash of finances one of 3 responsible for church affairs in Britain 1755, provincial helper Fulneck 1757-1768, deputy General Synod Marienborn 1764,
-                  provincial helper London 1768-1786
-                  other service: hymn writer, chairman Society for the Furtherance of the Gospel 1774 m Anna Margaretta Antes (b 1728) Herrnhut 25.04.1756
-                  family: son of James La Trobe (b 1702) and ? (née Thornton), father of Christian Ignatius (b 1758), Anna Louisa Eleonora (Foster) (b 1761), Benjamin Henry (b 1764), 
-                  Justina Elizabeth (b 1767), John Frederic (b 1769) and Mary Agnes (Bateman) (b 1772),
+               <note resp="#Yorkshire_Families">(P/F)sbLA TROBE, Benjamin (1728-1786) b 08.04.1728 (OS) / 19.04.1728 (NS) Dublin educated: Glasgow University qualifications: matriculated 1743 reception: dedicated and baptized 
+                  Baptist Church, received society Dublin 1745, brethren’s house London 06.11.1747 (OS) / 17.11.1747 (NS), received congregation London 11.01.1748, sacrament Herrnhaag 20.05.1748, returned London 22.03.1748 (OS) / 
+                  02.04.1749 (NS), brethren’s house Lane End Pudsey 1750-51 church orders: ordained as deacon Herrnhaag by Br D Nitschmann 1748 ordained as presbyter London by Br J von Watteville 1754
+                  church service: preacher Dublin 1746, founder and labourer Moravian society Dublin 1747-1748, assistant labourer Bedford 1751, assistant labourer Yorkshire 1752, accompanied J von Watteville on visitations 
+                  to West Country, Ireland and Yorkshire 1754-55, assistant labourer Fulneck 1755, Germany 1756-57 congregation labourer and director of schools Fulneck 1757, mission secretary London 1768-86 and congregation 
+                  labourer London from 1780-82 provincial offices: after crash of finances one of 3 responsible for church affairs in Britain 1755, provincial helper Fulneck 1757-1768, deputy General Synod Marienborn 1764,
+                  provincial helper London 1768-1786 other service: hymn writer, chairman Society for the Furtherance of the Gospel 1774 m Anna Margaretta Antes (b 1728) Herrnhut 25.04.1756 family: son of James La Trobe (b 1702) 
+                  and ? (née Thornton), father of Christian Ignatius (b 1758), Anna Louisa Eleonora (Foster) (b 1761), Benjamin Henry (b 1764),  Justina Elizabeth (b 1767), John Frederic (b 1769) and Mary Agnes (Bateman) (b 1772),
                   d 29.11.1786 aged 58 Fetter Lane London, interred Chelsea by Br J Swertner 06.12.1786 south west square, 4th row, 2nd grave</note>
             </person>
          </listPerson>
@@ -12554,7 +12560,7 @@
                </persName>
             </person>
          </listPerson>
-         <!-- not in YF document -->
+         <!-- not in YF document; there is this: https://de.wikisource.org/wiki/ADB:Erdmuthe_Dorothea -->
          <listPerson>
             <person xml:id="mlper000701" sex="f">
                <persName>
@@ -12570,20 +12576,12 @@
                   <forename>Mary</forename>
                   <surname>Vogelsang</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(F)ssVOGELSANG, Mary Catherine (1719-1787)
-                  b 15.05.1719 Lidon Island of Rügen
-                  occupation: weaver, wash kitchen Orphan House Herrnhaag 1743, ironing linen London 1749 resided: Count Zinzendorf’s house London 1749-1750, 1751-52
-                  reception: baptized Lutheran Church, confirmed Lutheran Church 1735,
-                  sisters’ house Herrnhaag 25.09.1742, received congregation Herrnhaag 05.01.1743, sacrament Herrnhaag 27.10.1743, transferred Pilgrim House Holland October 1748, transferred congregation London 13.01.1749 - 1750, 1751-52
-                  congregation office: intercessor Holland 1748 church orders: received as acoluth London 1749
-                  blessed as deaconess Herrnhut 1756
-                  church service: assistant single sisters’ labourer Fulneck 1750-51,
-                  ad interim single sisters’ labourer Fulneck 03.01.1752, appointment confirmed,
-                  Gracehill 15.11.1765 - 1787
-                  unity service: attended General Synod Herrnhut 1756
-                  family: daughter of John Vogelsang and Margaret Catherine
-                  d 17.12.1787 aged 68 Gracehill, interred Gracehill by Br W Horne 21.12.1787
-                  grave 198</note>
+               <note resp="#Yorkshire_Families">(F)ssVOGELSANG, Mary Catherine (1719-1787) b 15.05.1719 Lidon Island of Rügen occupation: weaver, wash kitchen Orphan House Herrnhaag 1743, ironing linen London 1749 
+                  resided: Count Zinzendorf’s house London 1749-1750, 1751-52 reception: baptized Lutheran Church, confirmed Lutheran Church 1735, sisters’ house Herrnhaag 25.09.1742, received congregation Herrnhaag 05.01.1743, 
+                  sacrament Herrnhaag 27.10.1743, transferred Pilgrim House Holland October 1748, transferred congregation London 13.01.1749 - 1750, 1751-52 congregation office: intercessor Holland 1748 
+                  church orders: received as acoluth London 1749, blessed as deaconess Herrnhut 1756 church service: assistant single sisters’ labourer Fulneck 1750-51, ad interim single sisters’ labourer Fulneck 03.01.1752, 
+                  appointment confirmed, Gracehill 15.11.1765 - 1787 unity service: attended General Synod Herrnhut 1756 family: daughter of John Vogelsang and Margaret Catherine d 17.12.1787 aged 68 Gracehill, interred 
+                  Gracehill by Br W Horne 21.12.1787 grave 198</note>
             </person>
          </listPerson>
          <listPerson>
@@ -12592,25 +12590,16 @@
                   <forename>William</forename>
                   <surname>Okely</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(F)OKELY, William (1762-1830)
-                  b 24.01.1762 Bedford
-                  educated: boys’ school Fulneck February 1765, pädagogium Niesky 1776, seminary Barby -1784,
-                  medical student Bedford, Edinburgh
-                  qualifications: MD Edinburgh 1791
-                  occupation: surgeon Northampton Infirmary 1791
-                  reception: baptized Bedford by Br G Traneker 25.01.1762, received congregation Niesky 1776,
-                  sacrament Niesky 1778, left Moravian Church 1785,
-                  readmitted congregation Fulneck 01.05.1798, readmitted sacrament Fulneck 10.03.1801 church service: teacher boys’ school Christiansfeld 1784, boys’ school Fulneck February 1785-?,
-                  and 1798-1802, appointed to preach and keep meetings Fulneck c 1801,
-                  congregation labourer Wellhouse 1802, Lower Wyke 1804, Fairfield 1809,
-                  retired (ill-health) Fulneck 1815, ad interim labourer and director of schools Fulneck 1818, congregation labourer Bristol 1818, Dublin 1824, London 1826
-                  m Mary Crabtree (b 1773) St Wilfrid’s Church Calverley 05.04.1802
-                  family: son of Francis Okely (b 1719) and Mary Elizabeth (née Collins) (b 1723), 
-                  brother of Anna Benigna (b 1748), Anna Theresia (b 1750), John (b 1752), Mary (b 1755), Elizabeth (b 1757), Francis (b 1759) and Samuel (b 1766),
-                  father of Francis James (b 1803), William Ignatius (b 1804), Juliana Mary Benigna (b 1806) and
-                  Charles Sebastian (b 1809), d 09.07.1830 aged 68 years 6 months Bristol, interred Bristol by Br C F Ramftler 16.07.1830</note>
+               <note resp="#Yorkshire_Families">(F)OKELY, William (1762-1830) b 24.01.1762 Bedford educated: boys’ school Fulneck February 1765, pädagogium Niesky 1776, seminary Barby -1784, medical student Bedford, Edinburgh
+                  qualifications: MD Edinburgh 1791 occupation: surgeon Northampton Infirmary 1791 reception: baptized Bedford by Br G Traneker 25.01.1762, received congregation Niesky 1776, sacrament Niesky 1778, left Moravian 
+                  Church 1785, readmitted congregation Fulneck 01.05.1798, readmitted sacrament Fulneck 10.03.1801 church service: teacher boys’ school Christiansfeld 1784, boys’ school Fulneck February 1785-?,
+                  and 1798-1802, appointed to preach and keep meetings Fulneck c 1801, congregation labourer Wellhouse 1802, Lower Wyke 1804, Fairfield 1809, retired (ill-health) Fulneck 1815, ad interim labourer and 
+                  director of schools Fulneck 1818, congregation labourer Bristol 1818, Dublin 1824, London 1826 m Mary Crabtree (b 1773) St Wilfrid’s Church Calverley 05.04.1802 family: son of Francis Okely (b 1719) and 
+                  Mary Elizabeth (née Collins) (b 1723),  brother of Anna Benigna (b 1748), Anna Theresia (b 1750), John (b 1752), Mary (b 1755), Elizabeth (b 1757), Francis (b 1759) and Samuel (b 1766), father of Francis James 
+                  (b 1803), William Ignatius (b 1804), Juliana Mary Benigna (b 1806) and Charles Sebastian (b 1809), d 09.07.1830 aged 68 years 6 months Bristol, interred Bristol by Br C F Ramftler 16.07.1830</note>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000704" sex="m">
                <persName>
@@ -12644,6 +12633,7 @@
                   grave 300</note>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000705" sex="m">
                <persName>
@@ -12678,27 +12668,17 @@
                   <forename>James <addName>Gottlieb</addName></forename> 
                   <surname>La Trobe</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(W/P/F)LA TROBE, James Gottlieb (1750-1836)
-                  b 19.01.1750 Dublin
-                  occupation: joiner and cabinetmaker
-                  reception: dedicated Baptist Church, received society Dublin 10.10.1769,
-                  brethren’s house Dublin - 02.02.1776, baptized Dublin by Br W Horne 13.11.1771,
-                  sacrament Dublin 27.12.1772, brethren’s house Fulneck 13.02.1776 - 1781 church orders: received as acoluth
-                  ordained as deacon Germany 1780
-                  ordained as presbyter
-                  church service: preacher, rural preacher Yorkshire, missionary East Indies 1780: Bengal 1780
-                  Tranquebar 1781, Calcutta 1783, Patna 1784, returned UK 1786,
-                  single brethren’s labourer Fairfield 1788, congregation labourer Wellhouse 1788,
-                  Pudsey 1790, Wiltshire 1793, Bedford with Culworth 1803, Leominster 1806, Pudsey 1806, Dukinfield 1811, retired Fairfield 1824, Fulneck 1835
-                  m (1) Anna Elizabeth Watson (b 1760) St Wilfrid’s Church Calverley 16.06.1788 – widowed 05.12.1805
-                  m (2) Sarah Rouse (b 1761) Gracehill by Br J Hartley 03.12.1806
-                  family: son of James La Trobe (b 1702) and Rebecca (née Adams) (b 1719), brother of Henry (b 1746), John (b 1747) and Mary (b 1752),
-                  father of Benjamin Samuel (b 1790), Mary Elizabeth (Harvey) (b 1792), Samuel (b 1793),
-                  Lucretia (b 1796), Ann (b 1798), Benigna Rebecca (b 1800), James (b 1802) and
-                  stillborn son (1805), d 30.01.1836 aged 86 Fulneck, interred Fulneck by Br J Holmes 04.02.1836 grave 1570 - 2nd section, 66th row, 2nd grave from path
-                  together with 2nd wife Sarah (grave 1726)</note>
+               <note resp="#Yorkshire_Families">(W/P/F)LA TROBE, James Gottlieb (1750-1836) b 19.01.1750 Dublin County Dublin Province of Leinster South of Ireland occupation: joiner and cabinetmaker
+                  reception: dedicated Baptist Church, received society Dublin 10.10.1769, brethren’s house Dublin - 02.02.1776, baptized Dublin by Br W Horne 13.11.1771, sacrament Dublin 27.12.1772, 
+                  brethren’s house Fulneck 13.02.1776 - 1781 church orders: received as acoluth ordained as deacon Germany 1780 ordained as presbyter church service: preacher, rural preacher Yorkshire, 
+                  missionary East Indies 1780: Bengal 1780 Tranquebar 1781, Calcutta 1783, Patna 1784, returned UK 1786, single brethren’s labourer Fairfield 1788, congregation labourer Wellhouse 1788,
+                  Pudsey 1790, Wiltshire 1793, Bedford with Culworth 1803, Leominster 1806, Pudsey 1806, Dukinfield 1811, retired Fairfield 1824, Fulneck 1835 m (1) Anna Elizabeth Watson (b 1760) St Wilfrid’s Church 
+                  Calverley 16.06.1788 – widowed 05.12.1805 m (2) Sarah Rouse (b 1761) Gracehill by Br J Hartley 03.12.1806 family: son of James La Trobe (b 1702) and Rebecca (née Adams) (b 1719), brother of Henry (b 1746), 
+                  John (b 1747) and Mary (b 1752), father of Benjamin Samuel (b 1790), Mary Elizabeth (Harvey) (b 1792), Samuel (b 1793), Lucretia (b 1796), Ann (b 1798), Benigna Rebecca (b 1800), James (b 1802) and
+                  stillborn son (1805), d 30.01.1836 aged 86 Fulneck, interred Fulneck by Br J Holmes 04.02.1836 grave 1570 - 2nd section, 66th row, 2nd grave from path together with 2nd wife Sarah (grave 1726)</note>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000707" sex="m">
                <persName>
@@ -12734,6 +12714,7 @@
                </persName>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000709" sex="m">
                <persName>
@@ -12771,6 +12752,7 @@
                <note>Husband of <persName ref="#mlper000250">Sarah Horsfall</persName></note>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000711" sex="m">
                <persName>
@@ -12790,6 +12772,7 @@
                   register 964 / stone 965 - 2nd section 33rd row, 3rd grave from path</note>
             </person>
          </listPerson>
+         <!-- skip for now -->
          <listPerson>
             <person xml:id="mlper000712" sex="m">
                <persName>
@@ -12890,8 +12873,16 @@
                   <forename>Ignatius</forename>
                   <surname>Traneker</surname>
                </persName>
+               <note resp="#Yorkshire_Families">b 17.11.1764 Bristol occupation: bookbinder reception: baptized Brethren’s chapel Bristol by Br J Nitschmann 18.11.1764, received congregation Niesky 06.04.1779, 
+                  sacrament Herrnhut 27.01.1781 church orders: received as acoluth ordained as deacon ordained as presbyter Ockbrook by Br T Moore 26.01.1812 church service: teacher boys’ school Fulneck 1788, 
+                  congregation labourer Dukinfield 24.07.1797, Gomersal 1800, Woodford Halse and Eydon 1806, Devonport 1809, Ockbrook 30.08.1811, co-labourer Fairfield 22.04.1817, congregation labourer Gracehill 1820, 
+                  Kingswood 1822, Wellhouse 1824, Malmesbury 1826, Haverfordwest May 1827, retired August 1837 m (1) Anna Rosina Spicer (b 1768) St Wilfrid’s Church Calverley 24.07.1797 – widowed 13.12.1800
+                  m (2) Eleanor Sutton (b 1763) St Peter’s Church Birstall 12.10.1801 – widowed 18.04.1827 m (3) Elizabeth Margaret Fraser (b 1787) Church of St Dunstan in the West London 19.07.1828 – widowed 10.03.1837
+                  family: son of George Traneker (b 1717) and Frances Sophia (née Engelbach) (b 1727),brother of Benigna Sophia (b 1760), Catherine Charlotte (b 1762), George Frederic (b 1767) and Mary Dorothea (b 1769),
+                  father of Charlotte (b 1799), George Edward (b 1802), Sophia Eleanor (Lee) (b 1804) and George Sutton (b 1807), d 17.05.1850 aged 85 Ashton-under-Lyne, interred Fairfield</note>
             </person>
          </listPerson>
+         <!-- not in YF doc; some bio info here: http://digital.lib.lehigh.edu/hidden/finding.php?id=197 -->
          <listPerson>
             <person xml:id="mlper000722" sex="m">
                <persName>
@@ -13074,6 +13065,7 @@
                <note>Wife of <persName ref="#mlper000560">Timothy Gray</persName></note>
             </person>
          </listPerson>
+         <!-- not in YF doc; bio info here: https://hymnary.org/person/Nitschmann_Johann -->
          <listPerson>
             <person xml:id="mlper000364" sex="m">
                <persName>
@@ -13093,6 +13085,7 @@
                <note>Wife of <persName ref="#mlper000561">Philip Henry Molther</persName></note>
             </person>
          </listPerson>
+         <!-- not in YF doc; ODNB entry here: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Whitefield,_George -->
          <listPerson>
             <person xml:id="mlper000366" sex="f">
                <persName>
@@ -13101,6 +13094,7 @@
                </persName>
             </person>
          </listPerson>
+         <!-- not in YF doc -->
          <listPerson>
             <person xml:id="mlper000367" sex="f">
                <persName>
@@ -13294,6 +13288,7 @@
                <relation name="parent" active="#mlper000444"/>
             </listRelation>
          </listPerson>
+         <!-- not in YF doc; ODNB entry here: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gambold,_John -->
          <listPerson>
             <person xml:id="mlper000372" sex="m">
                <persName>
@@ -13324,6 +13319,13 @@
                   <forename>Godfrey</forename>
                   <surname>Clemens</surname>
                </persName>
+               <note resp="#Fulneck_Families_19th_Century">b 01.05.1818 Genadendal South Africa educated: school for missionaries’ children Kleinwelke 1825, pädagogium Niesky 1830, seminary Gnadenfeld 1836-38
+                  resided: 42 Wilberforce Road Finsbury Park London N 1881 church orders: ordained as deacon 1845 ordained as presbyter Fulneck by Br J Rogers 05.07.1853 church service: teacher boys’ school Fairfield 1838, 
+                  boys’ school Kleinwelke 1841, pädagogium Niesky 1845, single brethren’s labourer Fulneck 1847, congregation labourer Ballinderry 1850, London October 1852, Baildon 1854, Lower Wyke 1861, Dublin 28.08.1863, 
+                  Fulneck September 1865-81 provincial offices: deputy General Synod Herrnhut 1848 and 1869, provincial elder London 1881, College Committee (ex-officio) 1881 m Mary Susanna Liley (b 1821) St Mary’s Church 
+                  Droylsden 02.04.1850 family: son of Anton Martin August Clemens, father of Lydia Helena (Swire) (b 1851), Frederic (b 1852), Mary Ellinor (Hahn) (b 1854), Amelia Louisa (Mumford) (b 1855), Godfrey (b 1857), 
+                  Theodor Liley (b 1858), Annie (b 1860), Emily (b 1862) and Charlotte Elizabeth (b 1864), d 15.03.1882 aged 63 Finsbury Park London, interred Chelsea by Br J A Porter 18.03.1882
+                  south west square, 5th row, 17th grave</note>
             </person>
          </listPerson>
          <listPerson>
@@ -13501,14 +13503,6 @@
                <persName>
                   <forename>Samuel</forename>
                   <surname type="birth">Watson</surname>
-               </persName>
-            </person>
-         </listPerson>
-         <listPerson>
-            <person xml:id="mlper000397" sex="m">
-               <persName>
-                  <forename>Godfrey</forename>
-                  <surname type="birth">Clemens</surname>
                </persName>
             </person>
          </listPerson>

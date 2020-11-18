@@ -8382,7 +8382,7 @@
                   <desc>baptized St Peter’s Church Birstall 1 August, 1706 (21 July, 1706 OS)</desc>
                </event>
                <event type="marriage" where="#mlpla000220" when-iso="1736-08-02">
-                  <desc>married Grace Brook St Peter’s Church Birstall 2 August, 1736 (22 July, 1736 OS)</desc>
+                  <desc>married Grace Brook at St Peter’s Church Birstall 2 August, 1736 (22 July, 1736 OS)</desc>
                </event>
                <event type="entrance" where="#mlpla000097" when-iso="1740">
                   <desc>entered <orgName en="Ingham's society">Ingham’s society</orgName> at Cleckheaton</desc>
@@ -13142,10 +13142,37 @@
                   <date type="death" when-iso="1830-07-09">9 July, 1830</date>
                   <placeName ref="#mlpla000030">Bristol</placeName>
                </death>
+               <event type="baptism" where="#mlpla000025" when="1762-01-25" ref="#mlper000694">
+                  <desc>baptized at Bedford by George Traneker</desc>
+               </event>
+               <event type="reception" where="#mlpla000251" when="1776">
+                  <desc>received into congregation at Niesky</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000251" when="1778">
+                  <desc>sacrament at Niesky</desc>
+               </event>
+               <event when-iso="1785"> <!-- add event type severance -->
+                  <desc>left the <orgName religion="Moravian Church">Moravian Church</orgName></desc>
+               </event>
+               <event type="readmission" where="#mlpla000003" when-iso="1798-05-01">
+                  <desc>readmitted to congregation at Fulneck</desc>
+               </event>
+               <event type="readmission" where="#mlpla000003" when-iso="1801-03-10">
+                  <desc>readmitted to sacrament at Fulneck</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1802-04-05">
+                  <desc>married Mary Crabtree at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="interment" where="#mlpla000030" when-iso="1830-07-16" ref="#mlper000541">
+                  <desc>interred at Bristol by C.F. Ramftler</desc>
+               </event>
                <education notBefore="1765-02"><placeName ref="#mlpla000345">boys’ school Fulneck</placeName></education>
                <education notBefore="1776"><placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></education>
                <education notAfter="1784"><placeName ref="#mlpla000476">Seminary at Barby</placeName></education>
                <education>medical student in <placeName ref="#mlpla000025">Bedford</placeName> and <placeName ref="#mlpla000384">Edinburgh</placeName></education>
+               <occupation notBefore="1784" notAfter="1785">teacher at <placeName ref="#mlpla000496">boys’ school Christiansfeld</placeName></occupation>
+               <occupation notBefore="1785-02">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+               <occupation notBefore="1798" notAfter="1802">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
                <occupation notBefore="1791">surgeon at <placeName ref="#mlpla000495">Northampton Infirmary</placeName></occupation>
                <note resp="#Yorkshire_Families">(F)OKELY, William (1762-1830) b 24.01.1762 Bedford educated: boys’ school Fulneck February 1765, pädagogium Niesky 1776, seminary Barby -1784, medical student Bedford, Edinburgh
                   qualifications: MD Edinburgh 1791 occupation: surgeon Northampton Infirmary 1791 reception: baptized Bedford by Br G Traneker 25.01.1762, received congregation Niesky 1776, sacrament Niesky 1778, left Moravian 
@@ -13155,6 +13182,25 @@
                   Mary Elizabeth (née Collins) (b 1723),  brother of Anna Benigna (b 1748), Anna Theresia (b 1750), John (b 1752), Mary (b 1755), Elizabeth (b 1757), Francis (b 1759) and Samuel (b 1766), father of Francis James 
                   (b 1803), William Ignatius (b 1804), Juliana Mary Benigna (b 1806) and Charles Sebastian (b 1809), d 09.07.1830 aged 68 years 6 months Bristol, interred Bristol by Br C F Ramftler 16.07.1830</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Francis Okely" notBefore="1719"/>
+               <relation name="child" passive="Mary Elizabeth (Collins) Okely" notBefore="1723"/>
+               <relation name="sibling" mutual="Anna Benigna Okely"/>
+               <relation name="sibling" mutual="Anna Theresia Okely"/>
+               <relation name="sibling" mutual="John Okely"/>
+               <relation name="sibling" mutual="Mary Okely" notBefore="1755"/>
+               <relation name="sibling" mutual="Elizabeth Okely"/>
+               <relation name="sibling" mutual="Francis Okely" notBefore="1759"/>
+               <relation name="sibling" mutual="Samuel Okely"/>
+               <relation name="parent" active="Francis James Okely" notBefore="1803"/>
+               <relation name="parent" active="William Ignatius Okely" notBefore="1804"/>
+               <relation name="parent" active="Juliana Mary Benigna Okely"/>
+               <relation name="parent" active="#mlper000647"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000694" when="1762-01-25"/>
+               <relation name="interment" passive="#mlper000541" when-iso="1830-07-16"/>
+            </listRelation>
          </listPerson>
          <!-- skip for now -->
          <listPerson>
@@ -13224,8 +13270,59 @@
             <person xml:id="mlper000706" sex="m">
                <persName>
                   <forename>James <addName>Gottlieb</addName></forename> 
-                  <surname>La Trobe</surname>
+                  <surname type="birth">La Trobe</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1750-01-19">19 January, 1750</date>
+                  <placeName ref="#mlpla000144">Dublin</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1836-01-30">20 January, 1836</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
+               <event>
+                  <desc>dedicated in the Baptist Church</desc> <!-- Justin adding church and event type -->
+               </event>
+               <event type="reception" where="#mlpla000144" when-iso="1769-10-10">
+                  <desc>received into society at Dublin</desc>
+               </event>
+               <event type="entrance" where="#mlpla000497">
+                  <desc>entered brethren’s house Dublin</desc>
+               </event>
+               <event type="baptism" where="#mlpla000144" when-iso="1771-11-13" ref="#mlper000704">
+                  <desc>baptized at Dublin by William Horne</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000144" when-iso="1772-12-27">
+                  <desc>sacrament at Dublin</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1776-02-13">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="reception">
+                  <desc>received as an acoluth</desc>
+               </event>
+               <event type="ordination" where="#mlpla000178" when-iso="1780">
+                  <desc>ordained as a deacon in Germany</desc>
+               </event>
+               <event type="ordination">
+                  <desc>ordained as a presbyter</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1788-06-16">
+                  <desc>married Anna Elizabeth Watson at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="widowed" when-iso="1805-12-05">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" where="#mlpla000040" when-iso="1806-12-03" ref="#mlper000713">
+                  <desc>married to Sarah Rouse at Gracehill by John Hartley</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1836-02-04" ref="#mlper000377">
+                  <desc>interred at Fulneck by John Beck Holmes</desc>
+               </event>
+               <occupation>joiner and cabinetmaker</occupation>
+               <office>acoluth</office>
+               <office notBefore="1780">deacon</office>
+               <office>presbyter</office>
                <note resp="#Yorkshire_Families">(W/P/F)LA TROBE, James Gottlieb (1750-1836) b 19.01.1750 Dublin County Dublin Province of Leinster South of Ireland occupation: joiner and cabinetmaker
                   reception: dedicated Baptist Church, received society Dublin 10.10.1769, brethren’s house Dublin - 02.02.1776, baptized Dublin by Br W Horne 13.11.1771, sacrament Dublin 27.12.1772, 
                   brethren’s house Fulneck 13.02.1776 - 1781 church orders: received as acoluth ordained as deacon Germany 1780 ordained as presbyter church service: preacher, rural preacher Yorkshire, 
@@ -13235,6 +13332,27 @@
                   John (b 1747) and Mary (b 1752), father of Benjamin Samuel (b 1790), Mary Elizabeth (Harvey) (b 1792), Samuel (b 1793), Lucretia (b 1796), Ann (b 1798), Benigna Rebecca (b 1800), James (b 1802) and
                   stillborn son (1805), d 30.01.1836 aged 86 Fulneck, interred Fulneck by Br J Holmes 04.02.1836 grave 1570 - 2nd section, 66th row, 2nd grave from path together with 2nd wife Sarah (grave 1726)</note>
             </person>
+            <listRelation type="personal">
+               <relation name="child" passive="James La Trobe" notBefore="1702"/>
+               <relation name="child" passive="Rebecca (Adams) La Trobe"/>
+               <relation name="sibling" mutual="Henry La Trobe"/>
+               <relation name="sibling" mutual="John La Trobe"/>
+               <relation name="sibling" mutual="Mary La Trobe"/>
+               <relation name="spouse" mutual="Anna Elizabeth (Watson) La Trobe" notBefore="1788-06-16" notAfter="1805-12-05"/>
+               <relation name="spouse" mutual="Sarah (Rouse) La Trobe" notBefore="1806-12-03" notAfter="1836-01-30"/>
+               <relation name="parent" active="Benjamin Samuel La Trobe" notBefore="1790"/>
+               <relation name="parent" active="Mary Elizabeth (Harvey)"/>
+               <relation name="parent" active="Samuel La Trobe"/>
+               <relation name="parent" active="Lucretia La Trobe"/>
+               <relation name="parent" active="Ann La Trobe"/>
+               <relation name="parent" active="Benigna Rebecca La Trobe"/>
+               <relation name="parent" active="James La Trobe" notBefore="1802"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="baptism" passive="#mlper000704" when-iso="1771-11-13"/>
+               <relation name="marriage" passive="#mlper000713" when-iso="1806-12-03"/>
+               <relation name="interment" passive="#mlper000377" when-iso="1836-02-04"/>
+            </listRelation>
          </listPerson>
          <!-- skip for now -->
          <listPerson>
@@ -13279,14 +13397,13 @@
                   <forename>Abraham</forename>
                   <surname>Taylor</surname>
                </persName>
-               <note resp="#Yorkshire_Families">(D/P/F)CBsb=TAYLOR, Abraham (1724-1790)
-                  b 25.03.1724 (OS) / 05.04.1725 (NS) Oldham Lancashire
+               <note resp="#Yorkshire_Families">(D/P/F)CBsb=TAYLOR, Abraham (1724-1790) b 25.03.1724 (OS) / 05.04.1725 (NS) Oldham Lancashire
                   occupation: thread throster
                   reception: baptized Church of St Mary with St Peter Oldham 06.04.1724 (OS) / 17.04.1724 (NS),
                   David Taylor’s society Dukinfield, transferred Moravian society Dukinfield January 1744, brethren’s house Dukinfield,
                   received congregation Yorkshire in Fulneck 14.04.1745 (OS) / 25.04.1745 (NS), brethren’s house Lane End Pudsey 08.06.1745,
                   sacrament Yorkshire in Fulneck 18.08.1745 (OS) / 29.08.1745 (NS),
-                  brethren’s house London 1746, left London for Germany 25.04.1747 (OS) / 06.05.1747 (NS), regulated Marienborn 24.08.1747, returned London 22.03.1748 (OS) / 02.04.1749 (NS), brethren’s house Lane End Pudsey 19.07.1749 - 1750, transferred Germany 1755-56
+                  brethren’s house London 1746, left London for Germany 25.04.1747 (OS) / 06.05.1747 (NS), regulated Marienborn 24.08.1747, returned London 22.03.1748 (OS) / 02.04.1749 (NS), brethren’s house Lane End Pudsey 19.07.1749                    - 1750, transferred Germany 1755-56
                   congregation office: intercessor Yorkshire 16.12.1745 (OS) / 27.12.1745 (NS), helpers’ conference Bedford 1754
                   church orders: ordained as deacon Lindsey House 18.10.1753
                   church service: single brethren’s labourer Dukinfield 1744-45, Bedford 1750-55, Fulneck 1756,
@@ -13363,13 +13480,18 @@
                </persName>
             </person>
          </listPerson>
-         <!-- not in YF document -->
+         <!-- skipping offices until we decide on how to encode them -->
          <listPerson>
             <person xml:id="mlper000714" sex="m">
                <persName>
                   <forename>C.F.</forename>
                   <surname>Reichel</surname>
                </persName>
+               <note resp="#Fulneck_Families_19th_Century">REICHEL, Charles Frederic (1783‐1846) b 07.11.1783 Barby educated: boys’ school Nazareth, seminary Niesky reception: baptized Barby, Nazareth Pennsylvania 1784 received 
+                  congregation Nazareth Pa 24.01.1796, sacrament Nazareth Pa 23.07.1796 church service: teacher boys’ school Fulneck 16.09.1804, appointed by lot to preach and keep meetings Fulneck 03.08.1805, assistant and 
+                  single brethren’s labourer Dublin 31.10.1810, congregation labourer and director of schools Fulneck 1812, co-labourer and director of schools Fulneck 03.02.1813, transferred America North 1829, congregation 
+                  labourer Lancaster, Pennsylvania August 1829, returned Europe travelling England and Germany 1834, Fulneck winter 1834, Dublin March-August 1835, congregation labourer Bath 1836, Dukinfield 1841, Gracehill 1845 
+                  m (1) Hannah Parsons September 1812 – widowed 11.11.1832 m (2) Susannah Sharrer family: father of Charles Parsons (b 1816) d 15.06.1846 aged 62 Gracehill </note>
             </person>
          </listPerson>
          <listPerson>
@@ -13430,14 +13552,14 @@
             <person xml:id="mlper000721" sex="m">
                <persName>
                   <forename>Ignatius</forename>
-                  <surname>Traneker</surname>
+                  <surname type="birth">Traneker</surname>
                </persName>
                <note resp="#Yorkshire_Families">b 17.11.1764 Bristol occupation: bookbinder reception: baptized Brethren’s chapel Bristol by Br J Nitschmann 18.11.1764, received congregation Niesky 06.04.1779, 
                   sacrament Herrnhut 27.01.1781 church orders: received as acoluth ordained as deacon ordained as presbyter Ockbrook by Br T Moore 26.01.1812 church service: teacher boys’ school Fulneck 1788, 
                   congregation labourer Dukinfield 24.07.1797, Gomersal 1800, Woodford Halse and Eydon 1806, Devonport 1809, Ockbrook 30.08.1811, co-labourer Fairfield 22.04.1817, congregation labourer Gracehill 1820, 
                   Kingswood 1822, Wellhouse 1824, Malmesbury 1826, Haverfordwest May 1827, retired August 1837 m (1) Anna Rosina Spicer (b 1768) St Wilfrid’s Church Calverley 24.07.1797 – widowed 13.12.1800
                   m (2) Eleanor Sutton (b 1763) St Peter’s Church Birstall 12.10.1801 – widowed 18.04.1827 m (3) Elizabeth Margaret Fraser (b 1787) Church of St Dunstan in the West London 19.07.1828 – widowed 10.03.1837
-                  family: son of George Traneker (b 1717) and Frances Sophia (née Engelbach) (b 1727),brother of Benigna Sophia (b 1760), Catherine Charlotte (b 1762), George Frederic (b 1767) and Mary Dorothea (b 1769),
+                  family: son of George Traneker (b 1717) and Frances Sophia (née Engelbach) (b 1727), brother of Benigna Sophia (b 1760), Catherine Charlotte (b 1762), George Frederic (b 1767) and Mary Dorothea (b 1769),
                   father of Charlotte (b 1799), George Edward (b 1802), Sophia Eleanor (Lee) (b 1804) and George Sutton (b 1807), d 17.05.1850 aged 85 Ashton-under-Lyne, interred Fairfield</note>
             </person>
          </listPerson>
@@ -13864,12 +13986,16 @@
                </persName>
             </person>
          </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
          <listPerson>
             <person xml:id="mlper000374" sex="m">
                <persName>
                   <forename>William</forename>
                   <surname>Edwards</surname>
                </persName>
+               <note resp="#Fulneck_Families_19th_Century">EDWARDS, William (1798‐1879) b 26.07.1798 Derby educated: boys’ school Ockbrook, boys’ school Fulneck 1810, Fulneck Academy 1814-16, reception: baptized St Werburgh’s Church                     Derby 29.07.1798, little boy Ockbrook 1808, great boy Fulneck 1810, received congregation Fulneck 12.02.1815, single brother Fulneck 1816, sacrament Fulneck 16.11.1817 church orders: ordained as deacon
+                  ordained as presbyter consecrated as bishop (149 [87]) Herrnhut by Brn J M Nitschmann, C W Matthiesen and F J H Nielsen 30.08.1857 church service: teacher boys’ school Fulneck 1816,  society labourer/congregation                       labourer Kimbolton and Stow 1825, private tutor Germany 1827, congregation labourer Lower Wyke 1828, London 1836, Salem 1837, Dublin 1841, Baildon 1844, Gracehill 1846, Fulneck 1850-52 provincial offices: committee                     to establish Moravian College 1847-59, provincial helper/elder Ockbrook 1852, deputy General Synod 1857, retired Ockbrook 1863 other service: hymn writer m Elizabeth Jackson (b 1807) St Wilfrid’s Church Calverley                       24.10.1828 family: son of John Edwards (b 1772) and Sarah (Sally) (née Smith) (b 1777), brother of Elizabeth Ann (b 1803), John George (b 1805), Sarah (b 1807), Edward (b 1811) and Fanny Elizabeth (b 1819), father of                   William Martyn (b 1831), Anne (b 1833), William Jackson (b 1835), Sarah Catherine (Baxter) (b 1836), Mary Elizabeth (Shawe) (b 1838), Fanny Edith (b 1841) and John Herbert (b 1843),d 18.03.1879 aged 80 Ockbrook
+                  interred Ockbrook by Brn H E Blandford and J H Baxter 22.03.1879 3rd section, 1st row, 10th grave on the right from 2nd path </note>
             </person>
          </listPerson>
          <!-- skipping offices until we decide on how to encode them -->
@@ -13888,20 +14014,31 @@
                   south west square, 5th row, 17th grave</note>
             </person>
          </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
          <listPerson>
             <person xml:id="mlper000376" sex="m">
                <persName>
                   <forename>John <addName>Pearse</addName></forename>
                   <surname>Libbey</surname>
                </persName>
+               <note resp="#Fulneck_Families_19th_Century">LIBBEY, John Pearse (1796‐1871) b 07.01.1796 Liskeard Cornwall occupation: apprentice in father’s watchmaker and Jewellery business Devonport - 1813 resided: Plymouth Dock                       (Devonport) 1805-1813, boarding house Fulneck September 1868 reception: received congregation Devonport 30.07.1809, sacrament Devonport 16.02.1812 congregation service: organist Devonport - 1813
+                  church orders: accepted as acoluth 1818 ordained as deacon Gracehill by Br S T Benade church service: teacher boys’ school Fairfield 29.08.1813, boys’ school Wellhouse 1818, single brethren’s labourer and                               schoolkeeper Gracehill 17.03.1821, single brethren’s labourer and warden Fulneck July 1824, congregation labourer Baildon 14.01.1828, Gracefield November 1831, Baildon August 1834, Woodford and Eydon July 1841,                         Bristol May 1845, London March 1850, Fulneck 26.10.1852 and home missionary Crook ?-1860, congregation labourer and director girls’ boarding school Fairfield 16.10.1865, retired Fulneck September 1868
+                  m Mary Jane Brownlee (b 1803) St Wilfrid’s Church Calverley 14.01.1828 family: father of Sarah Elizabeth (b 1829), John Daniel (b 1830), Mary Pearse (Weiss) (b 1832), Harriet Jane (Connor) (b 1834) and Henry                            Cornelius (b 1837), d 12.06.1871 aged 75 years 5 months Fulneck, interred Fulneck by Br J H Willey 14.06.1871 grave 1965 - 2nd section, 80th row, 1st grave by path - stone missing</note>
             </person>
          </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
          <listPerson>
             <person xml:id="mlper000377" sex="m">
                <persName>
                   <forename>John <addName>Beck</addName></forename>
                   <surname>Holmes</surname>
                </persName>
+               <note resp="#Fulneck_Families_19th_Century">HOLMES, John Beck (1767‐1843) b Johannes HOLM 03.11.1767 Copenhagen educated: boys’ school Christiansfeld 1777, pädagogium Niesky 1780, seminary Barby 1787 reception: 
+                  baptized Lutheran Church, received congregation Niesky 23.09.1781, sacrament Niesky 20.12.1783, church orders: accepted as acoluth 1792 ordained as deacon Fulneck by Br G Traneker 14.08.1799 ordained as presbyter
+                  consecrated as bishop (123 [61]) Herrnhut by Brn C A Baumeister, G M Schneider and F W Foster 18.08.1825 church service: teacher pädagogium Niesky 1789, tutor to Siebold von Seidlitz 1790,
+                  teacher boys’ school Fulneck August 1791, single brethren’s labourer Fulneck 26.03.1798, congregation labourer Lower Wyke 1800, Ayr 1804, Gracefield 1810, Dublin 1812, Fulneck 1824, retired Fulneck 1837
+                  other service: author/publisher Historical sketches of the Missions of the United Brethren (1818), History of the Protestant Church of the United Brethren Vol. 1 (1825), Vol. 2 (1830)
+                  m (1) Mary Radley (b 1771) St Peter’s Church Birstall 05.05.1800 – widowed 07.10.1828 m (2) Mary Mortimer (b 1780) St Wilfrid’s Church Calverley 07.12.1829 family: son of Peter Stevensen Holm (Captain of Greenland                      whaler) d 1769), father of stillborn son (1804), 2 sons and Catherine (b 1807) d 03.09.1843 aged 75 Fulneck, interred Fulneck by Br J Rogers 08.09.1843 grave 1670 - 2nd section, 72nd row, 6th grave from path</note>
             </person>
          </listPerson>
          <listPerson>

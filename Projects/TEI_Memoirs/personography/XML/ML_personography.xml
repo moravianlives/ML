@@ -364,8 +364,7 @@
                   </desc>
                </event>
                <event when-iso="1741" cert="medium">
-                  <desc> Her mother remarried and she moved in with her <persName ana="Betty Midgley">aunt</persName>
-                  </desc>
+                  <desc> Her mother remarried and she moved in with her <persName ana="Betty Midgley">aunt</persName></desc>
                   <!-- Katie question: do we want to encode movement such as the above, when it is not in the YF doc? -->
                </event>
                <event when-iso="1753">
@@ -6769,13 +6768,53 @@
                <relation name="confirmation" passive="#mlper000703" when-iso="1821"/>
             </listRelation>
          </listPerson>
+         <!-- will need to have more information added -->
          <listPerson>
             <person xml:id="mlper000566" sex="m" sameAs="https://www.wikidata.org/wiki/Q76336">
                <persName>
-                  <forename>Nicolas</forename>
-                  <surname>Zinzendorf</surname>
+                  <forename>Nicolaus <addName>Ludwig</addName></forename>
+                  <surname type="birth">Zinzendorf</surname>
                </persName>
+               <birth>
+                  <date type="birth" when-iso="1700-05-26">26 May, 1700</date>
+                  <placeName ref="#mlpla000477">Dresden</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1760-05-09">9 May, 1760</date>
+                  <placeName ref="#mlpla000001">Herrnhut</placeName>
+               </death>
+               <event type="marriage" when-iso="1722-09-07" ref="#mlper000701">
+                  <desc>married Erdmuthe Dorothea of Reuss-Ebersdorf</desc>
+               </event>
+               <event type="consecration" where="#mlpla000355" when-iso="1737-05-20" ref="#mlper000298">
+                  <desc>consecrated a bishop at Berlin by David Nitschmann and Daniel Ernst Jablonski</desc>
+               </event>
+               <event type="widowed" when-iso="1756-06-19">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" when-iso="1757-06-27" ref="#mlper000213">
+                  <desc>married Anna Nitschmann</desc>
+               </event>
+               <education from-iso="1716" to-iso="1719"><placeName ref="#mlpla000520">University of Wittenberg</placeName></education>
+               <office notBefore="1737-05-20">bishop</office>
+               <note>Source: https://en.wikipedia.org/wiki/Nicolaus_Zinzendorf</note>
             </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000701" from-iso="1722-09-07" to-iso="1756-06-19"/>
+               <relation name="spouse" mutual="#mlper000213" from-iso="1757-06-27" to-iso="1760-05-09"/>
+               <relation name="parent" active="Christian Ernst von Zinzendorf"/>
+               <relation name="parent" active="Henriette Benigna Justina von Zinzendorf"/>
+               <relation name="parent" active="#mlper000700"/>
+               <relation name="parent" active="Christian Friedrich von Zinzendorf"/>
+               <relation name="parent" active="Theodora Caritas von Zinzendorf"/>
+               <relation name="parent" active="Johann Ernst von Zinzendorf"/>
+               <relation name="parent" active="Christian Ludwig von Zinzendorf"/>
+               <relation name="parent" active="Anna Theresia von Zinzendorf"/>
+               <relation name="parent" active="Agnes von Zinzendorf"/>
+               <relation name="parent" active="Johanna Salome von Zinzendorf"/>
+               <relation name="parent" active="David von Zinzendorf"/>
+               <relation name="parent" active="Elisabeth von Zinzendorf"/>
+            </listRelation>
          </listPerson>
          <listPerson>
             <person xml:id="mlper000567" sex="f">
@@ -7914,7 +7953,6 @@
             </listRelation>
          </listPerson>
          <listPerson>
-            <!-- will add more to this entry after memoir transcription is proofed -->
             <person xml:id="mlper000591" sex="f">
                <persName>
                   <forename>Rosina</forename>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Person standard name</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Moravian Lives</publisher>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">
+                  <p />
+               </licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Person entity record</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="PID_entity_record" sex="f">
+               <idno type="Authority_name" cert="high">VIAF URI</idno>
+               <persName type="standard">
+                  <name>Last Name, First Name </name>
+               </persName>
+               <persName type="prefered" xml:lang="ENG">
+                  <name type="forename">Forename</name>
+                  <name type="middlename">Middle Name</name>
+                  <name type="surname">Last Name</name>
+                  <genName>(e.g. the IIIrd, senior, junior, etc.)</genName>
+                  <roleName>offical title or rank</roleName>
+               </persName>
+               <persName type="variant" role="variant_name_type" xml:lang="ENG">
+                  <name type="forename">Forename</name>
+                  <name type="middlename">Middle Name</name>
+                  <name type="surname">Last Name 2</name>
+                  <genName>(e.g. the IIIrd, senior, junior, etc.)</genName>
+                  <roleName>offical title or rank</roleName>
+                  <note>
+                     <label>Named prefered by: </label>
+                     <desc>
+                        <orgName ref="URI">Name of the project that uses the variant name</orgName>
+                     </desc>
+                  </note>
+               </persName>
+               <birth>
+                  <date cert="high" source="https://www.w3.org/TR/NOTE-datetime" when="2000-10-30">D.O.B </date>, <placeName>Place of birth</placeName>
+                  <note />
+               </birth>
+               <death>
+                  <date cert="high" notBefore="2017-07-21">? <!--format for living persons; for dead persons, structure the same as for D.O.B.--></date>, <placeName>Place of death</placeName>
+                  <note />
+               </death>
+               <floruit>
+                  <date />
+                  <note />
+               </floruit>
+               <sex source="http://sparql.cwrc.ca/ontology/cwrc.html#Gender" value="GenderQueer" cert="high" />
+               <trait type="factuality" cert="high">
+                  <ab>real/fictional <!--form should contain a dropdown with three options: real, fictional, both, unknown--></ab>
+               </trait>
+               <nationality cert="high" ref="http://sparql.cwrc.ca/ontology/cwrc.html">Nationality (zero or more)</nationality>
+               <occupation cert="high">Ocupation (zero or more)Use Orlando picklist values</occupation>
+               <affiliation cert="high">User input</affiliation>
+               <note type="general" xml:lang="ENG"> This is a general note about the person. </note>
+               <note type="project-specific" xml:lang="ENG">
+                  <note>This is a project-specific note about the person.</note>
+                  <respons locus="value">
+                     <desc>
+                        <orgName ref="URI">Project (e.g.CWRC, REED, Orlando)</orgName>
+                     </desc>
+                  </respons>
+               </note>
+               <listBibl>
+                  <head>Sources:</head>
+                  <bibl><title /><ref source="REED" target="https://reed.library.utoronto.ca/node/315995" /></bibl>
+               </listBibl>
+               <respons locus="value">
+                  <desc>
+                     <date type="created" source="https://www.w3.org/TR/NOTE-datetime" when="2017-11-06" />
+                     <persName ref="URI-to-user-record">User real name</persName>
+                  </desc>
+               </respons>
+               <respons locus="value">
+                  <desc>
+                     <date type="modified" source="https://www.w3.org/TR/NOTE-datetime" when="2017-11-07" />
+                     <persName ref="URI-to-user-record">User real name</persName>
+                  </desc>
+               </respons>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>

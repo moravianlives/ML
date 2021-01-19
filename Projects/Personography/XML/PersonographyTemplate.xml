@@ -1,0 +1,173 @@
+<?xml-model href="../../out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Moravian Lives Personography</title>
+                <funder>The Moravian Lives Project</funder>
+                <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+                    <address>
+                        <addrLine>Lewisburg, Pennsylvania</addrLine>
+                    </address>
+                    <email>faull@bucknell.edu</email>
+                </principal>
+                <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+                    <address>
+                        <addrLine>Gothenburg, Sweden</addrLine>
+                    </address>
+                    <email>christer.ahlberger@history.gu.se</email>
+                </principal>
+                <respStmt>
+                    <persName>Diane Jakacki</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Project Manager</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Michael McGuire</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Developer, 2016-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carly Masonheimer</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-Present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Marleina Cohen</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant and encoder, 2018-109</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Marita Gruner</persName>
+                    <orgName>University of Greifswald</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sarah Kannemann</persName>
+                    <orgName>University of Mainz</orgName>
+                    <resp>Encoder</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Justin Schaumberger</persName>
+                    <orgName>Bucknell University</orgName>
+                    <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <orgName>The Moravian Archives</orgName>
+                    <address>
+                        <addrLine>41 West Locust Street</addrLine>
+                        <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                        <addrLine>info@moravianchurcharchives.org</addrLine>
+                    </address>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <distributor>The Moravian Lives Project</distributor>
+                <availability>
+                    <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>List of Moravian Lives person entities with reference to persistent identifiers, using ML standard names</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy>
+                    <category>
+                        <catDesc>Archive</catDesc>
+                        <category xml:id="bethlehem">
+                            <catDesc>Moravian Archives, Bethlehem</catDesc>
+                        </category>
+                        <category xml:id="fulneck">
+                            <catDesc>Moravian Archives, Fulneck</catDesc>
+                        </category>
+                        <category xml:id="herrnhut">
+                            <catDesc>Moravian Archives, Herrnhut</catDesc>
+                        </category>
+                        <category xml:id="london">
+                            <catDesc>Moravian Archives, Fetter Lane - London</catDesc>
+                        </category>
+                    </category>
+                    <category>
+                        <catDesc>Church Records</catDesc>
+                        <category xml:id="Yorkshire_Families">
+                            <catDesc>Big Book of Yorkshire Families</catDesc>
+                        </category>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="#DKJ" when="2019-05-30">Updated responsibility list, added more names and fields</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="personography">
+        <body>
+            <listPerson>
+                <person xml:id="mlper000215" sex="f">
+                    <persName>
+                        <forename>Anna <addName>Rosina</addName></forename>
+                        <surname type="birth">Anderson</surname>
+                        <name type="variant">Anders</name>
+                    </persName>
+                    <bibl type="memoir">Ful/SS/8</bibl>
+                    <birth when-iso="1727-08-09">
+                        <placeName ref="https://www.wikidata.org/wiki/Q827807">Berthelsdorf, Germany</placeName>
+                    </birth>
+                    <death when-iso="1803-02-20">
+                        <placeName ref="https://www.wikidata.org/wiki/Q5508369">Sisters' House Fulneck, UK</placeName>
+                    </death>
+                    <event type="baptism" when-iso="1738">
+                        <desc>
+                            <placeName ref="https://www.wikidata.org/wiki/Q667587">Lutheran Church</placeName>
+                        </desc>
+                    </event>
+                    <event type="baptism" when-iso="1739">
+                        <desc>
+                            <placeName ref="https://www.wikidata.org/wiki/Q667587">Sisters' House Marienborn</placeName>
+                        </desc>
+                    </event>
+                    <event type="reception" when-iso="1740">
+                        <desc>
+                            Reception into Congregation
+                            <placeName ref="https://www.wikidata.org/wiki/Q667587">Marienborn, Germany</placeName>
+                        </desc>
+                    </event>
+                    <event type="sacrament" when-iso="1741">
+                        <desc>
+                            <placeName ref="https://www.wikidata.org/wiki/Q1614322">Herrnhaag, Germany</placeName>
+                        </desc>
+                    </event>
+                    <occupation></occupation>
+                    <office></office>
+                </person>
+                <listRelation>
+                    <!-- For all of these relattitons, it is stating that Anna Rosina Anderson
+                        is what the relation is refering to.
+                    
+                    ie: Anna Rosina Anderson is the sibling of #mlperxxx1 and #mlperxxx2 ...
+                        Anna Rosina Anderson is the parent of #mlperxxx3
+                        Anna Rosina Anderson is the child of #mlperxxx4 and #mlperxxx5
+                        Anna Rosina Anderson is the spouse of #mlperxxx6-->
+                    <relation name="sibling" active="#mlper000215" passive="#mlperxxx1 #mlperxxx2"/>
+                        
+                    
+                    <relation name="parent" active="#mlper000215" passive="#mlperxxx3"/>
+                        
+                    
+                    <relation name="child" active="#mlper000215" passive="#mlperxxx4 #mlperxxx5"/>
+                        
+                    
+                    <relation name="spouse" active="#mlper000215" passive="#mlperxxx6"/>
+                        
+                    
+                </listRelation>
+            </listPerson>
+        </body>
+    </text>
+</TEI>
+
+

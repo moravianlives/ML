@@ -101,7 +101,451 @@
 			</sourceDesc>
 		</fileDesc>
 		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-</rdf:RDF></xenoData><profileDesc>
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141412452",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:14:12.452Z",
+	"dcterms:issued": "2021-02-08T19:48:35.202Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141412452#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141412452#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[2]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1814-07-14"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141610651",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:16:10.651Z",
+	"dcterms:issued": "2021-02-08T19:48:35.204Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141610651#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208141610651#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[3]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1821"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208142508817",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:25:08.817Z",
+	"dcterms:issued": "2021-02-08T19:48:35.205Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208142508817#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208142508817#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[5]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1821-10"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208143524357",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:35:24.357Z",
+	"dcterms:issued": "2021-02-08T19:48:35.205Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208143524357#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208143524357#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[8]/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1829"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144132779",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:41:32.779Z",
+	"dcterms:issued": "2021-02-08T19:48:35.205Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144132779#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144132779#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1846-07-08"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144215385",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-08T19:42:15.385Z",
+	"dcterms:issued": "2021-02-08T19:48:35.205Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144215385#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/athill_mary.xml?date_annotation_20210208144215385#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/date[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1846-07-18"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -118,14 +562,20 @@
 				<head>Mary Athill</head>
 				<div type="page" n="1">
 					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_142_Athill_Mary-01.jpg"/>
-					<p> <persName ref="#mlper000580" cert="high" type="real">Mary Athill</persName> <name event="death" when-iso="1846-07">died July / 46</name> <lb/> Born with twin S<hi rend="superscript">r.</hi> Sarah in Antigua 18 <lb/> July 9 / 14. came to Brit<hi rend="superscript">n</hi> in 1821 first <lb/> to Edinbro', then to
-						Fuln. Sch with elder <lb/> S<hi rend="superscript">r.</hi> Esther; remained
-						here till Oct<hi rend="superscript">r.</hi> / 28, when <lb/> went first to
-						London, where confirm<hi rend="superscript">d</hi> in <lb/> ch of Engl<hi rend="superscript">d</hi> in 1829 went back to Antigua <lb/> where
-							rem<hi rend="superscript">d</hi> till / 36; after residence of <lb/> 5
-						yrs in Lond came to live in S<hi rend="superscript">rs</hi> house <lb/> here
-						in / 41. Admitted com<hi rend="superscript">t</hi> members <lb/> in summer /
-						43.</p>
+					<p> <persName ref="#mlper000580" cert="high" type="real">Mary Athill</persName> <name event="death" when-iso="1846-07">died July / 46</name> <lb/> <name event="birth" when-iso="1814-07-14">Born with twin <persName ref="#mlper000385" cert="high" type="real">S<hi rend="superscript">r.</hi> Sarah</persName> in <placeName ref="#mlpla000215" cert="high">Antigua</placeName> <date when="1814-07-14" cert="high">18
+<lb/>
+July 9 / 14</date></name>. <name event="arrival" when-iso="1821">came to Brit<hi rend="superscript">n</hi> in <date when="1821" cert="high">1821</date> first
+<lb/>
+to <placeName ref="#mlpla000384" type="arrival" cert="high">Edinbro'</placeName></name>, <name event="arrival">then to <placeName ref="#mlpla000003" type="arrival" cert="high">Fuln</placeName>. Sch with elder
+<lb/>
+<persName cert="high" type="real">S<hi rend="superscript">r.</hi> Esther</persName></name>; <name event="departure" when-iso="1828-10">remained here till <date when="1821-10" cert="high">Oct<hi rend="superscript">r.</hi> / 28</date></name>, when <lb/> <name event="arrival">went first to <placeName ref="#mlpla000054" type="arrival" cert="high">London</placeName></name>, where <name event="confirmation" notAfter-iso="1829" notBefore-iso="1828-10">confirm<hi rend="superscript">d</hi> in
+<lb/>
+<orgName religion="Anglican">ch of Engl<hi rend="superscript">d</hi>f</orgName></name> <name event="arrival" when-iso="1829">in <date when="1829" cert="high">1829</date> went back to <placeName ref="#mlpla000215" type="arrival" cert="high">Antigua</placeName></name> <lb/> <name event="departure" when-iso="1836">where rem<hi rend="superscript">d</hi> till / 36</name>; after residence of <lb/> 5
+						yrs in Lond <name event="entrance" when-iso="1841">came to live in <placeName ref="#mlpla000271" cert="high">S<hi rend="superscript">rs</hi> house</placeName>
+<lb/>
+here in / 41</name>. <name event="ecclesiastical" when-iso="1843">Admitted com<hi rend="superscript">t</hi> members
+<lb/>
+in summer / 43</name>.</p>
 					<p> In the course of last year certain circum <lb/> stances occurred, which
 						convinced our late <lb/> S<hi rend="superscript">r.</hi>, in a painful
 						manner, but most affec <lb/> tually of the emptiness &amp; deceitfulness of
@@ -147,8 +597,9 @@
 				</div>
 				<div type="page" n="2">
 					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_142_Athill_Mary-02.jpg"/>
-					<p> to be entertained of the result. In <lb/>
-						<del>May</del> June last month she went to Burlington to try the <lb/>
+					<p> to be entertained of the result. <name event="arrival" when-iso="1846-06">In
+<lb/>
+<del>May</del> June last month she went to <placeName ref="#mlpla000399" type="arrival" cert="high">Burlington</placeName></name> to try the <lb/>
 						effect of the sea-air; but all was in vain, &amp; <lb/> she returned in abt.
 						a fortnight <del>for</del>
 						<lb/> weaker than when she left us. About a week After <lb/> her arrival
@@ -161,14 +612,14 @@
 						had <lb/> expressed a very great anxiety to recover; <lb/> &amp; tho'
 						she seemed aware how well <lb/> founded were the many hints were her <lb/>
 						of the danger of her case, &amp; of the necessity <lb/> of preparing to meet
-						her God, &amp; that she <lb/> certainly did not neglect the one thing <lb/>
+						her <persName type="real" cert="high">God</persName>, &amp; that she <lb/> certainly did not neglect the one thing <lb/>
 						needful, yet she flattered herself with <lb/> hopes of recovery getting
 						better &amp; clung to life, until <lb/> the interview I had with her above
 						allu <lb/> ded to &amp; which took place in the evening <lb/> of 8<hi rend="superscript">th</hi>, the day before her birthday. She <lb/>
 						certainly seemed both alarmed &amp; distressed <lb/> when she at length
 						learned there was no <lb/> hope; but she listened most eagerly, &amp; I
 						<lb/> believe, with childlike faith, to my ear <lb/> nest adminitions, to
-						turn to Jesus, the <lb/> Sav<hi rend="superscript">r.</hi> from sin &amp;
+						turn to <persName type="real" cert="high">Jesus</persName>, the <lb/> <roleName type="honorific">Sav<hi rend="superscript">r.</hi></roleName> from sin &amp;
 						deathl &amp; also to the encou <lb/> ragements I endeavoured to give her, by
 						<lb/> pourtraying in scripture-phrase, the <lb/> infinite compassion &amp;
 						tender mercy <lb/> of that Sav<hi rend="superscript">r.</hi>, his readiness
@@ -180,21 +631,23 @@
 					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_142_Athill_Mary-03.jpg"/>
 					<p> praying very fervently in the night. ??? <lb/> for acceptance in the Beloved
 						for pardon, <lb/> peace, santification &amp; redepemtion. <lb/> From the day
-						just now mentioned, <lb/> July 8<hi rend="superscript">th</hi> I found her,
+						just now mentioned, <lb/> <date when="1846-07-08" cert="high">July 8<hi rend="superscript">th</hi></date> I found her,
 						at each subse <lb/> quent visit, more &amp; more composed, <lb/> her light
 						&amp; peace of mind continually <lb/> increasing; she was evidently
-						delighted <lb/> to hear of Jesus, &amp; to listen to the prayers <lb/>
+						delighted <lb/> to hear of <persName type="real" cert="high">Jesus</persName>, &amp; to listen to the prayers <lb/>
 						offered up on her behalf &amp; was, no doubt, <lb/> very grateful to her
 						choir-labourer &amp; <lb/> other friends for all spiritual advice &amp; en
 						<lb/> couragement given her as well as for other proofs <lb/> of kindness
-						&amp; various attentions. <lb/> I saw her last on Saturday 18<hi rend="superscript">th</hi> visit <lb/> about noon; she then told me,
+						&amp; various attentions. <lb/> I saw her last on <date when="1846-07-18" cert="high">Saturday 18<hi rend="superscript">th</hi></date> visit <lb/> about noon; she then told me,
 						that she <lb/> felt quite happy &amp; had no fear of death <lb/> because she
 						was persuaded that, tho' she <lb/> knew herself to be a poor miserable
-						<lb/> sinner, her Sav<hi rend="superscript">r.</hi> had pardoned her blotted
+						<lb/> sinner, her <roleName type="honorific">Sav<hi rend="superscript">r.</hi></roleName> had pardoned her blotted
 						<lb/> out all her sins, &amp; would receive her <lb/> in mercy to himself.
 						In this peace <lb/> ful frame she continued until 5 <lb/> o'clock on
 						Sunday morning, when after <lb/> having suffered some violent convul <lb/>
-						sions, she fell asleep in Jesus, aged <lb/> 32 years. </p>
+						sions, <name event="death" when-iso="1846-07-19">she fell asleep in <persName type="real" cert="high">Jesus</persName>, aged
+<lb/>
+32 years</name>. </p>
 					<p> Our last Sister's conduct was gene <lb/> rally speaking regular,
 						strictly moral, <lb/> &amp; marked generally speaking, by <lb/> uprightness
 						&amp; conscientiousness. <lb/> Yet we will not deny that there were <lb/>

@@ -65,4 +65,116 @@
         <xsl:text>///</xsl:text>
         </p>
     </xsl:template>
+ 
+ <!-- This provides spacing between persons -->
+    <xsl:template match="tei:listPerson">
+        <p>
+            <xsl:apply-templates/>
+            <hr/>
+        </p>
+
+    </xsl:template>
+    
+ <!-- This lays out the person name 
+    <xsl:template match="tei:person/tei:persName">
+        <strong>
+            <xsl:text>Person: </xsl:text>
+            <xsl:apply-templates/>
+        </strong>
+        <br/>
+    </xsl:template>  -->  
+    
+    <xsl:template match="tei:surname">
+        <xsl:text> </xsl:text>
+        <xsl:apply-templates/>
+    <br/>
+    </xsl:template>
+    
+<!-- This provides the person birth date (Gregorian) -->
+    <xsl:template match="tei:birth/tei:date[@calendar='Gregorian']">
+            <xsl:text>Birth date: </xsl:text>
+            <xsl:apply-templates/>        
+        <br/>
+    </xsl:template>
+
+<!-- This hides the person birth date (Julian) -->
+    <xsl:template match="tei:birth/tei:date[@calendar='Julian']"/>
+    
+<!-- This hides the person birth date (other source) -->
+    <xsl:template match="tei:birth/tei:date[@resp='memoir']"/>
+    
+<!-- This provides the person birth place -->
+    <xsl:template match="tei:birth/tei:placeName">
+        <xsl:text>Birth place: </xsl:text>
+        <xsl:apply-templates/>        
+        <br/>
+    </xsl:template>
+    
+    <!-- This provies the person death date -->
+    <xsl:template match="tei:death/tei:date">
+        <xsl:text>Death date: </xsl:text>
+        <xsl:apply-templates/>        
+        <br/>
+    </xsl:template>
+    
+    <!-- This provides the person death place -->
+    <xsl:template match="tei:death/tei:placeName">
+        <xsl:text>Death place: </xsl:text>
+        <xsl:apply-templates/>        
+        <br/>
+    </xsl:template>
+    
+<!-- This structures the list of events -->
+    <xsl:template match="tei:listEvent">
+        <h1>
+        <xsl:text>Events in Moravian Life: </xsl:text>
+        </h1>
+        <ul>
+            <xsl:apply-templates select="tei:event"/>
+        </ul>
+        
+
+    </xsl:template>
+
+    <!-- This provides a list of events (if available) -->
+    <xsl:template match="tei:event">
+        <li>
+        <xsl:apply-templates select="tei:event"/>
+        </li>
+    </xsl:template>    
+    
+    <!-- This provides a list of occupations (if available) -->
+    <xsl:template match="tei:occupation">
+        <xsl:text>Occupation(s): </xsl:text>
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    
+    
+    <!-- This provides a list of affiliations (if available) -->
+    <xsl:template match="tei:affiliation">
+        <xsl:text>Affiliation(s): </xsl:text>
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    
+    <!-- This hides the bibliographical information -->
+    <xsl:template match="tei:bibl"/>
+    
+    <!-- This hides the note -->
+    <xsl:template match="tei:note"/>
+    
+    <!--This provides a list of relations (if available) -->
+    <xsl:template match="tei:listRelation[@type='personal']">
+        <p>List of Relations: </p>
+        <xsl:apply-templates/>        
+    </xsl:template>
+    
+    <xsl:template match="tei:relation[@name='child']">
+        <xsl:apply-templates/>
+        <xsl:text> (child) </xsl:text>
+        <br/>
+    </xsl:template>
+
+
 </xsl:stylesheet>

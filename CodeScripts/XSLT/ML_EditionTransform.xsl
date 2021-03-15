@@ -27,8 +27,18 @@
     </xsl:template>
     
     <!-- This hides "title" of the memoir -->
-    <xsl:template match="tei:head" />
+    <xsl:template match="tei:div/tei:head">
+        <h2>
+            <xsl:apply-templates/>
+        </h2>
+    </xsl:template>
     
+    <xsl:template match="tei:div/tei:head[@type='page']">
+        <em>
+            <xsl:text>Page: </xsl:text>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>
     
     <!-- This breaks the text into paragraphs as marked up in text (not the same as pages) -->
     <xsl:template match="tei:p">

@@ -381,11 +381,13 @@
           <!-- DKJ 2021-03-14 added model.personLike to see if it can be used within listPerson -->
           <elementSpec ident="listOccupation" mode="add">
             <classes>
+              <memberOf key="model.headLike"/>
               <memberOf key="model.listLike"/>
               <memberOf key="model.orgPart"/>
               <memberOf key="model.personLike"/>
               <memberOf key="att.declarable"/>
               <memberOf key="att.global"/>
+              <memberOf key="att.naming"/>
               <memberOf key="att.sortable"/>
               <memberOf key="att.typed"/>
             </classes>
@@ -397,9 +399,9 @@
                 <elementRef key="occupation" minOccurs="1" maxOccurs="1"/> 
               </sequence>
             </content>
-
-          <!-- Adds to the occupation tag to allow it to contain <def> and <listRelation>. This is used in the ontology -->
           </elementSpec>
+          <!-- Adds to the occupation tag to allow it to contain <def> and <listRelation>. This is used in the ontology -->
+          
           <elementSpec ident="occupation" mode="change">
               <content>
                 <macroRef key="macro.specialPara"/>
@@ -416,7 +418,7 @@
               <memberOf key="model.headLike"/>
               <memberOf key="model.listLike"/>
               <memberOf key="model.orgPart"/>
-              <memberOf key="model.personLike"/>
+              <!--  <memberOf key="model.personLike"/>-->
               <memberOf key="att.declarable"/>
               <memberOf key="att.global"/>
               <memberOf key="att.naming"/>

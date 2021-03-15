@@ -41,6 +41,7 @@
       </editorialDecl>
     </encodingDesc>
     <revisionDesc>
+      <change when="2021-03-14" who="#JAKA1">Adjusted listOffice attribute classes</change>
       <change when="2020-06-01" who="#jschaumberger">Cleaned up the odd file</change>
       <change when="2020-02-26" who="#jschaumberger">Added tags to be used in the Work Ontology</change>
       <change when="2019-11-21" who="#jschaumberger">Added the customization of the work tag</change>
@@ -89,8 +90,9 @@
           <!-- Include all of msdescription for now -->
           <moduleRef key="msdescription" />
           <!-- namesdates: include all for now -being explicit because the object tags are not yet introduced universally. -->
+          <!-- 2021-03-14 DKJ added listOffice and listOccupation to this -->
           <moduleRef key="namesdates" include="addName affiliation age birth bloc climate country death district education event faith floruit forename genName geo geogFeat geogName langKnowledge
-            langKnown listEvent listNym listObject listOrg listPerson listPlace listRelation location nameLink nationality nym object objectIdentifier objectName occupation offset org orgName persName
+            langKnown listEvent listNym listObject listOffice listOccupation listOrg listPerson listPlace listRelation location nameLink nationality nym object objectIdentifier objectName occupation offset org orgName persName
             person personGrp persona place placeName population region relation residence roleName settlement sex socecStatus state surname terrain trait" />
           <!-- Include all of verse module -->
           <moduleRef key="verse" />
@@ -376,10 +378,12 @@
           
           
           <!-- Builds in <listOccupation> beneath <body> for the work ontology -->
+          <!-- DKJ 2021-03-14 added model.personLike to see if it can be used within listPerson -->
           <elementSpec ident="listOccupation" mode="add">
             <classes>
               <memberOf key="model.listLike"/>
               <memberOf key="model.orgPart"/>
+              <memberOf key="model.personLike"/>
               <memberOf key="att.declarable"/>
               <memberOf key="att.global"/>
               <memberOf key="att.sortable"/>
@@ -406,13 +410,16 @@
           </elementSpec>
           
           <!-- Builds in <listOffice> beneath <body> for the work ontology -->
+          <!-- DKJ 2021-03-14 added model.personLike to see if it can be used within listPerson -->
           <elementSpec ident="listOffice" mode="add">
             <classes>
               <memberOf key="model.headLike"/>
               <memberOf key="model.listLike"/>
               <memberOf key="model.orgPart"/>
+              <memberOf key="model.personLike"/>
               <memberOf key="att.declarable"/>
               <memberOf key="att.global"/>
+              <memberOf key="att.naming"/>
               <memberOf key="att.sortable"/>
               <memberOf key="att.typed"/>
             </classes>

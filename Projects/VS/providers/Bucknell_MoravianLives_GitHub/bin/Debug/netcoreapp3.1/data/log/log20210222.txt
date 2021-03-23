@@ -1,0 +1,30 @@
+2021-02-22 15:02:27.213 -05:00 [WRN] Zen.Provider.GitHub.Authentication | Missing ClientId/ClientSecret
+2021-02-22 15:02:27.290 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.App.Model.Core.Application
+2021-02-22 15:02:27.290 -05:00 [ERR] Zen.App.Provider.IZenOrchestrator : AZt8cO3Y : A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.MongoClient+AreSessionsSupportedServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", ConnectionMode : "Automatic", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", ReasonChanged: "Heartbeat", State: "Disconnected", ServerVersion: , TopologyVersion: , Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. [::1]:27017
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__274_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.ConnectAsync(Socket socket, EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.CreateStreamAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.InitializeConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.HeartbeatAsync(CancellationToken cancellationToken)", LastHeartbeatTimestamp: "2021-02-22T20:02:24.0281221Z", LastUpdateTimestamp: "2021-02-22T20:02:24.0281253Z" }] }.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.App.Provider.ZenOrchestratorPrimitive`4:Initialize[L34 C13] > DetectEnvironment[L291 C13] > Zen.App.Core.Application.Factory:get_Current[L12 C47] > get_Provider[L11 C57] > Zen.App.Core.Application.Factory+<>c:<get_Provider>b__2_0[L11 C87] > Zen.App.Core.Application.DataApplicationProvider`1:get_Application[L22 C17] > Compile[L31 C13] > ByLocator[L112 C57] > Zen.Base.Module.Data`1:GetByLocator[L1011 C13] > Where[L467 C17] > Zen.Module.Data.MongoDB.MongoDbAdapter`1:Where[L225 C19] > MongoDB.Driver.Linq.MongoQueryableImpl`2:GetEnumerator > MongoDB.Driver.Linq.MongoQueryProviderImpl`1:Execute
+2021-02-22 15:18:10.112 -05:00 [WRN] Zen.Provider.GitHub.Authentication | Missing ClientId/ClientSecret
+2021-02-22 15:18:10.171 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.App.Model.Core.Application
+2021-02-22 15:18:10.171 -05:00 [ERR] Zen.App.Provider.IZenOrchestrator : cxCosePP : A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.MongoClient+AreSessionsSupportedServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", ConnectionMode : "Automatic", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", ReasonChanged: "Heartbeat", State: "Disconnected", ServerVersion: , TopologyVersion: , Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. [::1]:27017
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__274_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.ConnectAsync(Socket socket, EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.CreateStreamAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.InitializeConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.HeartbeatAsync(CancellationToken cancellationToken)", LastHeartbeatTimestamp: "2021-02-22T20:18:06.7624558Z", LastUpdateTimestamp: "2021-02-22T20:18:06.7624613Z" }] }.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.App.Provider.ZenOrchestratorPrimitive`4:Initialize[L34 C13] > DetectEnvironment[L291 C13] > Zen.App.Core.Application.Factory:get_Current[L12 C47] > get_Provider[L11 C57] > Zen.App.Core.Application.Factory+<>c:<get_Provider>b__2_0[L11 C87] > Zen.App.Core.Application.DataApplicationProvider`1:get_Application[L22 C17] > Compile[L31 C13] > ByLocator[L112 C57] > Zen.Base.Module.Data`1:GetByLocator[L1011 C13] > Where[L467 C17] > Zen.Module.Data.MongoDB.MongoDbAdapter`1:Where[L225 C19] > MongoDB.Driver.Linq.MongoQueryableImpl`2:GetEnumerator > MongoDB.Driver.Linq.MongoQueryProviderImpl`1:Execute

@@ -118,7 +118,8 @@
    </teiHeader>
    <text type="personography">
       <body>
-         <listPerson> <!-- Wilson, Elizabeth -->
+         <head>Moravian Lives Personography</head>
+         <listPerson><!-- Wilson, Elizabeth -->
             <person xml:id="mlper000214" sex="f">
                <persName>
                   <forename>Elizabeth</forename>
@@ -162,16 +163,13 @@
                <event type="interment" where="#mlpla000063" when-iso="1765-12-02" ref="#mlper000693">
                   <desc>interred at Ockbrook by John Ockershausen</desc>
                </event>
-               </listEvent>   
-               <occupation ref="#mlocc000050">stockiner</occupation>
+               </listEvent>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/SS/62</bibl>
-               <note resp="#Yorkshire_Families">(P/G/O)+^WILSON, Elizabeth (Betty) (1731-1765) b 22.02.1730 (OS) / 05.03.1731 (NS) Wortley Parish of Leeds occupation: stockiner reception: baptized St Bartholomew’s Church Armley
-                  07.03.1730 (OS) / 18.03.1731 (NS), received Presbyterian Church, received society Holbeck 1752, received congregation Pudsey in Fulneck 27.04.1757, sisters’ house Gomersal January
-                  1758, sisters’ house Ockbrook 10.04.1760, sacrament Ockbrook 16.04.1760 church office: received as acoluth July family: daughter of Thomas Wilson (b 1700) and Hannah (née Renner) (b
-                  1701), sister of Benjamin (b 1727), Hannah (Horsfield) (b 1733), Esther (Klosé) (b 1736), Grace (b 1738) and Mary d 30.11.1765 aged 34 Ockbrook, interred Ockbrook by Br J
-                  Ockershausen 02.12.1765 1st section, 4th row, 14th grave on the left from 1st path </note>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/62</bibl>              
             </person>
+            <listOccupation>
+               <occupation ref="#mlocc000050">stockiner</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="Thomas Wilson"/>
                <relation name="child" passive="Hannah (Renner) Wilson" notBefore="1701"/>
@@ -184,9 +182,10 @@
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000693" when-iso="1765-12-02"/>
             </listRelation>
-         </listPerson>        
+         </listPerson>
          
-         <listPerson> <!-- Anderson, Anna Rosina -->
+         
+         <listPerson><!-- Anderson, Anna Rosina -->
             <person xml:id="mlper000215" sex="f">
                <persName>
                   <forename>Anna <addName>Rosina</addName></forename>
@@ -248,35 +247,27 @@
                   <desc>interred at Fulneck by Samuel Benade</desc>
                </event>
                </listEvent>
-              
+<!-- Pick up here ... need to organize listEvent and figure out how to cluster offices -->               
                <residence ref="#mlpla000026" from="1734">Berthelsdorf</residence>
                <residence ref="#mlpla000053">Lobenstein</residence>
                <residence ref="#mlpla000003" from="1772" to="1803">Fulneck</residence>
-                  
-               
-                     <office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
-               <office when-iso="1742" ref="#mloff000026">children bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>                            
+            </person>
+            <listOffice>
+               <office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
+               <office></office>
                <office notBefore="1748-09-20" notAfter="1764-05" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000002">Bethlehem</placeName></office>
                <office when-iso="1765" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office when-iso="1765" notAfter="1772" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
-               <office from="1722" to="1801" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
-                  
-               
-               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>
-               <note resp="#Yorkshire_Families"> ANDERSON, Anna Rosina (1727-1803) b 09.08.1727 Berthelsdorf reception: baptised Lutheran Church, orphan house Marienborn c 1738, sisters’ house Marienborn 1739, received
-                  congregation Marienborn 1740, sacrament Herrnhaag 1741 congregation office: children and great girls bandkeeper 1742 Marienborn church orders: received as acoluth Herrnhaag
-                  23.06.1743 blessed as deaconess Herrnhaag 04.07.1747 church service: assistant children’s oeconomy Marienborn 1743, Herrnhaag 1743, single sisters’ labourer Bethlehem, arrived
-                  20.09.1748, returned Europe May 1764, arrived London 24.06.1764, arrived Marienborn 04.07.1764, arrived Herrnhut August 1764, single sisters’ labourer Fulneck 1765, Bedford 1765,
-                  Fulneck 1772-1801 d 20.02.1803 aged 75 sisters’ house Fulneck, interred Fulneck by Br S T Benade 24.02.1803 grave 1136 - 2nd section, 52nd row, 2nd grave from path </note>
-            </person>
-            
+               <office from="1722" to="1801" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>-->
+            </listOffice>
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000557" when-iso="1803-02-24"/>
             </listRelation>
          </listPerson>
          
-         <listPerson> <!-- Adkinson, Martha -->
+         <listPerson>
             <person xml:id="mlper000216">
                <persName>
                   <forename>Martha</forename>
@@ -337,7 +328,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson> <!-- Allot, Mary -->
+         <listPerson>
             <person xml:id="mlper000217" sex="f">
                <persName>
                   <forename>Mary</forename>
@@ -399,7 +390,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson> <!-- Ashley, Hannah -->
+         <listPerson>
             <person xml:id="mlper000218">
                <persName>
                   <forename>Hannah</forename>
@@ -474,7 +465,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson> <!-- Bentley, Abigail -->
+         <listPerson>
             <person xml:id="mlper000219" sex="f">
                <persName>
                   <forename>Abigail</forename>
@@ -533,7 +524,7 @@
          </listPerson>
          
          <!-- not in YF document; information taken from memoir -->
-         <listPerson> <!-- Bird, Mary -->
+         <listPerson>
             <person xml:id="mlper000220">
                <persName>
                   <forename>Mary</forename>
@@ -562,7 +553,7 @@
             </person>
          </listPerson>
          
-         <listPerson> <!-- Booth, Elizabeth -->
+         <listPerson>
             <person xml:id="mlper000221">
                <persName>
                   <forename>Elizabeth</forename>
@@ -622,8 +613,7 @@
                <relation name="interment" passive="#mlper000544" when-iso="1764-04-24"/>
             </listRelation>
          </listPerson>
-         
-         <listPerson><!-- Bradley, Rachel -->
+         <listPerson>
             <person xml:id="mlper000222">
                <persName>
                   <forename>Rachel</forename>
@@ -688,8 +678,7 @@
                <relation name="interment" passive="#mlper000557" when-iso="1809-09-02"/>
             </listRelation>
          </listPerson>
-         
-         <listPerson><!-- Brook, Rachel -->
+         <listPerson>
             <person xml:id="mlper000223">
                <persName>
                   <forename>Rachel</forename>
@@ -750,7 +739,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson><!-- Brown, Alice -->
+         <listPerson>
             <person xml:id="mlper000224">
                <persName>
                   <forename>Alice</forename>
@@ -818,7 +807,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson><!-- Calvert, Martha -->
+         <listPerson>
             <person xml:id="mlper000225">
                <persName>
                   <forename>Martha</forename>
@@ -870,7 +859,7 @@
          </listPerson>
          
          <!-- not in YF document; information taken from memoir -->
-         <listPerson><!-- Cannings, Ann -->
+         <listPerson>
             <person xml:id="mlper000226">
                <persName>
                   <forename>Ann</forename>
@@ -900,7 +889,7 @@
             </person>
          </listPerson>
          
-         <listPerson><!-- Cennick, Sarah -->
+         <listPerson>
             <person xml:id="mlper000227">
                <persName>
                   <forename>Sarah</forename>
@@ -1004,7 +993,7 @@
             </listRelation>
          </listPerson>
          
-         <listPerson><!-- Clagget, Elizabeth -->
+         <listPerson>
             <person xml:id="mlper000228">
                <persName>
                   <forename>Elizabeth</forename>
@@ -1080,6 +1069,7 @@
                   Martha (b 1726), Ann (Shepley) (b 1728) and Catherine (b 1730), sister-in-law of Daniel Shepley (b 1721), aunt of John Benjamin (b 1767) and Anna Shepley (b 1770) d 12.08.1767 aged
                   51 sisters’ house Fulneck, interred Fulneck by Br B La Trobe 14.08.1767 grave 324 - 1st section, 12th row, 6th grave from path </note>
             </person>
+         </listPerson>
          <listRelation type="personal">
             <relation name="child" passive="Wiseman Claggett"/>
             <relation name="child" passive="Martha (Clifton) Claggett"/>
@@ -1092,9 +1082,7 @@
          <listRelation type="Moravian">
             <relation name="interment" passive="#mlper000697" when-iso="1767-08-14"/>
          </listRelation>
-         </listPerson>
-         
-         <listPerson><!-- Clark, Elizabeth (1717-1768) -->
+         <listPerson>
             <person xml:id="mlper000229">
                <persName>
                   <forename>Elizabeth</forename>
@@ -1145,8 +1133,7 @@
                <relation name="interment" passive="#mlper000697" when-iso="1768-06-25"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Clark, Elizabeth (1725-1785)-->
+         <listPerson>
             <person xml:id="mlper000230">
                <persName>
                   <forename>Elizabeth</forename>
@@ -1211,8 +1198,7 @@
                <relation name="interment" passive="#mlper000694" when-iso="1785-01-21"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!--Clark, Hannah-->
+         <listPerson>
             <person xml:id="mlper000231">
                <persName>
                   <forename>Hannah</forename>
@@ -1276,8 +1262,7 @@
                <relation name="interment" passive="#mlper000694" when-iso="1756-10-14"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!--Clark, Grace-->
+         <listPerson>
             <person xml:id="mlper000232">
                <persName>
                   <forename>Grace</forename>
@@ -1344,8 +1329,7 @@
                <relation name="interment" passive="#mlper000705" when-iso="1749-07-07"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Clerk, Hetty -->
+         <listPerson>
             <person xml:id="mlper000233">
                <persName>
                   <forename>Esther</forename>
@@ -1419,8 +1403,7 @@
                <relation name="interment" passive="#mlper000694" when-iso="1791-05-31"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Coffin, Elizabeth -->
+         <listPerson>
             <person xml:id="mlper000234">
                <persName>
                   <forename>Elizabeth</forename>
@@ -1455,8 +1438,7 @@
                <relation name="interment" passive="#mlper000373" when-iso="1855-02-02"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!--Craven, Sarah-->
+         <listPerson>
             <person xml:id="mlper000235">
                <persName>
                   <forename>Sarah</forename>
@@ -1509,8 +1491,7 @@
                <relation name="interment" passive="#mlper000694" when-iso="1790-11-15"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Delamotte, Mary -->
+         <listPerson>
             <person xml:id="mlper000236">
                <persName>
                   <forename>Mary</forename>
@@ -1576,8 +1557,7 @@
                <relation name="interment" passive="#mlper000706" when-iso="1810-06-21"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Dyson, Hannah -->
+         <listPerson>
             <person xml:id="mlper000237">
                <persName>
                   <forename>Hannah</forename>
@@ -1638,9 +1618,8 @@
                <relation name="interment" passive="#mlper000544" when-iso="1767-09-13"/>
             </listRelation>
          </listPerson>
-
          <!-- not in YF document; information taken from memoir -->
-         <listPerson><!-- Eagles, Ann -->
+         <listPerson>
             <person xml:id="mlper000238">
                <persName>
                   <forename>Ann</forename>
@@ -1659,8 +1638,7 @@
                <bibl type="memoir" source="#mlpla000003">Ful/SS/47</bibl>
             </person>
          </listPerson>
-
-         <listPerson><!-- Edwards, Ann -->
+         <listPerson>
             <person xml:id="mlper000239">
                <persName>
                   <forename>Ann <addName>Georgiana</addName></forename>
@@ -1688,8 +1666,7 @@
                <relation name="interment" passive="mlper000374" when-iso="1852-03-03"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Faucet, Mary -->
+         <listPerson>
             <person xml:id="mlper000240">
                <persName>
                   <forename>Mary</forename>
@@ -1751,8 +1728,7 @@
                <relation passive="#mlper000705"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Faucet, Martha -->
+         <listPerson>
             <person xml:id="mlper000241">
                <persName>
                   <forename>Martha</forename>
@@ -1809,8 +1785,7 @@
                <relation passive="#mlper000697"/>
             </listRelation>
          </listPerson>
-
-         <listPerson><!-- Fletcher, Sarah -->
+         <listPerson>
             <person xml:id="mlper000242">
                <persName>
                   <forename>Sarah <addName>Ann</addName>
@@ -1848,7 +1823,6 @@
                <relation name="interment" passive="#mlper000375" when-iso="1869-12-23"/>
             </listRelation>
          </listPerson>
-
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000243">

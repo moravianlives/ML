@@ -134,6 +134,7 @@
                   <date type="death" when-iso="1765-11-30">30 November, 1765</date>
                   <placeName ref="#mlpla000063">Ockbrook</placeName>
                </death>
+               <listEvent>
                <event type="baptism" where="#mlpla000219" when-iso="1731-03-18">
                   <desc>baptized at St Bartholomew's Church Armley 18 March, 1731 (7 March, 1730 OS). baptized in <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
@@ -161,6 +162,7 @@
                <event type="interment" where="#mlpla000063" when-iso="1765-12-02" ref="#mlper000693">
                   <desc>interred at Ockbrook by John Ockershausen</desc>
                </event>
+               </listEvent>
                <occupation ref="#mlocc000050">stockiner</occupation>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/62</bibl>
@@ -169,7 +171,7 @@
                   1758, sisters’ house Ockbrook 10.04.1760, sacrament Ockbrook 16.04.1760 church office: received as acoluth July family: daughter of Thomas Wilson (b 1700) and Hannah (née Renner) (b
                   1701), sister of Benjamin (b 1727), Hannah (Horsfield) (b 1733), Esther (Klosé) (b 1736), Grace (b 1738) and Mary d 30.11.1765 aged 34 Ockbrook, interred Ockbrook by Br J
                   Ockershausen 02.12.1765 1st section, 4th row, 14th grave on the left from 1st path </note>
-            </person>
+            </person>          
             <listRelation type="personal">
                <relation name="child" passive="Thomas Wilson"/>
                <relation name="child" passive="Hannah (Renner) Wilson" notBefore="1701"/>
@@ -183,6 +185,8 @@
                <relation name="interment" passive="#mlper000693" when-iso="1765-12-02"/>
             </listRelation>
          </listPerson>
+         
+         
          <listPerson>
             <person xml:id="mlper000215" sex="f">
                <persName>
@@ -198,7 +202,8 @@
                   <date type="death" when-iso="1803-02-20">20 Febuary, 1803</date>
                   <placeName ref="#mlpla000271">Sisters' House at Fulneck</placeName> 
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in <orgName religion="Lutheran">Lutheran Church</orgName></desc>
                </event>
                <event type="entrance" where="#mlpla000269" when-iso="1738" cert="medium">
@@ -243,15 +248,20 @@
                <event type="interment" where="#mlpla000003" when-iso="1803-02-24" ref="#mlper000557">
                   <desc>interred at Fulneck by Samuel Benade</desc>
                </event>
-               <residence from="1734"><placeName ref="#mlpla000026">Berthelsdorf</placeName></residence>
-               <residence><placeName ref="#mlpla000053">Lobenstein</placeName></residence>
-               <residence from="1772" to="1803"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
+               </listEvent>
+<!-- Pick up here ... need to organize listEvent and figure out how to cluster offices -->               
+               <residence ref="#mlpla000026" from="1734">Berthelsdorf</residence>
+               <residence ref="#mlpla000053">Lobenstein</residence>
+               <residence ref="#mlpla000003" from="1772" to="1803">Fulneck</residence>
+                  
+               
+                  <office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
                <office when-iso="1742" ref="#mloff000026">children bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
                <office notBefore="1748-09-20" notAfter="1764-05" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000002">Bethlehem</placeName></office>
                <office when-iso="1765" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office when-iso="1765" notAfter="1772" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
                <office from="1722" to="1801" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
+               
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>
                <note resp="#Yorkshire_Families"> ANDERSON, Anna Rosina (1727-1803) b 09.08.1727 Berthelsdorf reception: baptised Lutheran Church, orphan house Marienborn c 1738, sisters’ house Marienborn 1739, received
@@ -264,6 +274,7 @@
                <relation name="interment" passive="#mlper000557" when-iso="1803-02-24"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000216">
                <persName>
@@ -324,6 +335,7 @@
                <relation name="interment" passive="#mlper000027" when-iso="1768-07-02"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000217" sex="f">
                <persName>
@@ -385,6 +397,7 @@
                <relation name="interment" passive="#mlper000694" when-iso="1754-12-28"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000218">
                <persName>
@@ -459,6 +472,7 @@
                <relation name="reception" passive="#mlper000699" when-iso="1753"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000219" sex="f">
                <persName>
@@ -516,6 +530,7 @@
                <relation name="interment" passive="#mlper000697" when-iso="1766-12-10"/>
             </listRelation>
          </listPerson>
+         
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000220">
@@ -545,6 +560,7 @@
                <bibl type="memoir" source="#mlpla000003">Ful/SS/50</bibl>
             </person>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000221">
                <persName>
@@ -642,7 +658,7 @@
                   <desc>interred at Fulneck by Samuel Benade</desc>
                </event>
                <occupation ref="#mlocc000093">sewer</occupation>
-               <residence from="1735" to="1758"><placeName ref="#mlpla000107">Golcar</placeName>></residence>
+               <residence from="1735" to="1758"><placeName ref="#mlpla000107">Golcar</placeName></residence>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/44</bibl>
                <note resp="#Yorkshire_Families">(W/G/F)£^BRADLEY, Rachel (1742-1809) b 04.10.1742 (OS) / 15.10.1742 (NS) Golcar Parish of Huddersfield occupation: sewer resided: Golcar 1735 - 1758 reception: baptized Church of
@@ -730,6 +746,7 @@
                <relation name="interment" passive="#mlper000541" when-iso="1815-11-20"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000224">
                <persName>
@@ -797,6 +814,7 @@
                <relation name="interment" passive="#mlper000544" when-iso="1757-08-18"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000225">
                <persName>
@@ -847,6 +865,7 @@
                <relation name="interment" passive="#mlper000541" when-iso="1816-03-18"/>
             </listRelation>
          </listPerson>
+         
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000226">
@@ -877,6 +896,7 @@
                <bibl type="memoir" source="#mlpla000003">Ful/SS/7</bibl>
             </person>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000227">
                <persName>
@@ -953,8 +973,8 @@
                <office when-iso="1748" ref="#mloff000029">single sisters' choir helper <placeName ref="#mlpla000084">Yorkshire</placeName></office>
                <office when-iso="1751" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000144">Dublin</placeName></office>
                <office from="1752" to="1759" ref="#mloff000004">single sisters' labourer North of <placeName ref="#mlpla000114">Ireland</placeName></office>
-               <office when-iso="1760-10-13" ref="#mloff000004">single sisters’labour <placeName ref="#mlpla000025">Bedford</placeName></office>
-               <office when-iso="1762" ref="#mloff000004">single sisters’ labour <placeName ref="#mlpla000115">Lampeter</placeName></office>
+               <office when-iso="1760-10-13" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
+               <office when-iso="1762" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000115">Lampeter</placeName></office>
                <office when-iso="1765-01-16" ref="#mloff000004">assistant labourer among single sisters of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
                <office when-iso="1765-01-16" ref="#mloff000048">assistant labourer among great girls of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
@@ -980,6 +1000,7 @@
                <relation name="interment" passive="#mlper000544" when-iso="1770-01-29"/>
             </listRelation>
          </listPerson>
+         
          <listPerson>
             <person xml:id="mlper000228">
                <persName>
@@ -5211,7 +5232,7 @@
                <occupation notBefore="1803-07-15" notAfter="1809">Director at the <placeName ref="#mlpla000317">Boarding School at Fairfield</placeName></occupation>
                <office notBefore="1805" ref="#mloff000047">Assistant to the Single Brethrens Labourer</office>
                <office ref="#mloff000047">Co-Labourer</office>
-               <office ref="#mloff000014">deacon</office>
+               <office ref="#mloff000014" >deacon</office>
                <office ref="#mloff000053">presbyter</office>
                <office ref="#mloff000002">Minister of the Congregation at <placeName ref="#mlpla000025">Bedford</placeName></office>
                <office ref="#mloff000038">Labourer of the Congregation at <placeName ref="#mlpla000025">Bedford</placeName></office>
@@ -10957,6 +10978,7 @@
                <persName>
                   <forename>Andrew</forename>
                   <surname>Parminter</surname>
+               </persName>
                   <note resp="#Yorkshire_Families">(LW/F/O)PARMINTER, Andrew (1716-1799) b 04.08.1716 Barnstaple Devon educated: at Philip Doddridge’s (1702-51) academy in Northampton reception: baptized Presbyterian Church, 
                      received society Bedford Autumn 1746, received congregation Herrnhaag 15.04.1748, sacrament Herrnhaag August 1748, returned London 22.03.1748 (OS) / 02.04.1749 (NS), 
                      brethren’s house Fulneck 1753-1754 church service: Presbyterian minister Long Buckby 1745, assistant Wiltshire 14.06.1749 (OS) / 25.06.1749 (NS), society labourer Northampton, 
@@ -10964,7 +10986,6 @@
                      Wiltshire 10.05.1763, assistant labourer Dukinfield 1766, Haverfordwest 1768, single brethren’s choir helper Bedford 1786 family: son of Richard Parminter and Jane (née Lavingham) (b 1685),
                      brother of Richard (b 1710), John (b 1712), Samuel (b 1717) and Margaret (Hurlock) (b 1721), d 04.08.1799 aged 83 Bedford, interred Bedford by Br G W Horne 08.08.1799 south east section, 
                      12th row, 5th grave from south boundary</note>
-               </persName>
             </person>
          </listPerson>
          <listPerson>

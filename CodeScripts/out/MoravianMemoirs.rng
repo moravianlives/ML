@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-03-26T18:01:06Z. .
+Schema generated from ODD source 2021-03-26T18:16:56Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -14208,10 +14208,12 @@ Sample values include: 1] no; 2] yes; 3] weak; 4] strong</a:documentation>
       <element name="listOccupation">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
          <group>
-            <optional>
+            <oneOrMore>
+               <ref name="occupation"/>
+            </oneOrMore>
+            <zeroOrMore>
                <ref name="model.headLike"/>
-            </optional>
-            <ref name="occupation"/>
+            </zeroOrMore>
          </group>
          <ref name="att.declarable.attributes"/>
          <ref name="att.global.attributes"/>
@@ -14225,10 +14227,12 @@ Sample values include: 1] no; 2] yes; 3] weak; 4] strong</a:documentation>
       <element name="listOffice">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
          <group>
-            <optional>
+            <oneOrMore>
+               <ref name="office"/>
+            </oneOrMore>
+            <zeroOrMore>
                <ref name="model.headLike"/>
-            </optional>
-            <ref name="office"/>
+            </zeroOrMore>
          </group>
          <ref name="att.declarable.attributes"/>
          <ref name="att.global.attributes"/>

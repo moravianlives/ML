@@ -1,4 +1,3 @@
-
 <?xml-model href="../../CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -246,14 +245,25 @@
                <event type="interment" where="#mlpla000003" when-iso="1803-02-24" ref="#mlper000557">
                   <desc>interred at Fulneck by Samuel Benade</desc>
                </event>
-               </listEvent>   
+               </listEvent>
                <!-- Need to make a decision about how/whether to manage residences-->
                <residence ref="#mlpla000026" from="1734">Berthelsdorf</residence>
                <residence ref="#mlpla000053">Lobenstein</residence>
                <residence ref="#mlpla000003" from="1772" to="1803">Fulneck</residence>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>  
-            </person>
+               <bibl type="memoir" source="#mlpla000003">Ful/SS/8</bibl>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/SS/8</idno>
+                           <ptr target="http://...1234.xml"/>
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>           
             <listOffice>
                <office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
                <office></office>
@@ -1797,6 +1807,10 @@
               </listEvent>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/SS/53</bibl>
+               <!--<affiliation type="congregation" ref="#mlpla000268" when="1850">Ockbrook</affiliation>
+               <affiliation type="congregation" ref="#mlpla00003">
+                  <affiliation type="choir">Single Sisters' Choir</affiliation>
+               </affiliation>-->
             </person>
             <listOffice>
                <office when-iso="1850" ref="#mloff000031">Warden of the Single Sisters' at <placeName ref="#mlpla000003">Fulneck</placeName></office>

@@ -1,0 +1,1356 @@
+<?xml-model href="../../CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Moravian Lives Personography</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName>Katherine Mary Faull</persName>, Principal Investigator
+					<orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator,
+					2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName>Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer, 2016-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-19</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+						International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<p>List of Moravian Lives person entities with reference to persistent identifiers,
+					using ML standard names</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<classDecl>
+				<taxonomy>
+					<category>
+						<catDesc>Archive</catDesc>
+						<category xml:id="bethlehem">
+							<catDesc>Moravian Archives, Bethlehem</catDesc>
+						</category>
+						<category xml:id="fulneck">
+							<catDesc>Moravian Archives, Fulneck</catDesc>
+						</category>
+						<category xml:id="herrnhut">
+							<catDesc>Moravian Archives, Herrnhut</catDesc>
+						</category>
+						<category xml:id="london">
+							<catDesc>Moravian Archives, Fetter Lane - London</catDesc>
+						</category>
+					</category>
+					<category>
+						<catDesc>Church Records</catDesc>
+						<category xml:id="Yorkshire_Families">
+							<catDesc>Big Book of Yorkshire Families</catDesc>
+						</category>
+						<category>
+							<catDesc>Church Records</catDesc>
+							<category xml:id="Fulneck_Families_19th_Century">
+								<catDesc>Fulneck Families 19th Century</catDesc>
+							</category>
+						</category>
+					</category>
+				</taxonomy>
+			</classDecl>
+		</encodingDesc>
+		<revisionDesc>
+			<change who="#DKJ" when="2021-04-22">Broke personography into files of 50 entries each.
+				This is first file.</change>
+			<change who="#DKJ" when="2020-06-24">Branched to a Bethlehem personography hold file.
+				Kept Fulneck here.</change>
+			<change who="#DKJ" when="2019-05-30">Updated responsibility list, added more names and
+				fields</change>
+		</revisionDesc>
+	</teiHeader>
+	<text type="personography">
+		<body>
+			<head>Moravian Lives Personography</head>
+			
+			<!-- James La Trobe -->
+			<!-- skipping offices until we decide on how to encode them -->
+			<listPerson>
+				<person xml:id="mlper000706" sex="m">
+					<persName>
+						<forename>James <addName>Gottlieb</addName></forename> 
+						<surname type="birth">La Trobe</surname>
+					</persName>
+					<birth>
+						<date type="birth" when-iso="1750-01-19">19 January, 1750</date>
+						<placeName ref="#mlpla000144">Dublin</placeName>
+					</birth>
+					<death>
+						<date type="death" when-iso="1836-01-30">20 January, 1836</date>
+						<placeName ref="#mlpla000003">Fulneck</placeName>
+					</death>
+					<event type="dedication">
+						<desc>dedicated in the <orgName religion="Baptist">Baptist Church</orgName></desc>
+					</event>
+					<event type="reception" where="#mlpla000144" when-iso="1769-10-10">
+						<desc>received into society at Dublin</desc>
+					</event>
+					<event type="entrance" where="#mlpla000497">
+						<desc>entered brethren’s house Dublin</desc>
+					</event>
+					<event type="baptism" where="#mlpla000144" when-iso="1771-11-13" ref="#mlper000704">
+						<desc>baptized at Dublin by William Horne</desc>
+					</event>
+					<event type="sacrament" where="#mlpla000144" when-iso="1772-12-27">
+						<desc>sacrament at Dublin</desc>
+					</event>
+					<event type="entrance" where="#mlpla000304" when-iso="1776-02-13">
+						<desc>entered brethren’s house Fulneck</desc>
+					</event>
+					<event type="reception">
+						<desc>received as an acoluth</desc>
+					</event>
+					<event type="ordination" where="#mlpla000178" when-iso="1780">
+						<desc>ordained as a deacon in Germany</desc>
+					</event>
+					<event type="ordination">
+						<desc>ordained as a presbyter</desc>
+					</event>
+					<event type="marriage" where="#mlpla000225" when-iso="1788-06-16">
+						<desc>married Anna Elizabeth Watson at St Wilfrid’s Church Calverley</desc>
+					</event>
+					<event type="widowed" when-iso="1805-12-05">
+						<desc>widowed</desc>
+					</event>
+					<event type="marriage" where="#mlpla000040" when-iso="1806-12-03" ref="#mlper000713">
+						<desc>married to Sarah Rouse at Gracehill by John Hartley</desc>
+					</event>
+					<event type="interment" where="#mlpla000003" when-iso="1836-02-04" ref="#mlper000377">
+						<desc>interred at Fulneck by John Beck Holmes</desc>
+					</event>
+					<occupation>joiner and cabinetmaker</occupation>
+					<office>acoluth</office>
+					<office notBefore="1780">deacon</office>
+					<office>presbyter</office>
+					
+				</person>
+				<listRelation type="personal">
+					<relation name="child" passive="James La Trobe" notBefore="1702"/>
+					<relation name="child" passive="Rebecca (Adams) La Trobe"/>
+					<relation name="sibling" mutual="Henry La Trobe"/>
+					<relation name="sibling" mutual="John La Trobe"/>
+					<relation name="sibling" mutual="Mary La Trobe"/>
+					<relation name="spouse" mutual="Anna Elizabeth (Watson) La Trobe" from-iso="1788-06-16" to-iso="1805-12-05"/>
+					<relation name="spouse" mutual="Sarah (Rouse) La Trobe" from-iso="1806-12-03" to-iso="1836-01-30"/>
+					<relation name="parent" active="Benjamin Samuel La Trobe" notBefore="1790"/>
+					<relation name="parent" active="Mary Elizabeth (Harvey)"/>
+					<relation name="parent" active="Samuel La Trobe"/>
+					<relation name="parent" active="Lucretia La Trobe"/>
+					<relation name="parent" active="Ann La Trobe"/>
+					<relation name="parent" active="Benigna Rebecca La Trobe"/>
+					<relation name="parent" active="James La Trobe" notBefore="1802"/>
+				</listRelation>
+				<listRelation type="Moravian">
+					<relation name="baptism" passive="#mlper000704" when-iso="1771-11-13"/>
+					<relation name="marriage" passive="#mlper000713" when-iso="1806-12-03"/>
+					<relation name="interment" passive="#mlper000377" when-iso="1836-02-04"/>
+				</listRelation>
+			</listPerson>
+			
+			<!-- John Worthington -->
+			<!-- skip for now -->
+			<listPerson>
+				<person xml:id="mlper000707" sex="m">
+					<persName>
+						<forename>John</forename>
+						<surname>Worthington</surname>
+					</persName>
+					
+				</person>
+			</listPerson>
+			
+			<!-- J Smith -->
+			<!-- unable to determine exact identity of this person -->
+			<listPerson>
+				<person xml:id="mlper000708" sex="m">
+					<persName>
+						<forename>J</forename>
+						<surname>Smith</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Abraham Taylor -->
+			<!-- skip for now -->
+			<listPerson>
+				<person xml:id="mlper000709" sex="m">
+					<persName>
+						<forename>Abraham</forename>
+						<surname>Taylor</surname>
+					</persName>
+					
+				</person>
+			</listPerson>
+			
+			<!-- John Horsfall -->
+			<listPerson>
+				<person xml:id="mlper000710" sex="m">
+					<persName>
+						<forename>John</forename>
+						<surname>Horsfall</surname>
+					</persName>
+					<note>Husband of <persName ref="#mlper000250">Sarah Horsfall</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Erasmus Miller -->
+			<!-- skip for now -->
+			<listPerson>
+				<person xml:id="mlper000711" sex="m">
+					<persName>
+						<forename>Erasmus</forename>
+						<surname>Miller</surname>
+					</persName>
+					
+				</person>
+			</listPerson>
+			
+			<!-- George Prosky -->
+			<!-- skip for now -->
+			<listPerson>
+				<person xml:id="mlper000712" sex="m">
+					<persName>
+						<forename>George</forename>
+						<surname>Prosky</surname>
+					</persName>
+					
+				</person>
+			</listPerson>
+			
+			<!-- John Hartley -->
+			<listPerson>
+				<person xml:id="mlper000713" sex="m">
+					<persName>
+						<forename>John</forename>
+						<surname>Hartley</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Charles Reichel -->
+			<!-- skipping offices until we decide on how to encode them -->
+			<listPerson>
+				<person xml:id="mlper000714" sex="m">
+					<persName>
+						<forename>Charles <addName>Frederic</addName></forename>
+						<surname>Reichel</surname>
+					</persName>
+					<birth>
+						<date type="birth" when-iso="1783-11-07">7 November, 1783</date>
+						<placeName ref="#mlpla000022">Barby</placeName>
+					</birth>
+					<death>
+						<date type="death" when-iso="1846-06-15">15 June, 1846</date>
+						<placeName ref="#mlpla000040">Gracehill</placeName>
+					</death>
+					<event type="baptism" where="#mlpla000022">
+						<desc>baptized at Barby</desc>
+					</event>
+					<event type="baptism" where="#mlpla000020" when-iso="1784">
+						<desc>baptized at Nazareth</desc>
+					</event>
+					<event type="reception" where="#mlpla000020" when-iso="1796-01-24">
+						<desc>received into congregation at Nazareth</desc>
+					</event>
+					<event type="sacrament" where="#mlpla000020" when-iso="1796-07-23">
+						<desc>sacrament at Nazareth</desc>
+					</event>
+					<event type="marriage" when-iso="1812-09">
+						<desc>married Hannah Parsons</desc>
+					</event>
+					<event type="transfer" where="mlpla000070" when-iso="1829">
+						<desc>transferred to North American congregation</desc>
+					</event>
+					<event type="widowed" when-iso="1832-11-11">
+						<desc>widowed</desc>
+					</event>
+					<event type="marriage">
+						<desc>married Susannah Sharrer</desc>
+					</event>
+					<education><placeName ref="#mlpla000498">boys' school Nazareth</placeName></education>
+					<education><placeName ref="#mlpla000263">Theological Seminary Niesky</placeName></education>
+					<occupation notBefore="1804-09-16">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+					
+				</person>
+				<listRelation type="personal">
+					<relation name="spouse" mutual="Hannah (Parsons) Reichel" from-iso="1812-09" to-iso="1832-11-11"/>
+					<relation name="spouse" mutual="Susannah (Sharrer) Reichel"/>
+					<relation name="parent" active="Charles Parsons Reichel" notBefore="1816"/>
+				</listRelation>
+			</listPerson>
+			
+			<!-- John Caldwell -->
+			<listPerson>
+				<person xml:id="mlper000715" sex="m">
+					<persName>
+						<forename>John</forename>
+						<surname>Caldwell</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Johannes Steinhauer -->
+			<listPerson>
+				<person xml:id="mlper000716" sex="m">
+					<persName>
+						<forename>Johannes</forename>
+						<surname>Steinhauer</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Anna La Trobe -->
+			<listPerson>
+				<person xml:id="mlper000717" sex="f">
+					<persName>
+						<forename>Anna</forename>
+						<surname type="birth">Antes</surname>
+						<surname type="married">La Trobe</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000697">Benjamin La Trobe</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- John Zander -->
+			<listPerson>
+				<person xml:id="mlper000718" sex="m">
+					<persName>
+						<forename>John <addName>Frederick</addName></forename> 
+						<surname>Zander</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Ludwig Marschall -->
+			<listPerson>
+				<person xml:id="mlper000719" sex="m">
+					<persName>
+						<forename>Ludwig</forename> <addName>Frederic Wilhelm</addName>
+						<nameLink>von</nameLink>
+						<surname>Marschall</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Christina Benade -->
+			<listPerson>
+				<person xml:id="mlper000720" sex="f">
+					<persName>
+						<forename>Christina</forename>
+						<surname type="birth">Faber</surname>
+						<surname type="married">Benade</surname>
+					</persName>
+					<note>Mother of <persName ref="#mlper000557">Samuel Benade</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Ignatius Traneker -->
+			<!-- skipping offices until we decide on how to encode them -->
+			<listPerson>
+				<person xml:id="mlper000721" sex="m">
+					<persName>
+						<forename>Ignatius</forename>
+						<surname type="birth">Traneker</surname>
+					</persName>
+					<birth>
+						<date type="birth" when-iso="1764-11-17">17 November, 1764</date>
+						<placeName ref="#mlpla000030">Bristol</placeName>
+					</birth>
+					<death>
+						<date type="death" when-iso="1850-05-17">17 May, 1850</date>
+						<placeName ref="#mlpla000108">Ashton-under-Lyne</placeName>
+					</death>
+					<event type="baptism" where="#mlpla000499" when-iso="1764-11-18" ref="#mlper000364">
+						<desc>baptized at Brethren’s chapel Bristol by Johann Nitschmann</desc>
+					</event>
+					<event type="reception" where="#mlpla000251" when-iso="1779-04-06">
+						<desc>received into congregation at Niesky</desc>
+					</event>
+					<event type="sacrament" where="#mlpla000001" when-iso="1781-01-27">
+						<desc>sacrament at Herrnhut</desc>
+					</event>
+					<event type="reception">
+						<desc>received as an acoluth</desc>
+					</event>
+					<event type="ordination">
+						<desc>ordained as a deacon</desc>
+					</event>
+					<event type="marriage" where="#mlpla000225" when-iso="1797-07-24">
+						<desc>married Anna Rosina Spicer at St Wilfrid’s Church Calverley</desc>
+					</event>
+					<event type="widowed" when-iso="1800-12-13">
+						<desc>widowed</desc>
+					</event>
+					<event type="marriage" where="#mlpla000220" when-iso="1801-10-12">
+						<desc>married Eleanor Sutton at St Peter’s Church Birstall</desc>
+					</event>
+					<event type="ordination" where="#mlpla000063" when-iso="1812-01-26" ref="#mlper000726">
+						<desc>ordained as a presbyter at Ockbrook by Thomas Moore</desc>
+					</event>
+					<event type="widowed" when-iso="1827-04-18">
+						<desc>widowed</desc>
+					</event>
+					<event type="marriage" where="#mlpla000327" when-iso="1828-07-19">
+						<desc>married Elizabeth Margaret Fraser at Church of St Dunstan in the West, London</desc>
+					</event>
+					<event type="widowed" when-iso="1837-03-10">
+						<desc>widowed</desc>
+					</event>
+					<event type="interment" where="#mlpla000037">
+						<desc>interred at Fairfield</desc>
+					</event>
+					<occupation>bookbinder</occupation>
+					<occupation notBefore="1788">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+					<office>acoluth</office>
+					<office>deacon</office>
+					<office notBefore="1812-01-26">presbyter</office>               
+				</person>
+				<listRelation type="personal">
+					<relation name="child" passive="#mlper000694" notBefore="1717"/>
+					<relation name="child" passive="Frances Sophia (Engelbach) Traneker"/>
+					<relation name="sibling" mutual="Benigna Sophia Traneker"/>
+					<relation name="sibling" mutual="Catherine Charlotte Traneker"/>
+					<relation name="sibling" mutual="George Frederic Traneker" notBefore="1767"/>
+					<relation name="sibling" mutual="Mary Dorothea Traneker"/>
+					<relation name="spouse" mutual="Anna Rosina (Spicer) Traneker" from-iso="1797-07-24" to-iso="1800-12-13"/>
+					<relation name="spouse" mutual="Eleanor (Sutton) Traneker" from-iso="1801-10-12" to-iso="1827-04-18"/>
+					<relation name="spouse" mutual="Elizabeth Margaret (Fraser) Traneker" from-iso="1828-07-19" to-iso="1837-03-10"/>
+					<relation name="parent" active="#mlper000673"/>
+					<relation name="parent" active="George Edward Traneker" notBefore="1802"/>
+					<relation name="parent" active="Sophia Eleanor (Lee)"/>
+					<relation name="parent" active="George Sutton Traneker" notBefore="1807"/>
+				</listRelation>
+				<listRelation type="Moravian">
+					<relation name="baptism" passive="#mlper000364" when-iso="1764-11-18"/>
+					<relation name="ordination" passive="#mlper000726" when-iso="1812-01-26"/>
+				</listRelation>
+			</listPerson>
+			
+			<!-- Johannes von Watteville -->
+			<!-- not in YF doc; needs more information -->
+			<listPerson>
+				<person xml:id="mlper000722" sex="m" sameAs="https://www.wikidata.org/wiki/Q21598562">
+					<persName>
+						<forename>Johannes <addName>Michael</addName></forename>
+						<surname type="birth">Langguth</surname>
+						<surname type="adoptive">von Watteville</surname>
+					</persName>
+					<birth>
+						<date type="birth" when-iso="1718-10-18">18 October, 1718</date>
+						<placeName ref="#mlpla000513">Walschleben</placeName>
+					</birth>
+					<death>
+						<date type="death" when-iso="1788-10-07">7 October, 1788</date>
+						<placeName ref="#mlpla000039">Gnadenfrei</placeName>
+					</death>
+					<event type="entrance" where="#mlpla000001" notBefore="1737" notAfter="1738">
+						<desc>joined the Brüdergemeine in Hernnhut</desc>
+					</event>
+					<event when-iso="1744" ref="#mlper000447">
+						<desc>adopted by Friedrich von Watteville</desc>
+					</event>
+					<event type="marriage" where="#mlpla000150" when-iso="1746-05-20">
+						<desc>married Benigna von Zinzendorf at Zeist</desc>
+					</event>
+					<event type="ordination" where="#mlpla000014" when-iso="1747-06-04">
+						<desc>ordained as a bishop at Herrnhaag</desc>
+					</event>
+					<education><placeName ref="#mlpla000514">University of Erfurt</placeName></education>
+					<education><placeName ref="#mlpla000353">University of Jena</placeName></education>
+					<office from-iso="1747-06-04">bishop</office>
+					<office from-iso="1760-05-09">leader of the Moravian Church</office>
+					<office>member of the Unity Elders' Conference</office>
+					<note>Source: http://digital.lib.lehigh.edu/hidden/finding.php?id=197</note>
+				</person>
+				<listRelation type="personal">
+					<relation name="child" passive="Johann Michael Langguth"/>
+					<relation name="child" passive="Anna Elizabeth (Farbarius) Langguth"/>
+					<relation name="spouse" mutual="Benigna (von Zinzendorf) von Watteville" from-iso="1746-05-20" to-iso="1788-10-07"/>
+				</listRelation>
+			</listPerson>
+			
+			<!-- Elizabeth Sheard -->
+			<listPerson>
+				<person xml:id="mlper000723" sex="f">
+					<persName>
+						<forename>Elizabeth</forename>
+						<surname type="birth">Sheard</surname>
+						<surname type="married">Sheard</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000538">Benjamin Sheard</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Dinah von Larisch -->
+			<listPerson>
+				<person xml:id="mlper000724" sex="f">
+					<persName>
+						<forename>Dinah</forename>
+						<forename type="variant">Diana</forename>
+						<surname type="birth">Raymond</surname>
+						<surname type="married">von Larisch</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000539">Charles von Larisch</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Elizabeth Ramftler -->
+			<listPerson>
+				<person xml:id="mlper000725" sex="f">
+					<persName>
+						<forename>Elizabeth</forename>
+						<surname type="birth">Graves</surname>
+						<surname type="married">Ramftler</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000541">Christian Friedrich Ramftler</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Thomas Moore -->
+			<listPerson>
+				<person xml:id="mlper000726" sex="m">
+					<persName>
+						<forename>Thomas</forename>
+						<surname>Moore</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- T.T. Biddulph -->
+			<listPerson>
+				<person xml:id="mlper000727" sex="m">
+					<persName>
+						<forename>T. T.</forename>
+						<surname>Biddulph</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Elizabeth Ramftler -->
+			<listPerson>
+				<person xml:id="mlper000728" sex="f">
+					<persName>
+						<forename>Elizabeth <addName>Graves</addName></forename>
+						<surname type="birth">Ramftler</surname>
+					</persName>
+					<note>Daughter of <persName ref="#mlper000541">Christian Friedrich Ramftler</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Johanna Benade -->
+			<listPerson>
+				<person xml:id="mlper000351" sex="f">
+					<persName>
+						<forename>Johanna <addName>Eleanora</addName></forename>
+						<surname type="birth">Gaertinor</surname>
+						<surname type="married">Benade</surname>
+					</persName>
+					<note>First wife of <persName ref="#mlper000557">Samuel Benade</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Jane Benade -->
+			<listPerson>
+				<person xml:id="mlper000352" sex="f">
+					<persName>
+						<forename>Jane</forename>
+						<surname type="birth">Dodgson</surname>
+						<surname type="married">Benade</surname>
+					</persName>
+					<note>Second wife of <persName ref="#mlper000557">Samuel Benade</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- John Potter -->
+			<listPerson>
+				<person xml:id="mlper000353" sex="m">
+					<persName>
+						<forename>John</forename>
+						<surname>Potter</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Margaret Ingham -->
+			<listPerson>
+				<person xml:id="mlper000354" sex="f">
+					<persName>
+						<addName type="honorific">Lady</addName>
+						<forename>Margaret</forename>
+						<surname type="birth">Hastings</surname>
+						<surname type="married">Ingham</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000536">Benjamin Ingham</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Jane Cennick -->
+			<listPerson>
+				<person xml:id="mlper000355" sex="f">
+					<persName>
+						<forename>Jane</forename>
+						<surname type="birth">Bryant</surname>
+						<surname type="married">Cennick</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000408">John Cennick</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Eleanor Charlesworth -->
+			<listPerson>
+				<person xml:id="mlper000356" sex="f">
+					<persName>
+						<forename>Eleanor</forename>
+						<surname type="birth">Gutbier</surname>
+						<surname type="married">Charlesworth</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000544">James Charlesworth</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Peter Syms -->
+			<listPerson>
+				<person xml:id="mlper000357" sex="m">
+					<persName>
+						<forename>Peter</forename>
+						<surname type="birth">Syms</surname>
+					</persName>
+				</person>
+			</listPerson>
+
+<!-- Christian Schultze -->
+			<listPerson>
+				<person xml:id="mlper000358" sex="m">
+					<persName>
+						<forename>Christian</forename>
+						<surname type="birth">Schultze</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- William Arme -->
+			<listPerson>
+				<person xml:id="mlper000359" sex="m">
+					<persName>
+						<forename>William</forename>
+						<surname type="birth">Arme</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Christian Rudolph -->
+			<listPerson>
+				<person xml:id="mlper000360" sex="m">
+					<persName>
+						<forename>Christian <addName>Henry</addName></forename>
+						<surname type="birth">Rudolph</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- T. Mallalieu -->
+			<listPerson>
+				<person xml:id="mlper000361" sex="m">
+					<persName>
+						<forename>T.</forename>
+						<surname>Mallalieu</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Samuel Church -->
+			<listPerson>
+				<person xml:id="mlper000362" sex="m">
+					<persName>
+						<forename>Samuel <addName>Frederic</addName></forename>
+						<surname type="birth">Church</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Elizabeth Gray -->
+			<listPerson>
+				<person xml:id="mlper000363" sex="f">
+					<persName>
+						<forename>Elizabeth</forename>
+						<surname type="birth">Ubank</surname>
+						<surname type="married">Gray</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000560">Timothy Gray</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- Johann Nitschmann -->
+			<!-- not in YF doc; needs more information -->
+			<listPerson>
+				<person xml:id="mlper000364" sex="m" sameAs="https://www.wikidata.org/wiki/Q55857821">
+					<persName>
+						<forename>Johann</forename>
+						<forename type="variant">John</forename>
+						<surname type="birth">Nitschmann</surname>
+					</persName>
+					<birth>
+						<date type="birth" when-iso="1712-09-25">25 Septmeber, 1712</date>
+						<placeName ref="#mlpla000515">Kunewald</placeName>
+					</birth>
+					<death>
+						<date type="death" when-iso="1783-06-30">30 June, 1783</date>
+						<placeName ref="#mlpla000516">Sarepta</placeName>
+					</death>
+					<event type="consecration" when-iso="1758">
+						<desc>consecrated as a bishop</desc>
+					</event>
+					<residence from-iso="1725" to-iso="1726"><placeName ref="#mlpla000001">Herrnhut</placeName></residence>
+					<residence from-iso="1726" to-iso="1728"><placeName ref="#mlpla000481">Sorau</placeName></residence>
+					<occupation from-iso="1731" to-iso="1732">tutor in the <placeName ref="#mlpla000511">Orphanage at Herrnhut</placeName></occupation>
+					<occupation when-iso="1733">private secretary to <persName ref="#mlper000566">Count Zinzendorf</persName></occupation>
+					<office>missionary in <placeName ref="#mlpla000517">Swedish Lapland</placeName></office>
+					<office from-iso="1745" to-iso="1750">diaconus and Gemeinhelfer at <placeName ref="#mlpla000014">Herrnhaag</placeName></office>
+					<office from-iso="1750">diaconus and Gemeinhelfer at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
+					<office from-iso="1758">bishop</office>
+					<office from-iso="1761" to-iso="1766">superintendent communities in England and Ireland</office>
+					<office from-iso="1766" to-iso="1783-06-30">superintendent of the settlement at Sarepta</office>
+					<note>Source: https://hymnary.org/person/Nitschmann_Johann</note>
+				</person>
+				<listRelation type="personal">
+					<relation name="sibling" mutual="#mlper000213"/>
+				</listRelation>
+			</listPerson>
+			
+			<!-- Johanna Molther -->
+			<listPerson><!-- Seydewir, Johanna de -->
+				<person xml:id="mlper000365" sex="f">
+					<persName>
+						<forename>Johanna</forename>
+						<nameLink>de</nameLink>
+						<surname type="birth">Seydewir</surname>
+						<surname type="married">Molther</surname>
+					</persName>
+					<note>Wife of <persName ref="#mlper000561">Philip Henry Molther</persName></note>
+				</person>
+			</listPerson>
+			
+			<!-- George Whitefield -->
+			<!-- not in YF doc; ODNB entry here: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Whitefield,_George -->
+			<listPerson><!-- Whitefield, George -->
+				<person xml:id="mlper000366" sex="f" sameAs="https://www.wikidata.org/wiki/Q314399">
+					<persName>
+						<forename>George</forename>
+						<surname>Whitefield</surname>
+					</persName>
+				</person>
+			</listPerson>
+			
+			<!-- Frederick I  - (DKJ) I don't think we should include royalty in the personography; we can tag in documents, but it doesn't seem helpful-->
+			<!-- not in YF doc -->
+			<listPerson>
+				<person xml:id="mlper000367" sex="m" sameAs="https://www.wikidata.org/wiki/Q52932">
+					<persName>
+						<forename>Frederick I</forename>
+						<surname></surname>
+					</persName>
+				</person>
+			</listPerson>
+
+			<!-- Walton, Hannah -->
+         <listPerson>
+            <person xml:id="mlper000368" sex="f">
+               <persName>
+                  <forename>Hannah</forename>
+                  <surname type="married">Walton</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1766-12-02">2 December, 1766</date>
+                  <placeName ref="#mlpla000091">Hallifax</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1820-02-14">14 February, 1820</date>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="entrance" where="#mlpla000267" when-iso="1782-02-18">
+                  <desc>entered Sisters' House Gummersall</desc>
+               </event>
+               <event type="reception" when-iso="1783-08-13">
+                  <desc>received into congregation</desc>
+               </event>
+               <event type="entrance" where="#mlpla000271">
+                  <desc>entered Sisters' House Fulneck</desc>
+               </event>
+               <event type="marriage" ref="#mlper000436">
+                  <desc>married John Walton</desc>
+               </event>
+               <event type="readmission" ref="#mlper000436">
+                  <desc>readmitted to congregation with her husband John Walton</desc>
+               </event>
+               <event type="widowed" when-iso="1806" cert="low">
+                  <desc>widowed</desc>
+               </event>
+               <event type="entrance" when-iso="1812">
+                  <desc>entered Widows' House</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1820-02-18" ref="#mlper000541">
+                  <desc>interred at Fulneck by C.F. Ramftler</desc>
+               </event>
+               <education><placeName ref="#mlpla000299">Childrens' School at Wyke</placeName></education>
+               <residence><placeName ref="#mlpla000102">Wyke</placeName></residence>
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir" notAfter="1806"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1806"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
+               <bibl type="memoir" source="#mlpla000003">Ful/3/139</bibl>
+            </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000436" notAfter="1806"/>
+               <relation name="parent" active="#mlper000437" notBefore="1806"/>
+               <relation name="parent" active="#mlper000438"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000541"  when-iso="1820-02-18"/>
+            </listRelation>
+         </listPerson>
+         
+			<!-- Clayton, Joseph -->
+         <listPerson>
+            <person xml:id="mlper000369" sex="m">
+               <persName>
+                  <forename>Joseph</forename>
+                  <surname type="birth">Clayton</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1742-11-25">25 November, 1742</date>
+                  <placeName ref="#mlpla000089">Holbeck</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1801-04-22">22 April, 1801</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000089" when-iso="1758">
+                  <desc>received into society at Holbeck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000304" when-iso="1758-03-31">
+                  <desc>entered brethren’s house Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1759-08-16">
+                  <desc>received into congregation at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1761-04-19">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="entrance" where="#mlpla000338" when-iso="1771-11">
+                  <desc>entered brethren’s house Wellhouse</desc>
+               </event>
+               <event where="#mlpla000452" when-iso="1790">
+                  <desc>began boys’ school Wellhouse </desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1801-04-24" ref="#mlper000713">
+                  <desc>interred at Fulneck by John Hartley</desc>
+               </event>
+               <occupation>clothier</occupation>
+               <occupation when-iso="1786">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+               <occupation>farm manager at <placeName ref="#mlpla000338">Wellhouse</placeName></occupation>
+               <office when-iso="1771-11">boys’ labourer at <placeName ref="#mlpla000330">Wellhouse</placeName></office>
+               <residence notBefore="1771-11" notAfter="1786"><placeName ref="#mlpla000338">brethren’s house Wellhouse</placeName></residence>
+               <affiliation type="choir" notBefore="1759-08-16"><orgName en="single brothers choir">Single Brothers' Choir</orgName></affiliation>
+               <bibl type="memoir" source="#mlpla000003">Ful/3/107</bibl>  
+            </person>
+            <listRelation type="Moravian">
+               <relation name="interment" passive="#mlper000713" when-iso="1801-04-24"/>
+            </listRelation>
+         </listPerson>
+         
+			<!-- Martyn, John -->
+         <!-- not in YF document; information taken from memoir -->
+         <listPerson>
+            <person xml:id="mlper000371" sex="m">
+               <persName>
+                  <forename>John <addName>King</addName></forename>
+                  <surname>Martyn</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1774-08-27">27 August, 1774</date>
+                  <placeName ref="#mlpla000462">Triplow</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1849-08-18">18 August, 1849</date>
+                  <placeName ref="#mlpla000030">Bristol</placeName>
+               </death>
+               <event type="ordination" where="#mlpla000467" when-iso="1797-06" ref="#mlper000439">
+                  <desc>ordained a deacon at Buckden by the Bishop of Lincoln, George Pretyman</desc>
+               </event>
+               <event type="ordination" when-iso="1800-06">
+                  <desc>ordained a priest in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="marriage" when-iso="1800-07-16" ref="#mlper000440">
+                  <desc>married Eulalia Maria Longmire</desc>
+               </event>
+               <event type="widowed" when-iso="1807">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" when-iso="1809-09-25" ref="#mlper000442">
+                  <desc>married Sarah Theed</desc>
+               </event>
+               <event type="widowed" when-iso="1812">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" when-iso="1813-08-11" ref="#mlper000443">
+                  <desc>married Emma Macaulay</desc>
+               </event>
+               <event type="widowed" when-iso="1820">
+                  <desc>widowed</desc>
+               </event>
+               <event type="resignation" when-iso="1823-03">
+                  <desc>resigned all offices in the <orgName religion="Anglican">Church of England</orgName></desc>
+               </event>
+               <event type="reception" when="1823-04-12">
+                  <desc>received into the <orgName religion="Moravian Church">Brethren's Church</orgName>; notified by letter from Brother Wied</desc>
+               </event>
+               <event type="consecration" where="#mlpla000063" when-iso="1836" ref="#mlper000445, #mlper000446">
+                  <desc>consecrated a bishop at Ockbrook by Bishop Charles Augustus Pohlman and Bishop Hans Peter Halbeck</desc>
+               </event>
+               <residence><placeName ref="#mlpla000469">Great Staughton</placeName></residence>
+               <residence><placeName ref="#mlpla000468">Pertenhall</placeName></residence>
+               <residence><placeName ref="#mlpla000470">Kimbolton</placeName></residence>
+               <residence notBefore="1848"><placeName ref="#mlpla000030">Bristol</placeName></residence>
+               <education>boarding school at <placeName ref="#mlpla000463">Felstead</placeName></education>
+               <education><placeName ref="#mlpla000464">Westminster School</placeName></education>
+               <education><placeName ref="#mlpla000466">Sidney College</placeName> at <placeName ref="#mlpla000465">University of Cambridge</placeName></education>
+               <occupation when-iso="1798">mathematics lecturer at <placeName ref="#mlpla000466">Sidney College</placeName></occupation>
+               <office>deacon in the <orgName religion="Anglican">Church of England</orgName></office>
+               <office>priest in the <orgName religion="Anglican">Church of England</orgName></office>
+               <office notBefore="1826">labourer of the <placeName ref="#mlpla000470">Kimbolton</placeName> congregation</office>
+               <office notBefore="1836-09">Provincial Helper</office>
+               <office notBefore="1836-09">bishop</office>
+               <office notBefore="1836-09">minister of the <placeName ref="#mlpla000063">Ockbrook</placeName> congregation</office>
+               <office notAfter="1846">President of the Provincial Helpers Conference</office>
+               <bibl type="memoir" source="#mlpla000003">Ful/3/6</bibl>
+            </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000440" from-iso="1800-07-16" notAfter="1807"/>
+               <relation name="spouse" mutual="#mlper000442" from-iso="1809-09-25" notAfter="1812"/>
+               <relation name="spouse" mutual="#mlper000443" from-iso="1813-08-11" notAfter="1820"/>
+               <relation name="parent" active="#mlper000441"/>
+               <relation name="parent" active="#mlper000444"/>
+            </listRelation>
+         </listPerson>
+         
+			<!-- Gambold, John -->
+         <!-- not in YF doc -->
+         <listPerson>
+            <person xml:id="mlper000372" sex="m" sameAs="https://www.wikidata.org/wiki/Q16206254">
+               <persName>
+                  <forename>John</forename>
+                  <surname type="birth">Gambold</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1711-04-10">10 April, 1711</date>
+                  <placeName ref="#mlpla000518">Puncheston</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1771-09-13">13 September, 1771</date>
+                  <placeName ref="#mlpla000201">Haverfordwest</placeName>
+               </death>
+               <event type="acceptance" when-iso="1730" cert="low">
+                  <desc>admitted to the society of Oxford <orgName religion="Methodist">Methodists</orgName> by John Wesley</desc>
+               </event>
+               <event type="ordination" when-iso="1733-09">
+                  <desc>ordained by John Potter</desc>
+               </event>
+               <event type="reception" where="#mlpla000054" when-iso="1742-11">
+                  <desc>received into <orgName religion="Moravian Church">Moravian Church</orgName> at London</desc>
+               </event>
+               <event type="marriage" when-iso="1743-05-14">
+                  <desc>married Elizabeth Walker</desc>
+               </event>
+               <event type="synod" where="#mlpla000014" when-iso="1747-03">
+                  <desc>attended General Synod at Herrnhaag</desc>
+               </event>
+               <event type="consecration" where="#mlpla000231" when-iso="1754-11" ref="#mlper000722 #mlper000364 #mlper000298">
+                  <desc>consecrated a bishop at Lindsey House by Johannes de Watteville, John Nitschmann, and David Nitschmann</desc>
+               </event>
+               <event type="synod" where="#mlpla000057" from-iso="1764-07" to-iso="1764-08">
+                  <desc>attended General Synod at Marienborn</desc>
+               </event>
+               <occupation>teacher at <placeName ref="#mlpla000118">Broadoaks, Essex</placeName></occupation>
+               <occupation>schoolmaster at <placeName ref="#mlpla000201">Haverfordwest</placeName></occupation>
+               <occupation from-iso="1744-11">preacher at <placeName ref="#mlpla000004">Fetter Lane</placeName></occupation>
+               <office from-iso="1735">vicar of <placeName ref="#mlpla000519">Stanton Harcourt, Oxfordshire</placeName></office>
+               <note>Source: https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gambold,_John (in the public domain)</note>
+            </person>
+            <listRelation type="personal">
+               <relation name="child" passive="William Gambold"/>
+               <relation name="spouse" mutual="Elizabeth (Walker) Gambold" from-iso="1743-05-14" to-iso="1771-09-13"/>
+               <relation name="parent" active="William Gambold" notBefore="1744"/>
+               <relation name="parent" active="Anna Mary (Steinhauer)"/>
+               <relation name="parent" active="John Peter Gambold" notBefore="1750"/>
+               <relation name="parent" active="Johannes Gambold"/>
+               <relation name="parent" active="#mlper000244"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation type="consecration" passive="#mlper000722 #mlper000364 #mlper000298" when-iso="1754-11"/>
+            </listRelation>
+         </listPerson>
+         
+			<!-- Willey, Joseph -->
+         <listPerson>
+            <person xml:id="mlper000373" sex="m">
+               <persName>
+                  <forename>Joseph <addName>Hutton</addName></forename>
+                  <surname>Willey</surname>
+               </persName>
+            </person>
+         </listPerson>
+         
+			<!-- Edwards, William -->
+         <!-- skipping offices until we decide on how to encode them -->
+         <listPerson>
+            <person xml:id="mlper000374" sex="m">
+               <persName>
+                  <forename>William</forename>
+                  <surname type="birth">Edwards</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1798-07-26">26 July, 1798</date>
+                  <placeName ref="#mlpla000071">Derby</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1879-03-18">18 March, 1879</date>
+                  <placeName ref="#mlpla000063">Ockbrook</placeName>
+               </death>
+               <event type="baptism" where="#mlpla000502" when-iso="1798-07-29">
+                  <desc>baptized at St Werburgh’s Church Derby</desc>
+               </event>
+               <event type="reception" where="#mlpla000063" when-iso="1808">
+                  <desc>received into <orgName en="childrens choir">Little Boys' Choir</orgName> at Ockbrook</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1810">
+                  <desc>received into the <orgName en="greater boys choir">Great Boys' Choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1815-02-12">
+                  <desc>received into the congregation at Fulneck</desc>
+               </event>
+               <event type="reception" where="#mlpla000003" when-iso="1816">
+                  <desc>received into the <orgName en="single brothers choir">Single Brothers' Choir</orgName> at Fulneck</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000003" when-iso="1817-11-16">
+                  <desc>sacrament at Fulneck</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1828-10-24">
+                  <desc>married Elizabeth Jackson at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="ordination">
+                  <desc>ordained as a deacon</desc>
+               </event>
+               <event type="ordination">
+                  <desc>ordained as a presbyter</desc>
+               </event>
+               <event type="consecration" where="#mlpla000001" when-iso="1857-08-30">
+                  <desc>consecrated as a bishop at Herrnhut by J M Nitschmann, C W Matthiesen, and F J H Nielsen</desc>
+               </event>
+               <event type="interment" where="#mlpla000063" when-iso="1879-03-22">
+                  <desc>interred at Ockbrook H E Blandford and J H Baxter</desc>
+               </event>
+               <education><placeName ref="#mlpla000500">boys’ school Ockbrook</placeName></education>
+               <education notBefore="1810"><placeName ref="#mlpla000345">boys’ school Fulneck</placeName></education>
+               <education notBefore="1814" notAfter="1816"><placeName ref="#mlpla000501">Fulneck Academy</placeName></education>
+               <occupation notBefore="1816">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+               <occupation notBefore="1827">private tutor in <placeName ref="#mlpla000139">Germany</placeName></occupation>
+               <occupation>hymn writer</occupation>
+               <office>deacon</office>
+               <office>presbyter</office>
+               <office notBefore="1847" notAfter="1859">committee to establish <placeName ref="#mlpla000503">Moravian College</placeName></office>
+               <office notBefore="1852" notAfter="1863">provincial helper/elder at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
+               <office notBefore="1857-08-30">bishop</office>
+               <office when-iso="1857">deputy at <name event="synod">General Synod</name></office>
+               <affiliation type="choir" notBefore="1808" notAfter="1810"><orgName en="childrens choir">Little Boys' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1810" notAfter="1816"><orgName en="greater boys choir">Great Boys' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1816"><orgName en="single brothers choir">Single Brothers' Choir</orgName></affiliation> 
+            </person>
+            <listRelation type="personal">
+               <relation name="child" passive="John Edwards" notBefore="1772"/>
+               <relation name="child" passive="Sarah (Sally) (Smith) Edwards" notBefore="1777"/>
+               <relation name="sibling" mutual="Elizabeth Ann Edwards"/>
+               <relation name="sibling" mutual="John George Edwards" notBefore="1805"/>
+               <relation name="sibling" mutual="Sarah Edwards" notBefore="1807"/>
+               <relation name="sibling" mutual="Edward Edwards"/>
+               <relation name="sibling" mutual="Fanny Elizabeth Edwards" notBefore="1819"/>
+               <relation name="parent" active="William Martyn Edwards" notBefore="1831"/>
+               <relation name="parent" active="Anne Edwards"/>
+               <relation name="parent" active="William Jackson Edwards" notBefore="1835"/>
+               <relation name="parent" active="Sarah Catherine (Baxter)"/>
+               <relation name="parent" active=" Mary Elizabeth (Shawe)"/>
+               <relation name="parent" active="Fanny Edith Edwards" notBefore="1841"/>
+               <relation name="parent" active="John Herbert Edwards" notBefore="1843"/>
+            </listRelation>
+         </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
+         
+			<!-- Clemens, Godfrey -->
+         <listPerson>
+            <person xml:id="mlper000375" sex="m">
+               <persName>
+                  <forename>Godfrey</forename>
+                  <forename type="variant">Gottfried</forename>
+                  <surname type="birth">Clemens</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1818-05-01">1 May, 1818</date>
+                  <placeName ref="#mlpla000504">Genadendal South Africa</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1882-03-15">15 March, 1882</date>
+                  <placeName ref="#mlpla000054">London</placeName>
+               </death>
+               <event type="ordination" when-iso="1845">
+                  <desc>ordained as a deacon</desc>
+               </event>
+               <event type="marriage" where="#mlpla000508" when-iso="1850-04-02">
+                  <desc>married Mary Susanna Liley at St Mary’s Church Droylsden</desc>
+               </event>
+               <event type="ordination" where="#mlpla000003" when-iso="1853-07-05" ref="#mlper000384">
+                  <desc>ordained as a presbyter at Fulneck by John Rogers</desc>
+               </event>
+               <event type="interment" where="#mlpla000162" when-iso="1882-03-18">
+                  <desc>interred at Chelsea by J A Porter</desc>
+               </event>
+               <education notBefore="1825" notAfter="1830"><placeName ref="#mlpla000316">Boarding School Kleinwelke</placeName></education>
+               <education notBefore="1830" notAfter="1836"><placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></education>
+               <education notBefore="1836" notAfter="1838"><placeName ref="#mlpla000505">seminary at Gnadenfeld</placeName></education>
+               <occupation notBefore="1838" notAfter="1841">teacher at <placeName ref="#mlpla000506">boys’ school Fairfield</placeName></occupation>
+               <occupation notBefore="1841" notAfter="1845">teacher at <placeName ref="#mlpla000507">boys’ school Kleinwelke</placeName></occupation>
+               <occupation notBefore="1845" notAfter="1847">teacher at <placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></occupation>
+               <office notBefore="1845">deacon</office>
+               <office when-iso="1848">deputy at <name event="synod">General Synod</name> at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
+               <office when-iso="1869">deputy at <name event="synod">General Synod</name> at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
+               <office notBefore="1881">provincial elder at <placeName ref="#mlpla000054">London</placeName></office>
+               <office notBefore="1881">College Committee (ex-officio)</office>
+            </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Anton Martin August Clemens"/>
+               <relation name="spouse" mutual="Mary Susanna (Liley) Clemens" from-iso="1850-04-02" to-iso="1882-03-15"/>
+               <relation name="parent" active="Lydia Helena (Swire)"/>
+               <relation name="parent" active="Frederic Clemens"/>
+               <relation name="parent" active="Mary Ellinor (Hahn)"/>
+               <relation name="parent" active="Amelia Louisa (Mumford)"/>
+               <relation name="parent" active="Godfrey Clemens" notBefore="1857"/>
+               <relation name="parent" active="Theodor Liley Clemens"/>
+               <relation name="parent" active="Annie Clemens"/>
+               <relation name="parent" active="Emily Clemens"/>
+               <relation name="parent" active="Charlotte Elizabeth Clemens"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="ordination" passive="#mlper000384" when-iso="1853-07-05"/>
+            </listRelation>
+         </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
+         
+			<!-- Libby, John -->
+         <listPerson>
+            <person xml:id="mlper000376" sex="m">
+               <persName>
+                  <forename>John <addName>Pearse</addName></forename>
+                  <surname>Libbey</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1796-01-07">7 January, 1796</date>
+                  <placeName ref="#mlpla000509">Liskeard, Cornwall</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1871-06-12">12 June, 1871</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
+               <event type="reception" where="#mlpla000510" when-iso="1809-07-30">
+                  <desc>received into the congregation at Devonport</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000510" when-iso="1812-02-16">
+                  <desc>sacrament at Devonport</desc>
+               </event>
+               <event type="acceptance" when-iso="1818">
+                  <desc>accepted as an acoluth</desc>
+               </event>
+               <event type="ordination" where="#mlpla000040" ref="#mlper000557">
+                  <desc>ordained as a deacon at Gracehill Samuel Benade</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1828-01-14">
+                  <desc>married Mary Jane Brownlee at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="interment" where="mlpla000003" when-iso="1871-06-14" ref="#mlper000373">
+                  <desc>interred at Fulneck by Joseph Hutton Willey</desc>
+               </event>
+               <residence from-iso="1805" to-iso="1813"><placeName ref="#mlpla000510">Devonport</placeName></residence>
+               <occupation notBefore="1813-08-29">teacher at <placeName ref="#mlpla000506">boys’ school Fairfield</placeName></occupation>
+               <occupation notBefore="1818">teacher at <placeName ref="#mlpla000452">boys’ school Wellhouse</placeName></occupation>
+               <education when-iso="1813">apprentice in father’s watchmaker and Jewellery business in <placeName ref="#mlpla000510">Devonport</placeName></education>
+               <office notBefore="1818">acoluth</office>
+               <office>deacon</office>
+            </person>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="Mary Jane (Brownlee) Libbey" from-iso="1828-01-14" to-iso="1871-06-14"/>
+               <relation name="parent" active="Sarah Elizabeth Libbey"/>
+               <relation name="parent" active="John Daniel Libbey"/>
+               <relation name="parent" active="Mary Pearse (Weiss)"/>
+               <relation name="parent" active="Harriet Jane (Connor)"/>
+               <relation name="parent" active="Henry Cornelius Libbey"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="ordination" passive="#mlper000557"/>
+               <relation name="interment" passive="#mlper000373" when-iso="1871-06-14"/>
+            </listRelation>
+         </listPerson>
+         <!-- skipping offices until we decide on how to encode them -->
+         
+			<!-- Holm, Johannes -->
+         <listPerson>
+            <person xml:id="mlper000377" sex="m">
+               <persName>
+                  <forename type="birth">Johannes</forename>
+                  <forename type="variant">John <addName>Beck</addName></forename>
+                  <surname type="birth">Holm</surname>
+                  <surname type="variant">Holmes</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1767-11-03">3 November, 1767</date>
+                  <placeName ref="#mlpla000211">Copenhagen</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1843-09-03">3 September, 1843</date>
+                  <placeName ref="#mlpla000003">Fulneck</placeName>
+               </death>
+               <event type="baptism">
+                  <desc>baptized in the <orgName religion="Lutheran">Lutheran Church</orgName></desc>
+               </event>
+               <event type="reception" where="#mlpla000251" when-iso="1781-09-23">
+                  <desc>received into the congregation at Niesky</desc>
+               </event>
+               <event type="sacrament" where="#mlpla000251" when-iso="1783-12-20">
+                  <desc>sacrament at Niesky</desc>
+               </event>
+               <event type="acceptance" when-iso="1792">
+                  <desc>accepted as an acoluth</desc>
+               </event>
+               <event type="ordination" where="#mlpla000003" when-iso="1799-08-14" ref="#mlper000694">
+                  <desc>ordained as a deacon at Fulneck by George Traneker</desc>
+               </event>
+               <event type="marriage" where="#mlpla000220" when-iso="1800-05-05">
+                  <desc>married Mary Radley at St Peter’s Church Birstall</desc>
+               </event>
+               <event type="ordination">
+                  <desc>ordained as a presbyter</desc>
+               </event>
+               <event type="consecration" where="#mlpla000001" when-iso="1825-08-18">
+                  <desc>consecrated as a bishop at Herrnhut by C A Baumeister, G M Schneider and F W Foster</desc>
+               </event>
+               <event type="widowed" when-iso="1828-10-07">
+                  <desc>widowed</desc>
+               </event>
+               <event type="marriage" where="#mlpla000225" when-iso="1829-12-07">
+                  <desc>married Mary Mortimer at St Wilfrid’s Church Calverley</desc>
+               </event>
+               <event type="interment" where="#mlpla000003" when-iso="1843-09-08" ref="#mlper000384">
+                  <desc>interred at Fulneck by John Rogers</desc>
+               </event>
+               <education from-iso="1777" notAfter="1780"><placeName ref="#mlpla000496">boys’ school Christiansfeld</placeName></education>
+               <education from-iso="1780" notAfter="1787"><placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></education>
+               <education from-iso="1787"><placeName ref="#mlpla000476">Seminary at Barby</placeName></education>
+               <occupation from-iso="1789" notAfter="1791-08">teacher at <placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></occupation>
+               <occupation  from-iso="1790" notAfter="1791-08">tutor to Siebold von Seidlitz</occupation>
+               <occupation from-iso="1791-08">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
+               <office notBefore="1792">acoluth</office>
+               <office notBefore="1799-08-14">deacon</office>
+               <office>presbyter</office>
+               <office notBefore="1825-08-18">bishop</office>
+            </person>
+            <listRelation type="personal">
+               <relation name="child" passive="Peter Stevensen Holm"/>
+               <relation name="spouse" mutual="Mary (Radley) Holmes" from-iso="1800-05-05" to-iso="1828-10-07"/>
+               <relation name="spouse" mutual="Mary (Mortimer) Holmes" from-iso="1829-12-07" to-iso="1843-09-03"/>
+               <relation name="parent" active="Catherine Holmes"/>
+            </listRelation>
+            <listRelation type="Moravian">
+               <relation name="ordination" passive="#mlper000694" when-iso="1799-08-14"/>
+               <relation name="interment" passive="#mlper000384" when-iso="1843-09-08"/>
+            </listRelation>
+         </listPerson>
+         
+         <!-- Crispin Rothera -->
+         <listPerson>
+            <person xml:id="mlper000378" sex="m">
+               <persName>
+                  <forename>Crispin</forename>
+                  <surname type="birth">Rothera</surname>
+               </persName>
+               <note>Husband of <persName ref="#mlper000572">Esther Rothera</persName></note>
+            </person>
+         </listPerson>
+
+      </body>
+  </text>
+</TEI>

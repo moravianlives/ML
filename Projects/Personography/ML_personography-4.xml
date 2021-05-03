@@ -129,8 +129,8 @@
 			<head>Moravian Lives Personography</head>
 			
 			
-		<!-- Elizabeth Cresswell -->	
-			         <!-- not in YF document; information taken from memoir -->
+		   <!-- Cresswell, Elizabeth -->	
+		   <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000603" sex="f">
                <persName>
@@ -144,7 +144,8 @@
                <death>
                   <date type="death" when-iso="1808-12-18">18 December, 1808</date>
                </death>
-               <event type="reception">
+               <listEvent>
+                  <event type="reception">
                   <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName></desc>
                </event>
                <event type="reception" when-iso="1801-01-01">
@@ -156,11 +157,27 @@
                <event type="reception" when-iso="1806-05-04">
                   <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
                </event>
-               <occupation>assistant teacher at the <placeName ref="#mlpla000408">Boarding School at Duckenfield</placeName></occupation>
+               </listEvent>
+               <!-- no clear indication of congregation affiliation -->
                <affiliation type="choir" notAfter="1806-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1806-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/92</bibl>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/92</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            
+            <listOccupation>
+               <occupation>assistant teacher at the <placeName ref="#mlpla000408">Boarding School at Duckenfield</placeName></occupation>
+            </listOccupation>
             <!-- listRelation created by cross-referencing entry in Fulneck Families for her brother William Cresswell -->
             <listRelation type="personal">
                <relation name="child" passive="William Cresswell" notBefore="1757"/>
@@ -176,7 +193,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- James Cramark -->
+		   <!-- Cromark (Crummack), James -->
          <listPerson>
             <person xml:id="mlper000604" sex="m">
                <persName>
@@ -193,7 +210,8 @@
                   <date type="death" when-iso="1844-02-20">20 February, 1844</date>
                   <placeName ref="#mlpla000409">Fartown Pudsey</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="marriage" when-iso="1798">
@@ -208,14 +226,28 @@
                <event type="interment" where="#mlpla000003" when-iso="1844-02-23" ref="#mlper000384">
                   <desc>interred at Fulneck by John Rogers</desc>
                </event>
-               <residence><placeName ref="#mlpla000090">Pudsey</placeName></residence>
-               <residence><placeName ref="#mlpla000409">Fartown Pudsey</placeName></residence>
+               </listEvent>
                <education>apprentice to a clothier</education>
-               <occupation>clothier</occupation>
-               <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/121</bibl>
-               
+               <affiliation type="congregation" notAfter="1799-01-06">
+                  <orgName>Pudsey</orgName>
+                  <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/121</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>clothier</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="spouse" mutual="Mary (Coates) Crummack" from-iso="1798" to-iso="1844-02-20"/>
                <relation name="parent" active="William Crummack" notBefore="1799"/>
@@ -232,7 +264,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Ann Dufton -->
+		   <!-- Dufton, Ann (Nancy) -->
          <listPerson>
             <person xml:id="mlper000605" sex="f">
                <persName>
@@ -249,7 +281,8 @@
                   <date type="death" when-iso="1871-05-20">20 May, 1871</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000330" when-iso="1790-10-31" ref="#mlper000718">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000330" when-iso="1790-10-31" ref="#mlper000718">
                   <desc>baptized at Wellhouse by John Frederick Zander</desc>
                </event>
                <event type="marriage" where="#mlpla000225" when-iso="1812-01-19">
@@ -270,14 +303,29 @@
                <event type="interment" where="#mlpla000003" when-iso="1871-05-24" ref="#mlper000375 #mlper000398">
                   <desc>interred at Fulneck by Godfrey Clemens and Charles Bowen Ellis</desc>
                </event>
-               <residence><placeName ref="#mlpla000090">Pudsey</placeName></residence>
-               <residence when-iso="1841"><placeName ref="#mlpla000410">West Terrace Fulneck</placeName></residence>
+               </listEvent>
+               <affiliation type="congregation" notBefore="1819-03-07">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/110</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOccupation>
                <occupation>laundress and charwoman</occupation>
                <occupation>waited on the sick from schools</occupation>
-               <office when-iso="1838">chapel cleaner</office>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/110</bibl>
-               
-            </person>
+               <occupation when-iso="1838">chapel cleaner</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="David Thornton"/>
                <relation name="child" passive="Martha (Cooper) Thornton" notBefore="1748"/>
@@ -294,7 +342,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- John Ellis -->
+		   <!-- Ellis, John -->
          <listPerson>
             <person xml:id="mlper000606" sex="m">
                <persName>
@@ -310,7 +358,8 @@
                   <date type="death" when-iso="1764-08-17">17 August, 1764</date>
                   <placeName ref="#mlpla000339">Hopton Mirfield</placeName>
                </death>
-               <event type="baptism" where="#mlpla000223" when-iso="1748-08-08">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000223" when-iso="1748-08-08">
                   <desc>baptized St Mary’s Church Mirfield 8 August, 1748 (28 July, 1748 OS)</desc>
                </event> 
                <event type="reception" where="#mlpla000059" when-iso="1761-03">
@@ -322,11 +371,27 @@
                <event type="interment" where="#mlpla000003" when-iso="1764-08-20" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
-               <occupation>clothier</occupation>
-               <affiliation type="choir"><orgName en="greater boys choir">Great Boys' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/102</bibl>
-               
+               </listEvent>
+               <affiliation type="society" notBefore="1761-03">
+                  <orgName>Mirfield</orgName>
+                  <affiliation type="choir"><orgName en="greater boys choir">Great Boys' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/102</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>clothier</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="William Ellis" notBefore="1724"/>
                <relation name="child" passive="Mary (Shaw) Ellis"/>
@@ -342,7 +407,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Hannah Wood -->
+         <!-- Farrant, Hannah -->
          <listPerson>
             <person xml:id="mlper000607" sex="f">
                <persName>
@@ -360,7 +425,8 @@
                   <date type="death" when-iso="1866-01-27">27 January, 1866</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000393" when-iso="1793-10-20">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000393" when-iso="1793-10-20">
                   <desc>baptized at All Saints’ chapel-of-ease Pudsey</desc>
                </event>
                <event type="marriage" ref="#mlper000400">
@@ -372,21 +438,27 @@
                <event type="interment" where="#mlpla000003" when-iso="1866-01-31" ref="#mlper000375">
                   <desc>interred at Fulneck by Godfrey Clemens</desc>
                </event>
-               <occupation>servant to <persName ref="#mlper000706">James Gottlieb La Trobe</persName> and <persName ref="#mlper000717">Anna La Trobe</persName></occupation>
-               <occupation>servant to Joseph Hinchcliffe</occupation>
-               <residence><placeName ref="#mlpla000411">Drighlington</placeName></residence>
-               <residence><placeName ref="#mlpla000254">Lane End</placeName></residence>
-               <residence><placeName ref="#mlpla000233">Bankhouse</placeName></residence>
-               <residence><placeName ref="#mlpla000035">Duckenfield</placeName></residence>
-               <residence><placeName ref="#mlpla000160">Great Horton</placeName></residence>
-               <residence><placeName ref="#mlpla000313">Wakefield</placeName></residence>
-               <residence><placeName ref="#mlpla000135">Bradford</placeName></residence>
-               <residence><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/134</bibl>
+               </listEvent>
+               <!-- no clear indication of congregation affiliation -->
                <affiliation type="choir" notAfter="1858-11-02"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1858-11-02"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
-               
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <!-- need standard XML version -->
+                           <idno>Ful/3/134</idno>
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>servant to <persName ref="#mlper000706">James Gottlieb La Trobe</persName> and <persName ref="#mlper000717">Anna La Trobe</persName></occupation>
+               <occupation>servant to Joseph Hinchcliffe</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="David Wood"/>
                <relation name="child" passive="Hannah Wood"/>
@@ -397,7 +469,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- John Gocht -->
+		   <!-- Gocht, John -->
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000608" sex="m">
@@ -412,18 +484,32 @@
                <death>
                   <date type="death" when-iso="1769-01-31" cert="low">31 January, 1769</date>
                </death>
-               <event type="marriage" when-iso="1723-11-09">
+               <listEvent>
+                  <event type="marriage" when-iso="1723-11-09">
                   <desc>married</desc>
                </event>
+               </listEvent>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/89</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOffice>
                <office notBefore="1736">intercessor</office>
                <office>sick waiter for <date dur="P10Y">10 years</date></office>
                <office notBefore="1741">priestly night watcher for <date dur="P19Y">19 years</date></office>
-               <residence notBefore="1728-08"><placeName ref="#mlpla000001">Herrnhut</placeName></residence>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/89</bibl>
-            </person>
+            </listOffice>
          </listPerson>
          
-         <!--Hannah Green-->
+		   <!-- Green, Hannah -->
          <listPerson>
             <person xml:id="mlper000609" sex="f">
                <persName>
@@ -439,7 +525,8 @@
                   <date type="death" when-iso="1771-02-27">27 February, 1771</date>
                   <placeName ref="#mlpla000272">sisters’ house Littlemoor</placeName>
                </death>
-               <event type="reception">
+               <listEvent>
+                  <event type="reception">
                   <desc>received into the <orgName religion="Quaker">Society of Friends</orgName></desc>
                </event>
                <event type="reception" where="#mlpla000043" when-iso="1767-07-16">
@@ -457,9 +544,23 @@
                <event type="interment" where="#mlpla000003" when-iso="1771-03-02" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
-               <affiliation type="choir" notBefore="1767-07-16"><orgName en="childrens choir">Little Girls' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/40</bibl>
-               
+               </listEvent>
+               <affiliation type="congregation">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1767-07-16"><orgName en="childrens choir">Little Girls' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/40</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="personal">
                <relation name="child" passive="Richard Green"/>
@@ -471,7 +572,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Mary Hague -->
+		   <!-- Hague, Mary -->
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000610" sex="f">
@@ -485,33 +586,46 @@
                <death>
                   <date type="death" when-iso="1820-07-16">16 July, 1820</date>
                </death>
-               <event type="entrance" when-iso="1819-02-26">
+               <listEvent>
+                  <event type="entrance" when-iso="1819-02-26">
                   <desc>entered the <orgName religion="Moravian Church">Church of the Brethren</orgName></desc>
                </event>
                <event type="interment" when-iso="1820-07-22" ref="#mlper000703">
                   <desc>interred by William Okely</desc>
                </event>
-               <!-- memoir says she was interred in the Moravian burying ground but does not specify location -->
-               <bibl type="memoir" source="#mlpla000003">Ful/3/80</bibl>
+                  <!-- memoir says she was interred in the Moravian burying ground but does not specify location -->
+               </listEvent>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/80</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000703" when-iso="1820-07-22"/>
             </listRelation>
          </listPerson>
          
-         <!-- Thomas Hague -->
+		   <!-- Hague, Thomas -->
          <!-- not in YF document. Memoir pages don't seem to be for Thomas Hague; all seem to belong to Mary Hague. -->
          <listPerson>
             <person xml:id="mlper000611" sex="m">
                <persName>
                   <forename>Thomas</forename>
                   <surname>Hague</surname>
-               </persName>
+               </persName>              
                <bibl type="memoir" source="#mlpla000003">Ful/3/131</bibl>
             </person>
          </listPerson>
          
-         <!-- Edna Halliday -->
+		   <!-- Halliday, Edna -->
          <listPerson>
             <person xml:id="mlper000612" sex="f">
                <persName>
@@ -527,16 +641,28 @@
                   <date type="death" when-iso="1865-10-24">24 October, 1865</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="marriage" where="#mlpla000225" when-iso="1840-01-01">
+               <listEvent>
+                  <event type="marriage" where="#mlpla000225" when-iso="1840-01-01">
                   <desc>married John Halliday at St Wilfrid’s Church Calverley</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1865-10-27" ref="#mlper000373">
                   <desc>interred at Fulneck by Joseph Hutton Willey</desc>
                </event>
-               <residence><placeName ref="#mlpla000003">Fulneck</placeName></residence>
+               </listEvent>
+               <!-- no clear indication of congregation affiliation -->
                <affiliation type="choir" notBefore="1840-01-01"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/136</bibl>
-               
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/136</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="personal">
                <relation name="child" passive="James Sykes"/>
@@ -552,7 +678,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Martha Hartley -->
+		   <!-- Hartley, Martha -->
          <listPerson>
             <person xml:id="mlper000613" sex="f">
                <persName>
@@ -569,7 +695,8 @@
                   <date type="death" when-iso="1794-11-17">17 November, 1794</date>
                   <placeName ref="#mlpla000409">Fartown</placeName>
                </death>
-               <event type="baptism" where="#mlpla000324" when-iso="1746-02-22">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000324" when-iso="1746-02-22">
                   <desc>baptized at Church of St John the Baptist Halifax 22 February, 1746 (11 February, 1745 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000090" when-iso="1759-03">
@@ -599,12 +726,32 @@
                <event type="readmission" where="#mlpla000330" when-iso="1790-06-06">
                   <desc>readmitted to sacrament at Wellhouse</desc>
                </event>
-               <residence when-iso="1770-09-17"><placeName ref="#mlpla000091">Halifax</placeName></residence>
+               </listEvent>
+               <affiliation type="society" notBefore="1759-03">
+                  <orgName>Pudsey</orgName>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1760-08-13" notAfter="1770-09-17">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notAfter="1770-09-17"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1790-03-28">
+                  <orgName>Wellhouse</orgName>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/13</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person><listOccupation>
                <occupation>kept a school at <placeName ref="#mlpla000091">Halifax</placeName> after her exclusion from congregation</occupation>
-               <affiliation type="choir" notAfter="1770-09-17"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/13</bibl>
-               
-            </person>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="John Vicars"/>
                <relation name="child" passive="Mary (Hargreaves) Vicars"/>
@@ -614,7 +761,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Ann Hill -->
+		   <!-- Hill, Ann -->
          <listPerson>
             <person xml:id="mlper000614" sex="f">
                <persName>
@@ -629,7 +776,8 @@
                   <date type="death" when-iso="1770-12-15">15 December, 1770</date>
                   <placeName ref="#mlpla000090">Pudsey</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="marriage" when-iso="1719" cert="low">
@@ -656,11 +804,34 @@
                <event type="interment" where="#mlpla000003" when-iso="1770-12-17" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
-               <affiliation type="founder" when-iso="1755-04-18" ref="#mlpla000090">founder member of Pudsey congregation</affiliation>
-               <affiliation type="choir" notAfter="1770-12-05"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1770-12-05"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/57</bibl>
-               
+               </listEvent>
+               <affiliation type="society">
+                  <orgName>Baildon</orgName>
+               </affiliation>
+               <affiliation type="society" notBefore="1743">
+                  <orgName>Pudsey</orgName>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1750-03-02">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notAfter="1770-12-05"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1770-12-05"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
+               </affiliation>
+               <affiliation type="congregation">
+                  <orgName>Pudsey</orgName>
+                  <roleName>founder member</roleName>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/57</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="personal">
                <relation name="spouse" mutual="John Hill" notBefore="1719" to-iso="1770-12-05"/>
@@ -670,7 +841,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Hannah Hillas -->
+		   <!-- Hillas, Hannah -->
          <listPerson>
             <person xml:id="mlper000615" sex="f">
                <persName>
@@ -685,14 +856,15 @@
                   <date type="death" when-iso="1785-01-23">23 January, 1785</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000225" when-iso="1745-05-12">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000225" when-iso="1745-05-12">
                   <desc>baptized at St Wilfrid’s Church Calverley 12 May, 1745 (1 May, 1745 OS)</desc>
                </event>
                <event type="entrance" where="#mlpla000195" when-iso="1748" ref="#mlper000403">
                   <desc>entered the Children's Oeconomy at Mile End with her sister Mary Hillas</desc>
                </event>
                <event type="entrance" where="#mlpla000271" when-iso="1763-05-02">
-                  <desc>entered sisters’ house Fulneck 02.05.1763</desc>
+                  <desc>entered sisters’ house Fulneck</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1763-05-04">
                   <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName> at Fulneck</desc>
@@ -706,13 +878,28 @@
                <event type="interment" where="#mlpla000003" when-iso="1785-01-27" ref="#mlper000694">
                   <desc>interred at Fulneck by George Traneker</desc>
                </event>
-               <residence notBefore="1754" notAfter="1763"><placeName ref="#mlpla000233">Bankhouse, Pudsey</placeName></residence>
+               </listEvent>
                <education notAfter="1754"><placeName ref="#mlpla000295">Girls’ School Mile End</placeName></education>
-               <occupation>sewer</occupation>
-               <affiliation type="choir" notBefore="1763-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/14_1</bibl>
-               
+               <affiliation type="congregation" notBefore="1763-08-13">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1763-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/14_1</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>sewer</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="Samuel Hillas" notBefore="1709"/>
                <relation name="child" passive="Elizabeth (Moss) Hillas" notBefore="1716"/>
@@ -729,7 +916,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Anna Hoch -->
+		   <!-- Hoch, Anna -->
          <listPerson>
             <person xml:id="mlper000616" sex="f">
                <persName>
@@ -745,7 +932,8 @@
                   <date type="death" when-iso="1848-04-23">23 April, 1848</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="entrance" where="mlpla000271">
+               <listEvent>
+                  <event type="entrance" where="mlpla000271">
                   <desc>entered sisters’ house Fulneck</desc>
                </event>
                <event type="marriage" where="#mlpla000225" when-iso="1812-08-31">
@@ -766,21 +954,34 @@
                <event type="interment" where="#mlpla000003" when-iso="1848-04-26" ref="#mlper000384">
                   <desc>interred at Fulneck by John Rogers</desc>
                </event>
-               <residence><placeName ref="#mlpla000037">Fairfield</placeName></residence>
-               <residence><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <residence notBefore="1844"><placeName ref="#mlpla000438">Switzerland</placeName></residence>
+               </listEvent>
+               <!-- no clear indication of congregation affiliation -->
+               <affiliation type="choir" notAfter="1812-08-31"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1812-08-31" notAfter="1840-04-07"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1840-04-07"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/90</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOccupation>
                <occupation notBefore="1808">teacher in the <placeName ref="#mlpla000419">Ladies' School at Fulneck</placeName></occupation>
+            </listOccupation>
+            <listOffice>
                <office when-iso="1812">missionary in <placeName ref="#mlpla000215">Antigua</placeName></office>
                <office>missionary in <placeName ref="#mlpla000216">St Kitts</placeName></office>
                <office notBefore="1821-02">missionary in <placeName ref="#mlpla000076">Jamaica</placeName></office>
                <office notBefore="1821-02">missionary in <placeName ref="#mlpla000417">Old Carmel</placeName></office>
                <office when-iso="1823">missionary in <placeName ref="#mlpla000418">Spice Grove</placeName></office>
-               <affiliation type="choir" notAfter="1812-08-31"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1812-08-31" notAfter="1840-04-07"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1840-04-07"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/90</bibl>
-               
-            </person>
+            </listOffice>
             <listRelation type="personal">
                <relation name="spouse" mutual="Samuel Hoch" from-iso="1812-08-31" to-iso="1840-04-07"/>
                <relation name="parent" active="William Hoch"/>
@@ -792,7 +993,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Hannah Horsefield -->
+		   <!-- Horsefield, Hannah -->
          <listPerson>
             <person xml:id="mlper000617" sex="f">
                <persName>
@@ -807,7 +1008,8 @@
                   <date type="death" when-iso="1775-04-29">29 April, 1775</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="entrance" where="#mlpla000271" when-iso="1768-10-01">
@@ -825,16 +1027,30 @@
                <event type="interment" where="#mlpla000003" when-iso="1775-05-02" ref="#mlper000711">
                   <desc>interred at Fulneck by Erasmus Miller</desc>
                </event>
-               <affiliation type="choir" notBefore="1769-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/61</bibl>
-               
+               </listEvent>
+               <affiliation type="congregation" notBefore="1769-06-19">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1769-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/61</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="Moravian">
                <relation name="interment" passive="#mlper000711" when-iso="1775-05-02"/>
             </listRelation>
          </listPerson>
          
-         <!-- Lydia Howe -->
+		   <!-- Howe, Lydia -->
          <listPerson>
             <person xml:id="mlper000618" sex="f">
                <persName>
@@ -850,7 +1066,8 @@
                   <date type="death" when-iso="1773-05-13">13 May, 1773</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000421" when-iso="1746-12-05" ref="#mlper000693">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000421" when-iso="1746-12-05" ref="#mlper000693">
                   <desc>baptized at Old Chapel Fulneck by John Ockershausen 5 December, 1746 (24 November, 1746 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1760-03-25">
@@ -874,15 +1091,31 @@
                <event type="interment" where="#mlpla000003" when-iso="1773-05-17" ref="#mlper000711">
                   <desc>interred at Fulneck by Erasmus Miller</desc>
                </event>
+               </listEvent>
                <education notBefore="1750"><placeName ref="#mlpla000295">Girls’ School Mile End</placeName></education>
                <education notBefore="1754"><placeName ref="#mlpla000291">Girls' School Chelsea</placeName></education>
                <education notBefore="1755-04-11"><placeName ref="#mlpla000286">Girls' School Fulneck</placeName></education>
-               <office notBefore="1768-07-27">acoluth</office>
-               <affiliation type="choir" notBefore="1760-03-25" notAfter="1765-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1765-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/75</bibl>
-               
+               <affiliation type="congregation" notBefore="1760-08-13">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1760-03-25" notAfter="1765-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1765-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/75</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOffice>
+               <office notBefore="1768-07-27">acoluth</office>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="John Howe" notBefore="1685"/>
                <relation name="child" passive="Lydia (Hirst) Howe" notBefore="1715"/>
@@ -896,7 +1129,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Peter Hyland -->
+		   <!-- Hyland, Peter -->
          <listPerson>
             <person xml:id="mlper000619" sex="m">
                <persName>
@@ -911,7 +1144,8 @@
                   <date type="death" when-iso="1846-05-21">21 May, 1846</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000003" when-iso="1774-09-13" ref="#mlper000697">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000003" when-iso="1774-09-13" ref="#mlper000697">
                   <desc>baptized at Fulneck by Benjamin La Trobe</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1789-01-19">
@@ -936,19 +1170,37 @@
                <event type="interment" where="#mlpla000003" when-iso="1846-05-25" ref="#mlper000384">
                   <desc>interred at Fulneck by John Rogers</desc>
                </event>
+               </listEvent>
                <education><placeName ref="#mlpla000345">Boys' Day School at Fulneck</placeName></education>
                <education>apprentice to his father who was a baker</education>
+               <affiliation type="congregation" notBefore="1789-01-19">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notAfter="1803-06-15"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1803-06-15" notAfter="1814-05-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1814-05-28" notAfter="1814-11-23"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1814-11-23" notAfter="1838-08-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1838-08-28"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/124</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOccupation>
                <occupation>baker</occupation>
+            </listOccupation>
+            <listOffice>
                <office>member of the committee of the congregation</office>
                <office>chapel servant for <date dur="P52Y">52 years</date></office>
-               <affiliation type="choir" notAfter="1803-06-15"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1803-06-15" notAfter="1814-05-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1814-05-28" notAfter="1814-11-23"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1814-11-23" notAfter="1838-08-28"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1838-08-28"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/124</bibl>
-               
-            </person>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="John Peter Hyland" notBefore="1747"/>
                <relation name="child" passive="Frances (Brook) Hyland" notBefore="1747"/>
@@ -973,7 +1225,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Hannah Illingworth -->
+		   <!-- Illingworth, Hannah -->
          <listPerson>
             <person xml:id="mlper000620" sex="f">
                <persName>
@@ -989,7 +1241,8 @@
                   <date type="death" when-iso="1764-01-02">2 January, 1764</date>
                   <placeName ref="#mlpla000349">Wibsey</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Presbyterian">Presbyterian Church</orgName></desc>
                </event>
                <event type="marriage" where="#mlpla000135" when-iso="1749-03" ref="#mlper000411">
@@ -1004,10 +1257,26 @@
                <event type="interment" where="#mlpla000003" when-iso="1764-01-04" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
-               <residence><placeName ref="#mlpla000349">Wibsey</placeName></residence>
-               <affiliation type="choir" notBefore="1761-01-01"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/100</bibl>
-               
+               </listEvent>
+               <affiliation type="society" notBefore="1752">
+                  <orgName>Horton</orgName>
+                  <affiliation type="choir"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1761-01-01">
+                  <orgName>Pudsey</orgName>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/100</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="personal">
                <relation name="spouse" mutual="#mlper000411" from-iso="1749-03" to-iso="1764-01-02"/>
@@ -1017,7 +1286,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Elizabeth Johnson -->
+		   <!-- Johnson, Elizabeth -->
          <listPerson>
             <person xml:id="mlper000621" sex="f">
                <persName>
@@ -1033,7 +1302,8 @@
                   <date type="death" when-iso="1866-11-06">6 November, 1866</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="marriage" where="#mlpla000225" when-iso="1814-07-11" ref="#mlper000622">
+               <listEvent>
+                  <event type="marriage" where="#mlpla000225" when-iso="1814-07-11" ref="#mlper000622">
                   <desc>married William Johnson at St Wilfrid’s Church Calverley</desc>
                </event>
                <event type="sacrament" where="#mlpla000003" when-iso="1824-04-15">
@@ -1048,17 +1318,31 @@
                <event type="interment" where="#mlpla000003" when-iso="1866-11-09" ref="#mlper000375 #mlper000398">
                   <desc>interred at Fulneck by Godfrey Clemens and Charles Bowen Ellis</desc>
                </event>
-               <residence when-iso="1796"><placeName ref="#mlpla000090">Pudsey</placeName></residence>
-               <residence notBefore="1826"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <residence when-iso="1841"><placeName ref="#mlpla000409">Fartown, Pudsey</placeName></residence>
-               <residence when-iso="1851"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <occupation>milliner</occupation>
-               <office notBefore="1824">chapel servant</office>
-               <affiliation type="choir" notBefore="1827-08-13" notAfter="1837-04-12"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <affiliation type="choir" notBefore="1837-04-12"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/132</bibl>
-               
+               </listEvent>
+               <affiliation type="congregation" notBefore="1827-08-13">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1827-08-13" notAfter="1837-04-12"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+                  <affiliation type="choir" notBefore="1837-04-12"><orgName en="widows choir">Widows' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/132</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>milliner</occupation>
+            </listOccupation>
+            <listOffice>
+               <office notBefore="1824">chapel servant</office>
+            </listOffice>
             <listRelation type="personal">
                <relation name="spouse" mutual="#mlper000622" from-iso="1814-07-11" to-iso="1814-07-11"/>
                <relation name="parent" active="John Johnson" notBefore="1817"/>
@@ -1070,7 +1354,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- William Johnson -->
+		   <!-- Johnson, William -->
          <listPerson>
             <person xml:id="mlper000622" sex="m">
                <persName>
@@ -1085,7 +1369,8 @@
                   <date type="death" when-iso="1837-04-12">12 April, 1837</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000245" when-iso="1796-02-28">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000245" when-iso="1796-02-28">
                   <desc>baptized at St James’ chapel-of-ease Tong</desc>
                </event>
                <event type="marriage" where="#mlpla000225" when-iso="1814-07-11" ref="#mlper000621">
@@ -1103,13 +1388,27 @@
                <event type="interment" where="#mlpla000003" when-iso="1837-04-16" ref="#mlper000376">
                   <desc>interred at Fulneck by John Pearse Libbey</desc>
                </event>
-               <residence when-iso="1796"><placeName ref="#mlpla000090">Pudsey</placeName></residence>
-               <residence notBefore="1826"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
-               <occupation>clothier</occupation>
-               <affiliation type="choir" notBefore="1827-08-13" notAfter="1837-04-12"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/118</bibl>
-               
+               </listEvent>
+               <affiliation type="congregation" notBefore="1827-08-13">
+                  <orgName>Fulneck</orgName>
+                  <affiliation type="choir" notBefore="1827-08-13" notAfter="1837-04-12"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               </affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/118</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
+            <listOccupation>
+               <occupation>clothier</occupation>
+            </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="John Johnson" notBefore="1765"/>
                <relation name="child" passive="Elisabeth (Kaye) Johnson" notBefore="1767"/> 
@@ -1130,7 +1429,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Mariah Johnson -->
+		   <!-- Johnson, Maria -->
          <!-- not in YF document; pieced together clues to figure out whose memoir this is; not much info to be gleaned from memoir -->
          <!-- listed as Sister Johnson in Fulneck catalog -->
          <listPerson>
@@ -1148,7 +1447,8 @@
                   <date type="death" when-iso="1864-02-21">21 February, 1864</date>
                   <placeName ref="#mlpla000422">Yaxham, Norfolk</placeName>
                </death>
-               <event type="baptism" where="#mlpla000389" when-iso="1789-01-11">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000389" when-iso="1789-01-11">
                   <desc>baptized at St. Peter's Church Bedford</desc>
                </event>
                <event type="marriage" when-iso="1808">
@@ -1157,8 +1457,20 @@
                <event type="widowed" when-iso="1833-09-29">
                   <desc>widowed</desc>
                </event>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/138</bibl>
-               
+               </listEvent>
+               <!-- no clear indication of congregation affiliation -->
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/138</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
             </person>
             <listRelation type="personal">
                <relation name="child" passive="	George Peter Livius"/>
@@ -1172,7 +1484,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- William Jones -->
+		   <!-- Jones, William -->
          <!-- not in YF document; information taken from memoir -->
          <listPerson>
             <person xml:id="mlper000624" sex="m">
@@ -1188,7 +1500,8 @@
                  <date type="death" when-iso="1792-09-03">3 September, 1792</date>
                  <placeName ref="#mlpla000054">London</placeName>
                </death>
-               <event type="entrance" where="#mlpla000144">
+               <listEvent>
+                  <event type="entrance" where="#mlpla000144">
                   <desc>entered congregation at Dublin</desc>
                </event>
                <event type="marriage" when-iso="1755">
@@ -1203,13 +1516,33 @@
                <event type="sacrament" when-iso="1768">
                   <desc>sacrament</desc>
                </event>
+               </listEvent>
                <education>apprentice to a speermaker</education>
+               <affiliation type="congregation">
+                  <orgName>Dublin</orgName>
+               </affiliation>
+               <!-- no clear indication of which congregation he was readmitted to -->
+               <affiliation type="choir" notBefore="1767-09-20"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>Ful/3/87</idno>
+                           <!-- need standard XML version -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOccupation>
                <occupation>naval soldier</occupation>
                <occupation>Army Corporal</occupation>
+            </listOccupation>
+            <listOffice>
                <office>hall servant</office>
-               <affiliation type="choir" notBefore="1767-09-20"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-               <bibl type="memoir" source="#mlpla000003">Ful/3/87</bibl>
-            </person>
+            </listOffice>
          </listPerson>
          
          <!-- Elizabeth Kenzie -->
@@ -1227,7 +1560,8 @@
                <death>
                   <date type="death" when-iso="1853-05-09">9 May, 1853</date>
                </death>
-               <event type="arrival" where="#mlpla000004" when-iso="1849-12">
+               <listEvent>
+                  <event type="arrival" where="#mlpla000004" when-iso="1849-12">
                   <desc>came to Fetter Lane at Christmas time 1849</desc>
                </event>
                <event type="reception" when-iso="1850">
@@ -1236,24 +1570,13 @@
                <event type="interment" where="#mlpla000423" when-iso="1853-05-15">
                   <desc>interred at Brompton Cemetery</desc>
                </event>
+               </listEvent>
                <residence notBefore="1850" notAfter="1852"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
                <occupation>servant and caretaker of children for her brother-in-law's family</occupation>
                <occupation>housekeeper for a cleryman's family</occupation>
                <occupation notBefore="1850" notAfter="1852">worked in the <placeName ref="#mlpla000419">Ladies' School at Fulneck</placeName></occupation>
                <affiliation type="choir" notBefore="1850"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/141</bibl>
-            </person>
-         </listPerson>
-         
-         <!-- William Taylor -->
-         <!-- skipping for now -->
-         <listPerson>
-            <person xml:id="mlper000626" sex="m">
-               <persName>
-                  <forename>William</forename>
-                  <surname>Taylor</surname>
-               </persName>
-               
             </person>
          </listPerson>
          
@@ -1273,7 +1596,8 @@
                   <date type="death" when-iso="1805-05-31">31 May, 1805</date>
                   <placeName ref="#mlpla000063">Okbrook</placeName>
                </death>
-               <event type="reception" when-iso="1801-06-04">
+               <listEvent>
+                  <event type="reception" when-iso="1801-06-04">
                   <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName></desc>
                </event>
                <event type="reception" when-iso="1804-01-01">
@@ -1282,6 +1606,7 @@
                <event type="entrance" when-iso="1804-03">
                   <desc>entered Sisters' House</desc>
                </event>
+               </listEvent>
                <affiliation type="choir" notBefore="1801-06-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/84</bibl>
             </person>
@@ -1303,7 +1628,8 @@
                   <date type="death" when-iso="1772-04-18">18 April, 1772</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000003" when-iso="1767-05-14" ref="#mlper000706">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000003" when-iso="1767-05-14" ref="#mlper000706">
                   <desc>baptized at Fulneck by Benjamin La Trobe</desc>
                </event>
                <event type="entrance" when-iso="1769-04-22">
@@ -1312,6 +1638,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1772-04-21" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
+               </listEvent>
                <bibl type="memoir" source="#mlpla000003">Ful/3/24</bibl>
                
             </person>
@@ -1345,7 +1672,8 @@
                   <date type="death" when-iso="1770-07-30">30 July, 1770</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000223" when-iso="1744-05-14">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000223" when-iso="1744-05-14">
                   <desc>baptized at St Mary’s Church Mirfield 14 May, 1744 (3 May, 1744 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000059" when-iso="1758-08">
@@ -1363,6 +1691,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1770-08-02" ref="#mlper000357">
                   <desc>interred at Fulneck by Peter Syms</desc>
                </event>
+               </listEvent>
                <education when-iso="1748"><placeName ref="#mlpla000424">Girls’ School Row Head</placeName></education>
                <bibl type="memoir" source="#mlpla000003">Ful/3/12</bibl>
                
@@ -1396,7 +1725,8 @@
                   <date type="death" when-iso="1858-08-20"></date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000003" when-iso="1783-06-15" ref="#mlper000694">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000003" when-iso="1783-06-15" ref="#mlper000694">
                   <desc>baptized at Fulneck by George Traneker</desc>
                </event>
                <event type="entrance" where="#mlpla000271" when-iso="1796" cert="medium">
@@ -1421,6 +1751,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1858-08-25">
                   <desc>interred at Fulneck</desc>
                </event>
+               </listEvent>
                <office notBefore="1806" notAfter="1813">warden of work in the choirhouse</office>
                <affiliation type="choir" notBefore="1801-05-04" notAfter="1814-01-05"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1814-01-05" notAfter="1822-05-31"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
@@ -1453,7 +1784,8 @@
                   <date type="birth" when-iso="1712-05-25">25 May, 1712</date>
                   <placeName ref="#mlpla000425">Evesham, Worcestershire</placeName> 
                </birth>
-               <event type="baptism" where="#mlpla000426" when-iso="1712-06-04">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000426" when-iso="1712-06-04">
                   <desc>baptized at All Saints Church Evesham</desc>
                </event>
                <event type="entrance">
@@ -1477,6 +1809,7 @@
                <event type="marriage" where="#mlpla000030" when-iso="1760-10-31" ref="#mlper000414">
                   <desc>married Mary Thomas at Bristol</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000054">London</placeName></residence>
                <education>apprentice to his father, a baker</education>
                <occupation>baker</occupation>
@@ -1522,7 +1855,8 @@
                   <date type="death" when-iso="1773-11-12">12 November, 1773</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception">
@@ -1546,6 +1880,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1773-11-15" ref="#mlper000711">
                   <desc>interred at Fulneck by Erasmus Miller</desc>
                </event>
+               </listEvent>
                <education when-iso="1762"><placeName ref="#mlpla000424">Girls’ School Row Head</placeName></education>
                <affiliation type="choir" notAfter="1769-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1769-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
@@ -1573,7 +1908,8 @@
                   <date type="death" when-iso="1761-07-17">17 July, 1761</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000386" when-iso="1715-08-14">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000386" when-iso="1715-08-14">
                   <desc>baptized at St Peter’s Church Huddersfield 14 August, 1715 (3 August, 1715 OS)</desc>
                </event>
                <event type="entrance" where="#mlpla000059">
@@ -1603,6 +1939,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1761-07-19" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <occupation>housekeeper</occupation>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <affiliation type="founder" when-iso="1755-04-17" ref="#mlpla000041">founder member of Gomersal congregation</affiliation>
@@ -1633,7 +1970,8 @@
                   <date type="death" when-iso="1792-02-04">4 February, 1792</date>
                   <placeName ref="#mlpla000025">Bedford</placeName>
                </death>
-               <event type="reception" when-iso="27-03">
+               <listEvent>
+                  <event type="reception" when-iso="27-03">
                   <desc>received into congregation</desc>
                </event>
                <event type="baptism" when-iso="1770-06-04">
@@ -1645,6 +1983,7 @@
                <event type="sacrament" when-iso="1771-10-06">
                   <desc>sacrament</desc>
                </event>
+               </listEvent>
                <residence notBefore="1774-08-23"><placeName ref="#mlpla000025">Bedford</placeName></residence>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/86</bibl>
@@ -1668,12 +2007,14 @@
                   <date type="death" when-iso="1761-05-28">28 May, 1761</date>
                   <placeName ref="#mlpla000104">Holme</placeName>
                </death>
-               <event type="baptism" where="#mlpla000003" when-iso="1750-03-02" ref="#mlper000705">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000003" when-iso="1750-03-02" ref="#mlper000705">
                   <desc>baptized at Fulneck by Ludolf Ernst Schlicht</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1761-05-30" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000104">Holme</placeName></residence>
                <education><placeName ref="#mlpla000341">Brethren's school at Lane End</placeName></education>
                <bibl type="memoir" source="#mlpla000003">Ful/3/67b</bibl>
@@ -1711,7 +2052,8 @@
                   <date type="death" when-iso="1765-01-05">5 January, 1765</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000430" when-iso="1753-06-22" ref="#mlper000415">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000430" when-iso="1753-06-22" ref="#mlper000415">
                   <desc>baptized at Puttenham by Christian Brodersen</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1765">
@@ -1720,6 +2062,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1765-01-07" ref="#mlper000711">
                   <desc>interred at Fulneck by Erasmus Miller</desc>
                </event>
+               </listEvent>
                <education notBefore="1755-12-25"><placeName ref="#mlpla000286">girls’ school Fulneck</placeName></education>
                <affiliation type="choir"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/117</bibl>
@@ -1760,7 +2103,8 @@
                   <date type="death" when-iso="1764-10-30">30 October, 1764</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="entrance" where="#mlpla000276" when-iso="1749">
+               <listEvent>
+                  <event type="entrance" where="#mlpla000276" when-iso="1749">
                   <desc>entered sisters’ house Duckenfield</desc>
                </event>
                <event type="entrance" where="#mlpla000282" when-iso="1750-09">
@@ -1784,6 +2128,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1764-11-01" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <office>single sisters’ choir helper at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office>room overseer</office>
                <office>company of intercessors</office>
@@ -1802,19 +2147,7 @@
                <relation name="interment" passive="#mlper000697" when-iso="1764-11-01"/>
             </listRelation>
          </listPerson>
-         
-         <!-- Charles Delamotte -->
-         <!-- do not have a memoir for this person; skipping for now -->
-         <listPerson>
-            <person xml:id="mlper000640" sex="m">
-               <persName>
-                  <forename>Charles</forename>
-                  <surname>Delamotte</surname>
-               </persName>
-               
-            </person>
-         </listPerson>
-         
+
          <!-- Faith Naylor -->
          <listPerson>
             <person xml:id="mlper000641" sex="f">
@@ -1831,7 +2164,8 @@
                   <date type="death" when-iso="1761-06-14">14 June, 1761</date>
                   <placeName ref="#mlpla000104">Holme</placeName>
                </death>
-               <event type="baptism" where="#mlpla000245" when-iso="1745-01-07">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000245" when-iso="1745-01-07">
                   <desc>baptized at St James’ Church Tong 7 January, 1745 (27 December, 1744 OS)</desc>
                </event>
                <event type="reception" where="#mlpla000090" when-iso="1759-11-13">
@@ -1840,6 +2174,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1761-06-17" ref="#mlper000389">
                   <desc>interred at Fulneck by Francis Pugh</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000104">Holme Lane</placeName></residence>
                <affiliation type="choir"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/51</bibl>
@@ -1879,7 +2214,8 @@
                   <date type="death" when-iso="1762-05-10">10 May, 1762</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000245" when-iso="1698-07-28">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000245" when-iso="1698-07-28">
                   <desc>baptized at St James’ Church Tong 28 July, 1698 (17 July, 1698 OS)</desc>
                </event>
                <event type="marriage" where="#mlpla000245" when-iso="1727-10-19" ref="#mlper000545">
@@ -1904,6 +2240,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1762-05-13" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000090">Pudsey</placeName></residence>
                <residence><placeName ref="#mlpla000254">Lane End</placeName></residence>
                <residence when-iso="1748-10"><placeName ref="#mlpla000283">congregation house Fulneck</placeName></residence>
@@ -1941,7 +2278,8 @@
                   <date type="death" when-iso="1839-07-04">4 July, 1839</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="confirmation" where="#mlpla000003" when-iso="1827-12-02">
@@ -1959,6 +2297,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1839-07-09" ref="#mlper000377">
                   <desc>interred at Fulneck by John Beck Holmes</desc>
                </event>
+               </listEvent>
                <education notBefore="1823"><placeName ref="#mlpla000286">girls' school Fulneck</placeName></education>
                <bibl type="memoir" source="#mlpla000003">Ful/3/150</bibl>
                
@@ -1992,12 +2331,14 @@
                   <date type="death" when-iso="1761-05-20">20 May, 1761</date>
                   <placeName ref="#mlpla000233">Bankhouse</placeName>
                </death>
-               <event type="baptism" where="#mlpla000004" when-iso="1755-09-07" ref="#mlper000372">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000004" when-iso="1755-09-07" ref="#mlper000372">
                   <desc>baptized at Fetter Lane by John Gambold</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1761-05-23" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <bibl type="memoir" source="#mlpla000003">Ful/3/67a</bibl>
                
             </person>
@@ -2031,12 +2372,14 @@
                   <date type="death" when-iso="1764-04-06">6 April, 1764</date>
                   <placeName ref="#mlpla000286">girls’ school Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000144" when-iso="1755-09-21" ref="#mlper000692">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000144" when-iso="1755-09-21" ref="#mlper000692">
                   <desc>baptized at Dublin by Johann Töltschig</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1764-04-07" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000030">Bristol</placeName></residence>
                <education><placeName ref="#mlpla000286">girls’ school Fulneck</placeName></education>
                <bibl type="memoir" source="#mlpla000003">Ful/3/83</bibl>
@@ -2070,7 +2413,8 @@
                   <date type="death" when-iso="1861-11-21">21 November, 1861</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception" where="#mlpla000059" when-iso="1790">
@@ -2097,6 +2441,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1861-11-25" ref="#mlper000376">
                   <desc>interred at Fulneck by John Pearse Libbey</desc>
                </event>
+               </listEvent>
                <residence when-iso="1779"><placeName ref="#mlpla000043">Huddersfield</placeName></residence>
                <residence when-iso="1794"><placeName ref="#mlpla000052">Littlemoor</placeName></residence>
                <residence notBefore="1801" notAfter="1802"><placeName ref="#mlpla000380">Westgate Hill</placeName></residence>
@@ -2145,7 +2490,8 @@
                   <date type="death" when-iso="1827-03-08">8 March, 1827</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000102" when-iso="1809-06-18" ref="#mlper000557">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000102" when-iso="1809-06-18" ref="#mlper000557">
                   <desc>baptized at Lower Wyke by Samuel Benade</desc>
                </event>
                <event type="reception" where="#mlpla000037" when-iso="1809">
@@ -2160,6 +2506,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1827-03-10" ref="#mlper000714">
                   <desc>interred at Fulneck by C.F. Reichel</desc>
                </event>
+               </listEvent>
                <education><placeName ref="#mlpla000345">boys’ school Fulneck</placeName></education>
                <education><placeName ref="#mlpla000288">academy at Fulneck</placeName></education>
                <affiliation type="choir" notBefore="1809" notAfter="1821"><orgName en="childrens choir">Little Boys' Choir</orgName></affiliation>
@@ -2195,7 +2542,8 @@
                   <date type="death" when-iso="1761-01-02">2 January, 1761</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000116" when-iso="1752-09-29" ref="#mlper000704">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000116" when-iso="1752-09-29" ref="#mlper000704">
                   <desc>baptized at Scholes by William Horne</desc>
                </event>
                <event type="entrance" where="#mlpla000003" when-iso="1755-05-06">
@@ -2204,6 +2552,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1761-01-05" ref="#mlper000697">
                   <desc>interred at Fulneck by Benjamin La Trobe</desc>
                </event>
+               </listEvent>
                <education><placeName ref="#mlpla000345">boys’ school Fulneck</placeName></education>
                <bibl type="memoir" source="#mlpla000003">Ful/3/62</bibl>
                
@@ -2238,7 +2587,8 @@
                   <date type="death" when-iso="1764-03-21">21 March, 1764</date>
                   <placeName ref="#mlpla000436">Dye House, Pudsey</placeName>
                </death>
-               <event type="baptism">
+               <listEvent>
+                  <event type="baptism">
                   <desc>baptized in the <orgName religion="Anglican">Church of England</orgName></desc>
                </event>
                <event type="reception" where="#mlpla000090" when-iso="1760-03-14">
@@ -2247,6 +2597,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1764-03-23" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
+               </listEvent>
                <residence notBefore="1763-01"><placeName ref="#mlpla000436">Dye House, Pudsey</placeName></residence>
                <education notBefore="1755">apprentice to shoemaker</education>
                <occupation>shoemaker</occupation>
@@ -2289,7 +2640,8 @@
                   <date type="death" when-iso="1771-02-23">23 February, 1771</date>
                   <placeName ref="#mlpla000271">sisters’ house Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000230" when-iso="1719-04-26">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000230" when-iso="1719-04-26">
                   <desc>baptized at Church of St John the Baptist in Kirkheaton</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1744-07-26">
@@ -2316,6 +2668,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1771-02-26" ref="#mlper000709">
                   <desc>interred at Fulneck by Abraham Taylor</desc>
                </event>
+               </listEvent>
                <affiliation type="choir" notBefore="1744-07-26"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
                <bibl type="memoir" source="#mlpla000003">Ful/3/41</bibl>
@@ -2344,7 +2697,8 @@
                   <date type="death" when-iso="1845-05-13">13 May, 1845</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-               <event type="baptism" where="#mlpla000003" when-iso="1819-09-19" ref="#mlper000541">
+               <listEvent>
+                  <event type="baptism" where="#mlpla000003" when-iso="1819-09-19" ref="#mlper000541">
                   <desc>baptized at Fulneck by C.F. Ramftler</desc>
                </event>
                <event type="reception" where="#mlpla000003" when-iso="1821">
@@ -2365,6 +2719,7 @@
                <event type="interment" where="#mlpla000003" when-iso="1845-05-16" ref="#mlper000384">
                   <desc>interred at Fulneck by John Rogers</desc>
                </event>
+               </listEvent>
                <residence notAfter="1821"><placeName ref="#mlpla000409">Fartown</placeName></residence>
                <residence notBefore="1821" notAfter="1825"><placeName ref="#mlpla000052">Littlemoor</placeName></residence>
                <residence notBefore="1825"><placeName ref="#mlpla000003">Fulneck</placeName></residence>
@@ -2405,12 +2760,14 @@
                   <date type="death" when-iso="1838-12-20">20 December, 1838</date>
                   <placeName ref="#mlpla000202">Dudley Hill</placeName>
                </death>
-               <event type="readmission" when-iso="1832">
+               <listEvent>
+                  <event type="readmission" when-iso="1832">
                   <desc>readmitted to the congregation</desc>
                </event>
                <event type="interment" where="#mlpla000003" when-iso="1838-12-23" ref="#mlper000421">
                   <desc>interred at Fulneck by Samuel Wilson</desc>
                </event>
+               </listEvent>
                <residence><placeName ref="#mlpla000202">Dudley Hill</placeName></residence>
                <bibl type="memoir" source="#mlpla000003">Ful/3/151</bibl>
                

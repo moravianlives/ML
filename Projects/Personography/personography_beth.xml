@@ -1,4 +1,4 @@
-<?xml-model href="../../out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -166,6 +166,123 @@
                </death>
             </person>
          </listPerson>
+         
+         <!-- Seidel, Anna Johanna (Piesch) -->
+         <listPerson>
+            <person xml:id="mlper000699" sex="f">
+               <persName>
+                  <forename>Anna Johanna</forename>
+                  <surname type="birth">Piesch</surname>
+                  <surname type="married">Seidel</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1726-01-12">12 January, 1726</date>
+                  <placeName ref="#mlpla000026">Berthelsdorf</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1788-04-11">11 April, 1788</date>
+                  <placeName ref="#mlpla000020">Nazareth</placeName>
+               </death>
+               <event type="reception" when-iso="1737-09-13">
+                  <desc>received into the Children's Congregation</desc>
+               </event>
+               <event type="acceptance" when-iso="1739-10">
+                  <desc>accepted as an acoluth</desc>
+               </event>
+               <event type="synod" where="#mlpla000314" when-iso="1743-06">
+                  <desc>attended General Synod at Hirschberg</desc>
+               </event>
+               <event type="marriage" where="#mlpla000001" when-iso="1760-10-30" ref="#mlper000453">
+                  <desc>married Nathanael Seidel at Herrnhut</desc>
+               </event>
+               <event type="synod" where="#mlpla000057" when-iso="1769-07">
+                  <desc>attended General Synod at Marienborn</desc>
+               </event>
+               <event type="widowed" when-iso="1782-05-17">
+                  <desc>widowed</desc>
+               </event>
+               <residence notBefore="1732" cert="low"><placeName ref="#mlpla000511">Orphan House Herrnhut</placeName></residence>
+               <residence notBefore="1740"><placeName ref="#mlpla000014">Herrnhaag</placeName></residence>
+               <residence notBefore="1744" to-iso="1745-02"><placeName ref="#mlpla000057">Marienborn</placeName></residence>
+               <residence notBefore="1761-10-23"><placeName ref="#mlpla000002">Bethlehem</placeName></residence>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Bethlehem Archives</orgName>
+                           <idno>MemBeth 0300</idno>
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+               <note>Source: Katie's translation of Anna Johanna Seidel's memoir as published in Moravian Women's Memoirs: Their Related Lives, 1750-1820.</note>
+            </person>
+            <listOffice>
+               <office>acoluth</office>
+               <office notBefore="1741-01">children's eldress and joint eldress of the Great Girls</office>
+               <office notBefore="1743-07-05">co-eldress of the congregation</office>
+               <office notAfter="1745-09">single sisters' labouress at <placeName ref="#mlpla000014">Herrnhaag</placeName></office>
+               <office notBefore="1745-09">single sisters' labouress at <placeName ref="#mlpla000054">London</placeName></office>
+               <office notBefore="1747-05-04">general eldress of the single sisters' choirs</office>
+            </listOffice>
+            <listRelation type="personal">
+               <relation name="spouse" mutual="#mlper000453" from-iso="1760-10-30" to-iso="1782-05-17"/>
+            </listRelation>
+         </listPerson>
+         
+         <!-- Zinzendorf, Christian Renatus -->
+         <!-- not in YF document; needs more information -->
+         <listPerson>
+            <person xml:id="mlper000700" sex="m" sameAs="https://www.wikidata.org/wiki/Q2143656">
+               <persName>
+                  <forename>Christian Renatus</forename>
+                  <forename type="variant">Christel</forename>
+                  <nameLink>von</nameLink>
+                  <surname>Zinzendorf</surname>
+               </persName>
+               <birth>
+                  <date type="birth" when-iso="1727-09-19">19 Septmeber, 1727</date>
+                  <placeName ref="#mlpla000026">Berthelsdorf</placeName>
+               </birth>
+               <death>
+                  <date type="death" when-iso="1752-05-28">28 May, 1752</date>
+                  <placeName ref="#mlpla000512">Dean's Yard, Westminster Abbey</placeName>
+               </death>
+               <listBibl>
+                  <msDesc>
+                     <msIdentifier>
+                        <institution>
+                           <orgName>Fulneck Archives</orgName>
+                           <idno>MemBeth 0025</idno>
+                           <!-- memoir in German; not yet transcribed -->
+                           <ptr />
+                        </institution>
+                     </msIdentifier>
+                  </msDesc>
+               </listBibl>
+            </person>
+            <listOffice>
+               <office>vice-elder of the Single Brothers Choir</office>
+               <office>leader of the Single Brethren's choir</office>
+            </listOffice>
+            <listRelation type="personal">
+               <relation name="child" passive="#mlper000566"/>
+               <relation name="child" passive="#mlper000701"/>
+               <relation name="sibling" mutual="Christian Ernst von Zinzendorf"/>
+               <relation name="sibling" mutual="Henriette Benigna Justina von Zinzendorf"/>
+               <relation name="sibling" mutual="Christian Friedrich von Zinzendorf"/>
+               <relation name="sibling" mutual="Theodora Caritas von Zinzendorf"/>
+               <relation name="sibling" mutual="Johann Ernst von Zinzendorf"/>
+               <relation name="sibling" mutual="Christian Ludwig von Zinzendorf"/>
+               <relation name="sibling" mutual="Anna Theresia von Zinzendorf"/>
+               <relation name="sibling" mutual="Agnes von Zinzendorf"/>
+               <relation name="sibling" mutual="Johanna Salome von Zinzendorf"/>
+               <relation name="sibling" mutual="David von Zinzendorf"/>
+               <relation name="sibling" mutual="Elisabeth von Zinzendorf"/>
+            </listRelation>
+         </listPerson>
+         
          <!-- mlper000005
             mlper000006
             mlper000007

@@ -2541,6 +2541,7 @@
                <affiliation type="congregation" notBefore="1742-06-06">
                   <orgName>London</orgName>
                </affiliation>
+               <!-- need Katie’s help determining congregation affiliations from offices -->
             </person>
             <listOccupation>
                <occupation>sugar refiner</occupation>
@@ -2630,6 +2631,7 @@
                <affiliation type="congregation" notBefore="1742-12-08">
                   <orgName>Herrnhaag</orgName>
                </affiliation>
+               <!-- need Katie’s help determining congregation affiliations from offices -->
             </person>
             <listOccupation>
                <occupation>literatus</occupation>
@@ -2742,8 +2744,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Benjamin La Trobe -->
-         <!-- skipping offices until we decide on how to encode them -->
+		   <!--  La Trobe, Benjamin -->
          <listPerson>
             <person xml:id="mlper000697" sex="m">
                <persName>
@@ -2792,13 +2793,31 @@
                </event>
                </listEvent>
                <education><placeName ref="#mlpla000490">Glasgow University</placeName></education>
-               <occupation notBefore="1746">preacher in <placeName ref="#mlpla000144">Dublin</placeName></occupation>
+               <affiliation type="society" notBefore="1745">
+                  <orgName>Dublin</orgName>
+                  <roleName>founder</roleName>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1748-01-11">
+                  <orgName>London</orgName>
+               </affiliation>
+               <!-- need Katie’s help determining congregation affiliations from offices -->
+              </person>
+            <listOffice>
+               <office notBefore="1746">preacher at <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office notBefore="1747" notAfter="1748">labourer at <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office notBefore="1751">assistant labourer at <placeName ref="#mlpla000025">Bedford</placeName></office>
+               <office notBefore="1752">assistant labourer at <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+               <office notBefore="1755">assistant labourer at <placeName ref="#mlpla000003">Fulneck</placeName></office>
+               <office notBefore="1756" notAfter="1757">assistant labourer in <placeName ref="#mlpla000139">Germany</placeName></office>
+               <office notBefore="1757">congregation labourer and director of schools at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office notBefore="1757" notAfter="1768">provincial helper at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office notBefore="1768" notAfter="1786">provincial helper at <placeName ref="#mlpla000054">London</placeName></office>
+               <office notBefore="1768" notAfter="1786">mission secretary at <placeName ref="#mlpla000054">London</placeName></office>
+               <office notBefore="1780" notAfter="1782">congregation labourer at <placeName ref="#mlpla000054">London</placeName></office>
                <office when-iso="1764" ref="#mloff000021">deputy at <name event="synod">General Synod</name> at <placeName ref="#mlpla000057">Marienborn</placeName></office>
                <office>chairman of Society for the Furtherance of the Gospel</office>
-               
-            </person>
+               <office>hymn writer</office>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="James La Trobe" notBefore="1702"/>
                <relation name="spouse" mutual="#mlper000717" notBefore="1756-04-25"/>
@@ -2816,7 +2835,7 @@
             </listRelation>
          </listPerson>
 
-         <!-- Erdmuthe Zinzendorf -->
+		   <!-- Zinzendorf, Erdmuthe -->
          <!-- not in YF document; needs more information -->
          <listPerson>
             <person xml:id="mlper000701" sex="f" sameAs="https://www.wikidata.org/wiki/Q96948">
@@ -2844,9 +2863,11 @@
                <event type="synod" where="#mlpla000150" when-iso="1746">
                   <desc>attended General Synod at Zeist</desc>
                </event>
-               <occupation>hymn writer</occupation>
-               
+               <!-- no clear indication of congregation affiliation -->               
             </person>
+            <listOffice>
+               <office>hymn writer</office>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="Count Heinrich X Reuss"/>
                <relation name="child" passive="Countess Erdmuth Benigna (Solms-Laubach) Reuss"/>
@@ -2866,7 +2887,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- Mary Vogelsang -->
+		   <!-- Vogelsang, Mary -->
          <listPerson>
             <person xml:id="mlper000702" sex="f">
                <persName>
@@ -2918,18 +2939,27 @@
                </listEvent>
                <residence notBefore="1749" notAfter="1750">home of <persName ref="#mlper000566">Nicholas von Zinzendorf</persName> in <placeName ref="#mlpla000054">London</placeName></residence>
                <residence notBefore="1751" notAfter="1752">home of <persName ref="#mlper000566">Nicholas von Zinzendorf</persName> in <placeName ref="#mlpla000054">London</placeName></residence>
+               <affiliation type="congregation" notBefore="1743-01-05">
+                  <orgName>Herrnhut</orgName>
+                  <affiliation type="choir" notBefore="1743-01-05"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1749-01-13">
+                  <orgName>London</orgName>
+               </affiliation>
+            </person>
+            <listOccupation>
                <occupation>weaver</occupation>
                <occupation notBefore="1743" notAfter="1749">wash kitchen at <placeName ref="#mlpla000493">Orphan House Herrnhaag</placeName></occupation>
                <occupation notBefore="1749">ironing linen at <placeName ref="#mlpla000054">London</placeName></occupation>
+            </listOccupation>
+            <listOffice>
                <office when-iso="1748">intercessor in <placeName ref="#mlpla000179">Holland</placeName></office>
                <office notBefore="1749">acoluth</office>
                <office notBefore="1750" notAfter="1752-01-03">assistant single sisters’ labourer at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office notBefore="1752-01-03">ad interim single sisters’ labourer at <placeName ref="#mlpla000003">Fulneck</placeName></office>
                <office notBefore="1756">deaconess</office>
                <office notBefore="1765-11-15" notAfter="1787">single sisters’ labourer at <placeName ref="#mlpla000040">Gracehill</placeName></office>
-               <affiliation type="choir" notBefore="1743-01-05"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-               
-            </person>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="John Vogelsang"/>
                <relation name="child" passive="Margaret Catherine Vogelsang"/>
@@ -2939,8 +2969,7 @@
             </listRelation>
          </listPerson>
          
-         <!-- William Okely -->
-         <!-- skipping offices until we decide on how to encode them -->
+		   <!-- Okely, William -->
          <listPerson>
             <person xml:id="mlper000703" sex="m">
                <persName>
@@ -2985,12 +3014,28 @@
                <education notBefore="1776"><placeName ref="#mlpla000344">Paedagogium at Niesky</placeName></education>
                <education notAfter="1784"><placeName ref="#mlpla000476">Seminary at Barby</placeName></education>
                <education>medical student in <placeName ref="#mlpla000025">Bedford</placeName> and <placeName ref="#mlpla000384">Edinburgh</placeName></education>
+               <affiliation type="congregation" notBefore="1776" notAfter="1785">
+                  <orgName>Niesky</orgName>
+               </affiliation>
+               <affiliation type="congregation" notBefore="1798-05-01">
+                  <orgName>Fulneck</orgName>
+               </affiliation>
+            </person>
+            <listOccupation>
                <occupation notBefore="1784" notAfter="1785">teacher at <placeName ref="#mlpla000496">boys’ school Christiansfeld</placeName></occupation>
                <occupation notBefore="1785-02">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
                <occupation notBefore="1798" notAfter="1802">teacher at <placeName ref="#mlpla000345">boys’ school Fulneck</placeName></occupation>
                <occupation notBefore="1791">surgeon at <placeName ref="#mlpla000495">Northampton Infirmary</placeName></occupation>
-               
-            </person>
+            </listOccupation>
+            <listOffice>
+               <office notBefore="1802">congregation labourer at <placeName ref="#mlpla000330">Wellhouse</placeName></office>
+               <office notBefore="1804">congregation labourer at <placeName ref="#mlpla000435">Lower Wyke</placeName></office>
+               <office notBefore="1809">congregation labourer at <placeName ref="#mlpla000037">Fairfield</placeName></office>
+               <office notBefore="1818">ad interim labourer and director of schools at <placeName ref="#mlpla000003">Fulneck</placeName></office>
+               <office notBefore="1818">congregation labourer at <placeName ref="#mlpla000030">Bristol</placeName></office>
+               <office notBefore="1824">congregation labourer at <placeName ref="#mlpla000144">Dublin</placeName></office>
+               <office notBefore="1826">congregation labourer at <placeName ref="#mlpla000054">London</placeName></office>
+            </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="Francis Okely" notBefore="1719"/>
                <relation name="child" passive="Mary Elizabeth (Collins) Okely" notBefore="1723"/>

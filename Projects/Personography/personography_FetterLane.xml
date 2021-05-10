@@ -1,0 +1,158 @@
+<?xml-model href="../../CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Moravian Lives Personography</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer, 2016-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-19</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marita Gruner</persName>
+               <orgName>University of Greifswald</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Kannemann</persName>
+               <orgName>University of Mainz</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Justin Schaumberger</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Transkribus, Text Encoding Specialist</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>List of Moravian Lives person entities with reference to persistent identifiers, using ML standard names</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category>
+                  <catDesc>Archive</catDesc>
+                  <category xml:id="bethlehem">
+                     <catDesc>Moravian Archives, Bethlehem</catDesc>
+                  </category>
+                  <category xml:id="fulneck">
+                     <catDesc>Moravian Archives, Fulneck</catDesc>
+                  </category>
+                  <category xml:id="herrnhut">
+                     <catDesc>Moravian Archives, Herrnhut</catDesc>
+                  </category>
+                  <category xml:id="london">
+                     <catDesc>Moravian Archives, Fetter Lane - London</catDesc>
+                  </category>
+               </category>
+               <category>
+                  <catDesc>Church Records</catDesc>
+                  <category xml:id="Yorkshire_Families">
+                     <catDesc>Big Book of Yorkshire Families</catDesc>
+                  </category>
+                  <category>
+                     <catDesc>Church Records</catDesc>
+                     <category xml:id="Fulneck_Families_19th_Century">
+                        <catDesc>Fulneck Families 19th Century</catDesc>
+                     </category>
+               </category>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#cpirmann" when="2021-05-05">Branched to a Fetter Lane personography hold file.</change>
+         <change who="#DKJ" when="2020-06-24">Branched to a Bethlehem personography hold file.</change>
+         <change who="#DKJ" when="2019-05-30">Updated responsibility list, added more names and fields</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="personography">
+      <body>
+         <head>Moravian Lives Personography</head>
+         
+      	<!-- Grundy, Elizabeth -->
+         <listPerson>
+            <person xml:id="mlper000455" sex="f">
+               <persName>
+                  <forename>Elizabeth</forename>
+                  <surname>Grundy</surname>
+               </persName>
+               <bibl type="memoir" source="#mlpla000004">MemLondon C/36/3/26</bibl>
+            </person>
+         </listPerson>
+         
+         <!-- Chambers, Elizabeth -->
+          <listPerson>
+              <person xml:id="mlper000686" sex="f">
+                  <persName>
+                      <forename>Elizabeth</forename>
+                      <surname>Chambers</surname>
+                  </persName>
+                  <affiliation ref="#mlpla000004">Fetter Lane</affiliation>
+                  <bibl type="memoir" source="#mlpla000003">MemLon_300010</bibl>
+              </person>
+          </listPerson>
+      	
+         <!--<listPerson>
+            <person xml:id="" sex="">
+               <persName>
+                  <forename></forename>
+                  <surname></surname>
+               </persName>
+            </person>
+         </listPerson>-->
+      </body>
+   </text>
+</TEI>
+

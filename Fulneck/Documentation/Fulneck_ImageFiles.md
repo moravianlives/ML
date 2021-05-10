@@ -1,4 +1,5 @@
 Moravian Fulneck Image File List
+Note: all Fulneck image files now use this URL nomenclature: https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/... etc.
 
 Adkinson, Martha<br />
 https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_38Adkinson-01.jpg<br />

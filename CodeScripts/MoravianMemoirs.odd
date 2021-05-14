@@ -395,8 +395,8 @@
             <content>
               <sequence>
                 <!-- Includes elements that can and have to be in the occupation tag -->
-                <classRef key="model.headLike" minOccurs="0"/>
-                <elementRef key="occupation" minOccurs="1" maxOccurs="1"/> 
+                <elementRef key="occupation" maxOccurs="unbounded"/> 
+                <classRef key="model.headLike" minOccurs="0" maxOccurs="unbounded"/>
               </sequence>
             </content>
           </elementSpec>
@@ -418,7 +418,7 @@
               <memberOf key="model.headLike"/>
               <memberOf key="model.listLike"/>
               <memberOf key="model.orgPart"/>
-              <!--  <memberOf key="model.personLike"/>-->
+              <memberOf key="model.personLike"/>
               <memberOf key="att.declarable"/>
               <memberOf key="att.global"/>
               <memberOf key="att.naming"/>
@@ -426,11 +426,11 @@
               <memberOf key="att.typed"/>
             </classes>
             
-            <!-- Requires <listOffice> to contain 1 <office> tag -->
             <content>
               <sequence>
-                <classRef key="model.headLike" minOccurs="0"/>
-                <elementRef key="office" minOccurs="1" maxOccurs="1"/>
+                <!-- Includes elements that can and have to be in the office tag -->
+                <elementRef key="office" maxOccurs="unbounded"/> 
+                <classRef key="model.headLike" minOccurs="0" maxOccurs="unbounded"/>
               </sequence>
             </content>
           </elementSpec>

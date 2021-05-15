@@ -121,7 +121,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/TEI_Memoirs/personography/XML", "ML_personography.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
                         .Result;
 
                     raw.Source = source;
@@ -332,6 +332,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     entry.targetModel.Name ??= new HistoricString();
                     entry.targetModel.Name.SetVariant(fullName);
+                    entry.targetModel.Firstname ??= new HistoricString();
+                    entry.targetModel.Lastname ??= new HistoricString();
+                    entry.targetModel.Firstname.SetVariant(firstName);
+                    entry.targetModel.Lastname.SetVariant(lastName);
 
                     foreach (var sv in surnameVariants)
                     {

@@ -334,8 +334,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     entry.targetModel.Name.SetVariant(fullName);
                     entry.targetModel.Firstname ??= new HistoricString();
                     entry.targetModel.Lastname ??= new HistoricString();
+                    entry.targetModel.Addname ??= new HistoricString();
                     entry.targetModel.Firstname.SetVariant(firstName);
                     entry.targetModel.Lastname.SetVariant(lastName);
+                    entry.targetModel.Addname.SetVariant(midName);
 
                     foreach (var sv in surnameVariants)
                     {
@@ -352,11 +354,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                         variantComment = variantComment.Trim();
 
-                        entry.targetModel.Name.SetVariant(variantName, null, variantComment);
+                        //entry.targetModel.Name.SetVariant(variantName, null, variantComment);
+                        entry.targetModel.Lastname.SetVariant(variantName, null, variantComment);
                     }
 
                     foreach (var fnv in firstNameVariants)
-                        entry.targetModel.Name.SetVariant(fnv.ToString(), null, "firstname variant");
+                        entry.targetModel.Firstname.SetVariant(fnv.ToString(), null, "firstname variant");
 
                     if (birthEventData.Timestamp != null)
                     {
@@ -372,7 +375,24 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                 targetNameVariant.Comments ??= $"Source: {nameResp}";
                         }
                     }
+                    // read memoir information
+                    entry.timeLog.Log("Memoir information detection");
 
+                    var MemoirArchive = source?.StrVal(new[]
+                    {
+                        "person.listBibl.msDesc.msIdentifier.institution.orgName",
+                     });
+
+                    var Memoirshelfmark = source?.StrVal(new[]
+                    {
+                        "person.listBibl.msDesc.msIdentifier.institution.idno",
+                     });
+
+                    var MemoirLink = source.StrVal("person.listBibl.msDesc.msIdentifier.institution.ptr.@target");
+
+                    entry.targetModel.MemoirArchive ??= MemoirArchive;
+                    entry.targetModel.MemoirShelfmark ??= Memoirshelfmark;
+                    entry.targetModel.MemoirLink ??= MemoirLink;
 
                     // Finally, event handling.
 

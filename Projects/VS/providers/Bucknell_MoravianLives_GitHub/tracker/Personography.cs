@@ -121,7 +121,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-3.xml")
                         .Result;
 
                     raw.Source = source;
@@ -251,8 +251,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         "person.persName.forename.addName"
                     });
 
-                    if (midName != null)
-                        firstName += " " + midName;
+                    //if (midName != null)
+                    //    firstName += " " + midName;
 
                     var lastName = source?.StrVal(new[]
                     {
@@ -267,7 +267,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         if (surnameVariants[0].Type == JTokenType.Array)
                             surnameVariants = source?.SelectTokens("person.persName.surname[*]").ToList();
 
-                    var fullName = $"{firstName} {lastName}".Trim();
+                    var fullName = $"{firstName} {midName} {lastName}".Trim();
 
                     //Birth
                     entry.timeLog.Log("Birth event information");
@@ -336,8 +336,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     entry.targetModel.Lastname ??= new HistoricString();
                     entry.targetModel.Addname ??= new HistoricString();
                     entry.targetModel.Firstname.SetVariant(firstName);
-                    entry.targetModel.Lastname.SetVariant(lastName);
+                    //entry.targetModel.Lastname.SetVariant(lastName);
                     entry.targetModel.Addname.SetVariant(midName);
+
+                    entry.targetModel.MemoirInfo ??= new Person.MemoirDesc();
 
                     foreach (var sv in surnameVariants)
                     {
@@ -346,7 +348,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         if (!(sv is JObject)) continue;
 
                         var qsv = (JObject)sv;
-                        var variantName = $"{firstName} {qsv.StrVal("#text")}".Trim();
+                        var variantName = $"{qsv.StrVal("#text")}".Trim();
                         var variantComment = qsv.StrVal("@type");
 
                         if (qsv.StrVal("@resp") != null)
@@ -375,6 +377,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                 targetNameVariant.Comments ??= $"Source: {nameResp}";
                         }
                     }
+
+
                     // read memoir information
                     entry.timeLog.Log("Memoir information detection");
 
@@ -387,16 +391,52 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         "person.listBibl.msDesc.msIdentifier.institution.idno",
                      });
+                    var MemoirLang = source?.StrVal(new[]
+                   {
+                        "person.listBibl.msDesc.msIdentifier.institution.lang",
+                     });
 
                     var MemoirLink = source.StrVal("person.listBibl.msDesc.msIdentifier.institution.ptr.@target");
 
-                    entry.targetModel.MemoirArchive ??= MemoirArchive;
-                    entry.targetModel.MemoirShelfmark ??= Memoirshelfmark;
-                    entry.targetModel.MemoirLink ??= MemoirLink;
+                    //entry.targetModel.MemoirArchive ??= MemoirArchive;
+                    //entry.targetModel.MemoirShelfmark ??= Memoirshelfmark;
+                    //entry.targetModel.MemoirLink ??= MemoirLink;
+                    //entry.targetModel.MemoirLang ??= MemoirLang;
 
-                    // Finally, event handling.
+                    entry.targetModel.MemoirInfo.archive ??= MemoirArchive;
+                    entry.targetModel.MemoirInfo.shelfmark ??= Memoirshelfmark;
+                    entry.targetModel.MemoirInfo.link ??= MemoirLink;
+                    entry.targetModel.MemoirInfo.lang ??= MemoirLang;
 
-                    entry.timeLog.Log("Unique event: Birth");
+                    //read office information
+                    //entry.targetModel.officeinfo ??= new List<OfficeString>();
+                    var officestr = new OfficeString();
+                    
+                    
+
+                    var offices = source?.SelectTokens("person.listOffice.office[*]").Select(i => (JObject)i).ToList();
+                    foreach (var @office in offices)
+                    {
+                        var title = @office.StrVal("#text");
+                        var orgname = @office.StrVal("@placeName");
+                        officestr.SetVariant(title, orgname);
+                        entry.targetModel.officeinfo.Add(officestr);
+
+                        var eventModel = Office.Where(i =>
+                            i.Value == title).FirstOrDefault();
+
+                        if (eventModel == null)
+                            eventModel = new Office
+                            {
+                                Value = title
+                            };
+
+                    }
+
+
+                        // Finally, event handling.
+
+                        entry.timeLog.Log("Unique event: Birth");
 
                     if (birthEventData.Timestamp != null)
                     {

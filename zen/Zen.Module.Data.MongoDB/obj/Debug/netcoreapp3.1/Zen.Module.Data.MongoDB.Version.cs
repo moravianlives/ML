@@ -9,8 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Reflection.AssemblyVersionAttribute("0.6.0.0")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.100")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+00b15a9605")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+00249bbb1f")]
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode("Nerdbank.GitVersioning.Tasks","3.3.37.35081")]
 #endif
@@ -19,14 +19,14 @@
 #endif
 internal static partial class ThisAssembly {
     internal const string AssemblyVersion = "0.6.0.0";
-    internal const string AssemblyFileVersion = "0.6.0.100";
-    internal const string AssemblyInformationalVersion = "0.6.0-alpha+00b15a9605";
+    internal const string AssemblyFileVersion = "0.6.0.61";
+    internal const string AssemblyInformationalVersion = "0.6.0-alpha+00249bbb1f";
     internal const string AssemblyName = "Zen.Module.Data.MongoDB";
     internal const string AssemblyTitle = "Zen.Module.Data.MongoDB";
     internal const string AssemblyConfiguration = "Debug";
-    internal const string GitCommitId = "00b15a9605e6ac167e79e2c433e3c9d891b763b8";
+    internal const string GitCommitId = "00249bbb1f8c9cc21ffeb4a488a197397d1ff653";
     internal const bool IsPublicRelease = false;
     internal const bool IsPrerelease = true;
-    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637479842470000000L, System.DateTimeKind.Utc);
+    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637576349050000000L, System.DateTimeKind.Utc);
     internal const string RootNamespace = "Zen.Module.Data.MongoDB";
 }

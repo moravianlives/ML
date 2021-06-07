@@ -19,10 +19,23 @@ namespace edu.bucknell.project.moravianLives.model
 
         [Display] public HistoricString Name { get; set; }
 
+        [Display] public HistoricString Firstname { get; set; }
+        [Display] public HistoricString Lastname { get; set; }
+        [Display] public HistoricString Addname { get; set; }
         public RelationshipVariants Relationships { get; set; }
         public TemporalCommented<DataReference<Organization>> Organizations { get; set; }
 
+        //public string MemoirArchive { get; set; }
+
+        //public string MemoirShelfmark { get; set; }
+        //public string MemoirLink { get; set; }
+        //public string MemoirLang { get; set; }
+
+        public MemoirDesc MemoirInfo { get; set; }
+
         public string Gender { get; set; }
+
+        public List<OfficeString> officeinfo { get; set; }
 
         #region Implementation of IFacts
 
@@ -88,13 +101,20 @@ namespace edu.bucknell.project.moravianLives.model
         {
         }
 
+        public class MemoirDesc
+        {
+            public string archive { get; set; }
+            public string shelfmark { get; set; }
+            public string link { get; set; }
+            public string lang { get; set; }
+        }
         public class Descriptor
         {
             public class Gender : Category<Person, Gender>
             {
             }
         }
-
+         
         public class Category : Category<Person, Category>
         {
         }

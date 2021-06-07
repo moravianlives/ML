@@ -427,6 +427,9 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
             public string SameAs { get; set; }
         }
 
+
+
+
         [XmlRoot(ElementName = "relation", Namespace = "http://www.tei-c.org/ns/1.0")]
         public class Relation
         {
@@ -448,6 +451,13 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
             public string Type { get; set; }
             [XmlAttribute(AttributeName = "when")]
             public string When { get; set; }
+        }
+
+        [XmlRoot(ElementName = "listOffice", Namespace = "http://www.tei-c.org/ns/1.0")]
+        public class listOffice
+        {
+            [XmlElement(ElementName = "office", Namespace = "http://www.tei-c.org/ns/1.0")]
+            public List<Relation> Office { get; set; }
         }
 
         [XmlRoot(ElementName = "listRelation", Namespace = "http://www.tei-c.org/ns/1.0")]

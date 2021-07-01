@@ -8,8 +8,13 @@
     ".NETCoreApp,Version=v3.1": {
       "edu.bucknell.project.moravianLives.model/1.0.0": {
         "dependencies": {
+          "Nyan.Modules.Storage.FileSystem": "1.0.0",
+          "Nyan.Modules.Web.Tools": "1.0.0",
           "Zen.Base": "0.0.1",
-          "Zen.Pebble.FlexibleData": "1.0.0"
+          "Zen.Module.Data.MongoDB": "0.0.1",
+          "Zen.Pebble.FlexibleData": "1.0.0",
+          "edu.bucknell.framework": "1.0.7685.21188",
+          "Nyan.Core": "0.1.7390.19720"
         },
         "runtime": {
           "edu.bucknell.project.moravianLives.model.dll": {}
@@ -23,6 +28,14 @@
           "lib/netstandard1.0/ByteSize.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "DnsClient/1.3.1": {
+        "runtime": {
+          "lib/netstandard2.1/DnsClient.dll": {
+            "assemblyVersion": "1.3.1.0",
+            "fileVersion": "1.3.1.0"
           }
         }
       },
@@ -365,6 +378,70 @@
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
+      "MongoDB.Bson/2.11.3": {
+        "runtime": {
+          "lib/netstandard2.0/MongoDB.Bson.dll": {
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
+          }
+        }
+      },
+      "MongoDB.Driver/2.11.3": {
+        "dependencies": {
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Driver.Core": "2.11.3",
+          "MongoDB.Libmongocrypt": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MongoDB.Driver.dll": {
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
+          }
+        }
+      },
+      "MongoDB.Driver.Core/2.11.3": {
+        "dependencies": {
+          "DnsClient": "1.3.1",
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Libmongocrypt": "1.0.0",
+          "SharpCompress": "0.23.0",
+          "System.Buffers": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MongoDB.Driver.Core.dll": {
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/native/libzstd.dll": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/native/snappy32.dll": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "1.1.1.7"
+          },
+          "runtimes/win/native/snappy64.dll": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "1.1.1.7"
+          }
+        }
+      },
+      "MongoDB.Libmongocrypt/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.5/MongoDB.Libmongocrypt.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -602,20 +679,23 @@
           }
         }
       },
+      "SharpCompress/0.23.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpCompress.dll": {
+            "assemblyVersion": "0.23.0.0",
+            "fileVersion": "0.23.0.0"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Buffers/4.3.0": {
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        }
-      },
+      "System.Buffers/4.4.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -739,7 +819,7 @@
       "System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
-          "System.Buffers": "4.3.0",
+          "System.Buffers": "4.4.0",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
@@ -757,7 +837,7 @@
       },
       "System.IO.Compression.ZipFile/4.3.0": {
         "dependencies": {
-          "System.Buffers": "4.3.0",
+          "System.Buffers": "4.4.0",
           "System.IO": "4.3.0",
           "System.IO.Compression": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
@@ -941,6 +1021,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {},
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1121,6 +1202,12 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        }
+      },
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1196,6 +1283,56 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Nyan.Modules.Cache.Redis/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Cache.Redis.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.MongoDB/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.MongoDB.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.MySQL/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.MySQL.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.Oracle/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.Oracle.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.SqlServer/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.SqlServer.dll": {}
+        }
+      },
+      "Nyan.Modules.Encryption.AES/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Encryption.AES.dll": {}
+        }
+      },
+      "Nyan.Modules.Log.UDP/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Log.UDP.dll": {}
+        }
+      },
+      "Nyan.Modules.Storage.FileSystem/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Storage.FileSystem.dll": {}
+        }
+      },
+      "Nyan.Modules.Web.Push/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Web.Push.dll": {}
+        }
+      },
+      "Nyan.Modules.Web.Tools/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Web.Tools.dll": {}
+        }
+      },
       "Zen.Base/0.0.1": {
         "dependencies": {
           "ByteSize": "2.0.0",
@@ -1206,6 +1343,14 @@
           "Microsoft.Extensions.Logging.Console": "3.1.9",
           "Microsoft.Extensions.Logging.Debug": "3.1.9",
           "Newtonsoft.Json": "12.0.3",
+          "Nyan.Modules.Cache.Redis": "1.0.0",
+          "Nyan.Modules.Data.MongoDB": "1.0.0",
+          "Nyan.Modules.Data.MySQL": "1.0.0",
+          "Nyan.Modules.Data.Oracle": "1.0.0",
+          "Nyan.Modules.Data.SqlServer": "1.0.0",
+          "Nyan.Modules.Encryption.AES": "1.0.0",
+          "Nyan.Modules.Log.UDP": "1.0.0",
+          "Nyan.Modules.Web.Push": "1.0.0",
           "Serilog": "2.10.0",
           "Serilog.AspNetCore": "3.4.0",
           "Serilog.Formatting.Compact": "1.1.0",
@@ -1213,6 +1358,16 @@
         },
         "runtime": {
           "Zen.Base.dll": {}
+        }
+      },
+      "Zen.Module.Data.MongoDB/0.0.1": {
+        "dependencies": {
+          "MongoDB.Driver": "2.11.3",
+          "Newtonsoft.Json": "12.0.3",
+          "Zen.Base": "0.0.1"
+        },
+        "runtime": {
+          "Zen.Module.Data.MongoDB.dll": {}
         }
       },
       "Zen.Pebble.FlexibleData/1.0.0": {
@@ -1226,6 +1381,166 @@
       "Zen.Pebble.Geo/0.0.1": {
         "runtime": {
           "Zen.Pebble.Geo.dll": {}
+        }
+      },
+      "edu.bucknell.framework/1.0.7685.21188": {
+        "runtime": {
+          "edu.bucknell.framework.dll": {
+            "assemblyVersion": "1.0.7685.21188",
+            "fileVersion": "1.0.7685.21188"
+          }
+        }
+      },
+      "Nyan.Core/0.1.7390.19720": {
+        "runtime": {
+          "Nyan.Core.dll": {
+            "assemblyVersion": "0.1.7390.19720",
+            "fileVersion": "0.1.7390.19720"
+          }
+        }
+      },
+      "Nyan.Modules.Storage/0.1.7831.19115": {
+        "runtime": {
+          "Nyan.Modules.Storage.dll": {
+            "assemblyVersion": "0.1.7831.19115",
+            "fileVersion": "0.1.7831.19115"
+          }
+        }
+      },
+      "System.Web.Http/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "Microsoft.WebSockets/0.2.3.0": {
+        "runtime": {
+          "Microsoft.WebSockets.dll": {
+            "assemblyVersion": "0.2.3.0",
+            "fileVersion": "0.2.3.0"
+          }
+        }
+      },
+      "System.Net.Http.Formatting/5.2.6.0": {
+        "runtime": {
+          "System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "Nyan.Modules.Web.REST/0.1.7831.19367": {
+        "runtime": {
+          "Nyan.Modules.Web.REST.dll": {
+            "assemblyVersion": "0.1.7831.19367",
+            "fileVersion": "0.1.7831.19367"
+          }
+        }
+      },
+      "StackExchange.Redis/1.2.6.0": {
+        "runtime": {
+          "StackExchange.Redis.dll": {
+            "assemblyVersion": "1.2.6.0",
+            "fileVersion": "1.2.6.0"
+          }
+        }
+      },
+      "MySql.Data/6.9.12.0": {
+        "runtime": {
+          "MySql.Data.dll": {
+            "assemblyVersion": "6.9.12.0",
+            "fileVersion": "6.9.12.0"
+          }
+        }
+      },
+      "Dapper/1.40.0.0": {
+        "runtime": {
+          "Dapper.dll": {
+            "assemblyVersion": "1.40.0.0",
+            "fileVersion": "1.40.0.0"
+          }
+        }
+      },
+      "Oracle.ManagedDataAccess/4.121.2.0": {
+        "runtime": {
+          "Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "4.121.2.0",
+            "fileVersion": "4.121.2.0"
+          }
+        }
+      },
+      "BouncyCastle.Crypto/1.8.2.0": {
+        "runtime": {
+          "BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.2.0",
+            "fileVersion": "1.8.18099.1"
+          }
+        }
+      },
+      "Renci.SshNet/2016.1.0.0": {
+        "runtime": {
+          "Renci.SshNet.dll": {
+            "assemblyVersion": "2016.1.0.0",
+            "fileVersion": "2016.1.0.0"
+          }
+        }
+      },
+      "NAudio/1.8.4.0": {
+        "runtime": {
+          "NAudio.dll": {
+            "assemblyVersion": "1.8.4.0",
+            "fileVersion": "1.8.4.0"
+          }
+        }
+      },
+      "edu.bucknell.framework.GIS/1.0.0.0": {
+        "runtime": {
+          "edu.bucknell.framework.GIS.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Markdig/0.15.0.0": {
+        "runtime": {
+          "Markdig.dll": {
+            "assemblyVersion": "0.15.0.0",
+            "fileVersion": "0.15.0.0"
+          }
+        }
+      },
+      "PdfSharp/1.50.5147.0": {
+        "runtime": {
+          "PdfSharp.dll": {
+            "assemblyVersion": "1.50.5147.0",
+            "fileVersion": "1.50.5147.0"
+          }
+        }
+      },
+      "System.Web.Http.Cors/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.Cors.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "System.Web.Cors/5.2.6.0": {
+        "runtime": {
+          "System.Web.Cors.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "System.Web.Http.WebHost/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.WebHost.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
         }
       }
     }
@@ -1242,6 +1557,13 @@
       "sha512": "sha512-9DuauHwXxbegELNMsHEP79hVY72L9fVg3BX9ayODylbN7212z4WNjC/jQ4pSjQNVyXtJDZpvob8k4wRhiac85g==",
       "path": "bytesize/2.0.0",
       "hashPath": "bytesize.2.0.0.nupkg.sha512"
+    },
+    "DnsClient/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b9XczgqSjs3dd+OlV799jn+LXxdfirln1q36GKjs3QwWBhjhgIvgHLEG5s2VrBLcP4ogQjtA0PZ5+AmRJ35Vhg==",
+      "path": "dnsclient/1.3.1",
+      "hashPath": "dnsclient.1.3.1.nupkg.sha512"
     },
     "Microsoft.DotNet.PlatformAbstractions/2.0.4": {
       "type": "package",
@@ -1460,6 +1782,34 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
+    "MongoDB.Bson/2.11.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pz8qtNVGLRRdDHmkRb5r/w4KYAnPClkGbQUPAuYudlMc2cd1HRIgIQMvY3lE5F0qFAhrceObbF57UHDwcSK5xg==",
+      "path": "mongodb.bson/2.11.3",
+      "hashPath": "mongodb.bson.2.11.3.nupkg.sha512"
+    },
+    "MongoDB.Driver/2.11.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SqDCN7a8ejLB9q1lowxf6v6mD2Q/1ZSle4aEfrB0ITs0+GxjMe2zNPzxIGgsIaux1HuAwAOEP4le9SaicSj+5g==",
+      "path": "mongodb.driver/2.11.3",
+      "hashPath": "mongodb.driver.2.11.3.nupkg.sha512"
+    },
+    "MongoDB.Driver.Core/2.11.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BKX6HlO2RuNO3lX4jjwdHChmjisgjm9BsSPAiUXTEG6SSithL1IxuM+xqVRG8e/w7Z6YWZdU2ruTUZM4BVyN3A==",
+      "path": "mongodb.driver.core/2.11.3",
+      "hashPath": "mongodb.driver.core.2.11.3.nupkg.sha512"
+    },
+    "MongoDB.Libmongocrypt/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zkcsra5riDiKXqOiCKskycakpbO5RYkuUWG+z2AZML3A4NShvAs/D3InwkxH0OcbjZQOWo763Hjdmhr0AaylcA==",
+      "path": "mongodb.libmongocrypt/1.0.0",
+      "hashPath": "mongodb.libmongocrypt.1.0.0.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -1656,6 +2006,13 @@
       "path": "serilog.sinks.rollingfile/3.3.0",
       "hashPath": "serilog.sinks.rollingfile.3.3.0.nupkg.sha512"
     },
+    "SharpCompress/0.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HBbT47JHvNrsZX2dTBzUBOSzBt+EmIRGLIBkbxcP6Jef7DB4eFWQX5iHWV3Nj7hABFPCjISrZ8s0z72nF2zFHQ==",
+      "path": "sharpcompress/0.23.0",
+      "hashPath": "sharpcompress.0.23.0.nupkg.sha512"
+    },
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1663,12 +2020,12 @@
       "path": "system.appcontext/4.3.0",
       "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
     },
-    "System.Buffers/4.3.0": {
+    "System.Buffers/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
-      "path": "system.buffers/4.3.0",
-      "hashPath": "system.buffers.4.3.0.nupkg.sha512"
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -1894,6 +2251,13 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1999,6 +2363,13 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2055,7 +2426,62 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "Nyan.Modules.Cache.Redis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.MongoDB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.MySQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.Oracle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Encryption.AES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Log.UDP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Storage.FileSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.Push/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.Tools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Zen.Base/0.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Zen.Module.Data.MongoDB/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2067,6 +2493,106 @@
     },
     "Zen.Pebble.Geo/0.0.1": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "edu.bucknell.framework/1.0.7685.21188": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Core/0.1.7390.19720": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Storage/0.1.7831.19115": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.WebSockets/0.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http.Formatting/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.REST/0.1.7831.19367": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StackExchange.Redis/1.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MySql.Data/6.9.12.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper/1.40.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Oracle.ManagedDataAccess/4.121.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.Crypto/1.8.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Renci.SshNet/2016.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NAudio/1.8.4.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "edu.bucknell.framework.GIS/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Markdig/0.15.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PdfSharp/1.50.5147.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http.Cors/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Cors/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http.WebHost/5.2.6.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -49,6 +49,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Nyan\Modules\Cache\Redis\Nyan.Modules.Cache.Redis.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Data\MongoDB\Nyan.Modules.Data.MongoDB.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Data\MySQL\Nyan.Modules.Data.MySQL.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Data\Oracle\Nyan.Modules.Data.Oracle.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Data\SqlServer\Nyan.Modules.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Encryption\AES\Nyan.Modules.Encryption.AES.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Log\UDP\Nyan.Modules.Log.UDP.csproj" />
+    <ProjectReference Include="..\..\..\Nyan\Modules\Web\Push\Nyan.Modules.Web.Push.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Nyan.Modules.Storage.FileSystem">
+      <HintPath>..\..\..\es-sd-web\3rdparty\Nyan.Modules.Storage.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Nyan.Modules.Web.Tools">
+      <HintPath>..\..\..\es-sd-web\3rdparty\Nyan.Modules.Web.Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="ConstantStrings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

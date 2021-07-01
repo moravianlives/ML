@@ -5,7 +5,18 @@
     <AssemblyName>edu.bucknell.project.moravianLives.model</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Nyan\Modules\Storage\FileSystemStorage\Nyan.Modules.Storage.FileSystem.csproj" />
+    <ProjectReference Include="..\..\..\..\Nyan\Modules\Web\Tools\Nyan.Modules.Web.Tools.csproj" />
     <ProjectReference Include="..\..\..\zen\Zen.Base\Zen.Base.csproj" />
+    <ProjectReference Include="..\..\..\zen\Zen.Module.Data.MongoDB\Zen.Module.Data.MongoDB.csproj" />
     <ProjectReference Include="..\..\..\zen\Zen.Pebble.FlexibleData\Zen.Pebble.FlexibleData.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="edu.bucknell.framework">
+      <HintPath>..\..\..\..\es-sd-web\3rdparty\edu.bucknell.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Nyan.Core">
+      <HintPath>..\..\..\..\es-sd-web\3rdparty\Nyan.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

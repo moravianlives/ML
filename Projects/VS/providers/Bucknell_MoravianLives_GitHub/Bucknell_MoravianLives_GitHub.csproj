@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -14,6 +14,15 @@
     <ProjectReference Include="..\..\..\..\zen\Zen.Provider.GitHub\Zen.Provider.GitHub.csproj" />
     <ProjectReference Include="..\..\..\..\zen\Zen.Storage\Zen.Storage.csproj" />
     <ProjectReference Include="..\..\model\edu.bucknell.project.moravianLives.model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="edu.bucknell.framework">
+      <HintPath>..\..\..\..\..\es-sd-web\3rdparty\edu.bucknell.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Nyan.Core">
+      <HintPath>..\..\..\..\..\es-sd-web\3rdparty\Nyan.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

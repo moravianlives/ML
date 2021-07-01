@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "edu.bucknell.project.moravianLives.API/1.0.0": {
         "dependencies": {
+          "Nyan.Modules.Data.MongoDB": "1.0.0",
           "Zen.Base": "0.0.1",
           "Zen.Module.Data.MongoDB": "0.0.1",
           "Zen.Web": "0.0.1",
@@ -2242,7 +2243,10 @@
       },
       "edu.bucknell.project.moravianLives.model/1.0.0": {
         "dependencies": {
+          "Nyan.Modules.Storage.FileSystem": "1.0.0",
+          "Nyan.Modules.Web.Tools": "1.0.0",
           "Zen.Base": "0.0.1",
+          "Zen.Module.Data.MongoDB": "0.0.1",
           "Zen.Pebble.FlexibleData": "1.0.0"
         },
         "runtime": {
@@ -2250,6 +2254,86 @@
         },
         "compile": {
           "edu.bucknell.project.moravianLives.model.dll": {}
+        }
+      },
+      "Nyan.Modules.Cache.Redis/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Cache.Redis.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Cache.Redis.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.MongoDB/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.MongoDB.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Data.MongoDB.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.MySQL/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.MySQL.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Data.MySQL.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.Oracle/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.Oracle.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Data.Oracle.dll": {}
+        }
+      },
+      "Nyan.Modules.Data.SqlServer/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Data.SqlServer.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Data.SqlServer.dll": {}
+        }
+      },
+      "Nyan.Modules.Encryption.AES/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Encryption.AES.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Encryption.AES.dll": {}
+        }
+      },
+      "Nyan.Modules.Log.UDP/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Log.UDP.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Log.UDP.dll": {}
+        }
+      },
+      "Nyan.Modules.Storage.FileSystem/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Storage.FileSystem.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Storage.FileSystem.dll": {}
+        }
+      },
+      "Nyan.Modules.Web.Push/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Web.Push.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Web.Push.dll": {}
+        }
+      },
+      "Nyan.Modules.Web.Tools/1.0.0": {
+        "runtime": {
+          "Nyan.Modules.Web.Tools.dll": {}
+        },
+        "compile": {
+          "Nyan.Modules.Web.Tools.dll": {}
         }
       },
       "Zen.App/0.0.1": {
@@ -2273,6 +2357,14 @@
           "Microsoft.Extensions.Logging.Console": "3.1.9",
           "Microsoft.Extensions.Logging.Debug": "3.1.9",
           "Newtonsoft.Json": "12.0.3",
+          "Nyan.Modules.Cache.Redis": "1.0.0",
+          "Nyan.Modules.Data.MongoDB": "1.0.0",
+          "Nyan.Modules.Data.MySQL": "1.0.0",
+          "Nyan.Modules.Data.Oracle": "1.0.0",
+          "Nyan.Modules.Data.SqlServer": "1.0.0",
+          "Nyan.Modules.Encryption.AES": "1.0.0",
+          "Nyan.Modules.Log.UDP": "1.0.0",
+          "Nyan.Modules.Web.Push": "1.0.0",
           "Serilog": "2.10.0",
           "Serilog.AspNetCore": "3.4.0",
           "Serilog.Formatting.Compact": "1.1.0",
@@ -2414,6 +2506,118 @@
         },
         "compile": {
           "Zen.Web.GraphQL.dll": {}
+        }
+      },
+      "Nyan.Core/0.1.7831.19366": {
+        "runtime": {
+          "Nyan.Core.dll": {
+            "assemblyVersion": "0.1.7831.19366",
+            "fileVersion": "0.1.7831.19366"
+          }
+        }
+      },
+      "StackExchange.Redis/1.2.6.0": {
+        "runtime": {
+          "StackExchange.Redis.dll": {
+            "assemblyVersion": "1.2.6.0",
+            "fileVersion": "1.2.6.0"
+          }
+        }
+      },
+      "MySql.Data/6.9.12.0": {
+        "runtime": {
+          "MySql.Data.dll": {
+            "assemblyVersion": "6.9.12.0",
+            "fileVersion": "6.9.12.0"
+          }
+        }
+      },
+      "Dapper/1.40.0.0": {
+        "runtime": {
+          "Dapper.dll": {
+            "assemblyVersion": "1.40.0.0",
+            "fileVersion": "1.40.0.0"
+          }
+        }
+      },
+      "Oracle.ManagedDataAccess/4.121.2.0": {
+        "runtime": {
+          "Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "4.121.2.0",
+            "fileVersion": "4.121.2.0"
+          }
+        }
+      },
+      "Nyan.Modules.Storage/0.1.7831.19115": {
+        "runtime": {
+          "Nyan.Modules.Storage.dll": {
+            "assemblyVersion": "0.1.7831.19115",
+            "fileVersion": "0.1.7831.19115"
+          }
+        }
+      },
+      "BouncyCastle.Crypto/1.8.2.0": {
+        "runtime": {
+          "BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.2.0",
+            "fileVersion": "1.8.18099.1"
+          }
+        }
+      },
+      "System.Web.Http/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "System.Net.Http.Formatting/5.2.6.0": {
+        "runtime": {
+          "System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "Microsoft.WebSockets/0.2.3.0": {
+        "runtime": {
+          "Microsoft.WebSockets.dll": {
+            "assemblyVersion": "0.2.3.0",
+            "fileVersion": "0.2.3.0"
+          }
+        }
+      },
+      "Nyan.Modules.Web.REST/0.1.7831.19367": {
+        "runtime": {
+          "Nyan.Modules.Web.REST.dll": {
+            "assemblyVersion": "0.1.7831.19367",
+            "fileVersion": "0.1.7831.19367"
+          }
+        }
+      },
+      "System.Web.Http.Cors/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.Cors.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "System.Web.Cors/5.2.6.0": {
+        "runtime": {
+          "System.Web.Cors.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
+        }
+      },
+      "System.Web.Http.WebHost/5.2.6.0": {
+        "runtime": {
+          "System.Web.Http.WebHost.dll": {
+            "assemblyVersion": "5.2.6.0",
+            "fileVersion": "5.2.60510.0"
+          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5182,6 +5386,56 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Nyan.Modules.Cache.Redis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.MongoDB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.MySQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.Oracle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Data.SqlServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Encryption.AES/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Log.UDP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Storage.FileSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.Push/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.Tools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Zen.App/0.0.1": {
       "type": "project",
       "serviceable": false,
@@ -5239,6 +5493,76 @@
     },
     "Zen.Web.GraphQL/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Core/0.1.7831.19366": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StackExchange.Redis/1.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MySql.Data/6.9.12.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper/1.40.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Oracle.ManagedDataAccess/4.121.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Storage/0.1.7831.19115": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.Crypto/1.8.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http.Formatting/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.WebSockets/0.2.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nyan.Modules.Web.REST/0.1.7831.19367": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http.Cors/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Cors/5.2.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.Http.WebHost/5.2.6.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

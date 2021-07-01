@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Zen.Base.Common;
 using Zen.Base.Extension;
 using Zen.Base.Module.Log;
+using Nyan.Modules.Web.Tools;
 
 namespace Zen.Base.Module.Service
 {

@@ -9,12 +9,12 @@ using Zen.Base.Module;
 using Zen.Base.Module.Data.CommonAttributes;
 using Zen.Pebble.FlexibleData.String.Localization;
 using Zen.Pebble.FlexibleData.String.Localization.Concrete;
-using Zen.Module.Data.MongoDB;
 using Zen.Base.Module.Data;
+using edu.bucknell.framework.Service.Configuration.Database.ConnectionBundle;
 
 namespace edu.bucknell.project.moravianLives.model
 {
-    [DataConfigAttribute(ConnectionBundleType = typeof(MongoDbDefaultBundle))]
+    [DataConfigAttribute(ConnectionBundleType = typeof(MongoGenericBundle))]
     [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
     [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
     [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]

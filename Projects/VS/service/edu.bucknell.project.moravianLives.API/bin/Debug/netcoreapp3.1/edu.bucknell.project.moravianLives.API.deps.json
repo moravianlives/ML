@@ -181,7 +181,6 @@
           "System.IO.FileSystem.Watcher": "4.1.2.0",
           "System.IO.IsolatedStorage": "4.1.2.0",
           "System.IO.MemoryMappedFiles": "4.1.2.0",
-          "System.IO.Pipelines.Reference": "4.0.2.0",
           "System.IO.Pipes": "4.1.2.0",
           "System.IO.UnmanagedMemoryStream": "4.1.2.0",
           "System.Linq.Reference": "4.2.2.0",
@@ -221,7 +220,6 @@
           "System.Resources.Reader": "4.1.2.0",
           "System.Resources.ResourceManager.Reference": "4.1.2.0",
           "System.Resources.Writer": "4.1.2.0",
-          "System.Runtime.CompilerServices.Unsafe.Reference": "4.0.6.0",
           "System.Runtime.CompilerServices.VisualC": "4.1.2.0",
           "System.Runtime.Reference": "4.2.2.0",
           "System.Runtime.Extensions.Reference": "4.2.2.0",
@@ -258,7 +256,6 @@
           "System.Text.Encoding.Extensions.Reference": "4.1.2.0",
           "System.Text.Encodings.Web.Reference": "4.0.5.0",
           "System.Text.RegularExpressions.Reference": "4.2.2.0",
-          "System.Threading.Channels.Reference": "4.0.2.0",
           "System.Threading.Reference": "4.1.2.0",
           "System.Threading.Overlapped": "4.1.2.0",
           "System.Threading.Tasks.Dataflow": "4.6.5.0",
@@ -345,20 +342,20 @@
           "lib/netcoreapp3.1/AspNet.Security.OpenId.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.107.2": {
+      "AWSSDK.Core/3.5.1.9": {
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.107.2"
+            "fileVersion": "3.5.1.9"
           }
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         }
       },
       "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.107.2",
+          "AWSSDK.Core": "3.5.1.9",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.9",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.9",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.9"
@@ -373,46 +370,46 @@
           "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.111.3": {
+      "AWSSDK.S3/3.5.0.11": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.107.2"
+          "AWSSDK.Core": "3.5.1.9"
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.S3.dll": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.111.3"
+            "fileVersion": "3.5.0.11"
           }
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         }
       },
-      "AWSSDK.SimpleNotificationService/3.3.101.174": {
+      "AWSSDK.SimpleNotificationService/3.5.0.11": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.107.2"
+          "AWSSDK.Core": "3.5.1.9"
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.101.174"
+            "fileVersion": "3.5.0.11"
           }
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {}
         }
       },
-      "AWSSDK.SQS/3.3.102.117": {
+      "AWSSDK.SQS/3.5.0.11": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.107.2"
+          "AWSSDK.Core": "3.5.1.9"
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.102.117"
+            "fileVersion": "3.5.0.11"
           }
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
         }
       },
       "BouncyCastle.NetCore/1.8.6": {
@@ -470,14 +467,14 @@
           "lib/netstandard2.0/Dapper.Contrib.dll": {}
         }
       },
-      "Dapper.FluentMap/1.8.1": {
+      "Dapper.FluentMap/2.0.0": {
         "dependencies": {
           "Dapper": "2.0.35"
         },
         "runtime": {
           "lib/netstandard2.0/Dapper.FluentMap.dll": {
-            "assemblyVersion": "1.8.1.0",
-            "fileVersion": "1.8.1.0"
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         },
         "compile": {
@@ -664,7 +661,7 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "3.1.9",
           "Microsoft.Net.Http.Headers": "2.2.0",
-          "System.Buffers": "4.5.0"
+          "System.Buffers": "4.5.1"
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.2.0": {
@@ -823,11 +820,11 @@
           "System.Text.Encodings.Web": "4.5.0"
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.700.19.56404"
+            "fileVersion": "4.700.20.21406"
           }
         },
         "compile": {
@@ -1377,7 +1374,7 @@
       "Microsoft.Net.Http.Headers/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.9",
-          "System.Buffers": "4.5.0"
+          "System.Buffers": "4.5.1"
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
@@ -1433,7 +1430,7 @@
           "MongoDB.Bson": "2.11.3",
           "MongoDB.Libmongocrypt": "1.0.0",
           "SharpCompress": "0.23.0",
-          "System.Buffers": "4.5.0"
+          "System.Buffers": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/MongoDB.Driver.Core.dll": {
@@ -1549,7 +1546,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Oracle.ManagedDataAccess.Core/2.19.70": {
+      "Oracle.ManagedDataAccess.Core/2.19.90": {
         "runtime": {
           "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {
             "assemblyVersion": "2.0.19.1",
@@ -1560,16 +1557,16 @@
           "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
         }
       },
-      "Pipelines.Sockets.Unofficial/2.1.6": {
+      "Pipelines.Sockets.Unofficial/2.1.16": {
         "dependencies": {
-          "System.Buffers": "4.5.0",
-          "System.IO.Pipelines": "4.7.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Buffers": "4.5.1",
+          "System.IO.Pipelines": "4.7.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "2.1.6.8267"
+            "fileVersion": "2.1.16.58714"
           }
         },
         "compile": {
@@ -1812,18 +1809,17 @@
           "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {}
         }
       },
-      "StackExchange.Redis/2.1.30": {
+      "StackExchange.Redis/2.1.58": {
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Pipelines.Sockets.Unofficial": "2.1.6",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Pipelines.Sockets.Unofficial": "2.1.16",
           "System.Diagnostics.PerformanceCounter": "4.7.0",
-          "System.IO.Pipelines": "4.7.0",
-          "System.Threading.Channels": "4.7.0"
+          "System.Threading.Channels": "4.7.1"
         },
         "runtime": {
           "lib/netstandard2.0/StackExchange.Redis.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.30.38891"
+            "fileVersion": "2.1.58.34321"
           }
         },
         "compile": {
@@ -1835,7 +1831,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Buffers/4.5.0": {},
+      "System.Buffers/4.5.1": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -2015,7 +2011,7 @@
       "System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
-          "System.Buffers": "4.5.0",
+          "System.Buffers": "4.5.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
@@ -2033,7 +2029,7 @@
       },
       "System.IO.Compression.ZipFile/4.3.0": {
         "dependencies": {
-          "System.Buffers": "4.5.0",
+          "System.Buffers": "4.5.1",
           "System.IO": "4.3.0",
           "System.IO.Compression": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
@@ -2061,7 +2057,17 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.IO.Pipelines/4.7.0": {},
+      "System.IO.Pipelines/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "4.0.2.1",
+            "fileVersion": "4.700.20.12001"
+          }
+        },
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
+        }
+      },
       "System.Linq/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -2210,7 +2216,13 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.6.0",
+            "fileVersion": "4.700.20.12001"
+          }
+        },
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
@@ -2422,7 +2434,7 @@
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
@@ -2456,7 +2468,13 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Threading.Channels/4.7.0": {
+      "System.Threading.Channels/4.7.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.20.21406"
+          }
+        },
         "compile": {
           "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
         }
@@ -2530,58 +2548,72 @@
           "lib/netcoreapp3.0/Westwind.AspNetCore.Markdown.dll": {}
         }
       },
-      "Zen.Cloud/0.5.0-alpha": {
+      "Zen.App/0.6.0-alpha-g07ccb41bd6": {
+        "dependencies": {
+          "Zen.Base": "0.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Zen.App.dll": {
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Zen.App.dll": {}
+        }
+      },
+      "Zen.Cloud/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
           "Zen.Base": "0.0.1",
           "Zen.Storage": "0.0.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Cloud.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Cloud.dll": {}
         }
       },
-      "Zen.Module.Cache.Redis/0.5.0-alpha": {
+      "Zen.Module.Cache.Redis/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
-          "StackExchange.Redis": "2.1.30",
+          "StackExchange.Redis": "2.1.58",
           "Zen.Base": "0.0.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Cache.Redis.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Cache.Redis.dll": {}
         }
       },
-      "Zen.Module.Cloud.AWS/0.5.0-alpha": {
+      "Zen.Module.Cloud.AWS/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.107.2",
+          "AWSSDK.Core": "3.5.1.9",
           "AWSSDK.Extensions.NETCore.Setup": "3.3.101",
-          "AWSSDK.S3": "3.3.111.3",
-          "AWSSDK.SQS": "3.3.102.117",
-          "AWSSDK.SimpleNotificationService": "3.3.101.174",
+          "AWSSDK.S3": "3.5.0.11",
+          "AWSSDK.SQS": "3.5.0.11",
+          "AWSSDK.SimpleNotificationService": "3.5.0.11",
           "Zen.Base": "0.0.1",
-          "Zen.Cloud": "0.5.0-alpha",
+          "Zen.Cloud": "0.6.0-alpha-g07ccb41bd6",
           "Zen.Storage": "0.0.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Cloud.AWS.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Cloud.AWS.dll": {}
         }
       },
-      "Zen.Module.Cloud.Google/0.5.0-alpha": {
+      "Zen.Module.Cloud.Google/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
           "BouncyCastle.NetCore": "1.8.6",
           "Zen.Base": "0.0.1",
@@ -2590,68 +2622,68 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Cloud.Google.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Cloud.Google.dll": {}
         }
       },
-      "Zen.Module.Data.Oracle/0.5.0-alpha": {
+      "Zen.Module.Data.Oracle/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
-          "Oracle.ManagedDataAccess.Core": "2.19.70",
+          "Oracle.ManagedDataAccess.Core": "2.19.90",
           "Zen.Base": "0.0.1",
-          "Zen.Module.Data.Relational": "0.5.0-alpha"
+          "Zen.Module.Data.Relational": "0.6.0-alpha-g07ccb41bd6"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Data.Oracle.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Data.Oracle.dll": {}
         }
       },
-      "Zen.Module.Data.Relational/0.5.0-alpha": {
+      "Zen.Module.Data.Relational/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
           "Dapper": "2.0.35",
           "Dapper.Contrib": "2.0.35",
-          "Dapper.FluentMap": "1.8.1",
+          "Dapper.FluentMap": "2.0.0",
           "Dapper.SqlBuilder": "2.0.35",
           "Zen.Base": "0.0.1",
-          "Zen.Pebble.Database": "0.5.0-alpha"
+          "Zen.Pebble.Database": "0.6.0-alpha-g07ccb41bd6"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Data.Relational.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Data.Relational.dll": {}
         }
       },
-      "Zen.Module.Encryption.AES/0.5.0-alpha": {
+      "Zen.Module.Encryption.AES/0.6.0-alpha-g07ccb41bd6": {
         "dependencies": {
           "Zen.Base": "0.0.1"
         },
         "runtime": {
           "lib/netcoreapp3.1/Zen.Module.Encryption.AES.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/Zen.Module.Encryption.AES.dll": {}
         }
       },
-      "Zen.Pebble.Database/0.5.0-alpha": {
+      "Zen.Pebble.Database/0.6.0-alpha-g07ccb41bd6": {
         "runtime": {
           "lib/netcoreapp3.1/Zen.Pebble.Database.dll": {
-            "assemblyVersion": "0.5.0.0",
-            "fileVersion": "0.5.0.35"
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.0.4"
           }
         },
         "compile": {
@@ -2661,16 +2693,13 @@
       "edu.bucknell.framework/1.0.0": {
         "dependencies": {
           "Westwind.AspNetCore.Markdown": "3.3.6",
-          "Zen.Base": "0.0.1",
-          "Zen.Cloud": "0.5.0-alpha",
-          "Zen.Module.Cache.Redis": "0.5.0-alpha",
-          "Zen.Module.Cloud.AWS": "0.5.0-alpha",
-          "Zen.Module.Cloud.Google": "0.5.0-alpha",
-          "Zen.Module.Data.MongoDB": "0.0.1",
-          "Zen.Module.Data.Oracle": "0.5.0-alpha",
-          "Zen.Module.Encryption.AES": "0.5.0-alpha",
-          "Zen.Storage": "0.0.1",
-          "Zen.Web": "0.0.1",
+          "Zen.App": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Cloud": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Module.Cache.Redis": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Module.Cloud.AWS": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Module.Cloud.Google": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Module.Data.Oracle": "0.6.0-alpha-g07ccb41bd6",
+          "Zen.Module.Encryption.AES": "0.6.0-alpha-g07ccb41bd6",
           "Zen.Web.Auth": "1.0.0"
         },
         "runtime": {
@@ -2690,17 +2719,6 @@
         },
         "compile": {
           "edu.bucknell.project.moravianLives.model.dll": {}
-        }
-      },
-      "Zen.App/0.0.1": {
-        "dependencies": {
-          "Zen.Base": "0.0.1"
-        },
-        "runtime": {
-          "Zen.App.dll": {}
-        },
-        "compile": {
-          "Zen.App.dll": {}
         }
       },
       "Zen.Base/0.0.1": {
@@ -2781,7 +2799,7 @@
       },
       "Zen.Storage/0.0.1": {
         "dependencies": {
-          "Zen.App": "0.0.1",
+          "Zen.App": "0.6.0-alpha-g07ccb41bd6",
           "Zen.Base": "0.0.1",
           "Zen.Service.Maintenance": "0.0.1"
         },
@@ -2798,7 +2816,7 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.9",
           "Microsoft.AspNetCore.SpaServices": "3.1.9",
           "Microsoft.AspNetCore.SpaServices.Extensions": "3.1.9",
-          "Zen.App": "0.0.1",
+          "Zen.App": "0.6.0-alpha-g07ccb41bd6",
           "Zen.Base": "0.0.1",
           "Zen.Media": "0.0.1",
           "Zen.Storage": "0.0.1"
@@ -2812,7 +2830,7 @@
       },
       "Zen.Web.App/0.0.1": {
         "dependencies": {
-          "Zen.App": "0.0.1",
+          "Zen.App": "0.6.0-alpha-g07ccb41bd6",
           "Zen.Base": "0.0.1",
           "Zen.Media": "0.0.1",
           "Zen.Storage": "0.0.1",
@@ -3732,12 +3750,6 @@
         },
         "compileOnly": true
       },
-      "System.IO.Pipelines.Reference/4.0.2.0": {
-        "compile": {
-          "System.IO.Pipelines.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.IO.Pipes/4.1.2.0": {
         "compile": {
           "System.IO.Pipes.dll": {}
@@ -3972,12 +3984,6 @@
         },
         "compileOnly": true
       },
-      "System.Runtime.CompilerServices.Unsafe.Reference/4.0.6.0": {
-        "compile": {
-          "System.Runtime.CompilerServices.Unsafe.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Runtime.CompilerServices.VisualC/4.1.2.0": {
         "compile": {
           "System.Runtime.CompilerServices.VisualC.dll": {}
@@ -4194,12 +4200,6 @@
         },
         "compileOnly": true
       },
-      "System.Threading.Channels.Reference/4.0.2.0": {
-        "compile": {
-          "System.Threading.Channels.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Threading.Reference/4.1.2.0": {
         "compile": {
           "System.Threading.dll": {}
@@ -4399,12 +4399,12 @@
       "path": "aspnet.security.openid/3.1.0",
       "hashPath": "aspnet.security.openid.3.1.0.nupkg.sha512"
     },
-    "AWSSDK.Core/3.3.107.2": {
+    "AWSSDK.Core/3.5.1.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V8WPPqmLAY/B9A0ojA6OfKzOs0dYkm2675sYbAey5VSLfq9vZ6lDN9kuF12ERwj0LLQMjDP6LxYC5RNS+0/iwA==",
-      "path": "awssdk.core/3.3.107.2",
-      "hashPath": "awssdk.core.3.3.107.2.nupkg.sha512"
+      "sha512": "sha512-R2QvghxAOOc1gejmqdU4MlTCJ4g7yAz2t9Qy7mic9CRCjfYTSgcIiNM1h26oU/CZaGNHAK/FJG3CFYV2bALE0w==",
+      "path": "awssdk.core/3.5.1.9",
+      "hashPath": "awssdk.core.3.5.1.9.nupkg.sha512"
     },
     "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
       "type": "package",
@@ -4413,26 +4413,26 @@
       "path": "awssdk.extensions.netcore.setup/3.3.101",
       "hashPath": "awssdk.extensions.netcore.setup.3.3.101.nupkg.sha512"
     },
-    "AWSSDK.S3/3.3.111.3": {
+    "AWSSDK.S3/3.5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hx+mIPE59nk9aoBYmK+nUCwJ8dwTbjGwc6cl/WxxJ85n7FHpsfIql4tkEEzvmAkXcrpCc0JdPehpMVcj6+YecA==",
-      "path": "awssdk.s3/3.3.111.3",
-      "hashPath": "awssdk.s3.3.3.111.3.nupkg.sha512"
+      "sha512": "sha512-pW6WlnrLSxW6OL3VrvaW1XTQWJQ5eTqbFO1qSHIe82hnJt1TQxgoQ+hgbW912i41rwoXZBvDN1q30W2Ebn32VA==",
+      "path": "awssdk.s3/3.5.0.11",
+      "hashPath": "awssdk.s3.3.5.0.11.nupkg.sha512"
     },
-    "AWSSDK.SimpleNotificationService/3.3.101.174": {
+    "AWSSDK.SimpleNotificationService/3.5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QoYAH4lpykTbj/yPty8DrAQHINvEOGg9KnpSXZC8XR3kg1yiUJOCNnrhzhWkotfu0g9ee/RGBSeSLTIsh8eM2w==",
-      "path": "awssdk.simplenotificationservice/3.3.101.174",
-      "hashPath": "awssdk.simplenotificationservice.3.3.101.174.nupkg.sha512"
+      "sha512": "sha512-DVVuKSlCKOuo6t2jleAaB/xtacNUzpS4K2Aa8wCfmmLFU5EPDVfUesiny0QVGRfgIDo7YHC1/HuSsG8rsRh7xQ==",
+      "path": "awssdk.simplenotificationservice/3.5.0.11",
+      "hashPath": "awssdk.simplenotificationservice.3.5.0.11.nupkg.sha512"
     },
-    "AWSSDK.SQS/3.3.102.117": {
+    "AWSSDK.SQS/3.5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B8JsKg0NDOvCxnbnOuiSEzyE0biVtAn/tEFZS19osoPLZ72lGQJhU9hwxPASlRM2qLO4dVIIBUInlnMPWDd90A==",
-      "path": "awssdk.sqs/3.3.102.117",
-      "hashPath": "awssdk.sqs.3.3.102.117.nupkg.sha512"
+      "sha512": "sha512-hhbOInmOQ9Iyd5dlWK9Dpb8gH4aZyMeKnbVlHwGemkbaaMrvlV+iYFZnPizIu3OJJWJPTiE20bQBaOaoXahcbQ==",
+      "path": "awssdk.sqs/3.5.0.11",
+      "hashPath": "awssdk.sqs.3.5.0.11.nupkg.sha512"
     },
     "BouncyCastle.NetCore/1.8.6": {
       "type": "package",
@@ -4462,12 +4462,12 @@
       "path": "dapper.contrib/2.0.35",
       "hashPath": "dapper.contrib.2.0.35.nupkg.sha512"
     },
-    "Dapper.FluentMap/1.8.1": {
+    "Dapper.FluentMap/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ItbccBxRLZR/WOGxqI0mVsPOFNStU9hz3rSb+FoGK7tveCuUhC+dBdAqN1uniQAz+TbpVH2DlCzPG+jzHNwKWg==",
-      "path": "dapper.fluentmap/1.8.1",
-      "hashPath": "dapper.fluentmap.1.8.1.nupkg.sha512"
+      "sha512": "sha512-UFSBuYreRQqOQfzSJ2HOnLvBolg5VFfBjS30ohM8DT4Yra/m+bEKAjVTmCBM1VDahWsPSsKqjX5eLR37MB/O+Q==",
+      "path": "dapper.fluentmap/2.0.0",
+      "hashPath": "dapper.fluentmap.2.0.0.nupkg.sha512"
     },
     "Dapper.SqlBuilder/2.0.35": {
       "type": "package",
@@ -4686,12 +4686,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
-      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
-      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
+      "sha512": "sha512-yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -5050,19 +5050,19 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "Oracle.ManagedDataAccess.Core/2.19.70": {
+    "Oracle.ManagedDataAccess.Core/2.19.90": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bpsnNrSc/dtKx5KSrnG1CTYlAzNzWV0BVmb5HbcPDgMY5FfGLKi5W96e7UHtSq6vniKIt7ptTie9uWGUqOyj4A==",
-      "path": "oracle.manageddataaccess.core/2.19.70",
-      "hashPath": "oracle.manageddataaccess.core.2.19.70.nupkg.sha512"
+      "sha512": "sha512-LJubyJGhnAJl4aoZfVva3QMnagOW7k0W5ma1b4Th42l80wx9+h3/jsfTpj6sXCph3VZGZbIsp294z9UNBfkb0Q==",
+      "path": "oracle.manageddataaccess.core/2.19.90",
+      "hashPath": "oracle.manageddataaccess.core.2.19.90.nupkg.sha512"
     },
-    "Pipelines.Sockets.Unofficial/2.1.6": {
+    "Pipelines.Sockets.Unofficial/2.1.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Yv5qRZm2V5sgfZfpoGog0BTKroPAymIWkBfAQ0hE6xAhK/uIFLJmfSMHdV4ziJglJu9VcYpbK5ENDL2x5Q6zRQ==",
-      "path": "pipelines.sockets.unofficial/2.1.6",
-      "hashPath": "pipelines.sockets.unofficial.2.1.6.nupkg.sha512"
+      "sha512": "sha512-kIMCOfHBr+BRrUdz0zSGAGKC4lVO4pT4Py6XHVaGCV3mppc1BJWcbxYDEVLBFIBu6DMGq2rVRKcl6odx8lMGwg==",
+      "path": "pipelines.sockets.unofficial/2.1.16",
+      "hashPath": "pipelines.sockets.unofficial.2.1.16.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -5260,12 +5260,12 @@
       "path": "sixlabors.imagesharp/1.0.1",
       "hashPath": "sixlabors.imagesharp.1.0.1.nupkg.sha512"
     },
-    "StackExchange.Redis/2.1.30": {
+    "StackExchange.Redis/2.1.58": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eO9cvk0xxZ3pVFsIPC79Uf+Nb7Kw8fGHQXe5Sna9iN7bWi6InA76bcNBR7QaDiIZe4PKguk9pg8PYhkZSX+dsA==",
-      "path": "stackexchange.redis/2.1.30",
-      "hashPath": "stackexchange.redis.2.1.30.nupkg.sha512"
+      "sha512": "sha512-4DhbxL0SE/jNdX8TmqHHmu/wv4alOHsWJiXUTZAhqelnSkczikdKoWhPqUUCzfAp6tX5AKUKxEPE0dHVXOyMzA==",
+      "path": "stackexchange.redis/2.1.58",
+      "hashPath": "stackexchange.redis.2.1.58.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -5274,12 +5274,12 @@
       "path": "system.appcontext/4.3.0",
       "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
     },
-    "System.Buffers/4.5.0": {
+    "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
-      "path": "system.buffers/4.5.0",
-      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -5435,12 +5435,12 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
-    "System.IO.Pipelines/4.7.0": {
+    "System.IO.Pipelines/4.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-S0L7oyWyQdVzD+5xIvcC8h44Vc+FY+qXDCLRh2+YsuBDORNphcxNX+tXR6ByLMjQ/7jDaXxsYBF6qbAr7ZIaFw==",
-      "path": "system.io.pipelines/4.7.0",
-      "hashPath": "system.io.pipelines.4.7.0.nupkg.sha512"
+      "sha512": "sha512-TyMTasnXQt7U4k13RQ7tA3CrfWEkvWjR635SFfnKVwwMOgClLE5mdHSkG2D13BLIdNwbPTGVQnhQB8Rk7f53Rg==",
+      "path": "system.io.pipelines/4.7.1",
+      "hashPath": "system.io.pipelines.4.7.1.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",
@@ -5554,12 +5554,12 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
-      "path": "system.runtime.compilerservices.unsafe/4.7.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+      "sha512": "sha512-zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
@@ -5736,12 +5736,12 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
-    "System.Threading.Channels/4.7.0": {
+    "System.Threading.Channels/4.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gdOOXBhtt2UpTxYJm1DRmoqNfYg5ypvhzhVt0vxKhzxXFjS81r8yIOSFsJYLRa1Jc14GBAqCnjxJstO3zBN7gg==",
-      "path": "system.threading.channels/4.7.0",
-      "hashPath": "system.threading.channels.4.7.0.nupkg.sha512"
+      "sha512": "sha512-6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
+      "path": "system.threading.channels/4.7.1",
+      "hashPath": "system.threading.channels.4.7.1.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
@@ -5792,61 +5792,68 @@
       "path": "westwind.aspnetcore.markdown/3.3.6",
       "hashPath": "westwind.aspnetcore.markdown.3.3.6.nupkg.sha512"
     },
-    "Zen.Cloud/0.5.0-alpha": {
+    "Zen.App/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5n31OJOhV5Zl+9rzg4pXk+2mzNYLkg4wQmQa1p+k5yN5LSvGVljD8mS0yEdv4eHTjKcckwbnCeSAumDpVdQuyg==",
-      "path": "zen.cloud/0.5.0-alpha",
-      "hashPath": "zen.cloud.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-O6YKGUAIWHc7q4sm5/qX7j7zZYdJqL/E3Vr4pb92AOXnjbsxNyfxj/AQzdkx3vYGnq+IwkVL7fuMIF8tfa7yug==",
+      "path": "zen.app/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.app.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Cache.Redis/0.5.0-alpha": {
+    "Zen.Cloud/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LMzRsMFrXjLZ0+0q1X+C80EGOzig2OxsffW7Epe3695W3RHZh961x/1Vaos1XqFl8/LuKJt7KaZGLEq+jdWA2Q==",
-      "path": "zen.module.cache.redis/0.5.0-alpha",
-      "hashPath": "zen.module.cache.redis.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-FpZhVSCDAx5qEsENhACm4VtPpeHsYDXz1c200/T/gPbGxtGWwu9QARczfhskx0jaBzN8D7c/44c4AcrBbu1jdA==",
+      "path": "zen.cloud/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.cloud.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Cloud.AWS/0.5.0-alpha": {
+    "Zen.Module.Cache.Redis/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-veNFrkdkEpmF7eSxKqwtH6RW1AWPULOTz+oOWGUvXwjJRWJMZbKwoFby5/dlJgjl6CbmOP4LscH+43M1Jw626g==",
-      "path": "zen.module.cloud.aws/0.5.0-alpha",
-      "hashPath": "zen.module.cloud.aws.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-Y3rF7T1fGZ6tEciqkiE7VO2f7n0EENTAUbcETPLdV4jND3oNVkD64i4EtDwQBbXaQTbkNvR633OAWazHjb8RXQ==",
+      "path": "zen.module.cache.redis/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.cache.redis.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Cloud.Google/0.5.0-alpha": {
+    "Zen.Module.Cloud.AWS/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Pr/ZC+JJ8mzVrzCOVW6Z+oTOI0HQGvhWMsEYdxWDKeFNC53QnNJ7O2oZRBXMmt0Ehy1z/+Q5lcUnP5lvq6snpw==",
-      "path": "zen.module.cloud.google/0.5.0-alpha",
-      "hashPath": "zen.module.cloud.google.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-JBIeZEEOaH5HR/wncSDQUv02+Re8NF7ClMj7bBxPqJnK/dsY3HuhCBe50GMtN8xVJvKAKt4Z5ZVt7NeNuYC+FA==",
+      "path": "zen.module.cloud.aws/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.cloud.aws.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Data.Oracle/0.5.0-alpha": {
+    "Zen.Module.Cloud.Google/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ste7lFcplxfNppVrT76iCozQsSfJrstrQQmJBMXLFITXTnwD/stqflyRWLZNZGi22kzS8MsAFtNCPr65E7NjVw==",
-      "path": "zen.module.data.oracle/0.5.0-alpha",
-      "hashPath": "zen.module.data.oracle.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-+lqyqaoaO9WoeT/uE9ZM1FucbxGjLOTbqb0l8MWj2BHQxqasayqsnSC05lJKX9kidt2q9dqm5eeZTK3nyrO3Ig==",
+      "path": "zen.module.cloud.google/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.cloud.google.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Data.Relational/0.5.0-alpha": {
+    "Zen.Module.Data.Oracle/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AuOvXyzYQySUQdOVMfNyhpPc7zN6BiTnZ8Jpjg+wA6FAost0uNR/VYmHYnHAfKV1wQK+ABx8X30RANUQpc95ww==",
-      "path": "zen.module.data.relational/0.5.0-alpha",
-      "hashPath": "zen.module.data.relational.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-52euA7VV7JvUPJN2mzYbthJm5F65LN1q5ZIuQjgf3HBWF+2DeozrGN2+y0qp6JoGFahMQimo5zwxmulLsFCeKA==",
+      "path": "zen.module.data.oracle/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.data.oracle.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Module.Encryption.AES/0.5.0-alpha": {
+    "Zen.Module.Data.Relational/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Vu9HGeXgWFkU9UKqGr4RXr+JVvZ94GTNGRiNHGk1O/Lo8YGtLYY0hOuC2cgrBOqChY3irs5sNhV4Hcq3eGbUag==",
-      "path": "zen.module.encryption.aes/0.5.0-alpha",
-      "hashPath": "zen.module.encryption.aes.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-OS4fx6Z+bW/0HYFxgX/640Kvs60AvK1KwIga5R6uT8ciOYW+XSbqiVyoK8oYbSARfscAcDftLDGeG0oqt1w6fg==",
+      "path": "zen.module.data.relational/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.data.relational.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
-    "Zen.Pebble.Database/0.5.0-alpha": {
+    "Zen.Module.Encryption.AES/0.6.0-alpha-g07ccb41bd6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4oDv4sKVyyUisXyJEqSLLDnQqnkGx3Z/u/f4orQuoFFz40H4W1QsNIUbSDNA7KQf09yFKYdSV36Ja0Htd9gdRA==",
-      "path": "zen.pebble.database/0.5.0-alpha",
-      "hashPath": "zen.pebble.database.0.5.0-alpha.nupkg.sha512"
+      "sha512": "sha512-2uQCwgrJo/1qJj6vCCK8zig6RIktcrcR967tYeMzBE2iBBMXrI0BiS6pVZkgvSMbfGU+PSYwhK8lToZXMLaY9g==",
+      "path": "zen.module.encryption.aes/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.module.encryption.aes.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
+    },
+    "Zen.Pebble.Database/0.6.0-alpha-g07ccb41bd6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GTCwwoO5FeV3FqSr06cn94McG9igQwHSAKAJSGiKXET/bx+xkQmNA3LDX+H2uK32SqZDtALPmHL8I3XEPlJdlg==",
+      "path": "zen.pebble.database/0.6.0-alpha-g07ccb41bd6",
+      "hashPath": "zen.pebble.database.0.6.0-alpha-g07ccb41bd6.nupkg.sha512"
     },
     "edu.bucknell.framework/1.0.0": {
       "type": "project",
@@ -5854,11 +5861,6 @@
       "sha512": ""
     },
     "edu.bucknell.project.moravianLives.model/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Zen.App/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -6648,11 +6650,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.IO.Pipelines.Reference/4.0.2.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.IO.Pipes/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -6848,11 +6845,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Runtime.CompilerServices.Unsafe.Reference/4.0.6.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Runtime.CompilerServices.VisualC/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -7029,11 +7021,6 @@
       "sha512": ""
     },
     "System.Text.RegularExpressions.Reference/4.2.2.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Threading.Channels.Reference/4.0.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

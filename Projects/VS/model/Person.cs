@@ -16,9 +16,9 @@ using edu.bucknell.framework.Service.Configuration.Database.ConnectionBundle;
 namespace edu.bucknell.project.moravianLives.model
 {
     [DataConfigAttribute(ConnectionBundleType = typeof(MongoGenericBundle))]
-    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
-    [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
-    [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "uat")]
+    [DataEnvironmentMappingAttribute(Origin = "dev", Target = "uat")]
+    //[DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
     public class Person : Data<Person>, IFacts, IDataId
     {
         [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; } = Guid.NewGuid().ToShortGuid();

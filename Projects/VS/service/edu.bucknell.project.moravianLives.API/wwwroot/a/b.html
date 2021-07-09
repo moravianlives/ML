@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html ng-app="personApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="b.js"></script>
+</head>
+<body>
+    <h2>Person</h2>
+    <div ng-controller="personController as personList">
+        <span>{{personList.persons.length}} persons</span>
+        <!--[ <a href="" ng-click="todoList.archive()">archive</a> ]-->
+        <ul class="unstyled">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th scope="col">FirstName</th>
+                        <th scope="col">LastName</th>
+                        <th scope="col">Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="i in personList.persons track by $index">
+                       
+                        <td>{{i.Firstname.Value}}</td>
+                        <td>{{i.Lastname.Value}}</td>
+                        <td>{{i.Gender.Value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+    </div>
+</body>
+</html>

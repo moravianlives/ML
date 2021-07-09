@@ -33,11 +33,11 @@ namespace edu.bucknell.project.moravianLives.model.Common.Reference
 
                 // This will fetch the target model OR create an empty one. Let's also use the local DataSets so we can preserve any changes.
 
-                if (referenceProbe != null)
+               // if (referenceProbe != null)
                     targetModel = Set.Fetch(referenceProbe?.Id);
 
-                else
-                    targetModel = Set.Fetch(Resolve(referenceModel));
+                //else
+                //    targetModel = Set.Fetch(Resolve(referenceModel).Id);
 
 
 

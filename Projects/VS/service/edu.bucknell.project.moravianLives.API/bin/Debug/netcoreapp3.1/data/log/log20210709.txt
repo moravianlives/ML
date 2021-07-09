@@ -1,0 +1,883 @@
+2021-07-09 10:04:36.898 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:04:36.956 -04:00 [ERR] vhqjsf9W : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 10:04:36.956 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:04:36.956 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 10:04:36.956 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : 3zLeDJlA : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:04:36.956 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : g29EQdus : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:04:36.958 -04:00 [DBG] 
+2021-07-09 10:04:36.958 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 10:04:36.959 -04:00 [DBG] 
+2021-07-09 10:04:36.959 -04:00 [VRB] Providers:
+2021-07-09 10:04:36.960 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 10:04:36.960 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 10:04:36.961 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:04:36.962 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 10:04:36.962 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 10:04:36.963 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 10:04:36.963 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 10:04:36.964 -04:00 [VRB] State:
+2021-07-09 10:04:36.964 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 10:04:36.964 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 10:04:36.965 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 10:04:36.966 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 10:04:36.967 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 10:04:36.967 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 10:04:36.968 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 10:04:36.968 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:04:36.969 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:04:36.969 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 10:04:36.969 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 10:04:36.970 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:04:36.970 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 10:04:36.971 -04:00 [DBG] 
+2021-07-09 10:04:36.971 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 10:04:47.522 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 10:04:47.776 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 10:04:48.064 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 10:04:48.072 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 10:04:48.253 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:04:48.256 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:04:48.440 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 10:04:48.442 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 10:04:48.656 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 10:04:48.659 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 10:04:48.721 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 10:04:53.810 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:04:53.819 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:04:53.917 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 10:04:53.919 -04:00 [DBG] 
+2021-07-09 10:04:53.920 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 10:04:53.920 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 10:04:53.921 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 10:04:53.922 -04:00 [DBG] 
+2021-07-09 10:04:53.923 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 10:04:54.040 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 10:05:09.542 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 10:05:09.551 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 10:05:09.778 -04:00 [INF] :00:00:00.473 [Total elapsed time]
+2021-07-09 10:32:18.979 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:32:19.035 -04:00 [ERR] MLivhIvV : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 10:32:19.035 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:32:19.035 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 10:32:19.035 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : KWrifST2 : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:32:19.035 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : GPqsUILs : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:32:19.037 -04:00 [DBG] 
+2021-07-09 10:32:19.038 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 10:32:19.038 -04:00 [DBG] 
+2021-07-09 10:32:19.038 -04:00 [VRB] Providers:
+2021-07-09 10:32:19.040 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 10:32:19.041 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 10:32:19.042 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:32:19.042 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 10:32:19.043 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 10:32:19.044 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 10:32:19.044 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 10:32:19.045 -04:00 [VRB] State:
+2021-07-09 10:32:19.045 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 10:32:19.046 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 10:32:19.047 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 10:32:19.047 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 10:32:19.048 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 10:32:19.049 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 10:32:19.049 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 10:32:19.050 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:32:19.051 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:32:19.051 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 10:32:19.052 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 10:32:19.053 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:32:19.054 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 10:32:19.054 -04:00 [DBG] 
+2021-07-09 10:32:19.058 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 10:32:19.148 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 10:32:19.486 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 10:32:19.794 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 10:32:19.806 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 10:32:20.026 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:32:20.030 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:32:20.261 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 10:32:20.264 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 10:32:20.523 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 10:32:20.536 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 10:32:20.616 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 10:32:25.721 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:32:25.734 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:32:26.019 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 10:36:07.275 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:36:07.332 -04:00 [ERR] QsjiUEfG : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 10:36:07.332 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:36:07.332 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : OHPCLJ6K : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:36:07.332 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : zpFhrrKn : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:36:07.332 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 10:36:07.334 -04:00 [DBG] 
+2021-07-09 10:36:07.334 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 10:36:07.335 -04:00 [DBG] 
+2021-07-09 10:36:07.335 -04:00 [VRB] Providers:
+2021-07-09 10:36:07.337 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 10:36:07.338 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 10:36:07.338 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:36:07.339 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 10:36:07.339 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 10:36:07.340 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 10:36:07.341 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 10:36:07.341 -04:00 [VRB] State:
+2021-07-09 10:36:07.343 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 10:36:07.344 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 10:36:07.345 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 10:36:07.345 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 10:36:07.346 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 10:36:07.347 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 10:36:07.347 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 10:36:07.348 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:36:07.352 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:36:07.353 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 10:36:07.354 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 10:36:07.354 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:36:07.355 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 10:36:07.356 -04:00 [DBG] 
+2021-07-09 10:36:07.357 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 10:36:07.432 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 10:36:07.610 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 10:36:07.955 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 10:36:07.972 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 10:36:08.186 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:36:08.190 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:36:08.384 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 10:36:08.386 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 10:36:08.583 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 10:36:08.586 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 10:36:08.633 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 10:36:13.755 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:36:13.764 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:36:14.034 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 10:49:56.597 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:49:56.652 -04:00 [ERR] rwy2rC4m : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 10:49:56.652 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:49:56.652 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 10:49:56.652 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : IWS9g9KC : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:49:56.652 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : SWQsNX7z : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:49:56.653 -04:00 [DBG] 
+2021-07-09 10:49:56.654 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 10:49:56.654 -04:00 [DBG] 
+2021-07-09 10:49:56.654 -04:00 [VRB] Providers:
+2021-07-09 10:49:56.655 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 10:49:56.658 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 10:49:56.659 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:49:56.659 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 10:49:56.660 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 10:49:56.661 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 10:49:56.662 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 10:49:56.662 -04:00 [VRB] State:
+2021-07-09 10:49:56.663 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 10:49:56.664 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 10:49:56.664 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 10:49:56.665 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 10:49:56.665 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 10:49:56.666 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 10:49:56.666 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 10:49:56.667 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:49:56.667 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:49:56.668 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 10:49:56.668 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 10:49:56.669 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:49:56.669 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 10:49:56.670 -04:00 [DBG] 
+2021-07-09 10:49:56.671 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 10:49:56.748 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 10:49:56.920 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 10:49:57.213 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 10:49:57.225 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 10:49:57.418 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:49:57.421 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:49:57.623 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 10:49:57.624 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 10:49:57.811 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 10:49:57.819 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 10:49:57.864 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 10:50:03.004 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:50:03.016 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:50:03.303 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 10:55:38.413 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:55:38.472 -04:00 [ERR] ze61vE8M : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 10:55:38.472 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:55:38.472 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 10:55:38.472 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : 5xb5IjWR : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:55:38.472 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : KBdrH4XG : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 10:55:38.474 -04:00 [DBG] 
+2021-07-09 10:55:38.475 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 10:55:38.475 -04:00 [DBG] 
+2021-07-09 10:55:38.475 -04:00 [VRB] Providers:
+2021-07-09 10:55:38.477 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 10:55:38.477 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 10:55:38.478 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:55:38.479 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 10:55:38.480 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 10:55:38.483 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 10:55:38.484 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 10:55:38.484 -04:00 [VRB] State:
+2021-07-09 10:55:38.485 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 10:55:38.486 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 10:55:38.489 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 10:55:38.490 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 10:55:38.490 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 10:55:38.491 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 10:55:38.491 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 10:55:38.492 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 10:55:38.493 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 10:55:38.493 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 10:55:38.493 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 10:55:38.494 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 10:55:38.495 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 10:55:38.495 -04:00 [DBG] 
+2021-07-09 10:55:38.496 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 10:55:38.579 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 10:55:38.750 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 10:55:39.102 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 10:55:39.113 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 10:55:39.319 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:55:39.322 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 10:55:39.552 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 10:55:39.560 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 10:55:39.767 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 10:55:39.770 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 10:55:39.817 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 10:55:44.912 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:55:44.921 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 10:55:45.181 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 11:05:44.509 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 11:05:44.510 -04:00 [DBG] 
+2021-07-09 11:05:44.511 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 11:05:44.512 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 11:05:44.512 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 11:05:44.513 -04:00 [DBG] 
+2021-07-09 11:05:44.514 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 11:36:49.803 -04:00 [INF] Stack shutdown initiated | Process Exit
+2021-07-09 11:36:49.805 -04:00 [INF] Session Start | 7/9/2021 10:55:38 AM
+2021-07-09 11:36:49.805 -04:00 [INF] Session End | 7/9/2021 11:36:49 AM
+2021-07-09 11:36:49.806 -04:00 [INF] Session lifetime | 00:41:11.4238091
+2021-07-09 11:36:49.806 -04:00 [INF]   _|\_/|  ZZZzzz
+2021-07-09 11:36:49.807 -04:00 [INF] c(_(-.-)
+2021-07-09 12:53:49.117 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 12:53:49.174 -04:00 [ERR] sRG7zUoR : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 12:53:49.174 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 12:53:49.174 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 12:53:49.174 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : pVNqdMFH : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 12:53:49.174 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : yJokX3VD : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 12:53:49.176 -04:00 [DBG] 
+2021-07-09 12:53:49.177 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 12:53:49.177 -04:00 [DBG] 
+2021-07-09 12:53:49.177 -04:00 [VRB] Providers:
+2021-07-09 12:53:49.178 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 12:53:49.178 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 12:53:49.179 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 12:53:49.180 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 12:53:49.181 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 12:53:49.181 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 12:53:49.182 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 12:53:49.182 -04:00 [VRB] State:
+2021-07-09 12:53:49.183 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 12:53:49.183 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 12:53:49.183 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 12:53:49.184 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 12:53:49.184 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 12:53:49.185 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 12:53:49.185 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 12:53:49.185 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 12:53:49.186 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 12:53:49.186 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 12:53:49.186 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 12:53:49.187 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 12:53:49.187 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 12:53:49.188 -04:00 [DBG] 
+2021-07-09 12:53:49.188 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 12:53:49.283 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 12:53:49.514 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 12:53:49.838 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 12:53:49.848 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 12:53:50.055 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 12:53:50.056 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 12:53:50.236 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 12:53:50.237 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 12:53:50.436 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 12:53:50.441 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 12:53:50.508 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 12:53:55.594 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 12:53:55.623 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 12:53:56.170 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 12:53:56.219 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 12:53:56.220 -04:00 [DBG] 
+2021-07-09 12:53:56.220 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 12:53:56.221 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 12:53:56.221 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 12:53:56.222 -04:00 [DBG] 
+2021-07-09 12:53:56.223 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 12:55:59.452 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 12:55:59.512 -04:00 [ERR] RaJbuu8z : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 12:55:59.512 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 12:55:59.512 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : nPlTUIrq : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 12:55:59.512 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : hI3GBLdm : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 12:55:59.512 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 12:55:59.516 -04:00 [DBG] 
+2021-07-09 12:55:59.517 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 12:55:59.517 -04:00 [DBG] 
+2021-07-09 12:55:59.518 -04:00 [VRB] Providers:
+2021-07-09 12:55:59.519 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 12:55:59.519 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 12:55:59.520 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 12:55:59.520 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 12:55:59.521 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 12:55:59.522 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 12:55:59.523 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 12:55:59.523 -04:00 [VRB] State:
+2021-07-09 12:55:59.524 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 12:55:59.524 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 12:55:59.525 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 12:55:59.525 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 12:55:59.526 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 12:55:59.526 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 12:55:59.526 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 12:55:59.527 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 12:55:59.527 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 12:55:59.530 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 12:55:59.531 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 12:55:59.531 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 12:55:59.531 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 12:55:59.532 -04:00 [DBG] 
+2021-07-09 12:55:59.533 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 12:55:59.629 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 12:55:59.812 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 12:56:00.155 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 12:56:00.166 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 12:56:00.367 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 12:56:00.368 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 12:56:00.570 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 12:56:00.575 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 12:56:00.777 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 12:56:00.780 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 12:56:00.826 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 12:56:05.948 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 12:56:05.959 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 12:56:06.367 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:00:37.341 -04:00 [INF] Stack shutdown initiated | Process Exit
+2021-07-09 13:00:37.343 -04:00 [INF] Session Start | 7/9/2021 12:55:59 PM
+2021-07-09 13:00:37.344 -04:00 [INF] Session End | 7/9/2021 1:00:37 PM
+2021-07-09 13:00:37.344 -04:00 [INF] Session lifetime | 00:04:37.9184852
+2021-07-09 13:00:37.345 -04:00 [INF]   _|\_/|  ZZZzzz
+2021-07-09 13:00:37.345 -04:00 [INF] c(_(-.-)
+2021-07-09 13:04:01.018 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:04:01.068 -04:00 [ERR] sPF2dVOJ : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:04:01.069 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:04:01.069 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : dhxvbnbV : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:04:01.069 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : vBodUfhI : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:04:01.069 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:04:01.070 -04:00 [DBG] 
+2021-07-09 13:04:01.071 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:04:01.071 -04:00 [DBG] 
+2021-07-09 13:04:01.071 -04:00 [VRB] Providers:
+2021-07-09 13:04:01.072 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:04:01.072 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:04:01.073 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:04:01.073 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:04:01.074 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:04:01.075 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:04:01.076 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:04:01.076 -04:00 [VRB] State:
+2021-07-09 13:04:01.077 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:04:01.078 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:04:01.079 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:04:01.080 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:04:01.082 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:04:01.083 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:04:01.084 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:04:01.084 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:04:01.085 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:04:01.085 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:04:01.086 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:04:01.087 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:04:01.088 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:04:01.088 -04:00 [DBG] 
+2021-07-09 13:04:01.089 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:04:01.164 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:04:01.328 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:04:01.651 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:04:01.662 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:04:01.863 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:04:01.867 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:04:02.060 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:04:02.061 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:04:02.247 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:04:02.249 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:04:02.287 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:04:07.425 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:04:07.433 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:04:07.787 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:07:07.284 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:07:07.345 -04:00 [ERR] ygwZmLoj : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:07:07.345 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:07:07.345 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : LINpb1OE : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:07:07.345 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : 4zwR1Aj1 : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:07:07.346 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:07:07.347 -04:00 [DBG] 
+2021-07-09 13:07:07.348 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:07:07.348 -04:00 [DBG] 
+2021-07-09 13:07:07.348 -04:00 [VRB] Providers:
+2021-07-09 13:07:07.349 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:07:07.350 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:07:07.351 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:07:07.351 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:07:07.352 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:07:07.353 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:07:07.354 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:07:07.355 -04:00 [VRB] State:
+2021-07-09 13:07:07.356 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:07:07.357 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:07:07.358 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:07:07.359 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:07:07.360 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:07:07.361 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:07:07.363 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:07:07.363 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:07:07.364 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:07:07.368 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:07:07.369 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:07:07.370 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:07:07.372 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:07:07.373 -04:00 [DBG] 
+2021-07-09 13:07:07.374 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:07:07.453 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:07:07.633 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:07:07.923 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:07:07.932 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:07:08.136 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:07:08.139 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:07:08.350 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:07:08.353 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:07:08.549 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:07:08.553 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:07:08.595 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:07:13.705 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:07:13.715 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:07:14.125 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:08:27.182 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:08:27.238 -04:00 [ERR] gFE8ZBqz : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:08:27.238 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:08:27.238 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : pN7zolib : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:08:27.238 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : dmnFEgNi : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:08:27.238 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:08:27.240 -04:00 [DBG] 
+2021-07-09 13:08:27.240 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:08:27.240 -04:00 [DBG] 
+2021-07-09 13:08:27.241 -04:00 [VRB] Providers:
+2021-07-09 13:08:27.241 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:08:27.242 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:08:27.243 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:08:27.243 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:08:27.244 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:08:27.245 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:08:27.245 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:08:27.246 -04:00 [VRB] State:
+2021-07-09 13:08:27.247 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:08:27.248 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:08:27.249 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:08:27.249 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:08:27.253 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:08:27.254 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:08:27.255 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:08:27.255 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:08:27.256 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:08:27.257 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:08:27.257 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:08:27.258 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:08:27.259 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:08:27.259 -04:00 [DBG] 
+2021-07-09 13:08:27.260 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:08:27.336 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:08:27.504 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:08:27.809 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:08:27.817 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:08:28.015 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:08:28.019 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:08:28.229 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:08:28.231 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:08:28.432 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:08:28.437 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:08:28.480 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:08:33.614 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:08:33.624 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:08:33.930 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:08:53.939 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:08:53.948 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:08:54.284 -04:00 [INF] :00:00:00.566 [Total elapsed time]
+2021-07-09 13:10:40.631 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:10:40.689 -04:00 [ERR] KkL48ngZ : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:10:40.690 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:10:40.690 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : ongCa654 : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:10:40.690 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : pNv1ioXH : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:10:40.690 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:10:40.691 -04:00 [DBG] 
+2021-07-09 13:10:40.692 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:10:40.692 -04:00 [DBG] 
+2021-07-09 13:10:40.693 -04:00 [VRB] Providers:
+2021-07-09 13:10:40.694 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:10:40.694 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:10:40.695 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:10:40.696 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:10:40.697 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:10:40.697 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:10:40.698 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:10:40.698 -04:00 [VRB] State:
+2021-07-09 13:10:40.699 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:10:40.699 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:10:40.699 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:10:40.700 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:10:40.700 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:10:40.701 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:10:40.701 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:10:40.702 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:10:40.705 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:10:40.706 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:10:40.706 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:10:40.707 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:10:40.707 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:10:40.707 -04:00 [DBG] 
+2021-07-09 13:10:40.708 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:10:40.785 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:10:40.969 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:10:41.262 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:10:41.272 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:10:41.462 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:10:41.463 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:10:41.665 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:10:41.669 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:10:41.863 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:10:41.867 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:10:41.910 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:10:47.133 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:10:47.155 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:10:47.186 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:10:47.187 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:10:47.502 -04:00 [INF] :00:00:00.750 [Total elapsed time]
+2021-07-09 13:10:47.785 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:12:53.946 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:12:54.005 -04:00 [ERR] 6DDFHnlH : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:12:54.005 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:12:54.005 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:12:54.005 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : WHRFyLys : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:12:54.005 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : xcRZ9eF7 : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:12:54.007 -04:00 [DBG] 
+2021-07-09 13:12:54.008 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:12:54.008 -04:00 [DBG] 
+2021-07-09 13:12:54.008 -04:00 [VRB] Providers:
+2021-07-09 13:12:54.009 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:12:54.010 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:12:54.011 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:12:54.011 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:12:54.012 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:12:54.013 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:12:54.013 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:12:54.017 -04:00 [VRB] State:
+2021-07-09 13:12:54.020 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:12:54.021 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:12:54.021 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:12:54.022 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:12:54.023 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:12:54.024 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:12:54.025 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:12:54.025 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:12:54.026 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:12:54.027 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:12:54.030 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:12:54.031 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:12:54.031 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:12:54.033 -04:00 [DBG] 
+2021-07-09 13:12:54.034 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:12:54.116 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:12:54.296 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:12:54.582 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:12:54.593 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:12:54.789 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:12:54.792 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:12:54.994 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:12:54.996 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:12:55.262 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:12:55.266 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:12:55.309 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:13:00.445 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:13:00.455 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:13:00.741 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:15:38.574 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:15:38.582 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:15:38.941 -04:00 [INF] :00:00:00.567 [Total elapsed time]
+2021-07-09 13:15:57.504 -04:00 [INF] :00:00:00.229 [Total elapsed time]
+2021-07-09 13:17:20.138 -04:00 [INF] :00:00:00.099 [Total elapsed time]
+2021-07-09 13:17:37.898 -04:00 [INF] :00:00:00.199 [Total elapsed time]
+2021-07-09 13:17:54.995 -04:00 [INF] :00:00:00.234 [Total elapsed time]
+2021-07-09 13:19:06.959 -04:00 [INF] :00:00:00.091 [Total elapsed time]
+2021-07-09 13:19:13.725 -04:00 [INF] :00:00:00.079 [Total elapsed time]
+2021-07-09 13:23:25.888 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:23:25.944 -04:00 [ERR] zFvIBcgQ : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:23:25.944 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:23:25.944 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:23:25.944 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : dUnAr7Oz : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:23:25.944 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : fUtbnvfX : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:23:25.945 -04:00 [DBG] 
+2021-07-09 13:23:25.946 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:23:25.946 -04:00 [DBG] 
+2021-07-09 13:23:25.946 -04:00 [VRB] Providers:
+2021-07-09 13:23:25.947 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:23:25.948 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:23:25.948 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:23:25.949 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:23:25.949 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:23:25.950 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:23:25.951 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:23:25.952 -04:00 [VRB] State:
+2021-07-09 13:23:25.954 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:23:25.955 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:23:25.956 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:23:25.956 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:23:25.957 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:23:25.957 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:23:25.958 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:23:25.958 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:23:25.959 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:23:25.959 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:23:25.960 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:23:25.961 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:23:25.961 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:23:25.962 -04:00 [DBG] 
+2021-07-09 13:23:25.962 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:23:26.039 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:23:26.208 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:23:26.506 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:23:26.516 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:23:26.709 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:23:26.710 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:23:26.895 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:23:26.896 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:23:27.102 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:23:27.108 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:23:27.151 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:23:32.281 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:23:32.292 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:23:32.551 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:25:04.086 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:25:04.094 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 13:25:06.350 -04:00 [INF] :00:00:02.481 [Total elapsed time]
+2021-07-09 13:25:41.038 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:25:41.094 -04:00 [ERR] 1NNf4uTf : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:25:41.094 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:25:41.094 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : QFpPVM9i : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:25:41.094 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : Qc1lT5Dg : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:25:41.094 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:25:41.095 -04:00 [DBG] 
+2021-07-09 13:25:41.096 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:25:41.097 -04:00 [DBG] 
+2021-07-09 13:25:41.097 -04:00 [VRB] Providers:
+2021-07-09 13:25:41.098 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:25:41.099 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:25:41.100 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:25:41.100 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:25:41.101 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:25:41.102 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:25:41.103 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:25:41.104 -04:00 [VRB] State:
+2021-07-09 13:25:41.105 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:25:41.106 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:25:41.107 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:25:41.110 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:25:41.111 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:25:41.111 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:25:41.115 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:25:41.115 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:25:41.116 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:25:41.117 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:25:41.117 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:25:41.118 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:25:41.118 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:25:41.119 -04:00 [DBG] 
+2021-07-09 13:25:41.120 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:25:41.193 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:25:41.372 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:25:41.676 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:25:41.687 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:25:41.893 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:25:41.894 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:25:42.100 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:25:42.103 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:25:42.308 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:25:42.312 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:25:42.356 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:25:47.470 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:25:47.480 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:25:48.953 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:27:42.166 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:27:42.217 -04:00 [ERR] QcpqJern : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 13:27:42.217 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:27:42.217 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : zxPvGGvE : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:27:42.217 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : 6h8z9CRf : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 13:27:42.217 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 13:27:42.219 -04:00 [DBG] 
+2021-07-09 13:27:42.220 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 13:27:42.241 -04:00 [DBG] 
+2021-07-09 13:27:42.242 -04:00 [VRB] Providers:
+2021-07-09 13:27:42.243 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 13:27:42.244 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 13:27:42.244 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:27:42.245 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 13:27:42.246 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 13:27:42.246 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 13:27:42.247 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 13:27:42.247 -04:00 [VRB] State:
+2021-07-09 13:27:42.248 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 13:27:42.249 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 13:27:42.251 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 13:27:42.254 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 13:27:42.254 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 13:27:42.256 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 13:27:42.257 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 13:27:42.258 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 13:27:42.258 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 13:27:42.259 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 13:27:42.260 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 13:27:42.261 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 13:27:42.262 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 13:27:42.266 -04:00 [DBG] 
+2021-07-09 13:27:42.268 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 13:27:42.341 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 13:27:42.506 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 13:27:42.787 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 13:27:42.796 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 13:27:42.986 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:27:42.989 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 13:27:43.177 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 13:27:43.179 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 13:27:43.376 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 13:27:43.380 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 13:27:43.419 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 13:27:48.542 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:27:48.551 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 13:27:49.493 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 13:57:49.179 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 13:57:49.188 -04:00 [DBG] 
+2021-07-09 13:57:49.192 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 13:57:49.194 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 13:57:49.194 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 13:57:49.196 -04:00 [DBG] 
+2021-07-09 13:57:49.197 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 15:02:48.711 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 15:02:48.713 -04:00 [DBG] 
+2021-07-09 15:02:48.714 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 15:02:48.715 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 15:02:48.716 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 15:02:48.717 -04:00 [DBG] 
+2021-07-09 15:02:48.718 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 15:33:51.042 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 15:33:51.180 -04:00 [ERR] h8iORgkE : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 15:33:51.180 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 15:33:51.180 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : KyJOSpzO : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 15:33:51.180 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : zdl7R1ZL : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 15:33:51.180 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 15:33:51.185 -04:00 [DBG] 
+2021-07-09 15:33:51.185 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 15:33:51.186 -04:00 [DBG] 
+2021-07-09 15:33:51.186 -04:00 [VRB] Providers:
+2021-07-09 15:33:51.187 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 15:33:51.188 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 15:33:51.189 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 15:33:51.195 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 15:33:51.196 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 15:33:51.196 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 15:33:51.197 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 15:33:51.197 -04:00 [VRB] State:
+2021-07-09 15:33:51.198 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 15:33:51.199 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 15:33:51.199 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 15:33:51.200 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 15:33:51.200 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 15:33:51.201 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 15:33:51.201 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 15:33:51.203 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 15:33:51.204 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 15:33:51.204 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 15:33:51.205 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 15:33:51.206 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 15:33:51.208 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 15:33:51.210 -04:00 [DBG] 
+2021-07-09 15:33:51.213 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 15:33:51.302 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 15:33:51.536 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 15:33:51.931 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 15:33:51.948 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 15:33:52.255 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 15:33:52.261 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 15:33:52.556 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 15:33:52.558 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 15:33:52.994 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 15:33:53.006 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 15:33:53.084 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 15:33:58.209 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 15:33:58.222 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 15:33:58.489 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 15:39:26.018 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 15:39:26.028 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 15:39:26.231 -04:00 [INF] :00:00:00.418 [Total elapsed time]
+2021-07-09 16:04:54.807 -04:00 [WRN] REDIS server | Unavailable - running on direct database mode
+2021-07-09 16:04:54.863 -04:00 [ERR] R14GXXLZ : It was not possible to connect to the redis server(s). UnableToConnect on intranetsvc-prd.bucknell.edu:6380/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.1.58.34321Zen.Module.Cache.Redis.dll - Zen.Module.Cache.Redis.RedisCacheProvider:Connect > StackExchange.Redis.ConnectionMultiplexer:Connect[L1020 C13] > Connect[L1037 C13] > ConnectImpl[L1169 C21]
+2021-07-09 16:04:54.864 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application
+2021-07-09 16:04:54.864 -04:00 [ERR] Zen.Storage.Provider.Configuration.ConfigurationStorage : EimTjVnT : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.Configuration.ConfigurationStorage:Initialize[L32 C13] > Zen.Storage.Provider.Configuration.ConfigurationStorage+<>c:<Initialize>b__10_0[L35 C17] > Zen.Module.Cloud.AWS.Configuration.AwsConfigurationStorageProvider`1:Initialize > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 16:04:54.864 -04:00 [ERR] Zen.Storage.Provider.File.FileStoragePrimitive : jXgOLQiu : App.config does not contain credentials information. Either add the AWSAccessKey and AWSSecretKey properties or the AWSProfileName property.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.Storage.Provider.File.FileStoragePrimitive:Initialize[L15 C13] > edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage:ResolveStorage[L22 C21] > Zen.Module.Cloud.AWS.Connectors.S3Connector:.ctor > Amazon.Runtime.StoredProfileAWSCredentials:.ctor > .ctor > .ctor
+2021-07-09 16:04:54.864 -04:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-07-09 16:04:54.866 -04:00 [DBG] 
+2021-07-09 16:04:54.866 -04:00 [INF] Zen 0.6.0.0
+2021-07-09 16:04:54.867 -04:00 [DBG] 
+2021-07-09 16:04:54.867 -04:00 [VRB] Providers:
+2021-07-09 16:04:54.868 -04:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-07-09 16:04:54.869 -04:00 [DBG] IEnvironmentProvider | BucknellEnvironmentProvider | Operational
+2021-07-09 16:04:54.870 -04:00 [DBG] ICacheProvider | RedisCacheProvider | NonOperational | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 16:04:54.871 -04:00 [DBG] IEncryptionProvider | AesEncryptionProvider | Operational
+2021-07-09 16:04:54.871 -04:00 [DBG] IConnectionBundleProvider | BucknellConnectionBundleProvider | Operational
+2021-07-09 16:04:54.872 -04:00 [DBG] Base Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-07-09 16:04:54.874 -04:00 [DBG] Data Directory | C:\Luyang\repo2\ML\Projects\VS\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-07-09 16:04:54.875 -04:00 [VRB] State:
+2021-07-09 16:04:54.876 -04:00 [DBG] Email Configuration | edu.bucknell.framework.Service.Configuration.Communication.BucknellEmailConfig
+2021-07-09 16:04:54.876 -04:00 [DBG] Application Provider | edu.bucknell.framework.Service.Configuration.CoreProvider.BucknellApplicationProvider
+2021-07-09 16:04:54.877 -04:00 [DBG] Orchestrator | edu.bucknell.framework.Service.Configuration.BucknellAppOrchestrator
+2021-07-09 16:04:54.877 -04:00 [DBG] Configuration Storage | edu.bucknell.framework.Service.Configuration.BucknellConfigurationStorage
+2021-07-09 16:04:54.879 -04:00 [DBG] File Storage | edu.bucknell.framework.Service.Configuration.Media.BucknellFileStorage
+2021-07-09 16:04:54.880 -04:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-07-09 16:04:54.881 -04:00 [DBG] Push Dispatcher | edu.bucknell.framework.Service.Configuration.Communication.Push.BucknellPushDispatcher
+2021-07-09 16:04:54.881 -04:00 [DBG] Redis server | intranetsvc-prd.bucknell.edu:6380
+2021-07-09 16:04:54.882 -04:00 [DBG] REDIS server | Unavailable - running on direct database mode
+2021-07-09 16:04:54.883 -04:00 [DBG] Environment | [DEV] Development (//myapi-dev.bucknell.edu/)
+2021-07-09 16:04:54.884 -04:00 [DBG] MongoDB Client | usr_baf_rw@lakedev-shard-00-00-gbcic.mongodb.net
+2021-07-09 16:04:54.884 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application
+2021-07-09 16:04:54.885 -04:00 [DBG] Application | {eb94e6a0-50ec-48a1-9f3b-4c6eb292b9b8} | [edu.bucknell.project.moravianLives.API] edu.bucknell.project.moravianLives.API
+2021-07-09 16:04:54.885 -04:00 [DBG] 
+2021-07-09 16:04:54.886 -04:00 [INF] ZenBuilder | 377 services registered
+2021-07-09 16:04:54.962 -04:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-07-09 16:04:55.127 -04:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-07-09 16:04:55.432 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Legacy.Person.Account
+2021-07-09 16:04:55.441 -04:00 [DBG] edu.bucknell.framework.Model.Legacy.Person.Account | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.model.Staging.Banner.Account
+2021-07-09 16:04:55.639 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Person
+2021-07-09 16:04:55.643 -04:00 [DBG] edu.bucknell.framework.Model.Core.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Person
+2021-07-09 16:04:55.842 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.framework.Model.Core.Application+Permission
+2021-07-09 16:04:55.843 -04:00 [DBG] edu.bucknell.framework.Model.Core.Application+Permission | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.framework.Model.Core.Application.Permission
+2021-07-09 16:04:56.046 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-07-09 16:04:56.050 -04:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | DEV + MongoGenericBundle + DEV.Zen.Web.Model.State.ZenSession
+2021-07-09 16:04:56.089 -04:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-07-09 16:05:01.227 -04:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-07-09 16:05:01.237 -04:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Tracking
+2021-07-09 16:05:01.491 -04:00 [DBG] Zen.Service.Maintenance.Model.Result | Ready | DEV + MongoGenericBundle + DEV.Zen.Service.Maintenance.Model.Result
+2021-07-09 16:05:01.539 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 16:05:01.540 -04:00 [DBG] 
+2021-07-09 16:05:01.541 -04:00 [INF] Zen.Service.Maintenance.Service.MaintenanceService | Running 1 LocalInstance maintenance task(s)
+2021-07-09 16:05:01.542 -04:00 [INF] Zen.Storage.Cache.Maintenance | Zen: Local Storage Cache maintenance (scheduled)
+2021-07-09 16:05:01.542 -04:00 [DBG] __________________________________________________________________________________________________________________________________
+2021-07-09 16:05:01.543 -04:00 [DBG] 
+2021-07-09 16:05:01.544 -04:00 [INF] Task | [eb84093a-0f2f-d6c2-b0cf-cd456c7ec35a] [-10] - Zen: Local Storage Cache maintenance, CD: 01:00:00
+2021-07-09 16:15:54.695 -04:00 [DBG] MongoDbAdapter ClassMap | edu.bucknell.project.moravianLives.model.Person
+2021-07-09 16:15:54.704 -04:00 [DBG] edu.bucknell.project.moravianLives.model.Person | Ready | DEV + MongoGenericBundle + DEV.edu.bucknell.project.moravianLives.model.Person
+2021-07-09 16:15:54.914 -04:00 [INF] :00:00:00.441 [Total elapsed time]
+2021-07-09 16:25:15.859 -04:00 [INF] :00:00:00.077 [Total elapsed time]
+2021-07-09 16:31:34.904 -04:00 [INF] :00:00:00.075 [Total elapsed time]
+2021-07-09 17:07:35.327 -04:00 [INF] :00:00:00.079 [Total elapsed time]

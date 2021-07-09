@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\config.js" />
     <Content Remove="zen.json" />
   </ItemGroup>
 

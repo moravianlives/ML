@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title type="main">Tattersall_Mary_Ful_SS_64</title></titleStmt><publicationStmt><publisher>tranScriptorium</publisher></publicationStmt><sourceDesc><bibl><publisher>TRP document creator: cmp016@bucknell.edu</publisher></bibl></sourceDesc></fileDesc></teiHeader><facsimile xml:id="facs_1"><surface lrx="1514" lry="1790" ulx="0" uly="0"><graphic height="1790px" url="IMG_1292.jpg" width="1514px"/></surface></facsimile><facsimile xml:id="facs_2"><surface lrx="1549" lry="1922" ulx="0" uly="0"><graphic height="1922px" url="IMG_1293.jpg" width="1549px"/></surface></facsimile><facsimile xml:id="facs_3"><surface lrx="1471" lry="1896" ulx="0" uly="0"><graphic height="1896px" url="IMG_1294.jpg" width="1471px"/></surface></facsimile><facsimile xml:id="facs_4"><surface lrx="1477" lry="1862" ulx="0" uly="0"><graphic height="1862px" url="IMG_1295.jpg" width="1477px"/></surface></facsimile><facsimile xml:id="facs_5"><surface lrx="1433" lry="1783" ulx="0" uly="0"><graphic height="1783px" url="IMG_1296.jpg" width="1433px"/></surface></facsimile><facsimile xml:id="facs_6"><surface lrx="1608" lry="1861" ulx="0" uly="0"><graphic height="1861px" url="IMG_1297.jpg" width="1608px"/></surface></facsimile><text><body><pb facs="#facs_1" n="1"/>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Mary Scott: Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
+			<publicationStmt>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository ref="mlpla000003">Moravian Archives, Fulneck</repository>
+						<msName type="memoir" ana="MAF/Ful_SS_59Rogers">Anna Rogers</msName>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-02.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-03.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_59Rogers-04.jpg" />
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Mary Scott</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-01.jpg" n="1"/>
 	<p>
             <lb/> The life of the our late S. Sister Mary Tattersall
             <lb/>as wrote by herself.
@@ -25,7 +147,7 @@
             <lb/>my connexion with my dear dear savior, yet very soon by means of some particular 
             <lb/>circumstances I gradually began to enter
             <lb/>into things that suited my depraved heart nature</p>
-	<pb facs="#facs_2" n="2"/>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-01.jpg" n="2"/>
 	<p>
             <lb/>and I consequently lost for a time my first
             <lb/>impression. I cannot pass over a period of my
@@ -52,7 +174,7 @@
             <lb/>dying for my sins which caused me to shed
             <lb/>many tears at his thro' pierced feet. this I
             <lb/>cou'd not at that time comprehend, but how</p>
-	<pb facs="#facs_3" n="3"/>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-03.jpg" n="3"/>
 	<p>
             <lb/>how often have I wish'd since that time to
             <lb/>have had that those most happy sensations again which I had then,
@@ -80,7 +202,7 @@
             <lb/>circumstances, &amp; which I certainly cou'd not had
             <lb/>done, had not my Grandmother assisted
             <lb/>me, yet I was determined to weather the storm venture every thing</p>
-	<pb facs="#facs_4" n="4"/>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-04.jpg" n="4"/>
 	<p>
             <lb/>having a deep &amp; clear conviction in my heart 
             <lb/>that this was the path my Savr appointed
@@ -107,7 +229,7 @@
             <lb/> this Choir, than I had been in my Girls
             <lb/>years, but being rather of a legal turn of mind
             <lb/>I had to struggle with myself, not liking</p>
-	<pb facs="#facs_5" n="5"/>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-05.jpg" n="5"/>
 	<p>
             <lb/>to acknowlege to our Savr, or to those to whom
             <lb/>I shou'd have placed confidence in, that
@@ -134,7 +256,7 @@
             <lb/>day of peculiar blessing to me, hearing 
             <lb/>and I anew devoted myself anew to our Savr
             <lb/>May 2 1780 I partook for the first time</p>
-	<pb facs="#facs_6" n="6"/>
+			<pb facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_64Tattersall-06.jpg" n="6"/>
 	<p>
             <lb/>of the Lords Body &amp; Blood in the H Com<hi rend="superscript:true;">n</hi> with
             <lb/>the Cong<hi rend="superscript:true;">n</hi>, which has proved ever blessed &amp;

@@ -9,12 +9,19 @@ using Zen.Base.Module;
 using Zen.Base.Module.Data.CommonAttributes;
 using Zen.Pebble.FlexibleData.String.Localization;
 using Zen.Pebble.FlexibleData.String.Localization.Concrete;
+using Zen.Base.Module.Data;
+using edu.bucknell.framework.Service.Configuration.Database.ConnectionBundle;
 
 namespace edu.bucknell.project.moravianLives.model
 {
+    [DataConfigAttribute(ConnectionBundleType = typeof(MongoGenericBundle))]
+    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
     public class Source : Data<Source>, IDataId
     {
-        [Key] public string Id { get; set; } = Guid.NewGuid().ToShortGuid();
+
+        [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; } = Guid.NewGuid().ToShortGuid();
 
         [Display] public HistoricString Name { get; set; }
 
@@ -36,7 +43,7 @@ namespace edu.bucknell.project.moravianLives.model
 
         public class ExternalReferences : Data<ExternalReferences>, IDataId
         {
-            [Key] public string Id { get; set; }
+            [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; }
 
             public List<ExternalReference> References { get; set; } = new List<ExternalReference>();
 
@@ -77,14 +84,14 @@ namespace edu.bucknell.project.moravianLives.model
 
         public class Media : Data<Media>
         {
-            [Key] public string Id { get; set; }
+            [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; }
 
             public Dictionary<string, List<string>> References { get; set; } = new Dictionary<string, List<string>>();
         }
 
         public class ResourceDescription : Data<ResourceDescription>
         {
-            [Key] public string Id { get; set; }
+            [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; }
 
             public Dictionary<string, string> Values { get; set; } = new Dictionary<string, string>();
         }

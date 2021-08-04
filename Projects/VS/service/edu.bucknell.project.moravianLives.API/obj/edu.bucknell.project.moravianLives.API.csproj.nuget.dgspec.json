@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Luyang\\repo2\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj": {}
+    "C:\\repo\\moravianlives\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj": {}
   },
   "projects": {
-    "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
+    "C:\\repo\\bucknell\\edu.bucknell.Framework\\edu.bucknell.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj",
-        "projectName": "edu.bucknell.project.moravianLives.model",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\obj\\",
+        "projectUniqueName": "C:\\repo\\bucknell\\edu.bucknell.Framework\\edu.bucknell.Framework.csproj",
+        "projectName": "edu.bucknell.framework",
+        "projectPath": "C:\\repo\\bucknell\\edu.bucknell.Framework\\edu.bucknell.Framework.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\bucknell\\edu.bucknell.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,17 +25,126 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj"
+              },
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj"
+              },
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Westwind.AspNetCore.Markdown": {
+              "target": "Package",
+              "version": "[3.3.6, )"
+            },
+            "Zen.Cloud": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Module.Cache.Redis": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Module.Cloud.AWS": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Module.Cloud.Google": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Module.Data.Oracle": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Module.Encryption.AES": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            },
+            "Zen.Web.Auth": {
+              "target": "Package",
+              "version": "[0.5.0-alpha, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj",
+        "projectName": "edu.bucknell.project.moravianLives.model",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\repo\\bucknell\\edu.bucknell.Framework\\edu.bucknell.Framework.csproj": {
+                "projectPath": "C:\\repo\\bucknell\\edu.bucknell.Framework\\edu.bucknell.Framework.csproj"
+              },
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj"
               }
             }
           }
@@ -64,24 +173,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj": {
+    "C:\\repo\\moravianlives\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj",
         "projectName": "edu.bucknell.project.moravianLives.API",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\edu.bucknell.project.moravianLives.API.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\service\\edu.bucknell.project.moravianLives.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,26 +198,24 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj"
+              "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj"
-              },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj"
               }
             }
           }
@@ -140,24 +247,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj",
         "projectName": "Zen.App",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,14 +272,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               }
             }
           }
@@ -208,24 +316,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj",
         "projectName": "Zen.Base",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -233,7 +341,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -320,24 +429,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj",
         "projectName": "Zen.Media",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -345,7 +454,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -388,24 +498,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj",
         "projectName": "Zen.Module.Data.MongoDB",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Module.Data.MongoDB\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -413,14 +523,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               }
             }
           }
@@ -464,24 +575,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj",
         "projectName": "Zen.Pebble.FlexibleData",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.FlexibleData\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\Zen.Pebble.FlexibleData.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.FlexibleData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -489,14 +600,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj"
               }
             }
           }
@@ -532,24 +644,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj",
         "projectName": "Zen.Pebble.Geo",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Pebble.Geo\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\Zen.Pebble.Geo.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.Geo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -557,7 +669,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -596,24 +709,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj",
         "projectName": "Zen.Service.Maintenance",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -621,14 +734,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               }
             }
           }
@@ -664,24 +778,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj",
         "projectName": "Zen.Storage",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -689,20 +803,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Service.Maintenance\\Zen.Service.Maintenance.csproj"
               }
             }
           }
@@ -738,24 +853,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj",
         "projectName": "Zen.Web.App",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.App\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\Zen.Web.App.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -763,32 +878,33 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
               }
             }
           }
@@ -824,24 +940,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj",
         "projectName": "Zen.Web.Auth",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.Auth\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\Zen.Web.Auth.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -849,17 +965,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj"
               }
             }
           }
@@ -911,24 +1028,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj",
         "projectName": "Zen.Web.GraphQL",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web.GraphQL\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\Zen.Web.GraphQL.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web.GraphQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -936,14 +1053,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               }
             }
           }
@@ -987,24 +1105,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
+    "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj",
+        "projectUniqueName": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj",
         "projectName": "Zen.Web",
-        "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\Zen.Web.csproj",
-        "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
-        "outputPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Web\\obj\\",
+        "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\Zen.Web.csproj",
+        "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1012,23 +1130,24 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://developer.bucknell.edu/nexus/repository/web/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.App\\Zen.App.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.App\\Zen.App.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Media\\Zen.Media.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Media\\Zen.Media.csproj"
               },
-              "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
-                "projectPath": "C:\\Luyang\\repo2\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj"
+              "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj": {
+                "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Storage\\Zen.Storage.csproj"
               }
             }
           }
@@ -1080,7 +1199,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

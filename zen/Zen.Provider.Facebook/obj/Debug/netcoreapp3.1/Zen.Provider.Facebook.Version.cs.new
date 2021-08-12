@@ -9,8 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Reflection.AssemblyVersionAttribute("0.6.0.0")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.64")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+d0f9936472")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+9bd293f098")]
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode("Nerdbank.GitVersioning.Tasks","3.3.37.35081")]
 #endif
@@ -19,14 +19,14 @@
 #endif
 internal static partial class ThisAssembly {
     internal const string AssemblyVersion = "0.6.0.0";
-    internal const string AssemblyFileVersion = "0.6.0.64";
-    internal const string AssemblyInformationalVersion = "0.6.0-alpha+d0f9936472";
+    internal const string AssemblyFileVersion = "0.6.0.74";
+    internal const string AssemblyInformationalVersion = "0.6.0-alpha+9bd293f098";
     internal const string AssemblyName = "Zen.Provider.Facebook";
     internal const string AssemblyTitle = "Zen.Provider.Facebook";
     internal const string AssemblyConfiguration = "Debug";
-    internal const string GitCommitId = "d0f9936472ac497721ee0f7ff3f746e8bb92db31";
+    internal const string GitCommitId = "9bd293f098b9830cb4694d3692f56d4ce6164797";
     internal const bool IsPublicRelease = false;
     internal const bool IsPrerelease = true;
-    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637584344070000000L, System.DateTimeKind.Utc);
+    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637614617220000000L, System.DateTimeKind.Utc);
     internal const string RootNamespace = "Zen.Provider.Facebook";
 }

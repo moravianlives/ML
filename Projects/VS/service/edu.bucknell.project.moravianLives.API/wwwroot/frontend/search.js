@@ -10,6 +10,9 @@ angular.module('personApp', [])
             });
         }
 
-        personList.fetchperson(); 
+        personList.fetchperson();
+        personList.gotoPerson = function () {
+           
+        }
 
     }]);

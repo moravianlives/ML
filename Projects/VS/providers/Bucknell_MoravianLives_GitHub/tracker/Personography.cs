@@ -287,11 +287,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         birthEventData.Text = birthEventData.Token.StrVal("@when-iso") ??
                                               birthEventData.Token.StrVal("#text");
                         birthEventData.Timestamp = HealDatetime("Birthdate", entry.sourceData.Id, birthEventData.Text);
+                       
                     }
 
                     birthEventData.PlaceIdentifier = source.StrVal("person.birth.placeName.@ref");
                     birthEventData.PlaceName = source.StrVal("person.birth.placeName.#text");
-
+                    
                     if (birthEventData.PlaceIdentifier != null)
                         birthEventData.Location = _locationReference.GetReference(Placeography.DefaultDomain,
                             birthEventData.PlaceIdentifier, new Location() { Name = birthEventData.PlaceName });
@@ -316,11 +317,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         deathEventData.Text = deathEventData.Token.StrVal("@when-iso") ??
                                               deathEventData.Token.StrVal("#text");
                         deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+                        
                     }
 
                     deathEventData.PlaceIdentifier = source.StrVal("person.death.placeName.@ref");
                     deathEventData.PlaceName = source.StrVal("person.death.placeName.#text");
-
+                    
                     if (deathEventData.PlaceIdentifier != null)
                         deathEventData.Location = _locationReference.GetReference(Placeography.DefaultDomain,
                             deathEventData.PlaceIdentifier, new Location() { Name = deathEventData.PlaceName });
@@ -336,6 +338,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     entry.targetModel.Lastname ??= new HistoricString();
                     entry.targetModel.Addname ??= new HistoricString();
                     entry.targetModel.Firstname.SetVariant(firstName);
+                    
                     //entry.targetModel.Lastname.SetVariant(lastName);
                     entry.targetModel.Addname.SetVariant(midName);
 
@@ -377,6 +380,16 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                 targetNameVariant.Comments ??= $"Source: {nameResp}";
                         }
                     }
+
+                    //add brith and death information
+                    entry.targetModel.BirthDate ??= new HistoricDateTime();
+                    entry.targetModel.DeathDate ??= new HistoricDateTime();
+                    entry.targetModel.BirthDate = birthEventData.Timestamp;
+                    entry.targetModel.DeathDate = deathEventData.Timestamp;
+                    
+                    entry.targetModel.Birthplace = birthEventData.PlaceName;
+                    entry.targetModel.Deathplace = deathEventData.PlaceName;
+
 
 
                     // read memoir information

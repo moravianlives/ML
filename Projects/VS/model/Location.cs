@@ -22,7 +22,7 @@ namespace edu.bucknell.project.moravianLives.model
         [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; } = Guid.NewGuid().ToString();
 
         [Display] public HistoricString Name { get; set; }
-
+        public string MLid { get; set; }
         public HistoricalValue<string> Parent { get; set; }
         public List<string> Categories { get; set; }
 

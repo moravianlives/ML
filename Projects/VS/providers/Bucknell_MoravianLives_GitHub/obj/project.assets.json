@@ -44,13 +44,13 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "AWSSDK.Core/3.3.107.2": {
+      "AWSSDK.Core/3.5.1.32": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
         }
       },
       "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
@@ -68,43 +68,43 @@
           "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.111.3": {
+      "AWSSDK.S3/3.5.3.10": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.107.2, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.32, 3.6.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.S3.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         }
       },
-      "AWSSDK.SimpleNotificationService/3.3.101.174": {
+      "AWSSDK.SimpleNotificationService/3.5.1.4": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.107.2, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.32, 3.6.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {}
         }
       },
-      "AWSSDK.SQS/3.3.102.117": {
+      "AWSSDK.SQS/3.5.0.34": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.107.2, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.32, 3.6.0)"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {}
         }
       },
-      "BouncyCastle.NetCore/1.8.6": {
+      "BouncyCastle.NetCore/1.8.8": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
@@ -151,10 +151,10 @@
           "lib/netstandard2.0/Dapper.Contrib.dll": {}
         }
       },
-      "Dapper.FluentMap/1.8.1": {
+      "Dapper.FluentMap/2.0.0": {
         "type": "package",
         "dependencies": {
-          "Dapper": "1.60.6"
+          "Dapper": "2.0.35"
         },
         "compile": {
           "lib/netstandard2.0/Dapper.FluentMap.dll": {}
@@ -262,15 +262,6 @@
             "assetType": "native",
             "rid": "win-x86"
           }
-        }
-      },
-      "Markdig/0.18.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.1/Markdig.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/Markdig.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.Google/3.1.9": {
@@ -427,7 +418,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
@@ -1138,7 +1129,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Oracle.ManagedDataAccess.Core/2.19.70": {
+      "Oracle.ManagedDataAccess.Core/2.19.91": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
@@ -1147,12 +1138,12 @@
           "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
         }
       },
-      "Pipelines.Sockets.Unofficial/2.1.6": {
+      "Pipelines.Sockets.Unofficial/2.1.16": {
         "type": "package",
         "dependencies": {
-          "System.Buffers": "4.5.0",
-          "System.IO.Pipelines": "4.7.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+          "System.Buffers": "4.5.1",
+          "System.IO.Pipelines": "4.7.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "compile": {
           "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll": {}
@@ -1499,14 +1490,13 @@
           "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {}
         }
       },
-      "StackExchange.Redis/2.1.30": {
+      "StackExchange.Redis/2.1.58": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Pipelines.Sockets.Unofficial": "2.1.6",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "Pipelines.Sockets.Unofficial": "2.1.16",
           "System.Diagnostics.PerformanceCounter": "4.7.0",
-          "System.IO.Pipelines": "4.7.0",
-          "System.Threading.Channels": "4.7.0"
+          "System.Threading.Channels": "4.7.1"
         },
         "compile": {
           "lib/netstandard2.0/StackExchange.Redis.dll": {}
@@ -1527,7 +1517,7 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.5.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1888,7 +1878,7 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Pipelines/4.7.0": {
+      "System.IO.Pipelines/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
@@ -2131,7 +2121,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -2564,7 +2554,7 @@
           "lib/netstandard1.3/System.Threading.dll": {}
         }
       },
-      "System.Threading.Channels/4.7.0": {
+      "System.Threading.Channels/4.7.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
@@ -2676,163 +2666,13 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Westwind.AspNetCore.Markdown/3.3.6": {
-        "type": "package",
-        "dependencies": {
-          "Markdig": "0.18.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Westwind.AspNetCore.Markdown.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Westwind.AspNetCore.Markdown.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Zen.Cloud/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Zen.Base": "0.5.0-alpha",
-          "Zen.Storage": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Cloud.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Cloud.dll": {}
-        }
-      },
-      "Zen.Module.Cache.Redis/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "StackExchange.Redis": "2.1.30",
-          "Zen.Base": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Cache.Redis.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Cache.Redis.dll": {}
-        }
-      },
-      "Zen.Module.Cloud.AWS/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "AWSSDK.Core": "3.3.107.2",
-          "AWSSDK.Extensions.NETCore.Setup": "3.3.101",
-          "AWSSDK.S3": "3.3.111.3",
-          "AWSSDK.SQS": "3.3.102.117",
-          "AWSSDK.SimpleNotificationService": "3.3.101.174",
-          "Zen.Base": "0.5.0-alpha",
-          "Zen.Cloud": "0.5.0-alpha",
-          "Zen.Storage": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Cloud.AWS.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Cloud.AWS.dll": {}
-        }
-      },
-      "Zen.Module.Cloud.Google/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "BouncyCastle.NetCore": "1.8.6",
-          "Zen.Base": "0.5.0-alpha",
-          "Zen.Web": "0.5.0-alpha",
-          "Zen.Web.Auth": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Cloud.Google.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Cloud.Google.dll": {}
-        }
-      },
-      "Zen.Module.Data.Oracle/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Oracle.ManagedDataAccess.Core": "2.19.70",
-          "Zen.Base": "0.5.0-alpha",
-          "Zen.Module.Data.Relational": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Data.Oracle.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Data.Oracle.dll": {}
-        }
-      },
-      "Zen.Module.Data.Relational/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Dapper": "2.0.35",
-          "Dapper.Contrib": "2.0.35",
-          "Dapper.FluentMap": "1.8.1",
-          "Dapper.SqlBuilder": "2.0.35",
-          "Zen.Base": "0.5.0-alpha",
-          "Zen.Pebble.Database": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Data.Relational.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Data.Relational.dll": {}
-        }
-      },
-      "Zen.Module.Encryption.AES/0.5.0-alpha": {
-        "type": "package",
-        "dependencies": {
-          "Zen.Base": "0.5.0-alpha"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Module.Encryption.AES.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Module.Encryption.AES.dll": {}
-        }
-      },
-      "Zen.Pebble.Database/0.5.0-alpha": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/Zen.Pebble.Database.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Zen.Pebble.Database.dll": {}
-        }
-      },
-      "edu.bucknell.framework/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Westwind.AspNetCore.Markdown": "3.3.6",
-          "Zen.Base": "0.0.1",
-          "Zen.Cloud": "0.5.0-alpha",
-          "Zen.Module.Cache.Redis": "0.5.0-alpha",
-          "Zen.Module.Cloud.AWS": "0.5.0-alpha",
-          "Zen.Module.Cloud.Google": "0.5.0-alpha",
-          "Zen.Module.Data.MongoDB": "0.0.1",
-          "Zen.Module.Data.Oracle": "0.5.0-alpha",
-          "Zen.Module.Encryption.AES": "0.5.0-alpha",
-          "Zen.Storage": "0.0.1",
-          "Zen.Web": "0.0.1",
-          "Zen.Web.Auth": "0.5.0-alpha"
-        },
-        "compile": {
-          "bin/placeholder/edu.bucknell.framework.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/edu.bucknell.framework.dll": {}
-        }
-      },
       "edu.bucknell.project.moravianLives.model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Zen.Pebble.FlexibleData": "1.0.0",
-          "edu.bucknell.framework": "1.0.0"
+          "Zen.Base": "0.0.1",
+          "Zen.Module.Data.MongoDB": "0.0.1",
+          "Zen.Pebble.FlexibleData": "1.0.0"
         },
         "compile": {
           "bin/placeholder/edu.bucknell.project.moravianLives.model.dll": {}
@@ -2878,6 +2718,20 @@
           "bin/placeholder/Zen.Base.dll": {}
         }
       },
+      "Zen.Cloud/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Zen.Base": "0.0.1",
+          "Zen.Storage": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Cloud.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Cloud.dll": {}
+        }
+      },
       "Zen.Media/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2889,6 +2743,56 @@
         },
         "runtime": {
           "bin/placeholder/Zen.Media.dll": {}
+        }
+      },
+      "Zen.Module.Cache.Redis/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "StackExchange.Redis": "2.1.58",
+          "Zen.Base": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Cache.Redis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Cache.Redis.dll": {}
+        }
+      },
+      "Zen.Module.Cloud.AWS/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AWSSDK.Core": "3.5.1.32",
+          "AWSSDK.Extensions.NETCore.Setup": "3.3.101",
+          "AWSSDK.S3": "3.5.3.10",
+          "AWSSDK.SQS": "3.5.0.34",
+          "AWSSDK.SimpleNotificationService": "3.5.1.4",
+          "Zen.Base": "0.0.1",
+          "Zen.Cloud": "0.0.1",
+          "Zen.Storage": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Cloud.AWS.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Cloud.AWS.dll": {}
+        }
+      },
+      "Zen.Module.Cloud.Google/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BouncyCastle.NetCore": "1.8.8",
+          "Zen.Base": "0.0.1",
+          "Zen.Web": "0.0.1",
+          "Zen.Web.Auth": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Cloud.Google.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Cloud.Google.dll": {}
         }
       },
       "Zen.Module.Data.MongoDB/0.0.1": {
@@ -2906,6 +2810,52 @@
           "bin/placeholder/Zen.Module.Data.MongoDB.dll": {}
         }
       },
+      "Zen.Module.Data.Oracle/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Oracle.ManagedDataAccess.Core": "2.19.91",
+          "Zen.Base": "0.0.1",
+          "Zen.Module.Data.Relational": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Data.Oracle.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Data.Oracle.dll": {}
+        }
+      },
+      "Zen.Module.Data.Relational/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Dapper": "2.0.35",
+          "Dapper.Contrib": "2.0.35",
+          "Dapper.FluentMap": "2.0.0",
+          "Dapper.SqlBuilder": "2.0.35",
+          "Zen.Base": "0.0.1",
+          "Zen.Pebble.Database": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Data.Relational.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Data.Relational.dll": {}
+        }
+      },
+      "Zen.Module.Encryption.AES/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Zen.Base": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Zen.Module.Encryption.AES.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Module.Encryption.AES.dll": {}
+        }
+      },
       "Zen.Pebble.CrossModelMap/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2917,6 +2867,16 @@
         },
         "runtime": {
           "bin/placeholder/Zen.Pebble.CrossModelMap.dll": {}
+        }
+      },
+      "Zen.Pebble.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Zen.Pebble.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zen.Pebble.Database.dll": {}
         }
       },
       "Zen.Pebble.FlexibleData/1.0.0": {
@@ -3072,52 +3032,31 @@
         "lib/netcoreapp3.1/AspNet.Security.OpenId.xml"
       ]
     },
-    "AWSSDK.Core/3.3.107.2": {
-      "sha512": "V8WPPqmLAY/B9A0ojA6OfKzOs0dYkm2675sYbAey5VSLfq9vZ6lDN9kuF12ERwj0LLQMjDP6LxYC5RNS+0/iwA==",
+    "AWSSDK.Core/3.5.1.32": {
+      "sha512": "rNxli5HjbQdFmibqHQhXgOtIS35A8Gt6k8XWyJAse/QoChfbsTqXjzKnws24DMUVK3dzf3knpD1mgpXS9XJ1zA==",
       "type": "package",
-      "path": "awssdk.core/3.3.107.2",
+      "path": "awssdk.core/3.5.1.32",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.3.107.2.nupkg.sha512",
+        "awssdk.core.3.5.1.32.nupkg.sha512",
         "awssdk.core.nuspec",
-        "lib/MonoAndroid10/AWSSDK.Core.XML",
-        "lib/MonoAndroid10/AWSSDK.Core.dll",
-        "lib/MonoAndroid10/AWSSDK.Core.pdb",
-        "lib/MonoTouch10/AWSSDK.Core.XML",
-        "lib/MonoTouch10/AWSSDK.Core.dll",
-        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
-        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
-        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
-        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
         "lib/net35/AWSSDK.Core.xml",
         "lib/net45/AWSSDK.Core.dll",
         "lib/net45/AWSSDK.Core.pdb",
         "lib/net45/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
         "lib/netstandard1.3/AWSSDK.Core.dll",
         "lib/netstandard1.3/AWSSDK.Core.pdb",
         "lib/netstandard1.3/AWSSDK.Core.xml",
         "lib/netstandard2.0/AWSSDK.Core.dll",
         "lib/netstandard2.0/AWSSDK.Core.pdb",
         "lib/netstandard2.0/AWSSDK.Core.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
-        "lib/uap/AWSSDK.Core.XML",
-        "lib/uap/AWSSDK.Core.dll",
-        "lib/uap/AWSSDK.Core.pdb",
-        "lib/win8/AWSSDK.Core.XML",
-        "lib/win8/AWSSDK.Core.dll",
-        "lib/win8/AWSSDK.Core.pdb",
-        "lib/wp8/AWSSDK.Core.XML",
-        "lib/wp8/AWSSDK.Core.dll",
-        "lib/wp8/AWSSDK.Core.pdb",
-        "lib/wpa81/AWSSDK.Core.XML",
-        "lib/wpa81/AWSSDK.Core.dll",
-        "lib/wpa81/AWSSDK.Core.pdb",
         "tools/account-management.ps1"
       ]
     },
@@ -3136,134 +3075,104 @@
         "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
       ]
     },
-    "AWSSDK.S3/3.3.111.3": {
-      "sha512": "hx+mIPE59nk9aoBYmK+nUCwJ8dwTbjGwc6cl/WxxJ85n7FHpsfIql4tkEEzvmAkXcrpCc0JdPehpMVcj6+YecA==",
+    "AWSSDK.S3/3.5.3.10": {
+      "sha512": "sZaTgpV+DikPGsuVNBhXor7ludhWA3m/KveR7l07nA3hUwgkxQnJFJfTpa0T2k+C0eKLTQC4l5dA/mK6RmCcFw==",
       "type": "package",
-      "path": "awssdk.s3/3.3.111.3",
+      "path": "awssdk.s3/3.5.3.10",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
-        "awssdk.s3.3.3.111.3.nupkg.sha512",
+        "awssdk.s3.3.5.3.10.nupkg.sha512",
         "awssdk.s3.nuspec",
-        "lib/MonoAndroid10/AWSSDK.S3.XML",
-        "lib/MonoAndroid10/AWSSDK.S3.dll",
-        "lib/MonoTouch10/AWSSDK.S3.XML",
-        "lib/MonoTouch10/AWSSDK.S3.dll",
-        "lib/MonoTouch10/AWSSDK.S3.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
-        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
         "lib/net35/AWSSDK.S3.dll",
         "lib/net35/AWSSDK.S3.pdb",
         "lib/net35/AWSSDK.S3.xml",
         "lib/net45/AWSSDK.S3.dll",
         "lib/net45/AWSSDK.S3.pdb",
         "lib/net45/AWSSDK.S3.xml",
+        "lib/netcoreapp3.1/AWSSDK.S3.dll",
+        "lib/netcoreapp3.1/AWSSDK.S3.pdb",
+        "lib/netcoreapp3.1/AWSSDK.S3.xml",
         "lib/netstandard1.3/AWSSDK.S3.dll",
         "lib/netstandard1.3/AWSSDK.S3.pdb",
         "lib/netstandard1.3/AWSSDK.S3.xml",
         "lib/netstandard2.0/AWSSDK.S3.dll",
         "lib/netstandard2.0/AWSSDK.S3.pdb",
         "lib/netstandard2.0/AWSSDK.S3.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
-        "lib/uap/AWSSDK.S3.XML",
-        "lib/uap/AWSSDK.S3.dll",
-        "lib/uap/AWSSDK.S3.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.SimpleNotificationService/3.3.101.174": {
-      "sha512": "QoYAH4lpykTbj/yPty8DrAQHINvEOGg9KnpSXZC8XR3kg1yiUJOCNnrhzhWkotfu0g9ee/RGBSeSLTIsh8eM2w==",
+    "AWSSDK.SimpleNotificationService/3.5.1.4": {
+      "sha512": "EGVM2UnhQ1li7qn4MAZADAEWgjCuPMUFMgtAxJk0qYFFV5bQgvYL+popMppiLwU2EYj5gfs/fKZo6drHExYcRg==",
       "type": "package",
-      "path": "awssdk.simplenotificationservice/3.3.101.174",
+      "path": "awssdk.simplenotificationservice/3.5.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
-        "awssdk.simplenotificationservice.3.3.101.174.nupkg.sha512",
+        "awssdk.simplenotificationservice.3.5.1.4.nupkg.sha512",
         "awssdk.simplenotificationservice.nuspec",
-        "lib/MonoAndroid10/AWSSDK.SimpleNotificationService.XML",
-        "lib/MonoAndroid10/AWSSDK.SimpleNotificationService.dll",
-        "lib/MonoTouch10/AWSSDK.SimpleNotificationService.XML",
-        "lib/MonoTouch10/AWSSDK.SimpleNotificationService.dll",
-        "lib/MonoTouch10/AWSSDK.SimpleNotificationService.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.SimpleNotificationService.XML",
-        "lib/Xamarin.iOS10/AWSSDK.SimpleNotificationService.dll",
         "lib/net35/AWSSDK.SimpleNotificationService.dll",
         "lib/net35/AWSSDK.SimpleNotificationService.pdb",
         "lib/net35/AWSSDK.SimpleNotificationService.xml",
         "lib/net45/AWSSDK.SimpleNotificationService.dll",
         "lib/net45/AWSSDK.SimpleNotificationService.pdb",
         "lib/net45/AWSSDK.SimpleNotificationService.xml",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.xml",
         "lib/netstandard1.3/AWSSDK.SimpleNotificationService.dll",
         "lib/netstandard1.3/AWSSDK.SimpleNotificationService.pdb",
         "lib/netstandard1.3/AWSSDK.SimpleNotificationService.xml",
         "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
         "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
         "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleNotificationService.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleNotificationService.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SimpleNotificationService.pdb",
-        "lib/uap/AWSSDK.SimpleNotificationService.XML",
-        "lib/uap/AWSSDK.SimpleNotificationService.dll",
-        "lib/uap/AWSSDK.SimpleNotificationService.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.SQS/3.3.102.117": {
-      "sha512": "B8JsKg0NDOvCxnbnOuiSEzyE0biVtAn/tEFZS19osoPLZ72lGQJhU9hwxPASlRM2qLO4dVIIBUInlnMPWDd90A==",
+    "AWSSDK.SQS/3.5.0.34": {
+      "sha512": "THinH7q0IywOwb7tfL6Z/7g+NA8mVrpPg1TFQftVyNT/NEQcNFHtWTpBOybmiLZBNPnaLRB9KH30sdpLpGxCDA==",
       "type": "package",
-      "path": "awssdk.sqs/3.3.102.117",
+      "path": "awssdk.sqs/3.5.0.34",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
-        "awssdk.sqs.3.3.102.117.nupkg.sha512",
+        "awssdk.sqs.3.5.0.34.nupkg.sha512",
         "awssdk.sqs.nuspec",
-        "lib/MonoAndroid10/AWSSDK.SQS.XML",
-        "lib/MonoAndroid10/AWSSDK.SQS.dll",
-        "lib/MonoTouch10/AWSSDK.SQS.XML",
-        "lib/MonoTouch10/AWSSDK.SQS.dll",
-        "lib/MonoTouch10/AWSSDK.SQS.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.SQS.XML",
-        "lib/Xamarin.iOS10/AWSSDK.SQS.dll",
         "lib/net35/AWSSDK.SQS.dll",
         "lib/net35/AWSSDK.SQS.pdb",
         "lib/net35/AWSSDK.SQS.xml",
         "lib/net45/AWSSDK.SQS.dll",
         "lib/net45/AWSSDK.SQS.pdb",
         "lib/net45/AWSSDK.SQS.xml",
+        "lib/netcoreapp3.1/AWSSDK.SQS.dll",
+        "lib/netcoreapp3.1/AWSSDK.SQS.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SQS.xml",
         "lib/netstandard1.3/AWSSDK.SQS.dll",
         "lib/netstandard1.3/AWSSDK.SQS.pdb",
         "lib/netstandard1.3/AWSSDK.SQS.xml",
         "lib/netstandard2.0/AWSSDK.SQS.dll",
         "lib/netstandard2.0/AWSSDK.SQS.pdb",
         "lib/netstandard2.0/AWSSDK.SQS.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.pdb",
-        "lib/uap/AWSSDK.SQS.XML",
-        "lib/uap/AWSSDK.SQS.dll",
-        "lib/uap/AWSSDK.SQS.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "BouncyCastle.NetCore/1.8.6": {
-      "sha512": "l22IFT8GFYKxq+4yCl89yWVDCCRVHjXcDIHO3ufVPefaZxHrFgvecmbrlTZir9tXjPCxXXivhDJgcJFlmPLhqw==",
+    "BouncyCastle.NetCore/1.8.8": {
+      "sha512": "Jx3dQd4SQOHZmxcImYSp0YT2WpYxosQXoZutbHORhFK/zHGH8aykfIyM6S4DVGyu4g9+KHGJUQEh2RH4qXj/Jg==",
       "type": "package",
-      "path": "bouncycastle.netcore/1.8.6",
+      "path": "bouncycastle.netcore/1.8.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bouncycastle.netcore.1.8.6.nupkg.sha512",
+        "bouncycastle.netcore.1.8.8.nupkg.sha512",
         "bouncycastle.netcore.nuspec",
         "lib/Mono/BouncyCastle.Crypto.dll",
         "lib/Mono/BouncyCastle.Crypto.xml",
@@ -3324,19 +3233,15 @@
         "lib/netstandard2.0/Dapper.Contrib.xml"
       ]
     },
-    "Dapper.FluentMap/1.8.1": {
-      "sha512": "ItbccBxRLZR/WOGxqI0mVsPOFNStU9hz3rSb+FoGK7tveCuUhC+dBdAqN1uniQAz+TbpVH2DlCzPG+jzHNwKWg==",
+    "Dapper.FluentMap/2.0.0": {
+      "sha512": "UFSBuYreRQqOQfzSJ2HOnLvBolg5VFfBjS30ohM8DT4Yra/m+bEKAjVTmCBM1VDahWsPSsKqjX5eLR37MB/O+Q==",
       "type": "package",
-      "path": "dapper.fluentmap/1.8.1",
+      "path": "dapper.fluentmap/2.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dapper.fluentmap.1.8.1.nupkg.sha512",
+        "dapper.fluentmap.2.0.0.nupkg.sha512",
         "dapper.fluentmap.nuspec",
-        "lib/net451/Dapper.FluentMap.dll",
-        "lib/net451/Dapper.FluentMap.xml",
-        "lib/netstandard1.3/Dapper.FluentMap.dll",
-        "lib/netstandard1.3/Dapper.FluentMap.xml",
         "lib/netstandard2.0/Dapper.FluentMap.dll",
         "lib/netstandard2.0/Dapper.FluentMap.xml"
       ]
@@ -3425,33 +3330,6 @@
         "runtimes/win-x64/native/git2-106a5f2.pdb",
         "runtimes/win-x86/native/git2-106a5f2.dll",
         "runtimes/win-x86/native/git2-106a5f2.pdb"
-      ]
-    },
-    "Markdig/0.18.1": {
-      "sha512": "xCxTVEMi0WISjP1I7XCISCzCZ9eNzlUpK2OQdNTXx0ajstMbSPFX/KvXQVWN1irwFkm7VxsX7PekYJCbZwk8mw==",
-      "type": "package",
-      "path": "markdig/0.18.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Markdig.dll",
-        "lib/net35/Markdig.pdb",
-        "lib/net35/Markdig.xml",
-        "lib/net40/Markdig.dll",
-        "lib/net40/Markdig.pdb",
-        "lib/net40/Markdig.xml",
-        "lib/netcoreapp2.1/Markdig.dll",
-        "lib/netcoreapp2.1/Markdig.pdb",
-        "lib/netcoreapp2.1/Markdig.xml",
-        "lib/netstandard2.0/Markdig.dll",
-        "lib/netstandard2.0/Markdig.pdb",
-        "lib/netstandard2.0/Markdig.xml",
-        "lib/uap10.0/Markdig.dll",
-        "lib/uap10.0/Markdig.pdb",
-        "lib/uap10.0/Markdig.pri",
-        "lib/uap10.0/Markdig.xml",
-        "markdig.0.18.1.nupkg.sha512",
-        "markdig.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Google/3.1.9": {
@@ -3682,13 +3560,14 @@
         "microsoft.aspnetcore.spaservices.extensions.nuspec"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
-      "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+      "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -3697,7 +3576,7 @@
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
         "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
         "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -4685,10 +4564,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Oracle.ManagedDataAccess.Core/2.19.70": {
-      "sha512": "bpsnNrSc/dtKx5KSrnG1CTYlAzNzWV0BVmb5HbcPDgMY5FfGLKi5W96e7UHtSq6vniKIt7ptTie9uWGUqOyj4A==",
+    "Oracle.ManagedDataAccess.Core/2.19.91": {
+      "sha512": "Jgrn+kEbB9kWloFfxiP9Agzq8qK3tanbRDZJinICY0t94gmqkC/OwyzlQLJf8SLymBH8urBMopkqpAIyD564ww==",
       "type": "package",
-      "path": "oracle.manageddataaccess.core/2.19.70",
+      "path": "oracle.manageddataaccess.core/2.19.91",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4696,15 +4575,15 @@
         "PerfCounters/unregister_odpc_perfmon_counters.ps1",
         "info.txt",
         "lib/netstandard2.0/Oracle.ManagedDataAccess.dll",
-        "oracle.manageddataaccess.core.2.19.70.nupkg.sha512",
+        "oracle.manageddataaccess.core.2.19.91.nupkg.sha512",
         "oracle.manageddataaccess.core.nuspec",
         "readme.txt"
       ]
     },
-    "Pipelines.Sockets.Unofficial/2.1.6": {
-      "sha512": "Yv5qRZm2V5sgfZfpoGog0BTKroPAymIWkBfAQ0hE6xAhK/uIFLJmfSMHdV4ziJglJu9VcYpbK5ENDL2x5Q6zRQ==",
+    "Pipelines.Sockets.Unofficial/2.1.16": {
+      "sha512": "kIMCOfHBr+BRrUdz0zSGAGKC4lVO4pT4Py6XHVaGCV3mppc1BJWcbxYDEVLBFIBu6DMGq2rVRKcl6odx8lMGwg==",
       "type": "package",
-      "path": "pipelines.sockets.unofficial/2.1.6",
+      "path": "pipelines.sockets.unofficial/2.1.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4720,7 +4599,7 @@
         "lib/netstandard2.0/Pipelines.Sockets.Unofficial.xml",
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.dll",
         "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
-        "pipelines.sockets.unofficial.2.1.6.nupkg.sha512",
+        "pipelines.sockets.unofficial.2.1.16.nupkg.sha512",
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
@@ -4730,7 +4609,6 @@
       "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4744,7 +4622,6 @@
       "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4813,7 +4690,6 @@
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -4827,7 +4703,6 @@
       "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -4854,7 +4729,6 @@
       "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4895,7 +4769,6 @@
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4909,7 +4782,6 @@
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4923,7 +4795,6 @@
       "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -4937,7 +4808,6 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -5156,10 +5026,10 @@
         "sixlabors.imagesharp.nuspec"
       ]
     },
-    "StackExchange.Redis/2.1.30": {
-      "sha512": "eO9cvk0xxZ3pVFsIPC79Uf+Nb7Kw8fGHQXe5Sna9iN7bWi6InA76bcNBR7QaDiIZe4PKguk9pg8PYhkZSX+dsA==",
+    "StackExchange.Redis/2.1.58": {
+      "sha512": "4DhbxL0SE/jNdX8TmqHHmu/wv4alOHsWJiXUTZAhqelnSkczikdKoWhPqUUCzfAp6tX5AKUKxEPE0dHVXOyMzA==",
       "type": "package",
-      "path": "stackexchange.redis/2.1.30",
+      "path": "stackexchange.redis/2.1.58",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5169,7 +5039,7 @@
         "lib/net472/StackExchange.Redis.xml",
         "lib/netstandard2.0/StackExchange.Redis.dll",
         "lib/netstandard2.0/StackExchange.Redis.xml",
-        "stackexchange.redis.2.1.30.nupkg.sha512",
+        "stackexchange.redis.2.1.58.nupkg.sha512",
         "stackexchange.redis.nuspec"
       ]
     },
@@ -5227,15 +5097,17 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.5.0": {
-      "sha512": "pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
-      "path": "system.buffers/4.5.0",
+      "path": "system.buffers/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
         "lib/netstandard1.1/System.Buffers.xml",
@@ -5250,7 +5122,7 @@
         "ref/netstandard2.0/System.Buffers.dll",
         "ref/netstandard2.0/System.Buffers.xml",
         "ref/uap10.0.16299/_._",
-        "system.buffers.4.5.0.nupkg.sha512",
+        "system.buffers.4.5.1.nupkg.sha512",
         "system.buffers.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6287,13 +6159,14 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Pipelines/4.7.0": {
-      "sha512": "S0L7oyWyQdVzD+5xIvcC8h44Vc+FY+qXDCLRh2+YsuBDORNphcxNX+tXR6ByLMjQ/7jDaXxsYBF6qbAr7ZIaFw==",
+    "System.IO.Pipelines/4.7.1": {
+      "sha512": "TyMTasnXQt7U4k13RQ7tA3CrfWEkvWjR635SFfnKVwwMOgClLE5mdHSkG2D13BLIdNwbPTGVQnhQB8Rk7f53Rg==",
       "type": "package",
-      "path": "system.io.pipelines/4.7.0",
+      "path": "system.io.pipelines/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netcoreapp3.0/System.IO.Pipelines.dll",
@@ -6304,7 +6177,7 @@
         "lib/netstandard2.0/System.IO.Pipelines.xml",
         "ref/netcoreapp2.0/System.IO.Pipelines.dll",
         "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.4.7.0.nupkg.sha512",
+        "system.io.pipelines.4.7.1.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7280,26 +7153,31 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
-      "sha512": "IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8396,22 +8274,25 @@
         "system.threading.nuspec"
       ]
     },
-    "System.Threading.Channels/4.7.0": {
-      "sha512": "gdOOXBhtt2UpTxYJm1DRmoqNfYg5ypvhzhVt0vxKhzxXFjS81r8yIOSFsJYLRa1Jc14GBAqCnjxJstO3zBN7gg==",
+    "System.Threading.Channels/4.7.1": {
+      "sha512": "6akRtHK/wab3246t4p5v3HQrtQk8LboOt5T4dtpNgsp3zvDeM4/Gx8V12t0h+c/W9/enUrilk8n6EQqdQorZAA==",
       "type": "package",
-      "path": "system.threading.channels/4.7.0",
+      "path": "system.threading.channels/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Threading.Channels.dll",
+        "lib/net461/System.Threading.Channels.xml",
         "lib/netcoreapp3.0/System.Threading.Channels.dll",
         "lib/netcoreapp3.0/System.Threading.Channels.xml",
         "lib/netstandard1.3/System.Threading.Channels.dll",
         "lib/netstandard1.3/System.Threading.Channels.xml",
         "lib/netstandard2.0/System.Threading.Channels.dll",
         "lib/netstandard2.0/System.Threading.Channels.xml",
-        "system.threading.channels.4.7.0.nupkg.sha512",
+        "system.threading.channels.4.7.1.nupkg.sha512",
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8715,127 +8596,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Westwind.AspNetCore.Markdown/3.3.6": {
-      "sha512": "wW2WAOxCEbHBlg4PyK3bA9jESMo6rwiAAVKyfiuQ9ZLw6o0xgD+4KThOp30QQ1IIWDiMaX/CoKzTZakq3F7SqA==",
-      "type": "package",
-      "path": "westwind.aspnetcore.markdown/3.3.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp2.1/Westwind.AspNetCore.Markdown.dll",
-        "lib/netcoreapp3.0/Westwind.AspNetCore.Markdown.dll",
-        "westwind.aspnetcore.markdown.3.3.6.nupkg.sha512",
-        "westwind.aspnetcore.markdown.nuspec"
-      ]
-    },
-    "Zen.Cloud/0.5.0-alpha": {
-      "sha512": "5n31OJOhV5Zl+9rzg4pXk+2mzNYLkg4wQmQa1p+k5yN5LSvGVljD8mS0yEdv4eHTjKcckwbnCeSAumDpVdQuyg==",
-      "type": "package",
-      "path": "zen.cloud/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Cloud.dll",
-        "zen-icon.png",
-        "zen.cloud.0.5.0-alpha.nupkg.sha512",
-        "zen.cloud.nuspec"
-      ]
-    },
-    "Zen.Module.Cache.Redis/0.5.0-alpha": {
-      "sha512": "LMzRsMFrXjLZ0+0q1X+C80EGOzig2OxsffW7Epe3695W3RHZh961x/1Vaos1XqFl8/LuKJt7KaZGLEq+jdWA2Q==",
-      "type": "package",
-      "path": "zen.module.cache.redis/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Module.Cache.Redis.dll",
-        "zen-icon.png",
-        "zen.module.cache.redis.0.5.0-alpha.nupkg.sha512",
-        "zen.module.cache.redis.nuspec"
-      ]
-    },
-    "Zen.Module.Cloud.AWS/0.5.0-alpha": {
-      "sha512": "veNFrkdkEpmF7eSxKqwtH6RW1AWPULOTz+oOWGUvXwjJRWJMZbKwoFby5/dlJgjl6CbmOP4LscH+43M1Jw626g==",
-      "type": "package",
-      "path": "zen.module.cloud.aws/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Module.Cloud.AWS.dll",
-        "zen-icon.png",
-        "zen.module.cloud.aws.0.5.0-alpha.nupkg.sha512",
-        "zen.module.cloud.aws.nuspec"
-      ]
-    },
-    "Zen.Module.Cloud.Google/0.5.0-alpha": {
-      "sha512": "Pr/ZC+JJ8mzVrzCOVW6Z+oTOI0HQGvhWMsEYdxWDKeFNC53QnNJ7O2oZRBXMmt0Ehy1z/+Q5lcUnP5lvq6snpw==",
-      "type": "package",
-      "path": "zen.module.cloud.google/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Module.Cloud.Google.dll",
-        "zen-icon.png",
-        "zen.module.cloud.google.0.5.0-alpha.nupkg.sha512",
-        "zen.module.cloud.google.nuspec"
-      ]
-    },
-    "Zen.Module.Data.Oracle/0.5.0-alpha": {
-      "sha512": "Ste7lFcplxfNppVrT76iCozQsSfJrstrQQmJBMXLFITXTnwD/stqflyRWLZNZGi22kzS8MsAFtNCPr65E7NjVw==",
-      "type": "package",
-      "path": "zen.module.data.oracle/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "lib/netcoreapp3.1/Zen.Module.Data.Oracle.dll",
-        "zen-icon.png",
-        "zen.module.data.oracle.0.5.0-alpha.nupkg.sha512",
-        "zen.module.data.oracle.nuspec"
-      ]
-    },
-    "Zen.Module.Data.Relational/0.5.0-alpha": {
-      "sha512": "AuOvXyzYQySUQdOVMfNyhpPc7zN6BiTnZ8Jpjg+wA6FAost0uNR/VYmHYnHAfKV1wQK+ABx8X30RANUQpc95ww==",
-      "type": "package",
-      "path": "zen.module.data.relational/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Module.Data.Relational.dll",
-        "zen-icon.png",
-        "zen.module.data.relational.0.5.0-alpha.nupkg.sha512",
-        "zen.module.data.relational.nuspec"
-      ]
-    },
-    "Zen.Module.Encryption.AES/0.5.0-alpha": {
-      "sha512": "Vu9HGeXgWFkU9UKqGr4RXr+JVvZ94GTNGRiNHGk1O/Lo8YGtLYY0hOuC2cgrBOqChY3irs5sNhV4Hcq3eGbUag==",
-      "type": "package",
-      "path": "zen.module.encryption.aes/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Module.Encryption.AES.dll",
-        "zen-icon.png",
-        "zen.module.encryption.aes.0.5.0-alpha.nupkg.sha512",
-        "zen.module.encryption.aes.nuspec"
-      ]
-    },
-    "Zen.Pebble.Database/0.5.0-alpha": {
-      "sha512": "4oDv4sKVyyUisXyJEqSLLDnQqnkGx3Z/u/f4orQuoFFz40H4W1QsNIUbSDNA7KQf09yFKYdSV36Ja0Htd9gdRA==",
-      "type": "package",
-      "path": "zen.pebble.database/0.5.0-alpha",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.txt",
-        "lib/netcoreapp3.1/Zen.Pebble.Database.dll",
-        "zen-icon.png",
-        "zen.pebble.database.0.5.0-alpha.nupkg.sha512",
-        "zen.pebble.database.nuspec"
-      ]
-    },
-    "edu.bucknell.framework/1.0.0": {
-      "type": "project",
-      "path": "../../../../../../bucknell/edu.bucknell.Framework/edu.bucknell.Framework.csproj",
-      "msbuildProject": "../../../../../../bucknell/edu.bucknell.Framework/edu.bucknell.Framework.csproj"
-    },
     "edu.bucknell.project.moravianLives.model/1.0.0": {
       "type": "project",
       "path": "../../model/edu.bucknell.project.moravianLives.model.csproj",
@@ -8851,20 +8611,60 @@
       "path": "../../../../zen/Zen.Base/Zen.Base.csproj",
       "msbuildProject": "../../../../zen/Zen.Base/Zen.Base.csproj"
     },
+    "Zen.Cloud/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Cloud/Zen.Cloud.csproj",
+      "msbuildProject": "../../../../zen/Zen.Cloud/Zen.Cloud.csproj"
+    },
     "Zen.Media/0.0.1": {
       "type": "project",
       "path": "../../../../zen/Zen.Media/Zen.Media.csproj",
       "msbuildProject": "../../../../zen/Zen.Media/Zen.Media.csproj"
+    },
+    "Zen.Module.Cache.Redis/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Cache.Redis/Zen.Module.Cache.Redis.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Cache.Redis/Zen.Module.Cache.Redis.csproj"
+    },
+    "Zen.Module.Cloud.AWS/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Cloud.AWS/Zen.Module.Cloud.AWS.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Cloud.AWS/Zen.Module.Cloud.AWS.csproj"
+    },
+    "Zen.Module.Cloud.Google/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Cloud.Google/Zen.Module.Cloud.Google.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Cloud.Google/Zen.Module.Cloud.Google.csproj"
     },
     "Zen.Module.Data.MongoDB/0.0.1": {
       "type": "project",
       "path": "../../../../zen/Zen.Module.Data.MongoDB/Zen.Module.Data.MongoDB.csproj",
       "msbuildProject": "../../../../zen/Zen.Module.Data.MongoDB/Zen.Module.Data.MongoDB.csproj"
     },
+    "Zen.Module.Data.Oracle/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Data.Oracle/Zen.Module.Data.Oracle.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Data.Oracle/Zen.Module.Data.Oracle.csproj"
+    },
+    "Zen.Module.Data.Relational/0.0.1": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Data.Relational/Zen.Module.Data.Relational.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Data.Relational/Zen.Module.Data.Relational.csproj"
+    },
+    "Zen.Module.Encryption.AES/1.0.0": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Module.Encryption.AES/Zen.Module.Encryption.AES.csproj",
+      "msbuildProject": "../../../../zen/Zen.Module.Encryption.AES/Zen.Module.Encryption.AES.csproj"
+    },
     "Zen.Pebble.CrossModelMap/1.0.0": {
       "type": "project",
       "path": "../../../../zen/Zen.Pebble.CrossModelMap/Zen.Pebble.CrossModelMap.csproj",
       "msbuildProject": "../../../../zen/Zen.Pebble.CrossModelMap/Zen.Pebble.CrossModelMap.csproj"
+    },
+    "Zen.Pebble.Database/1.0.0": {
+      "type": "project",
+      "path": "../../../../zen/Zen.Pebble.Database/Zen.Pebble.Database.csproj",
+      "msbuildProject": "../../../../zen/Zen.Pebble.Database/Zen.Pebble.Database.csproj"
     },
     "Zen.Pebble.FlexibleData/1.0.0": {
       "type": "project",
@@ -8905,30 +8705,38 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Zen.Base >= 0.0.1",
+      "Zen.Cloud >= 0.0.1",
+      "Zen.Module.Cache.Redis >= 0.0.1",
+      "Zen.Module.Cloud.AWS >= 0.0.1",
+      "Zen.Module.Cloud.Google >= 0.0.1",
       "Zen.Module.Data.MongoDB >= 0.0.1",
+      "Zen.Module.Data.Oracle >= 0.0.1",
+      "Zen.Module.Data.Relational >= 0.0.1",
+      "Zen.Module.Encryption.AES >= 1.0.0",
       "Zen.Pebble.CrossModelMap >= 1.0.0",
+      "Zen.Pebble.Database >= 1.0.0",
       "Zen.Provider.GitHub >= 1.0.0",
       "edu.bucknell.project.moravianLives.model >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dmancusi\\.nuget\\packages\\": {},
+    "C:\\Users\\lr030\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\Bucknell_MoravianLives_GitHub.csproj",
+      "projectUniqueName": "C:\\Luyang\\repo2\\ML2\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\Bucknell_MoravianLives_GitHub.csproj",
       "projectName": "edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_GitHub",
-      "projectPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\Bucknell_MoravianLives_GitHub.csproj",
-      "packagesPath": "C:\\Users\\dmancusi\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\obj\\",
+      "projectPath": "C:\\Luyang\\repo2\\ML2\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\Bucknell_MoravianLives_GitHub.csproj",
+      "packagesPath": "C:\\Users\\lr030\\.nuget\\packages\\",
+      "outputPath": "C:\\Luyang\\repo2\\ML2\\Projects\\VS\\providers\\Bucknell_MoravianLives_GitHub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dmancusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lr030\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8936,27 +8744,50 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://developer.bucknell.edu/nexus/repository/web/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
-              "projectPath": "C:\\repo\\moravianlives\\ML\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj"
+            "C:\\Luyang\\repo2\\ML2\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\Projects\\VS\\model\\edu.bucknell.project.moravianLives.model.csproj"
             },
-            "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj": {
-              "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Base\\Zen.Base.csproj"
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Base\\Zen.Base.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Base\\Zen.Base.csproj"
             },
-            "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
-              "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj"
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Cloud\\Zen.Cloud.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Cloud\\Zen.Cloud.csproj"
             },
-            "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.CrossModelMap\\Zen.Pebble.CrossModelMap.csproj": {
-              "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Pebble.CrossModelMap\\Zen.Pebble.CrossModelMap.csproj"
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cache.Redis\\Zen.Module.Cache.Redis.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cache.Redis\\Zen.Module.Cache.Redis.csproj"
             },
-            "C:\\repo\\moravianlives\\ML\\zen\\Zen.Provider.GitHub\\Zen.Provider.GitHub.csproj": {
-              "projectPath": "C:\\repo\\moravianlives\\ML\\zen\\Zen.Provider.GitHub\\Zen.Provider.GitHub.csproj"
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cloud.AWS\\Zen.Module.Cloud.AWS.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cloud.AWS\\Zen.Module.Cloud.AWS.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cloud.Google\\Zen.Module.Cloud.Google.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Cloud.Google\\Zen.Module.Cloud.Google.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.MongoDB\\Zen.Module.Data.MongoDB.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.Oracle\\Zen.Module.Data.Oracle.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.Oracle\\Zen.Module.Data.Oracle.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.Relational\\Zen.Module.Data.Relational.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Data.Relational\\Zen.Module.Data.Relational.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Encryption.AES\\Zen.Module.Encryption.AES.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Module.Encryption.AES\\Zen.Module.Encryption.AES.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Pebble.CrossModelMap\\Zen.Pebble.CrossModelMap.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Pebble.CrossModelMap\\Zen.Pebble.CrossModelMap.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Pebble.Database\\Zen.Pebble.Database.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Pebble.Database\\Zen.Pebble.Database.csproj"
+            },
+            "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Provider.GitHub\\Zen.Provider.GitHub.csproj": {
+              "projectPath": "C:\\Luyang\\repo2\\ML2\\zen\\Zen.Provider.GitHub\\Zen.Provider.GitHub.csproj"
             }
           }
         }
@@ -8985,7 +8816,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

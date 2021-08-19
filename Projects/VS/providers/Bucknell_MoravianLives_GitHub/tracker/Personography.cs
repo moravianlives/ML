@@ -121,7 +121,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-3.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
                         .Result;
 
                     raw.Source = source;
@@ -212,6 +212,9 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
 
                     entry.timeLog.Log("Gender detection");
+
+                    //#Mlper
+                    entry.targetModel.MLid = entry.sourceData.Id;
 
                     // Gender
 
@@ -377,6 +380,16 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                 targetNameVariant.Comments ??= $"Source: {nameResp}";
                         }
                     }
+
+
+                    //add brith and death information
+                    entry.targetModel.BirthDate ??= new HistoricDateTime();
+                    entry.targetModel.DeathDate ??= new HistoricDateTime();
+                    entry.targetModel.BirthDate = birthEventData.Timestamp;
+                    entry.targetModel.DeathDate = deathEventData.Timestamp;
+
+                    entry.targetModel.Birthplace = birthEventData.PlaceName;
+                    entry.targetModel.Deathplace = deathEventData.PlaceName;
 
 
                     // read memoir information

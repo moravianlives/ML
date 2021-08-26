@@ -26,19 +26,19 @@
         </html>
     </xsl:template>
     
-    <!-- This hides "title" of the memoir -->
+    <!-- This hides "title" of the memoir  -->
     <xsl:template match="tei:div/tei:head">
         <h2>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
     
-    <xsl:template match="tei:div/tei:head[@type='page']">
+<!--    <xsl:template match="tei:div/tei:pb">
         <em>
             <xsl:text>Page: </xsl:text>
             <xsl:apply-templates/>
         </em>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- This breaks the text into paragraphs as marked up in text (not the same as pages) -->
     <xsl:template match="tei:p">
@@ -55,17 +55,29 @@
     
     <!-- This renders the superscript letters in HTML <sup> tag -->
     <xsl:template match="tei:hi[@rend='superscript'] | tei:sup">
-        <sup xmlns="http://www.w3.org/1999/xhtml">
+        <sup>
             <xsl:value-of select="."/>
         </sup>        
     </xsl:template>
     
-    <!-- This renders underlined letters in HTML <u> tag -->
+    <!-- This renders underlined letters in HTML <u> tag 
+    <xsl:template match="tei:hi[@rend='underline']">
+        <underline>
+            <xsl:value-of select="."/>
+        </underline>
+    </xsl:template>-->
+    
+    <!-- This renders letters above the line in HTML <sup> tag -->
+    <xsl:template match="tei:add[@place='above'] | tei:sup">
+        <sup>
+            <xsl:value-of select="."/>
+        </sup>        
+    </xsl:template>
     
     
     <!-- This renders strikethrough in HTML -->
     <xsl:template match="tei:del">
-        <del xmlns="http://www.w3.org/1999/xhtml">
+        <del>
             <xsl:value-of select="."/>
         </del>
     </xsl:template>
@@ -75,8 +87,35 @@
     
     <!-- This adds /// at each page break -->
     <xsl:template match="tei:div[@type='page']">
-        <p><xsl:apply-templates/>
-            <xsl:text>///</xsl:text>
-        </p>
+        <xsl:apply-templates/>
+            <xsl:text>PAGE BREAK</xsl:text>
     </xsl:template>
+    
+    <!-- This renders all  placeName in italics 
+    <xsl:template match="tei:placeName">
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>-->
+    
+    <!-- This renders all dates in italics -->
+    <xsl:template match="tei:date">
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>
+    
+<!--    <xsl:template match="tei:name[@office]">
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>-->
+
+<!-- This creates a link pointer to the personography identifier -->
+    <xsl:template match="tei:persName | tei:placeName">
+        <a href="{@ref}.html">
+            <xsl:apply-templates/>        
+        </a>
+    </xsl:template>
+    
 </xsl:stylesheet>

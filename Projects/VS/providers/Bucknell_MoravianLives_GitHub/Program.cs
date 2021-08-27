@@ -11,8 +11,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
     {
         static void Main(string[] args)
         {
-            var importProcesses = IoC.
-                GetClassesByInterface<IMoravianLivesDataOnboarding>()
+            var importProcesses = IoC.GetClassesByInterface<IMoravianLivesDataOnboarding>()
                 .CreateInstances<IMoravianLivesDataOnboarding>()
                 .ToList();
 

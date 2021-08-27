@@ -1,8 +1,15 @@
 ﻿using edu.bucknell.project.moravianLives.model.Common.Resolve;
 using System.Linq;
+using Zen.Module.Data.MongoDB;
+using Zen.Base.Module.Data;
+
 
 namespace edu.bucknell.project.moravianLives.model.Common.Reference
 {
+    [DataConfigAttribute(ConnectionBundleType = typeof(MongoDbDefaultBundle))]
+    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
     public class SourceReference : ModelReference<Source, Source.ExternalReferences, SourceResolve>
     {
         public SourceReference()

@@ -8,15 +8,21 @@ using Zen.Base.Module;
 using Zen.Base.Module.Data.CommonAttributes;
 using Zen.Pebble.FlexibleData.Historical;
 using Zen.Pebble.FlexibleData.String.Localization;
+using Zen.Base.Module.Data;
+using edu.bucknell.framework.Service.Configuration.Database.ConnectionBundle;
 
 namespace edu.bucknell.project.moravianLives.model
 {
+    [DataConfigAttribute(ConnectionBundleType = typeof(MongoGenericBundle))]
+    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
     public class Location : Data<Location>, IDataId
     {
-        [Key] public string Id { get; set; } = Guid.NewGuid().ToString();
+        [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; } = Guid.NewGuid().ToString();
 
         [Display] public HistoricString Name { get; set; }
-
+        public string MLid { get; set; }
         public HistoricalValue<string> Parent { get; set; }
         public List<string> Categories { get; set; }
 
@@ -37,7 +43,7 @@ namespace edu.bucknell.project.moravianLives.model
 
         public class ExternalReferences : Data<ExternalReferences>, IDataId
         {
-            [Key] public string Id { get; set; }
+            [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; }
 
             public List<ExternalReference> References { get; set; } = new List<ExternalReference>();
 

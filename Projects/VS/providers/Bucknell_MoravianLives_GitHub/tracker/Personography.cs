@@ -121,7 +121,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-2.xml")
                         .Result;
 
                     raw.Source = source;
@@ -447,9 +447,14 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     }
 
 
-                        // Finally, event handling.
+                    // Listed Choir
 
-                        entry.timeLog.Log("Unique event: Birth");
+                    if (mustMentionEntry) ScopedLog.Log($"{entry.sourceData.Id}: {serializedModel}", Message.EContentType.MoreInfo);
+
+
+                    // Finally, event handling.
+
+                    entry.timeLog.Log("Unique event: Birth");
 
                     if (birthEventData.Timestamp != null)
                     {
@@ -628,7 +633,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         if (mustMentionEvent) ScopedLog.Log($"{entry.sourceData.Id}: {serializedEvent}", Message.EContentType.MoreInfo);
                     }
 
-                    if (mustMentionEntry) ScopedLog.Log($"{entry.sourceData.Id}: {serializedModel}", Message.EContentType.MoreInfo);
+                   
 
                 })
                 .OnCommit(() =>

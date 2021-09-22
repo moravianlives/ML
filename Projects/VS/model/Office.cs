@@ -21,5 +21,10 @@ namespace edu.bucknell.project.moravianLives.model
 
         public string placeMLid { get; set; }
 
+        public string placename { get; set; }
+
+        public DateTime notBefore { get; set; }
+        public DateTime notAfter { get; set; }
+
     }
 }

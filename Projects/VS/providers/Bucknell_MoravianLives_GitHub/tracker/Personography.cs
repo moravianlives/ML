@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using edu.bucknell.project.moravianLives.model;
@@ -422,28 +423,33 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     entry.targetModel.MemoirInfo.lang ??= MemoirLang;
 
                     //read office information
-                    //entry.targetModel.officeinfo ??= new List<OfficeString>();
-                    var officestr = new OfficeString();
-                    
-                    
+                    entry.targetModel.offices = new List<Office>();
 
-                    var offices = source?.SelectTokens("person.listOffice.office[*]").Select(i => (JObject)i).ToList();
+
+                    //var officestr = new OfficeString();
+                    var offices = source?.SelectTokens("listOffice.office[*]").Select(i => (JObject)i).ToList();
+
+
                     foreach (var @office in offices)
                     {
-                        var title = @office.StrVal("#text");
-                        var orgname = @office.StrVal("@placeName");
-                        officestr.SetVariant(title, orgname);
-                        entry.targetModel.officeinfo.Add(officestr);
+                        Office offi = new Office();
+                        offi.title = @office.StrVal("#text");
+                        offi.MLid ??= @office.StrVal("@ref");
+                        //offi.notBefore ??= @office.StrVal("@notBefore");
+                        offi.placename = @office.StrVal(new[] { "placeName.#text", "placeName" });
+                        offi.placeMLid = @office.StrVal(new[] { "placeName.@ref" });
 
-                        var eventModel = Office.Where(i =>
-                            i.Value == title).FirstOrDefault();
+                        CultureInfo provider = CultureInfo.InvariantCulture;
+                       // offi.notBefore = DateTime.ParseExact(@office.StrVal("@notBefore"), "yyyy-mm-dd", provider);
+                        //offi.notAfter = DateTime.ParseExact(@office.StrVal("@notAfter"), "yyyy-mm-dd", provider);
+                        //offi.notBefore =  Convert.ToDateTime(@office.StrVal("@notBefore"));
+                        //offi.notAfter = Convert.ToDateTime(@office.StrVal("@notAfter"));
 
-                        if (eventModel == null)
-                            eventModel = new Office
-                            {
-                                Value = title
-                            };
+                        //officestr.SetVariant(title, orgname);
+                        //entry.targetModel.offices.Add(officestr);
 
+                        // source.StrVal("person.birth.placeName.@ref");
+                        entry.targetModel.offices.Add(offi);
                     }
 
 
@@ -482,7 +488,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     // Listed Events.
 
-                    var events = source?.SelectTokens("person.event[*]").Select(i => (JObject)i).ToList();
+                    var events = source?.SelectTokens("person.listEvent.event[*]").Select(i => (JObject)i).ToList();
 
                     foreach (var @event in events)
                     {
@@ -633,7 +639,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         if (mustMentionEvent) ScopedLog.Log($"{entry.sourceData.Id}: {serializedEvent}", Message.EContentType.MoreInfo);
                     }
 
-                   
+
 
                 })
                 .OnCommit(() =>

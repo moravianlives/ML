@@ -216,6 +216,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     //#Mlper
                     entry.targetModel.MLid = entry.sourceData.Id;
+                    if (entry.targetModel.MLid == "mlper000231") 
+                        { int a = 1; }
 
                     // Gender
 
@@ -272,6 +274,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                             surnameVariants = source?.SelectTokens("person.persName.surname[*]").ToList();
 
                     var fullName = $"{firstName} {midName} {lastName}".Trim();
+                    if (fullName == null)
+                    {
+                        int a = 0;
+                    }
 
                     //Birth
                     entry.timeLog.Log("Birth event information");
@@ -280,9 +286,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Token = source?.JValue(new[]
                         {
-                            "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
+                           //"person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian')]",
-                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]"
+                            //"person.birth.date[?(@.@type == 'birth' && @.@resp == '#memoir')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]"//,
+                            //"person.birth.date"
+
                         })
                     };
 
@@ -290,7 +299,20 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         birthEventData.Text = birthEventData.Token.StrVal("@when-iso") ??
                                               birthEventData.Token.StrVal("#text");
-                        birthEventData.Timestamp = HealDatetime("Birthdate", entry.sourceData.Id, birthEventData.Text);
+                        try
+                        {
+                            birthEventData.Timestamp = HealDatetime("Birthdate", entry.sourceData.Id, birthEventData.Text);
+                        }
+                        catch (Exception e)
+                        {
+                            birthEventData.Timestamp = null;
+                        }
+
+                    }
+
+                    if (birthEventData.Timestamp == null)
+                    {
+                        int a = 1;
                     }
 
                     birthEventData.PlaceIdentifier = source.StrVal("person.birth.placeName.@ref");
@@ -308,10 +330,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Token = source?.JValue(new[]
                         {
-                            "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
+                           // "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar != 'Julian')]",
-                            "person.death.date"
+                            //"person.death.date"
                         })
                     };
 
@@ -319,7 +341,16 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         deathEventData.Text = deathEventData.Token.StrVal("@when-iso") ??
                                               deathEventData.Token.StrVal("#text");
-                        deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+                        try
+                        {
+                            deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+
+                        }
+                        catch (Exception e)
+                        {
+                            deathEventData.Timestamp = null;
+                        }
+                        //deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
                     }
 
                     deathEventData.PlaceIdentifier = source.StrVal("person.death.placeName.@ref");
@@ -440,7 +471,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         offi.placeMLid = @office.StrVal(new[] { "placeName.@ref" });
 
                         CultureInfo provider = CultureInfo.InvariantCulture;
-                       // offi.notBefore = DateTime.ParseExact(@office.StrVal("@notBefore"), "yyyy-mm-dd", provider);
+                        // offi.notBefore = DateTime.ParseExact(@office.StrVal("@notBefore"), "yyyy-mm-dd", provider);
                         //offi.notAfter = DateTime.ParseExact(@office.StrVal("@notAfter"), "yyyy-mm-dd", provider);
                         //offi.notBefore =  Convert.ToDateTime(@office.StrVal("@notBefore"));
                         //offi.notAfter = Convert.ToDateTime(@office.StrVal("@notAfter"));

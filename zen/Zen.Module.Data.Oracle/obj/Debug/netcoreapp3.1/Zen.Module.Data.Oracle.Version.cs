@@ -9,8 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Reflection.AssemblyVersionAttribute("0.6.0.0")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.104")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+9ac5afac24")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.105")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+d0fac25805")]
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode("Nerdbank.GitVersioning.Tasks","3.3.37.35081")]
 #endif
@@ -19,14 +19,14 @@
 #endif
 internal static partial class ThisAssembly {
     internal const string AssemblyVersion = "0.6.0.0";
-    internal const string AssemblyFileVersion = "0.6.0.104";
-    internal const string AssemblyInformationalVersion = "0.6.0-alpha+9ac5afac24";
+    internal const string AssemblyFileVersion = "0.6.0.105";
+    internal const string AssemblyInformationalVersion = "0.6.0-alpha+d0fac25805";
     internal const string AssemblyName = "Zen.Module.Data.Oracle";
     internal const string AssemblyTitle = "Zen.Module.Data.Oracle";
     internal const string AssemblyConfiguration = "Debug";
-    internal const string GitCommitId = "9ac5afac24897c46c0f966cffb212a9369454d28";
+    internal const string GitCommitId = "d0fac25805d04bc3e0e8721cd5782bbf6a40de7e";
     internal const bool IsPublicRelease = false;
     internal const bool IsPrerelease = true;
-    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637677647380000000L, System.DateTimeKind.Utc);
+    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637679376400000000L, System.DateTimeKind.Utc);
     internal const string RootNamespace = "Zen.Module.Data.Oracle";
 }

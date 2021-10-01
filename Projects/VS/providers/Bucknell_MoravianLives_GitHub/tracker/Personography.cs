@@ -93,6 +93,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
             ClearChangeTrack();
 
             SourceRepository = new MoravianLivesGitHubFileStorage().ResolveStorage();
+            int count = 0;
 
             Identifier(entry => entry.Id)
                 .Configure(config =>
@@ -122,7 +123,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-2.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
                         .Result;
 
                     raw.Source = source;
@@ -161,7 +162,15 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     // We'll receive a source item and try to resolve it to its 1:1 Data model.
 
                     var sourceId = GetIdentifier(source);
-
+                    if (sourceId == null)
+                    {
+                        int a = 0;
+                    }
+                    count++;
+                    if (count > 50)
+                    {
+                        int a = 0;
+                    }
                     return _personReference.GetReference(Configuration.CollectionFullIdentifier, sourceId, null);
                 })
                 .ComplexTransform(entry =>
@@ -169,7 +178,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     var mustMentionEntry = false;
 
-                    if (entry.targetModel == null) return;
+                    if (entry.targetModel == null) 
+                        return;
                     if (entry.sourceData?.Contents == null) return;
                     if (entry.timeLog == null) return;
 
@@ -190,6 +200,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     }
 
                     if (entry.sourceData.Id == "mlper000566") // Nicolas Zinzendorf
+                    {
+                    }
+
+                    if (entry.sourceData.Id == "mlper000558") // Grinfield, Thomas
                     {
                     }
 
@@ -289,8 +303,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                            //"person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian')]",
                             //"person.birth.date[?(@.@type == 'birth' && @.@resp == '#memoir')]",
-                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]"//,
-                            //"person.birth.date"
+                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]",
+                            "person.birth.date[?(@.@type == 'birth')]",
+                            "person.birth.date[0]",
+                            "person.birth.date"
 
                         })
                     };
@@ -309,6 +325,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         }
 
                     }
+      
 
                     if (birthEventData.Timestamp == null)
                     {
@@ -333,7 +350,9 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                            // "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar != 'Julian')]",
-                            //"person.death.date"
+                            "person.death.date[?(@.@type == 'death')]",
+                            "person.death.date[0]",
+                            "person.death.date"
                         })
                     };
 
@@ -351,6 +370,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                             deathEventData.Timestamp = null;
                         }
                         //deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+                    }
+                    else
+                    {
+                        int a = 0;
                     }
 
                     deathEventData.PlaceIdentifier = source.StrVal("person.death.placeName.@ref");
@@ -455,7 +478,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     //read office information
                     entry.targetModel.offices = new List<Office>();
-
+                    //count++;
+                    //if (count > 50)
+                    //{
+                    //    var b = 0;
+                    //}
+                        
 
                     //var officestr = new OfficeString();
                     var offices = source?.SelectTokens("listOffice.office[*]").Select(i => (JObject)i).ToList();

@@ -162,15 +162,13 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     // We'll receive a source item and try to resolve it to its 1:1 Data model.
 
                     var sourceId = GetIdentifier(source);
-                    if (sourceId == null)
-                    {
-                        int a = 0;
-                    }
+
                     count++;
                     if (count > 50)
                     {
                         int a = 0;
                     }
+
                     return _personReference.GetReference(Configuration.CollectionFullIdentifier, sourceId, null);
                 })
                 .ComplexTransform(entry =>
@@ -207,6 +205,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                     }
 
+ 
 
                     //If development - dump info.
 
@@ -302,8 +301,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         {
                            //"person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian')]",
-                            //"person.birth.date[?(@.@type == 'birth' && @.@resp == '#memoir')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#Yorkshire_Families')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#Fulneck_Families_19th_Century')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#memoir')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == 'memoir')]",
                             "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]",
+                            
                             "person.birth.date[?(@.@type == 'birth')]",
                             "person.birth.date[0]",
                             "person.birth.date"
@@ -349,6 +352,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         {
                            // "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#Yorkshire_Families')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#Fulneck_Families_19th_Century')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#memoir')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar != 'Julian')]",
                             "person.death.date[?(@.@type == 'death')]",
                             "person.death.date[0]",
@@ -684,9 +691,9 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                         }
                                 }
 
-                            var otherPersonModel = _personReference.GetReference(Configuration.CollectionFullIdentifier, otherPersonRefId, new Person() { Name = otherPersonName });
-                            eventModel.Roles.Ensure(new Event.RoleDescriptor { PersonId = otherPersonModel.Id, RoleId = eventRoleId });
-                            ScopedLog.Log($"{entry.sourceData.Id}: [Event:{eventCategoryModelId}] referenced Person - {otherPersonModel.Name ?? otherPersonModel.Id} as {eventRoleId}", Message.EContentType.Info);
+                            //var otherPersonModel = _personReference.GetReference(Configuration.CollectionFullIdentifier, otherPersonRefId, new Person() { Name = otherPersonName });
+                            //eventModel.Roles.Ensure(new Event.RoleDescriptor { PersonId = otherPersonModel.Id, RoleId = eventRoleId });
+                            //ScopedLog.Log($"{entry.sourceData.Id}: [Event:{eventCategoryModelId}] referenced Person - {otherPersonModel.Name ?? otherPersonModel.Id} as {eventRoleId}", Message.EContentType.Info);
                         }
 
                         var placeName = eventLocation?.Name != null ? eventLocation.Name + ", " : "";

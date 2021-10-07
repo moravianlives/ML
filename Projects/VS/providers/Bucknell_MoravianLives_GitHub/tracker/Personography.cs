@@ -123,7 +123,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-8.xml")
                         .Result;
 
                     raw.Source = source;
@@ -276,6 +276,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     var lastName = source?.StrVal(new[]
                     {
                         "person.persName.surname.#text",
+                        "person.persName.surname[0].#text",
+                        "person.persName.surname[0]",
                         "person.persName.surname[?(@.@type == 'birth')].#text",
                         "person.persName.surname"
                     });
@@ -468,7 +470,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                      });
                     var MemoirLang = source?.StrVal(new[]
                    {
-                        "person.listBibl.msDesc.msIdentifier.institution.lang",
+                        "person.listBibl.msDesc.msIdentifier.institution.lang.#text",
                      });
 
                     var MemoirLink = source.StrVal("person.listBibl.msDesc.msIdentifier.institution.ptr.@target");

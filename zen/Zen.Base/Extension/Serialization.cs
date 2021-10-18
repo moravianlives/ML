@@ -525,6 +525,10 @@ namespace Zen.Base.Extension
             foreach (var query in querySet)
             {
                 var probe = source?.SelectTokens(query).FirstOrDefault();
+                //if (probe.Type() != Newtonsoft.Json.Linq.JToken(Newtonsoft.Json.Linq.JObject))
+                //{
+                //    int a = 0;
+                //}
                 if (probe != null) return (JObject)probe;
 
             }

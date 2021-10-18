@@ -116,6 +116,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     var a = entry.sourceData.Contents.ToJson();
                     var b = entry.targetModel.ToJson();
+                    //#Mlpla
+                    entry.targetModel.MLid = entry.sourceData.Id;
 
                     var relationshipMarker = entry.sourceData.Contents.SelectToken("relation");
                     if (relationshipMarker != null)
@@ -135,6 +137,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                             entry.targetModel.Parent = hardReferenceId;
                         }
 
+                
 
                     //Specifically for Placeography we have alternate name formats. So we'll extract and add it to the Variants list.
 

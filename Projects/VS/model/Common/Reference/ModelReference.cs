@@ -4,9 +4,16 @@ using System.Collections.Generic;
 using Zen.Base.Extension;
 using Zen.Base.Module;
 using Zen.Base.Module.Data.CommonAttributes;
+using Zen.Module.Data.MongoDB;
+using Zen.Base.Module.Data;
+
 
 namespace edu.bucknell.project.moravianLives.model.Common.Reference
 {
+    [DataConfigAttribute(ConnectionBundleType = typeof(MongoDbDefaultBundle))]
+    [DataEnvironmentMappingAttribute(Origin = "prd", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "uat", Target = "dev")]
+    [DataEnvironmentMappingAttribute(Origin = "STA", Target = "dev")]
     public class ModelReference<T, TU, RU> where T : Data<T>, IDataId where TU : Data<TU>, IDataId where RU: ModelResolve<T>
     {
         private readonly Dictionary<string, T> _cache = new Dictionary<string, T>();

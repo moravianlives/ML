@@ -160,18 +160,16 @@
 						<event type="sacrament" where="#mlpla000063" when-iso="1760-04-16">
 							<desc>received sacrament at Ockbrook</desc>
 						</event>
-						<event type="reception" office="acoluth" when-iso="--07">
+						<event type="reception" when-iso="--07">
 							<desc> received as acoluth </desc>
 						</event>
 						<event type="interment" where="#mlpla000063" when-iso="1765-12-02" ref="#mlper000693">
 							<desc>interred at Ockbrook by John Ockershausen</desc>
 						</event>
 					</listEvent>
-					<affiliation type="congregation">
-						<orgName>Fulneck</orgName>
-						<affiliation type="choir">
-							<orgName en="single sisters choir">Single Sisters' Choir</orgName>
-						</affiliation>
+					<affiliation>
+						<affiliation type="congregation" role="member" notBefore="1757" ref="#mlcon000001"/>
+						<affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
 					</affiliation>
 					<listBibl>
 						<msDesc>
@@ -180,15 +178,20 @@
 									<orgName>Fulneck Archives</orgName>
 									<idno>Ful/SS/62</idno>
 									<lang xml:lang="en">English</lang>
-									<ptr target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/wilson_elizabeth.xml" />
+
+									<ptr target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/wilson_elizabeth.xml"/>
+
 								</institution>
 							</msIdentifier>
 						</msDesc>
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation ref="#mlocc000050">stockiner</occupation>
+					<occupation ref="#mlocc000050">stockinger</occupation>
 				</listOccupation>
+				<listOffice>
+					<office ref="#mloff000015">acoluth</office>
+				</listOffice>	
 				<listRelation type="personal">
 					<relation name="child" passive="Thomas Wilson" />
 					<relation name="child" passive="Hannah (Renner) Wilson" notBefore="1701" />
@@ -237,7 +240,10 @@
 						<event type="reception" when-iso="1741">
 							<desc> received into <orgName en="greater girls choir">the Great Girls Choir</orgName></desc>
 						</event>
-						<event type="reception" office="acoluth" where="#mlpla000057" when-iso="1743-06-23">
+
+						<event type="reception" where="#mlpla000057"
+							when-iso="1743-06-23">
+
 							<desc> received as acoluth at Marienborn</desc>
 						</event>
 						<event type="reception" when-iso="1744">
@@ -268,29 +274,13 @@
 					<!-- Need to make a decision about how/whether to manage residences
                <residence ref="#mlpla000026" from="1734">Berthelsdorf</residence>
                <residence ref="#mlpla000053">Lobenstein</residence>-->
-					<affiliation type="congregation" from="1740" notBefore="1744">
-						<orgName>Marienborn</orgName>
-						<affiliation type="choir">
-							<orgName>Childrens Choir</orgName>
-							<orgName>Great Girls Choir</orgName>
-							<orgName>Single Sisters' Choir</orgName>
-						</affiliation>
-					</affiliation>
-					<affiliation type="congregation" notBefore="1747"><!-- was she a member of the Herrnhaag congregation? -->
-						<orgName>Herrnhaag</orgName>
-					</affiliation>
-					<affiliation type="congregation" notBefore="1748" notAfter="1764"><!-- was she a member of the Bethlehem congregation? -->
-						<orgName>Bethlehem</orgName>
-					</affiliation>
-					<affiliation type="congregation" from="1765" notAfter="1772">
-						<orgName>Bedford</orgName>
-					</affiliation>
-					<affiliation type="congregation" from="1772" to="1803">
-						<orgName>Fulneck</orgName>
-						<affiliation type="choir">
-							<orgName en="single sisters choir">Single Sisters' Choir</orgName>
-						</affiliation>
-					</affiliation>
+						<affiliation type="congregation" role="member" notBefore="1740" ref="#mlcon000002"/>
+						<affiliation type="congregation" role="member" notBefore="1748" ref="#mlcon000003"/>
+						<affiliation type="congregation" role="member" notBefore="1765" ref="#mlcon000004"/>
+						<affiliation type="congregation" role="member" notBefore="1772" ref="#mlcon000001"/>
+						<affiliation type="choir" notBefore="1740"><orgName en="childrens choir">Childrens Choir</orgName></affiliation>
+						<affiliation type="choir" notBefore="1741"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
+						<affiliation type="choir" notBefore="1744"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>	
 					<listBibl>
 						<msDesc>
 							<msIdentifier>
@@ -298,20 +288,24 @@
 									<orgName>Fulneck Archives</orgName>
 									<idno>Ful/SS/8</idno>
 									<lang xml:lang="en">English</lang>
+
 									<ptr type="html" target="https://moravianlives.scholar.bucknell.edu/anna-rosina-anderson/" />
 									<!--<ptr type="xml" target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/anderson_anna_rosina.xml" />-->
+
 								</institution>
 							</msIdentifier>
 						</msDesc>
 					</listBibl>
 				</person>
 				<listOffice>
-					<office when-iso="1742" ref="#mloff000025">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
-					<office />
-					<office notBefore="1748-09-20" notAfter="1764-05" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000002">Bethlehem</placeName></office>
-					<office when-iso="1765" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
-					<office when-iso="1765" notAfter="1772" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
-					<office from="1722" to="1801" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
+
+					<office notBefore="1742" ref="#mloff000060_02">great girls bandkeeper <placeName ref="mlpla000057">Marienborn</placeName></office>
+					<office notBefore="1743-06-23" ref="#mloff000015">acoluth</office>
+					<office notBefore="1748-09-20" notAfter="1764-05" ref="#mloff000046_03">single sisters' labourer <placeName ref="#mlpla000002">Bethlehem</placeName></office>
+					<office notBefore="1765" ref="#mloff000046_03">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
+					<office notBefore="1765" notAfter="1772" ref="#mloff000046_03">single sisters' labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
+					<office notBefore="1772" notAfter="1801" ref="#mloff000046_03">single sisters' labourer <placeName ref="#mlpla000003">Fulneck</placeName></office>
+
 				</listOffice>
 				<listRelation type="Moravian">
 					<relation name="interment" passive="Samuel Benade" ref="#mlper000557" />
@@ -358,6 +352,7 @@
 							<desc>interred at Fulneck by Peter Böhler</desc>
 						</event>
 					</listEvent>
+
 					<affiliation type="congregation">
 						<orgName>Fulneck</orgName>
 					</affiliation>
@@ -371,6 +366,7 @@
 						<orgName>Littlemoor</orgName>
 						<affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName>
 						</affiliation>
+
 					</affiliation>
 					<listBibl>
 						<msDesc>
@@ -379,15 +375,19 @@
 									<orgName>Fulneck Archives</orgName>
 									<idno>Ful/SS/38</idno>
 									<lang xml:lang="en">English</lang>
+
 									<ptr type="html" target="https://moravianlives.scholar.bucknell.edu/martha-adkinson-2/" />
 									<!--<ptr type="xml" target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/adkinson_martha.xml" />-->
+
 								</institution>
 							</msIdentifier>
 						</msDesc>
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation ref="#mlocc000017`">cook in the economy at <placeName ref="#mlpla000052">Littlemoor</placeName></occupation>
+
+					<occupation ref="#mlocc000017">cook in the economy at <placeName ref="#mlpla000052">Littlemoor</placeName></occupation>
+
 				</listOccupation>
 				<listRelation type="personal">
 					<relation name="child" passive="James Atkinson" />
@@ -430,7 +430,6 @@
 						<event type="entrance" where="#mlpla000274" when-iso="1750">
 							<desc>entered sisters' house at Tyersal</desc>
 						</event>
-						<!-- check whether Tythersall -->
 						<event type="reception" where="#mlpla000003" when-iso="1751-04-05">
 							<desc>received into congregation at Fulneck 5 April, 1751 (25 March, 1751 OS)</desc>
 						</event>
@@ -440,6 +439,7 @@
 						<event type="sacrament" where="#mlpla000003" when-iso="1753-02-25">
 							<desc>received sacrament at Fulneck</desc>
 						</event>
+
 						<event when-iso="1734-12-12">
 							<desc> Father died and lived with mother and <persName>Betty Midgley</persName>
 							</desc>
@@ -450,11 +450,13 @@
 						</event>
 						<event when-iso="1753">
 							<desc> received from <orgName en="greater girls choir">Great Girls</orgName> to the <orgName en="single sisters choir">Single Sisters Choir</orgName></desc>
+
 						</event>
 						<event type="interment" where="#mlpla000003" when-iso="1754-12-28" ref="#mlper000694">
 							<desc>interred at Fulneck by George Traneker</desc>
 						</event>
 					</listEvent>
+
 					<affiliation type="congregation" from="1746-05" notAfter="1753">
 						<orgName>Cleckheaton</orgName>
 						<affiliation type="choir" notAfter="1753"><orgName en="greater girls choir">Great Girls Choir</orgName><!-- check dates against memoir - they don't align with YF notes -->
@@ -469,6 +471,7 @@
 							<orgName en="single sisters choir">Single Sisters' Choir</orgName>
 						</affiliation>
 					</affiliation>
+
 					<listBibl>
 						<msDesc>
 							<msIdentifier>
@@ -538,6 +541,7 @@
 							<desc>interred at Fulneck by Benjamin La Trobe</desc>
 						</event>
 					</listEvent>
+
 					<education when-iso="1748"><placeName ref="#mlpla000101">girls' school Row Head</placeName></education>
 					<affiliation type="congregation" from="1752" to="1756">
 						<orgName>Mirfield</orgName>
@@ -551,6 +555,7 @@
 							<orgName en="single sisters choir">Single Sisters' Choir</orgName>
 						</affiliation>
 					</affiliation>
+
 					<listBibl>
 						<msDesc>
 							<msIdentifier>
@@ -652,7 +657,11 @@
 				<listOccupation>
 					<occupation ref="#mlocc000059">worked in Childrens Oeconomy Wash Kitchen</occupation>
 					<occupation ref="#mlocc000099">overseer in a Work Room</occupation>
+
 				</listOccupation>
+				<listOffice>
+					<office ref="#mloff000001_03">room overseet</office>
+				</listOffice>
 				<listRelation type="Moravian">
 					<relation name="interment" passive="Benjamin La Trobe" ref="#mlper000697" />
 				</listRelation>
@@ -699,11 +708,11 @@
 					</listBibl>
 				</person>
 				<listOffice>
-					<office>attendant at <placeName ref="#mlpla000222">Lady Huntingdon Chappel</placeName></office>
+
+					<office ref="#mloff000027">attendant at <placeName ref="#mlpla000222">Lady Huntingdon
+							Chappel</placeName></office>
+
 				</listOffice>
-				<listOccupation>
-					<occupation when-iso="1795">opened a Day School with her daughter</occupation>
-				</listOccupation>
 			</listPerson>
 			<!-- Booth, Elizabeth -->
 			<listPerson>
@@ -743,7 +752,9 @@
 							<desc>interred at Fulneck by James Charlesworth</desc>
 						</event>
 					</listEvent>
+
 					<education when-iso="1748"><placeName ref="#mlpla000101">girls' school Row Head</placeName></education>
+
 					<affiliation type="choir" notBefore="1753-08-13"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
 					<affiliation type="founder" when-iso="1755-04-19" ref="#mlpla000003">founder member of Fulneck congregation</affiliation>
 					<listBibl>
@@ -763,8 +774,10 @@
 				</person>
 				<listOffice>
 					<office ref="#mloff000028">intercessor at <placeName ref="mlpla000003">Fulneck</placeName></office>
-					<office ref="#mloff000025">band keeper for the Great Girls</office>
-					<office ref="#mloff000029">helper for the Great Girls</office>
+
+					<office ref="#mloff000060_02">Great Girls' bandkeeper</office>
+					<office ref="#mloff000042_01">Great Girls' choir helper</office>
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="Thomas Booth" />
@@ -904,9 +917,15 @@
 						</msDesc>
 					</listBibl>
 				</person>
+				<listOffice>
+					<office notBefore="1790" ref="#mloff000015">acoluth</office>
+					<office ref="#mloff000086">house servant for <date dur="P18Y">18 years</date></office>
+				</listOffice>
 				<listOccupation>
 					<occupation ref="#mlocc000093">sewer</occupation>
+
 					<occupation ref="#mlocc000081">houseservant for <date dur="P18Y">18 years</date></occupation>
+
 				</listOccupation>
 				<listRelation type="personal">
 					<relation name="child" passive="John Brook" notBefore="1709" />
@@ -1052,7 +1071,7 @@
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation>spinner</occupation>
+					<occupation ref="#mlocc000049">spinner</occupation>
 				</listOccupation>
 				<listRelation type="personal">
 					<relation name="child" passive="Samuel Calvert" />
@@ -1156,6 +1175,7 @@
 						<event type="arrival" where="#mlpla000112" when-iso="1759-01">
 							<desc>arrived at Annenhof Holland</desc>
 						</event>
+
 						<event type="arrival" where="#mlpla000001" when-iso="1759-08-12">
 							<desc>arrived at Herrnhut</desc>
 						</event>
@@ -1166,7 +1186,14 @@
 							<desc>received as acoluth at Annenhof Holland</desc>
 						</event>
 						<event type="reception" office="deaconess" where="#mlpla000112" when-iso="1759-01">
+
 							<desc>blessed as deaconess at Annenhof Holland</desc>
+						</event>
+						<event type="arrival" where="#mlpla000001" when-iso="1759-08-12">
+							<desc>arrived at Herrnhut</desc>
+						</event>
+						<event type="arrival" where="#mlpla000072" when-iso="1760-10-13">
+							<desc> returned to England</desc>
 						</event>
 						<event type="retirement" where="#mlpla000271" when-iso="1769-11-20">
 							<desc>retired single sisters' house at Fulneck</desc>
@@ -1195,15 +1222,19 @@
 					</listBibl>
 				</person>
 				<listOffice>
-					<office when-iso="1748" ref="#mloff000028">intercessor at <placeName ref="#mlpla000014">Herrnhaag</placeName></office>
-					<office when-iso="1748" ref="#mloff000013">single sisters' choir servant <placeName ref="#mlpla000084">Yorkshire</placeName></office>
-					<office when-iso="1748" ref="#mloff000029">single sisters' choir helper <placeName ref="#mlpla000084">Yorkshire</placeName></office>
-					<office when-iso="1751" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000144">Dublin</placeName></office>
-					<office from="1752" to="1759" ref="#mloff000004">single sisters' labourer North of <placeName ref="#mlpla000114">Ireland</placeName></office>
-					<office when-iso="1760-10-13" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
-					<office when-iso="1762" ref="#mloff000004">single sisters’ labourer <placeName ref="#mlpla000115">Lampeter</placeName></office>
-					<office when-iso="1765-01-16" ref="#mloff000004">assistant labourer among single sisters of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
-					<office when-iso="1765-01-16" ref="#mloff000048">assistant labourer among great girls of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
+
+					<office notBefore="1748" ref="#mloff000028">intercessor at <placeName ref="#mlpla000014">Herrnhaag</placeName></office>
+					<office notBefore="1748" ref="#mloff000012_01">single sisters' choir servant <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+					<office notBefore="1748" ref="#mloff000042_02">single sisters' choir helper <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+					<office notBefore="1751" ref="#mloff000046_03">single sisters’ labourer <placeName ref="#mlpla000144">Dublin</placeName></office>
+					<office notBefore="1752" notAfter="1759" ref="#mloff000046_03">single sisters' labourer North of <placeName ref="#mlpla000114">Ireland</placeName></office>
+					<office notBefore="1759-01" ref="#mloff000015">acoluth</office>
+					<office notBefore="1759-01" ref="#mloff000006">deaconess</office>
+					<office notBefore="1760-10-13" ref="#mloff000046_03">single sisters’ labourer <placeName ref="#mlpla000025">Bedford</placeName></office>
+					<office notBefore="1762" ref="#mloff000046_03">single sisters’ labourer <placeName ref="#mlpla000115">Lampeter</placeName></office>
+					<office notBefore="1765-01-16" ref="#mloff000046_08">assistant labourer among single sisters of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
+					<office notBefore="1765-01-16" ref="#mloff000046_09">assistant labourer among great girls of country congregation at <placeName ref="#mlpla000041">Gomersal</placeName></office>
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="George Cennick" />
@@ -1294,9 +1325,11 @@
 					</listBibl>
 				</person>
 				<listOffice>
-					<office when-iso="1743-07-13" ref="#mloff000030">co-helper with single sisters <placeName ref="#mlpla000084">Yorkshire</placeName></office>
-					<office when-iso="1744-10-16" ref="#mloff000004">single sisters' labourer <placeName ref="#mlpla000084">Yorkshire</placeName></office>
-					<office from="1749-05-15" to="1750-09-29" ref="#mloff000031">single sisters' warden <placeName ref="#mlpla000035">Dukinfield</placeName></office>
+
+					<office notBefore="1743-07-13" ref="#mloff000042_02">co-helper with single sisters at <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+					<office notBefore="1744-10-16" ref="#mloff000046_03">single sisters' labourer at <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+					<office notBefore="1749-05-15" notAfter="1750-09-29" ref="#mloff000037_01">single sisters' warden at <placeName ref="#mlpla000035">Dukinfield</placeName></office>
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="Wiseman Claggett" />
@@ -1420,7 +1453,10 @@
 						<event type="transfer" where="#mlpla000090" when-iso="1775-03-14">
 							<desc>transferred to congregation at Pudsey</desc>
 						</event>
-						<event type="reception" office="acoluth" where="#mlpla000003" when-iso="1766-08-14">
+
+						<event type="reception" where="#mlpla000003"
+							when-iso="1766-08-14">
+
 							<desc>received as an acoluth at Fulneck</desc>
 						</event>
 						<event type="interment" where="#mlpla000003" when-iso="1785-01-21" ref="#mlper000694">
@@ -1442,7 +1478,10 @@
 					</listBibl>
 				</person>
 				<listOffice>
-					<office when-iso="1775-03-14" ref="#mloff000004">single sisters’ labourer at <placeName ref="#mlpla000052">Littlemoor</placeName></office>
+
+					<office notBefore="1766-08-14" ref="#mloff000015">acoluth</office>
+					<office notBefore="1775-03-14" ref="#mloff000046_03">single sisters’ labourer at <placeName ref="#mlpla000052">Littlemoor</placeName></office>
+
 				</listOffice>
 				<listRelation type="Moravian">
 					<relation name="interment" passive="George Traneker" ref="#mlper000694" />
@@ -1456,8 +1495,11 @@
 						<surname type="birth">Clark</surname>
 					</persName>
 					<birth>
-						<date type="birth" when-iso="1726-12-29" resp="#Yorkshire_Families">29 December, 1726</date>
-						<date type="birth" when-iso="1727-127" resp="#memoir">December, 1727</date>
+
+						<date type="birth" when-iso="1726-12-29" resp="#Yorkshire_Families">29
+							December, 1726</date>
+						<date type="birth" when-iso="1727-12" resp="#memoir">December, 1727</date>
+
 						<placeName ref="#mlpla000119">Northowram Parish of Halifax</placeName>
 					</birth>
 					<death>
@@ -1587,8 +1629,10 @@
 					</listBibl>
 				</person>
 				<listOffice>
+
 					<office when-iso="1747" ref="#mloff000031">single sisters' warden <placeName ref="#mlpla000084">Yorkshire</placeName></office>
 					<office when-iso="1748-04-06" ref="#mloff000008">visitor at <placeName ref="#mlpla000084">Yorkshire</placeName></office>
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="William Clark" />
@@ -1630,6 +1674,9 @@
 						<event type="sacrament" where="#mlpla000054" when-iso="1747-11-13">
 							<desc>sacrament at London 13 November, 1747 (2 November, 1747)</desc>
 						</event>
+						<event  where="#mlpla000063" when-iso="1751-10-13">
+							<desc>opened girls’ day school at Ockbrook</desc>
+						</event>
 						<event type="reception" where="#mlpla000082">
 							<desc>blessed as deaconess at Wiltshire</desc>
 						</event>
@@ -1667,17 +1714,19 @@
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation ref="#mlocc000081">servant multiple families</occupation>
+					<occupation ref="#mlocc000081">servant to multiple families</occupation>
 					<occupation ref="#mlocc000083">governess to multiple families</occupation>
 					<occupation ref="#mlocc000084">caregiver for <persName>Betsey Holand</persName> at <placeName ref="#mlpla000228">Blackheath</placeName></occupation>
 				</listOccupation>
 				<listOffice>
+
 					<office when-iso="1751-08-29" ref="#mloff000004">single sisters’ labourer at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
 					<office when-iso="1751-10-13">opened girls’ day school at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
 					<!-- is the above an office or event, or both? it is listed in the church service section from YF doc -->
 					<office when-iso="1757-09-16" ref="#mloff000004">single sisters’ labourer at <placeName ref="#mlpla000025">Bedford</placeName></office>
 					<office when-iso="1763-07-19" ref="#mloff000004">single sisters’ labourer at <placeName ref="#mlpla000063">Ockbrook</placeName></office>
 					<office when-iso="1772" ref="#mloff000004">single sisters’ labourer at <placeName ref="#mlpla000054">London</placeName></office>
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="sibling" passive="Thomas Cleak" />
@@ -1846,7 +1895,10 @@
 						<event type="entrance" where="#mlpla000271" when-iso="1757-10-29">
 							<desc>entered sisters' house at Fulneck</desc>
 						</event>
+
+
 						<event type="reception" office="acoluth" where="#mlpla000003" when-iso="1768-07-27">
+
 							<desc>received as acoluth at Fulneck</desc>
 						</event>
 						<event type="accident" where="#mlpla000271" when-iso="1810-04-17">
@@ -1870,6 +1922,9 @@
 						</msDesc>
 					</listBibl>
 				</person>
+				<listOffice>
+					<office notBefore="1768-07-27" ref="#mloff000015">acoluth</office>
+				</listOffice>
 				<listOccupation>
 					<occupation ref="#mlocc000043">teacher at <placeName ref="#mlpla000285">girls' day school at Bedford</placeName></occupation>
 				</listOccupation>
@@ -2219,7 +2274,8 @@
 					</listBibl>
 				</person>
 				<listOffice>
-					<office when-iso="1850" ref="#mloff000031">Warden of the Single Sisters' at <placeName ref="#mlpla000003">Fulneck</placeName></office>
+
+
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="Jethro Fletcher" />
@@ -2412,7 +2468,10 @@
 						<event type="arrival" where="#mlpla000001" when-iso="1755-07-12">
 							<desc>arrived in Herrnhut with Sister Larisch</desc>
 						</event>
-						<event type="reception" office="acoluth" where="#mlpla000001" when-iso="1757">
+
+						<event type="reception" where="#mlpla000001"
+							when-iso="1757">
+
 							<desc>received as acoluth at Hernnhut</desc>
 						</event>
 						<event type="reception" office="intercessor" where="#mlpla000001" when-iso="1758-03">
@@ -2441,6 +2500,10 @@
 					</listBibl>
 				</person>
 				<listOffice>
+
+					<office notBefore="1757" ref="#mloff000015">acoluth</office>
+					<office notBefore="1758-03" ref="#mloff000028">intercessor at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
+					<office notBefore="1765" notAfter="1773" ref="#mloff000086">children's sister <placeName ref="#mlpla000286">girls' school Fulneck</placeName></office>
 					<office when-iso="1758-03" ref="#mloff000028">intercessor at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
 				</listOffice>
 				<listOccupation>
@@ -2626,8 +2689,12 @@
 						<name type="variant">Horsefall</name>
 					</persName>
 					<birth>
-						<date type="birth" calendar="Julian" when-iso="1697-11-24">24 November, 1697</date>
-						<date type="death" calendar="Gregorian" when-iso="1697-12-5">5 December, 1697</date>
+
+						<date type="birth" calendar="Julian" when-iso="1697-11-24">24 November,
+							1697</date>
+						<date type="birth" calendar="Gregorian" when-iso="1697-12-5">5 December,
+							1697</date>
+
 						<placeName ref="#mlpla000145">Barnsley</placeName>
 					</birth>
 					<death>
@@ -2729,10 +2796,6 @@
 						</msDesc>
 					</listBibl>
 				</person>
-				<listOccupation>
-					<!-- What occupation is this -->
-					<occupation>employed in the Sunday School</occupation>
-				</listOccupation>
 				<listRelation type="Moravian">
 					<relation name="interment" passive="#mlper000376" when-iso="1855-03-02" />
 				</listRelation>
@@ -2852,7 +2915,10 @@
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation from="1807-01" to="1809-12" ref="#mlocc000043">teacher at <placeName ref="#mlpla000288">Boarding School at Fulneck</placeName></occupation>
+
+					<occupation notBefore="1807-01" notAfter="1809-12" ref="#mlocc000043">teacher at <placeName
+							ref="#mlpla000288">Boarding School at Fulneck</placeName></occupation>
+
 				</listOccupation>
 				<listRelation type="Moravian">
 					<relation name="interment" passive="#mlper000557" when-iso="1810-04-09" />
@@ -3011,11 +3077,18 @@
 					</listBibl>
 				</person>
 				<listOccupation>
-					<occupation>quilter</occupation>
-					<occupation notBefore="1735" ref="#mlocc000081">servant at <placeName ref="#mlpla000157">Rippon</placeName></occupation>
-					<occupation when-iso="1744" ref="#mlocc000081">servant maid <placeName ref="#mlpla000283">congregation house Fulneck</placeName></occupation>
-					<occupation from="1747-02-08" to="1753" ref="#mlocc000017">cook <placeName ref="#mlpla000283">congregation house Fulneck</placeName></occupation>
-					<occupation notAfter="1755" ref="#mlocc000059">assisted in washing for the school children at <placeName ref="#mlpla000195">Mile End</placeName></occupation>
+
+					<occupation ref="#mlocc000085">quilter</occupation>
+					<occupation notBefore="1735" ref="#mlocc000081">servant at <placeName
+							ref="#mlpla000157">Rippon</placeName></occupation>
+					<occupation notBefore="1744" ref="#mlocc000081">servant maid <placeName
+							ref="#mlpla000283">congregation house Fulneck</placeName></occupation>
+					<occupation notBefore="1747-02-08" notAfter="1753" ref="#mlocc000017">cook <placeName
+							ref="#mlpla000283">congregation house Fulneck</placeName></occupation>
+					<occupation notAfter="1755" ref="#mlocc000059">assisted in washing for the
+						school children at <placeName ref="#mlpla000195">Mile
+						End</placeName></occupation>
+
 				</listOccupation>
 				<listRelation type="personal">
 					<relation name="child" passive="Robert Luty" />
@@ -3201,9 +3274,12 @@
 							<desc>interred at Fulneck by Samuel Benade</desc>
 						</event>
 					</listEvent>
-					<education when-iso="1784"><placeName ref="#mlpla000102">girls' school Lower Wyke</placeName></education>
-					<!-- memoir says the above happened in 1801 -->
-					<affiliation type="choir" notBefore="1797-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+
+					<education notBefore="1784"><placeName ref="#mlpla000102">girls' school Lower
+							Wyke</placeName></education>
+					<affiliation type="choir" notBefore="1797-05-04"><orgName
+							en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+
 					<listBibl>
 						<msDesc>
 							<msIdentifier>
@@ -3259,7 +3335,9 @@
 						<event type="entrance" where="#mlpla000271" when-iso="1757-06-04">
 							<desc>entered sisters' house at Fulneck</desc>
 						</event>
+
 						<event type="reception" office="acoluth" where="#mlpla000003" when-iso="1768-07-27">
+
 							<desc>received as acoluth at Fulneck</desc>
 						</event>
 						<event type="interment" where="#mlpla000003" when-iso="1771-01-29" ref="#mlper000697">
@@ -3294,7 +3372,8 @@
 				</person>
 				<listOffice>
 					<office ref="#mloff000028">intercessor</office>
-					<office when-iso="1770" ref="#mloff000050">Choir Dicipless</office>
+					<office notBefore="1768-07-27" ref="#mloff000015">acoluth</office>
+					<office notBefore="1770" ref="#mloff000015_02">Choir Dicipless</office>
 				</listOffice>
 				<listRelation type="personal">
 					<relation name="child" passive="Joseph Myers" />
@@ -3549,10 +3628,15 @@
 							<desc>interred at Fulneck by George Traneker</desc>
 						</event>
 					</listEvent>
-					<education when-iso="1748"><placeName ref="#mlpla000101">girls' school Row Head</placeName></education>
-					<affiliation type="founder" when-iso="1755-04-17" ref="#mlpla000041">founder member of Gomersal congregation</affiliation>
-					<affiliation type="choir" notBefore="1753-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-					<bibl type="memoir" source="#mlpla000003" />
+
+					<education notBefore="1748"><placeName ref="#mlpla000101">girls' school Row
+							Head</placeName></education>
+					<affiliation type="founder" when-iso="1755-04-17" ref="#mlpla000041">founder
+						member of Gomersal congregation</affiliation>
+					<affiliation type="choir" notBefore="1753-05-04"><orgName
+							en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+					<bibl type="memoir" source="#mlpla000003"/>
+
 					<listBibl>
 						<msDesc>
 							<msIdentifier>

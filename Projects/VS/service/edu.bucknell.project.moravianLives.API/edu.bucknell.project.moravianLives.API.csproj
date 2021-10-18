@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -14,9 +14,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\zen\Zen.Base\Zen.Base.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Cloud\Zen.Cloud.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Cache.Redis\Zen.Module.Cache.Redis.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Cloud.AWS\Zen.Module.Cloud.AWS.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Cloud.Google\Zen.Module.Cloud.Google.csproj" />
     <ProjectReference Include="..\..\..\..\zen\Zen.Module.Data.MongoDB\Zen.Module.Data.MongoDB.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Data.Oracle\Zen.Module.Data.Oracle.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Data.Relational\Zen.Module.Data.Relational.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Module.Encryption.AES\Zen.Module.Encryption.AES.csproj" />
+    <ProjectReference Include="..\..\..\..\zen\Zen.Pebble.Database\Zen.Pebble.Database.csproj" />
     <ProjectReference Include="..\..\..\..\zen\Zen.Web.App\Zen.Web.App.csproj" />
-    <ProjectReference Include="..\..\..\..\zen\Zen.Web\Zen.Web.csproj" />
     <ProjectReference Include="..\..\model\edu.bucknell.project.moravianLives.model.csproj" />
   </ItemGroup>
 

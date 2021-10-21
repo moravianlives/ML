@@ -35,7 +35,7 @@ namespace edu.bucknell.project.moravianLives.model
         public string Birthplace { get; set; }
         public string Deathplace { get; set; }
 
-        public RelationshipVariants Relationships { get; set; }
+        public List<Relation> Relationships { get; set; }
         public TemporalCommented<DataReference<Organization>> Organizations { get; set; }
 
         public List<Office> offices { get; set; }
@@ -113,6 +113,9 @@ namespace edu.bucknell.project.moravianLives.model
 
         public class RelationshipVariants : VariantTemporalMap<Category, DataReference<Person>>
         {
+            public string relationName { get; set; }
+            public string personName { get; set; }
+            public string MLid { get; set; }
         }
 
         public class MemoirDesc

@@ -123,7 +123,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-8.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
                         .Result;
 
                     raw.Source = source;
@@ -480,10 +480,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     //entry.targetModel.MemoirLink ??= MemoirLink;
                     //entry.targetModel.MemoirLang ??= MemoirLang;
 
-                    entry.targetModel.MemoirInfo.archive ??= MemoirArchive;
-                    entry.targetModel.MemoirInfo.shelfmark ??= Memoirshelfmark;
-                    entry.targetModel.MemoirInfo.link ??= MemoirLink;
-                    entry.targetModel.MemoirInfo.lang ??= MemoirLang;
+                    entry.targetModel.MemoirInfo.archive = MemoirArchive;
+                    entry.targetModel.MemoirInfo.shelfmark = Memoirshelfmark;
+                    entry.targetModel.MemoirInfo.link = MemoirLink;
+                    entry.targetModel.MemoirInfo.lang = MemoirLang;
 
                     //read office information
                     entry.targetModel.offices = new List<Office>();
@@ -524,6 +524,21 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     // Listed Choir
 
                     if (mustMentionEntry) ScopedLog.Log($"{entry.sourceData.Id}: {serializedModel}", Message.EContentType.MoreInfo);
+
+                    // list relations
+                    var relations = source?.SelectTokens("listRelation[?(@.@type == 'personal')].relation[*]").Select(i => (JObject)i).ToList();
+                    entry.targetModel.Relationships = new List<Relation>();
+                    foreach (var relation in relations)
+                    {
+                        Relation relat = new Relation();
+                        relat.relationName ??= relation.StrVal("@name");
+                        if (relation.StrVal("@passive") != null)
+                            relat.personName = relation.StrVal("@passive");
+                        else if (relation.StrVal("@mutual") != null)
+                            relat.personName = relation.StrVal("@mutual");
+                        relat.MLid ??= relation.StrVal("@ref");
+                        entry.targetModel.Relationships.Add(relat);
+                    }
 
 
                     // Finally, event handling.
@@ -790,6 +805,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
             return corrected ? correctedText : originalText;
         }
+
+
 
         public class PrimaryEventData
         {

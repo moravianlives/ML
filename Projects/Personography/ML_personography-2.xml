@@ -122,7 +122,7 @@
          <head>Moravian Lives Personography</head>
          <!-- Render, Mary -->
          <listPerson>
-            <person xml:id="mlper000264">
+            <person xml:id="mlper000264" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Render</surname>
@@ -183,13 +183,13 @@
                <relation name="sibling" mutual="Sarah Render" notBefore="1759" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000709" when-iso="1760-12-01" />
-               <relation name="baptism" passive="#mlper000692" when-iso="1747-08-20" />
+               <relation name="interment" passive="Abraham Taylor" ref="#mlper000709" />
+               <relation name="baptism" passive="Johann Tolschig" ref="#mlper000692" />
             </listRelation>
          </listPerson>
          <!-- Render, Isabel -->
          <listPerson>
-            <person xml:id="mlper000265">
+            <person xml:id="mlper000265" sex="f">
                <persName>
                   <forename>Isabel</forename>
                   <surname type="birth">Render</surname>
@@ -250,17 +250,17 @@
                <relation name="sibling" mutual="Susanna Render" />
                <relation name="sibling" mutual="Rachel Render" />
                <relation name="sibling" mutual="Sarah Render" notBefore="1755" />
-               <relation name="sibling" mutual="#mlper000264" />
+               <relation name="sibling" mutual="Mary Render" ref="#mlper000264" />
                <relation name="sibling" mutual="Sarah Render" notBefore="1759" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000715" when-iso="1777-07-28" />
-               <relation name="baptism" passive="#mlper000694" when-iso="1756-09-10" />
+               <relation name="interment" passive="John Caldwell" ref="#mlper000715" />
+               <relation name="baptism" passive="George Traneker" ref="#mlper000694" />
             </listRelation>
          </listPerson>
          <!-- Robbins, Hannah Sophia -->
          <listPerson>
-            <person xml:id="mlper000266">
+            <person xml:id="mlper000266" sex="f">
                <persName>
                   <forename>Hannah <addName>Sophia</addName></forename>
                   <surname type="birth">Robbins</surname>
@@ -302,11 +302,10 @@
                <education from="1833" to="1838"><placeName ref="#mlpla000288">Boarding School at Fulneck</placeName></education>
                <residence from="1823-11-28" to="1829-12"><placeName ref="#mlpla000215">Antigua</placeName></residence>
                <residence from="1829-12" to="1833"><placeName ref="#mlpla000216">Saint Kitts</placeName></residence>
-
                <affiliation type="congregation">
                   <orgName>Fulneck</orgName>
                </affiliation>
-               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation> 
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -337,12 +336,12 @@
                <relation name="sibling" mutual="James Robbins" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000373" when-iso="1855-02-09" />
+               <relation name="interment" passive="Joseph Hutton Willey" ref="#mlper000373" />
             </listRelation>
          </listPerson>
          <!-- Robinson, Sarah -->
          <listPerson>
-            <person xml:id="mlper000267">
+            <person xml:id="mlper000267" sex="f">
                <persName>
                   <forename>Sarah</forename>
                   <surname type="birth">Robinson</surname>
@@ -397,11 +396,9 @@
                </affiliation>
                <affiliation type="congregation" notBefore="1748-06-08">
                   <orgName>Fulneck</orgName>
-
                   <roleName>founder member</roleName>
                   <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                </affiliation>
-
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -424,13 +421,12 @@
                <office notBefore="1768-07-27" ref="#mloff000015">acoluth</office>
             </listOffice>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000716" when-iso="1796-01-28" />
+               <relation name="interment" passive="Johannes Steinhauer" ref="#mlper000716" />
             </listRelation>
          </listPerson>
-
          <!-- Roebuck, Rachel -->
          <listPerson>
-            <person xml:id="mlper000268">
+            <person xml:id="mlper000268" sex="f">
                <persName>
                   <forename>Rachel</forename>
                   <surname type="birth">Roebuck</surname>
@@ -468,7 +464,7 @@
                </affiliation>
                <affiliation type="congregation" notBefore="1761-11-14">
                   <orgName>Fulneck</orgName></affiliation>
-                  <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -486,12 +482,12 @@
                <occupation ref="#mlocc000049">spinning</occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000714" when-iso="1812-12-31" />
+               <relation name="interment" passive="Charles Frederic Reichel" ref="#mlper000714" />
             </listRelation>
          </listPerson>
          <!-- Rogers, Anna -->
          <listPerson>
-            <person xml:id="mlper000269">
+            <person xml:id="mlper000269" sex="f">
                <persName>
                   <forename>Anna</forename>
                   <surname type="birth">Rogers</surname>
@@ -504,43 +500,41 @@
                   <date type="death" when-iso="1763-10-24">24 October, 1763</date>
                   <placeName ref="#mlpla000271">sisters' house Fulneck</placeName>
                </death>
-
-              <listEvent> 
-               <event type="baptism" where="#mlpla000238" when-iso="1743-09-11">
-                  <desc>baptized at St Paul's Church Bedford 11 September, 1743 (31 August, 1743 OS)</desc>
-               </event>
-               <event type="entrance" when-iso="1750">
-                  <desc>taken into Sisters' house to live amongst the children</desc>
-               </event>
-               <event type="entrance" where="#mlpla000162" when-iso="1754">
-                  <desc>entered the economy at Chelsea</desc>
-               </event>
-               <event type="reception" when-iso="1756">
-                  <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName></desc>
-               </event>
-               <event type="reception" where="#mlpla000003" when-iso="1758-08-21">
-                  <desc>received into congregation at Fulneck</desc>
-               </event>
-               <event type="entrance" where="#mlpla000271" when-iso="1759">
-                  <desc>entered Single Sisters' house at Fulneck</desc>
-               </event>
-               <event type="reception" when-iso="1762-05">
-                  <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
-               </event>
-               <event type="sacrament" where="#mlpla000003" when-iso="1763-08-28">
-                  <desc>sacrament (choir communion) at Fulneck</desc>
-               </event>
-               <event type="interment" where="#mlpla000003" when-iso="1763-10-27" ref="#mlper000697">
-                  <desc>interred at Fulneck by Benjamin La Trobe</desc>
-               </event>
-              </listEvent>
+               <listEvent>
+                  <event type="baptism" where="#mlpla000238" when-iso="1743-09-11">
+                     <desc>baptized at St Paul's Church Bedford 11 September, 1743 (31 August, 1743 OS)</desc>
+                  </event>
+                  <event type="entrance" when-iso="1750">
+                     <desc>taken into Sisters' house to live amongst the children</desc>
+                  </event>
+                  <event type="entrance" where="#mlpla000162" when-iso="1754">
+                     <desc>entered the economy at Chelsea</desc>
+                  </event>
+                  <event type="reception" when-iso="1756">
+                     <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName></desc>
+                  </event>
+                  <event type="reception" where="#mlpla000003" when-iso="1758-08-21">
+                     <desc>received into congregation at Fulneck</desc>
+                  </event>
+                  <event type="entrance" where="#mlpla000271" when-iso="1759">
+                     <desc>entered Single Sisters' house at Fulneck</desc>
+                  </event>
+                  <event type="reception" when-iso="1762-05">
+                     <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
+                  </event>
+                  <event type="sacrament" where="#mlpla000003" when-iso="1763-08-28">
+                     <desc>sacrament (choir communion) at Fulneck</desc>
+                  </event>
+                  <event type="interment" where="#mlpla000003" when-iso="1763-10-27" ref="#mlper000697">
+                     <desc>interred at Fulneck by Benjamin La Trobe</desc>
+                  </event>
+               </listEvent>
                <education notBefore="1754-09-16"><placeName ref="#mlpla000291">girls' school Chelsea</placeName></education>
                <education notBefore="1755-04-11"><placeName ref="#mlpla000286">girls' school Fulneck</placeName></education>
                <affiliation type="congregation" notBefore="1758-08-21">
                   <orgName>Fulneck</orgName></affiliation>
                <affiliation type="choir" notBefore="1756" notAfter="1762-05"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1762-05"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -569,13 +563,13 @@
                <relation name="sibling" mutual="Martha Copson" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" mutual="#mlper000697" when-iso="1763-10-27" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- There are 2 Mary Scott's in YF document, but not enough informtion to say for sure if either is this Mary Scott. Info is taken from her memoir. -->
          <!-- Scott, Mary -->
          <listPerson>
-            <person xml:id="mlper000270">
+            <person xml:id="mlper000270" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Scott</surname>
@@ -604,7 +598,7 @@
          </listPerson>
          <!-- Shoesmith, Anna -->
          <listPerson>
-            <person xml:id="mlper000271">
+            <person xml:id="mlper000271" sex="f">
                <persName>
                   <forename>Anna</forename>
                   <surname type="birth">Shoesmith</surname>
@@ -643,8 +637,8 @@
                </listEvent>
                <affiliation type="congregation" notBefore="1768-07-17">
                   <orgName>Fulneck</orgName></affiliation>
-                  <affiliation type="choir" notBefore="1764-03" notAfter="1772"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
-                  <affiliation type="choir" notBefore="1772"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1764-03" notAfter="1772"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1772"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -658,12 +652,12 @@
                </listBibl>
             </person>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000718" when-iso="1772-08-05" />
+               <relation name="interment" passive="John Frederick Zander" ref="#mlper000718" />
             </listRelation>
          </listPerson>
          <!-- Skelton, Sarah -->
          <listPerson>
-            <person xml:id="mlper000272">
+            <person xml:id="mlper000272" sex="f">
                <persName>
                   <forename>Sarah</forename>
                   <surname type="birth">Skelton</surname>
@@ -676,39 +670,37 @@
                   <date type="death" when-iso="1778-05-03">3 May, 1778</date>
                   <placeName ref="#mlpla000271">sisters' house Fulneck</placeName>
                </death>
-
-              <listEvent> 
-               <event type="baptism">
-                  <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
-               </event>
-               <event type="reception" when-iso="1768" cert="medium">
-                  <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName> in her 13th year</desc>
-               </event>
-               <event type="entrance" where="#mlpla000267" when-iso="1770-03-25">
-                  <desc>entered sisters' house at Gomersal</desc>
-               </event>
-               <event type="reception" where="#mlpla000041" when-iso="1771-11-24">
-                 <!-- memoir gives a date of 1772-02-23 -->
-                  <desc>received into congregation at Gomersal</desc>                
-               </event>
-               <event type="reception" when-iso="1773-05-04">
-                  <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
-               </event>
-               <event type="sacrament" when-iso="1776-02-18">
-                  <desc>sacrament at Gomersal</desc>
-               </event>
-               <event type="entrance" where="#mlpla000271" when-iso="1778-01-18">
-                  <desc>entered sisters' house at Fulneck</desc>
-               </event>
-               <event type="interment" where="#mlpla000003" when-iso="1778-05-06" ref="#mlper000694">
-                  <desc>interred at Fulneck by George Traneker</desc>
-               </event>
-              </listEvent>
+               <listEvent>
+                  <event type="baptism">
+                     <desc>baptized in <orgName religion="Anglican">Church of England</orgName></desc>
+                  </event>
+                  <event type="reception" when-iso="1768" cert="medium">
+                     <desc>received into the <orgName en="greater girls choir">Great Girls' Choir</orgName> in her 13th year</desc>
+                  </event>
+                  <event type="entrance" where="#mlpla000267" when-iso="1770-03-25">
+                     <desc>entered sisters' house at Gomersal</desc>
+                  </event>
+                  <event type="reception" where="#mlpla000041" when-iso="1771-11-24">
+                     <!-- memoir gives a date of 1772-02-23 -->
+                     <desc>received into congregation at Gomersal</desc>
+                  </event>
+                  <event type="reception" when-iso="1773-05-04">
+                     <desc>received into the <orgName en="single sisters choir">Single Sisters' Choir</orgName></desc>
+                  </event>
+                  <event type="sacrament" when-iso="1776-02-18">
+                     <desc>sacrament at Gomersal</desc>
+                  </event>
+                  <event type="entrance" where="#mlpla000271" when-iso="1778-01-18">
+                     <desc>entered sisters' house at Fulneck</desc>
+                  </event>
+                  <event type="interment" where="#mlpla000003" when-iso="1778-05-06" ref="#mlper000694">
+                     <desc>interred at Fulneck by George Traneker</desc>
+                  </event>
+               </listEvent>
                <affiliation type="congregation"><orgName>Gomersal</orgName></affiliation>
                <affiliation type="congregation"><orgName>Fulneck</orgName></affiliation>
                <affiliation type="choir" notBefore="1768" notAfter="1773-05-04"><orgName en="greater girls choir">Great Girls' Choir</orgName></affiliation>
                <affiliation type="choir" notBefore="1773-05-04"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
-
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -722,12 +714,12 @@
                </listBibl>
             </person>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1778-05-06" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694" />
             </listRelation>
          </listPerson>
          <!-- Smith, Susan -->
          <listPerson>
-            <person xml:id="mlper000273">
+            <person xml:id="mlper000273" sex="f">
                <persName>
                   <forename>Susan</forename>
                   <surname type="birth">Smith</surname>
@@ -797,12 +789,12 @@
                <relation name="sibling" mutual="John Smith" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000541" when-iso="1814-12-22" />
+               <relation name="interment" passive="Christian Friedrich Ramftler" ref="#mlper000541" />
             </listRelation>
          </listPerson>
          <!-- Spence, Marianne -->
          <listPerson>
-            <person xml:id="mlper000274">
+            <person xml:id="mlper000274" sex="f">
                <persName>
                   <forename>Marianne</forename>
                   <surname type="birth">Spence</surname>
@@ -815,38 +807,36 @@
                   <date type="death" when-iso="1866-06-18">18 June, 1866</date>
                   <placeName ref="#mlpla000003">Fulneck</placeName>
                </death>
-
-              <listEvent> 
-               <event type="baptism" where="#mlpla000170" when-iso="1844-11-24">
-                  <desc>baptized at Mission Station of Bethabara, Jamaica</desc>
-               </event>
-               <event type="arrival" where="#mlpla000003" when-iso="1851">
-                  <desc>arrived in Fulneck</desc>
-               </event>
-               <event type="reception" where="#mlpla000003" when-iso="1854">
-                  <desc>received into the <orgName en="greater girls choir">Great Girls Choir</orgName></desc>
-               </event>
-               <event type="arrival" where="#mlpla000171" when-iso="1854">
-                  <desc>removed to Neuwied</desc>
-               </event>
-               <event type="confirmation" where="#mlpla000171" when-iso="1861">
-                  <desc>confirmed at Neuwied on Easter 1861</desc>
-               </event>
-               <event type="arrival" where="#mlpla000172" when-iso="1861">
-                  <desc>removed to Montmirail</desc>
-               </event>
-               <event type="reception" where="#mlpla000172" notBefore="1861">
-                  <desc>received into <orgName en="single sisters choir">Single Sisters Choir</orgName> at Montmirail</desc>
-               </event>
-               <event type="arrival" where="#mlpla000072" notBefore="1862">
-                  <desc>returned to England</desc>
-               </event>
-               <event type="interment" where="#mlpla000003" when-iso="1866-06-21" ref="#mlper000375">
-                  <desc>interred at Fulneck by Geoffrey Clemens</desc>
-               </event>
-              </listEvent>
+               <listEvent>
+                  <event type="baptism" where="#mlpla000170" when-iso="1844-11-24">
+                     <desc>baptized at Mission Station of Bethabara, Jamaica</desc>
+                  </event>
+                  <event type="arrival" where="#mlpla000003" when-iso="1851">
+                     <desc>arrived in Fulneck</desc>
+                  </event>
+                  <event type="reception" where="#mlpla000003" when-iso="1854">
+                     <desc>received into the <orgName en="greater girls choir">Great Girls Choir</orgName></desc>
+                  </event>
+                  <event type="arrival" where="#mlpla000171" when-iso="1854">
+                     <desc>removed to Neuwied</desc>
+                  </event>
+                  <event type="confirmation" where="#mlpla000171" when-iso="1861">
+                     <desc>confirmed at Neuwied on Easter 1861</desc>
+                  </event>
+                  <event type="arrival" where="#mlpla000172" when-iso="1861">
+                     <desc>removed to Montmirail</desc>
+                  </event>
+                  <event type="reception" where="#mlpla000172" notBefore="1861">
+                     <desc>received into <orgName en="single sisters choir">Single Sisters Choir</orgName> at Montmirail</desc>
+                  </event>
+                  <event type="arrival" where="#mlpla000072" notBefore="1862">
+                     <desc>returned to England</desc>
+                  </event>
+                  <event type="interment" where="#mlpla000003" when-iso="1866-06-21" ref="#mlper000375">
+                     <desc>interred at Fulneck by Geoffrey Clemens</desc>
+                  </event>
+               </listEvent>
                <education notBefore="1853" notAfter="1854"><placeName ref="#mlpla000286">Ladies Boarding School at Fulneck</placeName></education>
-
                <education notBefore="1854" notAfter="1861"><placeName ref="#mlpla000292">Ladies School at Neuwied</placeName></education>
                <education notBefore="1861"><placeName ref="#mlpla000293">Boarding School at Montmirail</placeName></education>
                <affiliation type="choir" notBefore="1854" notAfter="1861"><orgName en="greater girls choir">Great Girls Choir</orgName></affiliation>
@@ -875,12 +865,12 @@
                <relation name="sibling" mutual="James Edmund Spence" notBefore="1852" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000375" when-iso="1866-06-21" />
+               <relation name="interment" passive="Godfrey Clemens" ref="#mlper000375" />
             </listRelation>
          </listPerson>
          <!-- Sutcliffe, Mercy -->
          <listPerson>
-            <person xml:id="mlper000275">
+            <person xml:id="mlper000275" sex="f">
                <persName>
                   <forename>Mercy</forename>
                   <surname type="birth">Sutcliffe</surname>
@@ -927,7 +917,7 @@
                <affiliation type="congregation" notBefore="1747-06-02">
                   <orgName>Fulneck</orgName>
                   <roleName>founder member</roleName></affiliation>
-                  <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -944,12 +934,12 @@
                <office ref="#mloff000028">intercessor at <placeName ref="#mlpla000084">Yorkshire</placeName></office>
             </listOffice>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1768-05-05" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Tattersall, Mary -->
          <listPerson>
-            <person xml:id="mlper000276">
+            <person xml:id="mlper000276" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Tattersall</surname>
@@ -1014,12 +1004,12 @@
                <relation name="sibling" mutual="Rachel Tattersall" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1798-07-20" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694" />
             </listRelation>
          </listPerson>
          <!-- Taylor, Hannah -->
          <listPerson>
-            <person xml:id="mlper000277">
+            <person xml:id="mlper000277" sex="f">
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Taylor</surname>
@@ -1078,21 +1068,21 @@
                <occupation ref="#mlocc000081">servant</occupation>
             </listOccupation>
             <listRelation type="personal">
-               <relation name="child" passive="#mlper000562" />
-               <relation name="child" passive="#mlper000690" />
+               <relation name="child" passive="Crispin Taylor" ref="#mlper000562" />
+               <relation name="child" passive="Mary Taylor" ref="#mlper000690" />
                <relation name="sibling" mutual="John Taylor" />
                <relation name="sibling" mutual="Thomas Taylor" />
                <relation name="sibling" mutual="Crispianus Taylor" />
                <relation name="sibling" mutual="Crispin Taylor" notBefore="1737" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000693" when-iso="1773-05-20" />
+               <relation name="interment" passive="John Ockershausen" ref="#mlper000693" />
             </listRelation>
          </listPerson>
          <!-- Taylor, Mary -->
          <!-- This Mary Taylor does not seem to match any of those in the YF document. Information taken from her memoir. -->
          <listPerson>
-            <person xml:id="mlper000278">
+            <person xml:id="mlper000278" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Taylor</surname>
@@ -1137,7 +1127,7 @@
          </listPerson>
          <!-- Taylor, Ann -->
          <listPerson>
-            <person xml:id="mlper000279">
+            <person xml:id="mlper000279" sex="f">
                <persName>
                   <forename>Ann</forename>
                   <surname type="birth">Taylor</surname>
@@ -1200,12 +1190,12 @@
                </listBibl>
             </person>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000544" when-iso="1758-12-18" />
+               <relation name="interment" passive="James Charlesworth" ref="#mlper000544" />
             </listRelation>
          </listPerson>
          <!-- Thornton, Mary Elizabeth -->
          <listPerson>
-            <person xml:id="mlper000280">
+            <person xml:id="mlper000280" sex="f">
                <persName>
                   <forename>Mary <addName>Elizabeth</addName></forename>
                   <surname type="birth">Thornton</surname>
@@ -1276,13 +1266,13 @@
                <relation name="sibling" mutual="James Webster Thornton" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="baptism" passive="#mlper000377" when-iso="1832-01-22" />
-               <relation name="interment" passive="#mlper000376" when-iso="1855-07-18" />
+               <relation name="baptism" passive="John Beck Holmes" ref="#mlper000377" />
+               <relation name="interment" passive="John Pearse Libbey" ref="#mlper000376" />
             </listRelation>
          </listPerson>
          <!-- Tordoff, Hannah -->
          <listPerson>
-            <person xml:id="mlper000281">
+            <person xml:id="mlper000281" sex="f">
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Tordoff</surname>
@@ -1351,12 +1341,12 @@
                <relation name="sibling" mutual="Sarah Tordoff" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1778-11-10" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694" />
             </listRelation>
          </listPerson>
          <!-- Vickers, Ann -->
          <listPerson>
-            <person xml:id="mlper000282">
+            <person xml:id="mlper000282" sex="f">
                <persName>
                   <forename>Ann</forename>
                   <surname type="birth">Vickers</surname>
@@ -1427,13 +1417,13 @@
                <relation name="child" passive="Alice Vickers" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1756-07-30" />
-               <relation name="reception" passive="#mlper000699" when-iso="1752" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694" />
+               <relation name="reception" passive="Anna Johanna Piesch" ref="#mlper000699" />
             </listRelation>
          </listPerson>
          <!-- Walker, Martha -->
          <listPerson>
-            <person xml:id="mlper000283">
+            <person xml:id="mlper000283" sex="f">
                <persName>
                   <forename>Martha</forename>
                   <surname type="birth">Walker</surname>
@@ -1493,12 +1483,12 @@
                <office notBefore="1779-06-14" ref="#mloff000015">acoluth</office>
             </listOffice>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000713" when-iso="1801-01-26" />
+               <relation name="interment" passive="John Hartley" ref="#mlper000713" />
             </listRelation>
          </listPerson>
          <!-- Watson, Susanna -->
          <listPerson>
-            <person xml:id="mlper000284">
+            <person xml:id="mlper000284" sex="f">
                <persName>
                   <forename>Susanna</forename>
                   <surname type="birth">Watson</surname>
@@ -1558,13 +1548,13 @@
                <relation name="sibling" mutual="Mary Watson" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1776-08-02" />
-               <relation name="baptism" passive="#mlper000719" when-iso="1751-07-04" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694"/>
+               <relation name="baptism" passive="Ludwig Frederic Wilhelm von Marschall" ref="#mlper000719" />
             </listRelation>
          </listPerson>
          <!-- Watson, Martha -->
          <listPerson>
-            <person xml:id="mlper000285">
+            <person xml:id="mlper000285" sex="f">
                <persName>
                   <forename>Martha</forename>
                   <surname type="birth">Watson</surname>
@@ -1597,8 +1587,8 @@
                      <desc>interred at Fulneck by Samuel Benade</desc>
                   </event>
                </listEvent>
-               <affiliation type="congregation" notBefore="1773-10-06"></affiliation>
-                  <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
+               <affiliation type="congregation" notBefore="1773-10-06" />
+               <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -1615,12 +1605,12 @@
                <occupation ref="#mlocc000101">kitchen work in the school</occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000557" when-iso="1810-06-23" />
+               <relation name="interment" passive="Samuel Benade" ref="#mlper000557" />
             </listRelation>
          </listPerson>
          <!-- Westerman, Hannah -->
          <listPerson>
-            <person xml:id="mlper000286">
+            <person xml:id="mlper000286" sex="f">
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Westerman</surname>
@@ -1691,24 +1681,23 @@
                </listBibl>
             </person>
             <listOccupation>
-
                <occupation notBefore="1743-08-23" ref="#mlocc000100">assistant at <placeName ref="#mlpla000297">girls' school Broadoaks</placeName></occupation>
                <occupation notBefore="1748-11-17" ref="#mlocc000100">assistant at <placeName ref="#mlpla000295">girls' school Mile End London</placeName></occupation>
                <occupation notBefore="1754" ref="#mlocc000100">assistant at <placeName ref="#mlpla000291">girls' school Chelsea</placeName></occupation>
                <occupation notBefore="1755-04-11" notAfter="1756" cert="medium" ref="#mlocc000100">assistant at <placeName ref="#mlpla000286">girls' school Fulneck</placeName></occupation>
-               <occupation notBefore="1756" cert="medium" ref="#mlocc000081">servant to <persName ref="#mlper000536">Benjamin</persName> and <persName ref="#mlper000354">Lady Margaret Ingham</persName></occupation>
-
+               <occupation notBefore="1756" cert="medium" ref="#mlocc000081">servant to <persName ref="#mlper000536">Benjamin</persName> and <persName ref="#mlper000354">Lady Margaret
+                     Ingham</persName></occupation>
             </listOccupation>
             <listRelation type="personal">
                <relation name="child" passive="Georgy Westerman" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1761-03-18" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Whitehead, Mary -->
          <listPerson>
-            <person xml:id="mlper000287">
+            <person xml:id="mlper000287" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Whitehead</surname>
@@ -1780,10 +1769,8 @@
                </listBibl>
             </person>
             <listOccupation>
-
                <occupation notBefore="1762-05" ref="#mlocc000041">keeper of the <placeName ref="#mlpla000298">Children's school at Mirfield</placeName> and <placeName ref="#mlpla000299">Children's
                      school at Wyke</placeName></occupation>
-
             </listOccupation>
             <listOffice>
                <office notBefore="1768-07-27" ref="#mloff000015">acoluth</office>
@@ -1797,12 +1784,12 @@
                <relation name="sibling" mutual="Issac Whitehead" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000707" when-iso="1769-07-02" />
+               <relation name="interment" passive="John Worthington" ref="#mlper000707" />
             </listRelation>
          </listPerson>
          <!-- Whitehead, Sarah -->
          <listPerson>
-            <person xml:id="mlper000288">
+            <person xml:id="mlper000288" sex="f">
                <persName>
                   <forename>Sarah</forename>
                   <forename type="variant">Sally</forename>
@@ -1864,16 +1851,16 @@
                <relation name="child" passive="Eleonor Whitehead" />
                <relation name="sibling" mutual="Samuel Whitehead" />
                <relation name="sibling" mutual="Henry Whitehead" />
-               <relation name="sibling" mutual="#mlper000287" />
+               <relation name="sibling" mutual="Mary Whitehead" ref="#mlper000287" />
                <relation name="sibling" mutual="Issac Whitehead" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1759-01-23" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Wilkinson, Hannah -->
          <listPerson>
-            <person xml:id="mlper000289">
+            <person xml:id="mlper000289" sex="g">
                <persName>
                   <forename>Hannah</forename>
                   <surname type="birth">Wilkinson</surname>
@@ -1934,12 +1921,12 @@
                <office notBefore="1783-09" notAfter="1803-05-23" ref="#mloff000001_03">room overseer at <placeName ref="#mlpla000300">Sisters' House at Wyke</placeName></office>
             </listOffice>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000557" when-iso="1809-09-10" />
+               <relation name="interment" passive="Samuel Benade" ref="#mlper000557" />
             </listRelation>
          </listPerson>
          <!-- Willoughby, Ann -->
          <listPerson>
-            <person xml:id="mlper000290">
+            <person xml:id="mlper000290" sex="f">
                <persName>
                   <forename>Ann</forename>
                   <surname type="birth">Willoughby</surname>
@@ -2017,12 +2004,12 @@
                <occupation notBefore="1747" ref="#mlocc000043">teacher in society schools at <placeName ref="#mlpla000084">Yorkshire</placeName></occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000544" when-iso="1755-05-26" />
+               <relation name="interment" passive="James Charlesworth" ref="#mlper000544" />
             </listRelation>
          </listPerson>
          <!-- Wilson, Grace -->
          <listPerson>
-            <person xml:id="mlper000291">
+            <person xml:id="mlper000291" sex="f">
                <persName>
                   <forename>Grace</forename>
                   <surname type="birth">Wilson</surname>
@@ -2092,16 +2079,16 @@
                <relation name="sibling" mutual="Benjamin Wilson" />
                <relation name="sibling" mutual="Hannah (Horsfield)" notBefore="1733" />
                <relation name="sibling" mutual="Esther (Klosé)" />
-               <relation name="sibling" mutual="#mlper000214" />
+               <relation name="sibling" mutual="Elizabeth Wilson" ref="#mlper000214" />
                <relation name="sibling" mutual="Mary Wilson" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1762-05-10" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Wood, Mary -->
          <listPerson>
-            <person xml:id="mlper000292">
+            <person xml:id="mlper000292" sex="f">
                <persName>
                   <forename>Mary</forename>
                   <surname type="birth">Wood</surname>
@@ -2161,12 +2148,12 @@
                <relation name="sibling" mutual="Anna Maria Wood" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1763-08-17" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Woodhouse, Margaret Mary -->
          <listPerson>
-            <person xml:id="mlper000293">
+            <person xml:id="mlper000293" sex="g">
                <persName>
                   <forename>Margaret</forename>
                   <forename type="variant">Mary</forename>
@@ -2207,7 +2194,7 @@
                   </event>
                </listEvent>
                <affiliation type="congregation" notBefore="1756-11-13">
-                  <orgName>Fulneck</orgName>             
+                  <orgName>Fulneck</orgName>
                </affiliation>
                <affiliation type="choir"><orgName en="single sisters choir">Single Sisters' Choir</orgName></affiliation>
                <listBibl>
@@ -2232,14 +2219,13 @@
                <office notBefore="1759-11-13" ref="#mloff000015">acoluth</office>
             </listOffice>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000694" when-iso="1788-04-20" />
+               <relation name="interment" passive="George Traneker" ref="#mlper000694" />
             </listRelation>
          </listPerson>
-
          <!-- Bradley, Richard -->
          <!-- we don't have his memoir; this should move to file with stubs -->
          <listPerson>
-            <person xml:id="mlper000370">
+            <person xml:id="mlper000370" sex="m">
                <persName>
                   <forename>Richard</forename>
                   <surname type="birth">Bradley</surname>
@@ -2291,7 +2277,7 @@
             <listRelation type="personal">
                <relation name="child" passive="Benjamin Bradley" notBefore="1700" />
                <relation name="child" passive="Mary (Walker) Bradley" notBefore="1708" />
-               <relation name="sibling" mutual="#mlper000222" />
+               <relation name="sibling" mutual="Rachel Bradley" ref="#mlper000222" />
                <relation name="sibling" mutual="Henry Bradley" />
                <relation name="sibling" mutual="Job Bradley" />
                <relation name="sibling" mutual="Elizabeth Bradley" />
@@ -2306,9 +2292,8 @@
          <!-- John Cennick -->
          <!-- not in YF document; this entry needs more work -->
          <!-- Don't know where the images for this memoir -->
-
          <listPerson>
-            <person xml:id="mlper000408" sameAs="https://www.wikidata.org/wiki/Q5605963">
+            <person xml:id="mlper000408" sameAs="https://www.wikidata.org/wiki/Q5605963" sex="m">
                <persName>
                   <forename>John</forename>
                   <surname type="birth">Cennick</surname>
@@ -2367,23 +2352,21 @@
                <occupation notBefore="1740" ref="#mlocc000105">lay preacher</occupation>
             </listOccupation>
             <listOffice>
-
                <office notBefore="1740" notAfter="1745" ref="#mloff000019">preacher/assistant to George Whitefield in <placeName ref="#mlpla000321">Gloucestershire</placeName> and <placeName
                      ref="#mlpla000082">Wiltshire</placeName></office>
-
                <office notBefore="1749" ref="#mloff000014">deacon</office>
             </listOffice>
             <listRelation type="personal">
-               <relation name="spouse" mutual="#mlper000355" from-iso="1747" to-iso="1755-07-04" />
+               <relation name="spouse" mutual="Jane Bryant" ref="#mlper000355" from-iso="1747" to-iso="1755-07-04" />
                <relation name="child" passive="George Cennick" />
                <relation name="child" passive="Anna Cennick" />
-               <relation name="sibling" passive="#mlper000227" />
-               <relation name="sibling" passive="Anna (Stone)" />
+               <relation name="sibling" mutual="Sarah Cennick" ref="#mlper000227" />
+               <relation name="sibling" mutual="Anna (Stone)" />
             </listRelation>
          </listPerson>
          <!-- Liley, Robert -->
          <listPerson>
-            <person xml:id="mlper000429">
+            <person xml:id="mlper000429" sex="m">
                <persName>
                   <forename>Robert</forename>
                   <surname type="birth">Liley</surname>
@@ -2462,7 +2445,7 @@
                <relation name="parent" active="James Liley" notBefore="1727" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000709" when-iso="1771-12-19" />
+               <relation name="interment" passive="Abraham Taylor" ref="#mlper000709" />
             </listRelation>
          </listPerson>
          <!-- Planta, Peter Jacob -->
@@ -2530,9 +2513,9 @@
                   <orgName>Herrnhaag</orgName></affiliation>
                <affiliation type="congregation">
                   <orgName>Fulneck</orgName></affiliation>
-                  <affiliation type="choir" notBefore="1747-12-31" notAfter="1755-04-10"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
-                  <affiliation type="choir" notBefore="1755-04-10" notAfter="1793-12-17"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
-                  <affiliation type="choir" notBefore="1793-12-17"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1747-12-31" notAfter="1755-04-10"><orgName en="single brothers choir">Single Brethren's Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1755-04-10" notAfter="1793-12-17"><orgName en="married choir">Married Persons' Choir</orgName></affiliation>
+               <affiliation type="choir" notBefore="1793-12-17"><orgName en="widowers choir">Widowers' Choir</orgName></affiliation>
                <listBibl>
                   <msDesc>
                      <msIdentifier>
@@ -2546,12 +2529,10 @@
                </listBibl>
             </person>
             <listOccupation>
-
                <occupation when-iso="1751" ref="#mlocc000077">assistant congregation doctor <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <occupation when-iso="1753" ref="#mlocc000077">congregation doctor <placeName ref="#mlpla000003">Fulneck</placeName></occupation>
                <occupation when-iso="1780-10-19" ref="#mlocc000077">congregation doctor <placeName ref="#mlpla000063">Ockbrook</placeName></occupation>
                <occupation when-iso="1780-10-19" ref="#mloff000047">assistant labourer <placeName ref="#mlpla000063">Ockbrook</placeName></occupation>
-
             </listOccupation>
             <listOffice>
                <office notBefore="1759-05-28" ref="#mloff000017_02">medical missionary <placeName ref="#mlpla000076">Jamaica</placeName></office>
@@ -2569,7 +2550,7 @@
                <relation name="parent" active="Johannes Planta" notBefore="1764" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000721" when-iso="1815-05-13" />
+               <relation name="interment" passive="Ignatius Traneker" ref="#mlper000721" />
             </listRelation>
          </listPerson>
          <!-- Ingham, Benjamin -->
@@ -2666,14 +2647,12 @@
             </person>
             <listOccupation>
                <occupation ref="#mlocc000089">hymn writer</occupation>
-
                <occupation notBefore="1735-06-01" ref="#mlocc000036"><orgName religion="Anglican">Anglican</orgName> clergyman</occupation>
                <occupation notBefore="1735" ref="#mlocc000106">reader of public prayers <placeName ref="#mlpla000310">Christ Church Newgate Street, London</placeName></occupation>
-
             </listOccupation>
             <listOffice>
-               <office notBefore="1738" ref="#mloff000072">evangelist at <placeName ref="#mlpla000043">Huddersfield</placeName>, <placeName ref="#mlpla000091">Halifax</placeName>, <placeName ref="#mlpla000313">Wakefield</placeName>,
-                  <placeName ref="#mlpla000168">Bingley</placeName>, and <placeName ref="#mlpla000025">Bedford</placeName></office>
+               <office notBefore="1738" ref="#mloff000072">evangelist at <placeName ref="#mlpla000043">Huddersfield</placeName>, <placeName ref="#mlpla000091">Halifax</placeName>, <placeName
+                     ref="#mlpla000313">Wakefield</placeName>, <placeName ref="#mlpla000168">Bingley</placeName>, and <placeName ref="#mlpla000025">Bedford</placeName></office>
             </listOffice>
             <listRelation type="personal">
                <relation type="spouse" mutual="#mlper000354" notBefore="1741-11-12" notAfter="1768-04-30" />
@@ -2691,7 +2670,7 @@
          </listPerson>
          <!-- Shikellamy -->
          <listPerson>
-            <person xml:id="mlper000537" sameAs="https://www.wikidata.org/wiki/Q7496562">
+            <person xml:id="mlper000537" sameAs="https://www.wikidata.org/wiki/Q7496562" sex="m">
                <persName>Shikellamy </persName>
             </person>
             <!-- there will be a lot of information to add, including family members -->
@@ -2777,10 +2756,10 @@
                <office notBefore="1767-08" ref="#mloff000015">acoluth</office>
             </listOffice>
             <listRelation type="personal">
-               <relation name="spouse" mutual="#mlper000723" from-iso="1734-04-04" to-iso="1774-09-07" />
+               <relation name="spouse" mutual="Elizabeth Sheard" ref="#mlper000723" from-iso="1734-04-04" to-iso="1774-09-07" />
                <relation name="parent" active="Joseph Sheard" />
                <relation name="parent" active="Elizabeth Sheard" />
-               <relation name="parent" active="#mlper000660" />
+               <relation name="parent" active="Sarah Sheard" ref="#mlper000660" />
                <relation name="parent" active="Benjamin Sheard" notBefore="1743" />
                <relation name="parent" active="Lydia Sheard" />
                <relation name="parent" active="Hannah Sheard" />
@@ -2791,7 +2770,7 @@
                <relation name="parent" active="Johanna (Clough)" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000711" when-iso="1774-09-10" />
+               <relation name="interment" passive="Erasmus Miller" ref="#mlper000711" />
             </listRelation>
          </listPerson>
          <!-- von Larisch, Charles -->
@@ -2872,7 +2851,7 @@
                <occupation calendar="Gregorian" notBefore="1742-07-14" ref="#mlocc999999">assistant at <placeName ref="#mlpla000084">Yorkshire</placeName></occupation>
             </listOccupation>
             <listRelation type="personal">
-               <relation name="spouse" mutual="#mlper000724" from-iso="1743-05-13" to-iso="1754-10-29" />
+               <relation name="spouse" mutual="Dinah Raymond" ref="#mlper000724" from-iso="1743-05-13" to-iso="1754-10-29" />
             </listRelation>
          </listPerson>
          <!-- Ramftler, Christian Friedrich -->
@@ -2942,7 +2921,6 @@
                <affiliation type="congregation">
                   <orgName>Bedford</orgName>
                </affiliation>
-
                <affiliation type="congregation">
                   <orgName>Fairfield</orgName>
                </affiliation>
@@ -2992,10 +2970,9 @@
                <office when-iso="1825" ref="#mloff000021">Deputy for the Bristol Congregation at the Synod at <placeName ref="#mlpla000001">Herrnhut</placeName></office>
             </listOffice>
             <listRelation type="personal">
-               <relation name="spouse" mutual="#mlper000725" from-iso="1809-12-14" to-iso="1832-10-26" />
-               <relation name="parent" active="#mlper000728" notBefore="1815-10-02" />
+               <relation name="spouse" mutual="Elizabeth Graves" ref="#mlper000725" from-iso="1809-12-14" to-iso="1832-10-26" />
+               <relation name="parent" active="Elizabeth Graves Ramftler" ref="#mlper000728" />
             </listRelation>
-
          </listPerson>
          <!-- Tattersall, Edmund -->
          <listPerson>
@@ -3074,7 +3051,7 @@
                <relation name="parent" active="Elizabeth Tattersall" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interred" passive="#mlper000697" when-iso="1761-08-05" />
+               <relation name="interred" passive="Bemjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Wood, George -->
@@ -3142,7 +3119,7 @@
                <occupation ref="#mlocc000013">clothier</occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interred" passive="#mlper000709" when-iso="1761-02-05" />
+               <relation name="interred" passive="Abraham Taylor" ref="#mlper000709" />
             </listRelation>
          </listPerson>
          <!-- Charlesworth, James -->
@@ -3245,11 +3222,11 @@
             </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="James Charlesworth" />
-               <relation name="spouse" mutual="#mlper000356" from-iso="1754-11-19" to-iso="1770-07-30" />
+               <relation name="spouse" mutual="Eleanor Gubier" ref="#mlper000356" from-iso="1754-11-19" to-iso="1770-07-30" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000357" when-iso="1770-08-04" />
-               <relation name="confirmation" passive="#mlper000602" when-iso="1743-12-10" />
+               <relation name="interment" passive="Peter Syms" ref="#mlper000357" />
+               <relation name="confirmation" passive="August Gottlieb Spangenburg" ref="#mlper000602" />
             </listRelation>
          </listPerson>
          <!-- Naylor, James -->
@@ -3334,10 +3311,10 @@
             </listOffice>
             <listRelation type="personal">
                <relation name="child" passive="John Naylor" />
-               <relation name="spouse" mutual="#mlper000642" from-iso="1727-10-19" to-iso="1762-05-10" />
+               <relation name="spouse" mutual="Martha Naylor" ref="#mlper000642" from-iso="1727-10-19" to-iso="1762-05-10" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000357" when-iso="1770-05-02" />
+               <relation name="interment" passive="Peter Syms" ref="#mlper000357" />
             </listRelation>
          </listPerson>
          <!-- Oates, James -->
@@ -3409,7 +3386,7 @@
                <relation name="sibling" mutual="Sarah Oates" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1761-06-05" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
             </listRelation>
          </listPerson>
          <!-- Astley (Ashley), John -->
@@ -3471,7 +3448,7 @@
                         <institution>
                            <orgName>Fulneck Archives</orgName>
                            <idno>Ful/3/47</idno>
-                           <ptr type="html" target="https://moravianlives.scholar.bucknell.edu/john-astley-2/"/>
+                           <ptr type="html" target="https://moravianlives.scholar.bucknell.edu/john-astley-2/" />
                            <ptr type="xml" target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/astley_john.xml" />
                         </institution>
                      </msIdentifier>
@@ -3485,14 +3462,14 @@
                <relation name="spouse" mutual="Martha (Keighley) Ashley" from-iso="1734-02-14" to-iso="1770-04-18" />
                <relation name="child" passive="Mary (Southwell)" />
                <relation name="child" passive="Martha Ashley" notBefore="1737" />
-               <relation name="child" passive="#mlper000218" />
+               <relation name="child" passive="Hannah Ashley" ref="#mlper000218" />
                <relation name="child" passive="Joshua Ashley" />
                <relation name="child" passive="Sarah Ashley" />
                <relation name="child" passive="Betty Ashley" />
                <relation name="child" passive="Benigna Ashley" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000357" when-iso="1770-04-20" />
+               <relation name="interment" passive="Peter Syms" ref="#mlper000357" />
             </listRelation>
          </listPerson>
          <!-- Bentham (Benton), John -->
@@ -3567,7 +3544,7 @@
                         <institution>
                            <orgName>Fulneck Archives</orgName>
                            <idno>Ful/3/18</idno>
-                           <ptr type="html" target="https://moravianlives.scholar.bucknell.edu/john-bentham/"/>
+                           <ptr type="html" target="https://moravianlives.scholar.bucknell.edu/john-bentham/" />
                            <ptr type="xml" target="https://github.com/moravianlives/ML/blob/master/Fulneck/StandardXML/bentham_john.xml" />
                         </institution>
                      </msIdentifier>
@@ -3583,7 +3560,7 @@
                <relation name="spouse" mutual="Mary (Bakes) Carter Benton" from-iso="1761-10-05" to-iso="1772-08-09" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000709" when-iso="1772-08-11" />
+               <relation name="interment" passive="Abraham Taylor" ref="#mlper000709" />
             </listRelation>
          </listPerson>
          <!-- Darnbrook, John -->
@@ -3660,7 +3637,7 @@
                <occupation ref="#mlocc000081">servant</occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000357" when-iso="1770-02-09" />
+               <relation name="interment" passive="Peter Syms" ref="#mlper000357" />
             </listRelation>
          </listPerson>
          <!-- Hugh (Haigh), John -->
@@ -3727,7 +3704,7 @@
                <relation name="sibling" mutual="Stephen Hugh" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000718" when-iso="1772-05-24" />
+               <relation name="interment" passive="John Frederick Zander" ref="#mlper000718" />
             </listRelation>
          </listPerson>
          <!-- Plaisted, John -->
@@ -3803,8 +3780,8 @@
                <occupation ref="#mlocc000017">cook at <placeName ref="#mlpla000304">brethren’s house Fulneck</placeName></occupation>
             </listOccupation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000697" when-iso="1761-11-17" />
-               <relation name="reception" passive="#mlper000358" when-iso="1755" />
+               <relation name="interment" passive="Benjamin LaTrobe" ref="#mlper000697" />
+               <relation name="reception" passive="Johanna Eleanora Gaertinor" ref="#mlper000358" />
             </listRelation>
          </listPerson>
          <!-- Skelton, John -->
@@ -3909,7 +3886,7 @@
                <relation name="child" active="Ann Skelton" />
             </listRelation>
             <listRelation type="Moravian">
-               <relation name="interment" passive="#mlper000711" when-iso="1773-07-03" />
+               <relation name="interment" passive="Erasmus Miller" ref="#mlper000711" />
             </listRelation>
          </listPerson>
       </body>

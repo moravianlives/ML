@@ -15,7 +15,16 @@ namespace edu.bucknell.project.moravianLives.model
 
     {
         [System.ComponentModel.DataAnnotations.Key] public string Id { get; set; } = Guid.NewGuid().ToShortGuid();
-        public string Value { get; set; }
+        public string MLid { get; set; }
+
+        public string title { get; set; }
+
+        public string placeMLid { get; set; }
+
+        public string placename { get; set; }
+
+        public DateTime notBefore { get; set; }
+        public DateTime notAfter { get; set; }
 
     }
 }

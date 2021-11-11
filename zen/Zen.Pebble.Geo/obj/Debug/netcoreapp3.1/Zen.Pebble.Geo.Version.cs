@@ -9,8 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Reflection.AssemblyVersionAttribute("0.6.0.0")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.117")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+9f5dfa0cdf")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.6.0.134")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.6.0-alpha+bc92af1c53")]
 #if NETSTANDARD || NETFRAMEWORK || NETCOREAPP
 [System.CodeDom.Compiler.GeneratedCode("Nerdbank.GitVersioning.Tasks","3.3.37.35081")]
 #endif
@@ -19,14 +19,14 @@
 #endif
 internal static partial class ThisAssembly {
     internal const string AssemblyVersion = "0.6.0.0";
-    internal const string AssemblyFileVersion = "0.6.0.117";
-    internal const string AssemblyInformationalVersion = "0.6.0-alpha+9f5dfa0cdf";
+    internal const string AssemblyFileVersion = "0.6.0.134";
+    internal const string AssemblyInformationalVersion = "0.6.0-alpha+bc92af1c53";
     internal const string AssemblyName = "Zen.Pebble.Geo";
     internal const string AssemblyTitle = "Zen.Pebble.Geo";
     internal const string AssemblyConfiguration = "Debug";
-    internal const string GitCommitId = "9f5dfa0cdf1c291b9d3346757aad3a0dbf76dd86";
+    internal const string GitCommitId = "bc92af1c539e4a4d9357d99d274d427d1da93f4b";
     internal const bool IsPublicRelease = false;
     internal const bool IsPrerelease = true;
-    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637702477900000000L, System.DateTimeKind.Utc);
+    internal static readonly System.DateTime GitCommitDate = new System.DateTime(637721567090000000L, System.DateTimeKind.Utc);
     internal const string RootNamespace = "Zen.Pebble.Geo";
 }

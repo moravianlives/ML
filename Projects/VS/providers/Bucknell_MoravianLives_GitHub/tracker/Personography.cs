@@ -123,7 +123,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                 {
                     // First - Persons.
                     var source = SourceRepository
-                        .GetDynamic("Projects/Personography", "ML_personography-3.xml")
+                        .GetDynamic("Projects/Personography", "ML_personography-1.xml")
                         .Result;
 
                     raw.Source = source;
@@ -532,6 +532,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Relation relat = new Relation();
                         relat.relationName ??= relation.StrVal("@name");
+
+                        if (relat.relationName == "parent")
+                            relat.relationName = "child";
+                        else if (relat.relationName == "child")
+                            relat.relationName = "parent";
+
                         if (relation.StrVal("@passive") != null)
                             relat.personName = relation.StrVal("@passive");
                         else if (relation.StrVal("@mutual") != null)

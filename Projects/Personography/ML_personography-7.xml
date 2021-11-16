@@ -1,135 +1,127 @@
 <?xml-model href="../../CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader>
-		<fileDesc>
-			<titleStmt>
-				<title>Moravian Lives Personography</title>
-				<funder>The Moravian Lives Project</funder>
-				<principal><persName>Katherine Mary Faull</persName>, Principal Investigator
-					<orgName>Bucknell University</orgName>
-					<address>
-						<addrLine>Lewisburg, Pennsylvania</addrLine>
-					</address>
-					<email>faull@bucknell.edu</email>
-				</principal>
-				<principal><persName>Christer Ahlberger</persName>, Principal Investigator,
-					2015-2018 <orgName>University of Gothenburg</orgName>
-					<address>
-						<addrLine>Gothenburg, Sweden</addrLine>
-					</address>
-					<email>christer.ahlberger@history.gu.se</email>
-				</principal>
-				<respStmt>
-					<persName>Diane Jakacki</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Project Manager</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Michael McGuire</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Developer, 2016-Present</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Carly Masonheimer</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Research Assistant and encoder, 2018-Present</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Marleina Cohen</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Research Assistant and encoder, 2018-19</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Marita Gruner</persName>
-					<orgName>University of Greifswald</orgName>
-					<resp>Encoder</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Sarah Kannemann</persName>
-					<orgName>University of Mainz</orgName>
-					<resp>Encoder</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Justin Schaumberger</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Carrie Pirmann</persName>
-					<orgName>Bucknell University</orgName>
-					<resp>Transkribus, Text Encoding Specialist</resp>
-				</respStmt>
-			</titleStmt>
-			<editionStmt>
-				<edition>
-					<orgName>The Moravian Archives</orgName>
-					<address>
-						<addrLine>41 West Locust Street</addrLine>
-						<addrLine>Bethlehem, PA 18018-2757</addrLine>
-						<addrLine>info@moravianchurcharchives.org</addrLine>
-					</address>
-				</edition>
-			</editionStmt>
-			<publicationStmt>
-				<distributor>The Moravian Lives Project</distributor>
-				<availability>
-					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-						International</licence>
-				</availability>
-			</publicationStmt>
-			<sourceDesc>
-				<p>List of Moravian Lives person entities with reference to persistent identifiers,
-					using ML standard names</p>
-			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<classDecl>
-				<taxonomy>
-					<category>
-						<catDesc>Archive</catDesc>
-						<category xml:id="bethlehem">
-							<catDesc>Moravian Archives, Bethlehem</catDesc>
-						</category>
-						<category xml:id="fulneck">
-							<catDesc>Moravian Archives, Fulneck</catDesc>
-						</category>
-						<category xml:id="herrnhut">
-							<catDesc>Moravian Archives, Herrnhut</catDesc>
-						</category>
-						<category xml:id="london">
-							<catDesc>Moravian Archives, Fetter Lane - London</catDesc>
-						</category>
-					</category>
-					<category>
-						<catDesc>Church Records</catDesc>
-						<category xml:id="Yorkshire_Families">
-							<catDesc>Big Book of Yorkshire Families</catDesc>
-						</category>
-						<category>
-							<catDesc>Church Records</catDesc>
-							<category xml:id="Fulneck_Families_19th_Century">
-								<catDesc>Fulneck Families 19th Century</catDesc>
-							</category>
-						</category>
-					</category>
-				</taxonomy>
-			</classDecl>
-		</encodingDesc>
-		<revisionDesc>
-			<change who="#DKJ" when="2021-04-22">Broke personography into files of 50 entries each.
-				This is first file.</change>
-			<change who="#DKJ" when="2020-06-24">Branched to a Bethlehem personography hold file.
-				Kept Fulneck here.</change>
-			<change who="#DKJ" when="2019-05-30">Updated responsibility list, added more names and
-				fields</change>
-		</revisionDesc>
-	</teiHeader>
-	<text type="personography">
-		<body>
-			<head>Moravian Lives Personography</head>
-			
-			<!-- John Hinchcliff -->
-			         <listPerson>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Moravian Lives Personography</title>
+            <funder>The Moravian Lives Project</funder>
+            <principal><persName>Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+               <address>
+                  <addrLine>Lewisburg, Pennsylvania</addrLine>
+               </address>
+               <email>faull@bucknell.edu</email>
+            </principal>
+            <principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+               <address>
+                  <addrLine>Gothenburg, Sweden</addrLine>
+               </address>
+               <email>christer.ahlberger@history.gu.se</email>
+            </principal>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Michael McGuire</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Developer, 2016-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carly Masonheimer</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marleina Cohen</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and encoder, 2018-19</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Marita Gruner</persName>
+               <orgName>University of Greifswald</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Kannemann</persName>
+               <orgName>University of Mainz</orgName>
+               <resp>Encoder</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Justin Schaumberger</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Carrie Pirmann</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Transkribus, Text Encoding Specialist</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <orgName>The Moravian Archives</orgName>
+               <address>
+                  <addrLine>41 West Locust Street</addrLine>
+                  <addrLine>Bethlehem, PA 18018-2757</addrLine>
+                  <addrLine>info@moravianchurcharchives.org</addrLine>
+               </address>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>The Moravian Lives Project</distributor>
+            <availability>
+               <licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>List of Moravian Lives person entities with reference to persistent identifiers, using ML standard names</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category>
+                  <catDesc>Archive</catDesc>
+                  <category xml:id="bethlehem">
+                     <catDesc>Moravian Archives, Bethlehem</catDesc>
+                  </category>
+                  <category xml:id="fulneck">
+                     <catDesc>Moravian Archives, Fulneck</catDesc>
+                  </category>
+                  <category xml:id="herrnhut">
+                     <catDesc>Moravian Archives, Herrnhut</catDesc>
+                  </category>
+                  <category xml:id="london">
+                     <catDesc>Moravian Archives, Fetter Lane - London</catDesc>
+                  </category>
+               </category>
+               <category>
+                  <catDesc>Church Records</catDesc>
+                  <category xml:id="Yorkshire_Families">
+                     <catDesc>Big Book of Yorkshire Families</catDesc>
+                  </category>
+                  <category>
+                     <catDesc>Church Records</catDesc>
+                     <category xml:id="Fulneck_Families_19th_Century">
+                        <catDesc>Fulneck Families 19th Century</catDesc>
+                     </category>
+                  </category>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#DKJ" when="2021-04-22">Broke personography into files of 50 entries each. This is first file.</change>
+         <change who="#DKJ" when="2020-06-24">Branched to a Bethlehem personography hold file. Kept Fulneck here.</change>
+         <change who="#DKJ" when="2019-05-30">Updated responsibility list, added more names and fields</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="personography">
+      <body>
+         <head>Moravian Lives Personography</head>
+         <!-- John Hinchcliff -->
+         <listPerson>
             <person xml:id="mlper000380" sex="m">
                <persName>
                   <forename>John</forename>
@@ -138,7 +130,6 @@
                <note>Husband of <persName ref="#mlper000574">Mary Hinchliff</persName></note>
             </person>
          </listPerson>
-         
          <!-- James Greening -->
          <listPerson>
             <person xml:id="mlper000381" sex="m">
@@ -148,7 +139,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- James Ratcliffe -->
          <listPerson>
             <person xml:id="mlper000382" sex="m">
@@ -159,8 +149,7 @@
                <note>Husband of <persName ref="#mlper000576">Millan Ratcliffe</persName></note>
             </person>
          </listPerson>
-       
-       <!-- William Armistead -->
+         <!-- William Armistead -->
          <listPerson>
             <person xml:id="mlper000383" sex="m">
                <persName>
@@ -170,7 +159,6 @@
                <note>Husband of <persName ref="#mlper000578">Ellen Armistead</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Rogers -->
          <listPerson>
             <person xml:id="mlper000384" sex="m">
@@ -180,7 +168,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Sarah Athill -->
          <listPerson>
             <person xml:id="mlper000385" sex="f">
@@ -191,7 +178,6 @@
                <note>Twin sister of <persName ref="#mlper000580">Mary Athill</persName></note>
             </person>
          </listPerson>
-         
          <!-- Esther Athill -->
          <listPerson>
             <person xml:id="mlper000386" sex="f">
@@ -202,7 +188,6 @@
                <note>Sister of <persName ref="#mlper000580">Mary Athill</persName></note>
             </person>
          </listPerson>
-         
          <!-- Hannah Birkhead -->
          <listPerson>
             <person xml:id="mlper000387" sex="f">
@@ -214,7 +199,6 @@
                <note>Wife of <persName ref="#mlper000584">William Birkhead</persName></note>
             </person>
          </listPerson>
-         
          <!-- Hannah Borck -->
          <listPerson>
             <person xml:id="mlper000388" sex="f">
@@ -226,7 +210,6 @@
                <note>Wife of <persName ref="#mlper000586">Jacob Borck</persName></note>
             </person>
          </listPerson>
-         
          <!-- Francis Pugh -->
          <listPerson>
             <person xml:id="mlper000389" sex="m">
@@ -236,7 +219,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Joseph Clayton -->
          <listPerson>
             <person xml:id="mlper000390" sex="m">
@@ -247,7 +229,6 @@
                <note>Wife of <persName ref="#mlper000597">Martha Clayton</persName></note>
             </person>
          </listPerson>
-         
          <!-- Christian Leporin -->
          <listPerson>
             <person xml:id="mlper000391" sex="m">
@@ -258,7 +239,6 @@
                <note>Father of <persName ref="#mlper000598">Sophia Clemens</persName></note>
             </person>
          </listPerson>
-         
          <!-- Amalia Leporin -->
          <listPerson>
             <person xml:id="mlper000392" sex="f">
@@ -271,7 +251,6 @@
                <note>Mother of <persName ref="#mlper000598">Sophia Clemens</persName></note>
             </person>
          </listPerson>
-         
          <!-- Anne Leporin -->
          <listPerson>
             <person xml:id="mlper000393" sex="f">
@@ -282,7 +261,6 @@
                <note>Sister of <persName ref="#mlper000598">Sophia Clemens</persName></note>
             </person>
          </listPerson>
-         
          <!-- Charlotte Leporin -->
          <listPerson>
             <person xml:id="mlper000394" sex="f">
@@ -293,7 +271,6 @@
                <note>Sister of <persName ref="#mlper000598">Sophia Clemens</persName></note>
             </person>
          </listPerson>
-         
          <!-- Christian Clemens -->
          <listPerson>
             <person xml:id="mlper000395" sex="m">
@@ -304,7 +281,6 @@
                <note>Husband of <persName ref="#mlper000598">Sophia Clemens</persName></note>
             </person>
          </listPerson>
-         
          <!-- Samuel Watson -->
          <listPerson>
             <person xml:id="mlper000396" sex="m">
@@ -314,7 +290,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Charles Ellis -->
          <listPerson>
             <person xml:id="mlper000398" sex="m">
@@ -324,7 +299,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Joseph Hinchliff -->
          <listPerson>
             <person xml:id="mlper000399" sex="m">
@@ -334,7 +308,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Jonathan Farrand -->
          <listPerson>
             <person xml:id="mlper000400" sex="m">
@@ -345,7 +318,6 @@
                <note>Husband of <persName ref="#mlper000607">Hannah Farrand</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Halliday -->
          <listPerson>
             <person xml:id="mlper000401" sex="m">
@@ -356,7 +328,6 @@
                <note>Husband of <persName ref="#mlper000612">Edna Halliday</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Hartley -->
          <listPerson>
             <person xml:id="mlper000402" sex="m">
@@ -367,7 +338,6 @@
                <note>Husband of <persName ref="#mlper000613">Martha Hartley</persName></note>
             </person>
          </listPerson>
-         
          <!-- Mary Hillas -->
          <listPerson>
             <person xml:id="mlper000403" sex="f">
@@ -378,7 +348,6 @@
                <note>Sister of <persName ref="#mlper000615">Hannah Hillas</persName></note>
             </person>
          </listPerson>
-         
          <!-- Ann Birkby -->
          <listPerson>
             <person xml:id="mlper000404" sex="f">
@@ -390,7 +359,6 @@
                <note>First wife of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- Joseph Hyland -->
          <listPerson>
             <person xml:id="mlper000405" sex="m">
@@ -401,7 +369,6 @@
                <note>Child of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- Peter Hyland -->
          <listPerson>
             <person xml:id="mlper000406" sex="m">
@@ -412,7 +379,6 @@
                <note>Child of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Hyand -->
          <listPerson>
             <person xml:id="mlper000407" sex="m">
@@ -423,7 +389,6 @@
                <note>Child of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- Thomas Hyland -->
          <listPerson>
             <person xml:id="mlper000409" sex="m">
@@ -434,7 +399,6 @@
                <note>Child of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- Mary Hyland -->
          <listPerson>
             <person xml:id="mlper000410" sex="f">
@@ -446,7 +410,6 @@
                <note>Second wife of <persName ref="#mlper000619">Peter Hyland</persName></note>
             </person>
          </listPerson>
-         
          <!-- Joshua Illingworth -->
          <listPerson>
             <person xml:id="mlper000411" sex="m">
@@ -457,7 +420,6 @@
                <note>Husband of <persName ref="#mlper000620">Hannah Illingworth</persName></note>
             </person>
          </listPerson>
-         
          <!-- Priscilla Mason -->
          <listPerson>
             <person xml:id="mlper000413" sex="f">
@@ -469,7 +431,6 @@
                <note>Second wife of <persName ref="#mlper000631">John Mason</persName></note>
             </person>
          </listPerson>
-         
          <!-- Mary Mason -->
          <listPerson>
             <person xml:id="mlper000414" sex="f">
@@ -481,8 +442,7 @@
                <note>Third wife of <persName ref="#mlper000631">John Mason</persName></note>
             </person>
          </listPerson>
-         
-			<!-- Brodersen, Christian -->
+         <!-- Brodersen, Christian -->
          <listPerson>
             <person xml:id="mlper000415" sex="m">
                <persName>
@@ -491,7 +451,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- John Miller -->
          <listPerson>
             <person xml:id="mlper000416" sex="m">
@@ -502,7 +461,6 @@
                <note>Husband of <persName ref="#mlper000639">Phoebe Müller</persName></note>
             </person>
          </listPerson>
-         
          <!-- Agnes Proctor -->
          <listPerson>
             <person xml:id="mlper000418" sex="f">
@@ -513,7 +471,6 @@
                <note>Sister of <persName ref="#mlper000652">Elizabeth Proctor</persName></note>
             </person>
          </listPerson>
-         
          <!-- Joseph Proctor -->
          <listPerson>
             <person xml:id="mlper000419" sex="m">
@@ -524,7 +481,6 @@
                <note>Brother of <persName ref="#mlper000652">Elizabeth Proctor</persName></note>
             </person>
          </listPerson>
-         
          <!-- George Proctor -->
          <listPerson>
             <person xml:id="mlper000420" sex="m">
@@ -535,7 +491,6 @@
                <note>Brother of <persName ref="#mlper000652">Elizabeth Proctor</persName></note>
             </person>
          </listPerson>
-         
          <!-- Samuel Wilson -->
          <listPerson>
             <person xml:id="mlper000421" sex="m">
@@ -545,7 +500,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Hannah Bradley -->
          <listPerson>
             <person xml:id="mlper000422" sex="f">
@@ -557,7 +511,6 @@
                <note>Wife of <persName ref="#mlper000661">John Skelton</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Skelton -->
          <listPerson>
             <person xml:id="mlper000423" sex="m">
@@ -568,7 +521,6 @@
                <note>Child of <persName ref="#mlper000661">John Skelton</persName></note>
             </person>
          </listPerson>
-         
          <!-- Christian Skelton -->
          <listPerson>
             <person xml:id="mlper000424" sex="m">
@@ -579,7 +531,6 @@
                <note>Child of <persName ref="#mlper000661">John Skelton</persName></note>
             </person>
          </listPerson>
-         
          <!-- Mary Skelton -->
          <listPerson>
             <person xml:id="mlper000425" sex="f">
@@ -590,7 +541,6 @@
                <note>Child of <persName ref="#mlper000661">John Skelton</persName></note>
             </person>
          </listPerson>
-         
          <!-- John Stansfield -->
          <listPerson>
             <person xml:id="mlper000426" sex="m">
@@ -601,7 +551,6 @@
                <note>Husband of <persName ref="#mlper000663">Grace Stansfield</persName></note>
             </person>
          </listPerson>
-         
          <!-- Hannah Stockwell -->
          <listPerson>
             <person xml:id="mlper000427" sex="f">
@@ -613,7 +562,6 @@
                <note>Wife of <persName ref="#mlper000665">Abraham Stockwell</persName></note>
             </person>
          </listPerson>
-         
          <!-- Mary Jackson -->
          <listPerson>
             <person xml:id="mlper000428" sex="f">
@@ -625,7 +573,6 @@
                <note>Child of <persName ref="#mlper000665">Abraham Stockwell</persName></note>
             </person>
          </listPerson>
-         
          <!-- Jane Lambert -->
          <listPerson>
             <person xml:id="mlper000430" sex="f">
@@ -637,7 +584,6 @@
                <note>Child of <persName ref="#mlper000665">Abraham Stockwell</persName></note>
             </person>
          </listPerson>
-         
          <!-- Daniel Cowley -->
          <listPerson>
             <person xml:id="mlper000431" sex="m">
@@ -647,7 +593,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Thomas Sykes -->
          <listPerson>
             <person xml:id="mlper000432" sex="m">
@@ -657,7 +602,6 @@
                </persName>
             </person>
          </listPerson>
-         
          <!-- Lydia Sykes -->
          <listPerson>
             <person xml:id="mlper000433" sex="f">
@@ -669,7 +613,6 @@
                <note>Wife of <persName ref="#mlper000668">Samuel Sykes</persName></note>
             </person>
          </listPerson>
-
       </body>
-  </text>
+   </text>
 </TEI>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using edu.bucknell.project.moravianLives.model;
@@ -92,6 +93,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
             ClearChangeTrack();
 
             SourceRepository = new MoravianLivesGitHubFileStorage().ResolveStorage();
+            int count = 0;
 
             Identifier(entry => entry.Id)
                 .Configure(config =>
@@ -161,6 +163,12 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     var sourceId = GetIdentifier(source);
 
+                    count++;
+                    if (count > 50)
+                    {
+                        int a = 0;
+                    }
+
                     return _personReference.GetReference(Configuration.CollectionFullIdentifier, sourceId, null);
                 })
                 .ComplexTransform(entry =>
@@ -168,7 +176,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     var mustMentionEntry = false;
 
-                    if (entry.targetModel == null) return;
+                    if (entry.targetModel == null) 
+                        return;
                     if (entry.sourceData?.Contents == null) return;
                     if (entry.timeLog == null) return;
 
@@ -192,6 +201,11 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                     }
 
+                    if (entry.sourceData.Id == "mlper000558") // Grinfield, Thomas
+                    {
+                    }
+
+ 
 
                     //If development - dump info.
 
@@ -215,6 +229,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     //#Mlper
                     entry.targetModel.MLid = entry.sourceData.Id;
+                    if (entry.targetModel.MLid == "mlper000231") 
+                        { int a = 1; }
 
                     // Gender
 
@@ -260,6 +276,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     var lastName = source?.StrVal(new[]
                     {
                         "person.persName.surname.#text",
+                        "person.persName.surname[0].#text",
+                        "person.persName.surname[0]",
                         "person.persName.surname[?(@.@type == 'birth')].#text",
                         "person.persName.surname"
                     });
@@ -271,6 +289,10 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                             surnameVariants = source?.SelectTokens("person.persName.surname[*]").ToList();
 
                     var fullName = $"{firstName} {midName} {lastName}".Trim();
+                    if (fullName == null)
+                    {
+                        int a = 0;
+                    }
 
                     //Birth
                     entry.timeLog.Log("Birth event information");
@@ -279,9 +301,18 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Token = source?.JValue(new[]
                         {
-                            "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
+                           //"person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.birth.date[?(@.@type == 'birth' && @.@calendar == 'Gregorian')]",
-                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]"
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#Yorkshire_Families')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#Fulneck_Families_19th_Century')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == '#memoir')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@resp == 'memoir')]",
+                            "person.birth.date[?(@.@type == 'birth' && @.@calendar != 'Julian')]",
+                            
+                            "person.birth.date[?(@.@type == 'birth')]",
+                            "person.birth.date[0]",
+                            "person.birth.date"
+
                         })
                     };
 
@@ -289,7 +320,21 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         birthEventData.Text = birthEventData.Token.StrVal("@when-iso") ??
                                               birthEventData.Token.StrVal("#text");
-                        birthEventData.Timestamp = HealDatetime("Birthdate", entry.sourceData.Id, birthEventData.Text);
+                        try
+                        {
+                            birthEventData.Timestamp = HealDatetime("Birthdate", entry.sourceData.Id, birthEventData.Text);
+                        }
+                        catch (Exception e)
+                        {
+                            birthEventData.Timestamp = null;
+                        }
+
+                    }
+      
+
+                    if (birthEventData.Timestamp == null)
+                    {
+                        int a = 1;
                     }
 
                     birthEventData.PlaceIdentifier = source.StrVal("person.birth.placeName.@ref");
@@ -307,9 +352,15 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Token = source?.JValue(new[]
                         {
-                            "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
+                           // "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar == 'Gregorian')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#Yorkshire_Families')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#Fulneck_Families_19th_Century')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == '#memoir')]",
+                            "person.death.date[?(@.@type == 'death' && @.@resp == 'memoir')]",
                             "person.death.date[?(@.@type == 'death' && @.@calendar != 'Julian')]",
+                            "person.death.date[?(@.@type == 'death')]",
+                            "person.death.date[0]",
                             "person.death.date"
                         })
                     };
@@ -318,7 +369,20 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         deathEventData.Text = deathEventData.Token.StrVal("@when-iso") ??
                                               deathEventData.Token.StrVal("#text");
-                        deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+                        try
+                        {
+                            deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+
+                        }
+                        catch (Exception e)
+                        {
+                            deathEventData.Timestamp = null;
+                        }
+                        //deathEventData.Timestamp = HealDatetime("Deathdate", entry.sourceData.Id, deathEventData.Text);
+                    }
+                    else
+                    {
+                        int a = 0;
                     }
 
                     deathEventData.PlaceIdentifier = source.StrVal("person.death.placeName.@ref");
@@ -406,7 +470,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                      });
                     var MemoirLang = source?.StrVal(new[]
                    {
-                        "person.listBibl.msDesc.msIdentifier.institution.lang",
+                        "person.listBibl.msDesc.msIdentifier.institution.lang.#text",
                      });
 
                     var MemoirLink = source.StrVal("person.listBibl.msDesc.msIdentifier.institution.ptr.@target");
@@ -416,40 +480,81 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     //entry.targetModel.MemoirLink ??= MemoirLink;
                     //entry.targetModel.MemoirLang ??= MemoirLang;
 
-                    entry.targetModel.MemoirInfo.archive ??= MemoirArchive;
-                    entry.targetModel.MemoirInfo.shelfmark ??= Memoirshelfmark;
-                    entry.targetModel.MemoirInfo.link ??= MemoirLink;
-                    entry.targetModel.MemoirInfo.lang ??= MemoirLang;
+                    entry.targetModel.MemoirInfo.archive = MemoirArchive;
+                    entry.targetModel.MemoirInfo.shelfmark = Memoirshelfmark;
+                    entry.targetModel.MemoirInfo.link = MemoirLink;
+                    entry.targetModel.MemoirInfo.lang = MemoirLang;
 
                     //read office information
-                    //entry.targetModel.officeinfo ??= new List<OfficeString>();
-                    var officestr = new OfficeString();
-                    
-                    
+                    entry.targetModel.offices = new List<Office>();
+                    //count++;
+                    //if (count > 50)
+                    //{
+                    //    var b = 0;
+                    //}
+                        
 
-                    var offices = source?.SelectTokens("person.listOffice.office[*]").Select(i => (JObject)i).ToList();
+                    //var officestr = new OfficeString();
+                    var offices = source?.SelectTokens("listOffice.office[*]").Select(i => (JObject)i).ToList();
+
+
                     foreach (var @office in offices)
                     {
-                        var title = @office.StrVal("#text");
-                        var orgname = @office.StrVal("@placeName");
-                        officestr.SetVariant(title, orgname);
-                        entry.targetModel.officeinfo.Add(officestr);
+                        Office offi = new Office();
+                        offi.title = @office.StrVal("#text");
+                        offi.MLid ??= @office.StrVal("@ref");
+                        //offi.notBefore ??= @office.StrVal("@notBefore");
+                        offi.placename = @office.StrVal(new[] { "placeName.#text", "placeName" });
+                        offi.placeMLid = @office.StrVal(new[] { "placeName.@ref" });
 
-                        var eventModel = Office.Where(i =>
-                            i.Value == title).FirstOrDefault();
+                        CultureInfo provider = CultureInfo.InvariantCulture;
+                        // offi.notBefore = DateTime.ParseExact(@office.StrVal("@notBefore"), "yyyy-mm-dd", provider);
+                        //offi.notAfter = DateTime.ParseExact(@office.StrVal("@notAfter"), "yyyy-mm-dd", provider);
+                        //offi.notBefore =  Convert.ToDateTime(@office.StrVal("@notBefore"));
+                        //offi.notAfter = Convert.ToDateTime(@office.StrVal("@notAfter"));
 
-                        if (eventModel == null)
-                            eventModel = new Office
-                            {
-                                Value = title
-                            };
+                        //officestr.SetVariant(title, orgname);
+                        //entry.targetModel.offices.Add(officestr);
 
+                        // source.StrVal("person.birth.placeName.@ref");
+                        entry.targetModel.offices.Add(offi);
                     }
 
 
-                        // Finally, event handling.
+                    // Listed Choir
 
-                        entry.timeLog.Log("Unique event: Birth");
+                    if (mustMentionEntry) ScopedLog.Log($"{entry.sourceData.Id}: {serializedModel}", Message.EContentType.MoreInfo);
+
+                    // list relations
+                    var relations = source?.SelectTokens("listRelation[?(@.@type == 'personal')].relation[*]").Select(i => (JObject)i).ToList();
+                    entry.targetModel.Relationships = new List<Relation>();
+                    foreach (var relation in relations)
+                    {
+                        Relation relat = new Relation();
+                        relat.relationName ??= relation.StrVal("@name");
+
+                        if (relat.relationName == "parent")
+                            relat.relationName = "child";
+                        else if (relat.relationName == "child")
+                            relat.relationName = "parent";
+
+                        if (relation.StrVal("@passive") != null)
+                            relat.personName = relation.StrVal("@passive");
+                        else if (relation.StrVal("@mutual") != null)
+                            relat.personName = relation.StrVal("@mutual");
+                        else if (relation.StrVal("@active") != null)
+                            relat.personName = relation.StrVal("@active");
+                        string mlid = relation.StrVal("@ref");
+                        if (mlid != null && mlid.Substring(0, 1) == "#")
+                            mlid = mlid.Substring(1);
+                        relat.MLid = mlid;
+                        entry.targetModel.Relationships.Add(relat);
+                    }
+
+
+                    // Finally, event handling.
+
+                    entry.timeLog.Log("Unique event: Birth");
 
                     if (birthEventData.Timestamp != null)
                     {
@@ -477,7 +582,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
                     // Listed Events.
 
-                    var events = source?.SelectTokens("person.event[*]").Select(i => (JObject)i).ToList();
+                    var events = source?.SelectTokens("person.listEvent.event[*]").Select(i => (JObject)i).ToList();
 
                     foreach (var @event in events)
                     {
@@ -614,9 +719,9 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                                         }
                                 }
 
-                            var otherPersonModel = _personReference.GetReference(Configuration.CollectionFullIdentifier, otherPersonRefId, new Person() { Name = otherPersonName });
-                            eventModel.Roles.Ensure(new Event.RoleDescriptor { PersonId = otherPersonModel.Id, RoleId = eventRoleId });
-                            ScopedLog.Log($"{entry.sourceData.Id}: [Event:{eventCategoryModelId}] referenced Person - {otherPersonModel.Name ?? otherPersonModel.Id} as {eventRoleId}", Message.EContentType.Info);
+                            //var otherPersonModel = _personReference.GetReference(Configuration.CollectionFullIdentifier, otherPersonRefId, new Person() { Name = otherPersonName });
+                            //eventModel.Roles.Ensure(new Event.RoleDescriptor { PersonId = otherPersonModel.Id, RoleId = eventRoleId });
+                            //ScopedLog.Log($"{entry.sourceData.Id}: [Event:{eventCategoryModelId}] referenced Person - {otherPersonModel.Name ?? otherPersonModel.Id} as {eventRoleId}", Message.EContentType.Info);
                         }
 
                         var placeName = eventLocation?.Name != null ? eventLocation.Name + ", " : "";
@@ -628,7 +733,7 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                         if (mustMentionEvent) ScopedLog.Log($"{entry.sourceData.Id}: {serializedEvent}", Message.EContentType.MoreInfo);
                     }
 
-                    if (mustMentionEntry) ScopedLog.Log($"{entry.sourceData.Id}: {serializedModel}", Message.EContentType.MoreInfo);
+
 
                 })
                 .OnCommit(() =>
@@ -711,6 +816,8 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
 
             return corrected ? correctedText : originalText;
         }
+
+
 
         public class PrimaryEventData
         {

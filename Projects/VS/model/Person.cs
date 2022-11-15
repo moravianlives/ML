@@ -35,9 +35,10 @@ namespace edu.bucknell.project.moravianLives.model
         public string Birthplace { get; set; }
         public string Deathplace { get; set; }
 
-        public RelationshipVariants Relationships { get; set; }
+        public List<Relation> Relationships { get; set; }
         public TemporalCommented<DataReference<Organization>> Organizations { get; set; }
 
+        public List<Office> offices { get; set; }
         //public string MemoirArchive { get; set; }
 
         //public string MemoirShelfmark { get; set; }
@@ -48,7 +49,7 @@ namespace edu.bucknell.project.moravianLives.model
 
         public string Gender { get; set; }
 
-        public List<OfficeString> officeinfo { get; set; }
+        
 
         #region Implementation of IFacts
 
@@ -112,6 +113,9 @@ namespace edu.bucknell.project.moravianLives.model
 
         public class RelationshipVariants : VariantTemporalMap<Category, DataReference<Person>>
         {
+            public string relationName { get; set; }
+            public string personName { get; set; }
+            public string MLid { get; set; }
         }
 
         public class MemoirDesc
@@ -127,7 +131,15 @@ namespace edu.bucknell.project.moravianLives.model
             {
             }
         }
-         
+
+        //public class officeRecord
+        //{
+        //    public DateTime start { get; set; }
+        //    public DateTime end { get; set; }
+        //    public Office officeitem { get; set; }
+        //}
+
+
         public class Category : Category<Person, Category>
         {
         }

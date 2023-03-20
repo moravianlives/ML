@@ -3684,6 +3684,86 @@
 	"cwrc:hasCertainty": "cwrc:medium"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003048632",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:30:48.632Z",
+	"dcterms:modified": "2023-03-20T04:30:48.632Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003048632#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003048632#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q165140",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -3721,7 +3801,7 @@
 						<hi rend="underline">the following account of herself:</hi>
 						<lb/> I was <name event="birth" when-iso="1727-08-09">born the <date when="1727-08-09" cert="high">9<hi rend="superscript">th</hi> of Aug 1727</date> at <lb/>
 							<placeName ref="#mlpla000026" cert="high"><placeName key="Herrnhut-Rennersdorf" ref="http://viaf.org/viaf/4615151898623324190007/" cert="medium">Berthelsdorf</placeName></placeName></name>. My Parents belonging to <lb/> the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName> endeavour'd to bring me up <lb/> in the same connection with the <orgName en="congregation">Cong<hi rend="superscript">n</hi>
-							<lb/></orgName>&amp; sent me from my earliest years every <lb/> Sunday to <placeName ref="#mlpla000001" cert="high">Herrnhut</placeName> to the Childrens <lb/> meeting,
+							<lb/></orgName>&amp; sent me from my earliest years every <lb/> Sunday to <placeName ref="#mlpla000001" cert="high"><placeName key="Herrnhut" ref="http://www.wikidata.org/entity/Q165140" cert="high">Herrnhut</placeName></placeName> to the Childrens <lb/> meeting,
 						which the late <rs ref="#mlper000538" cert="high"><persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000566" key="Count Zinzendorf" cert="high" type="real">Count Zinzendorf</persName></rs>
 						<lb/> kept. He asked me many questions, and <lb/> tho' I did not always understand him, <lb/> yet it made an impression on my heart <lb/> and I felt a <name emotion="desire">desire</name> to be <name emotion="happy">happy</name>. When <lb/> I was in my <date when-iso="1734" cert="medium">7<hi rend="superscript">th</hi>
 							year</date> my Father de- <lb/> parted <name emotion="happily">happily</name> to <roleName type="h">our Savior</roleName>, after <lb/> which the late <rs ref="#mlper000538" cert="high"><persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000566" key="Count" cert="high" type="real">Count</persName></rs> took care of my <lb/> Mother &amp; her children; she came to <lb/> live in the <placeName>widows house</placeName> at <placeName ref="#mlpla000001">Herrnhut</placeName>

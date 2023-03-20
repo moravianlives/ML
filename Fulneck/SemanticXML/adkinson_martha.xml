@@ -1130,6 +1130,85 @@
 	"cwrc:hasCertainty": "cwrc:medium"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/adkinson_martha.xml?place_annotation_20230320003940159",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:39:40.159Z",
+	"dcterms:modified": "2023-03-20T04:39:40.159Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/adkinson_martha.xml?place_annotation_20230320003940159#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/adkinson_martha.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/adkinson_martha.xml?place_annotation_20230320003940159#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://viaf.org/viaf/153899352/",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -1197,7 +1276,7 @@
 						<name emotion="comfortable">comfortable</name> &amp; unabiding <name emotion="blessing">blessing</name>
 						<name emotion="to her heart">to Her Heart</name>, <lb/>
 						<name event="communion" when-iso="1767-01-30"><date when="1767-01-30" cert="high">Jan 30 1767</date> she became a participant of the holy sacramt</name>
-						<lb/> &amp; on <date when="1767-11" cert="high">nov<hi rend="superscript">r</hi> following</date>, she was appointed by our Lords <lb/> directions to serve as <rs ref="#mlocc000017" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Cook</rs> in the <orgName en="œconomy">Oeconomie</orgName> at <placeName ref="#mlpla000052" cert="high">little mor</placeName>
+						<lb/> &amp; on <date when="1767-11" cert="high">nov<hi rend="superscript">r</hi> following</date>, she was appointed by our Lords <lb/> directions to serve as <rs ref="#mlocc000017" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Cook</rs> in the <orgName en="œconomy">Oeconomie</orgName> at <placeName ref="#mlpla000052" cert="high"><placeName key="Littlemore (England)" ref="http://viaf.org/viaf/153899352/">little mor</placeName></placeName>
 						<lb/> &amp; Her leaving the Choirhouse became a great <lb/> Tryal to Her <add place="above">not understanding House business</add> Till within some month before <lb/> Her
 						depature, haveing thro <name emotion="grace">Grace</name> got to see that <lb/> the whole <name emotion="perplexity">perplexity</name> was Her own Makeing </p>
 					<cb/>

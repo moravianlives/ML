@@ -1284,6 +1284,85 @@
 	"cwrc:hasCertainty": "cwrc:high"
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:19:49.342Z",
+	"dcterms:modified": "2023-03-20T04:19:49.342Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5364628",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -1303,7 +1382,7 @@
 					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
 					<p>
 						<persName ref="#mlper000217" cert="high" type="real">Mary Alott</persName>
-						<lb/> Was <name event="birth" when-iso="1734-12-12">born</name> at <placeName ref="#mlpla000100" cert="high"><placeName key="Barkisland Hall" ref="http://www.wikidata.org/entity/Q47164049" cert="high">Barksland</placeName> in the Parish of <lb/> Elland</placeName>. On the <date calendar="Gregorian" when="1734-12-12" cert="high">12<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> 1734 N S.</date>
+						<lb/> Was <name event="birth" when-iso="1734-12-12">born</name> at <placeName ref="#mlpla000100" cert="high"><placeName key="Barkisland Hall" ref="http://www.wikidata.org/entity/Q47164049" cert="high">Barksland</placeName> in the <placeName key="Elland" ref="http://www.wikidata.org/entity/Q5364628">Parish of <lb/> Elland</placeName></placeName>. On the <date calendar="Gregorian" when="1734-12-12" cert="high">12<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> 1734 N S.</date>
 					</p>
 					<p> When <date cert="medium" when="1737">she was about Three years old</date> her <lb/> Father dyed &amp; she liv'd with her Mother &amp; <lb/> her Aunt (Namely <persName cert="high" type="real">Betty Midgley</persName>) who <lb/> jointly Nurs'd &amp; Maintain'd <add place="above">her</add> till <date cert="medium" when="1741">she was
 							<lb/> about seven</date>, then her Mother being again <lb/> Married her Aunt left them took a Room <lb/> &amp; design'd to live by herself, But <add place="above"><persName ref="#mlper000217" cert="high" type="real">Mary</persName></add> not being <lb/> at all willing to be left behind often <name emotion="begg'd">begg'd</name>

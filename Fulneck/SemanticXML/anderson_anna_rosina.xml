@@ -3843,6 +3843,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003343769",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:33:43.769Z",
+	"dcterms:modified": "2023-03-20T04:33:43.769Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003343769#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/anderson_anna_rosina.xml?place_annotation_20230320003343769#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://viaf.org/viaf/125764078/",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -3943,7 +4022,7 @@
 						<name event="reception" when-iso="1744">I was receiv'd <lb/> into the <orgName en="single sisters choir">S. S<hi rend="superscript">rs</hi> Choir</orgName></name> and <date when-iso="1747">1747</date>
 						<lb/>
 						<name event="reception" when-iso="1747">blessed for a <name office="#mloff000014">Deaconess</name></name>. <date when-iso="1748">1748</date> I received <lb/> a Call to be
-							<name office="#mloff000004">S. S<hi rend="superscript">rs</hi> Labores</name> at <placeName ref="#mlpla000002" cert="high">Beth <lb/> lehem in America</placeName>. In
+							<name office="#mloff000004">S. S<hi rend="superscript">rs</hi> Labores</name> at <placeName ref="#mlpla000002" cert="high"><placeName key="Bethlehem (Northampton County, Pa. : Township)" ref="http://viaf.org/viaf/125764078/">Beth <lb/> lehem</placeName> in America</placeName>. In
 							<placeName ref="#mlpla000054" cert="high">London</placeName>
 						<date when-iso="1748-02-10">Feb<hi rend="superscript">r</hi>. <lb/> the 10<hi rend="superscript">th</hi></date>
 						<name event="departure" when-iso="1748-02-16">I was bless for my office &amp; <lb/> set out in June</name>. <name event="arrival" when-iso="1748-09-20">Sept the 20<hi rend="superscript">th</hi> I <lb/> arrived in <placeName ref="#mlpla000002" type="arrival" cert="high">Bethlehem</placeName> after a <name emotion="troublesome"><name emotion="troublesome">trouble</name></name>

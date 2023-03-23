@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -90,17 +88,16 @@
 					<msIdentifier>
 						<repository ref="#mlpla000003">Moravian Archives, Fulneck</repository>
 						<msName type="memoir" ana="MAF/Ful_3_58_BarkerJoshua">Joshua Barker</msName>
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg" />
-						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg" />
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg"/>
+						<msName facs="http://moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg"/>
 					</msIdentifier>
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
-				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -124,606 +121,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134590",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.590Z",
-	"dcterms:issued": "2020-10-08T18:56:34.708Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134590#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134590#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/persName"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:NaturalPerson",
-		"@id": "#mlper000555",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134591",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.591Z",
-	"dcterms:issued": "2020-10-08T18:56:34.710Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134591#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?person_annotation_20201008135134591#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/persName[3]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:NaturalPerson",
-		"@id": "#mlper000536",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134592",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.592Z",
-	"dcterms:issued": "2020-10-08T18:56:34.710Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134592#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134592#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.593Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date[2]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.593Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134593#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date[3]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.594Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date[4]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.594Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date[5]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:51:34.594Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134594#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/date[6]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "undefined/undefined"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-08T17:51:34.595Z",
-	"dcterms:issued": "2020-10-08T18:56:34.711Z",
+	"dcterms:modified": "2020-10-08T17:51:34.595Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -735,21 +142,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135134595#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/date"
 		}
@@ -759,16 +166,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -792,281 +200,60 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135846456",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:58:46.456Z",
-	"dcterms:issued": "2020-10-08T18:56:34.712Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20230323195117347",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-23T23:51:17.347Z",
+	"dcterms:modified": "2023-03-23T23:51:17.347Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/HarrisonHQuinn",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "Harrison Quinn"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135846456#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20230323195117347#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008135846456#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20230323195117347#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/name/date"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "1696-12-22"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?rs_annotation_20201008135955254",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T17:59:55.254Z",
-	"dcterms:issued": "2020-10-08T18:56:34.712Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?rs_annotation_20201008135955254#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?rs_annotation_20201008135955254#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/rs"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:Occupation",
-		"@id": "#mlocc000013",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008140218347",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T18:02:18.347Z",
-	"dcterms:issued": "2020-10-08T18:56:34.712Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008140218347#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?date_annotation_20201008140218347#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/name[12]/date"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "xsd:date",
-		"rdf:value": "1752-04-22"
-	},
-	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
-		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
-	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
-	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20201008140338330",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-08T18:03:38.330Z",
-	"dcterms:issued": "2020-10-08T18:56:34.712Z",
-	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20201008140338330#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
-			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/barker_joshua.xml?place_annotation_20201008140338330#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/p/placeName[2]"
+			"rdf:value": "TEI/text/body/div/div/p/name/placeName/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "#mlpla000043",
+		"@id": "http://www.wikidata.org/entity/Q1301336",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description></rdf:RDF></xenoData>
-		<profileDesc>
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000555">Joshua Barker</persName>
@@ -1086,82 +273,68 @@
 				<head>Joshua Barker</head>
 				<head type="page">1</head>
 				<div type="page" n="1">
-					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg" />
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-01.jpg"/>
 					<p> Departed <date type="death" when-iso="1761-03-24">March 24th 1761</date> Our <roleName type="honorific">Brother</roleName>
 						<persName ref="#mlper000555">Joshua Barker</persName>
-						<name event="birth" when-iso="1696-12-22">was born in the <date when="1696-12-22" cert="high">Year 1696, <lb /> on the 22<hi rend="superscript">nd</hi> of December</date> at
-								<placeName ref="#mlpla000339" cert="high">Hopton in the Parish of Mirfield</placeName></name> he lived with his <lb /> Father till <date when-iso="1715">19 Years of
-							Age</date> at which time he was put <rs ref="#mlocc000013" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Apprentice to a Broad-Cloth- <lb /> ier</rs> in
+						<name event="birth" when-iso="1696-12-22">was born in the <date when="1696-12-22" cert="high">Year 1696, <lb/> on the 22<hi rend="superscript">nd</hi> of December</date> at
+								<placeName ref="#mlpla000339" cert="high">Hopton in the <placeName key="Mirfield" ref="http://www.wikidata.org/entity/Q1301336">Parish of Mirfield</placeName></placeName></name> he lived with his <lb/> Father till <date when-iso="1715">19 Years of
+							Age</date> at which time he was put <rs ref="#mlocc000013" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Apprentice to a Broad-Cloth- <lb/> ier</rs> in
 						that neighborhood, <name event="marriage" when-iso="1719-07-15">he was married to his present Widow</name> the <date when-iso="1719-07-15">15<hi rend="superscript">th</hi> of
-							July <lb /> 1719</date> by whom he has had 8 Childrn two of whom went home in their Infancy <lb /> and one at Mans Estate and of the 5 survising ones, one Son is a member
-						of <lb /> our Society, he liv'd <name emotion="happily">happily</name> with his Wife and being of a religious turn he went <lb /> with his Wife constantly to the
-							<placeName>Church</placeName> &amp; <name event="sacrament">Sacrament</name>, and had religious Meet- <lb /> ings kept in his house where they us'd to pray and read
-							<title>Burkets Exposition</title> on <lb /> the <name type="religious">new Testament</name>; his self working was for some time in his way, so that to <lb /> be a poor
-						Sinner at the feet of <persName type="deity">Jesus</persName> was a hard matter to him for some time, <lb /> and he was a long time among the <orgName>B<hi rend="superscript"
-								>rn</hi></orgName> before he got a feeling of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi></roleName> Dying <lb />
+							July <lb/> 1719</date> by whom he has had 8 Childrn two of whom went home in their Infancy <lb/> and one at Mans Estate and of the 5 survising ones, one Son is a member
+						of <lb/> our Society, he liv'd <name emotion="happily">happily</name> with his Wife and being of a religious turn he went <lb/> with his Wife constantly to the
+							<placeName>Church</placeName> &amp; <name event="sacrament">Sacrament</name>, and had religious Meet- <lb/> ings kept in his house where they us'd to pray and read
+							<title>Burkets Exposition</title> on <lb/> the <name type="religious">new Testament</name>; his self working was for some time in his way, so that to <lb/> be a poor
+						Sinner at the feet of <persName type="deity">Jesus</persName> was a hard matter to him for some time, <lb/> and he was a long time among the <orgName>B<hi rend="superscript">rn</hi></orgName> before he got a feeling of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi></roleName> Dying <lb/>
 						<name emotion="love">Love</name>
-						<name emotion="in his heart">in his heart</name>. When <persName ref="#mlper000536">Mr Ingham</persName> preach'd in the Beginning in these parts <lb /> he went to hear him,
-						his Wife at first was against it; but upon her hearing <lb /> both <persName><roleName>B<hi rend="superscript">r</hi></roleName> Ockertshausen</persName> at her own house her
-						Prejudice dropt away and they <add place="above">both</add> went <lb /> both together, he always had a <name emotion="great attachment">great attachment</name> to the
-								<orgName>B<hi rend="superscript">rn</hi></orgName>, and upon <del>the</del> his <lb /> Land Lords being against the Preaching at his house, he rather left it than com-
-						<lb /> ply with his <name emotion="desire">Desire</name> not to let the <name type="religious">Gospel</name> be preach'd there. He soon became <lb /> a Member of our
-							<orgName>Society</orgName>, and had the <name emotion="grace">Grace</name> to be <name event="reception" when-iso="1752-04-22">receiv'd on the <date when="1752-04-22"
-								cert="high">22<hi rend="superscript">d</hi> of April <lb /> 1752</date> into the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName></name> &amp;
-							<date when-iso="1752-11-19">Nov. 19<hi rend="superscript">th</hi> in the same year</date> he partook of the highest Good in <lb /> the <name event="communion"
-							when-iso="1752-11-19">holy Sacrament</name> for the first time. Within these 2 Years he has occasionally <lb /> said to his Wife I shall not be long here but shall soon be
-						go home, but don't be <name emotion="troubled">trou- <lb /> bled</name> for you will not stay long after me. At the regulating of the Bands and Classes <lb /> anew in <date
-							when-iso="1760-01">January 1760</date> he became a <name office="#mloff000024">Band Servant</name>, in which capacity he was a <lb /> faithfull Helper &amp; <name
-							emotion="beloved">belov'd</name> by his <orgName>B<hi rend="superscript">rn</hi></orgName>, and found a <name emotion="blessing">Blessing</name>
-						<name emotion="for his own heart">for his own heart</name>. <lb /> On <date when-iso="1760-11-10">Monday night the 10<hi rend="superscript">th</hi> of November</date> he was
-						taken with a <name health="disease">violent and <name emotion="painful">pain- <lb /> full</name> Disorder</name> so that his Disolution was expected before morning, the Vio-
-						<lb /> lence of which was however somewhat abated the next Day when he was visited <lb /> by <persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
-							Watson</persName> on his return from <placeName ref="#mlpla000043">Huddersfield</placeName>. He was <name emotion="very cheerful">very chearfull</name> not- <lb />
-						withstanding his great bodily <name emotion="pain">Pain</name> &amp; in a sinnerlike Connexion with the man <lb /> of <name emotion="sorrows">Sorrows</name>, whom he said he
-							<name emotion="longed">longed</name> to see face to face, &amp; beg'd him and the <lb />
+						<name emotion="in his heart">in his heart</name>. When <persName ref="#mlper000536">Mr Ingham</persName> preach'd in the Beginning in these parts <lb/> he went to hear him,
+						his Wife at first was against it; but upon her hearing <lb/> both <persName><roleName>B<hi rend="superscript">r</hi></roleName> Ockertshausen</persName> at her own house her
+						Prejudice dropt away and they <add place="above">both</add> went <lb/> both together, he always had a <name emotion="great attachment">great attachment</name> to the
+								<orgName>B<hi rend="superscript">rn</hi></orgName>, and upon <del>the</del> his <lb/> Land Lords being against the Preaching at his house, he rather left it than com-
+						<lb/> ply with his <name emotion="desire">Desire</name> not to let the <name type="religious">Gospel</name> be preach'd there. He soon became <lb/> a Member of our
+							<orgName>Society</orgName>, and had the <name emotion="grace">Grace</name> to be <name event="reception" when-iso="1752-04-22">receiv'd on the <date when="1752-04-22" cert="high">22<hi rend="superscript">d</hi> of April <lb/> 1752</date> into the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName></name> &amp;
+							<date when-iso="1752-11-19">Nov. 19<hi rend="superscript">th</hi> in the same year</date> he partook of the highest Good in <lb/> the <name event="communion" when-iso="1752-11-19">holy Sacrament</name> for the first time. Within these 2 Years he has occasionally <lb/> said to his Wife I shall not be long here but shall soon be
+						go home, but don't be <name emotion="troubled">trou- <lb/> bled</name> for you will not stay long after me. At the regulating of the Bands and Classes <lb/> anew in <date when-iso="1760-01">January 1760</date> he became a <name office="#mloff000024">Band Servant</name>, in which capacity he was a <lb/> faithfull Helper &amp; <name emotion="beloved">belov'd</name> by his <orgName>B<hi rend="superscript">rn</hi></orgName>, and found a <name emotion="blessing">Blessing</name>
+						<name emotion="for his own heart">for his own heart</name>. <lb/> On <date when-iso="1760-11-10">Monday night the 10<hi rend="superscript">th</hi> of November</date> he was
+						taken with a <name health="disease">violent and <name emotion="painful">pain- <lb/> full</name> Disorder</name> so that his Disolution was expected before morning, the Vio-
+						<lb/> lence of which was however somewhat abated the next Day when he was visited <lb/> by <persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
+							Watson</persName> on his return from <placeName ref="#mlpla000043">Huddersfield</placeName>. He was <name emotion="very cheerful">very chearfull</name> not- <lb/>
+						withstanding his great bodily <name emotion="pain">Pain</name> &amp; in a sinnerlike Connexion with the man <lb/> of <name emotion="sorrows">Sorrows</name>, whom he said he
+							<name emotion="longed">longed</name> to see face to face, &amp; beg'd him and the <lb/>
 						<roleName type="honorific">B<hi rend="superscript">r</hi>n</roleName> to <name emotion="bear him on their hearts">bear him on their hearts</name>, before Him on that account.
-						From his first <lb /> becoming sick he always thought he <lb /> should yet Permission to leave his mor- <lb /> tal Tent, and from hence be taken the faithfull one to see, at
-						which he <lb /> frequently <name emotion="rejoiced">rejoic'd</name>
-						<name emotion="in his heart">in his heart</name>, &amp; speaking with a Brother of the <name emotion="great longing">great Long- <lb /> ing</name> he felt to be at home with
+						From his first <lb/> becoming sick he always thought he <lb/> should yet Permission to leave his mor- <lb/> tal Tent, and from hence be taken the faithfull one to see, at
+						which he <lb/> frequently <name emotion="rejoiced">rejoic'd</name>
+						<name emotion="in his heart">in his heart</name>, &amp; speaking with a Brother of the <name emotion="great longing">great Long- <lb/> ing</name> he felt to be at home with
 						his wounded Friend that only matchless <note target="catchword">Heart</note>
 					</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-02.jpg" />
-					<p> Heart and observing his Wife looked <name emotion="thoughtful">thoughtfull</name>, he said to her when I am <lb /> with him I will speak a good Word for you, that he may soon
-						fetch you also <lb /> and I'm sure he will not deny me my Request and this he <name emotion="comforted">comforted</name> her about <lb /> their parting. Soon after the <name
-							event="sacrament">Sacrament</name>, being visited by a <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> he express'd <lb /> his <name emotion="great
-							longing">great Longing</name> for that highest Good, in order to strengthen his heart under <lb /> the great bodily <name emotion="pain">pain</name> he felt and declared
-						that the better Death and <name emotion="passion">Passion</name> of <lb /> the <roleName type="honorific">Lord</roleName>
-						<persName>Jesus</persName> was what his <name emotion="heart relied upon">heart rely'd upon</name> and his its only Good for time &amp; <lb /> Eternity. Once being visited he
+					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_58_BarkerJoshua-02.jpg"/>
+					<p> Heart and observing his Wife looked <name emotion="thoughtful">thoughtfull</name>, he said to her when I am <lb/> with him I will speak a good Word for you, that he may soon
+						fetch you also <lb/> and I'm sure he will not deny me my Request and this he <name emotion="comforted">comforted</name> her about <lb/> their parting. Soon after the <name event="sacrament">Sacrament</name>, being visited by a <roleName type="honorific">B<hi rend="superscript">r</hi></roleName> he express'd <lb/> his <name emotion="great        longing">great Longing</name> for that highest Good, in order to strengthen his heart under <lb/> the great bodily <name emotion="pain">pain</name> he felt and declared
+						that the better Death and <name emotion="passion">Passion</name> of <lb/> the <roleName type="honorific">Lord</roleName>
+						<persName>Jesus</persName> was what his <name emotion="heart relied upon">heart rely'd upon</name> and his its only Good for time &amp; <lb/> Eternity. Once being visited he
 						express'd his <name emotion="desire">Desire</name> to be buried with his <orgName>B<hi rend="superscript">rn</hi></orgName>
-						<lb /> at <placeName>Lambs Hill</placeName> and seemed <name emotion="grieved">grieved</name> that on account of his outward Circumstances <lb /> he must give up that <name
-							emotion="hope">hope</name> but he was soon <name emotion="comforted">comforted</name> upon our assuring <lb /> him we wou'd see to it that his <name emotion="desire"
-							>desire</name> shou'd be accomplish'd. <date when-iso="1761-01-21">Jan 21<hi rend="superscript">st</hi></date> he had <lb /> his part of the <name event="communion"
-							when-iso="1761-01-21">holy Sacrament</name> with some other sick for which End he came on Horse- <lb /> back <del>to the</del> to the <placeName>Chapel</placeName> which
-						was the last time of his being there. On the <lb />
+						<lb/> at <placeName>Lambs Hill</placeName> and seemed <name emotion="grieved">grieved</name> that on account of his outward Circumstances <lb/> he must give up that <name emotion="hope">hope</name> but he was soon <name emotion="comforted">comforted</name> upon our assuring <lb/> him we wou'd see to it that his <name emotion="desire">desire</name> shou'd be accomplish'd. <date when-iso="1761-01-21">Jan 21<hi rend="superscript">st</hi></date> he had <lb/> his part of the <name event="communion" when-iso="1761-01-21">holy Sacrament</name> with some other sick for which End he came on Horse- <lb/> back <del>to the</del> to the <placeName>Chapel</placeName> which
+						was the last time of his being there. On the <lb/>
 						<name type="holiday">Great Sabbath</name>
-						<persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Watson</persName> carried him the <name event="sacrament">Sacram<hi rend="superscript"
-							>t</hi></name>, and first related <add place="above">to him</add> what <lb />
-						<del>had</del> had pass'd in the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName> at <placeName>G.H</placeName>. on Maunday Thursday and then <add
-							place="above">in a</add> child- <lb /> like <del>Prayer</del> Prayer beg'd that mouth which spoke his own clean, to speak this <lb />
-						<roleName type="honorific">B<hi rend="superscript">r</hi></roleName> who could not <name emotion="enjoy">enjoy</name> the Application of the bloody Gore from his Back in y<hi
-							rend="superscript">e</hi>
-						<lb />Pedilavium on account of Sickness clean, and to hasten the ripening of this fruit <lb /> of his Deaths <name emotion="agony">Agony</name> &amp; take him home to himself
-						or soon enable him to appear <lb /> again among his <orgName>B<hi rend="superscript">rn</hi></orgName>. Then he sung: What <roleName type="honorific">Lord</roleName> thee so
-							<name emotion="tormented">tormented</name> &amp;c. O let him in <lb /> thy nail holes see his Pardon &amp; Election free &amp;c. Give him absolution, and a gen- <lb /> tle
-							<name emotion="praising">praising</name> Tone, deep Foundation in thy Cross's Stem, and then during an <lb />
-						<name emotion="inexpressible tender">inexpressible tender</name> &amp; <name emotion="melting feeling">melting feeling</name> he receiv'd his share of the <name
-							event="communion">holy Sacram<hi rend="superscript">t</hi></name>
-						<lb /> after which he was particularly <name emotion="cheerful">chearfull</name> and <name emotion="happy">happy</name> and frequently said to his <lb /> Wife, now I have got
-						what I wanted, and seem'd <name emotion="highly blessed">highly blessed</name>. That Night <lb /> was a <name emotion="very painful">very painfull</name> night to him and his
-							<name health="disease">Disorder very became again</name> very vio- <lb /> lent. On Monday being visited by one of the <orgName>B<hi rend="superscript">rn</hi></orgName> to
-						whom he again signified his <lb />
-						<name emotion="longing">Longing</name> to be at home which <name emotion="desire">Desire</name> was granted him the next day in the Eve- <lb /> ning about 8o'clock after having
-						lain <name emotion="quiet">quiet</name> &amp; still from about 4o'clock with- <lb /> out speaking, he <name emotion="sweetly">sweetly</name> fell asleep &amp; grew pale on
+						<persName><roleName type="honorific">B<hi rend="superscript">r</hi></roleName> Watson</persName> carried him the <name event="sacrament">Sacram<hi rend="superscript">t</hi></name>, and first related <add place="above">to him</add> what <lb/>
+						<del>had</del> had pass'd in the <orgName en="congregation">Cong<hi rend="superscript">n</hi></orgName> at <placeName>G.H</placeName>. on Maunday Thursday and then <add place="above">in a</add> child- <lb/> like <del>Prayer</del> Prayer beg'd that mouth which spoke his own clean, to speak this <lb/>
+						<roleName type="honorific">B<hi rend="superscript">r</hi></roleName> who could not <name emotion="enjoy">enjoy</name> the Application of the bloody Gore from his Back in y<hi rend="superscript">e</hi>
+						<lb/>Pedilavium on account of Sickness clean, and to hasten the ripening of this fruit <lb/> of his Deaths <name emotion="agony">Agony</name> &amp; take him home to himself
+						or soon enable him to appear <lb/> again among his <orgName>B<hi rend="superscript">rn</hi></orgName>. Then he sung: What <roleName type="honorific">Lord</roleName> thee so
+							<name emotion="tormented">tormented</name> &amp;c. O let him in <lb/> thy nail holes see his Pardon &amp; Election free &amp;c. Give him absolution, and a gen- <lb/> tle
+							<name emotion="praising">praising</name> Tone, deep Foundation in thy Cross's Stem, and then during an <lb/>
+						<name emotion="inexpressible tender">inexpressible tender</name> &amp; <name emotion="melting feeling">melting feeling</name> he receiv'd his share of the <name event="communion">holy Sacram<hi rend="superscript">t</hi></name>
+						<lb/> after which he was particularly <name emotion="cheerful">chearfull</name> and <name emotion="happy">happy</name> and frequently said to his <lb/> Wife, now I have got
+						what I wanted, and seem'd <name emotion="highly blessed">highly blessed</name>. That Night <lb/> was a <name emotion="very painful">very painfull</name> night to him and his
+							<name health="disease">Disorder very became again</name> very vio- <lb/> lent. On Monday being visited by one of the <orgName>B<hi rend="superscript">rn</hi></orgName> to
+						whom he again signified his <lb/>
+						<name emotion="longing">Longing</name> to be at home which <name emotion="desire">Desire</name> was granted him the next day in the Eve- <lb/> ning about 8o'clock after having
+						lain <name emotion="quiet">quiet</name> &amp; still from about 4o'clock with- <lb/> out speaking, he <name emotion="sweetly">sweetly</name> fell asleep &amp; grew pale on
 							<persName type="deity">Jesus</persName> arm &amp; Bosom, in y<hi rend="superscript">e</hi>
-						<lb /> 65<hi rend="superscript">th</hi> year of his dying Life, with that Childrens Watch Word; <hi rend="underline">all that <lb /> are in the Graves shall hear his
-							voice.</hi> Now there's no Soul who doth <lb /> not want (ev'n when in her <roleName type="honorific">Lords</roleName>
-						<name emotion="joy">Joy</name>) and doth not quick upon the Grant <lb /> fetch her Corpses revrently. </p>
+						<lb/> 65<hi rend="superscript">th</hi> year of his dying Life, with that Childrens Watch Word; <hi rend="underline">all that <lb/> are in the Graves shall hear his
+							voice.</hi> Now there's no Soul who doth <lb/> not want (ev'n when in her <roleName type="honorific">Lords</roleName>
+						<name emotion="joy">Joy</name>) and doth not quick upon the Grant <lb/> fetch her Corpses revrently. </p>
 				</div>
 			</div>
 		</body>

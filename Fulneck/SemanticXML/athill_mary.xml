@@ -732,6 +732,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/athill_mary.xml?place_annotation_20230323191510134",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-23T23:15:10.134Z",
+	"dcterms:modified": "2023-03-23T23:15:10.134Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/athill_mary.xml?place_annotation_20230323191510134#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/athill_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/athill_mary.xml?place_annotation_20230323191510134#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name[8]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q316390",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -757,7 +836,7 @@ to <placeName ref="#mlpla000384" type="arrival" cert="high"><placeName key="Edin
 <lb/>
 <persName cert="high" type="real">S<hi rend="superscript">r.</hi> Esther</persName></name>; <name event="departure" when-iso="1828-10">remained here till <date when="1821-10" cert="high">Oct<hi rend="superscript">r.</hi> / 28</date></name>, when <lb/> <name event="arrival">went first to <placeName ref="#mlpla000054" type="arrival" cert="high">London</placeName></name>, where <name event="confirmation" notAfter-iso="1829" notBefore-iso="1828-10">confirm<hi rend="superscript">d</hi> in
 <lb/>
-<orgName religion="Anglican">ch of Engl<hi rend="superscript">d</hi>f</orgName></name> <name event="arrival" when-iso="1829">in <date when="1829" cert="high">1829</date> went back to <placeName ref="#mlpla000215" type="arrival" cert="high">Antigua</placeName></name> <lb/> <name event="departure" when-iso="1836">where rem<hi rend="superscript">d</hi> till / 36</name>; after residence of <lb/> 5
+<orgName religion="Anglican">ch of Engl<hi rend="superscript">d</hi>f</orgName></name> <name event="arrival" when-iso="1829">in <date when="1829" cert="high">1829</date> went back to <placeName ref="#mlpla000215" type="arrival" cert="high"><placeName key="Antigua" ref="http://www.wikidata.org/entity/Q316390">Antigua</placeName></placeName></name> <lb/> <name event="departure" when-iso="1836">where rem<hi rend="superscript">d</hi> till / 36</name>; after residence of <lb/> 5
 						yrs in Lond <name event="entrance" when-iso="1841">came to live in <placeName ref="#mlpla000271" cert="high">S<hi rend="superscript">rs</hi> house</placeName>
 <lb/>
 here in / 41</name>. <name event="ecclesiastical" when-iso="1843">Admitted com<hi rend="superscript">t</hi> members

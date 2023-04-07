@@ -1452,6 +1452,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bell_christian.xml?place_annotation_20230406203147051",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-07T00:31:47.051Z",
+	"dcterms:modified": "2023-04-07T00:31:47.051Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bell_christian.xml?place_annotation_20230406203147051#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bell_christian.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bell_christian.xml?place_annotation_20230406203147051#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p[2]/name[10]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q39121",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -1511,7 +1590,7 @@
 						that he once in <lb/> a particular Manner pray'd our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> if He saw no other <lb/> way of obtaining his Aim
 						with him to <name event="spiritual">do it by giving him <lb/> a sickly Habit of Body, <add place="above">or taking him to himself</add> rather than suffer him to go into
 							<lb/> the World</name>, &amp; he has often considered our <roleName type="honorific">Sv<hi rend="superscript">rs</hi></roleName> Dealings with <lb/> him as an Answer to
-						this Prayer. <date when-iso="1771-08" cert="low">About a half a Year ago</date>, as <name event="arrival" when-iso="1771-08">he was going to <placeName ref="#mlpla000050" cert="high">Leeds</placeName></name> &amp; had still thoughts of pursuing a Worldly Scheme, tho' with much <name emotion="uneasiness">uneasiness</name> of Mind &amp;
+						this Prayer. <date when-iso="1771-08" cert="low">About a half a Year ago</date>, as <name event="arrival" when-iso="1771-08">he was going to <placeName ref="#mlpla000050" cert="high"><placeName key="Leeds" ref="http://www.wikidata.org/entity/Q39121">Leeds</placeName></placeName></name> &amp; had still thoughts of pursuing a Worldly Scheme, tho' with much <name emotion="uneasiness">uneasiness</name> of Mind &amp;
 						Having pray'd as above, he stop'd &amp; looked back for his Company when he got a Vomiting of blood, which was the beginning of his last Sickness.</p>
 					<p> About <date when-iso="1771-12" cert="medium">2 months ago</date> it was observed that his <name emotion="tender">tender</name>
 					</p>

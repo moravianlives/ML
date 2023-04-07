@@ -730,6 +730,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentham_john.xml?place_annotation_20230406205521066",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-07T00:55:21.066Z",
+	"dcterms:modified": "2023-04-07T00:55:21.066Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentham_john.xml?place_annotation_20230406205521066#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentham_john.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentham_john.xml?place_annotation_20230406205521066#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q61903179",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -767,7 +846,7 @@
 						Marriage I had 2 Daughters. When <persName ref="#mlper000536">M<hi rend="superscript">r</hi>. Ingham</persName> began to preach in these parts I want to hear him, &amp; the
 						Word had some Effect upon me for some Time, but alas, I soon got into my old <name emotion="wretched course">wretched Course</name> again. Being one Sunday at <placeName>Tong
 							Church</placeName> I was asked by the late <roleName type="honorific">B<hi rend="superscript">r</hi></roleName>
-						<persName ref="#mlper000713s">Jonathan Heartly</persName> to go with him to hear the <orgName>Brethren</orgName> at <placeName>Bankhouse</placeName>; at first I told him I
+						<persName ref="#mlper000713s">Jonathan Heartly</persName> to go with him to hear the <orgName>Brethren</orgName> at <placeName><placeName key="Bankhouse Inn" ref="http://www.wikidata.org/entity/Q61903179">Bankhouse</placeName></placeName>; at first I told him I
 						would not, but he however prevailed upon so to do, &amp; I have abundant Reason to thank my dear <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> that He
 						inclined me to go. What I there heard of the <name emotion="love">Love</name> of our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
 						<name type="emotion"><name emotion="melted my heart">melted my heart</name></name> &amp; had the Effect upon me that I returned home in a very different Mind to what I had

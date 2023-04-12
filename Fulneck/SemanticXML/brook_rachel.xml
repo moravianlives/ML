@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -99,11 +97,10 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
-				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -127,12 +124,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.051Z",
-	"dcterms:issued": "2021-01-17T23:08:13.521Z",
+	"dcterms:modified": "2021-01-17T23:06:07.051Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -144,21 +145,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607051#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/date"
 		}
@@ -168,16 +169,17 @@
 		"rdf:value": "1744-04-28"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -201,12 +203,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.052Z",
-	"dcterms:issued": "2021-01-17T23:08:13.530Z",
+	"dcterms:modified": "2021-01-17T23:06:07.052Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -218,21 +224,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607052#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date"
 		}
@@ -242,16 +248,17 @@
 		"rdf:value": "1760"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -275,12 +282,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.053Z",
-	"dcterms:issued": "2021-01-17T23:08:13.531Z",
+	"dcterms:modified": "2021-01-17T23:06:07.053Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -292,21 +303,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607053#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date"
 		}
@@ -316,16 +327,17 @@
 		"rdf:value": "1760-10-04"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -349,12 +361,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.055Z",
-	"dcterms:issued": "2021-01-17T23:08:13.532Z",
+	"dcterms:modified": "2021-01-17T23:06:07.055Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -366,21 +382,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date[2]"
 		}
@@ -390,16 +406,17 @@
 		"rdf:value": "1761-05-11"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -423,12 +440,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.055Z",
-	"dcterms:issued": "2021-01-17T23:08:13.532Z",
+	"dcterms:modified": "2021-01-17T23:06:07.055Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -440,21 +461,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607055#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date[3]"
 		}
@@ -464,16 +485,17 @@
 		"rdf:value": "1762-05-08"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -497,12 +519,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.056Z",
-	"dcterms:issued": "2021-01-17T23:08:13.532Z",
+	"dcterms:modified": "2021-01-17T23:06:07.056Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -514,21 +540,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p/date"
 		}
@@ -538,16 +564,17 @@
 		"rdf:value": "1790"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -571,12 +598,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.056Z",
-	"dcterms:issued": "2021-01-17T23:08:13.533Z",
+	"dcterms:modified": "2021-01-17T23:06:07.056Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -588,21 +619,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607056#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/date"
 		}
@@ -612,16 +643,17 @@
 		"rdf:value": "1810-10-04"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -645,12 +677,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.057Z",
-	"dcterms:issued": "2021-01-17T23:08:13.533Z",
+	"dcterms:modified": "2021-01-17T23:06:07.057Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -662,21 +698,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/date"
 		}
@@ -686,16 +722,17 @@
 		"rdf:value": "1815-11-06"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -719,12 +756,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T23:06:07.057Z",
-	"dcterms:issued": "2021-01-17T23:08:13.533Z",
+	"dcterms:modified": "2021-01-17T23:06:07.057Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -736,21 +777,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?date_annotation_20210117180607057#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[3]/date"
 		}
@@ -760,15 +801,173 @@
 		"rdf:value": "1815-11-13"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description></rdf:RDF></xenoData>
-		<profileDesc>
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225102684",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:51:02.684Z",
+	"dcterms:modified": "2023-04-12T02:51:02.684Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225102684#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225102684#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q865872",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225121371",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:51:21.371Z",
+	"dcterms:modified": "2023-04-12T02:51:21.371Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225121371#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/brook_rachel.xml?place_annotation_20230411225121371#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q3773203",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -784,111 +983,100 @@
 			<div type="memoir">
 				<head>Rachel Brook</head>
 				<div type="page" n="1">
-					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-01.jpg" />
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-01.jpg"/>
 					<p> Our late <roleName type="honorific">Sr</roleName>
-						<persName ref="#mlper000223" cert="high" type="real">Rachel Brook</persName> was <lb /> born <date when="1744-04-28" cert="high">Apr. 28<hi rend="superscript">th</hi>
-							1744</date> at <placeName ref="#mlpla000030" cert="high">Birstol</placeName>. <lb /> Her Parents, who <name emotion="loved">loved</name> the <roleName type="honorific"
-							>Lord</roleName>
-						<lb /> directed her from her earliest <lb /> years to the friend of Children <lb /> and took her, when a Child to the <lb /> Chaple at <placeName ref="#mlpla000041" cert="high"
-							>Gumersal</placeName>, where she at <lb /> tended the Childrens meetings, and <lb /> and used to be <name emotion="delighted">delighted</name> to hear <lb /> of our
+						<persName ref="#mlper000223" cert="high" type="real">Rachel Brook</persName> was <lb/> born <date when="1744-04-28" cert="high">Apr. 28<hi rend="superscript">th</hi>
+							1744</date> at <placeName ref="#mlpla000030" cert="high"><placeName key="Birstall" ref="http://www.wikidata.org/entity/Q865872">Birstol</placeName></placeName>. <lb/> Her Parents, who <name emotion="loved">loved</name> the <roleName type="honorific">Lord</roleName>
+						<lb/> directed her from her earliest <lb/> years to the friend of Children <lb/> and took her, when a Child to the <lb/> Chaple at <placeName ref="#mlpla000041" cert="high"><placeName key="Gomersal" ref="http://www.wikidata.org/entity/Q3773203">Gumersal</placeName></placeName>, where she at <lb/> tended the Childrens meetings, and <lb/> and used to be <name emotion="delighted">delighted</name> to hear <lb/> of our
 							<roleName type="honorific">Saviours</roleName>
-						<name emotion="love">love</name>, and when <lb /> comming home she would some <lb /> time kneel down in a corner <lb /> and pray to him to <name emotion="bless">bless</name>
-						her <lb /> and form her to his mind. <lb /></p>
+						<name emotion="love">love</name>, and when <lb/> comming home she would some <lb/> time kneel down in a corner <lb/> and pray to him to <name emotion="bless">bless</name>
+						her <lb/> and form her to his mind. <lb/></p>
 					<p>
-						<del>But</del> When she grew older she found <lb /> that <name emotion="tender">tender</name> Childlike <name emotion="love">love</name> to our <lb />Savr growing <name
-							emotion="cold">cold</name>, she <name emotion="wished">wished</name> to <name emotion="injoy">injoy</name>
-						<lb /> the world, and its vain <name emotion="pleasures">pleasures</name>, <lb /> but always felt a monitor within, <lb /> warning her from going the broad <lb /> road, which
-						leadeth to destruction; <lb /> she spent some time in great <lb />
+						<del>But</del> When she grew older she found <lb/> that <name emotion="tender">tender</name> Childlike <name emotion="love">love</name> to our <lb/>Savr growing <name emotion="cold">cold</name>, she <name emotion="wished">wished</name> to <name emotion="injoy">injoy</name>
+						<lb/> the world, and its vain <name emotion="pleasures">pleasures</name>, <lb/> but always felt a monitor within, <lb/> warning her from going the broad <lb/> road, which
+						leadeth to destruction; <lb/> she spent some time in great <lb/>
 						<note type="catchword">trouble</note>
-						<lb />
+						<lb/>
 					</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-02.jpg" />
+					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-02.jpg"/>
 					<p>
-						<name emotion="great trouble of mind">trouble of mind</name>, not willing to <lb /> follow the <roleName type="honorific">Lord</roleName>, and <name emotion="full of fear">full
+						<name emotion="great trouble of mind">trouble of mind</name>, not willing to <lb/> follow the <roleName type="honorific">Lord</roleName>, and <name emotion="full of fear">full
 							of fear</name>
-						<lb /> to be last eternally; during this <lb /> period, which was in her <date cert="medium" when="1760">16<hi rend="superscript">th</hi>
-							<lb /> year</date>, she had a very remarkable <lb /> dream: it was to her as if she <lb /> saw our <roleName type="honorific">Saviour</roleName> on the Cross, in <lb /> the
-							<name emotion="most lovely attitude">most lovely attitude</name>, saying <lb /> to her, "all my <name emotion="sufferings">sufferings</name>, wounds <lb /> and bruises were
-						for thee, to <lb /> save and redeem thy sinful soul." <lb />
-						<name event="awakening">This made a deep impression on her <lb /> mind, and she turned in <name emotion="earnest">earnest</name>
-							<lb /> prayer to the <roleName type="honorific">Lord</roleName>,</name> that he would <lb /> pardon her sins and transgressions <lb /> and renew a right spirit within
-						<lb /> her, &amp; <name event="awakening">once when walking in a field <lb /> by herself, with <name emotion="tears">tears</name> and prayer <lb /> lifting up her hands to him,
-							she <lb /> got an assurance</name> that her <name emotion="guilt">guilt</name>
-						<lb /> should be done away, and that <lb /> he would prove her good Shepherd <lb />
+						<lb/> to be last eternally; during this <lb/> period, which was in her <date cert="medium" when="1760">16<hi rend="superscript">th</hi>
+							<lb/> year</date>, she had a very remarkable <lb/> dream: it was to her as if she <lb/> saw our <roleName type="honorific">Saviour</roleName> on the Cross, in <lb/> the
+							<name emotion="most lovely attitude">most lovely attitude</name>, saying <lb/> to her, "all my <name emotion="sufferings">sufferings</name>, wounds <lb/> and bruises were
+						for thee, to <lb/> save and redeem thy sinful soul." <lb/>
+						<name event="awakening">This made a deep impression on her <lb/> mind, and she turned in <name emotion="earnest">earnest</name>
+							<lb/> prayer to the <roleName type="honorific">Lord</roleName>,</name> that he would <lb/> pardon her sins and transgressions <lb/> and renew a right spirit within
+						<lb/> her, &amp; <name event="awakening">once when walking in a field <lb/> by herself, with <name emotion="tears">tears</name> and prayer <lb/> lifting up her hands to him,
+							she <lb/> got an assurance</name> that her <name emotion="guilt">guilt</name>
+						<lb/> should be done away, and that <lb/> he would prove her good Shepherd <lb/>
 						<note type="catchword">who</note>
-						<lb />
+						<lb/>
 					</p>
-					<cb />
-					<p> who seeks that which was lost <lb /> with unwearied faithfulness. <lb /> This has followed <add place="above">her</add> all her life and <lb /> often thro' <name
-							emotion="grace">grace</name> been renewed. <lb /></p>
-					<p> She now felt a <name emotion="desire">desire</name> to be closer <lb /> united with the <orgName religion="Moravian Church">Brns Cong<hi rend="superscript">n</hi></orgName> and
-						<lb /> to <name emotion="injoy">injoy</name> the priviliges of the same. <lb />
+					<cb/>
+					<p> who seeks that which was lost <lb/> with unwearied faithfulness. <lb/> This has followed <add place="above">her</add> all her life and <lb/> often thro' <name emotion="grace">grace</name> been renewed. <lb/></p>
+					<p> She now felt a <name emotion="desire">desire</name> to be closer <lb/> united with the <orgName religion="Moravian Church">Brns Cong<hi rend="superscript">n</hi></orgName> and
+						<lb/> to <name emotion="injoy">injoy</name> the priviliges of the same. <lb/>
 						<date when="1760-10-04" cert="high">Oct 4<hi rend="superscript">th</hi> 1760</date>
-						<name event="entrance" when-iso="1760-10-04">she moved into the <lb /> S<hi rend="superscript">rs</hi> House here in <placeName ref="#mlpla000003" cert="high"
-								>Fulnek</placeName></name>, <date when="1761-05-11" cert="high">May 11. <lb /> 1761</date>
+						<name event="entrance" when-iso="1760-10-04">she moved into the <lb/> S<hi rend="superscript">rs</hi> House here in <placeName ref="#mlpla000003" cert="high">Fulnek</placeName></name>, <date when="1761-05-11" cert="high">May 11. <lb/> 1761</date>
 						<name event="reception" when-iso="1761-05-11">she was recd into the <orgName religion="Moravian Church">B<hi rend="superscript">rns</hi> Cong<hi rend="superscript">n</hi>
-								<lb /></orgName></name>and <date when="1762-05-08" cert="high">May 8<hi rend="superscript">th</hi> the following year</date>
-						<lb />
-						<name event="communion" when-iso="1762-05-08">partook for the first time of <lb /> the H. Com<hi rend="superscript">n</hi></name>. She often spoke <lb /> with <name
-							emotion="great pleasure">great pleasure</name>, of the time <lb /> of her first com<del>m</del>ing, how <name emotion="happy">happy</name>
-						<lb /> she was in communion with our <lb />
-						<roleName type="honorific">Saviour</roleName>, and how <name emotion="comfortable">comfortable</name> the <lb /> S<hi rend="superscript">rs</hi> were together in the so called
-						<lb /> spinning days, and how they <name emotion="delighted">delighted</name>
-						<lb /> midst great poverty in singing the <lb />
-						<name emotion="praises">praises</name> of the <roleName type="honorific">Lord</roleName>. She was <lb /> soon imployed in serving as an Over <lb />
+								<lb/></orgName></name>and <date when="1762-05-08" cert="high">May 8<hi rend="superscript">th</hi> the following year</date>
+						<lb/>
+						<name event="communion" when-iso="1762-05-08">partook for the first time of <lb/> the H. Com<hi rend="superscript">n</hi></name>. She often spoke <lb/> with <name emotion="great pleasure">great pleasure</name>, of the time <lb/> of her first com<del>m</del>ing, how <name emotion="happy">happy</name>
+						<lb/> she was in communion with our <lb/>
+						<roleName type="honorific">Saviour</roleName>, and how <name emotion="comfortable">comfortable</name> the <lb/> S<hi rend="superscript">rs</hi> were together in the so called
+						<lb/> spinning days, and how they <name emotion="delighted">delighted</name>
+						<lb/> midst great poverty in singing the <lb/>
+						<name emotion="praises">praises</name> of the <roleName type="honorific">Lord</roleName>. She was <lb/> soon imployed in serving as an Over <lb/>
 						<note type="catchword">seer</note>
-						<lb />
+						<lb/>
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-03.jpg" />
+					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-03.jpg"/>
 					<p>
-						<name office="#mloff000022">seer with the Girls</name>, and afterwards <lb />
+						<name office="#mloff000022">seer with the Girls</name>, and afterwards <lb/>
 						<name office="#mloff000023">with Sisters</name>. In <date when="1790" cert="high">1790</date>
-						<name event="reception" when-iso="1790">she was accepted <lb /> acoluth</name>, and for <date dur="P18Y">18 years</date> she held <lb /> the <name office="#mloff000003">Office
-							of Houseservant</name>, she <lb /> showed much faithfulness in what <lb /> was committed to her, and looked <lb />upon it as a favour, which <lb /> made her Office a <name
-							emotion="pleasant">pleasant</name> duty. <lb />
-						<del>to her.</del> The last few years, she <lb /> was not able to do as formerly <lb /> but <name emotion="injoying">injoying</name> the <name emotion="love">love</name> of the
+						<name event="reception" when-iso="1790">she was accepted <lb/> acoluth</name>, and for <date dur="P18Y">18 years</date> she held <lb/> the <name office="#mloff000003">Office
+							of Houseservant</name>, she <lb/> showed much faithfulness in what <lb/> was committed to her, and looked <lb/>upon it as a favour, which <lb/> made her Office a <name emotion="pleasant">pleasant</name> duty. <lb/>
+						<del>to her.</del> The last few years, she <lb/> was not able to do as formerly <lb/> but <name emotion="injoying">injoying</name> the <name emotion="love">love</name> of the
 							S<hi rend="superscript">rs</hi>
-						<lb /> they were willing to lend her a <lb /> helping hand whenever required, <lb /> particularly those S<hi rend="superscript">rs</hi> in her room <lb /> showed her much <name
-							emotion="love">love</name> &amp; attention. <lb /> Tho' nothing very striking seemed to <lb /> distinguish her course, we are sure <lb /> that she lived in communion with
-						<lb /> our Saviour, and with Childlike <lb />
-						<name emotion="confidence">confidence</name> and humble faith looked <lb /> to him for help and support in <lb /> every time of need. <lb />
+						<lb/> they were willing to lend her a <lb/> helping hand whenever required, <lb/> particularly those S<hi rend="superscript">rs</hi> in her room <lb/> showed her much <name emotion="love">love</name> &amp; attention. <lb/> Tho' nothing very striking seemed to <lb/> distinguish her course, we are sure <lb/> that she lived in communion with
+						<lb/> our Saviour, and with Childlike <lb/>
+						<name emotion="confidence">confidence</name> and humble faith looked <lb/> to him for help and support in <lb/> every time of need. <lb/>
 						<note type="catchword">Oct.</note>
-						<lb />
+						<lb/>
 					</p>
-					<cb />
+					<cb/>
 					<p>
-						<date when="1810-10-04" cert="high">Oct 4<hi rend="superscript">th</hi> 1810</date> she called to mind that <lb /> it was 50 years since she moved <lb /> into this house, she
-						expressed <lb /> herself that she could not suffi- <lb /> ciently <name emotion="thank">thank</name> our <roleName type="honorific">Saviour</roleName>, for all <lb /> his <name
-							emotion="love">love</name> and care, his long <name emotion="suffering">suffering</name>
-						<lb /> and forbearance, and for all his <lb />
-						<name emotion="mercy">mercy</name> towards her, and looked back <lb /> with <name emotion="gratitude">gratitude</name> and <name emotion="amazement">amazement</name> how <lb />
-						he had proved her true friends in <lb /> all her spiritual and temporal <lb />
-						<name emotion="concerns">concerns</name>, that she had laked <lb /> nothing; and she renewed her <lb /> convenant to cleave to him, to <lb />
-						<name emotion="trust">trust</name> his <roleName type="honorific">Shepherd</roleName> care, till <lb />
-						<name emotion="hope">hope</name> and <name emotion="faith">faith</name> shall cease, and <lb />
+						<date when="1810-10-04" cert="high">Oct 4<hi rend="superscript">th</hi> 1810</date> she called to mind that <lb/> it was 50 years since she moved <lb/> into this house, she
+						expressed <lb/> herself that she could not suffi- <lb/> ciently <name emotion="thank">thank</name> our <roleName type="honorific">Saviour</roleName>, for all <lb/> his <name emotion="love">love</name> and care, his long <name emotion="suffering">suffering</name>
+						<lb/> and forbearance, and for all his <lb/>
+						<name emotion="mercy">mercy</name> towards her, and looked back <lb/> with <name emotion="gratitude">gratitude</name> and <name emotion="amazement">amazement</name> how <lb/>
+						he had proved her true friends in <lb/> all her spiritual and temporal <lb/>
+						<name emotion="concerns">concerns</name>, that she had laked <lb/> nothing; and she renewed her <lb/> convenant to cleave to him, to <lb/>
+						<name emotion="trust">trust</name> his <roleName type="honorific">Shepherd</roleName> care, till <lb/>
+						<name emotion="hope">hope</name> and <name emotion="faith">faith</name> shall cease, and <lb/>
 						<name emotion="love">Love</name> prevail alone. </p>
-					<p> Hitherto she had <name emotion="injoyed">injoyed</name> an unin- <lb /> terrupted good state of health, but <lb /> now <name health="disease">she began to <name emotion="feel"
-								>feel</name> the <name emotion="infirmities">infir- <lb /> mities</name> of age</name>, and for these last 3 <lb /> years, she was not able to attend <note
-							type="catchword">the</note>
+					<p> Hitherto she had <name emotion="injoyed">injoyed</name> an unin- <lb/> terrupted good state of health, but <lb/> now <name health="disease">she began to <name emotion="feel">feel</name> the <name emotion="infirmities">infir- <lb/> mities</name> of age</name>, and for these last 3 <lb/> years, she was not able to attend <note type="catchword">the</note>
 					</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-04.jpg" />
-					<p> the meetings as she used to do, <lb /> which was a <name emotion="great trial">great trial</name> to her. </p>
-					<p> She was however able to go about <lb /> in the house, tho' at last with <lb /> great difficulty, till the <date cert="medium" when="1815-11-06">6<hi rend="superscript">th</hi>
-							<lb /> of this month</date>, when she had to <lb /> be confined to the sickroom, her <lb />
-						<name health="disease">weakness increased rapidly</name>; tho' <lb /> she did not think that her de- <lb /> parture was so near, she felt <lb />
-						<name emotion="resigned">resigned</name> to our <roleName type="honorific">Saviours</roleName> will, <lb /> saying: "My times are in his hands <lb /> "I can <del>say</del> do
-						nothing but pray <lb /> "to him to receive me, a poor <lb /> "and worthless sinner, in <name emotion="mercy">mercy</name>, <lb /> "and I am sure he will." - </p>
-					<p> On the <date when="1815-11-13" cert="high">13<hi rend="superscript">th</hi></date> she called to mind the <lb />
-						<name emotion="blessings">blessings</name> she had often <name emotion="enjoyed">enjoyed</name> on <lb /> that great memorial day, and <lb /> particularly what she had felt the
-						<lb /> first time, when she <name emotion="celebrated">celebrated</name> it <lb /> 55 years ago, during the singing of <lb /> that verse: <lb />
+					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-04.jpg"/>
+					<p> the meetings as she used to do, <lb/> which was a <name emotion="great trial">great trial</name> to her. </p>
+					<p> She was however able to go about <lb/> in the house, tho' at last with <lb/> great difficulty, till the <date cert="medium" when="1815-11-06">6<hi rend="superscript">th</hi>
+							<lb/> of this month</date>, when she had to <lb/> be confined to the sickroom, her <lb/>
+						<name health="disease">weakness increased rapidly</name>; tho' <lb/> she did not think that her de- <lb/> parture was so near, she felt <lb/>
+						<name emotion="resigned">resigned</name> to our <roleName type="honorific">Saviours</roleName> will, <lb/> saying: "My times are in his hands <lb/> "I can <del>say</del> do
+						nothing but pray <lb/> "to him to receive me, a poor <lb/> "and worthless sinner, in <name emotion="mercy">mercy</name>, <lb/> "and I am sure he will." - </p>
+					<p> On the <date when="1815-11-13" cert="high">13<hi rend="superscript">th</hi></date> she called to mind the <lb/>
+						<name emotion="blessings">blessings</name> she had often <name emotion="enjoyed">enjoyed</name> on <lb/> that great memorial day, and <lb/> particularly what she had felt the
+						<lb/> first time, when she <name emotion="celebrated">celebrated</name> it <lb/> 55 years ago, during the singing of <lb/> that verse: <lb/>
 					</p>
-					<pb />
+					<pb/>
 					<p>
 						<lg type="verse">
 							<l>O Church, how many hast thou yet</l>
@@ -921,7 +1109,7 @@
 					</p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-05.jpg" />
+					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_42Brook-05.jpg"/>
 					<p>
 						<lg type="verse">
 							<l>With <name emotion="cheerful">cheerful</name> voice she joins</l>

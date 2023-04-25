@@ -11354,6 +11354,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230056060",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T03:00:56.060Z",
+	"dcterms:modified": "2023-04-25T03:00:56.060Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230056060#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230056060#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[5]/p[2]/name[4]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q183",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -11527,7 +11606,7 @@
 						</roleName> to bring me <lb/> into their <name emotion="happy">happy</name> Circle, That he knew it was just a Regulation as <lb/> would <name emotion="please">please</name>
 						me. Upon duly weighing the matter before our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, I wrote <lb/> to my much respected Friend, the d<hi rend="superscript">r</hi>
 						<persName ref="#mlper000701" cert="high" type="real">Discipless</persName> for <name event="arrival">leave to visit the Cong<hi rend="superscript">n</hi>
-							<lb/> in <placeName ref="#mlpla000139" type="arrival" cert="high">Germany</placeName>, who readily granted me the favour</name>. My Mother also <lb/> at this time, was
+							<lb/> in <placeName ref="#mlpla000139" type="arrival" cert="high"><placeName key="Germany" ref="http://www.wikidata.org/entity/Q183">Germany</placeName></placeName>, who readily granted me the favour</name>. My Mother also <lb/> at this time, was
 						well inclin'd towards to <orgName religion="Moravian Church">Bre<hi rend="superscript">n</hi></orgName>;       But meeting with <lb/> some <name emotion="unhappy">unhpy</name>
 						Circumstances, she was turn'd quite against them: And <lb/> tho' I was <name emotion="much staggered">much Staggered</name>, yet our <roleName type="honorific">Sav<hi rend="superscript">r</hi>
 						</roleName> preserved me, and gave me <name emotion="courage">Courage</name>

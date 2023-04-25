@@ -11433,6 +11433,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230401506",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T03:04:01.506Z",
+	"dcterms:modified": "2023-04-25T03:04:01.506Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230401506#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/cennick_sarah.xml?place_annotation_20230424230401506#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[7]/p/name[5]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q84",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
@@ -11690,7 +11769,7 @@
 							Houptmann</persName>
 						<lb/> received their Call to <placeName ref="#mlpla000025" cert="high">Bedford</placeName>, I embrace'd this Oppertunity of going <lb/> with them from hence to that Place,
 						where I was receiv'd with the <lb/>
-						<name emotion="greatest love">greatest love</name> and <name emotion="heartiness">heartiness</name>. <name event="arrival">I soon went to <placeName ref="#mlpla000054" type="arrival" cert="high">London</placeName></name>, when, after <lb/> waiting along while, and meeting with many hindrences, however <lb/> on the <date when="1758-05-07" cert="high">7<hi rend="superscript">th</hi> of May</date> I arrived with several more Brethern &amp; Sisters <lb/> to my <name emotion="exceeding great        joy">exceeding great Joy</name>, having that long <name emotion="wished">wish'd</name> for <name emotion="happiness">happiness</name>
+						<name emotion="greatest love">greatest love</name> and <name emotion="heartiness">heartiness</name>. <name event="arrival">I soon went to <placeName ref="#mlpla000054" type="arrival" cert="high"><placeName key="London" ref="http://www.wikidata.org/entity/Q84">London</placeName></placeName></name>, when, after <lb/> waiting along while, and meeting with many hindrences, however <lb/> on the <date when="1758-05-07" cert="high">7<hi rend="superscript">th</hi> of May</date> I arrived with several more Brethern &amp; Sisters <lb/> to my <name emotion="exceeding great        joy">exceeding great Joy</name>, having that long <name emotion="wished">wish'd</name> for <name emotion="happiness">happiness</name>
 						<lb/> of seeing my dear <persName ref="#mlper000566" cert="high" type="real">Papa</persName>, <persName ref="#mlper000213" cert="high" type="real">Mamagen</persName> and
 							<persName ref="#mlper000699" cert="high" type="real">Anna Johanna</persName> once more. <lb/> The <date when="1758-05-10" cert="high">10<hi rend="superscript">th</hi>
 						</date> <name event="arrival" when-iso="1758-05-10">I was brought to <placeName ref="#mlpla000112" type="arrival" cert="high">Annenhoff</placeName></name>, where I <name emotion="enjoyed">enjoy'd</name> many <name emotion="inexpressible blessings">inexpressible <lb/> Blessings</name>. The <date when="1758-05-14" cert="high">1<hi rend="superscript">4th</hi>

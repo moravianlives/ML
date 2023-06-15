@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -102,7 +100,86 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentley_joseph.xml?place_annotation_20230406210101832",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-07T01:01:01.832Z",
+	"dcterms:modified": "2023-04-07T01:01:01.832Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentley_joseph.xml?place_annotation_20230406210101832#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentley_joseph.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/bentley_joseph.xml?place_annotation_20230406210101832#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Baildon",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -118,24 +195,21 @@
 			<div type="memoir">
 				<head>Joseph Bentley</head>
 				<div type="page" n="1">
-					<pb n="1"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-01.jpg"/>
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-01.jpg"/>
 					<p>Obituary Notices</p>
-					<p> of several persons, who had died at Bailden in the <lb/> year 1837,
+					<p> of several persons, who had died at <placeName key="Baildon" ref="http://dbpedia.org/resource/Baildon">Bailden</placeName> in the <lb/> year 1837,
 						communicated by Br. Libbey, who had <lb/> visited them during their last
 						illnesses.</p>
 					<p>1. Joseph Bentley</p>
-					<p>After the afternoon service on Sunday April 30<hi rend="superscript"
-						>th</hi></p>
+					<p>After the afternoon service on Sunday April 30<hi rend="superscript">th</hi></p>
 					<p> I was informed, that a poor man, labouring under a <lb/> mortal disease,
-						wished to see me. My informant <lb/> added; &quot;He is very ignorant,
+						wished to see me. My informant <lb/> added; "He is very ignorant,
 						having never in his <lb/> life attended any place of Worship; but spent it
 						<lb/> in sin and wickedness. At the last York Assizes <lb/> he was tried for
 						felony, but not convicted, the <lb/> prosecutor; from motives of compassion
 						with <lb/> holding the required evidence. He is now suffe- <lb/> ring from a
-						blow, received in an affray with <lb/> the gamekeepers on M<hi
-							rend="superscript">r</hi> F&apos;s estate, when detected <lb/> with some
-						of his companions in poaching.&quot; <lb/> We ascertained, that it was not
+						blow, received in an affray with <lb/> the gamekeepers on M<hi rend="superscript">r</hi> F's estate, when detected <lb/> with some
+						of his companions in poaching." <lb/> We ascertained, that it was not
 						the <lb/> fear of death, which induced him to search for me, <lb/> but that
 						he showed some of persistance <lb/> and contrition of spirit; I went to see
 						him, on <lb/> as my official notice allowed it.</p>
@@ -145,11 +219,10 @@
 						the course of the day had come to see him. After </p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-02.jpg"/>
+					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-02.jpg"/>
 					<p> a few words I asked if he wished me to pray. But <lb/> even this he
-						declined, saying, &quot;So many have been <lb/> here today and prayed with
-						me, that my head is <lb/> quite confused.&quot; I therefore left him, promi-
+						declined, saying, "So many have been <lb/> here today and prayed with
+						me, that my head is <lb/> quite confused." I therefore left him, promi-
 						<lb/> sing to call again the following day. Feeling an <lb/> increasing
 						interest in his case, I repeated my calls <lb/> almost daily, and somedays
 						saw him more than once. <lb/> The work of the Holy Spirit on his heart was
@@ -164,32 +237,31 @@
 						judgment. He trembled when <lb/> speaking of the crimes he had committed,
 						and of his <lb/> approaching death. I felt much for him, and in <lb/> silent
 						prayer besought the Lord so to direct my <lb/> words, as to suit his care.
-						Turning to him, I said, <lb/> &quot;I come to tell you good news.&quot;
-						Instanly he exclai- <lb/> med, &quot;What is that?&quot; I continued,
-						&quot;The Lord <lb/>
-						<hi rend="underline">loves</hi> you.&quot; I shall not easily forget his
+						Turning to him, I said, <lb/> "I come to tell you good news."
+						Instanly he exclai- <lb/> med, "What is that?" I continued,
+						"The Lord <lb/>
+						<hi rend="underline">loves</hi> you." I shall not easily forget his
 						look, <lb/> when he rejoined, <hi rend="underline">That</hi> is impossible!
-						He <lb/> cannot love such a wretch as I am.&quot; &quot;Listen&quot; </p>
+						He <lb/> cannot love such a wretch as I am." "Listen" </p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-03.jpg"/>
-					<p> to me,&quot; said I, &quot;while I tell you what He has done <lb/> for you.
+					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-03.jpg"/>
+					<p> to me," said I, "while I tell you what He has done <lb/> for you.
 						He came down from heaven, became <lb/> a poor man and, out of love to you
 						and me and <lb/> all sinners, was nailed to the cross, and shed His <lb/>
-						blood to purchase pardon &amp; happiness for us.&quot; <lb/> He
+						blood to purchase pardon &amp; happiness for us." <lb/> He
 							<del>was</del> appeared very thoughtful, which I <lb/> quoted several
 						texts of Scripture on this subject, <lb/> illustrating it by allusion to
 						common things <lb/> Br. I. Terry coming in our conversation was <lb/>
 						interrupted, and I deemed it prudent to with <lb/> draw. He prefered my
 						heart and, with tears in his <lb/> eyes, said; Please, sir, come again, for
-						you have <lb/> done me good.&quot; It proved a great encourage <lb/> ment to
+						you have <lb/> done me good." It proved a great encourage <lb/> ment to
 						me when informed by Br. Terry, that <lb/> on my leaving the house, the sick
 						man sat silent <lb/> for some time and then, turning to Br. T. said,
-						&quot;What <lb/> do you think M<hi rend="superscript">r</hi>. Libbey has
+						"What <lb/> do you think M<hi rend="superscript">r</hi>. Libbey has
 						told me? He told me <lb/> that God loves me; yes, and he has proved <lb/> it
 						too. The Lord died for me on the cross. Is not <lb/> that good news,
-						John?&quot;</p>
+						John?"</p>
 					<p>
 						<hi rend="underline">May 2<hi rend="superscript">nd</hi>.</hi> I found his
 						mind dwelling on the subject <lb/> of the love of God; but still perplexed
@@ -199,71 +271,68 @@
 							him</del> He gave vent </p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-04.jpg"/>
-					<p> to his feeling by short sentences, &quot;O that I could <lb/> believe, that
+					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-04.jpg"/>
+					<p> to his feeling by short sentences, "O that I could <lb/> believe, that
 						mercy can be shown to such a wretch <lb/> as me! I cannot pray aright: I
-						cannot pray <lb/> enough.&quot; I repeated to him the beautiful de- <lb/>
-						clarative of our Saviour, &quot;As Moses lifted up the <lb/> serpent in the
+						cannot pray <lb/> enough." I repeated to him the beautiful de- <lb/>
+						clarative of our Saviour, "As Moses lifted up the <lb/> serpent in the
 						wilderness, so must the Son of Man <lb/> be lifted up, that whoever
-						believeth in Him <lb/> should not perish, but have eternal life.&quot; /Joh.
+						believeth in Him <lb/> should not perish, but have eternal life." /Joh.
 						3.14/ <lb/>
 						<del>I was</del> Having explained it to him by referring <lb/> the case of
 						the wounded Israelites, he <del>I</del> exclaimed <lb/> in the simplicity of
-						his heart; &quot;Am I only to <lb/> look up?&quot; I replied, &quot;To look
+						his heart; "Am I only to <lb/> look up?" I replied, "To look
 						up means <lb/> to believe, and this is all our Saviour requires <lb/> you to
-						do.&quot; &quot;But,&quot; said he, &quot;my heart is so very <lb/> wicked;
+						do." "But," said he, "my heart is so very <lb/> wicked;
 						O you do not know what a wicked <lb/> man I have been. Since our
 						conversation <lb/> yesterday I have thought more of my sins, than <lb/> I
 						did before, and when I think how good God <lb/> has been to me, to do so
 						mcuh for me, and that <lb/> He has not cut me off in my sins, I see that I
 						<lb/> have been sinning against <hi rend="underline">love</hi>; This makes
 						<lb/> me afraid. If I felt as good men feel, then I <lb/> could believe
-						there was mercy for me, but, <lb/> Oh! I have committed so many sins.&quot;
-						To <lb/> this I replied, &quot;If you had committed as many <lb/> sins as
+						there was mercy for me, but, <lb/> Oh! I have committed so many sins."
+						To <lb/> this I replied, "If you had committed as many <lb/> sins as
 						all the men in the village, I would yet </p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-05.jpg"/>
+					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-05.jpg"/>
 					<p> encourage you to come to Jesus, for it <del>is</del> stands <lb/> in the
-						Bible; The blood of Jesus Christ cleanses <lb/> us from all sin.&quot; I
+						Bible; The blood of Jesus Christ cleanses <lb/> us from all sin." I
 						further showed him, that <lb/> the Israelites were commanded to look to the
 						<lb/> brazen serpent <hi rend="underline">because</hi> they were wounded,
-						and <lb/> that they were healed when they did look, &quot;so <lb/> must
-						we,&quot; said I; &quot;we must go to our Saviour, <lb/>
+						and <lb/> that they were healed when they did look, "so <lb/> must
+						we," said I; "we must go to our Saviour, <lb/>
 						<hi rend="underline">because</hi> we do not feel <del>happ</del> well and
 						happy in <lb/> our minds, <hi rend="underline">beacuse</hi> we are sinners;
-						and then He <lb/> will have mercy upon us.&quot; &quot;Then,&quot; said he,
-						<lb/> &quot;we must <hi rend="underline">first</hi> look to Jesus, or
-						believe in Him; <lb/> as we shall be pardoned.&quot; I replied,
-						&quot;Believe <lb/> on the Lord Jesus Christ and thou shalt be saved.&quot;
+						and then He <lb/> will have mercy upon us." "Then," said he,
+						<lb/> "we must <hi rend="underline">first</hi> look to Jesus, or
+						believe in Him; <lb/> as we shall be pardoned." I replied,
+						"Believe <lb/> on the Lord Jesus Christ and thou shalt be saved."
 						<lb/> The word was blessed to his soul.</p>
 					<p>
 						<hi rend="underline">May 4th:</hi> He expressed some doubts as to his <lb/>
-						acceptance at last; and tho&apos; he was evidently <lb/> enjoying a degree
+						acceptance at last; and tho' he was evidently <lb/> enjoying a degree
 						of rest &amp; peace, yet gloomy <lb/> apprehension of death now and then
-						shot across <lb/> his mind. I repeated the words, &quot;Jesus has opened
-						<lb/> the kingdom of heaven to all believers&quot;, adding, <lb/> &quot;He
+						shot across <lb/> his mind. I repeated the words, "Jesus has opened
+						<lb/> the kingdom of heaven to all believers", adding, <lb/> "He
 						is the Master of the house and the Lord of <lb/> the kingdom, and says,
-						&quot;I have the key of David, <lb/> I open the door and no man can shut it,
-						and I shut <lb/> and no man can open <del>shut</del> it.&quot; I continued,
-						&quot;you <lb/> are the master of your own house, If I came <lb/> to see you
+						"I have the key of David, <lb/> I open the door and no man can shut it,
+						and I shut <lb/> and no man can open <del>shut</del> it." I continued,
+						"you <lb/> are the master of your own house, If I came <lb/> to see you
 						and found the door fastened I should </p>
 				</div>
 				<div type="page" n="6">
-					<pb n="6"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-06.jpg"/>
+					<pb n="6" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-06.jpg"/>
 					<p> knock; and if you opened the foor I should come <lb/> in. We go by faith to
 						our Saviour and ask to be <lb/> admitted into His kingdom; and He says,
-						&quot;I <lb/> have set before then an open door and no <lb/> man can shut
-						it! Thus hath He opened the <lb/> kingdom of heaven to all believers.&quot;
+						"I <lb/> have set before then an open door and no <lb/> man can shut
+						it! Thus hath He opened the <lb/> kingdom of heaven to all believers."
 						He re- <lb/> mained thoughtful, but appeared much more <lb/> composed in his
 						mind.</p>
 					<p>
 						<hi rend="underline">5. May 5<hi rend="superscript">th</hi></hi>. I found
 						him in a most delightful <lb/> state of mind. Among other things he said;
-						&quot;When you <lb/> came to see me last Sunday I was as ignorant as a
+						"When you <lb/> came to see me last Sunday I was as ignorant as a
 						beast. <lb/> Some persons told me to pray to God Almighty <del>but</del>
 						<lb/>
 						<del>I did</del> so to forgive me; but I did not know how to pray <lb/>
@@ -272,35 +341,34 @@
 						suffered <lb/> for our sins, and how kindly He spoke to the people <lb/> the
 						tears run down my face and I can pray to Him <lb/> in my heart; and I feel
 						something that tells me, He <lb/> loves <hi rend="underline">me</hi>, and
-						will not leave me to perish at last.&quot; <lb/> I asked him, &quot;If the
+						will not leave me to perish at last." <lb/> I asked him, "If the
 						Lord should be pleased to call you <lb/> soon out of the world, can you be
-						satisfied, and can you <lb/> rest on what you have heard?&quot; Looking at
-						me <lb/> with a cheerful mien he replied, &quot;To be sure I can; <lb/> what
+						satisfied, and can you <lb/> rest on what you have heard?" Looking at
+						me <lb/> with a cheerful mien he replied, "To be sure I can; <lb/> what
 						can I want more? Did He not die for me, <lb/> and does He not love me. I am
-						a great sinner; but <lb/> I shall go to heaven.&quot; </p>
+						a great sinner; but <lb/> I shall go to heaven." </p>
 					<p><hi rend="underline">May 8<hi rend="superscript">th</hi></hi>. I saw him for
-						the last time, tho&apos; </p>
+						the last time, tho' </p>
 				</div>
 				<div type="page" n="7">
-					<pb n="7"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-07.jpg"/>
+					<pb n="7" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-07.jpg"/>
 					<p> I had then no idea that he was so near eternity. His <lb/> expressions were
 						not so clear and encouraging as the <lb/> preceding Satturday. This I could
 						easily account for <lb/> when he told me, that a great many people had
 						called <lb/> on him the day before, and many had prayed with him <lb/> and
 						spoken so loud, which had so much affected his head, <lb/> that, /to me his
-						own experience/ &quot;I was so weak you <lb/> might have knocked me down
-						with a feather.&quot; However, <lb/> what he said <del>to</del> of the state
+						own experience/ "I was so weak you <lb/> might have knocked me down
+						with a feather." However, <lb/> what he said <del>to</del> of the state
 						of his mind showed that <lb/> he still depended for salvation solely on the
-						merits of <lb/> Jesus. He departed about 2 o&apos;clock the following <lb/>
+						merits of <lb/> Jesus. He departed about 2 o'clock the following <lb/>
 						morning. From the testimony of those who were <lb/> with him at the time I
 						have reason to believe <lb/> that the Lord graciously supported him in that
 						trying <lb/> hour, enabling him to make a good confession of faith <lb/> in
 						the God of his salvation. About ten minutes before <lb/> he left this word,
-						he exhorted those present to seek <lb/> the Lord, adding, &quot;I shall soon
+						he exhorted those present to seek <lb/> the Lord, adding, "I shall soon
 						die; but, oh! how <lb/> bright, how blinded will the last mintues of my life
 						<lb/> be when I am leaving this world of sin and misery, <lb/> and going to
-						see my Saviour!&quot;</p>
+						see my Saviour!"</p>
 					<p> My visit to this poor man excited many serious <lb/> reflections. In his
 						case I saw in vivid colours <lb/> 1. The unhappiness and folly of sin. My
 						blood has <lb/> chilled at the recitals of this man, when relating <lb/> the
@@ -309,16 +377,15 @@
 						he himself </p>
 				</div>
 				<div type="page" n="8">
-					<pb n="8"
-						facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-08.jpg"/>
+					<pb n="8" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-08.jpg"/>
 					<p> expressed it, the heavy load he had had to carry <lb/> warily, the Devil is
 						a hard taskmaster.</p>
 					<p> 2. The Mercy of God in plucking sinners from ever- <lb/> lasting burning. As
-						the good shepherd He had fol- <lb/> lowed this dying sheep thro&apos; all
+						the good shepherd He had fol- <lb/> lowed this dying sheep thro' all
 						his wanderings, <lb/> for it was evident from what he told me, that he had
 						<lb/> not been without convictions and reproof of conscience <lb/> while
 						persuing his wicked ways, and before his last <lb/> illness. On one occasion
-						his remorse of consci- <lb/> ence was so strong, that tho&apos; he set out
+						his remorse of consci- <lb/> ence was so strong, that tho' he set out
 						on a Sunday <lb/> morning to join his wicked comerades, the sight
 							<del>meeting</del>
 						<lb/>

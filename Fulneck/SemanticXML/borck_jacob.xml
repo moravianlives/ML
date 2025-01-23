@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -99,11 +97,10 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#"
-				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -127,12 +124,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.782Z",
-	"dcterms:issued": "2021-01-17T19:41:21.374Z",
+	"dcterms:modified": "2021-01-17T19:32:17.782Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -144,21 +145,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217782#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date"
 		}
@@ -168,16 +169,17 @@
 		"rdf:value": "1727-10-13"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -201,12 +203,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.783Z",
-	"dcterms:issued": "2021-01-17T19:41:21.378Z",
+	"dcterms:modified": "2021-01-17T19:32:17.783Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -218,21 +224,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217783#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date[2]"
 		}
@@ -242,16 +248,17 @@
 		"rdf:value": "1741"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -275,12 +282,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.784Z",
-	"dcterms:issued": "2021-01-17T19:41:21.379Z",
+	"dcterms:modified": "2021-01-17T19:32:17.784Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -292,21 +303,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217784#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/hi/date"
 		}
@@ -316,16 +327,17 @@
 		"rdf:value": "1791-10-24"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -349,12 +361,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.786Z",
-	"dcterms:issued": "2021-01-17T19:41:21.379Z",
+	"dcterms:modified": "2021-01-17T19:32:17.786Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -366,21 +382,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217786#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/rs"
 		}
@@ -391,17 +407,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -425,12 +442,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.787Z",
-	"dcterms:issued": "2021-01-17T19:41:21.379Z",
+	"dcterms:modified": "2021-01-17T19:32:17.787Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -442,21 +463,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217787#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date[3]"
 		}
@@ -466,16 +487,17 @@
 		"rdf:value": "1756"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -499,12 +521,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.788Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.788Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -516,21 +542,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217788#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/rs[2]"
 		}
@@ -541,17 +567,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -575,12 +602,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.788Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.788Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -592,21 +623,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217788#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date"
 		}
@@ -616,16 +647,17 @@
 		"rdf:value": "1739"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -649,12 +681,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.789Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.789Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -666,21 +702,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/rs"
 		}
@@ -691,17 +727,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -725,12 +762,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.789Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.789Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -742,21 +783,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217789#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/rs[2]"
 		}
@@ -767,17 +808,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -801,12 +843,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.790Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.790Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -818,21 +864,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217790#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p/date"
 		}
@@ -842,16 +888,17 @@
 		"rdf:value": "1760-10"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -875,12 +922,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.791Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.791Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -892,21 +943,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217791#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/rs"
 		}
@@ -917,17 +968,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -951,12 +1003,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.792Z",
-	"dcterms:issued": "2021-01-17T19:41:21.380Z",
+	"dcterms:modified": "2021-01-17T19:32:17.792Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -968,21 +1024,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?rs_annotation_20210117143217792#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/rs[2]"
 		}
@@ -993,17 +1049,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1027,12 +1084,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.792Z",
-	"dcterms:issued": "2021-01-17T19:41:21.381Z",
+	"dcterms:modified": "2021-01-17T19:32:17.792Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -1044,21 +1105,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217792#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/date"
 		}
@@ -1068,16 +1129,17 @@
 		"rdf:value": "1761-04-20"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1101,12 +1163,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.793Z",
-	"dcterms:issued": "2021-01-17T19:41:21.381Z",
+	"dcterms:modified": "2021-01-17T19:32:17.793Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -1118,21 +1184,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/date[2]"
 		}
@@ -1142,16 +1208,17 @@
 		"rdf:value": "1761-09-26"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1175,12 +1242,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.793Z",
-	"dcterms:issued": "2021-01-17T19:41:21.381Z",
+	"dcterms:modified": "2021-01-17T19:32:17.793Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -1192,21 +1263,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[4]/date"
 		}
@@ -1216,16 +1287,17 @@
 		"rdf:value": "1766-11-19"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1249,12 +1321,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793",
+	"type": "oa:Annotation",
 	"dcterms:created": "2021-01-17T19:32:17.793Z",
-	"dcterms:issued": "2021-01-17T19:41:21.381Z",
+	"dcterms:modified": "2021-01-17T19:32:17.793Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/katiefaull",
 		"@type": [
@@ -1266,21 +1342,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?date_annotation_20210117143217793#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date"
 		}
@@ -1290,15 +1366,1595 @@
 		"rdf:value": "1791-10-24"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description></rdf:RDF></xenoData>
-		<profileDesc>
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221824866",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:18:24.866Z",
+	"dcterms:modified": "2023-04-12T02:18:24.866Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221824866#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221824866#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/hi/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q208257",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221848105",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:18:48.105Z",
+	"dcterms:modified": "2023-04-12T02:18:48.105Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221848105#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221848105#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q2699921",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221901634",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:19:01.634Z",
+	"dcterms:modified": "2023-04-12T02:19:01.634Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221901634#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221901634#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q20",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221917792",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:19:17.792Z",
+	"dcterms:modified": "2023-04-12T02:19:17.792Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221917792#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221917792#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q1748",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221939929",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:19:39.929Z",
+	"dcterms:modified": "2023-04-12T02:19:39.929Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221939929#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411221939929#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[3]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q34266",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222002977",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:20:02.977Z",
+	"dcterms:modified": "2023-04-12T02:20:02.977Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222002977#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222002977#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[4]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q212",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222026845",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:20:26.845Z",
+	"dcterms:modified": "2023-04-12T02:20:26.845Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222026845#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222026845#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[5]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q34266",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222045125",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:20:45.125Z",
+	"dcterms:modified": "2023-04-12T02:20:45.125Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222045125#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222045125#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName/orgName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:Organization",
+		"@id": "http://www.wikidata.org/entity/Q34266",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222109142",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:21:09.142Z",
+	"dcterms:modified": "2023-04-12T02:21:09.142Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222109142#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222109142#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q34266",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222126117",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:21:26.117Z",
+	"dcterms:modified": "2023-04-12T02:21:26.117Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222126117#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222126117#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[3]/orgName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:Organization",
+		"@id": "http://www.wikidata.org/entity/Q33527010",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222137556",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:21:37.556Z",
+	"dcterms:modified": "2023-04-12T02:21:37.556Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222137556#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?organization_annotation_20230411222137556#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[4]/orgName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "org:Organization",
+		"@id": "http://www.wikidata.org/entity/Q21",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222243457",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:22:43.457Z",
+	"dcterms:modified": "2023-04-12T02:22:43.457Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222243457#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222243457#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[5]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q33527010",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222253861",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:22:53.861Z",
+	"dcterms:modified": "2023-04-12T02:22:53.861Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222253861#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222253861#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[4]/orgName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q21",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222309192",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:23:09.192Z",
+	"dcterms:modified": "2023-04-12T02:23:09.192Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222309192#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222309192#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[3]/orgName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q33527010",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222719302",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:27:19.302Z",
+	"dcterms:modified": "2023-04-12T02:27:19.302Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222719302#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222719302#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[6]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q21",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222740218",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:27:40.218Z",
+	"dcterms:modified": "2023-04-12T02:27:40.218Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222740218#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222740218#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[7]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q84",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222817485",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:28:17.485Z",
+	"dcterms:modified": "2023-04-12T02:28:17.485Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222817485#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222817485#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[8]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q84",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222907724",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:29:07.724Z",
+	"dcterms:modified": "2023-04-12T02:29:07.724Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222907724#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411222907724#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q208257",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223002755",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:30:02.755Z",
+	"dcterms:modified": "2023-04-12T02:30:02.755Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223002755#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223002755#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p[4]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5508369",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223131027",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-12T02:31:31.027Z",
+	"dcterms:modified": "2023-04-12T02:31:31.027Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223131027#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/borck_jacob.xml?place_annotation_20230411223131027#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/p[4]/orgName[2]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q208257",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Jacob Borck</persName>
@@ -1313,132 +2969,110 @@
 		<body xml:lang="en">
 			<div type="memoir">
 				<div type="page" n="1">
-					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-01.jpg" />
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-01.jpg"/>
 					<p>
 						<placeName ref="#mlpla000072" cert="high">North of England</placeName>
-						<lb />
+						<lb/>
 						<hi rend="underline">Memoir of our late <roleName type="honorific">B<hi rend="superscript">r.</hi>
-							</roleName> <persName ref="#mlper000586" cert="high" type="real">Jacob Borck</persName> who <lb />
-							<name event="death" when-iso="1791-10-24">departed</name> at <placeName ref="#mlpla000025" cert="high">Bedford</placeName>. <date when="1791-10-24" cert="high">Oct. 24.
+							</roleName> <persName ref="#mlper000586" cert="high" type="real">Jacob Borck</persName> who <lb/>
+							<name event="death" when-iso="1791-10-24">departed</name> at <placeName ref="#mlpla000025" cert="high"><placeName key="Bedford" ref="http://www.wikidata.org/entity/Q208257">Bedford</placeName></placeName>. <date when="1791-10-24" cert="high">Oct. 24.
 								1791</date></hi>
 					</p>
-					<p> Our late <roleName type="honorific">Bro.</roleName> having left no written account <lb /> of his Life, we can only say the following: <lb /> He was <name event="birth"
-							when-iso="1727-10-13">born</name> at <placeName ref="#mlpla000210" cert="high">Arendal in Norway</placeName>
-						<date when="1727-10-13" cert="high">Oct. 13. 1727</date>. <lb /> He lost his Father when very Young, the pray- <lb /> ers &amp; admonitions of his Mother who was a <lb /> pious
-						Woman &amp; sought to Educate him in the <lb /> nurture &amp; admonition of the <roleName type="honorific">Lord</roleName> were a <name emotion="great blessing">great <lb />
-							blessing</name> to him, as a Child, &amp; when at <date when="1741" cert="high">14 Years of <lb /> In age</date> he went to <placeName ref="#mlpla000211" cert="high"
-							>Copenhagen</placeName> &amp; there become <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur- <lb /> geons Mate in the Danish
-							Army</rs>, having been <lb /> brought up in that time of Life; In <date when="1756" cert="high">1756</date> he enterd <lb /> Into the <rs ref="#mlocc000053"
-							type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Service of the Russians army as Surgeon</rs>, <lb /> &amp; being in <placeName ref="#mlpla000212"
-							cert="high">Russia</placeName>, he was noticed by several <lb /> persons of the highest Rank, both on Account <lb /> of his engaging manners &amp; Skilfulness in his <lb />
-						profession, especially by the <roleName type="leader">Viceroy</roleName> of <placeName ref="#mlpla000213" cert="high">Ukraine</placeName>
-						<lb /> who greatly favord him, &amp; with whom he <lb /> travelled thro various parts of <placeName ref="#mlpla000212" cert="high">Russia</placeName>, but thro' <lb /> these
-						conexions he was led into bad Company, &amp; <lb /> sinful habits, by which means he lost those <lb /> impressions of our <roleName type="honorific">Saviours</roleName>
-						<name emotion="grace">grace</name>, which he <lb /> had received in his Younger Years when he <lb />
-						<name event="awakening">had been solidly awakened, &amp; obtained a view <lb /> in Spirit of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi>
-							</roleName> sufferings, which remain- <lb /> ed unforgetten by him.</name> He however felt <lb />
-						<name emotion="great uneasiness">great uneasiness</name> of mind, amidst the gaieties <lb /> &amp; pleasures of the World, which he once disclosed </p>
+					<p> Our late <roleName type="honorific">Bro.</roleName> having left no written account <lb/> of his Life, we can only say the following: <lb/> He was <name event="birth" when-iso="1727-10-13">born</name> at <placeName ref="#mlpla000210" cert="high"><placeName key="Arendal" ref="http://www.wikidata.org/entity/Q2699921">Arendal</placeName> in <placeName key="Norway" ref="http://www.wikidata.org/entity/Q20">Norway</placeName></placeName>
+						<date when="1727-10-13" cert="high">Oct. 13. 1727</date>. <lb/> He lost his Father when very Young, the pray- <lb/> ers &amp; admonitions of his Mother who was a <lb/> pious
+						Woman &amp; sought to Educate him in the <lb/> nurture &amp; admonition of the <roleName type="honorific">Lord</roleName> were a <name emotion="great blessing">great <lb/>
+							blessing</name> to him, as a Child, &amp; when at <date when="1741" cert="high">14 Years of <lb/> In age</date> he went to <placeName ref="#mlpla000211" cert="high"><placeName key="Copenhagen" ref="http://www.wikidata.org/entity/Q1748">Copenhagen</placeName></placeName> &amp; there become <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur- <lb/> geons Mate in the Danish
+							Army</rs>, having been <lb/> brought up in that time of Life; In <date when="1756" cert="high">1756</date> he enterd <lb/> Into the <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Service of the Russians army as Surgeon</rs>, <lb/> &amp; being in <placeName ref="#mlpla000212" cert="high"><placeName key="Russian Empire" ref="http://www.wikidata.org/entity/Q34266">Russia</placeName></placeName>, he was noticed by several <lb/> persons of the highest Rank, both on Account <lb/> of his engaging manners &amp; Skilfulness in his <lb/>
+						profession, especially by the <roleName type="leader">Viceroy</roleName> of <placeName ref="#mlpla000213" cert="high"><placeName key="Ukraine" ref="http://www.wikidata.org/entity/Q212">Ukraine</placeName></placeName>
+						<lb/> who greatly favord him, &amp; with whom he <lb/> travelled thro various parts of <placeName ref="#mlpla000212" cert="high"><placeName key="Russian Empire" ref="http://www.wikidata.org/entity/Q34266">Russia</placeName></placeName>, but thro' <lb/> these
+						conexions he was led into bad Company, &amp; <lb/> sinful habits, by which means he lost those <lb/> impressions of our <roleName type="honorific">Saviours</roleName>
+						<name emotion="grace">grace</name>, which he <lb/> had received in his Younger Years when he <lb/>
+						<name event="awakening">had been solidly awakened, &amp; obtained a view <lb/> in Spirit of our <roleName type="honorific">Sav<hi rend="superscript">rs</hi>
+							</roleName> sufferings, which remain- <lb/> ed unforgetten by him.</name> He however felt <lb/>
+						<name emotion="great uneasiness">great uneasiness</name> of mind, amidst the gaieties <lb/> &amp; pleasures of the World, which he once disclosed </p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="https://s3.amazon.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-02.jpg" />
-					<p> to a person of Rank in <placeName ref="#mlpla000212" cert="high">Russia</placeName> acquainted with <lb /> the B<hi rend="superscript">rn</hi> especially with <persName
-							ref="#mlper000566" cert="high" type="real">Count Zinzendorff</persName>, who <lb /> spoke to him in and encourageng manner, &amp; <lb /> whose conversation was <name
-							emotion="greatly blessed">greatly blessed</name> to him <lb /> the above mentioned person at the same time <lb /> related to him several particulars concerning <lb /> the
+					<pb n="2" facs="https://s3.amazon.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-02.jpg"/>
+					<p> to a person of Rank in <placeName ref="#mlpla000212" cert="high"><orgName key="Russian Empire" ref="http://www.wikidata.org/entity/Q34266">Russia</orgName></placeName> acquainted with <lb/> the B<hi rend="superscript">rn</hi> especially with <persName ref="#mlper000566" cert="high" type="real">Count Zinzendorff</persName>, who <lb/> spoke to him in and encourageng manner, &amp; <lb/> whose conversation was <name emotion="greatly blessed">greatly blessed</name> to him <lb/> the above mentioned person at the same time <lb/> related to him several particulars concerning <lb/> the
 							<orgName religion="Moravian Church">Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi>
-						</orgName> which created a <name emotion="wish">wish</name> in him, <lb /> to become more nearly acquainted with them. <lb /> Accordingly in <date when="1739" cert="high"
-							>1739</date> when he quitted <placeName ref="#mlpla000212" cert="high">Russia</placeName>, he <lb /> resolved to pay a visit to the <orgName en="congregation">Cong<hi
-								rend="superscript">n</hi>
-						</orgName> at <placeName ref="#mlpla000150" cert="high">Zeist</placeName>, intend- <lb /> ing to go from thence to <placeName ref="#mlpla000072" cert="high"
-						>England</placeName>, to enter into his <lb />
-						<rs ref="#mlocc000079" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Majestys Service</rs> on board a Westindia Ship. The first <lb />
-						<name event="ecclesiastical">meeting</name> he attended at <placeName ref="#mlpla000150" cert="high">Zeist</placeName> was a singing meeting <lb /> during which he was so <name
-							emotion="overpowerd">overpowerd</name> with a <name emotion="feeling of divine grace">feeling of <lb /> divine Grace</name>, that it was immediately made clear <lb /> to
-						him that this was the people he belonged to, having <lb /> always from his infancy had a <name emotion="desire">desire</name> to live among <lb /> Children of <persName
-							type="real" cert="high">God</persName>:, Here he also got acquainted with <persName ref="#mlper000566" cert="high" type="real">Count <lb /> Zinzendorff</persName>, who
-						received him very cordially, Never- <lb /> theless he for the present, pursued his intentions <lb /> of proceeding to <placeName ref="#mlpla000072" cert="high"
-							>England</placeName>, where he engaged as <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur- <lb /> geon</rs> onboord the
-							<objectName ref="#Q3023330">Monarque</objectName> in which Station he <lb /> remained about a Year, during the whole of which <lb /> time the Vessel lay in the harbours He
-						kept up in <lb /> the mean time an acquaintance with the B<hi rend="superscript">rn</hi> in <lb />
-						<placeName ref="#mlpla000054" cert="high">London</placeName>: But the great Wickedness &amp; abandoned <lb /> life of the Ships crews, to which he was witness was <lb /> so
-						disgusting to him, that he was <name emotion="glad">glad</name> to obtain <lb /> his dissmission. After this he lodged for a short time <lb /> with a <roleName type="honorific"
-								>B<hi rend="superscript">r</hi>
+						</orgName> which created a <name emotion="wish">wish</name> in him, <lb/> to become more nearly acquainted with them. <lb/> Accordingly in <date when="1739" cert="high">1739</date> when he quitted <placeName ref="#mlpla000212" cert="high"><placeName key="Russian Empire" ref="http://www.wikidata.org/entity/Q34266">Russia</placeName></placeName>, he <lb/> resolved to pay a visit to the <orgName en="congregation">Cong<hi rend="superscript">n</hi>
+						</orgName> at <placeName ref="#mlpla000150" cert="high"><orgName key="Zeist" ref="http://www.wikidata.org/entity/Q33527010"><placeName key="Zeist" ref="http://www.wikidata.org/entity/Q33527010">Zeist</placeName></orgName></placeName>, intend- <lb/> ing to go from thence to <placeName ref="#mlpla000072" cert="high"><orgName key="England" ref="http://www.wikidata.org/entity/Q21"><placeName key="England" ref="http://www.wikidata.org/entity/Q21">England</placeName></orgName></placeName>, to enter into his <lb/>
+						<rs ref="#mlocc000079" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Majestys Service</rs> on board a Westindia Ship. The first <lb/>
+						<name event="ecclesiastical">meeting</name> he attended at <placeName ref="#mlpla000150" cert="high"><placeName key="Zeist" ref="http://www.wikidata.org/entity/Q33527010">Zeist</placeName></placeName> was a singing meeting <lb/> during which he was so <name emotion="overpowerd">overpowerd</name> with a <name emotion="feeling of divine grace">feeling of <lb/> divine Grace</name>, that it was immediately made clear <lb/> to
+						him that this was the people he belonged to, having <lb/> always from his infancy had a <name emotion="desire">desire</name> to live among <lb/> Children of <persName type="real" cert="high">God</persName>:, Here he also got acquainted with <persName ref="#mlper000566" cert="high" type="real">Count <lb/> Zinzendorff</persName>, who
+						received him very cordially, Never- <lb/> theless he for the present, pursued his intentions <lb/> of proceeding to <placeName ref="#mlpla000072" cert="high"><placeName key="England" ref="http://www.wikidata.org/entity/Q21">England</placeName></placeName>, where he engaged as <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Sur- <lb/> geon</rs> onboord the
+							<objectName ref="#Q3023330">Monarque</objectName> in which Station he <lb/> remained about a Year, during the whole of which <lb/> time the Vessel lay in the harbours He
+						kept up in <lb/> the mean time an acquaintance with the B<hi rend="superscript">rn</hi> in <lb/>
+						<placeName ref="#mlpla000054" cert="high"><placeName key="London" ref="http://www.wikidata.org/entity/Q84">London</placeName></placeName>: But the great Wickedness &amp; abandoned <lb/> life of the Ships crews, to which he was witness was <lb/> so
+						disgusting to him, that he was <name emotion="glad">glad</name> to obtain <lb/> his dissmission. After this he lodged for a short time <lb/> with a <roleName type="honorific">B<hi rend="superscript">r</hi>
 						</roleName> &amp; <roleName type="honorific">S<hi rend="superscript">r</hi>
-						</roleName> in <placeName ref="#mlpla000054" cert="high">London</placeName> &amp; being <name emotion="desirous">desirous</name> of coming <lb /> into still closer connection
+						</roleName> in <placeName ref="#mlpla000054" cert="high"><placeName key="London" ref="http://www.wikidata.org/entity/Q84">London</placeName></placeName> &amp; being <name emotion="desirous">desirous</name> of coming <lb/> into still closer connection
 						with the <orgName religion="Moravian Church">Cong<hi rend="superscript">n</hi> of the B<hi rend="superscript">rn</hi></orgName>
 						<note type="catchword">went</note>
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-03.jpg" />
-					<p> went in <date when="1760-10" cert="high">Oct<hi rend="superscript">r.</hi> 1760</date> according to their advice to <placeName ref="#mlpla000025" cert="high"
-							>Bedford</placeName>
-						<lb /> where <name event="entrance" when-iso="1760-10">he moved into the Single B<hi rend="superscript">rns</hi> House</name>.</p>
-					<p> Tho' he had it at first very hard in externals yet he <lb /> never <name emotion="despaired">despaired</name> but was always <name emotion="thankful">thankful</name> to our <lb />
-						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> for having brought him thither, &amp; used to express <lb /> himself to that effect, that he should <name
-							emotion="esteem">esteem</name> it the <lb /> greatest favor to live with Children of <persName type="real" cert="high">God</persName>, were he even <lb /> necessitated to
-						live on Bread &amp; Water. He first engaged <lb /> with the late <persName cert="high" type="real">Doc. Vowel</persName> as a partner in business, but <lb /> after sometime
-						this partnership was dissolved, &amp; <lb />he set up for himself as <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Surgeon</rs> &amp;
+					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-03.jpg"/>
+					<p> went in <date when="1760-10" cert="high">Oct<hi rend="superscript">r.</hi> 1760</date> according to their advice to <placeName ref="#mlpla000025" cert="high"><placeName key="Bedford" ref="http://www.wikidata.org/entity/Q208257">Bedford</placeName></placeName>
+						<lb/> where <name event="entrance" when-iso="1760-10">he moved into the Single B<hi rend="superscript">rns</hi> House</name>.</p>
+					<p> Tho' he had it at first very hard in externals yet he <lb/> never <name emotion="despaired">despaired</name> but was always <name emotion="thankful">thankful</name> to our <lb/>
+						<roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> for having brought him thither, &amp; used to express <lb/> himself to that effect, that he should <name emotion="esteem">esteem</name> it the <lb/> greatest favor to live with Children of <persName type="real" cert="high">God</persName>, were he even <lb/> necessitated to
+						live on Bread &amp; Water. He first engaged <lb/> with the late <persName cert="high" type="real">Doc. Vowel</persName> as a partner in business, but <lb/> after sometime
+						this partnership was dissolved, &amp; <lb/>he set up for himself as <rs ref="#mlocc000053" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Surgeon</rs> &amp;
 							<rs ref="#mlocc000001" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Apothecary</rs>. </p>
 					<p> He was <name event="reception" when-iso="1761-04-20">received in the Cong<hi rend="superscript">n</hi>
-						</name> <date when="1761-04-20" cert="high">April 20 1761</date> &amp; <name event="communion" when-iso="1761-09-26">admitted <lb /> to the holy Comunion</name>
+						</name> <date when="1761-04-20" cert="high">April 20 1761</date> &amp; <name event="communion" when-iso="1761-09-26">admitted <lb/> to the holy Comunion</name>
 						<date when="1761-09-26" cert="high">Sept<hi rend="superscript">r</hi> 26 in the same Year</date>. </p>
 					<p>
 						<date when="1766-11-19" cert="high">Nov<hi rend="superscript">r</hi> 19<hi rend="superscript">th</hi> 1766</date>
-						<name event="marriage" when-iso="1766-11-19">he was married to the <persName cert="high" type="real"><roleName type="honorific">S. Sister</roleName> Hanah <lb />
-								Scorfield</persName></name> of the <orgName en="single sisters choir">Choir House</orgName> at <placeName ref="#mlpla000003" cert="high">Fulnec</placeName>, his present
-						<lb /> Widow by whom he has had one Daughter, now a <lb /> member of the <orgName en="congregation">Cong<hi rend="superscript">n</hi> at <placeName ref="#mlpla000025"
-								cert="high">Bedford</placeName></orgName>, He was very success <lb /> full in his profession, whereby he also proved a <name emotion="blessing">bless- <lb /> ing</name>
-						to many of his patients in their dying mom- <lb /> ents, was <name emotion="respected">respected</name> in the Town &amp; neighbourhood, <lb /> &amp; always a steady Friend to
-						the poor even to his own <lb /> disadvantage. Tho his <name emotion="warm">warm</name> &amp; <name emotion="positive temper">positive temper</name>
-						<lb /> &amp; disposition sometimes caused him <name emotion="trouble">trouble</name>, <lb /> Yet his upright Sincere &amp; generous mind pro- <lb /> cured him many Friends by
-						whom he was <name emotion="much esteemed">much <lb /> esteemed</name>, The reflection on his past unfaithful- <lb /> ness to our <roleName type="honorific">Saviours</roleName>
-						<name emotion="grace">Grace</name>, &amp; the <name emotion="powerful sensations">powerful sensa- <lb /> tions</name> he had of his great depravity, caused him <lb /> indeed
-						many <name emotion="heavy">heavy</name> hours, but amidst all this he <lb /> cleaved as a poor pardoned Sinner to his <roleName type="honorific">Redeemer</roleName>
+						<name event="marriage" when-iso="1766-11-19">he was married to the <persName cert="high" type="real"><roleName type="honorific">S. Sister</roleName> Hanah <lb/>
+								Scorfield</persName></name> of the <orgName en="single sisters choir">Choir House</orgName> at <placeName ref="#mlpla000003" cert="high"><placeName key="Fulneck Moravian Settlement" ref="http://www.wikidata.org/entity/Q5508369">Fulnec</placeName></placeName>, his present
+						<lb/> Widow by whom he has had one Daughter, now a <lb/> member of the <orgName en="congregation">Cong<hi rend="superscript">n</hi> at <placeName ref="#mlpla000025" cert="high"><placeName key="Bedford" ref="http://www.wikidata.org/entity/Q208257">Bedford</placeName></placeName></orgName>, He was very success <lb/> full in his profession, whereby he also proved a <name emotion="blessing">bless- <lb/> ing</name>
+						to many of his patients in their dying mom- <lb/> ents, was <name emotion="respected">respected</name> in the Town &amp; neighbourhood, <lb/> &amp; always a steady Friend to
+						the poor even to his own <lb/> disadvantage. Tho his <name emotion="warm">warm</name> &amp; <name emotion="positive temper">positive temper</name>
+						<lb/> &amp; disposition sometimes caused him <name emotion="trouble">trouble</name>, <lb/> Yet his upright Sincere &amp; generous mind pro- <lb/> cured him many Friends by
+						whom he was <name emotion="much esteemed">much <lb/> esteemed</name>, The reflection on his past unfaithful- <lb/> ness to our <roleName type="honorific">Saviours</roleName>
+						<name emotion="grace">Grace</name>, &amp; the <name emotion="powerful sensations">powerful sensa- <lb/> tions</name> he had of his great depravity, caused him <lb/> indeed
+						many <name emotion="heavy">heavy</name> hours, but amidst all this he <lb/> cleaved as a poor pardoned Sinner to his <roleName type="honorific">Redeemer</roleName>
 						<note type="catchword">&amp;</note>
 					</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-04.jpg" />
-					<p> &amp; experienced <name emotion="rich comforts">rich comforts</name> from him, which was <lb /> more especially perceptible in the last years of his <lb /> Life, when he grew
+					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-04.jpg"/>
+					<p> &amp; experienced <name emotion="rich comforts">rich comforts</name> from him, which was <lb/> more especially perceptible in the last years of his <lb/> Life, when he grew
 						more <name emotion="chearful">chearful</name> &amp; <name emotion="happy">happy</name> &amp; <name emotion="resigned">resigned</name>
-						<lb /> His constitution which was naturally strong, <lb /> had been much impaired by <name emotion="fatiague">fatiague</name> of body &amp; <lb /> mind, about 5 Years ago <name
-							health="disease">he got a paralitic Stroke</name>
-						<lb /> which greatly enfeabled him, Since this time <name health="disease">he <lb />
-							<name emotion="suffered greatly">suffered greatly</name> from increasing weakness,</name> which <lb /> at last brought on a total delay of strength. His <lb /> present
-						Widow our dear <persName cert="high" type="real"><roleName type="honorific">Sister</roleName> Borck</persName>, has shew'n <lb /> great &amp; unremitting <name
-							emotion="tenderness">tenderness</name> in faithfully nur- <lb /> sing him during this long period of illess. Amidst <lb />
+						<lb/> His constitution which was naturally strong, <lb/> had been much impaired by <name emotion="fatiague">fatiague</name> of body &amp; <lb/> mind, about 5 Years ago <name health="disease">he got a paralitic Stroke</name>
+						<lb/> which greatly enfeabled him, Since this time <name health="disease">he <lb/>
+							<name emotion="suffered greatly">suffered greatly</name> from increasing weakness,</name> which <lb/> at last brought on a total delay of strength. His <lb/> present
+						Widow our dear <persName cert="high" type="real"><roleName type="honorific">Sister</roleName> Borck</persName>, has shew'n <lb/> great &amp; unremitting <name emotion="tenderness">tenderness</name> in faithfully nur- <lb/> sing him during this long period of illess. Amidst <lb/>
 						<name health="disease">his <name emotion="sufferings">sufferings</name> which was very great</name>, his <name emotion="patience">patience</name>
-						<lb /> was exemplary, &amp; he always expressed himself <lb />
+						<lb/> was exemplary, &amp; he always expressed himself <lb/>
 						<name emotion="thankful">thankful</name> for the least services done him. </p>
-					<p> When visited his favorite topick was the <name emotion="love">Love</name> &amp; <lb /> forbearance of our <roleName type="honorific">Sav<hi rend="superscript"
-						>r</hi></roleName> so consisintly displayed <lb /> in the <name emotion="mercy">mercy</name> shewn to him, being plucked as <lb /> a brand out of the fire. Several weeks before
-						<lb /> his departure it was evident, that he would not <lb /> continue long here below, from which time <lb /> forward, his mind seemed wholly <name emotion="disengaged"
-							>disengaged</name>
-						<lb /> from all earthly cares, &amp; occupied in converse <lb /> with our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, he frequently prayed <name
-							emotion="fervently">fervently</name>
-						<lb /> to him, entreating our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to strengthen him &amp; <lb /> support him in his <name emotion="trouble"
-							>trouble</name>, &amp; especially to be <lb /> near him in his last hours, He once told a <lb />
+					<p> When visited his favorite topick was the <name emotion="love">Love</name> &amp; <lb/> forbearance of our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> so consisintly displayed <lb/> in the <name emotion="mercy">mercy</name> shewn to him, being plucked as <lb/> a brand out of the fire. Several weeks before
+						<lb/> his departure it was evident, that he would not <lb/> continue long here below, from which time <lb/> forward, his mind seemed wholly <name emotion="disengaged">disengaged</name>
+						<lb/> from all earthly cares, &amp; occupied in converse <lb/> with our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, he frequently prayed <name emotion="fervently">fervently</name>
+						<lb/> to him, entreating our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName> to strengthen him &amp; <lb/> support him in his <name emotion="trouble">trouble</name>, &amp; especially to be <lb/> near him in his last hours, He once told a <lb/>
 						<roleName type="honorific">Brother</roleName> who visited him that altho he had the <note type="catchword">full</note>
 					</p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-05.jpg" />
+					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_88_Borck_Jacob-05.jpg"/>
 					<p> full assurance that he should go to our <roleName type="honorific">Sav<hi rend="superscript">r</hi>
-							<lb /></roleName> as an absolved sinner, yet he could not deny <lb /> that he felt some <name emotion="dread">dread</name> at the thoughts of the <lb /> separation of Soul
-						&amp; Body, but some days <lb /> after he intimated to the same <roleName type="honorific">Brother</roleName>, that <lb /> he could now say <name emotion="with thanks">with
+							<lb/></roleName> as an absolved sinner, yet he could not deny <lb/> that he felt some <name emotion="dread">dread</name> at the thoughts of the <lb/> separation of Soul
+						&amp; Body, but some days <lb/> after he intimated to the same <roleName type="honorific">Brother</roleName>, that <lb/> he could now say <name emotion="with thanks">with
 							thanks</name> to our <roleName type="honorific">Sav<hi rend="superscript">r</hi>
-							<lb /></roleName> that this <name emotion="dread">dread</name> had been entirely removed. <lb /> A day or two before his departure, he expressed <lb /> in a very emphatical
-						manner, his <name emotion="thankfulness">thankful <lb /> ness</name> for having brought him to his ransom'd <lb />
+							<lb/></roleName> that this <name emotion="dread">dread</name> had been entirely removed. <lb/> A day or two before his departure, he expressed <lb/> in a very emphatical
+						manner, his <name emotion="thankfulness">thankful <lb/> ness</name> for having brought him to his ransom'd <lb/>
 						<orgName religion="Moravian Church">Congregation</orgName> &amp; sealed his Salvation. </p>
 					<p>
-						<date when="1791-10-24" cert="high">Oct<hi rend="superscript">r.</hi> 24<hi rend="superscript">th</hi> 1791</date> he was no longer able to speak, <lb /> &amp; from that time
-						lay Still in sweet expectati- <lb /> on of that <name emotion="blessed">blessed</name> moment when his Redeemed <lb /> Soul should be translated into the mansions <lb /> of
-							<name emotion="bliss">bliss</name>. This favor was granted him about <lb /> nine o Clock the same Evening when he <lb /> d<name event="death" when-iso="1791-10-24">eparted
+						<date when="1791-10-24" cert="high">Oct<hi rend="superscript">r.</hi> 24<hi rend="superscript">th</hi> 1791</date> he was no longer able to speak, <lb/> &amp; from that time
+						lay Still in sweet expectati- <lb/> on of that <name emotion="blessed">blessed</name> moment when his Redeemed <lb/> Soul should be translated into the mansions <lb/> of
+							<name emotion="bliss">bliss</name>. This favor was granted him about <lb/> nine o Clock the same Evening when he <lb/> d<name event="death" when-iso="1791-10-24">eparted
 								<name emotion="softly">softly</name> &amp; <name emotion="happily">happily</name> aged 64 years 11 days</name>
 					</p>
 					<p>
-						<name emotion="blessed">Blessed</name> are the dead, which die in the <lb />
-						<roleName type="honorific">Lord</roleName>, from henceforth, yea, saith the Spirit, <lb /> that they may <name emotion="rest">rest</name> from their Labour, &amp; <lb /> their
+						<name emotion="blessed">Blessed</name> are the dead, which die in the <lb/>
+						<roleName type="honorific">Lord</roleName>, from henceforth, yea, saith the Spirit, <lb/> that they may <name emotion="rest">rest</name> from their Labour, &amp; <lb/> their
 						works do follow them. Rev<hi rend="superscript">l</hi> 14. 13 </p>
 				</div>
 			</div>

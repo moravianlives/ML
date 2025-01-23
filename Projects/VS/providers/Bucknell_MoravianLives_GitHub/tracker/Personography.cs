@@ -532,11 +532,22 @@ namespace edu.bucknell.project.moravianLives.provider.Bucknell_MoravianLives_Git
                     {
                         Relation relat = new Relation();
                         relat.relationName ??= relation.StrVal("@name");
+
+                        if (relat.relationName == "parent")
+                            relat.relationName = "child";
+                        else if (relat.relationName == "child")
+                            relat.relationName = "parent";
+
                         if (relation.StrVal("@passive") != null)
                             relat.personName = relation.StrVal("@passive");
                         else if (relation.StrVal("@mutual") != null)
                             relat.personName = relation.StrVal("@mutual");
-                        relat.MLid ??= relation.StrVal("@ref");
+                        else if (relation.StrVal("@active") != null)
+                            relat.personName = relation.StrVal("@active");
+                        string mlid = relation.StrVal("@ref");
+                        if (mlid != null && mlid.Substring(0, 1) == "#")
+                            mlid = mlid.Substring(1);
+                        relat.MLid = mlid;
                         entry.targetModel.Relationships.Add(relat);
                     }
 

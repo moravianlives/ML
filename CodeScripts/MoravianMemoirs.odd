@@ -28,33 +28,13 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
-<<<<<<< Updated upstream
       <change when="2025-01-24">
         <desc>Diane Jakacki added value lists for orgName, eventName, and affiliation elements</desc>
       </change>
-=======
-      <change when="2025-01-23" who="#JAKA1">Updated and standardized schema</change>
-      <change when="2021-03-14" who="#JAKA1">Adjusted listOffice attribute classes</change>
-      <change when="2020-06-01" who="#jschaumberger">Cleaned up the odd file</change>
-      <change when="2020-02-26" who="#jschaumberger">Added tags to be used in the Work Ontology</change>
-      <change when="2019-11-21" who="#jschaumberger">Added the customization of the work tag</change>
-      <change when="2019-08-01" who="#jschaumberger">Added injury as an option for name:@health</change>
-      <change when="2019-07-30" who="#jschaumberger #JAKA1">Added some German translations</change>
-      <change when="2019-07-30" who="#jschaumberger">Added roleName @type diety as a suggested input</change>
-      <change when="2019-07-03" who="#jschaumberger">Added name @office</change>
-      <change when="2019-06-21" who="#JAKA1 #jschaumberger">Updated and added schematic specifities</change>
-      <change when="2018-12-07" who="#JAKA1">Removed note types</change>
-      <change when="2018-11-23" who="#JAKA1">Cleaned up ODD structure</change>
-      <change when="2018-11-15" who="#JAKA1">Extended English and German attributes</change>
-      <change when="2018-10-06" who="#JAKA1">Added English and German name attributes</change>
-      <change when="2018-09-30" who="#JAKA1">Added types for Faull's FA2018 HUMN100 course</change>
-      <change when="2017-12-30" who="#JAKA1">Creation of ODD to version 0.1</change>
->>>>>>> Stashed changes
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-<<<<<<< Updated upstream
       <head>TEI Complete</head>
       <p>This TEI customization describes a schema that includes <emph>all</emph> of the TEI P5
         modules. This is a very useful starting place for manually creating your own customizations
@@ -72,9 +52,9 @@
         module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
         module for <title level="a">Dictionaries</title>. This is because the class <name
           type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
-          >analysis</name>) needs to be specified before the class <name type="class"
-          >att.lexicographic</name> (which is defined in <name type="module"
-        >dictionaries</name>).</p>
+            >analysis</name>) needs to be specified before the class <name type="class"
+              >att.lexicographic</name> (which is defined in <name type="module"
+                >dictionaries</name>).</p>
       <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
         these modules are not themselves technically required to create a TEI conformant markup
         language (let alone a useful non-TEI conformant markup language). Rather, they each contain
@@ -109,21 +89,21 @@
               <valList type="closed" mode="change">
                 <valItem mode="add" ident="childrenschoir"/>                  
                 <valItem mode="add" ident="congregation"/>
-                <valItem mode="add" ident="disciples_house" />
-                <valItem mode="add" ident="œconomy" />
-                <valItem mode="add" ident="greater_boys_choir" />
-                <valItem mode="add" ident="greater_girls_choir" />
-                <valItem mode="add" ident="married_choir" />
-                <valItem mode="add" ident="Inghams_society"/>
-                <valItem mode="add" ident="pilgrim_congregation" />
-                <valItem mode="add" ident="pilgrims_house" />
-                <valItem mode="add" ident="sea_congregation" />
-                <valItem mode="add" ident="single_brothers_choir" />
-                <valItem mode="add" ident="single_sisters_choir" />
-                <valItem mode="add" ident="synod" />
-                <valItem mode="add" ident="widows_choir" />
-                <valItem mode="add" ident="widowers_choir" />
-                <valItem mode="add" ident="other" />
+                <valItem ident="disciple's house" />
+                <valItem ident="œconomy" />
+                <valItem ident="greater boys choir" />
+                <valItem ident="greater girls choir" />
+                <valItem ident="married choir" />
+                <valItem ident="Ingham's society"/>
+                <valItem ident="pilgrim congregation" />
+                <valItem ident="pilgrim's house" />
+                <valItem ident="sea congregation" />
+                <valItem ident="single brothers choir" />
+                <valItem ident="single sisters choir" />
+                <valItem ident="synod" sameAs="synode" />
+                <valItem ident="widows choir" />
+                <valItem ident="widowers choir" />
+                <valItem ident="other" />
               </valList>
             </attDef>
           </attList>
@@ -134,35 +114,35 @@
               <valList type="closed" mode="change">
                 <valItem mode="add" ident="acceptance"/>
                 <valItem mode="add" ident="accident"/>
-                <valItem mode="add" ident="arrival"/>
-                <valItem mode="add" ident="awakening"/>
-                <valItem mode="add" ident="baptism" />
-                <valItem mode="add" ident="birth" />
-                <valItem mode="add" ident="communion"/>
-                <valItem mode="add" ident="confirmation"/>
-                <valItem mode="add" ident="consecration"/>
-                <valItem mode="add" ident="conversion" />
-                <valItem mode="add" ident="death" />
-                <valItem mode="add" ident="departure" />
-                <valItem mode="add" ident="draw lot" />
-                <valItem mode="add" ident="ecclesiastical"/>
-                <valItem mode="add" ident="entrance" />
-                <valItem mode="add" ident="exclusion" />
-                <valItem mode="add" ident="expulsion" />
-                <valItem mode="add" ident="interment" />
-                <valItem mode="add" ident="journey"/>
-                <valItem mode="add" ident="love feast"/>
-                <valItem mode="add" ident="marriage" />
-                <valItem mode="add" ident="ordination"/>
-                <valItem mode="add" ident="readmission"/>
-                <valItem mode="add" ident="reception" />
-                <valItem mode="add" ident="resignation"/>
-                <valItem mode="add" ident="retirement"/>
-                <valItem mode="add" ident="sacrament" />
-                <valItem mode="add" ident="spiritual"/>
-                <valItem mode="add" ident="synod"/>
-                <valItem mode="add" ident="transfer" />
-                <valItem mode="add" ident="widowed"/>
+                <valItem ident="arrival"/>
+                <valItem ident="awakening"/>
+                <valItem ident="baptism" />
+                <valItem ident="birth" />
+                <valItem ident="communion"/>
+                <valItem ident="confirmation"/>
+                <valItem ident="consecration"/>
+                <valItem ident="conversion" />
+                <valItem ident="death" />
+                <valItem ident="departure" />
+                <valItem ident="draw lot" />
+                <valItem ident="ecclesiastical"/>
+                <valItem ident="entrance" />
+                <valItem ident="exclusion" />
+                <valItem ident="expulsion" />
+                <valItem ident="interment" />
+                <valItem ident="journey"/>
+                <valItem ident="love feast"/>
+                <valItem ident="marriage" />
+                <valItem ident="ordination"/>
+                <valItem ident="readmission"/>
+                <valItem ident="reception" />
+                <valItem ident="resignation"/>
+                <valItem ident="retirement"/>
+                <valItem ident="sacrament" />
+                <valItem ident="spiritual"/>
+                <valItem ident="synod"/>
+                <valItem ident="transfer" />
+                <valItem ident="widowed"/>
               </valList>
             </attDef>
           </attList>
@@ -215,25 +195,25 @@
                 <valItem mode="add" ident="baptist">
                   <desc versionDate="2025-01-24" xml:lang="en">Baptist</desc>
                 </valItem>
-                <valItem mode="add" ident="lutheran">
+                <valItem ident="lutheran">
                   <desc>Lutheran</desc>
                 </valItem>
-                <valItem mode="add" ident="methodist">
+                <valItem ident="methodist">
                   <desc>Methodist</desc>
                 </valItem>
-                <valItem mode="add" ident="moravian">
+                <valItem ident="moravian">
                   <desc>Moravian Church</desc>
                 </valItem>
-                <valItem mode="add" ident="presbyterian">
+                <valItem ident="presbyterian">
                   <desc>Presbyterian</desc>
                 </valItem>
-                <valItem mode="add" ident="quaker">
+                <valItem ident="quaker">
                   <desc>Quaker</desc>
                 </valItem>
-                <valItem mode="add" ident="roman_catholic">
+                <valItem ident="roman_catholic">
                   <desc>Roman Catholic</desc>
                 </valItem>
-                <valItem mode="add" ident="Other"/>
+                <valItem ident="Other"/>
               </valList>
             </attDef>
           </attList>
@@ -256,503 +236,6 @@
           </attList>
         </elementSpec>
       </schemaSpec>
-=======
-      <div>
-        <head>Formal Declaration</head>
-        <schemaSpec ident="ML" start="TEI">
-          <!-- tei module sets up class structure, etc. -->
-          <moduleRef key="tei" />
-          <!-- analysis module, include only span -->
-          <moduleRef key="analysis" include="span" />
-          <!-- Include all of transcription -->
-          <moduleRef key="transcr" />
-          <!-- certainty module-->
-          <moduleRef key="certainty" include="certainty respons" />
-          <!-- core module, lots of things. -->
-          <moduleRef key="core" include="abbr add addrLine address author bibl biblScope cb choice cit citedRange corr date del desc editor email expan facs foreign gap gloss graphic head hi item
-            label l lb lg list listBibl measure milestone name note orig p pb ptr pubPlace publisher quote ref reg region relatedItem resp respStmt rs sic term textLang title unclear" />
-          <!-- Including only settingDesc and particDesc for the time being - may go back and add later -->
-          <moduleRef key="corpus" include="settingDesc particDesc" />
-          <!-- Include all of dictionaries for language processing, just in case -->
-          <moduleRef key="dictionaries" />
-          <!-- Include all of characters and glyphs for the time being - may go back and exclude some -->
-          <moduleRef key="gaiji" />
-          <!-- Include all of figures -->
-          <moduleRef key="figures" />
-          <moduleRef key="spoken"/>
-          <!-- Include all header module -->
-          <moduleRef key="header" />
-          <!-- include all for linking module -->
-          <moduleRef key="linking" />
-          <!-- Include all of msdescription for now -->
-          <moduleRef key="msdescription" />
-          <!-- namesdates: include all for now -being explicit because the object tags are not yet introduced universally. -->
-          <!-- 2021-03-14 DKJ added listOffice and listOccupation to this -->
-          <moduleRef key="namesdates" include="addName affiliation age birth bloc climate country death district education event faith floruit forename genName geo geogFeat geogName langKnowledge
-            langKnown listEvent listNym listObject listOffice listOccupation listOrg listPerson listPlace listRelation location nameLink nationality nym object objectIdentifier objectName occupation offset org orgName persName
-            person personGrp persona place placeName population region relation residence roleName settlement sex socecStatus state surname terrain trait" />
-          <!-- Include all of verse module -->
-          <moduleRef key="verse" />
-          <!-- tagsdoc module to include code -->
-          <moduleRef key="tagdocs" include="code" />
-          <!-- textstructure module -->
-          <moduleRef key="textstructure" include="TEI body byline closer dateline div docAuthor docDate floatingText group opener postscript salute signed text trailer" />
-          <!-- Do not include Graphs, networks, and trees (nets) unless we find we need it -->
-          <!-- Do not include Transcribed speech (spoken) unless we decide we want to customize distinction between ownhand and dictated -->
-          <!-- Do not include transcription module unless we decide we want to get more specific about describing the physical document-->
-          <!-- Do not include feature structures (iso-fs) unless we decide we need it -->
-          <!-- Do not include textcrit module unless we decide to compare versions of memoirs across archives -->
-          <!-- IMPORTANT: In order to accommodate complex semantic tagging regarding the Moravians with regard to emotion, events, health/illness, and occupation, 
-            we have customized the name element to include them as attributes in English and German.
-            the specifications are documented in English and German with @sameAs for the other language. If we find that additional languages are needed in the Moravian Lives tagging protocols, we will add them. 
-            ~Diane Jakacki, 11/06/2018 -->
-          <!-- div  - can't remember why I did this ....-->
-          <elementSpec ident="div" mode="change" module="textstructure"> </elementSpec>
-          <!-- CUSTOMIZATION: added emotion, event, health, occupation attributes / English. Wherever possible adding @sameAs to track parallels -->
-          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
-            <attList>
-              <attDef ident="emotion" mode="change" sameAs="gefühl" />
-              <attDef ident="event" mode="change" sameAs="ereignis" />
-              <attDef ident="health" mode="change" sameAs="gesundheitszustand" />
-              <attDef ident="memoirSubject" mode ="change"></attDef>
-              <attDef ident="occupation" mode="change" />
-              <attDef ident="office" mode="change" sameAs="amt"></attDef>
-              <attDef ident="relation" mode="change" sameAs="verwandte" />
-            </attList>
-          </classSpec>
-          
-          <!-- CUSTOMIZATION: added name:@memoirSubject / English. -->
-          <!-- This tag is used to track occurances when a tag entity is not relating to the subject of the memoir -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="memoirSubject" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="no"><desc>Use this only to indicate a person other than the memoir's subjcect</desc></valItem>
-                  <valItem ident="n"><desc>Use this only to indicate a person other than the memoir's subjcect</desc></valItem>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: modified options for  listRelation:@type / English. -->
-          <elementSpec ident="listRelation" mode="change" module="core">
-            <attList>
-              <attDef ident="type" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="Moravian"/>
-                  <valItem ident="personal"/>
-                  <valItem ident="social"></valItem>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: modified options for  relation:@name / English. -->
-          <elementSpec ident="relation" mode="change" module="core">
-            <attList>
-              <attDef ident="name" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="child"/>
-                  <valItem ident="baptism"/>
-                  <valItem ident="interment"/>
-                  <valItem ident="parent"/>
-                  <valItem ident="reception"/>
-                  <valItem ident="sibling"/>
-                  <valItem ident="spouse"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-
-          
-          
-          
-          <!-- CUSTOMIZATION: added name:@event / English. Wherever possible adding @sameAs to track parallels -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="event" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="acceptance"/>
-                  <valItem ident="accident"/>
-                  <valItem ident="arrival"/>
-                  <valItem ident="awakening"/>
-                  <valItem ident="baptism" sameAs="taufe" />
-                  <valItem ident="birth" sameAs="geburt" />
-                  <valItem ident="communion" sameAs="abendmahl"/>
-                  <valItem ident="confirmation"/>
-                  <valItem ident="consecration"/>
-                  <valItem ident="conversion" sameAs="bekehrung" />
-                  <valItem ident="death" sameAs="tod" />
-                  <valItem ident="departure" />
-                  <valItem ident="draw lot" sameAs="losen" />
-                  <valItem ident="ecclesiastical"/>
-                  <valItem ident="entrance" />
-                  <valItem ident="exclusion" />
-                  <valItem ident="expulsion" />
-                  <valItem ident="interment" />
-                  <valItem ident="journey"/>
-                  <valItem ident="love feast"/>
-                  <valItem ident="marriage" sameAs="hochzeit" />
-                  <valItem ident="ordination"/>
-                  <valItem ident="readmission"/>
-                  <valItem ident="reception" sameAs="aufnahme" />
-                  <valItem ident="resignation"/>
-                  <valItem ident="retirement"/>
-                  <valItem ident="sacrament" />
-                  <valItem ident="spiritual"/>
-                  <valItem ident="synod"/>
-                  <valItem ident="transfer" />
-                  <valItem ident="widowed"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-
-          <!-- CUSTOMIZATION: added name:@health / English. -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="health" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="recovered" sameAs="genesend"/>
-                  <valItem ident="disease" sameAs="krankheit"/>
-                  <valItem ident="injury"></valItem>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-
-          <!-- CUSTOMIZATION: added name:@relation / English -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="relation" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="child" sameAs="kind" />
-                  <valItem ident="parent" sameAs="eltern" />
-                  <valItem ident="sibling" sameAs="geschwister" />
-                  <valItem ident="spouse" sameAs="ehepartner" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added en, de to distinguish language for roleName, orgName, addName -->
-          <classSpec ident="att.naming" module="namesdates" type="atts" mode="change">
-            <attList>
-              <attDef ident="de" mode="change" />
-              <attDef ident="en" mode="change" />
-              <attDef ident="religion" mode="change"/>
-            </attList>
-          </classSpec>
-          
-          <!-- CUSTOMIZATION: added orgName:@en / English -->
-          <elementSpec ident="orgName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="en" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="childrens choir" sameAs="kinderchor" />
-                  <valItem ident="congregation" sameAs="gemeine" />
-                  <valItem ident="disciple's house" sameAs="jüngerhaus" />
-                  <valItem ident="œconomy" sameAs="œconomie" />
-                  <valItem ident="greater boys choir" sameAs="große_knaben" />
-                  <valItem ident="greater girls choir" sameAs="große_maedchen" />
-                  <valItem ident="married choir" sameAs="ehechor" />
-                  <valItem ident="Ingham's society"/>
-                  <valItem ident="pilgrim congregation" sameAs="pilgergemeine" />
-                  <valItem ident="pilgrim's house" sameAs="pilgerhaus" />
-                  <valItem ident="sea congregation" sameAs="seegemeine" />
-                  <valItem ident="single brothers choir" sameAs="ledige_brueder" />
-                  <valItem ident="single sisters choir" sameAs="ledige_schwestern" />
-                  <valItem ident="synod" sameAs="synode" />
-                  <valItem ident="widows choir" sameAs="witwenchor" />
-                  <valItem ident="widowers choir" sameAs="witwerchor" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added orgName:@religion / English -->
-          <!-- For now we are not going to translate the religious groups to German -->
-          <elementSpec ident="orgName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="religion" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="Anglican"/>
-                  <valItem ident="Baptist"/>
-                  <valItem ident="Lutheran"/>
-                  <valItem ident="Methodist"/>
-                  <valItem ident="Moravian Church"/>
-                  <valItem ident="Presbyterian"/>
-                  <valItem ident="Quaker"/>
-                  <valItem ident="Roman Catholic"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-            
-          <!-- CUSTOMIZATION: added date:@calendar / English -->
-          <elementSpec ident="date" mode="change" module="core">
-            <attList>
-              <attDef ident="calendar" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="Julian" />
-                  <valItem ident="Gregorian"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added hi:@rend superscript, italic, underscore, strikethrough to hi @rend -->
-          <elementSpec ident="hi" mode="change" module="core">
-            <attList>
-              <attDef ident="rend" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="superscript" />
-                  <valItem ident="italic" />
-                  <valItem ident="underline" />
-                  <valItem ident="strikethrough"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-
-          <!-- Creating event types for personography -->
-          <elementSpec ident="event" mode="change" module="core">
-            <attList>
-              <attDef ident="type" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="acceptance"/>
-                  <valItem ident="accident"/>
-                  <valItem ident="arrival"/>
-                  <valItem ident="awakening"/>
-                  <valItem ident="baptism" sameAs="taufe" />
-                  <valItem ident="birth" sameAs="geburt" />
-                  <valItem ident="communion" sameAs="abendmahl"/>
-                  <valItem ident="confirmation"/>
-                  <valItem ident="consecration"/>
-                  <valItem ident="conversion" sameAs="bekehrung" />
-                  <valItem ident="death" sameAs="tod" />
-                  <valItem ident="dedication"/>
-                  <valItem ident="departure" />
-                  <valItem ident="draw lot" sameAs="losen" />
-                  <valItem ident="ecclesiastical"/>
-                  <valItem ident="entrance" />
-                  <valItem ident="exclusion" />
-                  <valItem ident="expulsion" />
-                  <valItem ident="interment" />
-                  <valItem ident="journey"/>
-                  <valItem ident="love feast"/>
-                  <valItem ident="marriage" sameAs="hochzeit" />
-                  <valItem ident="ordination"/>
-                  <valItem ident="readmission"/>
-                  <valItem ident="reception" sameAs="aufnahme" />
-                  <valItem ident="resignation"/>
-                  <valItem ident="retirement"/>
-                  <valItem ident="sacrament" />
-                  <valItem ident="severance"/>
-                  <valItem ident="spiritual"/>
-                  <valItem ident="synod"/>
-                  <valItem ident="transfer" />
-                  <valItem ident="widowed"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added objectName, object, and listObject to namesdates module - because TEI has not yet implemented objectName universally -->
-          <elementSpec module="namesdates" ident="att.typed" mode="add">
-            <attList>
-              <attDef ident="objectName" mode="change" />
-              <attDef ident="object" mode="change" />
-              <attDef ident="listObject" mode="change" />
-            </attList>
-          </elementSpec>
-          
-          <!--______________________________________________________________________________________________________________________________________________________________________________-->
-          <!--                                                             Below is code relating to the schema for the work ontology                                                       -->
-          <!--______________________________________________________________________________________________________________________________________________________________________________-->
-          
-          
-          <!-- Builds in <listOccupation> beneath <body> for the work ontology -->
-          <!-- DKJ 2021-03-14 added model.personLike to see if it can be used within listPerson -->
-          <elementSpec ident="listOccupation" mode="add">
-            <classes>
-              <memberOf key="model.headLike"/>
-              <memberOf key="model.listLike"/>
-              <memberOf key="model.orgPart"/>
-              <memberOf key="model.personLike"/>
-              <memberOf key="att.declarable"/>
-              <memberOf key="att.global"/>
-              <memberOf key="att.naming"/>
-              <memberOf key="att.sortable"/>
-              <memberOf key="att.typed"/>
-            </classes>
-            
-            <content>
-              <sequence>
-                <!-- Includes elements that can and have to be in the occupation tag -->
-                <elementRef key="occupation" maxOccurs="unbounded"/> 
-                <classRef key="model.headLike" minOccurs="0" maxOccurs="unbounded"/>
-              </sequence>
-            </content>
-          </elementSpec>
-          <!-- Adds to the occupation tag to allow it to contain <def> and <listRelation>. This is used in the ontology -->
-          
-          <elementSpec ident="occupation" mode="change">
-              <content>
-                <macroRef key="macro.specialPara"/>
-                <elementRef key="def" minOccurs="0"></elementRef>
-                <elementRef key="listRelation" minOccurs="0"/>
-                <elementRef key="variant" minOccurs="0"/>
-              </content>
-          </elementSpec>
-          
-          <!-- Builds in <listOffice> beneath <body> for the work ontology -->
-          <!-- DKJ 2021-03-14 added model.personLike to see if it can be used within listPerson -->
-          <elementSpec ident="listOffice" mode="add">
-            <classes>
-              <memberOf key="model.headLike"/>
-              <memberOf key="model.listLike"/>
-              <memberOf key="model.orgPart"/>
-              <memberOf key="model.personLike"/>
-              <memberOf key="att.declarable"/>
-              <memberOf key="att.global"/>
-              <memberOf key="att.naming"/>
-              <memberOf key="att.sortable"/>
-              <memberOf key="att.typed"/>
-            </classes>
-            
-            <content>
-              <sequence>
-                <!-- Includes elements that can and have to be in the office tag -->
-                <elementRef key="office" maxOccurs="unbounded"/> 
-                <classRef key="model.headLike" minOccurs="0" maxOccurs="unbounded"/>
-              </sequence>
-            </content>
-          </elementSpec>
-          
-          <!-- Builds the office tag to include certain tags. This is used for the ontology -->
-          <elementSpec ident="office" mode="add">
-            <classes>
-              <memberOf key="model.persStateLike"></memberOf>
-              <memberOf key="att.canonical"></memberOf>
-              <memberOf key="att.global.linking"></memberOf>
-              <memberOf key="att.datable"/>
-              <memberOf key="model.entryPart"></memberOf>
-              <memberOf key="att.global.source"></memberOf>
-            </classes>
-            
-            <!-- These are the nested tags that office can contain -->
-            <content>
-              <macroRef key="macro.specialPara"/>
-              <elementRef key="def" minOccurs="0"></elementRef>
-              <elementRef key="listRelation" minOccurs="0"/>
-              <elementRef key="variant" minOccurs="0"/> 
-            </content>
-          </elementSpec>
-          
-          <!-- Builds the variant tag to include certain tags. This is used for the ontology -->
-          <elementSpec ident="variant" mode="add">
-            <classes>
-              <memberOf key="att.canonical"></memberOf>
-              <memberOf key="att.global.linking"></memberOf>
-              <memberOf key="model.entryPart"></memberOf>
-            </classes>
-            <content>
-              <macroRef key="macro.specialPara"/>
-              <elementRef key="desc" minOccurs="1" maxOccurs="1"/>
-            </content> 
-          </elementSpec>
-          
-          <!--______________________________________________________________________________________________________________________________________________________________________________-->
-          <!--                                                             Below is code relating to semantic encoding in German                                                            -->
-          <!--______________________________________________________________________________________________________________________________________________________________________________-->
-          
-          <!-- CUSTOMIZATION: added gefühl, ereignis, beruf, gesundheitszustand attributes / German. Wherever possible adding @sameAs to track parallels -->
-          <classSpec ident="att.naming" module="tei" type="atts" mode="change">
-            <attList>
-              <attDef ident="amt" mode="change" sameAs="office"></attDef>
-              <attDef ident="gesundheitszustand" mode="change" sameAs="health" />
-              <attDef ident="ereignis" mode="change" sameAs="event" />
-              <attDef ident="gefühl" mode="change" sameAs="emotion" />
-              <attDef ident="verwandte" mode="change" sameAs="relation" />
-              <attDef ident="zeremonie" mode="change" sameAs="ceremony" />
-            </attList>
-          </classSpec>
-          
-          <!-- CUSTOMIZATION: added name:@ereignis / German. Wherever possible adding @sameAs to track parallels -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="ereignis" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="abendmahl" sameAs="communion"></valItem>
-                  <valItem ident="aufnahme" sameAs="reception" />
-                  <valItem ident="bekehrung" sameAs="conversion" />
-                  <valItem ident="geburt" sameAs="birth" />
-                  <valItem ident="hochzeit" sameAs="marriage" />
-                  <valItem ident="losen" sameAs="draw_lot" />
-                  <valItem ident="taufe" sameAs="baptism" />
-                  <valItem ident="tod" sameAs="death" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added name:@Gesundheit / German -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="gesundheitszustand" mode="change">
-                <valList mode="add" type="closed">
-                  <valItem ident="krankheit" sameAs="disease"/>
-                  <valItem ident="genesend" sameAs="recovered"/>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added name:@verwandte / German -->
-          <elementSpec ident="name" mode="change" module="core">
-            <attList>
-              <attDef ident="verwandte" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="ehepartner" sameAs="spouse" />
-                  <valItem ident="eltern" sameAs="parent" />
-                  <valItem ident="geschwister" sameAs="sibling" />
-                  <valItem ident="kind" sameAs="child" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- CUSTOMIZATION: added orgName@de / German -->
-          <elementSpec ident="orgName" mode="change" module="namesdates">
-            <attList>
-              <attDef ident="de" mode="change">
-                <valList mode="add" type="semi">
-                  <valItem ident="œconomie" sameAs="œconomy" />
-                  <valItem ident="ehechor" sameAs="married_choir" />
-                  <valItem ident="gemeine" sameAs="congregation" />
-                  <valItem ident="große knaben" sameAs="greater_boys_choir" />
-                  <valItem ident="große maedchen" sameAs="greater_girls_choir" />
-                  <valItem ident="jüngerhaus" sameAs="disciple's_house" />
-                  <valItem ident="kinderchor" sameAs="childrens_choir" />
-                  <valItem ident="ledige brueder" sameAs="single_brothers_choir" />
-                  <valItem ident="ledige schwestern" sameAs="single_sisters_choir" />
-                  <valItem ident="pilgergemeine" sameAs="pilgrim_congregation" />
-                  <valItem ident="seegemeine" sameAs="sea_congregation" />
-                  <valItem ident="synode" sameAs="synod" />
-                  <valItem ident="witwenchor" sameAs="widows_choir" />
-                  <valItem ident="witwerchor" sameAs="widowers_choir" />
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          
-          <!-- end of schema -->
-        </schemaSpec>
-      </div>
->>>>>>> Stashed changes
     </body>
   </text>
 </TEI>

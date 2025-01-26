@@ -35,7 +35,207 @@
   </teiHeader>
   <text>
     <body>
-
+      <head>TEI Complete</head>
+      <p>This TEI customization describes a schema that includes <emph>all</emph> of the TEI P5
+        modules. This is a very useful starting place for manually creating your own customizations
+        — it is much easier to delete the modules you do not want than to add the modules you do.
+        Furthermore this customization often proves helpful for testing TEI software.</p>
+      <p>However, this particular TEI customization is <emph>not recommended</emph> for actual use
+        for encoding documents. It produces schemas and reference documentation that will be much
+        larger and include many more elements than almost anyone could conceivably ever need.
+        Tempting though it may be simply to have absolutely everything, and <q>just ignore</q>
+        elements not required, experience has shown that their presence makes the documentation
+        harder to read and use, and makes a schema that is far more lax than desired.</p>
+      <p>The <att>n</att> attribute of each <gi>moduleRef</gi> below reflects the chapter number of
+        the TEI <title>Guidelines</title> in which the module being referenced is defined. Note that
+        the modules are generally referred to in the order defined, with the exception that the
+        module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
+        module for <title level="a">Dictionaries</title>. This is because the class <name
+          type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
+          >analysis</name>) needs to be specified before the class <name type="class"
+          >att.lexicographic</name> (which is defined in <name type="module"
+        >dictionaries</name>).</p>
+      <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
+        these modules are not themselves technically required to create a TEI conformant markup
+        language (let alone a useful non-TEI conformant markup language). Rather, they each contain
+        one or more <emph>elements</emph> which are required for TEI conformance.</p>
+      <schemaSpec ident="MoravianMemoirs" start="TEI teiCorpus" prefix="" targetLang="en"
+        docLang="en">
+        <moduleRef n="01" key="tei"/>
+        <moduleRef n="02" key="header"/>
+        <moduleRef n="03" key="core"/>
+        <moduleRef n="04" key="textstructure"/>
+        <moduleRef n="05" key="gaiji"/>
+        <moduleRef n="06" key="verse"/>
+        <moduleRef n="07" key="drama"/>
+        <moduleRef n="08" key="spoken"/>
+        <moduleRef n="09" key="cmc"/>
+        <moduleRef n="18" key="analysis"/>
+        <moduleRef n="10" key="dictionaries"/>
+        <moduleRef n="11" key="msdescription"/>
+        <moduleRef n="12" key="transcr"/>
+        <moduleRef n="13" key="textcrit"/>
+        <moduleRef n="14" key="namesdates"/>
+        <moduleRef n="15" key="figures"/>
+        <moduleRef n="16" key="corpus"/>
+        <moduleRef n="17" key="linking"/>
+        <moduleRef n="19" key="iso-fs"/>
+        <moduleRef n="20" key="nets"/>
+        <moduleRef n="22" key="certainty"/>
+        <moduleRef n="23" key="tagdocs"/>
+        <elementSpec ident="affiliation" mode="change">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="childrenschoir"/>                  
+                <valItem mode="add" ident="congregation"/>
+                <valItem ident="disciple's house" />
+                <valItem ident="œconomy" />
+                <valItem ident="greater boys choir" />
+                <valItem ident="greater girls choir" />
+                <valItem ident="married choir" />
+                <valItem ident="Ingham's society"/>
+                <valItem ident="pilgrim congregation" />
+                <valItem ident="pilgrim's house" />
+                <valItem ident="sea congregation" />
+                <valItem ident="single brothers choir" />
+                <valItem ident="single sisters choir" />
+                <valItem ident="synod" sameAs="synode" />
+                <valItem ident="widows choir" />
+                <valItem ident="widowers choir" />
+                <valItem ident="other" />
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="eventName" mode="change">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="acceptance"/>
+                <valItem mode="add" ident="accident"/>
+                <valItem ident="arrival"/>
+                <valItem ident="awakening"/>
+                <valItem ident="baptism" />
+                <valItem ident="birth" />
+                <valItem ident="communion"/>
+                <valItem ident="confirmation"/>
+                <valItem ident="consecration"/>
+                <valItem ident="conversion" />
+                <valItem ident="death" />
+                <valItem ident="departure" />
+                <valItem ident="draw lot" />
+                <valItem ident="ecclesiastical"/>
+                <valItem ident="entrance" />
+                <valItem ident="exclusion" />
+                <valItem ident="expulsion" />
+                <valItem ident="interment" />
+                <valItem ident="journey"/>
+                <valItem ident="love feast"/>
+                <valItem ident="marriage" />
+                <valItem ident="ordination"/>
+                <valItem ident="readmission"/>
+                <valItem ident="reception" />
+                <valItem ident="resignation"/>
+                <valItem ident="retirement"/>
+                <valItem ident="sacrament" />
+                <valItem ident="spiritual"/>
+                <valItem ident="synod"/>
+                <valItem ident="transfer" />
+                <valItem ident="widowed"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="listRelation" mode="change">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList mode="change">
+                <valItem mode="add" ident="moravian">
+                  <desc versionDate="2025-01-24" xml:lang="en">Moravian-specific relationship</desc>
+                </valItem>
+                <valItem mode="add" ident="personal">
+                  <desc versionDate="2025-01-24" xml:lang="en">personal relationship</desc>
+                </valItem>
+                <valItem mode="add" ident="social">
+                  <desc versionDate="2025-01-24" xml:lang="en">social relationship</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="name" mode="change">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="health"/>
+                <valItem mode="add" ident="emotion"/>
+              </valList>
+            </attDef>
+            <attDef ident="subtype" mode="change">
+              <desc versionDate="2025-01-24" xml:lang="en">provides a sub-categorization for the
+                health type</desc>
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="recovered"/>
+                <valItem mode="add" ident="disease"/>
+              </valList>
+            </attDef>
+            <attDef ident="ana" mode="change">
+              <valList type="closed" mode="change"/>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="orgName" mode="change">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="anglican">
+                  <desc versionDate="2025-01-24" xml:lang="en">Anglican</desc>
+                </valItem>
+                <valItem mode="add" ident="baptist">
+                  <desc versionDate="2025-01-24" xml:lang="en">Baptist</desc>
+                </valItem>
+                <valItem ident="lutheran">
+                  <desc>Lutheran</desc>
+                </valItem>
+                <valItem ident="methodist">
+                  <desc>Methodist</desc>
+                </valItem>
+                <valItem ident="moravian">
+                  <desc>Moravian Church</desc>
+                </valItem>
+                <valItem ident="presbyterian">
+                  <desc>Presbyterian</desc>
+                </valItem>
+                <valItem ident="quaker">
+                  <desc>Quaker</desc>
+                </valItem>
+                <valItem ident="roman_catholic">
+                  <desc>Roman Catholic</desc>
+                </valItem>
+                <valItem ident="Other"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="relation" mode="change">
+          <attList>
+            <attDef ident="name" mode="change">
+              <desc versionDate="2025-01-24" xml:lang="en">supplies a name for Moravian
+                relationships of which this is an instance.</desc>
+              <valList mode="change">
+                <valItem mode="add" ident="child"/>
+                <valItem mode="add" ident="baptism"/>
+                <valItem mode="add" ident="interment"/>
+                <valItem mode="add" ident="parent"/>
+                <valItem mode="add" ident="reception"/>
+                <valItem mode="add" ident="sibling"/>
+                <valItem mode="add" ident="spouse"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+      </schemaSpec>
     </body>
   </text>
 </TEI>

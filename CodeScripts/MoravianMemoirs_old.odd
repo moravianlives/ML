@@ -1,39 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Moravian Lives Schema</title>
-        <author>Diane Jakacki</author>
+        <title>Moravian Lives TEI P5 ODD Customisation</title>
+        <author xml:id="JAKA1">Diane Jakacki</author>
+        <author xml:id="jschaumberger">Justin Schaumberger</author>
       </titleStmt>
       <publicationStmt>
-        <publisher>TEI Consortium</publisher>
-        <availability status="free">
-          <p>TEI material can be licensed differently depending on the use you intend to make of it.
-            Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is
-            generally appropriate for usages which treat TEI content as data or documentation. The
-            BSD-2 licence is generally appropriate for usage of TEI content in a software
-            environment. For further information or clarification, please contact the TEI Consortium
-            (info@tei-c.org).</p>
+        <authority>
+          <name>Diane Jakacki</name>
+          <email>diane.jakack@bucknell.edu</email>
+        </authority>
+        <authority>
+          <name>Justin Schaumberger</name>
+          <email>jes083@bucknell.edu</email>
+        </authority>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</licence>
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <p>Written from scratch.</p>
+        <p>This TEI P5 Customisation file is being developed for memoirs from the Moravian Archives in Bethlehem, Pennsylvania as part of the Moravian Lives project ("ML"). The intention is that it
+          should evolve over time.</p>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <appInfo>
-        <application ident="RomaJS" version="1.1.2" when="2025-01-24T20:42:32.656Z">
-          <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
-        </application>
-      </appInfo>
+      <editorialDecl>
+        <correction>
+          <p>Corrections are made to the transcribed memoirs based on transcribers' interpretations of deletions, overwrites, additions, and corrections.</p>
+        </correction>
+        <interpretation>
+          <p>In some cases - but not all - transcribers have corrected non-standard spelling and punctuation.</p>
+          <p>In order to take on more complex textual analysis, certain tags have been customized in this schema. These are marked in comments by "CUSTOMIZATION: " and then the element or attribute
+            that has been altered or expanded.</p>
+        </interpretation>
+        <punctuation>
+          <p>In some cases - but not all - transcriptions reflect 18th century forms of punctuation, including '=' rather than hyphens, glyphs rather than asterisks, etc.</p>
+        </punctuation>
+      </editorialDecl>
     </encodingDesc>
     <revisionDesc>
-<<<<<<< Updated upstream
-      <change when="2025-01-24">
-        <desc>Diane Jakacki added value lists for orgName, eventName, and affiliation elements</desc>
-      </change>
-=======
-      <change when="2025-01-23" who="#JAKA1">Updated and standardized schema</change>
       <change when="2021-03-14" who="#JAKA1">Adjusted listOffice attribute classes</change>
       <change when="2020-06-01" who="#jschaumberger">Cleaned up the odd file</change>
       <change when="2020-02-26" who="#jschaumberger">Added tags to be used in the Work Ontology</change>
@@ -49,214 +56,10 @@
       <change when="2018-10-06" who="#JAKA1">Added English and German name attributes</change>
       <change when="2018-09-30" who="#JAKA1">Added types for Faull's FA2018 HUMN100 course</change>
       <change when="2017-12-30" who="#JAKA1">Creation of ODD to version 0.1</change>
->>>>>>> Stashed changes
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-<<<<<<< Updated upstream
-      <head>TEI Complete</head>
-      <p>This TEI customization describes a schema that includes <emph>all</emph> of the TEI P5
-        modules. This is a very useful starting place for manually creating your own customizations
-        — it is much easier to delete the modules you do not want than to add the modules you do.
-        Furthermore this customization often proves helpful for testing TEI software.</p>
-      <p>However, this particular TEI customization is <emph>not recommended</emph> for actual use
-        for encoding documents. It produces schemas and reference documentation that will be much
-        larger and include many more elements than almost anyone could conceivably ever need.
-        Tempting though it may be simply to have absolutely everything, and <q>just ignore</q>
-        elements not required, experience has shown that their presence makes the documentation
-        harder to read and use, and makes a schema that is far more lax than desired.</p>
-      <p>The <att>n</att> attribute of each <gi>moduleRef</gi> below reflects the chapter number of
-        the TEI <title>Guidelines</title> in which the module being referenced is defined. Note that
-        the modules are generally referred to in the order defined, with the exception that the
-        module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
-        module for <title level="a">Dictionaries</title>. This is because the class <name
-          type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
-          >analysis</name>) needs to be specified before the class <name type="class"
-          >att.lexicographic</name> (which is defined in <name type="module"
-        >dictionaries</name>).</p>
-      <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
-        these modules are not themselves technically required to create a TEI conformant markup
-        language (let alone a useful non-TEI conformant markup language). Rather, they each contain
-        one or more <emph>elements</emph> which are required for TEI conformance.</p>
-      <schemaSpec ident="MoravianMemoirs" start="TEI teiCorpus" prefix="" targetLang="en"
-        docLang="en">
-        <moduleRef n="01" key="tei"/>
-        <moduleRef n="02" key="header"/>
-        <moduleRef n="03" key="core"/>
-        <moduleRef n="04" key="textstructure"/>
-        <moduleRef n="05" key="gaiji"/>
-        <moduleRef n="06" key="verse"/>
-        <moduleRef n="07" key="drama"/>
-        <moduleRef n="08" key="spoken"/>
-        <moduleRef n="09" key="cmc"/>
-        <moduleRef n="18" key="analysis"/>
-        <moduleRef n="10" key="dictionaries"/>
-        <moduleRef n="11" key="msdescription"/>
-        <moduleRef n="12" key="transcr"/>
-        <moduleRef n="13" key="textcrit"/>
-        <moduleRef n="14" key="namesdates"/>
-        <moduleRef n="15" key="figures"/>
-        <moduleRef n="16" key="corpus"/>
-        <moduleRef n="17" key="linking"/>
-        <moduleRef n="19" key="iso-fs"/>
-        <moduleRef n="20" key="nets"/>
-        <moduleRef n="22" key="certainty"/>
-        <moduleRef n="23" key="tagdocs"/>
-        <elementSpec ident="affiliation" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="childrenschoir"/>                  
-                <valItem mode="add" ident="congregation"/>
-                <valItem mode="add" ident="disciples_house" />
-                <valItem mode="add" ident="œconomy" />
-                <valItem mode="add" ident="greater_boys_choir" />
-                <valItem mode="add" ident="greater_girls_choir" />
-                <valItem mode="add" ident="married_choir" />
-                <valItem mode="add" ident="Inghams_society"/>
-                <valItem mode="add" ident="pilgrim_congregation" />
-                <valItem mode="add" ident="pilgrims_house" />
-                <valItem mode="add" ident="sea_congregation" />
-                <valItem mode="add" ident="single_brothers_choir" />
-                <valItem mode="add" ident="single_sisters_choir" />
-                <valItem mode="add" ident="synod" />
-                <valItem mode="add" ident="widows_choir" />
-                <valItem mode="add" ident="widowers_choir" />
-                <valItem mode="add" ident="other" />
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="eventName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="acceptance"/>
-                <valItem mode="add" ident="accident"/>
-                <valItem mode="add" ident="arrival"/>
-                <valItem mode="add" ident="awakening"/>
-                <valItem mode="add" ident="baptism" />
-                <valItem mode="add" ident="birth" />
-                <valItem mode="add" ident="communion"/>
-                <valItem mode="add" ident="confirmation"/>
-                <valItem mode="add" ident="consecration"/>
-                <valItem mode="add" ident="conversion" />
-                <valItem mode="add" ident="death" />
-                <valItem mode="add" ident="departure" />
-                <valItem mode="add" ident="draw lot" />
-                <valItem mode="add" ident="ecclesiastical"/>
-                <valItem mode="add" ident="entrance" />
-                <valItem mode="add" ident="exclusion" />
-                <valItem mode="add" ident="expulsion" />
-                <valItem mode="add" ident="interment" />
-                <valItem mode="add" ident="journey"/>
-                <valItem mode="add" ident="love feast"/>
-                <valItem mode="add" ident="marriage" />
-                <valItem mode="add" ident="ordination"/>
-                <valItem mode="add" ident="readmission"/>
-                <valItem mode="add" ident="reception" />
-                <valItem mode="add" ident="resignation"/>
-                <valItem mode="add" ident="retirement"/>
-                <valItem mode="add" ident="sacrament" />
-                <valItem mode="add" ident="spiritual"/>
-                <valItem mode="add" ident="synod"/>
-                <valItem mode="add" ident="transfer" />
-                <valItem mode="add" ident="widowed"/>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="listRelation" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList mode="change">
-                <valItem mode="add" ident="moravian">
-                  <desc versionDate="2025-01-24" xml:lang="en">Moravian-specific relationship</desc>
-                </valItem>
-                <valItem mode="add" ident="personal">
-                  <desc versionDate="2025-01-24" xml:lang="en">personal relationship</desc>
-                </valItem>
-                <valItem mode="add" ident="social">
-                  <desc versionDate="2025-01-24" xml:lang="en">social relationship</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="name" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="health"/>
-                <valItem mode="add" ident="emotion"/>
-              </valList>
-            </attDef>
-            <attDef ident="subtype" mode="change">
-              <desc versionDate="2025-01-24" xml:lang="en">provides a sub-categorization for the
-                health type</desc>
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="recovered"/>
-                <valItem mode="add" ident="disease"/>
-              </valList>
-            </attDef>
-            <attDef ident="ana" mode="change">
-              <valList type="closed" mode="change"/>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="orgName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="anglican">
-                  <desc versionDate="2025-01-24" xml:lang="en">Anglican</desc>
-                </valItem>
-                <valItem mode="add" ident="baptist">
-                  <desc versionDate="2025-01-24" xml:lang="en">Baptist</desc>
-                </valItem>
-                <valItem mode="add" ident="lutheran">
-                  <desc>Lutheran</desc>
-                </valItem>
-                <valItem mode="add" ident="methodist">
-                  <desc>Methodist</desc>
-                </valItem>
-                <valItem mode="add" ident="moravian">
-                  <desc>Moravian Church</desc>
-                </valItem>
-                <valItem mode="add" ident="presbyterian">
-                  <desc>Presbyterian</desc>
-                </valItem>
-                <valItem mode="add" ident="quaker">
-                  <desc>Quaker</desc>
-                </valItem>
-                <valItem mode="add" ident="roman_catholic">
-                  <desc>Roman Catholic</desc>
-                </valItem>
-                <valItem mode="add" ident="Other"/>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="relation" mode="change">
-          <attList>
-            <attDef ident="name" mode="change">
-              <desc versionDate="2025-01-24" xml:lang="en">supplies a name for Moravian
-                relationships of which this is an instance.</desc>
-              <valList mode="change">
-                <valItem mode="add" ident="child"/>
-                <valItem mode="add" ident="baptism"/>
-                <valItem mode="add" ident="interment"/>
-                <valItem mode="add" ident="parent"/>
-                <valItem mode="add" ident="reception"/>
-                <valItem mode="add" ident="sibling"/>
-                <valItem mode="add" ident="spouse"/>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-      </schemaSpec>
-=======
       <div>
         <head>Formal Declaration</head>
         <schemaSpec ident="ML" start="TEI">
@@ -455,15 +258,15 @@
                   <valItem ident="congregation" sameAs="gemeine" />
                   <valItem ident="disciple's house" sameAs="jüngerhaus" />
                   <valItem ident="œconomy" sameAs="œconomie" />
-                  <valItem ident="greater boys choir" sameAs="große_knaben" />
-                  <valItem ident="greater girls choir" sameAs="große_maedchen" />
+                  <valItem ident="greater boys choir" sameAs="große knaben" />
+                  <valItem ident="greater girls choir" sameAs="große maedchen" />
                   <valItem ident="married choir" sameAs="ehechor" />
                   <valItem ident="Ingham's society"/>
                   <valItem ident="pilgrim congregation" sameAs="pilgergemeine" />
                   <valItem ident="pilgrim's house" sameAs="pilgerhaus" />
                   <valItem ident="sea congregation" sameAs="seegemeine" />
-                  <valItem ident="single brothers choir" sameAs="ledige_brueder" />
-                  <valItem ident="single sisters choir" sameAs="ledige_schwestern" />
+                  <valItem ident="single brothers choir" sameAs="ledige brueder" />
+                  <valItem ident="single sisters choir" sameAs="ledige schwestern" />
                   <valItem ident="synod" sameAs="synode" />
                   <valItem ident="widows choir" sameAs="witwenchor" />
                   <valItem ident="widowers choir" sameAs="witwerchor" />
@@ -691,7 +494,7 @@
                   <valItem ident="bekehrung" sameAs="conversion" />
                   <valItem ident="geburt" sameAs="birth" />
                   <valItem ident="hochzeit" sameAs="marriage" />
-                  <valItem ident="losen" sameAs="draw_lot" />
+                  <valItem ident="losen" sameAs="draw lot" />
                   <valItem ident="taufe" sameAs="baptism" />
                   <valItem ident="tod" sameAs="death" />
                 </valList>
@@ -731,19 +534,19 @@
               <attDef ident="de" mode="change">
                 <valList mode="add" type="semi">
                   <valItem ident="œconomie" sameAs="œconomy" />
-                  <valItem ident="ehechor" sameAs="married_choir" />
+                  <valItem ident="ehechor" sameAs="married choir" />
                   <valItem ident="gemeine" sameAs="congregation" />
-                  <valItem ident="große knaben" sameAs="greater_boys_choir" />
-                  <valItem ident="große maedchen" sameAs="greater_girls_choir" />
-                  <valItem ident="jüngerhaus" sameAs="disciple's_house" />
-                  <valItem ident="kinderchor" sameAs="childrens_choir" />
-                  <valItem ident="ledige brueder" sameAs="single_brothers_choir" />
-                  <valItem ident="ledige schwestern" sameAs="single_sisters_choir" />
-                  <valItem ident="pilgergemeine" sameAs="pilgrim_congregation" />
-                  <valItem ident="seegemeine" sameAs="sea_congregation" />
+                  <valItem ident="große knaben" sameAs="greater boys choir" />
+                  <valItem ident="große maedchen" sameAs="greater girls choir" />
+                  <valItem ident="jüngerhaus" sameAs="disciple's house" />
+                  <valItem ident="kinderchor" sameAs="childrens choir" />
+                  <valItem ident="ledige brueder" sameAs="single brothers choir" />
+                  <valItem ident="ledige schwestern" sameAs="single sisters choir" />
+                  <valItem ident="pilgergemeine" sameAs="pilgrim congregation" />
+                  <valItem ident="seegemeine" sameAs="sea congregation" />
                   <valItem ident="synode" sameAs="synod" />
-                  <valItem ident="witwenchor" sameAs="widows_choir" />
-                  <valItem ident="witwerchor" sameAs="widowers_choir" />
+                  <valItem ident="witwenchor" sameAs="widows choir" />
+                  <valItem ident="witwerchor" sameAs="widowers choir" />
                 </valList>
               </attDef>
             </attList>
@@ -752,7 +555,6 @@
           <!-- end of schema -->
         </schemaSpec>
       </div>
->>>>>>> Stashed changes
     </body>
   </text>
 </TEI>

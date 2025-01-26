@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
 				<title>Mary Alott: Memoir</title>
 				<funder>The Moravian Lives Project</funder>
-				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal
-					Investigator <orgName>Bucknell University</orgName>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
 					<address>
 						<addrLine>Lewisburg, Pennsylvania</addrLine>
 					</address>
 					<email>faull@bucknell.edu</email>
 				</principal>
-				<principal><persName>Christer Ahlberger</persName>, Principal Investigator,
-					2015-2018 <orgName>University of Gothenburg</orgName>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
 					<address>
 						<addrLine>Gothenburg, Sweden</addrLine>
 					</address>
@@ -92,18 +90,17 @@
 			<publicationStmt>
 				<distributor>The Moravian Lives Project</distributor>
 				<availability>
-					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-						International</licence>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -127,38 +124,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619085826784",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T12:58:26.784Z",
-	"dcterms:issued": "2020-06-19T14:58:34.536Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539895",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.895Z",
+	"dcterms:modified": "2021-01-20T19:25:39.895Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619085826784#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539895#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619085826784#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539895#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[5]/date"
 		}
@@ -168,16 +169,17 @@
 		"rdf:value": "1748-07"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -201,38 +203,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090142109",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:01:42.109Z",
-	"dcterms:issued": "2020-06-19T14:58:34.540Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.896Z",
+	"dcterms:modified": "2021-01-20T19:25:39.896Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090142109#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090142109#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/date"
 		}
@@ -242,16 +248,17 @@
 		"rdf:value": "1734-12-12"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -275,38 +282,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090158725",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:01:58.725Z",
-	"dcterms:issued": "2020-06-19T14:58:34.541Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.896Z",
+	"dcterms:modified": "2021-01-20T19:25:39.896Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090158725#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090158725#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539896#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date"
 		}
@@ -316,16 +327,17 @@
 		"rdf:value": "1737"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -349,38 +361,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090531973",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:05:31.973Z",
-	"dcterms:issued": "2020-06-19T14:58:34.541Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.897Z",
+	"dcterms:modified": "2021-01-20T19:25:39.897Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090531973#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090531973#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date[2]"
 		}
@@ -390,16 +406,17 @@
 		"rdf:value": "1741"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -423,38 +440,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090654581",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:06:54.581Z",
-	"dcterms:issued": "2020-06-19T14:58:34.541Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.897Z",
+	"dcterms:modified": "2021-01-20T19:25:39.897Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090654581#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619090654581#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[3]/date"
 		}
@@ -464,16 +485,17 @@
 		"rdf:value": "1743"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -497,38 +519,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091257900",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:12:57.900Z",
-	"dcterms:issued": "2020-06-19T14:58:34.541Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.897Z",
+	"dcterms:modified": "2021-01-20T19:25:39.897Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091257900#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091257900#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539897#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[6]/date"
 		}
@@ -538,16 +564,17 @@
 		"rdf:value": "1751-04-05"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -571,38 +598,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091350623",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:13:50.623Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.898Z",
+	"dcterms:modified": "2021-01-20T19:25:39.898Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091350623#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091350623#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date"
 		}
@@ -612,16 +643,17 @@
 		"rdf:value": "1753-02-25"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -645,38 +677,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091422064",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:14:22.064Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.898Z",
+	"dcterms:modified": "2021-01-20T19:25:39.898Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091422064#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091422064#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date[2]"
 		}
@@ -686,16 +722,17 @@
 		"rdf:value": "1753"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -719,38 +756,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091754251",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:17:54.251Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.898Z",
+	"dcterms:modified": "2021-01-20T19:25:39.898Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091754251#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619091754251#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539898#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date"
 		}
@@ -760,16 +801,17 @@
 		"rdf:value": "1754-02"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -793,38 +835,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619094148856",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T13:41:48.856Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.899Z",
+	"dcterms:modified": "2021-01-20T19:25:39.899Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619094148856#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619094148856#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[4]/date"
 		}
@@ -834,16 +880,17 @@
 		"rdf:value": "1754-06"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -867,38 +914,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619100659822",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T14:06:59.822Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.899Z",
+	"dcterms:modified": "2021-01-20T19:25:39.899Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619100659822#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619100659822#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[8]/date"
 		}
@@ -908,16 +959,17 @@
 		"rdf:value": "1754-12-12"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -941,38 +993,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619101151192",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T14:11:51.192Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.899Z",
+	"dcterms:modified": "2021-01-20T19:25:39.899Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619101151192#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619101151192#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/date"
 		}
@@ -982,16 +1038,17 @@
 		"rdf:value": "1754-12-15"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1015,38 +1072,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102203714",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T14:22:03.714Z",
-	"dcterms:issued": "2020-06-19T14:58:34.542Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.899Z",
+	"dcterms:modified": "2021-01-20T19:25:39.899Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102203714#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102203714#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539899#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p/date"
 		}
@@ -1056,16 +1117,17 @@
 		"rdf:value": "1754-12-25"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1089,38 +1151,42 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102351539",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-06-19T14:23:51.539Z",
-	"dcterms:issued": "2020-06-19T14:58:34.543Z",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539900",
+	"type": "oa:Annotation",
+	"dcterms:created": "2021-01-20T19:25:39.900Z",
+	"dcterms:modified": "2021-01-20T19:25:39.900Z",
 	"dcterms:creator": {
-		"@id": "https://github.com/schaumju",
+		"@id": "https://github.com/katiefaull",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "Justin Schaumberger",
-		"foaf:nick": "schaumju"
+		"cwrc:hasName": "KATHERINE  FAULL",
+		"foaf:nick": "katiefaull"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102351539#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539900#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20200619102351539#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?date_annotation_20210120142539900#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[5]/date"
 		}
@@ -1130,14 +1196,174 @@
 		"rdf:value": "1754-12-25"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
 	}
-}
-]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001912716",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:19:12.716Z",
+	"dcterms:modified": "2023-03-20T04:19:12.716Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001912716#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001912716#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q47164049",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-03-20T04:19:49.342Z",
+	"dcterms:modified": "2023-03-20T04:19:49.342Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/alott_mary.xml?place_annotation_20230320001949342#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5364628",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Mary Alott</persName>
@@ -1153,371 +1379,186 @@
 			<div type="memoir">
 				<head>Mary Alott</head>
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-01.jpg"/>
 					<p>
-						
-							<persName ref="#mlper000217" cert="high" type="real">Mary Alott</persName> <lb/>
-							Was <name event="birth" when-iso="1734-12-12">born</name> at <placeName ref="#mlpla000100" cert="high">Barksland in the Parish of
-<lb/>
-Elland</placeName>. On the <date calendar="Gregorian" when="1734-12-12" cert="high">12<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> 1734 N S.</date>
-						</p>
+						<persName ref="#mlper000217" cert="high" type="real">Mary Alott</persName>
+						<lb/> Was <name event="birth" when-iso="1734-12-12">born</name> at <placeName ref="#mlpla000100" cert="high"><placeName key="Barkisland Hall" ref="http://www.wikidata.org/entity/Q47164049" cert="high">Barksland</placeName> in the <placeName key="Elland" ref="http://www.wikidata.org/entity/Q5364628">Parish of <lb/> Elland</placeName></placeName>. On the <date calendar="Gregorian" when="1734-12-12" cert="high">12<hi rend="superscript">th</hi> of Dec<hi rend="superscript">r</hi> 1734 N S.</date>
+					</p>
+					<p> When <date cert="medium" when="1737">she was about Three years old</date> her <lb/> Father dyed &amp; she liv'd with her Mother &amp; <lb/> her Aunt (Namely <persName cert="high" type="real">Betty Midgley</persName>) who <lb/> jointly Nurs'd &amp; Maintain'd <add place="above">her</add> till <date cert="medium" when="1741">she was
+							<lb/> about seven</date>, then her Mother being again <lb/> Married her Aunt left them took a Room <lb/> &amp; design'd to live by herself, But <add place="above"><persName ref="#mlper000217" cert="high" type="real">Mary</persName></add> not being <lb/> at all willing to be left behind often <name emotion="begg'd">begg'd</name>
+						<lb/> her Aunt to take her with her, which <lb/> according<add place="above">ly</add> in a few weeks after she Willlingly <lb/> did, &amp; Cared for her as her own. </p>
+					<p> When <date cert="medium" when="1743">she was about Nine years old</date> she <lb/> by the Drawing of the <roleName type="honorific">Holy Ghost</roleName> was inclin'd <lb/>
+						to hear the Gospel which she of her own free <lb/> accord begun &amp; Continued Constantly to do. </p>
+					<p> Some time after her Aunt had a mind for <lb/> the more Convenince of hearing the <orgName religion="Moravian Church">B<hi rend="superscript">rn</hi>
+							<lb/></orgName> to live nearer <placeName ref="#mlpla000122" cert="high">Smith House</placeName> &amp; she made it <lb/> out with the <orgName religion="Moravian Church">Brethren</orgName> that <persName ref="#mlper000217" cert="high" type="real">Mary</persName> should also <lb/> come &amp; remain with her which she was <name emotion="very glad">very <lb/> glad</name> off. </p>
+					<p> In <date when="1748-07" cert="high">July 1748</date> they Both of them together got <lb/>
+						<name event="entrance" when-iso="1748-07">leave to live with the <orgName en="single sisters choir">Single Sisters</orgName> in <placeName ref="#mlpla000097" cert="high">Clack-
+								<lb/> Heaton</placeName></name> &amp; she remain'd there &amp; in the same <lb/>
+						<orgName en="œconomy">Oconomy</orgName> at <placeName ref="#mlpla000098" cert="high">Tyre-sell-Hall</placeName> till we came <lb/> in the <placeName cert="high">Choir
+							House</placeName> (Which I shall take <lb/> Notice of afterwards) </p>
 					<p>
-							When <date cert="medium" when="1737">she was about Three years old</date> her <lb/>
-							Father dyed &amp; she liv'd with her Mother &amp; <lb/>
-							her Aunt (Namely <persName cert="high" type="real">Betty Midgley</persName>) who <lb/>
-							jointly Nurs'd &amp; Maintain'd <add place="above">her</add> till <date cert="medium" when="1741">she was <lb/>
-							about seven</date>, then her Mother being again <lb/>
-							Married her Aunt left them took a Room <lb/>
-							&amp; design'd to live by herself, But <add place="above"><persName ref="#mlper000217" cert="high" type="real">Mary</persName></add> not being <lb/>
-							at all willing to be left behind often begg'd  <lb/>
-							her Aunt to take her with her, which  <lb/>
-							according<add place="above">ly</add> in a few weeks after she
-								Willlingly <lb/>
-							did, &amp; Cared for her as her own.
-						</p>
-					<p>
-							When <date cert="medium" when="1743">she was about Nine years old</date> she <lb/>
-							by the Drawing of the <roleName type="honorific">Holy Ghost</roleName> was inclin'd <lb/>
-							to hear the Gospel which she of her own free <lb/>
-							accord begun &amp; Continued Constantly to do.
-						</p>
-					<p>
-							Some time after her Aunt had a mind for <lb/>
-							the more Convenince of hearing the <orgName religion="Moravian Church">B<hi rend="superscript">rn</hi>
-<lb/></orgName> to live nearer <placeName ref="#mlpla000122" cert="high">Smith House</placeName> &amp; she made it <lb/>
-							out with the <orgName religion="Moravian Church">Brethren</orgName> that <persName ref="#mlper000217" cert="high" type="real">Mary</persName> should also <lb/>
-							come &amp; remain with her which she was very  <lb/>
-							glad off. 
-						</p>
-					<p>
-							In <date when="1748-07" cert="high">July 1748</date> they Both of them together got <lb/>
-							<name event="entrance" when-iso="1748-07">leave to live with the <orgName en="single sisters choir">Single Sisters</orgName> in <placeName ref="#mlpla000097" cert="high">Clack-
-<lb/>
-Heaton</placeName></name> &amp; she remain'd there &amp; in the same <lb/>
-							<orgName en="œconomy">Oconomy</orgName> at <placeName ref="#mlpla000098" cert="high">Tyre-sell-Hall</placeName> till we came <lb/>
-							in the <placeName cert="high">Choir House</placeName> (Which I shall take <lb/>
-							Notice of afterwards)
-						</p>
-					<p>
-							<date when="1751-04-05" cert="high">In the year 1751 on the 5<hi rend="superscript">th</hi> of April</date>
-								she <lb/>
-							was <name event="reception" when-iso="1751-04-05">receiv'd in the <orgName en="congregation">Congregation</orgName></name> which Pleas'd  
-<note type="catchword">her</note>						
+						<date when="1751-04-05" cert="high">In the year 1751 on the 5<hi rend="superscript">th</hi> of April</date> she <lb/> was <name event="reception" when-iso="1751-04-05">receiv'd in the <orgName en="congregation">Congregation</orgName></name> which <name emotion="pleas'd">Pleas'd</name>
+						<note type="catchword">her</note>
 					</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-02.jpg"/>
+					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-02.jpg"/>
+					<p> her very much. <date when="1753-02-25" cert="high">In 1753 on the 25 of February</date>
+						<lb/> she after many a <name emotion="hearty">Hearty</name>
+						<name emotion="wish">wish</name> &amp; <name emotion="earnest">Earnest</name>
+						<name emotion="longing">longing</name>
+						<lb/> for it was <name event="communion" when-iso="1753-02-25">addmitted to the Lords Supper</name>
+						<lb/>
+						<date notBefore-iso="1753-02-25" when="1753" cert="high">In the same year</date> was <name event="reception" when-iso="1753">Receiv'd from the <orgName en="greater girls choir">Great Girls</orgName>
+							<lb/> to the <orgName en="single sisters choir">Single Sisters Choir</orgName></name>. </p>
+					<p> She has since about 10, or 11, Years Old, <lb/> carried about a <name health="disease">Very Sickly &amp; Weakly Tabernacle</name>
+						<lb/> which she bore <name emotion="without complaint">without Complaint</name>, &amp; being of an <lb/> exceeding shill <name emotion="quiet">quiet</name>, but also very
+						solid &amp; <lb/> sensible <del>Dispossition</del> she was seldom <lb/> heard to speak about any thing except when <lb/> spoken to: But however as we now have found she
+						<lb/> took good Notice of ever thing &amp; Ponder<add place="above">'d</add> them in <lb/> her Heart. </p>
 					<p>
-						
-							her very much. <date when="1753-02-25" cert="high">In 1753 on the 25 of February</date> <lb/>
-							she after many a Hearty wish &amp; Earnest longing <lb/>
-							for it was <name event="communion" when-iso="1753-02-25">addmitted to the Lords Supper</name> <lb/>
-							<date notBefore-iso="1753-02-25" when="1753" cert="high">In the same year</date> was <name event="reception" when-iso="1753">Receiv'd from the <orgName en="greater girls choir">Great Girls</orgName>
-<lb/>
-to the <orgName en="single sisters choir">Single Sisters Choir</orgName></name>.
-						</p>
+						<date when="1754-02" cert="high">In February this present year</date>
+						<name health="disease">she had the <lb/> Small-Pox</name> which not only went very hardly <lb/> with her But also left that remaining on her <lb/> which Render'd her Much
+						more Weak &amp; Sickly <lb/> than before a Consumption appearing thro' her <lb/> Whole Constitution: It was manifest to all about her <lb/> she could not hold it out long,
+						tho she herself wo'd <lb/> commonly say when ask'd about it "that she was <lb/>
+						<name emotion="pretty well">pretty well</name> Nevertheless what she inwardly felt <lb/> Brought her <add place="above">also</add> upon the thoughts &amp; consideration <lb/>
+						of going to Our <roleName type="honorific">Saviour</roleName> (as she afterward, de- <lb/> clar'd with <name emotion="joy">Joy</name>.) </p>
 					<p>
-							She has since about 10, or 11, Years Old, <lb/>
-							carried about a <name health="disease">Very Sickly &amp; Weakly Tabernacle</name> <lb/>
-							which she bore without Complaint, &amp; being of an  <lb/>
-							exceeding shill quiet, but also very solid &amp; <lb/>
-							sensible <del>Dispossition</del> she was seldom <lb/>
-							heard to speak about any thing except when <lb/>
-							spoken to: But however as we now have found she <lb/>
-							took good Notice of ever thing &amp; Ponder<add place="above">'d</add> them in  <lb/>
-							her Heart.
-						</p>
-					<p>
-							<date when="1754-02" cert="high">In February this present year</date> <name health="disease">she had the
-<lb/>
-Small-Pox</name> which not only went very hardly <lb/>
-							with her But also left that remaining on her <lb/>
-							which Render'd her Much more Weak &amp; Sickly <lb/>
-							than before a Consumption appearing thro' her <lb/>
-							Whole Constitution: It was manifest to all about her <lb/>
-							she could not hold it out long, tho she herself wo'd <lb/>
-							commonly say when ask'd about it "that she was <lb/>
-							pretty well Nevertheless what she inwardly felt <lb/>
-							Brought her <add place="above">also</add> upon the thoughts &amp;
-								consideration  <lb/>
-							of going to Our <roleName type="honorific">Saviour</roleName> (as she afterward, de- <lb/>
-							clar'd with Joy.) 
-						</p>
-					<p>
-							<date when="1754-06" cert="high">In July</date> she was a little Better but the disor- <lb/>
-							der Presently return'd more strong than ever: <lb/>
-							Yet she continued to walk about till the 22d of <lb/>
-							November, then she entirely took her to her <lb/>
-							Room &amp; soon after to her Bed. 
-						</p>
-					<p>
-							Now she freely acknowledgeing that she <lb/>
-							had all this summer last, been in a Continual <lb/>
-							meditation &amp; Consultation with her Dear <roleName type="honorific">Saviour</roleName>
-							<note type="catchword">about</note> 
-						
+						<date when="1754-06" cert="high">In July</date> she was a little Better but the disor- <lb/> der Presently return'd more strong than ever: <lb/> Yet she continued to walk
+						about till the 22d of <lb/> November, then she entirely took her to her <lb/> Room &amp; soon after to her Bed. </p>
+					<p> Now she freely acknowledgeing that she <lb/> had all this summer last, been in a Continual <lb/> meditation &amp; Consultation with her Dear <roleName type="honorific">Saviour</roleName>
+						<note type="catchword">about</note>
 					</p>
 					<pb/>
+					<p> about her going to him, having <add place="above">all</add> along been Senscible <lb/> of it for herself that she should not stay here <lb/> but the Reason why she would not
+						confess it <lb/>
+						<name emotion="openly">openly</name> was because she was <name emotion="affraid">affraid</name> she should <lb/> not go as soon as she <name emotion="wish'd">wish'd</name>
+						for. </p>
 					<p>
-						
-							about her going to him, having <add place="above">all</add> along
-								been Senscible <lb/>
-							of it for herself that she should not stay here <lb/>
-							but the Reason why she would not confess it <lb/>
-							openly was because she was affraid she should <lb/>
-							not go as soon as she wish'd for. 
-						</p>
+						<name health="disease">She was now exceeding Bad</name>, but quite <name emotion="brisk">Brisk</name>
+						<lb/>
+						<name emotion="in her spirits">in <add place="above">her</add> Spirits</name> &amp; <name emotion="chearful">chearful</name>
+						<name emotion="in heart">in Heart</name> &amp; Soul, &amp; as before <lb/> even Ever since we have known her she has <lb/> been us'd to speak very little, so Now to the Con-
+						<lb/> trary, <add place="above">she</add> spoke a great deal especialy to these <lb/> with whom she had had an intimiate acquaintance <lb/> &amp; Perticularly with Our dear
+							<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName>
+						<lb/> who very faithfully visited her all the time </p>
 					<p>
-							<name health="disease">She was now exceeding Bad</name>, but quite Brisk <lb/>
-							in <add place="above">her</add> Spirits &amp; chearful in Heart &amp;
-								Soul, &amp; as before <lb/>
-							even Ever since we have known her she has <lb/>
-							been us'd to speak very little, so Now to the Con- <lb/>
-							trary, <add place="above">she</add> spoke a great deal especialy to
-								these <lb/>
-							with whom she had had an intimiate acquaintance <lb/>
-							&amp; Perticularly with Our dear <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> <lb/>
-							who very faithfully visited her all the time
-						</p>
-					<p>
-							<date when="1754-12-12" cert="high">On the 12<hi rend="superscript">th</hi></date> instant she had her
-								Birth-Day <lb/>
-							(being 20; years old,) when many Sisters who vis- <lb/>
-							ited her Express'd their Hearty wishes for her <lb/>
-							which she receiv'd, &amp; answer'd with much satis- <lb/>
-							faction: In the afternoon her Class made <lb/>
-							her a Very Pretty <name event="love feast" when-iso="1754-12-12">Love-Feast</name> which rejoic- <lb/>
-							ed her Exceedingly &amp; in which she spoke of <lb/>
-							her Departure with such Pleasure &amp; Delight <lb/>
-							as she never had done before; she spoke with <lb/>
-							<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">sister</roleName> Mary</persName> &amp; Made out Ev'ry thing that was in  <lb/>
-							her Mind about her Burial, as well as all <lb/>
-							the Hearty wishes &amp; desires of her heart for <lb/>
-							her Class &amp; c. In short she said that this had <lb/>
-							been to her the Happiest day she ever had <lb/>
-							had in all her life. This day &amp; forward she  <lb/>
-							unbosom'd &amp; declar'd what she had (Perhaps) <lb/>
-							kept Treasur'd up in her Heart to this Opper- <lb/>
-							tunity for some years Past, She spoke of her  <lb/>
-							various Troubles &amp; Anxieties in Particular Circum- 
-							<note type="catchword">-stances</note>
-						
+						<date when="1754-12-12" cert="high">On the 12<hi rend="superscript">th</hi></date> instant she had her Birth-Day <lb/> (being 20; years old,) when many Sisters who vis- <lb/>
+						ited her Express'd their <name emotion="hearty">Hearty</name>
+						<name emotion="wishes">wishes</name> for her <lb/> which she receiv'd, &amp; answer'd with much <name emotion="satisfaction">satis- <lb/> faction</name>: In the afternoon her
+						Class made <lb/> her a Very Pretty <name event="love feast" when-iso="1754-12-12">Love-Feast</name> which <name emotion="rejoiced">rejoic- <lb/> ed</name> her Exceedingly
+						&amp; in which she spoke of <lb/> her Departure with such <name emotion="pleasure">Pleasure</name> &amp; <name emotion="delight">Delight</name>
+						<lb/> as she never had done before; she spoke with <lb/>
+						<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">sister</roleName> Mary</persName> &amp; Made out Ev'ry thing that was in <lb/> her Mind about
+						her Burial, as well as all <lb/> the <name emotion="hearty">Hearty</name>
+						<name emotion="wishes">wishes</name> &amp; <name emotion="desires">desires</name>
+						<name emotion="of her heart">of her heart</name> for <lb/> her Class &amp; c. In short she said that this had <lb/> been to her the <name emotion="happiest">Happiest</name>
+						day she ever had <lb/> had in all her life. This day &amp; forward she <lb/> unbosom'd &amp; declar'd what she had (Perhaps) <lb/> kept Treasur'd up in her Heart to this
+						Opper- <lb/> tunity for some years Past, She spoke of her <lb/> various <name emotion="troubles">Troubles</name> &amp; <name emotion="anxieties">Anxieties</name> in
+						Particular Circum- <note type="catchword">-stances</note>
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-03.jpg"/>
+					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-03.jpg"/>
+					<p> Circumstances, such as no body had perciev'd on her <lb/> with <del>with</del> a <name emotion="chearful">Chearful</name> &amp; <name emotion="thankful">Thankful</name>
+						<name emotion="heart">Heart</name>, being <lb/> bowed with <name emotion="shame">Shame</name> before him will whom she <lb/> had spent many <name emotion="happy">happy</name>
+						Moments, days &amp; years </p>
 					<p>
-						
-							Circumstances, such as no body had perciev'd on her <lb/>
-							with <del>with</del> a Chearful &amp; Thankful Heart, being <lb/>
-							bowed with Shame before him will whom she <lb/>
-							had spent many happy Moments, days &amp; years 
-						</p>
-					<p>
-							<date cert="high" when="1754-12-15">About the 15<hi rend="superscript">th</hi></date> it being Two years
-								since <lb/>
-							we came in <add place="above">our</add> <placeName cert="high">Choir House</placeName> she told <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> <lb/>
-							Ev'rything how she had been &amp; was in <placeName ref="#mlpla000098" cert="high">Tyre-
-<lb/>
-sell-Hall</placeName> at that time, What Anxiety &amp; <lb/>
-							Concern she felt about coming in the <placeName cert="high">Choir House</placeName> <lb/>
-							fearing Least she should not have leave to  <lb/>
-							come &amp; how she had in Shillness Pray'd &amp; wept <lb/>
-							before her dear <roleName type="honorific">Lamb</roleName>, that he would give <lb/>
-							her Leave to come &amp; that if she should have  <lb/>
-							that favour that he would grant her the feel- <lb/>
-							ing &amp; nearness of his Wounds that she might <lb/>
-							be faithful to him therein &amp;c. Nay his almost <lb/>
-							incredible, how quick &amp; active her Memory <lb/>
-							was over this matter she not only gave <persName cert="high" ref="#mlper000702" type="real"><roleName type="honorific">Sis<hi rend="superscript">r</hi>
-<lb/></roleName> Mary</persName> an account of herself but of all the  <lb/>
-							Sisters in Tyre-sell-Hall at that time, she  <lb/>
-							(unperceiv'd) had taken Notice of ev'ry One, <lb/>
-							conduct words &amp; behaviour, But to return <lb/>
-							she also Express'd herself in a very Lively <lb/>
-							manner with grace &amp; Understanding <hi rend="underline">how</hi> <lb/>
-							Exceedingly she was Rejoiced when she was <lb/>
-							assured she should come here. She at the  <lb/>
-							same time viz' the 15<hi rend="superscript">th</hi> or 16<hi rend="superscript">th</hi> Instant spoke w<hi rend="superscript">th</hi> <lb/>
-							with an inly Tender feeling about the <orgName en="single sisters choir">Choir</orgName> <lb/>
-							&amp; Choir Grace what she has felt since <lb/>
-							she was Receiv'd in the <orgName en="single sisters choir">Single Sisters Choir</orgName> <lb/>
-							&amp; what her dear Bridegroom has done from <lb/>
-							time to time on her therein, &amp; Perticularly <lb/>
-							in this Present Year, together with the Esteem 
-							<note type="catchword">&amp;</note>
-						
+						<date cert="high" when="1754-12-15">About the 15<hi rend="superscript">th</hi></date> it being Two years since <lb/> we came in <add place="above">our</add>
+						<placeName cert="high">Choir House</placeName> she told <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName>
+						<lb/> Ev'rything how she had been &amp; was in <placeName ref="#mlpla000098" cert="high">Tyre- <lb/> sell-Hall</placeName> at that time, What <name emotion="anxiety">Anxiety</name> &amp; <lb/>
+						<name emotion="concern">Concern</name> she felt about coming in the <placeName cert="high">Choir House</placeName>
+						<lb/>
+						<name emotion="fearing">fearing</name> Least she should not have leave to <lb/> come &amp; how she had in Shillness Pray'd &amp; <name emotion="wept">wept</name>
+						<lb/> before her dear <roleName type="honorific">Lamb</roleName>, that he would give <lb/> her Leave to come &amp; that if she should have <lb/> that favour that he would
+						grant her the feel- <lb/> ing &amp; nearness of his Wounds that she might <lb/> be faithful to him therein &amp;c. Nay his almost <lb/> incredible, how quick &amp; active
+						her Memory <lb/> was over this matter she not only gave <persName cert="high" ref="#mlper000702" type="real"><roleName type="honorific">Sis<hi rend="superscript">r</hi>
+								<lb/></roleName> Mary</persName> an account of herself but of all the <lb/> Sisters in Tyre-sell-Hall at that time, she <lb/> (unperceiv'd) had taken Notice of ev'ry
+						One, <lb/> conduct words &amp; behaviour, But to return <lb/> she also Express'd herself in a <name emotion="very lively">very Lively</name>
+						<lb/> manner with <name emotion="grace">grace</name> &amp; Understanding <hi rend="underline">how</hi>
+						<lb/> Exceedingly she was <name emotion="rejoiced">Rejoiced</name> when she was <lb/> assured she should come here. She at the <lb/> same time viz' the 15<hi rend="superscript">th</hi> or 16<hi rend="superscript">th</hi> Instant spoke w<hi rend="superscript">th</hi>
+						<lb/> with an inly <name emotion="tender feeling">Tender feeling</name> about the <orgName en="single sisters choir">Choir</orgName>
+						<lb/> &amp; Choir <name emotion="grace">Grace</name> what she has felt since <lb/> she was Receiv'd in the <orgName en="single sisters choir">Single Sisters Choir</orgName>
+						<lb/> &amp; what her dear Bridegroom has done from <lb/> time to time on her therein, &amp; Perticularly <lb/> in this Present Year, together with the <name emotion="esteem">Esteem</name>
+						<note type="catchword">&amp;</note>
 					</p>
 					<pb/>
-					<p>
-						
-							&amp; Satisfaction she has had for, &amp; in the <placeName cert="high">Choir House</placeName> <lb/>
-							this she did from time to time Repeat And <lb/>
-							also she would allways take notice of many <lb/>
-							Sisters whom she saw &amp; Reflected on their <lb/>
-							Situation at Present and time Past &amp; when <lb/>
-							<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> came to her then she would sell <lb/>
-							her all her Mind about them &amp; Especialy the <lb/>
-							concern she had had, about her Class under <lb/>
-							some heavy Circumstances some Months agoe <lb/>
-							&amp; being ask'd why she did not speak at such <lb/>
-							time what she had in her mind? She answer'd <lb/>
-							"that she always thought herself too mean <lb/>
-							&amp; too insignificant to Speak Her mind about <lb/>
-							any thing, But she had instead of that gone <lb/>
-							somewhere in a Corner &amp; Wept for them be <lb/>
-							fore her dear <roleName type="honorific">Saviour</roleName> &amp; Pray'd him that he <lb/>
-							would Bless Preserve &amp; keep them &amp; Her <lb/>
-							&amp; that they Might all become a Joy to Him 
-						</p>
-					<p>
-							Once in <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName>'s Presence after having <lb/>
-							fully spoken &amp; Open'd all her Mind to her a <lb/>
-							bout Many things, she took Notice that her <lb/>
-							Aunt (who faithfuly tended &amp; Nurs'd <lb/>
-							her all the time of Sickness) was a Cry- <lb/>
-							ing: So she demanded the Reason of her why <lb/>
-							she wept, telling her she had no Ocassion <lb/>
-							to weep for her since "says she" I am fully <lb/>
-							Satisfied &amp; Reconciled both with My <roleName type="honorific">Lamb</roleName> &amp; <lb/>
-							&amp; with all my Sisters &amp; have spoke my mind  <lb/>
-							about Everything &amp; Now am Ready to go  <lb/>
-							whenever he Pleases <lb/>
-						</p>
-					<p>
-							Thus she Continued under a Deep Sense <lb/>
-							&amp; Speaking of herself &amp; her Choir &amp; Often <lb/>
-							Expressing her Desire to go. But yet she 
-							<note type="catchword">wo'd</note> 
-						
+					<p> &amp; <name emotion="satisfaction">Satisfaction</name> she has had for, &amp; in the <placeName cert="high">Choir House</placeName>
+						<lb/> this she did from time to time Repeat And <lb/> also she would allways take notice of many <lb/> Sisters whom she saw &amp; Reflected on their <lb/> Situation at
+						Present and time Past &amp; when <lb/>
+						<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> came to her then she would sell <lb/> her all her Mind about
+						them &amp; Especialy the <lb/>
+						<name emotion="concern">concern</name> she had had, about her Class under <lb/> some <name emotion="heavy">heavy</name> Circumstances some Months agoe <lb/> &amp; being ask'd
+						why she did not speak at such <lb/> time what she had in her mind? She answer'd <lb/> "that she always thought herself too mean <lb/> &amp; too insignificant to Speak Her
+						mind about <lb/> any thing, But she had instead of that gone <lb/> somewhere in a Corner &amp; <name emotion="wept">Wept</name> for them be <lb/> fore her dear <roleName type="honorific">Saviour</roleName> &amp; Pray'd him that he <lb/> would <name emotion="bless">Bless</name> Preserve &amp; keep them &amp; Her <lb/> &amp; that they Might
+						all become a <name emotion="joy">Joy</name> to Him </p>
+					<p> Once in <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName>'s Presence after having <lb/> fully spoken &amp;
+						Open'd all her Mind to her a <lb/> bout Many things, she took Notice that her <lb/> Aunt (who faithfuly tended &amp; Nurs'd <lb/> her all the time of Sickness) was a <name emotion="crying">Cry- <lb/> ing</name>: So she demanded the Reason of her why <lb/> she <name emotion="wept">wept</name>, telling her she had no Ocassion <lb/> to <name emotion="weep">weep</name> for her since "says she" I am fully <lb/>
+						<name emotion="satisfied">Satisfied</name> &amp; Reconciled both with My <roleName type="honorific">Lamb</roleName> &amp; <lb/> &amp; with all my Sisters &amp; have spoke my
+						mind <lb/> about Everything &amp; Now am Ready to go <lb/> whenever he <name emotion="pleases">Pleases</name>
+						<lb/>
+					</p>
+					<p> Thus she Continued under a Deep Sense <lb/> &amp; Speaking of herself &amp; her Choir &amp; Often <lb/> Expressing her <name emotion="desire">Desire</name> to go. But yet she
+							<note type="catchword">wo'd</note>
 					</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-04.jpg"/>
-					<p>
-						
-							would Secretly sometimes say to her Aunt that <lb/>
-							she believ'd she should live till <date when="1754-12-25" cert="high">Christmas</date>, but <lb/>
-							If our <roleName type="honorific">Saviour</roleName> Pleasd to take her before, she <lb/>
-							would be glad 
-						</p>
-					<p>
-							Sunday Last about 11 or 12 in the Evening <lb/>
-							<name health="disease">she was Siez'd with the monst Violent pain</name> <lb/>
-							So that <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> who at the same time <lb/>
-							watch'd with her Perceiv'd such a Senscible <lb/>
-							Alteration not only by her Excessive Pains <lb/>
-							but also by the Motion &amp; Alteration of all <lb/>
-							her Faculties that she thought she Realy would  <lb/>
-							go, &amp; thereupon ask'd her if she was now quite <lb/>
-							Ready. She with Pleasure &amp; Serenity answer'd <lb/>
-							"yes! I am Quite Ready now &amp; shall be glad to <lb/>
-							go to my <roleName type="honorific">Lamb</roleName> as soon as he Pleases" 
-						</p>
-					<p>
-							However she reviv'd a little &amp; then desired <lb/>
-							2 verses which she named to be sung for her <lb/>
-							viz Appear as her Protector who turns to <lb/>
-							Joy all Tears &amp; When she shall get Per- <lb/>
-							mission to leave this Mortal Tent, From Pains <lb/>
-							&amp; Griefs Dissmission Thy self Just then present <lb/>
-							And then says she "Sing Hush stir not up <lb/>
-							the friend of Christ, Wake not the Lovely 
-							Bride &amp;c 
-						</p>
-					<p>
-							She was very Bad all Night &amp; Lay like <lb/>
-							one Expireing till towards Night on Monday <lb/>
-							Yet she Bore her Pains with Much more <lb/>
-							Patience <add place="above">than</add> any one could Expect who did
-								but <lb/>
-							<hi rend="underline">see</hi> how she was Munday night she was
-								some- <lb/>
-							what Easier &amp; appear'd to us as if she might <lb/>
-							Possibly continue a few days, But if she heard <lb/>
-							any one take notice of the near approach
-							<note type="catchword">of</note> 
-						
+					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-04.jpg"/>
+					<p> would Secretly sometimes say to her Aunt that <lb/> she believ'd she should live till <date when="1754-12-25" cert="high">Christmas</date>, but <lb/> If our <roleName type="honorific">Saviour</roleName>
+						<name emotion="pleasd">Pleasd</name> to take her before, she <lb/> would be <name emotion="glad">glad</name>
+					</p>
+					<p> Sunday Last about 11 or 12 in the Evening <lb/>
+						<name health="disease">she was Siez'd with the monst <name emotion="violent pain">Violent pain</name></name>
+						<lb/> So that <persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sister</roleName> Mary</persName> who at the same time <lb/> watch'd with her
+						Perceiv'd such a Senscible <lb/> Alteration not only by her <name emotion="excessive pains">Excessive Pains</name>
+						<lb/> but also by the Motion &amp; Alteration of all <lb/> her Faculties that she thought she Realy would <lb/> go, &amp; thereupon ask'd her if she was now quite <lb/>
+						Ready. She with <name emotion="pleasure">Pleasure</name> &amp; <name emotion="serenity">Serenity</name> answer'd <lb/> "yes! I am Quite Ready now &amp; shall be <name emotion="glad">glad</name> to <lb/> go to my <roleName type="honorific">Lamb</roleName> as soon as he <name emotion="pleases">Pleases</name>" </p>
+					<p> However she reviv'd a little &amp; then <name emotion="desired">desired</name>
+						<lb/> 2 verses which she named to be sung for her <lb/> viz Appear as her Protector who turns to <lb/>
+						<name emotion="joy">Joy</name> all <name emotion="tears">Tears</name> &amp; When she shall get Per- <lb/> mission to leave this Mortal Tent, From <name emotion="pains">Pains</name>
+						<lb/> &amp; <name emotion="griefs">Griefs</name> Dissmission Thy self Just then present <lb/> And then says she "Sing Hush stir not up <lb/> the friend of Christ, Wake not
+						the Lovely Bride &amp;c </p>
+					<p> She was very Bad all Night &amp; Lay like <lb/> one Expireing till towards Night on Monday <lb/> Yet she Bore her <name emotion="pains">Pains</name> with Much more <lb/>
+						<name emotion="patience">Patience</name>
+						<add place="above">than</add> any one could Expect who did but <lb/>
+						<hi rend="underline">see</hi> how she was Munday night she was some- <lb/> what Easier &amp; appear'd to us as if she might <lb/> Possibly continue a few days, But if she
+						heard <lb/> any one take notice of the near approach <note type="catchword">of</note>
 					</p>
 					<pb/>
-					<p>
-						
-							of <lb/>
-							<date when="1754-12-25" cert="high">Christmass</date> &amp; of the Joy we Expected in the Birth <lb/>
-							day of our <roleName type="honorific">Saviour</roleName> She would readly answer <lb/>
-							them that if our <roleName type="honorific">Saviour</roleName> only was Pleas'd to let <lb/>
-							her go to him before or in the Holidays She <lb/>
-							should have a far Better Christmass than  <lb/>
-							We and that she would be glad of.
-						</p>
-					<p>
-							Tusday Night she Alter'd again &amp; on Wed- <lb/>
-							nesday Morning <name health="disease">was much Worse.</name> In the <lb/>
-							Forenoon we thought again she would Certain- <lb/>
-							ly Depart, But she continued and lay severly <lb/>
-							Oppresse'd with the <name health="disease">Most Excessive Pangs thro'
-<lb/>
-Ev'ry Limb &amp; Fibre</name>, Speaking very little, But <lb/>
-							Panting in Stillness for the Happy Moment <lb/>
-							when she should get the Departing Kiss, And  <lb/>
-							when Sometimes her Tabernacle seem'd to be <lb/>
-							almost Rack'd in Pieces with the most shock- <lb/>
-							ing &amp; Excessive Pain as almost could be thought <lb/>
-							Unpossibl a Human Creature could Bear. she  <lb/>
-							<del>herself was concern'd how she</del> would say "Ah! how  <lb/>
-							shall I hold it Out Why does he not fetch me <lb/>
-							<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sis</roleName> Mary</persName> then would remind her of the Hard <lb/>
-							Toil &amp; Conflict of our <roleName type="honorific">Saviour</roleName> which he bore <lb/>
-							in his Humanity Saying My dear Heart it <lb/>
-							is but a few Minutes &amp; you will be with  <lb/>
-							him, She that Moment was again in a  <lb/>
-							Calm Serenity<add place="above">Heavenly</add> &amp; Peace <add place="above">&amp;</add> Said O! yes he soon <lb/>
-							will fetch me to his Embraces, Which she <lb/>
-							Obtain'd Under these Words, The <roleName type="honorific">Lamb</roleName> w<hi rend="superscript">th</hi> <lb/>
-							all his Grief &amp; Smart Remains the Pleasure <lb/>
-							of the Heart Long as it Moves in Thee <lb/>
-							And Now when Here it Beats no more <lb/>
-							There where the Spear His Side did  <lb/>
-							bore thou Last thy Place Etneraly and 
-						
-					</p>
+					<p> of <lb/>
+						<date when="1754-12-25" cert="high">Christmass</date> &amp; of the <name emotion="joy">Joy</name> we Expected in the Birth <lb/> day of our <roleName type="honorific">Saviour</roleName> She would readly answer <lb/> them that if our <roleName type="honorific">Saviour</roleName> only was <name emotion="pleas'd">Pleas'd</name> to let
+						<lb/> her go to him before or in the Holidays She <lb/> should have a far Better Christmass than <lb/> We and that she would be <name emotion="glad">glad</name> of. </p>
+					<p> Tusday Night she Alter'd again &amp; on Wed- <lb/> nesday Morning <name health="disease">was much Worse.</name> In the <lb/> Forenoon we thought again she would Certain-
+						<lb/> ly Depart, But she continued and lay severly <lb/> Oppresse'd with the <name health="disease">Most Excessive Pangs thro' <lb/> Ev'ry Limb &amp; Fibre</name>, Speaking
+						very little, But <lb/> Panting in Stillness for the <name emotion="happy">Happy</name> Moment <lb/> when she should get the Departing Kiss, And <lb/> when Sometimes her
+						Tabernacle seem'd to be <lb/> almost Rack'd in Pieces with the <name emotion="most shocking">most shock- <lb/> ing</name> &amp; <name emotion="excessive pain">Excessive
+							Pain</name> as almost could be thought <lb/> Unpossibl a Human Creature could Bear. she <lb/>
+						<del>herself was concern'd how she</del> would say "Ah! how <lb/> shall I hold it Out Why does he not fetch me <lb/>
+						<persName ref="#mlper000702" cert="high" type="real"><roleName type="honorific">Sis</roleName> Mary</persName> then would remind her of the Hard <lb/> Toil &amp; Conflict of
+						our <roleName type="honorific">Saviour</roleName> which he bore <lb/> in his Humanity Saying My dear Heart it <lb/> is but a few Minutes &amp; you will be with <lb/> him,
+						She that Moment was again in a <lb/>
+						<name emotion="calm">Calm</name>
+						<name emotion="serenity">Serenity</name><add place="above">Heavenly</add> &amp; <name emotion="peace">Peace</name>
+						<add place="above">&amp;</add> Said O! yes he soon <lb/> will fetch me to his Embraces, Which she <lb/> Obtain'd Under these Words, The <roleName type="honorific">Lamb</roleName> w<hi rend="superscript">th</hi>
+						<lb/> all his <name emotion="grief">Grief</name> &amp; Smart Remains the <name emotion="pleasure">Pleasure</name>
+						<lb/>
+						<name emotion="of the heart">of the Heart</name> Long as it Moves in Thee <lb/> And Now when Here it Beats no more <lb/> There where the Spear His Side did <lb/> bore thou
+						Last thy Place Etneraly and </p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-05.jpg"/>
+					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_SS_12AllotMary-05.jpg"/>
 					<p>
-						
-							<name event="death" when-iso="1754-12-25">so she sweetly went to sleep in the Arms of
-<lb/>
-her Lover about 5 o'clock in the Evening
-<lb/>
-on Christmas Day</name>. 
-						</p>
-					<p>
-							It is to be Oberv'd that this dear Heart <lb/>
-							was the Only One <orgName en="greater girls choir">Great Girl</orgName> in all the  <lb/>
-							Oconomies was One of the first that was <lb/>
-							<name event="reception">Receiv'd in the <orgName en="congregation">Congregation</orgName></name> The Only One <lb/>
-							that came in the <placeName cert="high">Choir House</placeName> at first <lb/>
-							<name event="communion">She was the first that was admitted to the
-<lb/>
-Sacrament</name>. And Now the first that is gone <lb/>
-							to Our saviour. Where she Rests from all her <lb/>
-							Pain: And has Left behind her the Char- <lb/>
-							acter of an Honest Upright Unaffected <lb/>
-							&amp; Enamour'd Virgin Heart She has been <lb/>
-							Known by those who have liv'd with her from <lb/>
-							her first Commg <add place="above">among us</add> to this Her
-								Dissolution to be <lb/>
-							an Example of Patience of Steadfastness &amp; <lb/>
-							Constancy in her Love to him who first gave <lb/>
-							her Confidence to believe in his Wounds she <lb/>
-							never Once having been Perceiv'd to Draw back <lb/>
-							or to Slight her Calling in Joy or in Smart, <lb/>
-							and Now at last her Mouth has made <del>a</del> <lb/>
-							a Brief Confession of Him Whom her Heart <lb/>
-							has Loved Felt &amp; Believ'd on. 
-						
-					</p>
+						<name event="death" when-iso="1754-12-25">so she <name emotion="sweetly">sweetly</name> went to sleep in the Arms of <lb/> her Lover about 5 o'clock in the Evening <lb/> on
+							Christmas Day</name>. </p>
+					<p> It is to be Oberv'd that this dear Heart <lb/> was the Only One <orgName en="greater girls choir">Great Girl</orgName> in all the <lb/> Oconomies was One of the first that
+						was <lb/>
+						<name event="reception">Receiv'd in the <orgName en="congregation">Congregation</orgName></name> The Only One <lb/> that came in the <placeName cert="high">Choir
+							House</placeName> at first <lb/>
+						<name event="communion">She was the first that was admitted to the <lb/> Sacrament</name>. And Now the first that is gone <lb/> to Our saviour. Where she <name emotion="rests">Rests</name> from all her <lb/>
+						<name emotion="pain">Pain</name>: And has Left behind her the Char- <lb/> acter of an Honest Upright <name emotion="unaffected">Unaffected</name>
+						<lb/> &amp; <name emotion="enamour'd">Enamour'd</name> Virgin Heart She has been <lb/> Known by those who have liv'd with her from <lb/> her first Commg <add place="above">among us</add> to this Her Dissolution to be <lb/> an Example of <name emotion="patience">Patience</name> of Steadfastness &amp; <lb/> Constancy in her <name emotion="love">Love</name> to him who first gave <lb/> her <name emotion="confidence">Confidence</name> to believe in his Wounds she <lb/> never Once having been
+						Perceiv'd to Draw back <lb/> or to Slight her Calling in <name emotion="joy">Joy</name> or in Smart, <lb/> and Now at last her Mouth has made <del>a</del>
+						<lb/> a Brief Confession of Him Whom her <name emotion="heart has">Heart <lb/> has</name>
+						<name emotion="loved">Loved</name> Felt &amp; Believ'd on. </p>
 				</div>
 			</div>
 		</body>

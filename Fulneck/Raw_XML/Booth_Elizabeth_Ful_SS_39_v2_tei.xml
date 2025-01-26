@@ -1,193 +1,300 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns='http://www.tei-c.org/ns/1.0'>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type='main'>Booth_Elizabeth_Ful_SS_39_v2</title>
+				<title>Elizabeth Booth (v. 2): Memoir</title>
+				<funder>The Moravian Lives Project</funder>
+				<principal><persName xml:id="kfaull">Katherine Mary Faull</persName>, Principal Investigator <orgName>Bucknell University</orgName>
+					<address>
+						<addrLine>Lewisburg, Pennsylvania</addrLine>
+					</address>
+					<email>faull@bucknell.edu</email>
+				</principal>
+				<principal><persName>Christer Ahlberger</persName>, Principal Investigator, 2015-2018 <orgName>University of Gothenburg</orgName>
+					<address>
+						<addrLine>Gothenburg, Sweden</addrLine>
+					</address>
+					<email>christer.ahlberger@history.gu.se</email>
+				</principal>
+				<respStmt>
+					<persName xml:id="JAKA1">Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcguire">Michael McGuire</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Developer</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cmasonheimer">Carly Masonheimer</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mcohen">Marleina Cohen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-2019</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jhom">Jess Hom</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2018-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mmcmullen">Morgan McMullen</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and encoder, 2019-2020</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="mgruner">Marita Gruner</persName>
+					<orgName>University of Greifswald</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="skanneman">Sarah Kannemann</persName>
+					<orgName>University of Mainz</orgName>
+					<resp>Encoder</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="jschaumberger">Justin Schaumberger</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant, encoder, ontologist, 2019-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="cpirmann">Carrie Pirmann</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Transkribus, Text Encoding Specialist</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bking">Brian King</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Consultant, Machine Learning</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:id="bacharya">Bhagawat Acharya</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant</resp>
+				</respStmt>
 			</titleStmt>
+			<editionStmt>
+				<edition>
+					<orgName>The Moravian Archives</orgName>
+					<address>
+						<addrLine>41 West Locust Street</addrLine>
+						<addrLine>Bethlehem, PA 18018-2757</addrLine>
+						<addrLine>info@moravianchurcharchives.org</addrLine>
+					</address>
+				</edition>
+			</editionStmt>
 			<publicationStmt>
-				<publisher>tranScriptorium</publisher>
+				<distributor>The Moravian Lives Project</distributor>
+				<availability>
+					<licence>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
 			</publicationStmt>
 			<sourceDesc>
-				<bibl><publisher>TRP document creator: cmp016@bucknell.edu</publisher></bibl>
+				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
+		<profileDesc>
+			<particDesc>
+				<person role="subject">
+					<persName ref="#">Elizabeth Booth</persName>
+				</person>
+			</particDesc>
+			<langUsage>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
 	</teiHeader>
-	<text>
-		<body>
-			<pb n='1'/>
+	<text type="memoir">
+		<body xml:lang="en">
+			<div type="memoir">
+				<head>Elizabeth Booth</head>
+				<div type="page" n="1">
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_39Booth-03.jpg" />
 			<p>
-				<lg>
-					<l>Elizh Booth</l>
-					<l>I was born Sep<hi rend='superscript:true;'>t</hi> 22 1735 at Mirfeild My parents</l>
-					<l>belonged The Church of Eng<hi rend='superscript:true;'>l</hi>, in My younger y<hi rend='superscript:true;'>rs</hi></l>
-					<l>I came into a Concern about My Salvation &amp; according</l>
-					<l>to my way of Thinking had it very much at heart</l>
-					<l>to please the Lord in hopes that he wou&apos;d save</l>
-					<l>me, in My 6 year I had a particular Impression</l>
-					<l>from a dream were I saw our Sav<hi rend='superscript:true;'>r</hi> in My room I</l>
-					<l>went to him &amp; askd him to bless me me, he told me</l>
-					<l> I must be dipt in a fountain &amp; then I shoud be his</l>
-					<l>which promise I never forgot</l>
-					<l>when The B<hi rend='superscript:true;'>rn</hi> came to preach at Fox rojd I went</l>
-					<l>thither with my Mother &amp; got a Love for them</l>
-					<l>when B<hi rend='superscript:true;'>r</hi> Helt came to have the care of the</l>
-					<l>Children His Meeting was a great peculiarly blessed to</l>
-					<l>my heart &amp; in particular when he Spoak of our</l>
-					<l>Sav<hi rend='superscript:true;'>rs</hi> death &amp; Suffering to purchas our Salvation</l>
-					<l>I was very much affected thereby &amp; M &amp; my heart</l>
-					<l>Melted into Tears, as I grew older I felt my corruption</l>
-					<l>&amp; the great propensity I had to Sin Made me very</l>
-					<l>dark &amp; Miserable as I thought no one was so Spoilt</l>
-					<l>&amp; full of Evil as I felt My Self altho I had a Love</l>
-					<l>for Sin yet through disstress of mind I was fridened</l>
-					<l>from commiting of gross Sins &amp; instead of going to our Sav<hi rend='superscript:true;'>r</hi> as a </l>
-					<l>Sinner I fell to Self working &amp; striving to belief</l>
-					<l>but coud attain no consolation for my Soul by it.</l>
-					<l>I often use<hi rend='superscript:true;'>d</hi> to walk alone &amp; pour out my concerns before</l>
-					<l>the Lord but Still preceived that my Missery increased</l>
-					<l>&amp; felt as If I shoud be condemd &amp; lost forever beleiving</l>
-					<l>it Impossable for our Sav<hi rend='superscript:true;'>r</hi> to have Mercy upon such</l>
-					<l>a wretch as Me in this My Disstress<hi rend='superscript:true;'>d</hi> Condition</l>
-				</lg>
+					Elizh Booth <lb />
+					I was born Sep<hi rend="superscript">t</hi> 22 1735 at Mirfeild My parents <lb />
+					belonged The Church of Eng<hi rend="superscript">l</hi>, in My younger y<hi rend="superscript">rs</hi> <lb />
+					I came into a Concern about My Salvation &amp; according <lb />
+					to my way of Thinking had it very much at heart <lb />
+					to please the Lord in hopes that he wou&apos;d save <lb />
+					me, in My 6 year I had a particular Impression <lb />
+					from a dream were I saw our Sav<hi rend="superscript">r</hi> in My room I <lb />
+					went to him &amp; askd him to bless me me, he told me <lb />
+					 I must be dipt in a fountain &amp; then I shoud be his <lb />
+					which promise I never forgot</p>
+					<p>
+					when The B<hi rend="superscript">rn</hi> came to preach at Fox rojd I went <lb />
+					thither with my Mother &amp; got a Love for them <lb />
+					when B<hi rend="superscript">r</hi> Helt came to have the care of the <lb />
+					Children His Meeting was a great <del>peculiarly</del> <add place="above">a great</add> blessed to <lb />
+					my heart &amp; in particular when he Spoak of our <lb />
+					Sav<hi rend="superscript">rs</hi> death &amp; Suffering to purchas our Salvation <lb />
+					I was very much affected thereby &amp; <del>M &amp;</del> my heart <lb />
+					Melted into Tears, as I grew older I felt my corruption <lb />
+					&amp; the great propensity I had to Sin Made me very <lb />
+					dark &amp; Miserable as I thought no one was so Spoilt <lb />
+					&amp; full of Evil as I felt My Self altho I had a Love <lb />
+					for Sin yet through disstress of mind I was fridened <lb />
+					from <add place="above">commiting of</add> gross Sins &amp; instead of going to our Sav<hi rend="superscript">r</hi> as a  <lb />
+					Sinner I fell to Self working &amp; striving to belief <lb />
+					but coud attain no consolation for my Soul by it. <lb />
+					I often use<hi rend="superscript">d</hi> to walk alone &amp; pour out my concerns before <lb />
+					the Lord but Still preceived that my Missery increased <lb />
+					&amp; felt as If I shoud be condemd &amp; lost forever beleiving <lb />
+					it Impossable for our Sav<hi rend="superscript">r</hi> to have Mercy upon such <lb />
+					a wretch as Me in this My Disstress<hi rend="superscript">d</hi> Condition
 			</p>
-			<pb n='2'/>
+				</div>
+				<div type="page" n="2">
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_39Booth-04.jpg" />
 			<p>
-				<lg>
-					<l>I was visited by the Sisters to them I Spoke My whole</l>
-					<l>heart as well as I cou&apos;d &amp; beg&apos;d them to tell me If there</l>
-					<l>was Grace &amp; Mercy for me they comforted &amp; incouraged</l>
-					<l>me Much &amp; told me that it was our Sav<hi rend='superscript:true;'>rs</hi> Grace that </l>
-					<l>made such deep disscoveries of my Sinfulness that</l>
-					<l>he Might Heal &amp; Save Me, but I being of a reasoning </l>
-					<l>turn of Mind Soon doubted of the realitie of this &amp; woud</l>
-					<l>not be comforted any other way then by our Sav<hi rend='superscript:true;'>r</hi></l>
-					<l>Manifesting himself personably to My heart as</l>
-					<l>Clearly as If I saw him with My bodily Eyes</l>
-					<l>I wou&apos;d believe my Sins forgiven.</l>
-					<l>I continued in a heavy Course for a Considerable</l>
-					<l>Time through My unbeleive of Heart not withstanding</l>
-					<l>my dearest Sav<hi rend='superscript:true;'>r</hi> never Left me his poor Child but</l>
-					<l>followed me with unwearied patience but in </l>
-					<l>My 17 year I began to grow tired of my own attempts</l>
-					<l>to help my Self &amp; thought If perish I will now perish</l>
-					<l>at My Sav<hi rend='superscript:true;'>rs</hi> feet</l>
-					<l>one day when I was praying our</l>
-					<l>Sav<hi rend='superscript:true;'>r</hi> to take me as I am I had no sooner given my</l>
-					<l>Self into the hands of my redeemer, but he was pleased to mani</l>
-					<l>fest himself to me, &amp; Stood So Clearly before My heart</l>
-					<l>&amp; Eyes in His wound figure so that I was quite Struck</l>
-					<l>&amp; overcome with his Beauty. here I felt the <unclear>assurance</unclear></l>
-					<l>of the forgiveness of all My Sins by which My great distress</l>
-					<l>of heart &amp; mind was quite removed Oh how I felt I shall</l>
-					<l>never forget my heart was quite captivated by my bloody</l>
-					<l>freind who was now becomed my Only Object I can</l>
-					<l>never Express in words what peace &amp; Life My poor</l>
-					<l>heart injoyd for I Say of a truth when in his</l>
-					<l>blood I saw him Swim a Small drop I did get, which free<hi rend='superscript:true;'>d</hi></l>
-					<l>him to me me to him the first time that we meet,</l>
-				</lg>
+					I was visited by the Sisters to them I Spoke My whole <lb />
+					heart as well as I cou&apos;d &amp; beg&apos;d them to tell me If there <lb />
+					was Grace &amp; Mercy for me they comforted &amp; incouraged <lb />
+					me Much &amp; told me that it was our Sav<hi rend="superscript">rs</hi> Grace that  <lb />
+					made such deep disscoveries of my Sinfulness that <lb />
+					he Might Heal &amp; Save Me, but I being of a reasoning  <lb />
+					turn of Mind Soon doubted of the realitie of this &amp; woud <lb />
+					not be comforted any other way then by our Sav<hi rend="superscript">r</hi> <lb />
+					Manifesting himself personably to My heart as <lb />
+					Clearly as If I saw him with My bodily Eyes <lb />
+					I wou&apos;d believe my Sins forgiven.</p>
+					<p>
+					I continued in a heavy Course for a Considerable <lb />
+					Time through My unbeleive of <del>Heart</del> not withstanding <lb />
+					my dearest Sav<hi rend="superscript">r</hi> never Left me his poor Child but <lb />
+					followed me with unwearied patience but in  <lb />
+					My 17 year I began to grow tired of my own attempts <lb />
+					to help my Self &amp; thought If perish I will now perish <lb />
+					at My Sav<hi rend="superscript">rs</hi> feet</p>
+					<p>
+					one day when I was praying our <lb />
+					Sav<hi rend="superscript">r</hi> to take me as I am I had no sooner given my <lb />
+					Self into <add place="above">the hands of</add> my redeemer, but he was pleased to mani <lb />
+					fest himself to me, &amp; Stood So Clearly before My heart <lb />
+					&amp; Eyes in His wound figure so that I was quite Struck <lb />
+					&amp; overcome with his Beauty. here I felt the <unclear>assurance</unclear> <lb />
+					of the forgiveness of all My Sins by which My great distress <lb />
+					of heart &amp; mind was quite removed Oh how I felt I shall <lb />
+					never forget my heart was quite captivated by my bloody <lb />
+					freind who was now becomed my Only Object I can <lb />
+					never Express in words what peace &amp; Life My poor <lb />
+					heart injoyd for I Say of a truth when in his <lb />
+					blood I saw him Swim a Small drop I did get, which free<hi rend="superscript">d</hi> <lb />
+					him to me me to him the first time that we meet,
 			</p>
+					<cb/>
 			<p>
-				<lg>
-					<l>After This a desire arose in My heart to be receivd</l>
-					<l>into The congregation tho&apos; I felt My Self very unworthy</l>
-					<l>of that Grace Therefore I said nothing of it to my Labourer I Spoke Childlikely to our Sav<hi rend='superscript:true;'>r</hi></l>
-					<l>about it leaving it at the Same Time to his decision</l>
-					<l>being very Timerous of myself Least Least I </l>
-					<l>Shou<hi rend='superscript:true;'>d</hi> not prove unseen &amp; faithfull to that happy lot of Grace to our Sav<hi rend='superscript:true;'>r</hi>, &amp; his people</l>
-					<l>however not withstanding all my unstillness our Sav<hi rend='superscript:true;'>r</hi> Grantd</l>
-					<l>Me that favour on nov. 13<hi rend='superscript:true;'>th</hi> 1752 here I gave My Self anew</l>
-					<l>to become a joy unto our Sav<hi rend='superscript:true;'>r</hi> &amp; his congregation in the</l>
-					<l>beginning of the year 53 I had recieved the <unclear>?????</unclear> news brought</l>
-					<l>Me, that I had leave to come into The Choirhouse &amp; My long</l>
-					<l>wish<hi rend='superscript:true;'>d</hi> for desire was attaind on feb 3. And on the 13of aug<hi rend='superscript:true;'>t</hi></l>
-					<l>I was receved into The Single S<hi rend='superscript:true;'>rs</hi> Choir on this day on this to me</l>
-					<l>Ever Memorable day I devoted myself anew in</l>
-					<l>with Soul &amp; body to My Manhood only Spouse to</l>
-					<l>become a true virgin to him</l>
-					<l>in the year 53 Sep<hi rend='superscript:true;'>t</hi> 9 I had the unspeakable Grace</l>
-					<l>to become a participant of our Sav<hi rend='superscript:true;'>rs</hi> body &amp; blood in</l>
-					<l>the holy Communon, This melted me like wax in</l>
-					<l>the dust befe at My Bridegooms feet Thus I went</l>
-					<l>on in a Cherefull happy Manner &amp; in 1754</l>
-					<l>when Our d<hi rend='superscript:true;'>r</hi> papa &amp; Mamagen was hear I had</l>
-					<l>the favour to be present at that so remarkable</l>
-					<l>Choir Communion what that proved to My heart</l>
-					<l>Im not able to disscribe in words, from that time on</l>
-					<l>the d<hi rend='superscript:true;'>r</hi> Holy Ghost begun a new school with me</l>
-					<l>wherein I became truely more &amp;none Senciable of my</l>
-					<l>Great difference in the Choir point &amp; that there</l>
-					<l>was Many things in Me which wanted be be deadend</l>
-					<l>&amp; Sanctified thro The power of his Corpses &amp; blood</l>
-					<l>my proud &amp; hasty dissposition of mind Cause Often</l>
-					<l>caused me also great UnEaseyness of mind &amp; deprived me</l>
-					<l>often of that Sinnerlike Connection w<hi rend='superscript:true;'>th</hi> My Sister but my</l>
-				</lg>
+					After This a desire arose in My heart to be receivd <lb />
+					into The congregation tho&apos; I felt My Self very unworthy <lb />
+					of that Grace Therefore <add place="above">I said nothing of it to my Labourer</add> I Spoke Childlikely to our Sav<hi rend="superscript">r</hi> <lb />
+					about it leaving it at the Same Time to his decision <lb />
+					being very Timerous of myself Least Least I  <lb />
+					Shou<hi rend="superscript">d</hi> not <del>prove</del> <add place="above">answer</add> &amp; faithfull <del>to that happy lot of Grace</del> to our Sav<hi rend="superscript">r</hi>, &amp; his people <lb />
+					however not withstanding all my unstillness our Sav<hi rend="superscript">r</hi> Grantd <lb />
+					Me that favour on nov. 13<hi rend="superscript">th</hi> 1752 here I gave My Self anew <lb />
+					to become a joy unto our Sav<hi rend="superscript">r</hi> &amp; his congregation in the <lb />
+					beginning of the year 53 I <del>had</del> <add place="above">recieved</add> the <gap reason="illegible"/> news <del>brought</del> <lb />
+					Me, that I had leave to come into The Choirhouse &amp; My long <lb />
+					wish<hi rend="superscript">d</hi> for desire was attaind on feb 3. And on the 13 of aug<hi rend="superscript">t</hi> <lb />
+					I was receved into The Single S<hi rend="superscript">rs</hi> Choir <del>on this day</del> <add place="above">on this</add> to me</p>
+					<p>
+					Ever Memorable day I devoted myself anew in <lb />
+					with Soul &amp; body to My Manhood only Spouse to <lb />
+					become a true virgin to him</p>
+					<p>
+					in the year 53 Sep<hi rend="superscript">t</hi> 9 I had the unspeakable Grace <lb />
+					to become a participant of our Sav<hi rend="superscript">rs</hi> body &amp; blood in <lb />
+					the holy Communon, This melted me like wax in <lb />
+					the dust <del>befe</del> at My Bridegooms feet Thus I went <lb />
+					on in a Cherefull happy Manner &amp; in 1754 <lb />
+					when Our d<hi rend="superscript">r</hi> papa &amp; Mamagen was hear I had <lb />
+					the favour to be present at that so remarkable <lb />
+					Choir Communion what that proved to My heart <lb />
+					Im not able to disscribe in words, from that time on <lb />
+					the d<hi rend="superscript">r</hi> Holy Ghost begun a new school with me <lb />
+					wherein I became <del>truely</del> more &amp;none Senciable of my <lb />
+					Great difference in the Choir point &amp; that there <lb />
+					was Many things in Me which wanted be be deadend <lb />
+					&amp; Sanctified thro The power of his Corpses &amp; blood <lb />
+					my proud &amp; hasty dissposition <del>of mind Cause Often</del> <lb />
+					caused me also great UnEaseyness of mind &amp; deprived me <lb />
+					often of that Sinnerlike Connection w<hi rend="superscript">th</hi> My Sister 
+						<note type="catchword">but my</note>
+				
 			</p>
-			<pb n='3'/>
+				</div>
+				<div type="page" n="3">
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_39Booth-05.jpg" />
 			<p>
-				<lg>
 					<l>faithfull Friend did never let me rest till he</l>
 					<l>had brought me again unto the Sinners point</l>
 					<l>&amp; convinced me what for a poor creature I was</l>
 					<l>in 1761 I was Made use of aMongest the great Girls</l>
 					<l>in which I felt My Self very unfitt however not</l>
 					<l>withstanding the Many Tryals which I meet it</l>
-					<l>proved a blessed School in which our Sav<hi rend='superscript:true;'>r</hi> shewd the</l>
+					<l>proved a blessed School in which our Sav<hi rend="superscript">r</hi> shewd the</l>
 					<l>many things which in regard to my Self I had Still</l>
 					<l>been Ignorant oft this Made me often weep before</l>
 					<l>my Only Matchless heart on account of My great</l>
 					<l>poverty, but his precious nearness comfortd &amp; helpd</l>
 					<l>me thro&apos; from Time to time</l>
-					<l>&amp; I can never be thankfull Enough to My dearest Sav<hi rend='superscript:true;'>r</hi></l>
+					<l>&amp; I can never be thankfull Enough to My dearest Sav<hi rend="superscript">r</hi></l>
 					<l>for the Manifold Grace &amp; blessing that I have</l>
 					<l>injoy in My Choir dureing My Last 10 years for</l>
 					<l>of my Aboading  with the Sisters for which I will</l>
 					<l>Kiss his Thro&apos; bored feet Millions of roses when I come to when I </l>
-					<l>come to him, I<hi rend='superscript:true;'>m</hi> at present in the Sickroom</l>
+					<l>come to him, I<hi rend="superscript">m</hi> at present in the Sickroom</l>
 					<l>where I Spend my time in a tender Longing after</l>
-					<l>My dearest Bridegrooom, &amp; can assure My S<hi rend='superscript:true;'>rs</hi> that</l>
+					<l>My dearest Bridegrooom, &amp; can assure My S<hi rend="superscript">rs</hi> that</l>
 					<l>there is Nothing between Me &amp; My beloved I am</l>
-					<l>quite Cherefull &amp; Satisfied in heart &amp; mind &amp; long<hi rend='superscript:true;'>d</hi> to</l>
-					<l>go to our Sav<hi rend='superscript:true;'>r</hi> as a poor pardon<hi rend='superscript:true;'>d</hi> Sinner who has</l>
+					<l>quite Cherefull &amp; Satisfied in heart &amp; mind &amp; long<hi rend="superscript">d</hi> to</l>
+					<l>go to our Sav<hi rend="superscript">r</hi> as a poor pardon<hi rend="superscript">d</hi> Sinner who has</l>
 					<l>nothing to bring before him but his bloody right</l>
 					<l>ousness so faire her own words</l>
-					<l>This Our Sis<hi rend='superscript:true;'>tr</hi> haveing been Subject to a <unclear>affecktic</unclear> dissorder</l>
+					<l>This Our Sis<hi rend="superscript">tr</hi> haveing been Subject to a <unclear>affecktic</unclear> dissorder</l>
 					<l>for Several years past She in 63 Spring got a pain in her</l>
-					<l>side attended w<hi rend='superscript:true;'>th</hi> a Sore Cough w<hi rend='superscript:true;'>ch</hi> occassiond her</l>
+					<l>side attended w<hi rend="superscript">th</hi> a Sore Cough w<hi rend="superscript">ch</hi> occassiond her</l>
 					<l>to Think she shoud not be long that she woud not</l>
 					<l>have Many years to Spend hear but did not Seam</l>
 					<l>to be so quite Clear about her going home at this</l>
-					<l>Time &amp; accordingly Grew bett<hi rend='superscript:true;'>r</hi> again but Still</l>
+					<l>Time &amp; accordingly Grew bett<hi rend="superscript">r</hi> again but Still</l>
 					<l>retaind a deep impression in her Mind that</l>
-				</lg>
+				
 			</p>
+					<cb/>
 			<p>
 				<lg>
 					<l>She Shoud go the following year about the</l>
-					<l>Same Time &amp; thought of it w<hi rend='superscript:true;'>th</hi> a great deal</l>
+					<l>Same Time &amp; thought of it w<hi rend="superscript">th</hi> a great deal</l>
 					<l>of pleasure &amp; often Spoak in a feeling &amp; tender</l>
-					<l>manner of the bless<hi rend='superscript:true;'>d</hi> work of the d<hi rend='superscript:true;'>r</hi> Holy Ghost</l>
+					<l>manner of the bless<hi rend="superscript">d</hi> work of the d<hi rend="superscript">r</hi> Holy Ghost</l>
 					<l>in her Heart, According to the Grace which</l>
-					<l>our Sav<hi rend='superscript:true;'>r</hi> had imparted to her she was intrusted</l>
-					<l>She was Made Use of aMonge the g<hi rend='superscript:true;'>rt</hi> Girls as</l>
+					<l>our Sav<hi rend="superscript">r</hi> had imparted to her she was intrusted</l>
+					<l>She was Made Use of aMonge the g<hi rend="superscript">rt</hi> Girls as</l>
 					<l>there band keeper &amp; helper in their room, in</l>
 					<l>which She Acted with a willen &amp; faithfull</l>
 					<l>heart, as to her natural disspostion it</l>
-					<l>often Cause<hi rend='superscript:true;'>d</hi> her much pain &amp; unEasyness</l>
+					<l>often Cause<hi rend="superscript">d</hi> her much pain &amp; unEasyness</l>
 					<l>not withstand all this her Connection with</l>
-					<l>our Sav<hi rend='superscript:true;'>r</hi> was Evident to all about her,</l>
+					<l>our Sav<hi rend="superscript">r</hi> was Evident to all about her,</l>
 					<l>in Jan Last she got a relaps of her former</l>
 					<l>dissorder &amp; when Adviced to use some Means</l>
-					<l>from the doc<hi rend='superscript:true;'>tr</hi> She Comply<hi rend='superscript:true;'>d</hi> out of Obedience</l>
+					<l>from the doc<hi rend="superscript">tr</hi> She Comply<hi rend="superscript">d</hi> out of Obedience</l>
 					<l>but fully believed she shou&apos;d go home this</l>
-					<l>time, in feb<hi rend='superscript:true;'>r</hi> she who added to the Company of</l>
-					<l>preists, &amp; being Spoak w<hi rend='superscript:true;'>th</hi> to that purpose</l>
+					<l>time, in feb<hi rend="superscript">r</hi> she who added to the Company of</l>
+					<l>preists, &amp; being Spoak w<hi rend="superscript">th</hi> to that purpose</l>
 					<l>She Answerd in a Sinnerlike manner</l>
 					<l>I feel very Much ashamed of this favour</l>
-					<l>but I am Glad &amp; thankfull to My d<hi rend='superscript:true;'>r</hi> Sav<hi rend='superscript:true;'>r</hi> &amp;</l>
-					<l>likewise to my B<hi rend='superscript:true;'>rn</hi> &amp; S<hi rend='superscript:true;'>rs</hi> for it&apos;s tho&apos; I am Sure</l>
+					<l>but I am Glad &amp; thankfull to My d<hi rend="superscript">r</hi> Sav<hi rend="superscript">r</hi> &amp;</l>
+					<l>likewise to my B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> for it&apos;s tho&apos; I am Sure</l>
 					<l>I Shall not be Able to injoy the Meetings attend any</l>
 					<l>of those meeting with them yet</l>
 					<l>I will Speak with My hearts best freind at</l>
@@ -196,15 +303,17 @@
 					<l>She cou&apos;d not Enough Express her ardent</l>
 				</lg>
 			</p>
-			<pb n='4'/>
+				</div>
+				<div type="page" n="4">
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_39Booth-06.jpg" />
 			<p>
 				<lg>
-					<l>desire of being soon with our d<hi rend='superscript:true;'>r</hi> Sav<hi rend='superscript:true;'>r</hi></l>
-					<l>in Ap she had a Cherefull Lovefeast w<hi rend='superscript:true;'>th</hi></l>
-					<l>her Class Sist<hi rend='superscript:true;'>rs</hi> whereby She Express how</l>
+					<l>desire of being soon with our d<hi rend="superscript">r</hi> Sav<hi rend="superscript">r</hi></l>
+					<l>in Ap she had a Cherefull Lovefeast w<hi rend="superscript">th</hi></l>
+					<l>her Class Sist<hi rend="superscript">rs</hi> whereby She Express how</l>
 					<l>happy &amp; Satisfied she fell at this time to</l>
 					<l>what She had been a year ago, as now Our</l>
-					<l>Sav<hi rend='superscript:true;'>r</hi> was become her darling Object her days</l>
+					<l>Sav<hi rend="superscript">r</hi> was become her darling Object her days</l>
 					<l>&amp; hours &amp; Moments was become a perpetual</l>
 					<l>Sabath to her so that If her time had become</l>
 					<l>Longer then On the 20 <unclear>???</unclear> She partook once more of her</l>
@@ -215,7 +324,7 @@
 					<l>Last kiss from her bridegroom Lips</l>
 					<l>which she received the 21 of Ap On being the</l>
 					<l>Great Sabboth when She was call&apos;d home</l>
-					<l>by our D<hi rend='superscript:true;'>r</hi> Lord to rest for Ever within</l>
+					<l>by our D<hi rend="superscript">r</hi> Lord to rest for Ever within</l>
 					<l>his wounds, dureing a Sweet Liturgy</l>
 					<l>with the blessing of her Choir </l>
 					<l>haveing Spent 29 years &amp; 7 months in this</l>
@@ -223,6 +332,8 @@
 					<l>departed Ap 21. 1764</l>
 				</lg>
 			</p>
+				</div>
+			</div>
 		</body>
 	</text>
 </TEI>

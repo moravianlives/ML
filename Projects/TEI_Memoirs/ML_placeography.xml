@@ -1,7 +1,5 @@
-<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-    schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://raw.githubusercontent.com/djakacki/moravianlives/master/TEI_Memoirs/XML/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -78,18 +76,141 @@
    </teiHeader>
    <text type="placeography">
       <body xml:lang="en">
-         <listPlace>
-            <place xml:id="mlpla000001">
-               <placeName>Herrnhut, Moravia <ptr target="#mlpla000001" />
+         
+         <listPlace><!-- Fulneck -->
+            <place xml:id="mlpla000003">
+               <location>
+                  <geo>53.7837, -1.6648</geo> 
+               </location>
+               <placeName type="standard">
+                  <name>Fulneck</name>
                </placeName>
-               <idno sameAs="Geonames" />
+               <placeName type="preferred" xml:lang="en">
+                  <name type="full">Fulneck Moravian Settlement</name>
+                  <respons locus="name">
+                     <desc>Moravian Lives full/preferred name</desc>
+                  </respons>
+               </placeName>
+               <placeName type="variant" xml:lang="en" when-iso="1743">
+                  <name type="moravian">Lambshill</name>
+                  <note>
+                     <label>Zinzendorf's preferred name for Fulneck</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="deprecated">Fulnec</name>
+                  <note>
+                     <label>Alternate spelling</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="historical">The Fall Necke</name>
+                  <note>
+                     <label>Old English term</label>
+                  </note>
+               </placeName>
+               <placeName type="variant" xml:lang="en">
+                  <name type="moravian">Fulnek</name>
+                  <note>
+                     <label>Named in honour of the Fulnek settlement in Moravia</label>
+                  </note>
+               </placeName>
+               
+               <event type="establishment" source="https://www.w3.org/TR/NOTE-datetime" when-iso="1744" cert="high" >
+                  <desc>Note about the establishment of Fulneck</desc><!-- This would be an editorial note about ML's understanding of Fulneck -->
+               </event>                                    
+
+               <idno type="VIAF" cert="high" sameAs="6558159035174601380001"/> 
+               <!--VIAF place ID is specifically Fulneck Moravian Church -->
+               <idno type="Wikidata" cert="low" corresp="#Q5508369" /> 
+               <!-- the Wikipedia entry is titled "Fulneck Moravian Settlement" but includes information beyond Moravian scope  -->
+               
             </place>
-            <place xml:id="mlpla000002">
-               <placeName>Bethlehem, Pennsylvania <ptr target="#mlpla000002" />
+            <relation name="containedBy" passive="mlpla000090">
+               <desc>contained by Pudsey</desc>
+            </relation>
+         </listPlace>
+         
+         <listPlace><!-- Pudsey -->
+            <place xml:id="mlpla000090">
+               <location>
+                  <geo>53.797, -1.663</geo>
+               </location>
+               <placeName type="standard" xml:lang="en">
+                  <name>Pudsey</name>
                </placeName>
-               <idno sameAs="Geonames" />
+               <placeName type="preferred" xml:id="en">
+                  <name>Pudsey</name>
+               </placeName>
+               <idno type="Wikidata" sameAs="Q1009290"/>
+               <idno type="VIAF" sameAs="136300090"/>
+            </place>
+            <relation name="containedBy" passive="mlpla000050">
+               <desc>contained by Leeds</desc>
+            </relation>
+         </listPlace>
+         
+         <listPlace><!-- Leeds -->
+            <place xml:id="mlpla000050">
+               <location>
+                  <geo>53.799722, -1.549167</geo>
+               </location>
+               <placeName type="standard" xml:lang="en">
+                  <name>Leeds</name>
+               </placeName>
+               <placeName type="preferred" xml:lang="en">
+                  <name>Leeds</name>
+               </placeName>
+               <idno type="Wikidata" sameAs="Q39121"/>
+               <idno type="VIAF" sameAs="137204313"/>
+            </place>
+            <relation name="containedBy" passive="mlpla000084">
+               <desc>Yorkshire</desc>
+            </relation>
+         </listPlace>
+         
+         <listPlace><!-- Yorkshire -->
+            <place xml:id="mlpla000084">
+               <location>
+                  <geo>54, -2</geo>
+               </location>
+               <placeName type="standard" xml:lang="en">
+                  <name>Yorkshire</name>
+               </placeName>
+               <placeName type="preferred" xml:lang="en">
+                  <name>Yorkshire</name>
+               </placeName>
+               <idno type="Wikidata" sameAs="Q163"/>
+               <idno type="VIAF" sameAs="135974050"/>
+            </place>
+            <relation name="containedBy" passive="mlpla000072">
+               <desc>England</desc>
+            </relation>
+         </listPlace>
+         
+         <listPlace><!-- England -->
+            <place xml:id="mlpla000072">
+               <location>
+                  <geo>51.5, -0.116667</geo>
+               </location>
+               <placeName type="standard" xml:lang="en">
+                  <name>England</name>
+               </placeName>
+               <placeName type="preferred" xml:lang="en">
+                  <name>England</name>
+               </placeName>
+               <idno type="Wikidata" sameAs="Q21"/>
+               <!-- There is no VIAF URI for England -->
             </place>
          </listPlace>
+
+         
+         
+	
+
+
+         
+         
       </body>
    </text>
 </TEI>

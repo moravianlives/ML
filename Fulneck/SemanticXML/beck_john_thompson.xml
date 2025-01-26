@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -103,7 +102,158 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?person_annotation_20210212133727758",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-12T18:37:27.758Z",
+	"dcterms:issued": "2021-02-12T19:10:21.857Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?person_annotation_20210212133727758#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?person_annotation_20210212133727758#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "#mlper000582",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	},
+	"oa:hasCertainty": "cwrc:high"
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?date_annotation_20210212140817159",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-02-12T19:08:17.159Z",
+	"dcterms:issued": "2021-02-12T19:10:21.859Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?date_annotation_20210212140817159#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/beck_john_thompson.xml?date_annotation_20210212140817159#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[4]/p[2]/name/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1837-08-13"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">John Thompson Beck</persName>
@@ -119,10 +269,9 @@
 			<div type="memoir">
 				<head>John Thompson Beck</head>
 				<div type="page" n="1">
-					<pb n="1"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-12.jpg"/>
-					<p> 3. John Thompson Beck, aged 22 years/ <lb/> Previous to his illness he gave
-						no indication of <lb/> spiritual life; for tho&apos; a moral character, his
+					<pb n="1" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-12.jpg"/>
+					<p> 3. <persName ref="#mlper000582" cert="high" type="real">John Thompson Beck</persName>, aged 22 years/ <lb/> Previous to his illness he gave
+						no indication of <lb/> spiritual life; for tho' a moral character, his
 						mind was so <lb/> fixed on earthly pursuits, that it produced a degree <lb/>
 						of hardness of heart and feeling not often found in one <lb/> so young. All
 						his affections were enlisted in the acqui- <lb/> sition of money, after for
@@ -136,15 +285,14 @@
 						soul. Many times have I left the house </p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-13.jpg"/>
+					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-13.jpg"/>
 					<p> with the most painful feelings, and had I not been con- <lb/> vinced that
 						the Word of reconciliation can soften <lb/> the most obdurate heart, I
 						should have desponded. Fre- <lb/> quent and fervent were my prayers, that
-						the Lord <lb/> would open the eyes of this young man. Still no signs <lb/>
+						the <roleName type="deity">Lord</roleName> <lb/> would open the eyes of this young man. Still no signs <lb/>
 						of spiritual life appeared; my conversations with <lb/> him, the reading of
 						the scripture, and Hymns, see- <lb/> med to fall on a rock. At length the
-						grace of God <lb/> triumphed, and this unhappy state gave way to sen- <lb/>
+						grace of <persName type="real" cert="high">God</persName> <lb/> triumphed, and this unhappy state gave way to sen- <lb/>
 						timents and feelings of a different kind.</p>
 					<p> The first symptoms of a sounder state of mind <lb/> appeared some months
 						ago. He became an humble <lb/> inquirer and listened to the instructions
@@ -153,92 +301,97 @@
 						His friends observed the <lb/> change with pleasure; but I thought it was
 						<lb/> prudent to take no notice of it, but his alteration <lb/> should be
 						diverted from the great object of his <lb/> faith and absorbed in himself
-						and his feelings. <lb/> He now loved the Lord Jesus; he loved to hear <lb/>
+						and his feelings. <lb/> He now loved the <roleName type="honorific">Lord</roleName> <persName type="real" cert="high">Jesus</persName>; he loved to hear <lb/>
 						of His sacrifice and death. His confessions showed <lb/> much humility and a
-						hope of happiness groun- <lb/> ded in the atonement of Christ.</p>
+						hope of happiness groun- <lb/> ded in the atonement of <persName type="real" cert="high">Christ</persName>.</p>
 					<p> One day, about a fortnight after this change <lb/> had taken place, when he
 						was more communi- <lb/> cative than he had been before, I ventured to <lb/>
 						remark, that he had different thoughts and </p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-14.jpg"/>
+					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-14.jpg"/>
 					<p> feelings now from what he had had a few <lb/> weeks before ago, he ascented,
 						expressing his <lb/> thankfulness that this was the case. To my <lb/>
-						question, &quot;When did you begin to think more <lb/> seriously on these
-						things, and what led you to it?&quot; <lb/> he replied; &quot;Do you
+						question, "When did you begin to think more <lb/> seriously on these
+						things, and what led you to it?" <lb/> he replied; "Do you
 						remember the evening <lb/> when you and my uncle were here, and conversing
-						<lb/> about the love of Jesus, our Saviour, in giving His <lb/> life a
+						<lb/> about the love of <persName type="real" cert="high">Jesus</persName>, our <roleName type="honorific">Saviour</roleName>, in giving His <lb/> life a
 						ransom for sinners, suffering and dyeing on <lb/> the cross for our sins,
 						and of His mercy in saving <lb/> all who come to Him in faith? That
 						conversa- <lb/> tion I could not forget, and for three hours after <lb/> I
 						went to bed, I was thinking about it. I prayed <lb/> for grace to believe; I
 						prayed for pardon and <lb/> I felt a hope that I should not be lost, that
-						Jesus <lb/> would save me. Since then my mind has at <lb/> times been very
-						comfortable, when I think of <lb/> my Saviour and pray to Him.&quot;</p>
-					<p> From that day the operations of the Holy <lb/> Spirit on his heart became
+						<persName type="real" cert="high">Jesus</persName> <lb/> would save me. Since then my mind has at <lb/> times been very
+						comfortable, when I think of <lb/> my <roleName type="honorific">Saviour</roleName> and pray to Him."</p>
+					<p> From that day the operations of the <roleName type="honorific">Holy
+<lb/>
+Spirit</roleName> on his heart became
 						more evident, and <lb/> showed their blessed effects by a complete surrender
-						<lb/> of himself to the Lord, and submission to His will; <lb/> and by being
+						<lb/> of himself to the <roleName type="honorific">Lord</roleName>, and submission to His will; <lb/> and by being
 						delivered from the fear of death, and <lb/> bearing his severe suffering
-						with exemplary pa- <lb/> tience, often saying, &quot;It is the Lord&apos;s
-						will, let Him <lb/> do with me what He pleases.&quot; He was mercifully
+						with exemplary pa- <lb/> tience, often saying, "It is the <roleName type="honorific">Lord's</roleName>
+						will, let Him <lb/> do with me what He pleases." He was mercifully
 						<lb/> preserved from any reasons of gloom or darkness <lb/> of mind, and to
 						the last confined in a tranquil </p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-15.jpg"/>
+					<pb n="4" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-15.jpg"/>
 					<p> and peaceful state. He had buried his hopes on <lb/> the Rock of ages, and
 						in a childlike manner fixed <lb/> his mind on the suffering of the Lamb of
-						God. In <lb/> consequence of this, tho&apos; his frames and feeling varied,
+						God. In <lb/> consequence of this, tho' his frames and feeling varied,
 						<lb/> he was kept in perfect peace. Eight weeks ago, <lb/> when racked with
 						the most excruciating pains of body, <lb/> his soul was graciously supported
 						by inward conso- <lb/> lations. Peace beamed in his countenance, and <lb/>
-						joy glowed in his expressions. &quot;Don&apos;t weep for me&quot; <lb/>
-						Addressing those present he said, &quot;Don&apos;t weep <lb/> for me; it
+						joy glowed in his expressions. "Don't weep for me" <lb/>
+						Addressing those present he said, "Don't weep <lb/> for me; it
 						will soon be all over; my Saviour is <lb/> great; He will not leave
-						me.&quot; Subsequently <lb/> his pains were partially relieved; when he
+						me." Subsequently <lb/> his pains were partially relieved; when he
 						never <lb/> failed to impress the importance of eternal things <lb/> on all
 						who visited him.</p>
-					<p> On Sunday August 13<hi rend="superscript">th</hi> he was he was asur- <lb/>
-						ably to his earnest desire, acknowledged a member <lb/> of our Church, and
-						commended to the sympathy <lb/> and prayer, of the cong<hi
-							rend="superscript">n</hi>. and in the evening <lb/> the H. Communion was
-						administered to him <lb/> and his parents, in the presence of the other mem-
-						<lb/> bers of the family and a few friends. Du- <lb/> ring this solemn act
-						the peace of God was power <lb/> fully felt by all present, and he himself
+					<p> <name event="reception">On <date cert="high" when="1837-08-13">Sunday August 13<hi rend="superscript">th</hi></date> he was he was asur-
+<lb/>
+ably to his earnest desire, acknowledged a member
+<lb/>
+of our Church</name>, and
+						commended to the sympathy <lb/> and prayer, of the cong<hi rend="superscript">n</hi>. and <name event="communion" when-iso="1837-08-13">in the evening
+<lb/>
+the H. Communion was administered to him
+<lb/>
+and his parents, in the presence of the other mem-
+<lb/>
+bers of the family and a few friends</name>. Du- <lb/> ring this solemn act
+						the peace of <persName type="real" cert="high">God</persName> was power <lb/> fully felt by all present, and he himself
 						testified <lb/> by his look, his the heavenly joy that filled his <lb/>
-						soul. When the service was over he exclaimed, <lb/> &quot;this has been a
+						soul. When the service was over he exclaimed, <lb/> "this has been a
 						blessed meeting; nothing but </p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-16.jpg"/>
-					<p> heaven can exceed this.&quot; His bodily sufferings <lb/> were forgotten,
+					<pb n="5" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_115_Bentley_Watson_Beck-16.jpg"/>
+					<p> heaven can exceed this." His bodily sufferings <lb/> were forgotten,
 						and the happenings of his soul seemed <lb/> almost too great for his weak
 						frame to enterain. <lb/> The day after, speaking to one of his sisters of
 						his en- <lb/> joyment, he was unable to express himself in <lb/> language
-						sufficiently strong, saying, &quot;O what a <lb/> meeting that was! If you
-						had felt as I did, you <lb/> would never forget it.&quot;</p>
+						sufficiently strong, saying, "O what a <lb/> meeting that was! If you
+						had felt as I did, you <lb/> would never forget it."</p>
 					<p> The last week of his life was one of very severe <lb/> suffering, but of
 						inward peace. In the midst of his <lb/> sufferings he frequently exclaimed;
-						&quot;Glory, glory be <lb/> to God! I shall soon be with Him. I am going
-						fast; <lb/> my Saviour will soon come to fetch me home. I <lb/> shall soon
+						"Glory, glory be <lb/> to <persName type="real" cert="high">God</persName>! I shall soon be with Him. I am going
+						fast; <lb/> my <roleName type="honorific">Saviour</roleName> will soon come to fetch me home. I <lb/> shall soon
 						be with him in Heaven; there I shall <lb/> see Him face to face; I shall be
-						near Him and shall <lb/> see the wounds He bore for my sins.&quot; At one of
+						near Him and shall <lb/> see the wounds He bore for my sins." At one of
 						my <lb/> last visits to him, when he appeared very near <lb/> his end, he
-						said, turning his face to me, &quot;You will <lb/> soon have to preach my
+						said, turning his face to me, "You will <lb/> soon have to preach my
 						funeral sermon. I wish <lb/> the young people may take warning by me, and be
-						<lb/> led to give themselves to the Lord.&quot;</p>
+						<lb/> led to give themselves to the <roleName type="honorific">Lord</roleName>."</p>
 					<p> The Satturday before he died, he was much exhau- <lb/> sted by pain, and
 						could say very little; but seemed to <lb/> derive comfort from the words
 						addressed to him. <lb/> When about to leave him he exerted himself to say
 						<lb/> something, the substance of which was, that he enjoyd <lb/> sweet
-						comfort and peace by in feeling our Saviour&apos;s pre- <lb/> sence, and in
-						meditating on His sufferings &amp; death, ad- <lb/> ding, &quot;O how I long
-						to go and see The Lamb of God, who <lb/> died for me &amp;c.&quot; On
-						shaking hands with him he said with <lb/> a smile, &quot;All will be well at
-						last.&quot; He departed the following Tuesday. </p>
+						comfort and peace by in feeling our <roleName type="honorific">Saviour</roleName>'s pre- <lb/> sence, and in
+						meditating on His sufferings &amp; death, ad- <lb/> ding, "O how I long
+						to go and see The Lamb of God, who <lb/> died for me &amp;c." On
+						shaking hands with him he said with <lb/> a smile, "All will be well at
+						last." He departed the following Tuesday. </p>
 				</div>
 			</div>
 		</body>

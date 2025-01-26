@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -100,7 +98,156 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142518754",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-05-03T18:25:18.754Z",
+	"dcterms:issued": "2021-05-03T19:22:32.001Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142518754#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142518754#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/name/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1791-05-27"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
+{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	},
+	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142806749",
+	"@type": "oa:Annotation",
+	"dcterms:created": "2021-05-03T18:28:06.749Z",
+	"dcterms:issued": "2021-05-03T19:22:32.003Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/schaumju",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Justin Schaumberger",
+		"foaf:nick": "schaumju"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142806749#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@type": "as:Application",
+			"rdfs:label": "CWRC Writer",
+			"schema:softwareVersion": "1.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/clerk_esther.xml?date_annotation_20210503142806749#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/name/add/date"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "xsd:date",
+		"rdf:value": "1715-07-08"
+	},
+	"as:generator": {
+		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@type": "as:Application",
+		"rdfs:label": "CWRC Writer",
+		"schema:url": "https://cwrc-writer.cwrc.ca",
+		"schema:softwareVersion": "1.0"
+	}
+}
+]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">Esther Clerk</persName>
@@ -116,486 +263,487 @@
 			<div type="memoir">
 				<head>Esther Clerk</head>
 				<div type="page" n="1">
-					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-01.jpg" />
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-01.jpg"/>
 			<p>
-					Memoirs of the late happily departed Sister <lb />
-					Esther Cleake who on the 27<hi rend="superscript">th</hi> of May 1791 <lb />
-					at Fulneck enterd into the joy of her Lord
-					In the 76<hi rend="superscript">th</hi> Year of her age.</p>
+					Memoirs of the late happily departed <roleName type="honorific">Sister</roleName> <lb/>
+					<persName ref="#mlper000233" cert="high" type="real">Esther Cleake</persName> who <name event="death" when-iso="1791-05-27">on the <date when="1791-05-27" cert="high">27<hi rend="superscript">th</hi> of May 1791</date>
+<lb/>
+at <placeName ref="#mlpla000003" cert="high">Fulneck</placeName> enterd into the joy of her <roleName type="honorific">Lord</roleName> In the 76<hi rend="superscript">th</hi> Year of her age</name>.</p>
 					<p>
-					She has left the following account concerning <lb />
+					She has left the following account concerning <lb/>
 					her Pilgrimage here below.</p>
 					<p>
-					I think my dear Brethren &amp; Sisters will <lb />
-					like to hear somthing of my Course through <lb />
-					this time which I will gladly relate to the <lb />
-					honour of my dearest Saviour. I was Born at <lb />
-					Kirton in Lincolnshire, <add place="above">July 8<hi rend="superscript">th</hi> 1715</add> my Parents died when <lb />
-					I was very young, was therefore left an Orphan <lb />
-					to Providence, or to my dear Creator &amp; Saviour <lb />
+					I think my dear Brethren &amp; Sisters will <lb/>
+					like to hear somthing of my Course through <lb/>
+					this time which I will gladly relate to the <lb/>
+					honour of my dearest <roleName type="honorific">Saviour</roleName>. <name event="birth" when-iso="1715-07-08">I was Born at
+<lb/>
+<placeName ref="#mlpla000123" cert="high">Kirton in Lincolnshire</placeName>, <add place="above"><date when="1715-07-08" cert="high">July 8<hi rend="superscript">th</hi> 1715</date></add>f</name> my Parents died when <lb/>
+					I was very young, was therefore left an Orphan <lb/>
+					to Providence, or to my dear <roleName type="honorific">Creator</roleName> &amp; <roleName type="honorific">Saviour</roleName> <lb/>
 					for whom I was born &amp; destined surely.</p>
 					<p>
-					To tell my dear Brethrening &amp; Sisters of the <lb />
-					Goodness, the mercy &amp; kindness, the love &amp; faithfulness <lb />
-					of My dear Lord &amp; Saviour to me a poor Child. <lb />
-					my weak words fall very short to express the <lb />
-					praise that is due to him, from me, for his wonders <lb />
-					have been without end, thanks, thousand thanks <lb />
-					be to the Lamb for ever &amp; ever. I will now relate <lb />
-					some of the particulars of the tender lendings of <lb />
-					My gracious &amp; most faithfull Lord. The first <lb />
-					impression of grace I remember, was when I was <lb />
-					about four Years old, when one day kneeling by <lb />
-					a choir with a book in my hand, in which was those <lb />
+					To tell my dear Brethrening &amp; Sisters of the <lb/>
+					Goodness, the mercy &amp; kindness, the love &amp; faithfulness <lb/>
+					of My dear <roleName type="honorific">Lord</roleName> &amp; <roleName type="honorific">Saviour</roleName> to me a poor Child. <lb/>
+					my weak words fall very short to express the <lb/>
+					praise that is due to him, from me, for his wonders <lb/>
+					have been without end, thanks, thousand thanks <lb/>
+					be to the <roleName type="honorific">Lamb</roleName> for ever &amp; ever. I will now relate <lb/>
+					some of the particulars of the tender lendings of <lb/>
+					My gracious &amp; most faithfull <roleName type="honorific">Lord</roleName>. The first <lb/>
+					impression of grace I remember, was when I was <lb/>
+					about four Years old, when one day kneeling by <lb/>
+					a choir with a book in my hand, in which was those <lb/>
 					words, Seek and ye shall find knock, &amp; it shall
 			</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-02.jpg" />
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-02.jpg"/>
 			<p>
-					shall be append unto You, I felt somthing <lb />
-					particular at the time, I had a very quick under <lb />
-					standing for my years, and a very sensible feeling <lb />
-					of what was right, and wrong I wanted to be a good <lb />
-					Child that I might go to Heaven, on that account <lb />
-					I was much praised, which wou&apos;d have been more <lb />
-					hurtfull to me, but the dear Holy Ghost who had  <lb />
-					begun his work in my heart, pleased me continualy, my <lb />
-					wicked and sinfull nature, which kept me low &amp; <lb />
-					consions that I did not deserve that praise, which <lb />
-					was a grace to me at that time, so it checked my <lb />
-					Satanick pride, which I felt very sensible, Yet  <lb />
-					from many circumstances I thought God must <lb />
-					love me, but how it was I cou&apos;d not tell, I have <lb />
-					I was a sinner, In my 11<hi rend="superscript">th</hi> year I was very thought <lb />
-					full and distress&apos;d, felt guilt with the impression <lb />
-					that I did not love God, nor cou&apos;d I promise him <lb />
-					which one day a little bird was made use of to  <lb />
-					shew me that I cou&apos;d not praise my Creator even <lb />
-					as a Bird cou&apos;d I had also strange Idea&apos;s about <lb />
-					him, what kind of a form he had, and was much <lb />
-					perplexed about it at this time I had a dream where <lb />
-					in I thought God allmighty was in a parlour in  <lb />
-					the house where I was, and that he was a Man of <lb />
-					which I was very glad, &amp; thought then One cou&apos;d be <lb />
-					familliar with him. But not understanding the  <lb />
-					gracious lending of my dear Saviour, I continued
+					shall be append unto You, I felt somthing <lb/>
+					particular at the time, I had a very quick under <lb/>
+					standing for my years, and a very sensible feeling <lb/>
+					of what was right, and wrong I wanted to be a good <lb/>
+					Child that I might go to Heaven, on that account <lb/>
+					I was much praised, which wou'd have been more <lb/>
+					hurtfull to me, but the dear <roleName type="honorific">Holy Ghost</roleName> who had  <lb/>
+					begun his work in my heart, pleased me continualy, my <lb/>
+					wicked and sinfull nature, which kept me low &amp; <lb/>
+					consions that I did not deserve that praise, which <lb/>
+					was a grace to me at that time, so it checked my <lb/>
+					Satanick pride, which I felt very sensible, Yet  <lb/>
+					from many circumstances I thought God must <lb/>
+					love me, but how it was I cou'd not tell, I have <lb/>
+					I was a sinner, In my 11<hi rend="superscript">th</hi> year I was very thought <lb/>
+					full and distress'd, felt guilt with the impression <lb/>
+					that I did not love God, nor cou'd I promise him <lb/>
+					which one day a little bird was made use of to  <lb/>
+					shew me that I cou'd not praise my <roleName type="honorific">Creator</roleName> even <lb/>
+					as a Bird cou'd I had also strange Idea's about <lb/>
+					him, what kind of a form he had, and was much <lb/>
+					perplexed about it at this time I had a dream where <lb/>
+					in I thought God allmighty was in a parlour in  <lb/>
+					the house where I was, and that he was a Man of <lb/>
+					which I was very glad, &amp; thought then One cou'd be <lb/>
+					familliar with him. But not understanding the  <lb/>
+					gracious lending of my dear <roleName type="honorific">Saviour</roleName>, I continued
 					<note type="catchword">extremly</note>
 			</p>
 					<cb/>
 			<p>
-					extremly distress&apos;d, thought I commited Sin <lb />
-					evry moment by the strange thoughts I had, &amp; <lb />
-					they was of such a nature, I cou&apos;d not tell them <lb />
-					to any body, nor wou&apos;d they have understood me, <lb />
-					but wearied indeed with trying to help myself <lb />
-					a thought came in my mind, As I can not help <lb />
-					these thoughts God Almighty has nothing <lb />
-					against me. In that moment my mercifull <lb />
-					and compassinate Saviour drew near with his <lb />
-					love and gave me peace, it was as If he said to <lb />
-					me, I have nothing against thee, I was amazed <lb />
-					but did not know how to account for it, to be <lb />
-					loved by God in such a manner, from that time <lb />
-					When those thoughts came again I cou&apos;d believe <lb />
-					he had nothing against me for it, but not under <lb />
-					standing the right poor Sinners path I came into <lb />
-					an esteem self rightious course, Striveing with <lb />
-					all my might to be good by other means then <lb />
-					Jesus blood, I fasted &amp; prayd, wanting to be as <lb />
-					good as the Primitive Christians, not likeing any <lb />
-					one to be better then myself, here my Satanick <lb />
-					pride show&apos;d itself to a great degree, All how <lb />
-					unwilling was I to be saved by grace I went on <lb />
-					for some time in <add place="above">this</add> manner. My Aunt dieing who <lb />
-					brought me up, I became a Second time an Orphan <lb />
-					indeed She treated me as If She had known my <lb />
-					destination. Ah the wonders of My dear Saviours <lb />
+					extremly distress'd, thought I commited Sin <lb/>
+					evry moment by the strange thoughts I had, &amp; <lb/>
+					they was of such a nature, I cou'd not tell them <lb/>
+					to any body, nor wou'd they have understood me, <lb/>
+					but wearied indeed with trying to help myself <lb/>
+					a thought came in my mind, As I can not help <lb/>
+					these thoughts God Almighty has nothing <lb/>
+					against me. In that moment my mercifull <lb/>
+					and compassinate Saviour drew near with his <lb/>
+					love and gave me peace, it was as If he said to <lb/>
+					me, I have nothing against thee, I was amazed <lb/>
+					but did not know how to account for it, to be <lb/>
+					loved by God in such a manner, from that time <lb/>
+					When those thoughts came again I cou'd believe <lb/>
+					he had nothing against me for it, but not under <lb/>
+					standing the right poor Sinners path I came into <lb/>
+					an esteem self rightious course, Striveing with <lb/>
+					all my might to be good by other means then <lb/>
+					Jesus blood, I fasted &amp; prayd, wanting to be as <lb/>
+					good as the Primitive Christians, not likeing any <lb/>
+					one to be better then myself, here my Satanick <lb/>
+					pride show'd itself to a great degree, All how <lb/>
+					unwilling was I to be saved by grace I went on <lb/>
+					for some time in <add place="above">this</add> manner. My Aunt dieing who <lb/>
+					brought me up, I became a Second time an Orphan <lb/>
+					indeed She treated me as If She had known my <lb/>
+					destination. Ah the wonders of My dear Saviours <lb/>
 					love which I did not then understand through
 						<note type="catchword">His</note>
 			</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-03.jpg" />
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-03.jpg"/>
 			<p>
-					His kind providence in My 19<hi rend="superscript">th</hi> year I went <lb />
-					to London into Lady Scarborough&apos;s Family. <lb />
-					who had sent for me to wait on her little Neice <lb />
-					and My dear Saviour put it into her heart from the first <lb />
-					moment to be remarkable kind to me, and the whole <lb />
-					family shew&apos;d a great regard &amp; respect for my religious <lb />
-					turn of mind, which they found was sincere <lb />
-					(not on account of outward gifts or quatifications) <lb />
-					but the dear Holy Ghost in whose School I then <lb />
-					was, gave me a constant sence of My depraved <lb />
-					nature in all it shapes, and finding I fell so far <lb />
-					short of what I thought I shou&apos;d be, this kept <lb />
-					me low and in some sence humble, and kept the <lb />
-					ballance against that hartfull prais which is <lb />
-					often given. I served also in several other families <lb />
-					namely Lord Orrory, Lady Charlott Edan&apos;s &amp; <lb />
-					the Duke of Buckclugh. My dear Saviour <lb />
-					and most faithfull Shepherd helped me through <lb />
-					with all my imperfections so wonderfully <lb />
-					that If I may humbly say so, I found favour <lb />
-					with God, &amp; Man, but I nor no body else, thought <lb />
-					what was prepareing for me. In my 26<hi rend="superscript">th</hi> year I <lb />
-					return&apos;d to Lady Scarborough who always received <lb />
-					me with the greatest kindness, At this time I fell <lb />
-					again into self working fasted &amp; prayed much, till I  <lb />
-					was quite weared finding it did me no good, Once in <lb />
-					the Year 42 while at prayer I felt somthing very <lb />
+					His kind providence in My 19<hi rend="superscript">th</hi> year I went <lb/>
+					to London into Lady Scarborough's Family. <lb/>
+					who had sent for me to wait on her little Neice <lb/>
+					and My dear Saviour put it into her heart from the first <lb/>
+					moment to be remarkable kind to me, and the whole <lb/>
+					family shew'd a great regard &amp; respect for my religious <lb/>
+					turn of mind, which they found was sincere <lb/>
+					(not on account of outward gifts or quatifications) <lb/>
+					but the dear Holy Ghost in whose School I then <lb/>
+					was, gave me a constant sence of My depraved <lb/>
+					nature in all it shapes, and finding I fell so far <lb/>
+					short of what I thought I shou'd be, this kept <lb/>
+					me low and in some sence humble, and kept the <lb/>
+					ballance against that hartfull prais which is <lb/>
+					often given. I served also in several other families <lb/>
+					namely Lord Orrory, Lady Charlott Edan's &amp; <lb/>
+					the Duke of Buckclugh. My dear Saviour <lb/>
+					and most faithfull Shepherd helped me through <lb/>
+					with all my imperfections so wonderfully <lb/>
+					that If I may humbly say so, I found favour <lb/>
+					with God, &amp; Man, but I nor no body else, thought <lb/>
+					what was prepareing for me. In my 26<hi rend="superscript">th</hi> year I <lb/>
+					return'd to Lady Scarborough who always received <lb/>
+					me with the greatest kindness, At this time I fell <lb/>
+					again into self working fasted &amp; prayed much, till I  <lb/>
+					was quite weared finding it did me no good, Once in <lb/>
+					the Year 42 while at prayer I felt somthing very <lb/>
 					blessed, it was quick like the fleeting of a Star
 			</p>
 					<cb/>
 			<p>
-					but it seemed to me all that was good, it was <lb />
-					Light Peace, Joy, all happiness in One moment <lb />
-					I thought it was the Holy Spirit, &amp; praied to <lb />
-					feel more of it. Soon after I received a letter <lb />
-					concerning the preaching of the Methodists which <lb />
-					I had never heard of. I was very much biggote to <lb />
-					the Church &amp; thought it a shame to go any where else <lb />
-					I thought how ever I wou&apos;d inquire about them what <lb />
-					kind of people they wear, it happend at this time a <lb />
-					Methodist came in My way, and by his conversation <lb />
-					I was convinced of what I wanted, the knowledge of the <lb />
-					atonement of our Saviour for My Sins, then all his <lb />
-					gracious leading was brought to my mind so that I <lb />
-					knew it was a faith from God, the person lent me <lb />
-					a <del>Sermon</del> book of Sermons of M<hi rend="superscript">r</hi> Whitfields <lb />
-					the more I read the more it was opened to me that <lb />
-					I wanted a Saviour, for my mind took a turn and <lb />
-					I found some rest from my <add place="above">hard</add>labour, and saw that it <lb />
-					was Christs rightousness that I wanted, I enterd <lb />
-					with my whole mind into the matter, got all the <lb />
-					books I cou&apos;d of that kind amongst the rest I got <lb />
-					the Brethrens little Hymn book which sat&apos;d me <lb />
-					exceedingly <del>well</del> espicialy One Verse, viz: If I <lb />
-					glimse in My own breast Feel of a Christian bliss <lb />
-					Then on the truth of it let me rest. That such a <lb />
-					Life there is. At length my good Lady found I had <lb />
-					got Methodist books, but did not think I was so deep <lb />
-					in the matter, for She had a better opinion of me <lb />
-					then that I wou&apos;d follow such people, but one time
+					but it seemed to me all that was good, it was <lb/>
+					Light Peace, Joy, all happiness in One moment <lb/>
+					I thought it was the Holy Spirit, &amp; praied to <lb/>
+					feel more of it. Soon after I received a letter <lb/>
+					concerning the preaching of the Methodists which <lb/>
+					I had never heard of. I was very much biggote to <lb/>
+					the Church &amp; thought it a shame to go any where else <lb/>
+					I thought how ever I wou'd inquire about them what <lb/>
+					kind of people they wear, it happend at this time a <lb/>
+					Methodist came in My way, and by his conversation <lb/>
+					I was convinced of what I wanted, the knowledge of the <lb/>
+					atonement of our Saviour for My Sins, then all his <lb/>
+					gracious leading was brought to my mind so that I <lb/>
+					knew it was a faith from God, the person lent me <lb/>
+					a <del>Sermon</del> book of Sermons of M<hi rend="superscript">r</hi> Whitfields <lb/>
+					the more I read the more it was opened to me that <lb/>
+					I wanted a Saviour, for my mind took a turn and <lb/>
+					I found some rest from my <add place="above">hard</add>labour, and saw that it <lb/>
+					was Christs rightousness that I wanted, I enterd <lb/>
+					with my whole mind into the matter, got all the <lb/>
+					books I cou'd of that kind amongst the rest I got <lb/>
+					the Brethrens little Hymn book which sat'd me <lb/>
+					exceedingly <del>well</del> espicialy One Verse, viz: If I <lb/>
+					glimse in My own breast Feel of a Christian bliss <lb/>
+					Then on the truth of it let me rest. That such a <lb/>
+					Life there is. At length my good Lady found I had <lb/>
+					got Methodist books, but did not think I was so deep <lb/>
+					in the matter, for She had a better opinion of me <lb/>
+					then that I wou'd follow such people, but one time
 						<note type="catchword">being</note>
 			</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-04.jpg" />
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-04.jpg"/>
 			<p>
-					being with her at Court, She caught me reading a <lb />
-					letter which she took from me, wherein She found I <lb />
-					had been Once at the Tabernacle, She was much <lb />
-					concern&apos;d &amp; took the greatest pain possible to diss <lb />
-					waid me from it, but I was Devinly convinced of <lb />
-					the truth of the Gospel, my Lady forbid me to go <lb />
-					to the Tabernacle, I told her I <del>cou&apos;d</del> wou&apos;d not with <lb />
-					out leting her Ladyship know, I thought I cou&apos;d do <lb />
-					with books &amp; Stay at Home, at this time the family <lb />
-					went into the Country, where was a good friend a <lb />
-					Minister who took great pain to prevent my <lb />
-					going too deep in my present Ideas, he brought me <lb />
-					many books but to no purpose, my heart was afraid <lb />
-					of the truth, We return&apos;d to London and I grew very <lb />
-					uneasy, found I cou&apos;d not be faithful without <lb />
-					going to hear the preaching, I therefore desired <lb />
-					leave, which was not granted. My good Lady was <lb />
-					now very much distress&apos;d about me, She wanted <lb />
-					to keep me, &amp; out of Love &amp; kindness she did her <lb />
-					<del>when</del> what She cou&apos;d to perswaid me, She wanted <lb />
-					me again to be advis&apos;d by some Minsters, <lb />
-					I chose the Bishop of Oxford (Sacher) for that <lb />
-					purpose I was so clear in My matter I feared no-  <lb />
-					thing, my B<hi rend="superscript">r</hi> went with me to the Bishop and <lb />
-					accused me of leaving the Church, I told him <lb />
-					it was because they did not preach our Saviours <lb />
+					being with her at Court, She caught me reading a <lb/>
+					letter which she took from me, wherein She found I <lb/>
+					had been Once at the Tabernacle, She was much <lb/>
+					concern'd &amp; took the greatest pain possible to diss <lb/>
+					waid me from it, but I was Devinly convinced of <lb/>
+					the truth of the Gospel, my Lady forbid me to go <lb/>
+					to the Tabernacle, I told her I <del>cou'd</del> wou'd not with <lb/>
+					out leting her Ladyship know, I thought I cou'd do <lb/>
+					with books &amp; Stay at Home, at this time the family <lb/>
+					went into the Country, where was a good friend a <lb/>
+					Minister who took great pain to prevent my <lb/>
+					going too deep in my present Ideas, he brought me <lb/>
+					many books but to no purpose, my heart was afraid <lb/>
+					of the truth, We return'd to London and I grew very <lb/>
+					uneasy, found I cou'd not be faithful without <lb/>
+					going to hear the preaching, I therefore desired <lb/>
+					leave, which was not granted. My good Lady was <lb/>
+					now very much distress'd about me, She wanted <lb/>
+					to keep me, &amp; out of Love &amp; kindness she did her <lb/>
+					<del>when</del> what She cou'd to perswaid me, She wanted <lb/>
+					me again to be advis'd by some Minsters, <lb/>
+					I chose the Bishop of Oxford (Sacher) for that <lb/>
+					purpose I was so clear in My matter I feared no-  <lb/>
+					thing, my B<hi rend="superscript">r</hi> went with me to the Bishop and <lb/>
+					accused me of leaving the Church, I told him <lb/>
+					it was because they did not preach our Saviours <lb/>
 					Sufferings, &amp; I was fully asured nothing else
 						<note type="catchword">cou'd</note>
 			</p>
 					<cb/>
 			<p>
-					cou&apos;d save me, this he aprov&apos;d of, as to good work <lb />
-					I said, when the tree is good, the fruit will be good, <lb />
-					he was very tender with me finding I was Sincere <lb />
-					If it was possible I was more confirm&apos;d in my point <lb />
-					then before, My dear Lady was much dissapointed <lb />
-					but I cou&apos;d not help it, here She rested, she had <lb />
-					done all She cou&apos;d but My matter remained to leave <lb />
-					her, or have leave to to go to the preachings, at last <lb />
-					I con&apos;d do no longer, therefore went to hear the <lb />
-					preaching, I was wanted before I came home again, <lb />
-					My Lady ask&apos;d me where I had been, I told her, She <lb />
-					said I had gone without leave, I said because her <lb />
-					Ladyship wou&apos;d not have given the leave If I had <lb />
-					ask&apos;d upon this She sent me out of the room <lb />
-					to see me no more, She was affraid to keep me on <lb />
-					account of the Children &amp; Servants, least I shou&apos;d <lb />
-					bring them into my way of thinking, &amp; when I went <lb />
-					with her to Court it was a shame at that time to be <lb />
-					a Methodest. But My dear Saviour had prepared <lb />
-					my way for me, I went to bed as composed as if <lb />
-					nothing had happened, In the morning I rose with <lb />
-					great chearfulness, like a Bird releas&apos;d from a <lb />
-					Cage, and agent to the Tabernacle at 6 o&apos;Clock from <lb />
-					Cavendish Square, which was a wonder of God for I <lb />
-					had nothing, nor any prospect how I shou&apos;d get my <lb />
-					bread, had very little money, many hard things was <lb />
-					set before me, and in myself nothing to depend on, nor <lb />
+					cou'd save me, this he aprov'd of, as to good work <lb/>
+					I said, when the tree is good, the fruit will be good, <lb/>
+					he was very tender with me finding I was Sincere <lb/>
+					If it was possible I was more confirm'd in my point <lb/>
+					then before, My dear Lady was much dissapointed <lb/>
+					but I cou'd not help it, here She rested, she had <lb/>
+					done all She cou'd but My matter remained to leave <lb/>
+					her, or have leave to to go to the preachings, at last <lb/>
+					I con'd do no longer, therefore went to hear the <lb/>
+					preaching, I was wanted before I came home again, <lb/>
+					My Lady ask'd me where I had been, I told her, She <lb/>
+					said I had gone without leave, I said because her <lb/>
+					Ladyship wou'd not have given the leave If I had <lb/>
+					ask'd upon this She sent me out of the room <lb/>
+					to see me no more, She was affraid to keep me on <lb/>
+					account of the Children &amp; Servants, least I shou'd <lb/>
+					bring them into my way of thinking, &amp; when I went <lb/>
+					with her to Court it was a shame at that time to be <lb/>
+					a Methodest. But My dear Saviour had prepared <lb/>
+					my way for me, I went to bed as composed as if <lb/>
+					nothing had happened, In the morning I rose with <lb/>
+					great chearfulness, like a Bird releas'd from a <lb/>
+					Cage, and agent to the Tabernacle at 6 o'Clock from <lb/>
+					Cavendish Square, which was a wonder of God for I <lb/>
+					had nothing, nor any prospect how I shou'd get my <lb/>
+					bread, had very little money, many hard things was <lb/>
+					set before me, and in myself nothing to depend on, nor <lb/>
 					had I any acquaintance here, Our dear Saviours
 						<note type="catchword">words</note>
 			</p>
 				</div>
 				<div type="page" n="5">
-					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-05.jpg" />
+					<pb n="5" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-05.jpg"/>
 			<p>
-					words became litterally true, seek first the <lb />
-					Kingdom of God &amp; its Righteousness and all things <lb />
-					shall be added unto You, I was like a Child <lb />
-					turn&apos;d out of doors (was again an Orphan) But <lb />
-					my ever faithfull Lord whose Hand &amp; Eye was over <lb />
-					me cared for me in evry respect. My Lady gave me <lb />
-					proof more of her kindness to me, finding I had <lb />
-					no acquaintance, sent me word that I shou&apos;d lodge <lb />
-					there till I cou&apos;d find a home the Servants was <lb />
-					amaized at me, because I was otherwise no person <lb />
-					of courage, but they did not know that I had found <lb />
-					the Pearl of great price. I stay&apos;d with my Brother <lb />
-					in the day time till the preaching time at the <lb />
-					Tabernacle, my Brother was very shy to me, he was <lb />
-					sorry for My leaving such a good place. He look&apos;d <lb />
-					into my books, made a good observation &amp; said all <lb />
-					professions make the Scriptures there rule, but <lb />
-					If this inward feeling can be true it must come from <lb />
-					God. It pleased he to hear him say so much. <lb />
-					I enquir&apos;d of him for the Brethrens Chapel that I  <lb />
-					might see the people to whom by little Hymn Book <lb />
-					belong&apos;d (this was in Feb<hi rend="superscript">y</hi> 1744) He directed me <lb />
-					but when I came to Fetter Lane there was no preaching, <lb />
-					I enquir&apos;d at the Chapel House S<hi rend="superscript">r</hi> Wheeler kindly <lb />
-					ask&apos;d me to come in Shewed me the Chapel, and what <lb />
-					She told the at that time of Our Saviour walking <lb />
+					words became litterally true, seek first the <lb/>
+					Kingdom of God &amp; its Righteousness and all things <lb/>
+					shall be added unto You, I was like a Child <lb/>
+					turn'd out of doors (was again an Orphan) But <lb/>
+					my ever faithfull Lord whose Hand &amp; Eye was over <lb/>
+					me cared for me in evry respect. My Lady gave me <lb/>
+					proof more of her kindness to me, finding I had <lb/>
+					no acquaintance, sent me word that I shou'd lodge <lb/>
+					there till I cou'd find a home the Servants was <lb/>
+					amaized at me, because I was otherwise no person <lb/>
+					of courage, but they did not know that I had found <lb/>
+					the Pearl of great price. I stay'd with my Brother <lb/>
+					in the day time till the preaching time at the <lb/>
+					Tabernacle, my Brother was very shy to me, he was <lb/>
+					sorry for My leaving such a good place. He look'd <lb/>
+					into my books, made a good observation &amp; said all <lb/>
+					professions make the Scriptures there rule, but <lb/>
+					If this inward feeling can be true it must come from <lb/>
+					God. It pleased he to hear him say so much. <lb/>
+					I enquir'd of him for the Brethrens Chapel that I  <lb/>
+					might see the people to whom by little Hymn Book <lb/>
+					belong'd (this was in Feb<hi rend="superscript">y</hi> 1744) He directed me <lb/>
+					but when I came to Fetter Lane there was no preaching, <lb/>
+					I enquir'd at the Chapel House S<hi rend="superscript">r</hi> Wheeler kindly <lb/>
+					ask'd me to come in Shewed me the Chapel, and what <lb/>
+					She told the at that time of Our Saviour walking <lb/>
 					amongst his People, made such an impression on
 						<note type="catchword">me</note>
 			</p>
 					<cb/>
 			<p>
-					me that I never shall forget. It Tallied with my own <lb />
-					experience, I enquired if the Countes of Zinzendorf <lb />
-					did not want a Servant, but heard She was not in England. <lb />
-					I went to Speak with M<hi rend="superscript">r</hi> Whitfield to advise with <lb />
-					him, and found him at B<hi rend="superscript">r</hi> John Syms&apos;s, I told them my <lb />
-					case just as it was, S<hi rend="superscript">r</hi> Syms according to her kind way <lb />
-					in such cases took me into her house, thus I left my <lb />
-					good Lady &amp; all my old Friends, with greatfull <lb />
-					thanks for all their kindness &amp; I heartly pray that <lb />
-					My dear Lady May not loose her reward, I cou&apos;d do no <lb />
-					other but follow my gracious Lord and Saviour, B<hi rend="superscript">r</hi> &amp; <lb />
-					S<hi rend="superscript">r</hi> Syms Shewed me great kindness, M<hi rend="superscript">r</hi> Whitfield &amp; <lb />
-					his Wife was also very kind to me, but M<hi rend="superscript">r</hi> Whitfield <lb />
-					going to George in about six weeks, this connexion <lb />
-					was ended. B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms being atach&apos;d to the B<hi rend="superscript">rn</hi> <lb />
-					I often went with them to Fetterlane, I had receive&apos;d <lb />
-					many blessings by going to the Tabernacle, at this <lb />
-					time B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms moved, from which time I left off <lb />
-					going to the Taber. Now my good Lord led me Step <lb />
-					by Step as it pleased him both inwardly &amp; outwardly <lb />
-					in a most gracious manner which brings these lines <lb />
-					to my mind. With patience immense, And love so <lb />
-					intense, He hath led me on, I&apos;m lost in amazment <lb />
-					When thinking thereon. Now being come to my proper <lb />
-					home, the dear Cong<hi rend="superscript">n</hi> where I have enjoy&apos;d more blessings <lb />
-					then I am able to express, they have been so many, and so <lb />
-					great, and my call to the dear Congn is so clear and weighty <lb />
+					me that I never shall forget. It Tallied with my own <lb/>
+					experience, I enquired if the Countes of Zinzendorf <lb/>
+					did not want a Servant, but heard She was not in England. <lb/>
+					I went to Speak with M<hi rend="superscript">r</hi> Whitfield to advise with <lb/>
+					him, and found him at B<hi rend="superscript">r</hi> John Syms's, I told them my <lb/>
+					case just as it was, S<hi rend="superscript">r</hi> Syms according to her kind way <lb/>
+					in such cases took me into her house, thus I left my <lb/>
+					good Lady &amp; all my old Friends, with greatfull <lb/>
+					thanks for all their kindness &amp; I heartly pray that <lb/>
+					My dear Lady May not loose her reward, I cou'd do no <lb/>
+					other but follow my gracious Lord and Saviour, B<hi rend="superscript">r</hi> &amp; <lb/>
+					S<hi rend="superscript">r</hi> Syms Shewed me great kindness, M<hi rend="superscript">r</hi> Whitfield &amp; <lb/>
+					his Wife was also very kind to me, but M<hi rend="superscript">r</hi> Whitfield <lb/>
+					going to George in about six weeks, this connexion <lb/>
+					was ended. B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms being atach'd to the B<hi rend="superscript">rn</hi> <lb/>
+					I often went with them to Fetterlane, I had receive'd <lb/>
+					many blessings by going to the Tabernacle, at this <lb/>
+					time B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms moved, from which time I left off <lb/>
+					going to the Taber. Now my good Lord led me Step <lb/>
+					by Step as it pleased him both inwardly &amp; outwardly <lb/>
+					in a most gracious manner which brings these lines <lb/>
+					to my mind. With patience immense, And love so <lb/>
+					intense, He hath led me on, I'm lost in amazment <lb/>
+					When thinking thereon. Now being come to my proper <lb/>
+					home, the dear Cong<hi rend="superscript">n</hi> where I have enjoy'd more blessings <lb/>
+					then I am able to express, they have been so many, and so <lb/>
+					great, and my call to the dear Congn is so clear and weighty <lb/>
 					to me, that I can say, next to our Saviour, the Cong<hi rend="superscript">n</hi> is the
 						<note type="catchword">dearest</note>
 			</p>
 				</div>
 				<div type="page" n="6">
-					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-06.jpg" />
+					<pb n="6" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-06.jpg"/>
 			<p>
-					dearest thing to me, I am a Sinner to whom belongs <lb />
-					nothing but shame &amp; confusion of face, but it has <lb />
-					pleased him to open to me the treasure of his Love <lb />
-					&amp; great Salvation, which has been sealed to me by <lb />
-					his Spirit, by his Word, by his Cong<hi rend="superscript">n</hi> as an eternal truth <lb />
-					for such was my make that I must know it as a truth <lb />
-					for myself, was truly convinced of unbeliefs, and my <lb />
-					enmity against our Saviour, when this came to the <lb />
-					highest pitch, I thought If there was another Saviour <lb />
-					I wou&apos;d have him, I felt condemned for the thought <lb />
-					and in that moment I was overpowerd with the <lb />
-					love and peace of my dear Saviour, and as If he <lb />
-					said to me for all this I love thee. The feeling <lb />
-					and impression of his nearness, bow&apos;d me down in <lb />
-					the dust before my gracious Lord, with this <lb />
-					Sensation, The poor Sinners happy feeling, the holy <lb />
-					shame. But My selfrighteousness still <lb />
-					troubled me in various shapes, but in that feeling <lb />
-					the following verse was sealed to me as the greatest <lb />
-					truth, O precious precious blood, The only Holiness <lb />
-					that&apos;s good, Still drop, &amp; flow &amp; cover me, it <lb />
-					cursed Sinner without thee. The Scripture, the <lb />
-					preachings, the Hymns, where open&apos;d with such <lb />
-					truth &amp; Life which I can&apos;t describe.</p>
+					dearest thing to me, I am a Sinner to whom belongs <lb/>
+					nothing but shame &amp; confusion of face, but it has <lb/>
+					pleased him to open to me the treasure of his Love <lb/>
+					&amp; great Salvation, which has been sealed to me by <lb/>
+					his Spirit, by his Word, by his Cong<hi rend="superscript">n</hi> as an eternal truth <lb/>
+					for such was my make that I must know it as a truth <lb/>
+					for myself, was truly convinced of unbeliefs, and my <lb/>
+					enmity against our Saviour, when this came to the <lb/>
+					highest pitch, I thought If there was another Saviour <lb/>
+					I wou'd have him, I felt condemned for the thought <lb/>
+					and in that moment I was overpowerd with the <lb/>
+					love and peace of my dear Saviour, and as If he <lb/>
+					said to me for all this I love thee. The feeling <lb/>
+					and impression of his nearness, bow'd me down in <lb/>
+					the dust before my gracious Lord, with this <lb/>
+					Sensation, The poor Sinners happy feeling, the holy <lb/>
+					shame. But My selfrighteousness still <lb/>
+					troubled me in various shapes, but in that feeling <lb/>
+					the following verse was sealed to me as the greatest <lb/>
+					truth, O precious precious blood, The only Holiness <lb/>
+					that's good, Still drop, &amp; flow &amp; cover me, it <lb/>
+					cursed Sinner without thee. The Scripture, the <lb/>
+					preachings, the Hymns, where open'd with such <lb/>
+					truth &amp; Life which I can't describe.</p>
 					<p>
-					I left B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms with greatfull thanks for <lb />
-					all their care, and went to live with M<hi rend="superscript">r</hi> Delamott <lb />
-					at Black Heath to take care of Betsey Holand <lb />
-					her Parents being gone to Germany, here I experienc&apos;d
+					I left B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Syms with greatfull thanks for <lb/>
+					all their care, and went to live with M<hi rend="superscript">r</hi> Delamott <lb/>
+					at Black Heath to take care of Betsey Holand <lb/>
+					her Parents being gone to Germany, here I experienc'd
 						<note type="catchword">something</note>
 			</p>
 					<cb/>
 			<p>
-					something particular in the first place to my shame. <lb />
-					I was shewn such love and respect from this dear <lb />
-					family, but what relates particularly to the heart <lb />
-					was as I have said the preachings had been so blessed <lb />
-					to me, being now all at once taken from all meetings, <lb />
-					which I felt much store by, it was amazing to me <lb />
-					that I now enjoy&apos;d such a Sabatic stillness &amp; a <lb />
-					Sunshine of peace for that time, that I wanted <lb />
-					nothing, but was indeed as a Child at the breast. <lb />
-					I was not Yet in the Cong<hi rend="superscript">n</hi> tho&apos; I had defer&apos;d it some <lb />
-					time. B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Holand how comeing from Germany <lb />
-					I went with their Daughter to live with them. <lb />
-					I now thought much about being received into the <lb />
-					Cong<hi rend="superscript">n</hi>, but I had still to wait some time, which <lb />
-					was very wholsome for the I was once much comforted <lb />
-					by these words, Jesus thy affairs will think on, <lb />
-					as thy ever loveing Head. At length the hour which <lb />
-					certainly at the right moment, the Divine impression <lb />
-					to me was, I am now in by Fathers House, this was <lb />
-					May 18<hi rend="superscript">th</hi> 1747, and the 2<hi rend="superscript">d</hi> of Sep<hi rend="superscript">t</hi> following I had <lb />
-					the unspeakable grace to be a partaker of my dear <lb />
+					something particular in the first place to my shame. <lb/>
+					I was shewn such love and respect from this dear <lb/>
+					family, but what relates particularly to the heart <lb/>
+					was as I have said the preachings had been so blessed <lb/>
+					to me, being now all at once taken from all meetings, <lb/>
+					which I felt much store by, it was amazing to me <lb/>
+					that I now enjoy'd such a Sabatic stillness &amp; a <lb/>
+					Sunshine of peace for that time, that I wanted <lb/>
+					nothing, but was indeed as a Child at the breast. <lb/>
+					I was not Yet in the Cong<hi rend="superscript">n</hi> tho' I had defer'd it some <lb/>
+					time. B<hi rend="superscript">r</hi> &amp; S<hi rend="superscript">r</hi> Holand how comeing from Germany <lb/>
+					I went with their Daughter to live with them. <lb/>
+					I now thought much about being received into the <lb/>
+					Cong<hi rend="superscript">n</hi>, but I had still to wait some time, which <lb/>
+					was very wholsome for the I was once much comforted <lb/>
+					by these words, Jesus thy affairs will think on, <lb/>
+					as thy ever loveing Head. At length the hour which <lb/>
+					certainly at the right moment, the Divine impression <lb/>
+					to me was, I am now in by Fathers House, this was <lb/>
+					May 18<hi rend="superscript">th</hi> 1747, and the 2<hi rend="superscript">d</hi> of Sep<hi rend="superscript">t</hi> following I had <lb/>
+					the unspeakable grace to be a partaker of my dear <lb/>
 					Saviours body &amp; blood in the Holy Sacrament.</p>
 					<p>
-					In this period ah! how good &amp; blessd was the Liturgies <lb />
-					&amp; all the Meeting to my poor heart beyond all expres <lb />
-					sion, I had the grace to feel that in myself I was <lb />
-					a poor Creature truely convinced no one worse, had a <lb />
-					solid feeling what Sin is in all its odious Shapes <lb />
+					In this period ah! how good &amp; blessd was the Liturgies <lb/>
+					&amp; all the Meeting to my poor heart beyond all expres <lb/>
+					sion, I had the grace to feel that in myself I was <lb/>
+					a poor Creature truely convinced no one worse, had a <lb/>
+					solid feeling what Sin is in all its odious Shapes <lb/>
 					I am sensible that I have given the dear Holy Ghost
 						<note type="catchword">much trouble to</note>
 			</p>
 				</div>
 				<div type="page" n="7">
-					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-07.jpg" />
+					<pb n="7" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-07.jpg"/>
 			<p>
-					to keep me low as a sinner, my dear B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> <lb />
-					will understand what that sensation is a solid <lb />
-					feeling what is sin, but <unclear>not to touch sin God forbid</unclear> <lb />
-					In this Year I went to live at Mile end with the <lb />
-					Children here I had new appearings of my dear Saviours <lb />
-					Love and grace especially relating to my Choir. I <lb />
-					was drawn to read the Canticles &amp; these Disciples <lb />
-					of our Saviours love to his Church was opend to <lb />
-					me with such truth &amp; reallity as I can&apos;t express <lb />
-					The following verse was much impressed on my mind <lb />
+					to keep me low as a sinner, my dear B<hi rend="superscript">rn</hi> &amp; S<hi rend="superscript">rs</hi> <lb/>
+					will understand what that sensation is a solid <lb/>
+					feeling what is sin, but <unclear>not to touch sin God forbid</unclear> <lb/>
+					In this Year I went to live at Mile end with the <lb/>
+					Children here I had new appearings of my dear Saviours <lb/>
+					Love and grace especially relating to my Choir. I <lb/>
+					was drawn to read the Canticles &amp; these Disciples <lb/>
+					of our Saviours love to his Church was opend to <lb/>
+					me with such truth &amp; reallity as I can't express <lb/>
+					The following verse was much impressed on my mind <lb/>
 					at this time, O thou the fairest of mankind</p>
 					<p>
-					Thy beauty strike both heart &amp; mind. But <lb />
-					nothing is so fair in thee. As thy sweet form <lb />
-					upon the tree and can thro&apos; his love &amp; grace say <lb />
-					Nothing has so struck me. As when God&apos;s <lb />
-					Spirit took me too Golgotha O God be prais&apos;d <lb />
-					This has a period in the Cong<hi rend="superscript">n</hi> of some extravegances <lb />
-					But can say for myself I am truly convinc&apos;d <lb />
-					by my own experiance that there was a glory <lb />
-					from the Lord, indeed too great for earthly minds <lb />
-					long to bear, but I expect to see it again in <lb />
-					perfection without a Vail between, and with <lb />
-					the whole Sinners train surround that Cavity <lb />
-					where I shall dwell eternally, at this time <lb />
-					that verse was realised to my heart, To be <lb />
-					enamour&apos;d I know well, To have the heart quite <lb />
-					overflowing, For him alone to be so glowing <lb />
+					Thy beauty strike both heart &amp; mind. But <lb/>
+					nothing is so fair in thee. As thy sweet form <lb/>
+					upon the tree and can thro' his love &amp; grace say <lb/>
+					Nothing has so struck me. As when God's <lb/>
+					Spirit took me too Golgotha O God be prais'd <lb/>
+					This has a period in the Cong<hi rend="superscript">n</hi> of some extravegances <lb/>
+					But can say for myself I am truly convinc'd <lb/>
+					by my own experiance that there was a glory <lb/>
+					from the Lord, indeed too great for earthly minds <lb/>
+					long to bear, but I expect to see it again in <lb/>
+					perfection without a Vail between, and with <lb/>
+					the whole Sinners train surround that Cavity <lb/>
+					where I shall dwell eternally, at this time <lb/>
+					that verse was realised to my heart, To be <lb/>
+					enamour'd I know well, To have the heart quite <lb/>
+					overflowing, For him alone to be so glowing <lb/>
 					Expressions only me here fail. About this
 			</p>
 					<cb/>
 			<p>
-					this time I also had a new school for my own heart <lb />
-					concerning the Virgin Station, and found that only <lb />
-					by partaking of the Nature of the only Virgin man <lb />
-					one cou&apos;d deserve that Character, this was made <lb />
-					very clear to me, Fair gifts of my creation, quite <lb />
-					spirit&apos;d made me disspair for this grace, the <lb />
-					knowledge of myself (in this particular) I adore &amp; <lb />
-					thank my dear Lord &amp; his Spirit for teaching me <lb />
-					the way to turn to his precious blood, which alone <lb />
-					can cleanse our hearts and make all good, I found <lb />
-					it an antidote against all those sins that stick <lb />
+					this time I also had a new school for my own heart <lb/>
+					concerning the Virgin Station, and found that only <lb/>
+					by partaking of the Nature of the only Virgin man <lb/>
+					one cou'd deserve that Character, this was made <lb/>
+					very clear to me, Fair gifts of my creation, quite <lb/>
+					spirit'd made me disspair for this grace, the <lb/>
+					knowledge of myself (in this particular) I adore &amp; <lb/>
+					thank my dear Lord &amp; his Spirit for teaching me <lb/>
+					the way to turn to his precious blood, which alone <lb/>
+					can cleanse our hearts and make all good, I found <lb/>
+					it an antidote against all those sins that stick <lb/>
 					so close to our nature.</p>
 					<p>
-					In the year 1751 I was sent to care for the Single <lb />
-					S<hi rend="superscript">rs</hi> in Ockbrook and in Sep<hi rend="superscript">r</hi> 1757 I receiv&apos;d a call <lb />
-					to go to Tytherton for the same purpose, and arrived <lb />
-					there in the Angels <gap reason="illegible"/>, this Jurney I shall <lb />
-					never forget, it was very much bless&apos;d to me through <lb />
-					the nearness of my gracious Lord, and the impression <lb />
-					I had of the aid of his dearAngels, July 19<hi rend="superscript">th</hi> 1763 <lb />
-					I return&apos;d again to Ockbrook, and Dec<hi rend="superscript">r</hi> 11<hi rend="superscript">th</hi> 1772 <lb />
-					I arrived in London where I hope to finish my poor <lb />
-					&amp; insignificant labour, In all these places my <lb />
-					best Friend has help&apos;d me through in wholesome <lb />
-					poverty both internally &amp; externally, and I can <lb />
-					say with the Deciples, I have lacked nothing, have <lb />
-					been rich in the midst of poverty, here I desire <lb />
+					In the year 1751 I was sent to care for the Single <lb/>
+					S<hi rend="superscript">rs</hi> in Ockbrook and in Sep<hi rend="superscript">r</hi> 1757 I receiv'd a call <lb/>
+					to go to Tytherton for the same purpose, and arrived <lb/>
+					there in the Angels <gap reason="illegible"/>, this Jurney I shall <lb/>
+					never forget, it was very much bless'd to me through <lb/>
+					the nearness of my gracious Lord, and the impression <lb/>
+					I had of the aid of his dearAngels, July 19<hi rend="superscript">th</hi> 1763 <lb/>
+					I return'd again to Ockbrook, and Dec<hi rend="superscript">r</hi> 11<hi rend="superscript">th</hi> 1772 <lb/>
+					I arrived in London where I hope to finish my poor <lb/>
+					&amp; insignificant labour, In all these places my <lb/>
+					best Friend has help'd me through in wholesome <lb/>
+					poverty both internally &amp; externally, and I can <lb/>
+					say with the Deciples, I have lacked nothing, have <lb/>
+					been rich in the midst of poverty, here I desire <lb/>
 					to give my due thanks to My dear Bretheren &amp;
 			</p>
 				</div>
 				<div type="page" n="8">
-					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-08.jpg" />
+					<pb n="8" facs="http://moravianlives.bucknell.edu/MAF/Ful_SS_14_2ClarkEsther-08.jpg"/>
 			<p>
-					and S<hi rend="superscript">rs</hi>, and particularly those of My own Choir <lb />
-					for their love kindness &amp; patience towards me. <lb />
-					But ah! how much is due to by dearest &amp; best <lb />
-					Friend &amp; lover, for his Election of grace &amp; for the <lb />
-					knowledge of his dear Wounded Person, his precious <lb />
-					blood, and all what he is to me, I conclude with <lb />
-					the 30<hi rend="superscript">th</hi> verse of the 43<hi rend="superscript">d</hi> Chapter of Eccleasiastious <lb />
-					which well express my mind, When You Glorify the <lb />
-					Lord, exalt him as much as God can; for even Yet <lb />
-					will he far exceed; and when You exalt him, put forth <lb />
-					all Your Strength, and be not weary, for You can <lb />
-					never go for enough. Thus far our late Sisters account. <lb />
-					Having serv&apos;d the Single Sisters Choirs with great <lb />
-					faithfulness, and blessing in several Cong<hi rend="superscript">ns</hi> (had the <lb />
-					confidence of her Sisters who always found in her a kind <lb />
-					and Sympathizing friend ready to share with them in <lb />
-					joy &amp; smart, the prosperity of every One laying very <lb />
-					near her heart) till her bodily infirmities wou&apos;d no <lb />
-					longer permit her to do what her heart &amp; mind was <lb />
-					Still willing for June 20<hi rend="superscript">th</hi> 1782 She arrived here <lb />
-					in Fulneck to injoy a Sabath. During the 8 years <lb />
-					of her abode here, She often express&apos;d her gratitude <lb />
-					to our Saviour for his kind leadings of her through <lb />
-					this Vale of tears and that she had the favour to <lb />
-					enjoy her time of rest in this dear Cong<hi rend="superscript">n</hi>. She had the <lb />
-					love and respect of ev&apos;ry one that knew her we can with <lb />
+					and S<hi rend="superscript">rs</hi>, and particularly those of My own Choir <lb/>
+					for their love kindness &amp; patience towards me. <lb/>
+					But ah! how much is due to by dearest &amp; best <lb/>
+					Friend &amp; lover, for his Election of grace &amp; for the <lb/>
+					knowledge of his dear Wounded Person, his precious <lb/>
+					blood, and all what he is to me, I conclude with <lb/>
+					the 30<hi rend="superscript">th</hi> verse of the 43<hi rend="superscript">d</hi> Chapter of Eccleasiastious <lb/>
+					which well express my mind, When You Glorify the <lb/>
+					Lord, exalt him as much as God can; for even Yet <lb/>
+					will he far exceed; and when You exalt him, put forth <lb/>
+					all Your Strength, and be not weary, for You can <lb/>
+					never go for enough. Thus far our late Sisters account. <lb/>
+					Having serv'd the Single Sisters Choirs with great <lb/>
+					faithfulness, and blessing in several Cong<hi rend="superscript">ns</hi> (had the <lb/>
+					confidence of her Sisters who always found in her a kind <lb/>
+					and Sympathizing friend ready to share with them in <lb/>
+					joy &amp; smart, the prosperity of every One laying very <lb/>
+					near her heart) till her bodily infirmities wou'd no <lb/>
+					longer permit her to do what her heart &amp; mind was <lb/>
+					Still willing for June 20<hi rend="superscript">th</hi> 1782 She arrived here <lb/>
+					in Fulneck to injoy a Sabath. During the 8 years <lb/>
+					of her abode here, She often express'd her gratitude <lb/>
+					to our Saviour for his kind leadings of her through <lb/>
+					this Vale of tears and that she had the favour to <lb/>
+					enjoy her time of rest in this dear Cong<hi rend="superscript">n</hi>. She had the <lb/>
+					love and respect of ev'ry one that knew her we can with <lb/>
 					truth give her this testimony that She approved
 						<note type="catchword">herself</note>
 			</p>
 			<p>
 					herself among us as a real Child of peace.</p>
 					<p>
-					At our last Choir Festival She was present at all <lb />
-					the meetings, which was the last time she was able <lb />
-					to go out after which She lost her strength very <lb />
-					perceptably but her longing to be at home with her <lb />
-					dearst Lord encreased daily, two days before her <lb />
-					happy departure She said a S<hi rend="superscript">r</hi> that was with <lb />
-					her with great emotion of heart, I go to our Saviour <lb />
-					as the greatest Sinner, not one so great as I am, <lb />
-					but this I can tell You, He has pardon&apos;d all my <lb />
-					transgressions &amp; clothed me in the robe of his <lb />
-					righteousness, on the 27<hi rend="superscript">th</hi> of May at 11 oClock <lb />
-					in the forenoon She desir&apos;d to be helped up I see she said <lb />
-					our Saviour he to here, now he will soon fetch me, <lb />
-					after which she lay mostly Still, till 7 oClock <lb />
-					in the Evening when the long wish&apos;d for moment <lb />
-					came, that She departed softly &amp; happily into the  <lb />
-					joy of her Lord with the blessing of her Choir <lb />
+					At our last Choir Festival She was present at all <lb/>
+					the meetings, which was the last time she was able <lb/>
+					to go out after which She lost her strength very <lb/>
+					perceptably but her longing to be at home with her <lb/>
+					dearst Lord encreased daily, two days before her <lb/>
+					happy departure She said a S<hi rend="superscript">r</hi> that was with <lb/>
+					her with great emotion of heart, I go to our Saviour <lb/>
+					as the greatest Sinner, not one so great as I am, <lb/>
+					but this I can tell You, He has pardon'd all my <lb/>
+					transgressions &amp; clothed me in the robe of his <lb/>
+					righteousness, on the 27<hi rend="superscript">th</hi> of May at 11 oClock <lb/>
+					in the forenoon She desir'd to be helped up I see she said <lb/>
+					our Saviour he to here, now he will soon fetch me, <lb/>
+					after which she lay mostly Still, till 7 oClock <lb/>
+					in the Evening when the long wish'd for moment <lb/>
+					came, that She departed softly &amp; happily into the  <lb/>
+					joy of her Lord with the blessing of her Choir <lb/>
 					in the 76<hi rend="superscript">th</hi> year of her Age.
 			</p>
 				</div>

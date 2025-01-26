@@ -1,0 +1,98 @@
+2021-02-22 15:20:52.301 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.App.Model.Core.Application
+2021-02-22 15:20:52.366 -05:00 [ERR] Zen.App.Provider.IZenOrchestrator : 11sovPaH : A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.MongoClient+AreSessionsSupportedServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", ConnectionMode : "Automatic", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", ReasonChanged: "Heartbeat", State: "Disconnected", ServerVersion: , TopologyVersion: , Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. [::1]:27017
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__274_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.ConnectAsync(Socket socket, EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.CreateStreamAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.InitializeConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.HeartbeatAsync(CancellationToken cancellationToken)", LastHeartbeatTimestamp: "2021-02-22T20:20:49.1326001Z", LastUpdateTimestamp: "2021-02-22T20:20:49.1326040Z" }] }.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.App.Provider.ZenOrchestratorPrimitive`4:Initialize[L34 C13] > DetectEnvironment[L291 C13] > Zen.App.Core.Application.Factory:get_Current[L12 C47] > get_Provider[L11 C57] > Zen.App.Core.Application.Factory+<>c:<get_Provider>b__2_0[L11 C87] > Zen.App.Core.Application.DataApplicationProvider`1:get_Application[L22 C17] > Compile[L31 C13] > ByLocator[L112 C57] > Zen.Base.Module.Data`1:GetByLocator[L1011 C13] > Where[L467 C17] > Zen.Module.Data.MongoDB.MongoDbAdapter`1:Where[L225 C19] > MongoDB.Driver.Linq.MongoQueryableImpl`2:GetEnumerator > MongoDB.Driver.Linq.MongoQueryProviderImpl`1:Execute
+2021-02-22 15:20:52.367 -05:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-02-22 15:20:52.369 -05:00 [DBG] 
+2021-02-22 15:20:52.371 -05:00 [INF] Zen 0.6.0.0
+2021-02-22 15:20:52.372 -05:00 [DBG] 
+2021-02-22 15:20:52.373 -05:00 [VRB] Providers:
+2021-02-22 15:20:52.375 -05:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-02-22 15:20:52.376 -05:00 [DBG] IEnvironmentProvider | DefaultEnvironmentProvider | Operational
+2021-02-22 15:20:52.377 -05:00 [DBG] ICacheProvider | NullCacheProvider | NonOperational
+2021-02-22 15:20:52.378 -05:00 [DBG] IEncryptionProvider | NullEncryptionProvider | Undefined
+2021-02-22 15:20:52.379 -05:00 [DBG] IConnectionBundleProvider | ConnectionBundleProvider | Operational | Default: MongoDbDefaultBundle
+2021-02-22 15:20:52.380 -05:00 [DBG] Base Directory | C:\Luyang\repo2\moravian-lives\moravian-lives\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-02-22 15:20:52.381 -05:00 [DBG] Data Directory | C:\Luyang\repo2\moravian-lives\moravian-lives\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-02-22 15:20:52.382 -05:00 [VRB] State:
+2021-02-22 15:20:52.383 -05:00 [DBG] Application Provider | Zen.App.Core.Application.ApplicationProvider
+2021-02-22 15:20:52.383 -05:00 [DBG] Orchestrator | Zen.App.Orchestrator.DefaultOrchestrator
+2021-02-22 15:20:52.384 -05:00 [DBG] File Storage | Zen.Storage.BuiltIn.DefaultFileStorage
+2021-02-22 15:20:52.385 -05:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-02-22 15:20:52.386 -05:00 [DBG] Environment | Standard
+2021-02-22 15:20:52.387 -05:00 [DBG] MongoDB Client | (anonymous)@localhost
+2021-02-22 15:20:52.388 -05:00 [DBG] Zen.App.Model.Core.Application | Ready | STA + MongoDbDefaultBundle + STA.Zen.App.Model.Core.Application
+2021-02-22 15:20:52.392 -05:00 [DBG] 
+2021-02-22 15:20:52.393 -05:00 [INF] ZenBuilder | 369 services registered
+2021-02-22 15:20:52.558 -05:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-02-22 15:20:52.972 -05:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-02-22 15:20:53.404 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-02-22 15:20:53.424 -05:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | STA + MongoDbDefaultBundle + STA.Zen.Web.Model.State.ZenSession
+2021-02-22 15:20:53.495 -05:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-02-22 15:20:58.645 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-02-22 15:20:58.657 -05:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | STA + MongoDbDefaultBundle + STA.Zen.Service.Maintenance.Model.Tracking
+2021-02-22 15:21:28.735 -05:00 [INF] Tracking | A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.MongoClient+AreSessionsSupportedServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", ConnectionMode : "Automatic", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", ReasonChanged: "Heartbeat", State: "Disconnected", ServerVersion: , TopologyVersion: , Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. [::1]:27017
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__274_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.ConnectAsync(Socket socket, EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.CreateStreamAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.InitializeConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.HeartbeatAsync(CancellationToken cancellationToken)", LastHeartbeatTimestamp: "2021-02-22T20:21:25.5942794Z", LastUpdateTimestamp: "2021-02-22T20:21:25.5942796Z" }] }.
+2021-02-22 15:52:21.747 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.App.Model.Core.Application
+2021-02-22 15:52:21.812 -05:00 [ERR] Zen.App.Provider.IZenOrchestrator : l5ofNi3v : A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.MongoClient+AreSessionsSupportedServerSelector, LatencyLimitingServerSelector{ AllowedLatencyRange = 00:00:00.0150000 } }. Client view of cluster state is { ClusterId : "1", ConnectionMode : "Automatic", Type : "Unknown", State : "Disconnected", Servers : [{ ServerId: "{ ClusterId : 1, EndPoint : "Unspecified/localhost:27017" }", EndPoint: "Unspecified/localhost:27017", ReasonChanged: "Heartbeat", State: "Disconnected", ServerVersion: , TopologyVersion: , Type: "Unknown", HeartbeatException: "MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): No connection could be made because the target machine actively refused it. [::1]:27017
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__274_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.ConnectAsync(Socket socket, EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.TcpStreamFactory.CreateStreamAsync(EndPoint endPoint, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.Core.Connections.BinaryConnection.OpenHelperAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.InitializeConnectionAsync(CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Servers.ServerMonitor.HeartbeatAsync(CancellationToken cancellationToken)", LastHeartbeatTimestamp: "2021-02-22T20:52:18.1123405Z", LastUpdateTimestamp: "2021-02-22T20:52:18.1123438Z" }] }.Zen.Base.dll - Zen.Base.Module.Service.AutoService:Add[L41 C23] > Zen.App.Provider.ZenOrchestratorPrimitive`4:Initialize[L34 C13] > DetectEnvironment[L291 C13] > Zen.App.Core.Application.Factory:get_Current[L12 C47] > get_Provider[L11 C57] > Zen.App.Core.Application.Factory+<>c:<get_Provider>b__2_0[L11 C87] > Zen.App.Core.Application.DataApplicationProvider`1:get_Application[L22 C17] > Compile[L31 C13] > ByLocator[L112 C57] > Zen.Base.Module.Data`1:GetByLocator[L1011 C13] > Where[L467 C17] > Zen.Module.Data.MongoDB.MongoDbAdapter`1:Where[L225 C19] > MongoDB.Driver.Linq.MongoQueryableImpl`2:GetEnumerator > MongoDB.Driver.Linq.MongoQueryProviderImpl`1:Execute
+2021-02-22 15:52:21.812 -05:00 [DBG] GraphQlProcessor | 0 queryable types added
+2021-02-22 15:52:21.815 -05:00 [DBG] 
+2021-02-22 15:52:21.818 -05:00 [INF] Zen 0.6.0.0
+2021-02-22 15:52:21.819 -05:00 [DBG] 
+2021-02-22 15:52:21.821 -05:00 [VRB] Providers:
+2021-02-22 15:52:21.823 -05:00 [DBG] ILogProvider | DefaultLogProvider | Operational
+2021-02-22 15:52:21.825 -05:00 [DBG] IEnvironmentProvider | DefaultEnvironmentProvider | Operational
+2021-02-22 15:52:21.826 -05:00 [DBG] ICacheProvider | NullCacheProvider | NonOperational
+2021-02-22 15:52:21.831 -05:00 [DBG] IEncryptionProvider | NullEncryptionProvider | Undefined
+2021-02-22 15:52:21.834 -05:00 [DBG] IConnectionBundleProvider | ConnectionBundleProvider | Operational | Default: MongoDbDefaultBundle
+2021-02-22 15:52:21.835 -05:00 [DBG] Base Directory | C:\Luyang\repo2\moravian-lives\moravian-lives\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1
+2021-02-22 15:52:21.836 -05:00 [DBG] Data Directory | C:\Luyang\repo2\moravian-lives\moravian-lives\service\edu.bucknell.project.moravianLives.API\bin\Debug\netcoreapp3.1\data
+2021-02-22 15:52:21.837 -05:00 [VRB] State:
+2021-02-22 15:52:21.837 -05:00 [DBG] Application Provider | Zen.App.Core.Application.ApplicationProvider
+2021-02-22 15:52:21.838 -05:00 [DBG] Orchestrator | Zen.App.Orchestrator.DefaultOrchestrator
+2021-02-22 15:52:21.839 -05:00 [DBG] File Storage | Zen.Storage.BuiltIn.DefaultFileStorage
+2021-02-22 15:52:21.839 -05:00 [DBG] Zen.Web.Auth | Mode: , Providers: 
+2021-02-22 15:52:21.840 -05:00 [DBG] Environment | Standard
+2021-02-22 15:52:21.841 -05:00 [DBG] MongoDB Client | (anonymous)@localhost
+2021-02-22 15:52:21.843 -05:00 [DBG] Zen.App.Model.Core.Application | Ready | STA + MongoDbDefaultBundle + STA.Zen.App.Model.Core.Application
+2021-02-22 15:52:21.844 -05:00 [DBG] 
+2021-02-22 15:52:21.847 -05:00 [INF] ZenBuilder | 369 services registered
+2021-02-22 15:52:22.021 -05:00 [DBG] Certificate | 9BA02CE311CB3C25422F0E11FF16C3773D7D6E2E | ASP.NET Core HTTPS development certificate
+2021-02-22 15:52:22.330 -05:00 [INF] edu.bucknell.project.moravianLives.API | Running
+2021-02-22 15:52:22.761 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.Web.Model.State.ZenSession
+2021-02-22 15:52:22.773 -05:00 [DBG] Zen.Web.Model.State.ZenSession | Ready | STA + MongoDbDefaultBundle + STA.Zen.Web.Model.State.ZenSession
+2021-02-22 15:52:22.821 -05:00 [INF] edu.bucknell.project.moravianLives.API | Started!
+2021-02-22 15:52:28.032 -05:00 [DBG] MongoDbAdapter ClassMap | Zen.Service.Maintenance.Model.Tracking
+2021-02-22 15:52:28.053 -05:00 [DBG] Zen.Service.Maintenance.Model.Tracking | Ready | STA + MongoDbDefaultBundle + STA.Zen.Service.Maintenance.Model.Tracking

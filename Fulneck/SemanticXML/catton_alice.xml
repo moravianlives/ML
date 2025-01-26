@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/Projects/TEI_Memoirs/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -103,7 +100,572 @@
 				<p>Memoirs from the Fulneck Archive</p>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424221646054",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:16:46.054Z",
+	"dcterms:modified": "2023-04-25T02:16:46.054Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424221646054#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424221646054#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q2067089",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222418235",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:24:18.235Z",
+	"dcterms:modified": "2023-04-25T02:24:18.235Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222418235#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222418235#Selector",
+			"@type": "oa:RangeSelector",
+			"oa:hasStartSelector": {
+				"@type": "oa:XPathSelector",
+				"rdf:value": "TEI/text/body/div/div/p"
+			},
+			"oa:hasEndSelector": {
+				"@type": "oa:XPathSelector",
+				"rdf:value": "TEI/text/body/div/div/p/hi[2]"
+			},
+			"oa:refinedBy": {
+				"@type": "oa:TextPositionSelector",
+				"oa:start": 90,
+				"oa:end": 1
+			}
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Huddersfield",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222519849",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:25:19.849Z",
+	"dcterms:modified": "2023-04-25T02:25:19.849Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222519849#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222519849#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q6653016",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222543905",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:25:43.905Z",
+	"dcterms:modified": "2023-04-25T02:25:43.905Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222543905#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424222543905#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q3773203",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223651092",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:36:51.092Z",
+	"dcterms:modified": "2023-04-25T02:36:51.092Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223651092#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223651092#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5508369",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223707769",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:37:07.769Z",
+	"dcterms:modified": "2023-04-25T02:37:07.769Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223707769#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223707769#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/placeName[5]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q2892741",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223814411",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T02:38:14.411Z",
+	"dcterms:modified": "2023-04-25T02:38:14.411Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223814411#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/catton_alice.xml?place_annotation_20230424223814411#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q826561",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#">[NAME]</persName>
@@ -119,182 +681,172 @@
 			<div type="memoir">
 				<head>Alice Catton</head>
 				<div type="page" n="1">
-					<pb n="1"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-01.jpg"/>
+					<pb n="1" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-01.jpg"/>
 					<p>
-							<hi rend="underline">died Feb. / 48</hi> <lb />
-							Our late Sr Alice Catton was <lb />
-							bore at Hathwaite in Huddersf<hi rend="superscript">d</hi> in <lb />
-							Nov<hi rend="superscript">r</hi> 1767, her parents being in <lb />
+							<hi rend="underline">died Feb. / 48</hi> <lb/>
+							Our late Sr Alice Catton was <lb/>
+							bore at <placeName key="Slaithwaite" ref="http://www.wikidata.org/entity/Q2067089" cert="medium">Hathwaite</placeName> in Huddersf<hi rend="superscript">d</hi> in <lb/>
+							Nov<hi rend="superscript">r</hi> 1767, her parents being in <lb/>
 							connection with the B<hi rend="superscript">rns</hi> church &amp;
-								mem <lb />
+								mem <lb/>
 							bers of our Cog<hi rend="superscript">n</hi> at Mifield who
-								enjoyed <lb />
-							the Grace of God in their hts. &amp; bro<hi rend="superscript"
-									>t.</hi> up their <lb />
-							childr<hi rend="superscript">n</hi> in the nuture &amp; admonit<hi
-									rend="superscript">n</hi> of ye Ld so <lb />
+								enjoyed <lb/>
+							the Grace of God in their hts. &amp; bro<hi rend="superscript">t.</hi> up their <lb/>
+							childr<hi rend="superscript">n</hi> in the nuture &amp; admonit<hi rend="superscript">n</hi> of ye Ld so <lb/>
 							that our late S<hi rend="superscript">r</hi> knew the truth &amp;
-								doubtless <lb />
-							felt powerful drawings of divine lore from <lb />
+								doubtless <lb/>
+							felt powerful drawings of divine lore from <lb/>
 							her early childhood. When ab<hi rend="superscript">t.</hi> 16 yrs of
-								age, <lb />
-							she came to reside in it sisters house at <lb />
-							that time existing at Littlemoor in the <lb />
+								age, <lb/>
+							she came to reside in it sisters house at <lb/>
+							that time existing at Littlemoor in the <lb/>
 							house now tenanted by M<hi rend="superscript">r</hi> Parkinson
-								While <lb />
-							there she grew in grace &amp; in the knowledge <lb />
+								While <lb/>
+							there she grew in grace &amp; in the knowledge <lb/>
 							of our Ld. &amp; Sav<hi rend="superscript">r</hi> Jes. Christ, as her
-								occasional <lb />
-							references in conversation, to that period <lb />
-							of her life, as a happy &amp; profitable one, proved. <lb />
-							In the y<hi rend="superscript">r</hi> 1783 the establishme<hi
-									rend="superscript">t</hi> at Littlemoor <lb />
-							being broken up, she removed with most of <lb />
-							her companions to our Sisters house here <lb />
-							having spent 8 years in the other institu- <lb />
-							tion, &amp; having been, during that time, rec<hi rend="superscript"
-									>d</hi> <lb />
+								occasional <lb/>
+							references in conversation, to that period <lb/>
+							of her life, as a happy &amp; profitable one, proved. <lb/>
+							In the y<hi rend="superscript">r</hi> 1783 the establishme<hi rend="superscript">t</hi> at <placeName key="Littlemoor" ref="http://www.wikidata.org/entity/Q6653016" cert="low">Littlemoor</placeName> <lb/>
+							being broken up, she removed with most of <lb/>
+							her companions to our Sisters house here <lb/>
+							having spent 8 years in the other institu- <lb/>
+							tion, &amp; having been, during that time, rec<hi rend="superscript">d</hi> <lb/>
 							into the Cong<hi rend="superscript">n</hi> &amp; admitted to the H.
-									Com<hi rend="superscript">n</hi>. She <lb />
-							did not spend reside (in this Sisters&apos; house) for <lb />
-							the whole of her remaining time, but lived <lb />
-							some years with her late father, nursing him <lb />
-							faithfully until his end, in her native place <lb />
-							she was also a short time at Gumersal - lived with <lb />
-							a friend in a private house in Fulneck <lb />
-							&amp; likewise occupied another house by herself <lb />
-							she was for sometime cook in the Sisters <lb />
-							house, &amp; spent attasctory upwards of 50 <lb />
-							years either in this or that at Littlemoor. <lb />
-							The fact, that throughout the whole of her <lb />
-							lengthened pilgrimmage of 4 score years she <lb />
-							maintained a consistent Moravian character <lb />
-							proves that she knew whom she believed, <lb />
-							that her love of Moravians constrained her, &amp; that <lb />
-							she walked humbly with her God. Tho&apos; not <lb />
-							so communicative &amp; open as some followers <lb />
+									Com<hi rend="superscript">n</hi>. She <lb/>
+							did not spend reside (in this Sisters' house) for <lb/>
+							the whole of her remaining time, but lived <lb/>
+							some years with her late father, nursing him <lb/>
+							faithfully until his end, in her native place <lb/>
+							she was also a short time at <placeName key="Gomersal" ref="http://www.wikidata.org/entity/Q3773203" cert="Unknown">Gumersal</placeName> - lived with <lb/>
+							a friend in a private house in <placeName key="Fulneck Moravian Settlement" ref="http://www.wikidata.org/entity/Q5508369">Fulneck</placeName> <lb/>
+							&amp; likewise occupied another house by herself <lb/>
+							she was for sometime cook in the Sisters <lb/>
+							house, &amp; spent attasctory upwards of 50 <lb/>
+							years either in this or that at <placeName key="Littlemoor" ref="http://www.wikidata.org/entity/Q2892741" cert="low">Littlemoor</placeName>. <lb/>
+							The fact, that throughout the whole of her <lb/>
+							lengthened pilgrimmage of 4 score years she <lb/>
+							maintained a consistent Moravian character <lb/>
+							proves that she knew whom she believed, <lb/>
+							that her love of Moravians constrained her, &amp; that <lb/>
+							she walked humbly with her God. Tho' not <lb/>
+							so communicative &amp; open as some followers <lb/>
 							of the Lamb on spiritual subjects, her					
 					</p>
 				</div>
 				<div type="page" n="2">
-					<pb n="2"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-02.jpg"/>
+					<pb n="2" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-02.jpg"/>
 					<p>
-							&amp; tender, as well as her walk conformable to <lb />
-							the gospel, showed that she was in Christ &amp; that <lb />
-							his spirit dwelt in her. Being, moreover of <lb />
-							a very cheerful, lively &amp; amiable disposition <lb />
-							she was generally beloved &amp; respected wherever <lb />
-							she dwelt &amp; by old &amp; young. Her course <lb />
-							temporal &amp; spiritual, was remarkably <lb />
-							smooth &amp; even; she had an excellent con- <lb />
+							&amp; tender, as well as her walk conformable to <lb/>
+							the gospel, showed that she was in Christ &amp; that <lb/>
+							his spirit dwelt in her. Being, moreover of <lb/>
+							a very cheerful, lively &amp; amiable disposition <lb/>
+							she was generally beloved &amp; respected wherever <lb/>
+							she dwelt &amp; by old &amp; young. Her course <lb/>
+							temporal &amp; spiritual, was remarkably <lb/>
+							smooth &amp; even; she had an excellent con- <lb/>
 							stitut<hi rend="superscript">n</hi> &amp; enjoyed very good health
-								not <lb />
-							feeling much even of the infirmities of <lb />
-							old age &amp; being able often to attend the means <lb />
-							of grace in which she delighted finding in <lb />
-							these pastures for her soul. Nor had she <lb />
-							many trials, of an external nature, to <lb />
-							cope with; perhaps the heaviest was the loss <lb />
-							of her little property by the failure of a <lb />
-							bank in Halifax, at a time when such <lb />
-							a calamity must be peculiarly dis <lb />
-							tressing viz. where old-age was approaching <lb />
-							yet she submitted, taking the dispensation <lb />
-							as from the hands of the Lord, &amp; believing that <lb />
-							he would know how to provide for her; nor <lb />
-							was her confidence put to shame; he, who  <lb />
-							clothes the lilies &amp; feeds the ravens, found <lb />
-							her food &amp; raiment &amp; what adds so much <lb />
-							to those blessings a contented &amp; cheerful mind <lb />
-							until he took her to where the Lamb himself <lb />
-							shall feed his sheep &amp; guide them to living <lb />
-							fountains of water. She was attacked <lb />
+								not <lb/>
+							feeling much even of the infirmities of <lb/>
+							old age &amp; being able often to attend the means <lb/>
+							of grace in which she delighted finding in <lb/>
+							these pastures for her soul. Nor had she <lb/>
+							many trials, of an external nature, to <lb/>
+							cope with; perhaps the heaviest was the loss <lb/>
+							of her little property by the failure of a <lb/>
+							bank in <placeName key="Halifax" ref="http://www.wikidata.org/entity/Q826561">Halifax</placeName>, at a time when such <lb/>
+							a calamity must be peculiarly dis <lb/>
+							tressing viz. where old-age was approaching <lb/>
+							yet she submitted, taking the dispensation <lb/>
+							as from the hands of the Lord, &amp; believing that <lb/>
+							he would know how to provide for her; nor <lb/>
+							was her confidence put to shame; he, who  <lb/>
+							clothes the lilies &amp; feeds the ravens, found <lb/>
+							her food &amp; raiment &amp; what adds so much <lb/>
+							to those blessings a contented &amp; cheerful mind <lb/>
+							until he took her to where the Lamb himself <lb/>
+							shall feed his sheep &amp; guide them to living <lb/>
+							fountains of water. She was attacked <lb/>
 							by the then prevailing influenza ab<hi rend="superscript">t</hi>
-								2 <lb />
+								2 <lb/>
 							mo<hi rend="superscript">s</hi> ago, &amp; was so much reduced, that
-								she <lb />
-							quite expected to be called home to her <lb />
+								she <lb/>
+							quite expected to be called home to her <lb/>
 							Sav<hi rend="superscript">r</hi>; she recovered, however, once more
-								so <lb />
-							for, as to have almost regained her wanted <lb />
-							strength; but on Friday Jan<hi rend="superscript">y</hi> 20<hi
-									rend="superscript">th</hi> she <lb />
-							was taken ill of another complaint, which <lb />
-							presently reduced her so rapidly, that no <lb />
-							hopes could be entertained of her recovery.  <lb />
-							Throughout the whole of her illness she was <lb />
-							much pleased to enter into spiritual con- <lb />
+								so <lb/>
+							for, as to have almost regained her wanted <lb/>
+							strength; but on Friday Jan<hi rend="superscript">y</hi> 20<hi rend="superscript">th</hi> she <lb/>
+							was taken ill of another complaint, which <lb/>
+							presently reduced her so rapidly, that no <lb/>
+							hopes could be entertained of her recovery.  <lb/>
+							Throughout the whole of her illness she was <lb/>
+							much pleased to enter into spiritual con- <lb/>
 							versat<hi rend="superscript">n</hi> with any spiritual believing
-								friend, always <lb />
-							welcomed her labourer &amp; her minister,  <lb />
-							whom she had known from a little Boy, with <lb />
+								friend, always <lb/>
+							welcomed her labourer &amp; her minister,  <lb/>
+							whom she had known from a little Boy, with <lb/>
 							joy &amp; affection &amp; loved to have a prayer offered.
 					</p>
 				</div>
 				<div type="page" n="3">
-					<pb n="3"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-03.jpg"/>
+					<pb n="3" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-03.jpg"/>
 					<p>
-							ed up at her side. When it became <lb />
-							evident, that her days were numbered, &amp; <lb />
+							ed up at her side. When it became <lb/>
+							evident, that her days were numbered, &amp; <lb/>
 							she was asked, if she herself tho<hi rend="superscript">t</hi> our
-									Sav<hi rend="superscript">r</hi> <lb />
-							would at this time take her to himself, <lb />
-							she said at first with the utmost calm- <lb />
-							ness, &quot;It is not yet clear to me,&quot; but after <lb />
-							a day or two, she said decidedly, &quot;I know <lb />
-							not that I <hi rend="underline">am</hi> going,&quot; adding
-								that she <lb />
+									Sav<hi rend="superscript">r</hi> <lb/>
+							would at this time take her to himself, <lb/>
+							she said at first with the utmost calm- <lb/>
+							ness, "It is not yet clear to me," but after <lb/>
+							a day or two, she said decidedly, "I know <lb/>
+							not that I <hi rend="underline">am</hi> going," adding
+								that she <lb/>
 							knew her Sav<hi rend="superscript">r</hi>, in whom she had so long
-								be <lb />
-							lieved, who had led her from her youth <lb />
-							up &amp; shewn her never varying loving <lb />
-							kindness, could now complete His work <lb />
-							&amp; crown His Grace for that tho&apos; she was <lb />
-							a poor worthless sinner in herself, He had <lb />
-							washed her from sins in his own blood <lb />
-							&amp; would, she assuredly believed, fully pre- <lb />
-							pare her, by His spirit for entering into <lb />
-							his kingdom &amp; seeing Him face to face. <lb />
-							She spoke with true humility of herself <lb />
-							as of one who had not a crumb of merit <lb />
+								be <lb/>
+							lieved, who had led her from her youth <lb/>
+							up &amp; shewn her never varying loving <lb/>
+							kindness, could now complete His work <lb/>
+							&amp; crown His Grace for that tho' she was <lb/>
+							a poor worthless sinner in herself, He had <lb/>
+							washed her from sins in his own blood <lb/>
+							&amp; would, she assuredly believed, fully pre- <lb/>
+							pare her, by His spirit for entering into <lb/>
+							his kingdom &amp; seeing Him face to face. <lb/>
+							She spoke with true humility of herself <lb/>
+							as of one who had not a crumb of merit <lb/>
 							no, not <hi rend="underline">one</hi> righteous work to
-								plead; <lb />
-							but she extolled the all sufficiency, the <lb />
-							grace, the tender loving kindness of her <lb />
-							Sav<hi rend="superscript">r</hi> as her <hi rend="underline"
-									>All</hi>. A friend observing to her <lb />
-							one day in conversation, &quot;You have <lb />
-							had a smooth &amp; even course thro&apos; time,&quot; <lb />
-							she replied: &quot;Indeed I have, tho&apos; not quite <lb />
-							without troubles, which we must all <lb />
-							share, I have indeed been most justly <lb />
-							led, even to heavy heirs. Her very looks <lb />
-							beamed for the the calm serenity of her <lb />
-							soul, &amp; whenever she was asked if <lb />
-							she still felt our Sav<hi rend="superscript">rs</hi> peace in her <lb />
-							soul, &amp; felt her reply was an empha- <lb />
-							tic &quot;Yes!&quot; she stated too, that no doubts <lb />
-							or fears even of a transiently disturbed her <lb />
-							peace &amp; joy in believing. Up to last sa- <lb />
-							turday, tho&apos; occasionally rambling she <lb />
-							was able to understand &amp; answer ques- <lb />
+								plead; <lb/>
+							but she extolled the all sufficiency, the <lb/>
+							grace, the tender loving kindness of her <lb/>
+							Sav<hi rend="superscript">r</hi> as her <hi rend="underline">All</hi>. A friend observing to her <lb/>
+							one day in conversation, "You have <lb/>
+							had a smooth &amp; even course thro' time," <lb/>
+							she replied: "Indeed I have, tho' not quite <lb/>
+							without troubles, which we must all <lb/>
+							share, I have indeed been most justly <lb/>
+							led, even to heavy heirs. Her very looks <lb/>
+							beamed for the the calm serenity of her <lb/>
+							soul, &amp; whenever she was asked if <lb/>
+							she still felt our Sav<hi rend="superscript">rs</hi> peace in her <lb/>
+							soul, &amp; felt her reply was an empha- <lb/>
+							tic "Yes!" she stated too, that no doubts <lb/>
+							or fears even of a transiently disturbed her <lb/>
+							peace &amp; joy in believing. Up to last sa- <lb/>
+							turday, tho' occasionally rambling she <lb/>
+							was able to understand &amp; answer ques- <lb/>
 							tions, but on Lords day morning all con-
 					</p>
 				</div>
 				<div type="page" n="4">
-					<pb n="4"
-						facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-04.jpg"/>
+					<pb n="4" facs="http://moravianlives.bucknell.edu/MAF/Ful_3_116_Catton_Alice-04.jpg"/>
 					<p>
-							sciousness seemed to be gone &amp; she <lb />
+							sciousness seemed to be gone &amp; she <lb/>
 							lay perfectly quiet till ab<hi rend="superscript">t.</hi> 6
-								o&apos;clock <lb />
-							in the evening when she breathed her <lb />
-							last in the most gentle manner, &amp; <lb />
-							without even a sigh, at the age of 80 <lb />
-							years &amp; about 10 weeks. Thus her last <lb />
+								o'clock <lb/>
+							in the evening when she breathed her <lb/>
+							last in the most gentle manner, &amp; <lb/>
+							without even a sigh, at the age of 80 <lb/>
+							years &amp; about 10 weeks. Thus her last <lb/>
 							end was peace, &amp; she sleeps in Jesus.
 					</p>
 				</div>

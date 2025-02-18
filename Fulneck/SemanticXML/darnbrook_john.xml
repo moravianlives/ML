@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -99,10 +97,9 @@
 			</sourceDesc>
 		</fileDesc>
 
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -126,12 +123,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.942Z",
-	"dcterms:issued": "2020-10-14T15:18:31.903Z",
+	"dcterms:modified": "2020-10-14T14:23:11.942Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -143,21 +144,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311942#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/persName"
 		}
@@ -168,17 +169,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -202,12 +204,15 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944",
-	"@type": "oa:Annotation",
-	"dcterms:created": "2020-10-14T14:23:11.944Z",
-	"dcterms:issued": "2020-10-14T15:18:31.904Z",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161606059",
+	"type": "oa:Annotation",
+	"dcterms:created": "2022-11-18T21:16:06.059Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -219,21 +224,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161606059#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.0.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161606059#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/persName[2]"
 		}
@@ -244,17 +249,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.0.1"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -278,12 +284,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.944Z",
-	"dcterms:issued": "2020-10-14T15:18:31.904Z",
+	"dcterms:modified": "2020-10-14T14:23:11.944Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -295,23 +305,23 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div/p/persName[3]"
+			"rdf:value": "TEI/text/body/div/div/p/persName[4]"
 		}
 	},
 	"oa:hasBody": {
@@ -320,17 +330,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -354,12 +365,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.944Z",
-	"dcterms:issued": "2020-10-14T15:18:31.904Z",
+	"dcterms:modified": "2023-06-26T19:53:20.928Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -371,21 +386,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.0.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102311944#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[2]/persName"
 		}
@@ -396,17 +411,30 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.0.1"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/katiefaull",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "KATHERINE  FAULL"
+			}
+		}
+	],
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -430,12 +458,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.945Z",
-	"dcterms:issued": "2020-10-14T15:18:31.904Z",
+	"dcterms:modified": "2020-10-14T14:23:11.945Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -447,21 +479,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[2]/placeName"
 		}
@@ -472,16 +504,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -505,12 +538,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.945Z",
-	"dcterms:issued": "2020-10-14T15:18:31.904Z",
+	"dcterms:modified": "2020-10-14T14:23:11.945Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -522,21 +559,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311945#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/placeName[2]"
 		}
@@ -547,17 +584,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -581,12 +619,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.946Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.946Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -598,21 +640,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/placeName[3]"
 		}
@@ -623,17 +665,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -657,12 +700,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.946Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.946Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -674,21 +721,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311946#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/add/placeName"
 		}
@@ -699,17 +746,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -733,12 +781,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.947Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.947Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -750,21 +802,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/placeName[4]"
 		}
@@ -775,17 +827,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -809,12 +862,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.947Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.947Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -826,21 +883,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311947#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/placeName[5]"
 		}
@@ -851,17 +908,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -885,12 +943,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.948Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.948Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -902,21 +964,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311948#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p/placeName"
 		}
@@ -927,17 +989,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -961,12 +1024,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.949Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.949Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -978,21 +1045,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311949#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName"
 		}
@@ -1003,17 +1070,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1037,12 +1105,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.950Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.950Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1054,21 +1126,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName[2]"
 		}
@@ -1079,17 +1151,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1113,12 +1186,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.950Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.950Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1130,21 +1207,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName[3]"
 		}
@@ -1155,17 +1232,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1189,12 +1267,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.950Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.950Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1206,21 +1288,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311950#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName[4]"
 		}
@@ -1231,17 +1313,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1265,12 +1348,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.951Z",
-	"dcterms:issued": "2020-10-14T15:18:31.905Z",
+	"dcterms:modified": "2020-10-14T14:23:11.951Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1282,21 +1369,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/placeName[5]"
 		}
@@ -1307,17 +1394,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1341,12 +1429,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.951Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.951Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1358,21 +1450,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/placeName"
 		}
@@ -1383,17 +1475,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1417,12 +1510,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.951Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.951Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1434,21 +1531,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311951#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/placeName[2]"
 		}
@@ -1457,16 +1554,17 @@
 		"@type": "cwrc:RealPlace"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1490,12 +1588,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.952Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.952Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1507,21 +1609,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/placeName[3]"
 		}
@@ -1532,17 +1634,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1566,12 +1669,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.952Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.952Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1583,21 +1690,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/placeName[4]"
 		}
@@ -1606,16 +1713,17 @@
 		"@type": "cwrc:RealPlace"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1639,12 +1747,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.952Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.952Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1656,21 +1768,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311952#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p/placeName[4]"
 		}
@@ -1681,17 +1793,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1715,12 +1828,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.953Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.953Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1732,21 +1849,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/placeName"
 		}
@@ -1757,17 +1874,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1791,12 +1909,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.953Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.953Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1808,21 +1930,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/placeName[2]"
 		}
@@ -1833,17 +1955,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1867,12 +1990,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.953Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.953Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1884,21 +2011,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311953#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/placeName[3]"
 		}
@@ -1909,17 +2036,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1943,12 +2071,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.954Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.954Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1960,21 +2092,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/placeName[4]"
 		}
@@ -1985,17 +2117,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2019,12 +2152,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.954Z",
-	"dcterms:issued": "2020-10-14T15:18:31.906Z",
+	"dcterms:modified": "2020-10-14T14:23:11.954Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2036,21 +2173,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p/placeName"
 		}
@@ -2061,17 +2198,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2095,12 +2233,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.954Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:23:11.954Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2112,21 +2254,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102311954#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/placeName"
 		}
@@ -2137,17 +2279,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2171,12 +2314,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.955Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:23:11.955Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2188,21 +2335,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/rs"
 		}
@@ -2213,17 +2360,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2247,12 +2395,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.955Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:23:11.955Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2264,21 +2416,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311955#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/rs[2]"
 		}
@@ -2289,17 +2441,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2323,12 +2476,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:23:11.956Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:23:11.956Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2340,21 +2497,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014102311956#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/rs"
 		}
@@ -2365,17 +2522,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2399,12 +2557,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:26:09.402Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:26:09.402Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2416,21 +2578,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102609402#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[2]/name[8]/placeName"
 		}
@@ -2441,17 +2603,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2475,12 +2638,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:26:25.578Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:26:25.578Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2492,21 +2659,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014102625578#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/placeName"
 		}
@@ -2517,16 +2684,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2550,12 +2718,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:27:09.487Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:27:09.487Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2567,21 +2739,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20201014102709487#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/persName"
 		}
@@ -2592,16 +2764,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2625,12 +2798,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:31:59.972Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2020-10-14T14:31:59.972Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2642,21 +2819,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103159972#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p/placeName[2]"
 		}
@@ -2667,17 +2844,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2701,12 +2879,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:02.741Z",
-	"dcterms:issued": "2020-10-14T15:18:31.907Z",
+	"dcterms:modified": "2023-06-26T19:58:04.860Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2718,42 +2900,55 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.0.1"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103202741#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p/name/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "#mlpla000186",
+		"@id": "http://www.wikidata.org/entity/Q1783560",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.0.1"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/katiefaull",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "KATHERINE  FAULL"
+			}
+		}
+	],
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2777,12 +2972,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.657Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.657Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2794,21 +2993,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207657#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/name/placeName"
 		}
@@ -2819,17 +3018,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2853,12 +3053,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.658Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.658Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2870,21 +3074,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207658#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/name/placeName"
 		}
@@ -2895,17 +3099,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -2929,12 +3134,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.659Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.659Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -2946,21 +3155,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/name[10]/placeName"
 		}
@@ -2971,17 +3180,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3005,12 +3215,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.659Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.659Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3022,21 +3236,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207659#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/name[10]/placeName[2]"
 		}
@@ -3047,17 +3261,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3081,12 +3296,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.660Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.660Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3098,21 +3317,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/name/placeName"
 		}
@@ -3123,17 +3342,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3157,12 +3377,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.660Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.660Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3174,21 +3398,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207660#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/name[2]/placeName"
 		}
@@ -3199,17 +3423,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3233,12 +3458,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.661Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.661Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3250,21 +3479,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/name[3]/placeName"
 		}
@@ -3275,17 +3504,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3309,12 +3539,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.661Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.661Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3326,21 +3560,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207661#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/name[6]/placeName"
 		}
@@ -3351,17 +3585,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3385,12 +3620,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.662Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.662Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3402,21 +3641,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/placeName[5]"
 		}
@@ -3427,16 +3666,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3460,12 +3700,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.662Z",
-	"dcterms:issued": "2020-10-14T15:18:31.908Z",
+	"dcterms:modified": "2020-10-14T14:32:07.662Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3477,21 +3721,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?place_annotation_20201014103207662#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/name[15]/placeName"
 		}
@@ -3502,17 +3746,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3536,12 +3781,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.662Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.662Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3553,21 +3802,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207662#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/date"
 		}
@@ -3577,16 +3826,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3610,12 +3860,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.663Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.663Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3627,21 +3881,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date"
 		}
@@ -3651,16 +3905,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3684,12 +3939,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.663Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.663Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3701,21 +3960,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207663#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date[2]"
 		}
@@ -3725,16 +3984,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3758,12 +4018,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.664Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.664Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3775,21 +4039,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207664#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[2]/date"
 		}
@@ -3799,16 +4063,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3832,12 +4097,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.665Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.665Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3849,21 +4118,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207665#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[4]/p[2]/date"
 		}
@@ -3873,16 +4142,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3906,12 +4176,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.666Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.666Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3923,21 +4197,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date"
 		}
@@ -3947,16 +4221,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -3980,12 +4255,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.666Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.666Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -3997,21 +4276,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207666#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date[2]"
 		}
@@ -4021,16 +4300,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -4054,12 +4334,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.667Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.667Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -4071,21 +4355,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date[3]"
 		}
@@ -4095,16 +4379,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -4128,12 +4413,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:07.667Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:07.667Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -4145,21 +4434,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?date_annotation_20201014103207667#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[5]/p[2]/date[4]"
 		}
@@ -4169,16 +4458,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -4202,12 +4492,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:31.688Z",
-	"dcterms:issued": "2020-10-14T15:18:31.909Z",
+	"dcterms:modified": "2020-10-14T14:32:31.688Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -4219,21 +4513,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103231688#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[2]/rs"
 		}
@@ -4244,17 +4538,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -4278,12 +4573,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-10-14T14:32:56.813Z",
-	"dcterms:issued": "2020-10-14T15:18:31.910Z",
+	"dcterms:modified": "2020-10-14T14:32:56.813Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -4295,21 +4594,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813#Target",
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813#Selector",
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?rs_annotation_20201014103256813#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/p[3]/rs"
 		}
@@ -4320,15 +4619,93 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.0"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161813931",
+	"type": "oa:Annotation",
+	"dcterms:created": "2022-11-18T21:18:13.931Z",
+	"dcterms:creator": {
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "KATHERINE  FAULL"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161813931#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.0.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/katiefaull/ML/master/Fulneck/SemanticXML/darnbrook_john.xml?person_annotation_20221118161813931#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/persName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://www.wikidata.org/entity/Q314399",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.0.1"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 
 			<particDesc>
 				<person role="subject">
@@ -4361,7 +4738,7 @@
 						<lb/> care to instruct me in what was religious, to the best of their <lb/>
 						knowledge, particularly my Mother, whom I remember, when <persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000536" key="Mr Ingham" cert="high" type="real">M<hi rend="superscript">r</hi>
 							<lb/> Ingham</persName> and other awakened Men first began preaching,
-						she went <lb/> frequently to hear them, &amp; a Sermon of <persName ref="#mlper000366" cert="high" type="real">M<hi rend="superscript">r</hi> Whitfield's</persName> being <lb/> then published, she got
+						she went <lb/> frequently to hear them, &amp; a Sermon of <persName key="George Whitefield" ref="http://www.wikidata.org/entity/Q314399"></persName><persName ref="#mlper000366" cert="high" type="real">M<hi rend="superscript">r</hi> Whitfield's</persName> being <lb/> then published, she got
 						it to read. I read the same, it treated <lb/> so much of the <name emotion="sufferings">Sufferings</name> of our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>, that it brought me into <lb/> some <name emotion="concern">Concern</name> about my Salvation, </p><p><date when-iso="1725" cert="medium">I was then about 5 years old </date>
 						<lb/> &amp; this was the first Conviction, I had, as much as I can remember
 						<lb/> At the End of my <date when-iso="1733" cert="medium">13<hi rend="superscript">th</hi> year</date> I was put an Apprentice to a very <lb/> religious Man
@@ -4457,7 +4834,7 @@ that Office the Voyage before. So I made if my business to get acquaint-
 <lb/>
 ed with him <add place="above">and he</add> <del>with a bottle or 2 of Rum for he Loves Liquor then</del>
 <lb/>
-told me every thing, what I should do &amp; what belonged to my office. Thus
+told me everything, what I should do &amp; what belonged to my office. Thus
 <lb/>
 I got into the Way pretty well. We sailed from the River <add place="above">the</add> latter end of
 <lb/>
@@ -4519,8 +4896,10 @@ living on Rice.</name> On Account of the Length of the voyage we also </p>
 				<div type="page" n="3">
 					<pb n="3" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_42_DarnbrookJohn-03.jpg"/>
 					<p> were obliged to take in old Stores in the <placeName ref="#mlpla000185" cert="high">East Indies</placeName> which were
+
 						very bad &amp; <lb/> rusty thro &amp; thro. <name type="event" ana="arrival">But after 2 years &amp; 3 months we arrived at <placeName ref="#mlpla000186" type="arrival" cert="high">Spithead</placeName></name>; &amp; <lb/> there made
 						myself sick to spare myself from the press . When the people were <lb/> all
+
 						pressed, I got on Shore and came by so force. I lived there with my Friends
 						<lb/> till the ship was paid off. &amp; then according to my Resolution of
 						going to Sea <lb/> no more, I began to look for a Place where I could earn

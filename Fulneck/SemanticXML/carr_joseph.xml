@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/out/MoravianMemoirs.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/moravianlives/ML/master/CodeScripts/CSS/moravian_style.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -96,10 +94,9 @@
 				</msDesc>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -123,12 +120,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.768Z",
-	"dcterms:issued": "2020-12-18T16:47:36.379Z",
+	"dcterms:modified": "2020-12-18T16:40:27.768Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -140,21 +141,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?person_annotation_20201218114027768#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p/persName"
 		}
@@ -165,16 +166,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -198,12 +200,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.771Z",
-	"dcterms:issued": "2020-12-18T16:47:36.381Z",
+	"dcterms:modified": "2020-12-18T16:40:27.771Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -215,21 +221,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027771#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/placeName"
 		}
@@ -240,16 +246,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -273,12 +280,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.772Z",
-	"dcterms:issued": "2020-12-18T16:47:36.382Z",
+	"dcterms:modified": "2020-12-18T16:40:27.772Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -290,21 +301,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20201218114027772#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/placeName"
 		}
@@ -315,16 +326,17 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -348,12 +360,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.773Z",
-	"dcterms:issued": "2020-12-18T16:47:36.382Z",
+	"dcterms:modified": "2020-12-18T16:40:27.773Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -365,21 +381,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date"
 		}
@@ -389,16 +405,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -422,12 +439,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.773Z",
-	"dcterms:issued": "2020-12-18T16:47:36.382Z",
+	"dcterms:modified": "2020-12-18T16:40:27.773Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -439,21 +460,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027773#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/date[2]"
 		}
@@ -463,16 +484,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -496,12 +518,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.774Z",
-	"dcterms:issued": "2020-12-18T16:47:36.382Z",
+	"dcterms:modified": "2020-12-18T16:40:27.774Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -513,21 +539,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date"
 		}
@@ -537,16 +563,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -570,12 +597,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.774Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.774Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -587,21 +618,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027774#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date[2]"
 		}
@@ -611,16 +642,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -644,12 +676,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.775Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.775Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -661,21 +697,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date"
 		}
@@ -685,16 +721,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -718,12 +755,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.775Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.775Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -735,21 +776,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[3]/date[2]"
 		}
@@ -759,16 +800,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -792,12 +834,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.775Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.775Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -809,21 +855,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[4]/date"
 		}
@@ -833,16 +879,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -866,12 +913,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.775Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.775Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -883,21 +934,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027775#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[4]/date[2]"
 		}
@@ -907,16 +958,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -940,12 +992,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.776Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.776Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -957,21 +1013,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/date"
 		}
@@ -981,16 +1037,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1014,12 +1071,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.776Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.776Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1031,21 +1092,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027776#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/date[2]"
 		}
@@ -1055,16 +1116,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1088,12 +1150,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.777Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.777Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1105,21 +1171,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/date[3]"
 		}
@@ -1129,16 +1195,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1162,12 +1229,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.777Z",
-	"dcterms:issued": "2020-12-18T16:47:36.383Z",
+	"dcterms:modified": "2020-12-18T16:40:27.777Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1179,21 +1250,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027777#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p[5]/date[4]"
 		}
@@ -1203,16 +1274,17 @@
 		"rdf:value": "undefined/undefined"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1236,12 +1308,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.777Z",
-	"dcterms:issued": "2020-12-18T16:47:36.384Z",
+	"dcterms:modified": "2020-12-18T16:40:27.777Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1253,21 +1329,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?rs_annotation_20201218114027777#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/rs"
 		}
@@ -1278,17 +1354,18 @@
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	},
-	"oa:hasCertainty": "cwrc:high"
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1312,12 +1389,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:40:27.778Z",
-	"dcterms:issued": "2020-12-18T16:47:36.384Z",
+	"dcterms:modified": "2020-12-18T16:40:27.778Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1329,21 +1410,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114027778#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[2]/p/date[3]"
 		}
@@ -1353,16 +1434,17 @@
 		"rdf:value": "1791-12-26"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description>
-<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"><![CDATA[
-{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1386,12 +1468,16 @@
 		"geo": "http://www.geonames.org/ontology#",
 		"oa": "http://www.w3.org/ns/oa#",
 		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
 	},
-	"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756",
-	"@type": "oa:Annotation",
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756",
+	"type": "oa:Annotation",
 	"dcterms:created": "2020-12-18T16:42:05.756Z",
-	"dcterms:issued": "2020-12-18T16:47:36.384Z",
+	"dcterms:modified": "2020-12-18T16:42:05.756Z",
 	"dcterms:creator": {
 		"@id": "https://github.com/schaumju",
 		"@type": [
@@ -1403,21 +1489,21 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756#Target",
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://cwrc-writer.cwrc.ca/",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
-			"rdfs:label": "CWRC Writer",
-			"schema:softwareVersion": "1.0"
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
 		},
 		"oa:hasSelector": {
-			"@id": "https://raw.githubusercontent.com/schaumju/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756#Selector",
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?date_annotation_20201218114205756#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[2]/name/date"
 		}
@@ -1427,14 +1513,331 @@
 		"rdf:value": "1764-08-27"
 	},
 	"as:generator": {
-		"@id": "https://cwrc-writer.cwrc.ca/",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
-		"rdfs:label": "CWRC Writer",
-		"schema:url": "https://cwrc-writer.cwrc.ca",
-		"schema:softwareVersion": "1.0"
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
 	}
-}
-]]></rdf:Description></rdf:RDF></xenoData><profileDesc>
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215325894",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T01:53:25.894Z",
+	"dcterms:modified": "2023-04-25T01:53:25.894Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215325894#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215325894#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/name[2]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5508369",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215346947",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T01:53:46.947Z",
+	"dcterms:modified": "2023-04-25T01:53:46.947Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215346947#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215346947#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://dbpedia.org/resource/Stanningley",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215653551",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T01:56:53.551Z",
+	"dcterms:modified": "2023-04-25T01:56:53.551Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215653551#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215653551#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q49",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215759752",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-04-25T01:57:59.752Z",
+	"dcterms:modified": "2023-04-25T01:57:59.752Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/HarrisonHQuinn",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Harrison Quinn"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215759752#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.7.3"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/HarrisonHQuinn/ML/master/Fulneck/SemanticXML/carr_joseph.xml?place_annotation_20230424215759752#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/p/name[15]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q5508369",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.7.3"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<particDesc>
 				<person role="subject">
 					<persName ref="#mlper000553">Joseph Carr</persName>
@@ -1463,14 +1866,14 @@
 					<p> our late <roleName type="honorific">Sing B<hi rend="superscript">r</hi></roleName>
 						<persName ref="http://moravianlives.bucknell.edu/data/personography.html#mlper000553" key="Joseph Carr">Joseph
 							Carr</persName> has left the following account of <lb/> himself.</p>
-					<p> I was <name event="birth" when-iso="1764-08-27">born in <placeName ref="#mlpla000090" cert="high">Pudsey</placeName> <date when="1764-08-27" cert="high">Aug. the 27<hi rend="superscript">th</hi> 1764</date></name> of poor Parents &amp; <name event="baptism">baptized by the B<hi rend="superscript">rn</hi> at
+					<p> I was <name type="event" ana="birth" when-iso="1764-08-27">born in <placeName ref="#mlpla000090" cert="high">Pudsey</placeName> <date when="1764-08-27" cert="high">Aug. the 27<hi rend="superscript">th</hi> 1764</date></name> of poor Parents &amp; <name type="event" ana="baptism">baptized by the B<hi rend="superscript">rn</hi> at
 <lb/>
-<placeName ref="#mlpla000003" cert="high">Fulneck</placeName></name>, I used constantly to
-						attend the <name event="religious">public preachings</name> at <placeName ref="#mlpla000003">Fulneck</placeName>, till my <lb/> Father put me
+<placeName ref="#mlpla000003" cert="high"><placeName key="Fulneck Moravian Settlement" ref="http://www.wikidata.org/entity/Q5508369">Fulneck</placeName></placeName></name>, I used constantly to
+						attend the <name type="event" ana="religious">public preachings</name> at <placeName ref="#mlpla000003">Fulneck</placeName>, till my <lb/> Father put me
 							<name occupation="apprentice">apprentice</name>; <date when-iso="1777" cert="medium">when I was about 13 years old</date>, to one
 								<persName>Will<hi rend="superscript">m</hi> Harrison</persName>
 						<lb/> a <rs ref="#mlocc000055" type="http://sparql.cwrc.ca/ontology/cwrc#Occupation" cert="high">Taylor</rs> at
-							<placeName>Stanningly</placeName>, where I got acquainted with a
+							<placeName><placeName key="Stanningley" ref="http://dbpedia.org/resource/Stanningley">Stanningly</placeName></placeName>, where I got acquainted with a
 						neighbour, which <lb/> proved a <name emotion="great detriment">great detriment</name> to me: when his wife died,
 						he used to get me to <lb/> keep his house for him, as he was a <name occupation="shopkeeper">shopkeeper</name>, while he went to the markets;
 						&amp; <lb/> on Sundays he would take me with him to public houses, &amp;
@@ -1496,11 +1899,11 @@
 				<div type="page" n="2">
 					<pb n="2" facs="https://s3.amazonaws.com/moravianlives.bucknell.edu/MAF/Ful_3_14_CarrJoseph-02.jpg"/>
 					<p> my <name relation="sister">Sister</name> who belonged to the <orgName en="congregation">B<hi rend="superscript">rns</hi> Cong<hi rend="superscript">n</hi></orgName> was much <name emotion="grieved">grieved</name> about me, <lb/> and tried to persuade
-						me be attend the <name event="religious">preaching</name> at <placeName ref="#mlpla000003">Fulneck</placeName>, when she <lb/> went thither. I
+						me be attend the <name type="event" ana="religious">preaching</name> at <placeName ref="#mlpla000003">Fulneck</placeName>, when she <lb/> went thither. I
 						went once with her on a Sunday in the afternoon, when <lb/> I heard the late
 							<roleName type="honorific">B<hi rend="superscript">r</hi>.</roleName>
 						<persName>John Miller</persName> jun. read some accounts concerning the
-							<orgName en="congregation">In- <lb/> dian Cong<hi rend="superscript">n</hi></orgName> in <placeName>North America</placeName>, &amp;
+							<orgName en="congregation">In- <lb/> dian Cong<hi rend="superscript">n</hi></orgName> in <placeName><placeName key="North America" ref="http://www.wikidata.org/entity/Q49">North America</placeName></placeName>, &amp;
 						afterwards keep a Discourse. I was <lb/> <name emotion="struck">struck</name> at hearing how much sooner
 						the poor <name type="Indigenous">Indians</name> were brought to the <lb/>
 						Knowledge of our <roleName type="honorific">Savior</roleName> than such a
@@ -1510,24 +1913,24 @@
 						<lb/> with me he invited me to call &amp; I see him. I went down after,
 						&amp; <lb/> made known to him my <name emotion="desire">desire</name> to join the <orgName>Brn</orgName>
 						&amp; soon after I was <lb/>
-						<name event="reception">received into the Society</name>,
+						<name type="event" ana="reception">received into the Society</name>,
 						&amp; became acquainted with the <name office="labourer">Sing B<hi rend="superscript">rns</hi>
 							<lb/> Labourer</name>, &amp; used to spend the time between the meetings
 						in the <placeName>S. B<hi rend="superscript">rns</hi>
 							<lb/> house</placeName>: I little expected then, that I should once come
 						&amp; live in it, <lb/> as I considered it to be too high a favor for such a
 						great Sinner, <lb/> as I then felt myself to be; I got leave also to come to
-						the <name event="religious">Choir <lb/> meetings</name> on Sunday mornings,
+						the <name type="event" ana="religious">Choir <lb/> meetings</name> on Sunday mornings,
 						which was a <name type="emotion">real <name emotion="blessing">blessing</name> to me</name>. <lb/>
 						<date when-iso="1790-03-29">March 29<hi rend="superscript">th</hi>
-							1790</date> I came to live in the <placeName>B<hi rend="superscript">rns</hi> house</placeName>; &amp; it being the <name event="ecclesiastical">passion
+							1790</date> I came to live in the <placeName>B<hi rend="superscript">rns</hi> house</placeName>; &amp; it being the <name type="event" ana="ecclesiastical">passion
 <lb/>
 Week</name> I
 						attended the meetings, which made an <name type="emotion">abiding impression
-							<lb/> <name emotion="upon my heart">upon my heart</name></name>. <date when-iso="1791-12-14">Dec<hi rend="superscript">r</hi> 14 1791</date> <name event="arrival">I got leave to be an Inhabitant
+							<lb/> <name emotion="upon my heart">upon my heart</name></name>. <date when-iso="1791-12-14">Dec<hi rend="superscript">r</hi> 14 1791</date> <name type="event" ana="arrival">I got leave to be an Inhabitant
 <lb/>
-of <placeName cert="high" ref="#mlpla000003" type="arrival">Fulneck</placeName></name>
-						<name type="emotion">to my <name emotion="great joy">great Joy</name></name>, &amp; on the <date when="1791-12-26" cert="high">26<hi rend="superscript">th</hi> of dec<hi rend="superscript">r</hi></date> <name event="reception" when-iso="1791-12-26">I was received into
+of <placeName cert="high" ref="#mlpla000003" type="arrival"><placeName key="Fulneck Moravian Settlement" ref="http://www.wikidata.org/entity/Q5508369">Fulneck</placeName></placeName></name>
+						<name type="emotion">to my <name emotion="great joy">great Joy</name></name>, &amp; on the <date when="1791-12-26" cert="high">26<hi rend="superscript">th</hi> of dec<hi rend="superscript">r</hi></date> <name type="event" ana="reception" when-iso="1791-12-26">I was received into
 <lb/>
 the <orgName en="congregation">Cong<hi rend="superscript"/></orgName></name> &amp;
 						since then, tho' trials have not been wanting; our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>
@@ -1537,21 +1940,21 @@ the <orgName en="congregation">Cong<hi rend="superscript"/></orgName></name> &am
 					<p> Thus far our late <roleName type="honorific">Brothers</roleName> own account of himself.</p>
 					<p>
 						<date when-iso="1772-06-02">June 2<hi rend="superscript">d</hi> 1772</date>
-						he was <name office="spectator">Spectator</name> at the <name event="communion">holy Comunion</name>, &amp; <date when-iso="1772-08-29">aug 29<hi rend="superscript">th</hi></date>
+						he was <name office="spectator">Spectator</name> at the <name type="event" ana="communion">holy Comunion</name>, &amp; <date when-iso="1772-08-29">aug 29<hi rend="superscript">th</hi></date>
 						<note>he</note></p>
 					<cb/>
-					<p> he partook with us of the <name event="communion" when-iso="1772-08-29">Comunion</name>. For some years past
+					<p> he partook with us of the <name type="event" ana="communion" when-iso="1772-08-29">Comunion</name>. For some years past
 							<name health="disease">he has been <lb/> sickly</name>, &amp; in <date when-iso="1793-03">march last</date>, it appeared as if his <name health="disease"><name emotion="complaint">complaint</name> would termi- <lb/> nate in a
 							Consumption</name>: his <name office="labourer">Laborer</name> adds
 						concerning him: He was a <roleName type="honorific">Bro <lb/>
-							ther</roleName>  of few words, but <name event="spiritual">the feeling attending what he said, as well as the
+							ther</roleName>  of few words, but <name type="event" ana="spiritual">the feeling attending what he said, as well as the
 <lb/>
 <name emotion="earnest">earnest</name> <name emotion="desire">desire</name>, which he often expressed during his <name health="disease">Sickness</name> to go to our <roleName type="honorific">Sav<hi rend="superscript">r</hi></roleName>,</name> <lb/>
 						showed clearly, that <name type="emotion">he <name emotion="loved">loved</name> him</name>: being once
 						asked, whether he thought <lb/> he should see the beginning of an other
 						year? his answer was: no our <roleName type="honorific">Sa- <lb/>
 							vior</roleName> has made it clear to me, that I shall go before the next
-							<name event="communion">Comunion</name>. <lb/> He departed <name emotion="gently">gently</name> &amp;
+							<name type="event" ana="communion">Comunion</name>. <lb/> He departed <name emotion="gently">gently</name> &amp;
 						<name emotion="happily">happily</name> <date type="death" when-iso="1796-12-05">dec<hi rend="superscript">r</hi> 5<hi rend="superscript">th</hi> 1796</date> &amp; is now <name emotion="at rest">at rest</name>.</p>
 					<p> In some papers found after his departure, he writes under <date when-iso="1791-11-13">Nov<hi rend="superscript">r</hi> 13<hi rend="superscript">th</hi>
 							<lb/> 1791</date>. <name type="emotion">This was a very <name emotion="blessed">blessed</name> day to
@@ -1559,8 +1962,8 @@ the <orgName en="congregation">Cong<hi rend="superscript"/></orgName></name> &am
 						depraved &amp; Spoiled Creature I am &amp; that without <lb/> him I am
 						nothing but Sin &amp; <name emotion="misery">misery</name>, but <name emotion="thanks">thanks</name> he to his name for <lb/> the
 						<name emotion="blessings">blessings</name>, which I receive from him from time to time: <date when-iso="1792-08-29">aug 29<hi rend="superscript">th</hi> 1792</date>
-						<lb/> I partook of the <name event="communion">Holy Comunion</name> for the
-						first time: <name event="spiritual">I cannot express in
+						<lb/> I partook of the <name type="event" ana="communion">Holy Comunion</name> for the
+						first time: <name type="event" ana="spiritual">I cannot express in
 <lb/>
 Words, what a nearness of our <roleName type="honorific">Savior</roleName>'s <name emotion="love">love</name> to poor Sinners I then
 <lb/>

@@ -12,7 +12,7 @@ The transcription process involved the [Transkribus](https://www.transkribus.org
 * Occuption: `<name>` with @type="occupation" and @key for described occupation
 * Office: `<name>` with @type="office" and @key for described Moravian office.
 
-A TEI customized schema was developed (last updated in January 2025), which is published as an [ODD file](/tree/master/CodeScripts/MoravianMemoirs.odd) and [RNG file](/blob/master/CodeScripts/out/MoravianMemoirs.rng) in the CodeScripts repository.
+A TEI customized schema was developed (last updated in January 2025), which is published as an [ODD file](/blob/master/CodeScripts/MoravianMemoirs.odd)) and [RNG file](/blob/master/CodeScripts/out/MoravianMemoirs.rng) in the CodeScripts repository.
 
 Most documents were tagged using the Oxygen XML editor. More recently the [LEAF-Writer](https://leaf-writer.leaf-vre.org/) semantic editor was used to capture named entities whwere authority files could be associated with information in the mmemoirs (such as Wikidata for places and the [LINCS occupation vocabulary](https://vocab.lincsproject.ca/Skosmos/occupation/en/)). These files have integrated RDF web annotations in the header (within the `<xenoData>` section), and are ready to be transformed as structured linkable data.
 
